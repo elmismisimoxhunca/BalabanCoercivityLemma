@@ -1,0 +1,249 @@
+{
+  "pass": true,
+  "precision_digits": 100,
+  "checks": [
+    {
+      "side": "left",
+      "angle": "0.371",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "1.14298739128e-100"
+    },
+    {
+      "side": "left",
+      "angle": "0.371",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "left",
+      "angle": "1.207987856419019",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "left",
+      "angle": "1.207987856419019",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "left",
+      "angle": "1.5707963267948966192",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "left",
+      "angle": "1.5707963267948966192",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "2.07352014571e-101"
+    },
+    {
+      "side": "left",
+      "angle": "3.1415926535897932385",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "1.14298739128e-100"
+    },
+    {
+      "side": "left",
+      "angle": "3.1415926535897932385",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "1.14298739128e-100"
+    },
+    {
+      "side": "left",
+      "angle": "-0.371",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "left",
+      "angle": "-0.371",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "absolute_error": "1.14298739128e-100"
+    },
+    {
+      "side": "right",
+      "angle": "0.371",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "right",
+      "angle": "0.371",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "5.71493695641e-101"
+    },
+    {
+      "side": "right",
+      "angle": "1.207987856419019",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "5.71493695641e-101"
+    },
+    {
+      "side": "right",
+      "angle": "1.207987856419019",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "5.71493695641e-101"
+    },
+    {
+      "side": "right",
+      "angle": "1.5707963267948966192",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "right",
+      "angle": "1.5707963267948966192",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "7.14367119551e-102"
+    },
+    {
+      "side": "right",
+      "angle": "3.1415926535897932385",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "right",
+      "angle": "3.1415926535897932385",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "5.71493695641e-101"
+    },
+    {
+      "side": "right",
+      "angle": "-0.371",
+      "central_zero": false,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "0.0"
+    },
+    {
+      "side": "right",
+      "angle": "-0.371",
+      "central_zero": true,
+      "zero_frozen_atoms": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "absolute_error": "0.0"
+    }
+  ],
+  "max_absolute_error": "1.14298739128e-100",
+  "mapping": "Frozen a1,a2,a3,a4 correspond to physical zero-based edges 2,3,0,1 with transports/signs.",
+  "qualification": "Numerical local algebra regression only; not global frozen-operator identification."
+}

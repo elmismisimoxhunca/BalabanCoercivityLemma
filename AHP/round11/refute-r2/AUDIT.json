@@ -1,0 +1,322 @@
+{
+  "closedGoal": "none",
+  "strongestCompiledTheorem": "Round11.RefuteR2.window_sqrt5_closed_proved",
+  "statement": "For every ell >= 2 and every 0 < a <= 4*sqrt(5), not Round7.S1Odd.P428TouchFourAt ell hell a.",
+  "allAClosed": false,
+  "largeAClosed": false,
+  "attempt": "AHP/round11/refute-r2/Attempt.lean",
+  "pin": "AHP/round11/pin/Statement.lean",
+  "attemptSHA256": "1a0c6395528506e4f1165373215ece52ce002ed40131c66879df69f0c658ae69",
+  "pinSHA256": "c7155e6fd03dd61422316853ea7e8c1f056542c16bfa38228ba848113592c35f",
+  "logSHA256": "4dd9b9696ef4d7a62eb9adb6730cb465d86fae4103e7afc41aef24fae15a89c0",
+  "attemptExit": 0,
+  "pinExit": 0,
+  "pinVerbatimInAttempt": true,
+  "round7PinVerbatimPrefix": true,
+  "imports": [
+    "D1Final",
+    "GdPlaq",
+    "D1Lit"
+  ],
+  "localDeclarationCount": 59,
+  "axiomPrintoutCount": 59,
+  "axiomWhitelist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "allAxiomPrintoutsWhitelisted": true,
+  "forbiddenTokensAbsent": true,
+  "compilerWarningsAbsent": true,
+  "mainAxiomLine": "'Round11.RefuteR2.window_sqrt5_closed_proved' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "obstacle": "The proved endpoint upper bound is (a-4*sqrt(5))*||v||^2. For a>4*sqrt(5), this witness supplies no nonpositive endpoint direction. No all-a crossing or independent final-form failure has been established.",
+  "declarations": {
+    "Round3.S1Proper.plaqCorner": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.TouchBond": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.CoversPlaqFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.CurlReadsTouch": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.PerCubeRegularTouch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.ClassCoupledFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.selCorner": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.P428TouchFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.GoalPos1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.GoalNeg1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round7.S1Odd.P428TouchFourAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round7.S1Odd.Goal1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round7.S1Odd.Goal2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.GoalAllA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.GoalLargeA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.edge_not_touch_of_not_corner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.deltaKLocCLM_eq_univ_of_zero_off": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.deltaKLocCLM_corner_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.corner_Dpi_eq_all": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.corner_Ginv_eq_all": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.mass_le_of_high_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.nvN_even": [
+      "propext"
+    ],
+    "Round11.Refute.neg_one_succ_mod": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.checkerSign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.checkerSign_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.checkerSign_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.checkerAmp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.checkerAmp_bd": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.checkerAmp_skew": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.Refute.side_of_uniform": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Round11.Refute.exists_nonunit_path_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.four_touch_cubeBond_of_transverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.slabNv_transverse": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.slabNv_coversFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.perCubeRegularTouch_of_one_on_touch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.Uth_one_on_touch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.Uth_perCubeRegularTouch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round3.S1Proper.exists_nonunit_corner_Ginv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.GoalWindowSqrt5Closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.window_sqrt5_closed_proved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.not_touchFour_every_ell_le_sqrt5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.not_touchFour_every_ell_le_rational": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixed_nonzero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.radical_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.Fth_pi_bound_sqrt5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.exists_nonunit_sqrt5": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.RMap_Uth_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.hol_Uth_pi": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.plaq_flat": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.plaq_pi_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixed_curl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixed_curl_transverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixed_delta_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.collar_locality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixedField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixedField_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.bd_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixed_locality": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Round11.RefuteR2.mixed_inner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

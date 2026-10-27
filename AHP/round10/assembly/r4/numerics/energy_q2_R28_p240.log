@@ -1,0 +1,27 @@
+assembled 2 28 1 n 8260 aug 11508 nnz 397418 seconds 3.5247318744659424
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 2 28 0 n 8260 aug 11508 nnz 352874 seconds 2.57131028175354
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r4/numerics/energy_q2_R28_p240.json c1 -5.86232919782523726539491734831e-108 energy 13.9863753246574966997745240213 curl_error 1.1997575e-239 reciprocity_error 8.7582294e-239

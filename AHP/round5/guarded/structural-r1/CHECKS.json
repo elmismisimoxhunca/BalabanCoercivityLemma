@@ -1,0 +1,460 @@
+{
+  "status": "compiled-partial-only; numerical obstacle",
+  "closedGoal": "none",
+  "file": "AHP/round5/guarded/structural-r1/Attempt.lean",
+  "exitCode": 0,
+  "compileCommand": "AHP/round3/lean1.sh AHP/round5/guarded/structural-r1/Attempt.lean",
+  "sha256": "7d42aa1e1d15a3f1c816576babead3197ba0c4543c706e36c52096e7af108f18",
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "pinExactBytePrefix": true,
+  "round4Decay1ExactBytePrefix": true,
+  "imports": [
+    "DrEquiv"
+  ],
+  "forbiddenTokens": [],
+  "localDeclarationCount": 86,
+  "axiomRecordCount": 86,
+  "axioms": {
+    "AdalyFormal.Round2.Guarded.Pin.GoalPos1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GoalNeg1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GoalPos2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GoalNeg2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.dataS_laws": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.assembly_pin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.corrected_pin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.form_pin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.residual_pin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.response": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.localCorrected": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.PlaqSel": [],
+    "AdalyFormal.Round2.Guarded.Pin.selIn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.selAll": [],
+    "AdalyFormal.Round2.Guarded.Pin.DeltaS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.DpiFullS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.JfS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.dataS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.G1invS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.H1inS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.InstIneqS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.InstIneqSG": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.P428Target8SG": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GuardResidualT": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GShape": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.CPen": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GuardPencilT": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.unit_of_kernel_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.response_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.unit_add_iff_response": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.inverse_sub_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.response_sub_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.localCorrected_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.carrier_eq_local_add_shift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.pencil_eq_local_add_shift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.carrier_isUnit_iff_response": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_iff_response": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.goalPos1_iff_boundary_response": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round3.Guarded.R2Prove.correction_kills_of_jet_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round3.Guarded.R2Prove.jetInputZero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round3.Guarded.R2Prove.jet_translation_of_jetInputZero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round3.Guarded.R2Prove.correction_kills_jetInputZero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.relativeReturn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.kernel_iff_relative_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.unit_of_relative_norm_lt_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.inverse_pairing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.guarded_failure_requires_amplification": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.CTwoPassSmall": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.goalPos2_of_two_pass_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.map_eq_observed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.pair_eq_observed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.weighted_inverse_observation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.response_sub_norm_le_two_pass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.response_isUnit_of_absolute_small": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.jetObservation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.boundaryShift_symmetric": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.localCorrected_symmetric": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.actual_return_norm_le_two_pass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.pencil_isUnit_of_two_pass_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR1.pencil_isUnit_of_weighted_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.response_unit_of_relative_small": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.CObservedGuardSmall": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.goalPos2_of_observed_guard_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.relativeReturn_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.relativeReturn_norm_le_observed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.observedGuardTransfer": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.actual_relative_return_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.actual_relative_return_norm_le_observed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.pencil_isUnit_of_observed_guard_decay": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "AdalyFormal.Round4.Guarded.DecayR2.failure_requires_observed_amplification": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "mainDeclaration": "AdalyFormal.Round4.Guarded.DecayR2.actual_relative_return_norm_le_observed",
+  "numericalStatus": "floating-point only, no validated error bounds or exact Fourier dictionary",
+  "observedTransferNorms": [
+    52.90104425848174,
+    539.3147653652836,
+    5403.468011059175,
+    54045.00206140927,
+    540460.3422972972,
+    5404613.696099883
+  ],
+  "fullLiftMinSampledAbsEigenvalue": 2.1872734110739286e-07,
+  "numericalHelperSha256": {
+    "assembly.py": "798f7fb42f2de38d03b472d29c53960ce8ac48fb8acddc43f272aaf6417c94c8",
+    "delta_ops.py": "a73e2b14e853e749dd2fc63a24a36b56edd3c7c896c4ddfd73757a2f26dd63c0",
+    "wide_probe.py": "14ba0ba0135010908b34b62d99ee2ff97247875c622de373ee66fad99c4c0de2",
+    "lift_probe.py": "a619be8aee8565e1eea1da6c4c5aa0652ed8553ce2472f92227413e9e58ea034",
+    "corrected_probe.py": "4b54b143c2d9b04951b854522bd68e37ae883e229c4cf0217bb0d8056cf148e1"
+  },
+  "preliminaryCompilation": "Exit 1 on the initial New.lean copy: concrete elaboration errors. Repaired locally; final wrapper exit 0."
+}

@@ -1,0 +1,78 @@
+
+namespace AdalyFormal.Round13.Assembly.R2
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round10.Assembly.R2 (KernelLine)
+open AdalyFormal.Round10.Assembly.R4 (CofinalAnyPathNoResponseCancellation)
+open AdalyFormal.Round10.Dictionary.FreeSource (CurlDetected)
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round13.Assembly.R1
+open AdalyFormal.Round2.Guarded.Pin (GoalNeg2)
+
+/-- The exact physical P2, with no remaining positivity assumption. -/
+theorem p2 : P2 := AdalyFormal.Round13.Positivity.Physical.rightStar_P2
+
+/-- P1 and P2 construct the original whole-kernel charged line, not detection. -/
+theorem rightStar_kernelLine {q R : ℕ} (hq : 0 < q)
+    (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    0 < vacEdge q R (rightStar hq R) ∧
+    vacEdge q R (rightStar hq R) < Real.pi/2 ∧
+    ∃ u : TwistSpace q R, KernelLine q R (rightStar hq R) u ∧
+      Module.finrank ℝ (vacA q R (rightStar hq R) 1
+        (vacEdge q R (rightStar hq R))).ker = 2 := by
+  obtain ⟨hc,hpd⟩ := startInputs hq hR hR18
+  exact AdalyFormal.Round12.Kernel.CrossingActual.kernelLine_exists_before_halfpi
+    q R (rightStar hq R) (rightSite hq R,0) hc hpd (p1 hq hR hR18)
+    (fun t => rightStar_fixed hq R t (Real.pi/4)) (p2 hq hR hR18)
+
+/-- Nested cofinal whole lines; no curl/noncancellation assertion is included. -/
+theorem cofinal_rightStar_kernelLine :
+    ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+      R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      0 < vacEdge (2^j) R (rightStar (by positivity) R) ∧
+      vacEdge (2^j) R (rightStar (by positivity) R) < Real.pi/2 ∧
+      ∃ u : TwistSpace (2^j) R,
+        KernelLine (2^j) R (rightStar (by positivity) R) u ∧
+        Module.finrank ℝ (vacA (2^j) R (rightStar (by positivity) R) 1
+          (vacEdge (2^j) R (rightStar (by positivity) R))).ker = 2 := by
+  intro j₀
+  refine ⟨j₀,le_rfl,?_⟩
+  intro R₀
+  exact ⟨2*(R₀+18),by omega,⟨R₀+18,rfl⟩,by omega,
+    rightStar_kernelLine (by positivity) ⟨R₀+18,rfl⟩ (by omega)⟩
+
+/-- P3 is the only remaining all-instance physical premise. -/
+theorem cofinalNoCancellation_of_P3 (h3 : P3) : CofinalAnyPathNoResponseCancellation :=
+  cofinalNoCancellation_of_P2_P3 p2 h3
+
+theorem goalNeg2_of_P3 (h3 : P3) : GoalNeg2 := goalNeg2_of_P2_P3 p2 h3
+
+/-- Detection only, at nested cofinal RIGHT-star scales and radii. -/
+def CofinalP3 : Prop :=
+  ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+    R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+    ∀ u : TwistSpace (2^j) R,
+      KernelLine (2^j) R (rightStar (by positivity) R) u → CurlDetected (2^j) R u
+
+/-- All-instance P2 applies at the indices chosen by the detection premise. -/
+theorem cofinalP2P3_of_cofinalP3 (h : CofinalP3) : CofinalP2P3 := by
+  intro j₀
+  obtain ⟨j,hj,hRs⟩ := h j₀
+  refine ⟨j,hj,?_⟩
+  intro R₀
+  obtain ⟨R,hR0,hR,hR18,hd⟩ := hRs R₀
+  exact ⟨R,hR0,hR,hR18,p2 (by positivity) hR hR18,hd⟩
+
+theorem cofinalNoCancellation_of_cofinalP3 (h : CofinalP3) :
+    CofinalAnyPathNoResponseCancellation :=
+  cofinalNoCancellation_of_cofinalP2P3 (cofinalP2P3_of_cofinalP3 h)
+
+theorem goalNeg2_of_cofinalP3 (h : CofinalP3) : GoalNeg2 :=
+  goalNeg2_of_cofinalP2P3 (cofinalP2P3_of_cofinalP3 h)
+
+end AdalyFormal.Round13.Assembly.R2

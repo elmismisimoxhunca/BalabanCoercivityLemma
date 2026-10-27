@@ -1,0 +1,15 @@
+'AdalyFormal.Round12.Kernel.kernel_concentrates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.opposite_character_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.no_flip_eigenvector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.charged_span_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_eq_charged_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.boundary_observable_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.charged_of_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.kernelBoundaryEquiv' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]

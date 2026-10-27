@@ -1,0 +1,4 @@
+assembled 2 18 1 n 5380 aug 7508 nnz 231050 seconds 1.5411760807037354
+assembled 2 18 1 n 5380 aug 7508 nnz 248962 seconds 2.0686099529266357
+assembled 2 18 1 n 5380 aug 7508 nnz 247770 seconds 2.104342222213745
+ACTUAL 18 1e-100 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308475}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]

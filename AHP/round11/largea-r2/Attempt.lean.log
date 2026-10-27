@@ -1,0 +1,127 @@
+Round3.S1Proper.plaqCorner {L : PeriodicLatticeExtent} (S : Set (PeriodicLatticeSite L)) :
+  Set (PeriodicLatticePlaquette L)
+Round3.S1Proper.TouchBond {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L)) (b : Bond L) : Prop
+Round3.S1Proper.CoversPlaqFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) : Prop
+Round3.S1Proper.CurlReadsTouch {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L))
+  (x : PeriodicLatticeSite L) (a b : Fin 3) : Prop
+Round3.S1Proper.PerCubeRegularTouch {L : PeriodicLatticeExtent} (ell M f k : ℕ) (S : Tower L) (α₀ η : ℝ)
+  (U : LinkCfg L) : Prop
+Round3.S1Proper.ClassCoupledFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) (α₀ η : ℝ) (U : LinkCfg L) :
+  Prop
+Round3.S1Proper.selCorner : PlaqSel
+Round3.S1Proper.P428TouchFour : Prop
+Round3.S1Proper.GoalPos1 : Prop
+Round3.S1Proper.GoalNeg1 : Prop
+'Round3.S1Proper.plaqCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.TouchBond' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.CoversPlaqFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.ClassCoupledFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.selCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.P428TouchFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Round7.S1Odd.P428TouchFourAt (ell : ℕ) (hell : 2 ≤ ell) (a : ℝ) : Prop
+Round7.S1Odd.Goal1 : Prop
+Round7.S1Odd.Goal2 : Prop
+'Round7.S1Odd.P428TouchFourAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round7.S1Odd.Goal1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round7.S1Odd.Goal2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.GoalAllA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.GoalLargeA' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round11/largea-r2/Attempt.lean:222:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round11/largea-r2/Attempt.lean:246:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round11/largea-r2/Attempt.lean:421:19: warning: `ContinuousLinearMap.zero_apply` has been deprecated: Use `zero_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.zero_apply` to `zero_apply x`).
+'Round11.LargeA.delta_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.delta_form_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.Wop_on_notIn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.level0_mask_on_notIn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.level0_mask_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.extra_Dpi_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.extra_plaquettes_absorbed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.delta_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.delta_subset_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.delta_extra_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.mass_level0_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.mass_on_level0_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.carrier_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.carrier_on_level0_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.sum_dir_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.pbs_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.universal_plaqDef' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.Sp_quad_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.dp_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.dp_quad_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.delta_lower_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.CubeBond.toTouch' depends on axioms: [propext, Quot.sound]
+'Round11.LargeA.TouchBond.endpoints' depends on axioms: [propext, Quot.sound]
+'Round11.LargeA.cornerA' does not depend on any axioms
+'Round11.LargeA.cornerB' depends on axioms: [propext, Quot.sound]
+'Round11.LargeA.cornerC' depends on axioms: [propext, Quot.sound]
+'Round11.LargeA.cornerD' depends on axioms: [propext, Quot.sound]
+'Round11.LargeA.coord_shift_ne' depends on axioms: [propext, Quot.sound]
+'Round11.LargeA.cornerD_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.mem_siteBox_iff' does not depend on any axioms
+'Round11.LargeA.boundary_is_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.edgeAB_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.edgeBD_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.edgeCD_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.edgeAC_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.square_edges_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.siteBox_fill_of_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.siteBox_fill_of_antidiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.opposite_of_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.touchCover_all_corners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.touchCover_cubeBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.touchAnte_of_cubeAnte' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.CoversPlaqFour.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.CurlReads.toTouch' depends on axioms: [propext, Quot.sound]
+'Round11.LargeA.PerCubeRegularTouch.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.ClassCoupledFour.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.in_subset_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.dataS_Dpi_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_carrier_half_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.guarded_touch_slice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.Wop_mass_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.MassFull_half_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_ge_local_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_base_unit_of_local_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.unit_transfer_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.H_shift_on' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.Delta2_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round11/largea-r2/Attempt.lean:1116:29: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round11/largea-r2/Attempt.lean:1119:13: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+'Round11.LargeA.dataS_Mass_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.diagW_mass_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.local_carrier_mass_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corrected_guards_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_schur_of_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_correction_of_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_carrier_eq_local_on_ker' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_corrected_guards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.local_mass_domination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.local_base_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_base_and_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_wellDef_of_local_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.corner_wellDef_proper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.dataS_corner_eq_of_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.genForm_corner_eq_of_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.test_zero_of_local_bad_guard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.touch_instance_of_half_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.EventualHalfPositive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.touch_slice_of_eventual_half_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.goalLargeA_of_eventual_half_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.local_base_psd_of_base_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.local_both_psd_of_base_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.LargeA.base_flat_large_mass_slice' depends on axioms: [propext, Classical.choice, Quot.sound]

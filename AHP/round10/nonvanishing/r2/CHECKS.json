@@ -1,0 +1,82 @@
+{
+  "goalNeg2_proved": false,
+  "round9_premise_proved": false,
+  "actual_source_dictionary_proved": false,
+  "actual_crossing_jet_nonzero_proved": false,
+  "fixed_source_coupling_nonzero_proved": false,
+  "finite_model_all_source_nonvanishing_proved": true,
+  "published_byte_equal": true,
+  "tridiagonal_assembly_equal": true,
+  "full_assembly_equal": true,
+  "files": [
+    {
+      "path": "AHP/round10/nonvanishing/r2/DirichletResponse.lean",
+      "sha256": "f843f4d704e035f50b05aa8efbf065d18a7f3b9891ee22df46d1e1308ec4424c",
+      "lines": 152,
+      "declaration_count": 13,
+      "axiom_records": 13,
+      "exit": 0,
+      "imports": [
+        "D1IVT"
+      ],
+      "every_declaration_audited": true,
+      "standard_axioms_only": true,
+      "no_prohibited_devices": true,
+      "no_diagnostics": true,
+      "timestamps_ok": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/nonvanishing/r2/TridiagonalResponse.lean",
+      "sha256": "91e14f3cb85cebf466b43c09044b0ede315f6a62d208614628e5684acff627f0",
+      "lines": 304,
+      "declaration_count": 29,
+      "axiom_records": 29,
+      "exit": 0,
+      "imports": [
+        "D1IVT"
+      ],
+      "every_declaration_audited": true,
+      "standard_axioms_only": true,
+      "no_prohibited_devices": true,
+      "no_diagnostics": true,
+      "timestamps_ok": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/nonvanishing/r2/SourceFamily.lean",
+      "sha256": "3bbb898b6bce272e90136faeb02c4dc7c6bb9d0f28055b170ce32a2d97b5517b",
+      "lines": 503,
+      "declaration_count": 47,
+      "axiom_records": 47,
+      "exit": 0,
+      "imports": [
+        "D1IVT"
+      ],
+      "every_declaration_audited": true,
+      "standard_axioms_only": true,
+      "no_prohibited_devices": true,
+      "no_diagnostics": true,
+      "timestamps_ok": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/shared/nonvanishing/R2_SourceFamily.lean",
+      "sha256": "3bbb898b6bce272e90136faeb02c4dc7c6bb9d0f28055b170ce32a2d97b5517b",
+      "lines": 503,
+      "declaration_count": 47,
+      "axiom_records": 47,
+      "exit": 0,
+      "imports": [
+        "D1IVT"
+      ],
+      "every_declaration_audited": true,
+      "standard_axioms_only": true,
+      "no_prohibited_devices": true,
+      "no_diagnostics": true,
+      "timestamps_ok": true,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

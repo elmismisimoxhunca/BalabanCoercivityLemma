@@ -1,0 +1,28 @@
+'AdalyFormal.Round10.Dictionary.Color.quad_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_parallelogram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_add_of_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_zero_of_anti_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_mixed_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.constGauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.const_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.halfE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flipE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_quad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flip_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flip_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.half_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flip_neutral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.two_fixed_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.halfE_flip_on_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_neutral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_charged_neutral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_single_color_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

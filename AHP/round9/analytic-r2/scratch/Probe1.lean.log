@@ -1,0 +1,70 @@
+@ContDiffAt.fderiv : ∀ {𝕜 : Type u_1} {E : Type u_2} {F : Type u_3} {G : Type u_4} [inst : NontriviallyNormedField 𝕜]
+  [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] [inst_3 : NormedAddCommGroup F] [inst_4 : NormedSpace 𝕜 F]
+  [inst_5 : NormedAddCommGroup G] [inst_6 : NormedSpace 𝕜 G] {x₀ : E} {m n : WithTop ℕ∞} {f : E → F → G} {g : E → F},
+  ContDiffAt 𝕜 n (Function.uncurry f) (x₀, g x₀) →
+    ContDiffAt 𝕜 m g x₀ → m + 1 ≤ n → ContDiffAt 𝕜 m (fun x => fderiv 𝕜 (f x) (g x)) x₀
+@ContDiffAt.fderiv_right : ∀ {𝕜 : Type u_1} {E : Type u_2} {F : Type u_3} [inst : NontriviallyNormedField 𝕜]
+  [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] [inst_3 : NormedAddCommGroup F] [inst_4 : NormedSpace 𝕜 F]
+  {f : E → F} {x₀ : E} {m n : WithTop ℕ∞}, ContDiffAt 𝕜 n f x₀ → m + 1 ≤ n → ContDiffAt 𝕜 m (fderiv 𝕜 f) x₀
+@NormedRing.inverse_continuousAt : ∀ {R : Type u_1} [inst : NormedRing R] [HasSummableGeomSeries R] (x : Rˣ),
+  ContinuousAt Ring.inverse ↑x
+@AdalyFormal.W6.qs_injective_strat : ∀ {ell M R k : ℕ} {Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  {S : AdalyFormal.StatementLane.Tower (AdalyFormal.StatementLane.scaleUp ell k Lu)} (hell : 0 < ell),
+  2 ≤ ell →
+    AdalyFormal.StatementLane.Admissible ell M R k S →
+      0 < M →
+        8 * ell ≤ R →
+          ∀ (U : AdalyFormal.Balaban.CoercUMainDesigned.LinkCfg (AdalyFormal.StatementLane.scaleUp ell k Lu)) (a : ℝ)
+            (Lam : Set (AdalyFormal.Target.ClayStatement.PeriodicLatticeSite Lu)) (ε : ℕ → ℝ),
+            RegTower ell (bgTower (AdalyFormal.SliceCoerc.GF ell k Lu) U) k →
+              AdalyFormal.BondComposite.TowerClass ell k Lu U ε →
+                (∀ j < k, 0 ≤ ε j) →
+                  (∀ j < k, AdalyFormal.NonflatJet.rhoOf ell (ε j) < Real.pi / 2) →
+                    3 * AdalyFormal.W6.delW ell k ε ^ 2 * AdalyFormal.W6.CEp < 1 →
+                      Function.Injective ⇑(AdalyFormal.StatementLaneG.gparams ell k Lu hell S U a Lam).data.Qs
+@AdalyFormal.W6.Eright_rightInv : ∀ {ell M R k : ℕ} {Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  {S : AdalyFormal.StatementLane.Tower (AdalyFormal.StatementLane.scaleUp ell k Lu)} (hell : 0 < ell),
+  2 ≤ ell →
+    AdalyFormal.StatementLane.Admissible ell M R k S →
+      1 ≤ M →
+        8 * ell ≤ R →
+          ∀ (y : FSp (geomOf ell k S)),
+            (bondSectorOf (geomOf ell k S)
+                    (AdalyFormal.Balaban.CovariantHjMinimizer.trivialU
+                      (AdalyFormal.StatementLane.scaleUp ell k Lu))).Qfull
+                ((AdalyFormal.W6.ErightL hell) y) =
+              y
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe1.lean:9:8: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.CoverOmega.flat_ginv_zero`
+@AdalyFormal.SliceCoerc.ubarTower_trivial : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} (ell j : ℕ),
+  AdalyFormal.Balaban.UbarTowerCov.UbarTower AdalyFormal.Balaban.SuTwoLogExp.su2LogExp ell
+      (AdalyFormal.Balaban.CovariantHjMinimizer.trivialU L) j =
+    AdalyFormal.Balaban.CovariantHjMinimizer.trivialU L
+@AdalyFormal.D1Literal.continuous_clm_of_inner : ∀ {E : Type u_1} [inst : NormedAddCommGroup E]
+  [inst_1 : InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {X : Type u_2} [inst_3 : TopologicalSpace X]
+  {f : X → E →L[ℝ] E}, (∀ (x y : E), Continuous fun t => inner ℝ x ((f t) y)) → Continuous f
+@SG_rawStep : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} (s ell : ℕ)
+  (V0 : AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L),
+  RegBg s ell V0 →
+    ∀ (c : AdalyFormal.Target.ClayStatement.PeriodicLatticeEdge L), SG fun A => rawStep s ell V0 (expCfgX A) c
+@rawStep_simp : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} (s ell : ℕ)
+  (V0 V1 : AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L)
+  (c : AdalyFormal.Target.ClayStatement.PeriodicLatticeEdge L),
+  rawStep s ell V0 V1 c =
+    AdalyFormal.Balaban.SuTwoLogExp.su2Exp (-sBlock s ell V0 V1 c.1) *
+          AdalyFormal.Balaban.UbarTowerCov.stridedBlockedGauge AdalyFormal.Balaban.SuTwoLogExp.su2LogExp s ell
+            (fun b => V1 b * V0 b) c *
+        AdalyFormal.Balaban.SuTwoLogExp.su2Exp (sBlock s ell V0 V1 (AdalyFormal.Balaban.UbarTowerCov.cPlusS s ell c)) *
+      (AdalyFormal.Balaban.UbarTowerCov.stridedBlockedGauge AdalyFormal.Balaban.SuTwoLogExp.su2LogExp s ell V0 c)⁻¹
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe1.lean:14:8: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.IngredientFamilyR2.su2Log_comp_contDiffAt`
+@baseData_laws : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} (G : TowerGeom L) (U : Cfg L) (a : ℝ)
+  (S : BondSector G) (Jf : AdalyFormal.Balaban.CovariantOperators.BondFnL2 L), (baseData G U a S Jf).Laws
+@AdalyFormal.D1Literal.Zb : {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} →
+  Set (AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L) → Set (AdalyFormal.Balaban.AdmissibleSubspace.Bond L)
+@AdalyFormal.StatementLaneR8.QfullOf_congr : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  {ell M R k : ℕ} {S : AdalyFormal.StatementLane.Tower L},
+  AdalyFormal.StatementLane.Admissible ell M R k S →
+    2 ≤ ell →
+      17 * ell ≤ R * M →
+        ∀ {U U' : Cfg L},
+          (∀ (e : AdalyFormal.Balaban.AdmissibleSubspace.Bond L), BothIn (S.Om 0) e → U e = U' e) →
+            QfullOf (geomOf ell k S) U = QfullOf (geomOf ell k S) U'

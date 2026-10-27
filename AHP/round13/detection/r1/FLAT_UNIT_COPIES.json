@@ -1,0 +1,72 @@
+[
+  {
+    "path": "AHP/round12/shared/kernel/R2_ResponseLine.lean",
+    "start": "import DrEquiv",
+    "end": "namespace AdalyFormal.Round4.Guarded.RefuteR1",
+    "startLine": 1,
+    "sha256": "cfeac9375a44b3222d891b9334279c98c2e1051c2402e26b5482be970dce57c4"
+  },
+  {
+    "path": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "start": "namespace AdalyFormal.Round4.Guarded.RefuteR1\n",
+    "end": "namespace AdalyFormal.Round5.Guarded.IVTR1",
+    "startLine": 284,
+    "sha256": "d79a6ba35d6324093ac52f7277d9a4416ad6b83cfc36b7c2318e2b95f3c9efcf"
+  },
+  {
+    "path": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "start": "namespace AdalyFormal.Round3.Guarded.RefuteR2\n",
+    "end": "theorem dil_shift_zero",
+    "startLine": 415,
+    "sha256": "5530511a400d4e9f1418e63054bad17bc078b384bc6e1344625133191e9621e0"
+  },
+  {
+    "path": "AHP/round9/analytic-r2/Attempt.lean",
+    "start": "theorem Qcomposite_one'",
+    "end": "theorem cont_Qlev",
+    "startLine": 4841,
+    "sha256": "59de3230337a9183ab989dba8dc7271829ed22fd451b8d73a2bda806913dc825"
+  },
+  {
+    "path": "AHP/round9/analytic-r2/Attempt.lean",
+    "start": "theorem QfullOf_apply",
+    "end": "theorem C2fullOf_apply",
+    "startLine": 5393,
+    "sha256": "afe77760833f07c2c9569b8410968744ec1685c1a2b863ff1480b1f802cceaff"
+  },
+  {
+    "path": "AHP/round9/analytic-r2/Attempt.lean",
+    "start": "theorem dil_G_k",
+    "end": "theorem dil_out_site",
+    "startLine": 5838,
+    "sha256": "7e97b9ae016d80732f49c03fce34493a49d23009e607bd057bc312e9394224b7"
+  },
+  {
+    "path": "AHP/round9/analytic-r2/Attempt.lean",
+    "start": "theorem delW_zero",
+    "end": "end DilUnits",
+    "startLine": 5870,
+    "sha256": "87911936ef19f1311c7567c8836f72103961640c34eabfda61009a21f2c46167"
+  },
+  {
+    "path": "AHP/round9/analytic-r2/Attempt.lean",
+    "start": "namespace AdalyFormal.Round9.Guarded.AnalyticR2\n\nopen scoped RealInnerProductSpace Topology\nopen Filter Set\n\n/-! ## J.",
+    "end": "namespace AdalyFormal.Round9.Guarded.AnalyticR2\n\nopen scoped RealInnerProductSpace Topology\nopen Filter Set\n\nsection Final",
+    "startLine": 5887,
+    "sha256": "ca4f4ff9c6af510cb265e313254d4ae50e1efbda00b832a1c69bb39a222e0b20"
+  },
+  {
+    "path": "AHP/round12/shared/kernel/R2_ResponseLine.lean",
+    "start": "noncomputable abbrev flatData",
+    "end": "noncomputable def vacCoupling",
+    "startLine": 366,
+    "sha256": "3c0fa707533a55451e2685b47b1b68c48bb2b5b2390e7f4231351f1c9ae180c5"
+  },
+  {
+    "path": "AHP/round12/shared/kernel/R2_ResponseLine.lean",
+    "start": "namespace AdalyFormal.Round10.Dictionary.KKT\n",
+    "end": "omit [FiniteDimensional \u211d E]",
+    "startLine": 672,
+    "sha256": "0eca820ebcdbb6b3b5aa6f11a978a4835c28f5463ade3c9ec65fc158c7b003d3"
+  }
+]

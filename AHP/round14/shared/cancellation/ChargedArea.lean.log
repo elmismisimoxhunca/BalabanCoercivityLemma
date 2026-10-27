@@ -1,0 +1,17 @@
+'AdalyFormal.Round14.Cancellation.chargedArea' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.sesquilinearArea' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargedArea_eq_sesquilinear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargedArea_real_imag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargedArea_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargedArea_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargedArea_smul_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargedArea_common_phase_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargeCurrent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargeCurrent_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargeCurrent_eq_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargeCurrent_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Cancellation.chargeCurrent_cofinal' depends on axioms: [propext, Classical.choice, Quot.sound]

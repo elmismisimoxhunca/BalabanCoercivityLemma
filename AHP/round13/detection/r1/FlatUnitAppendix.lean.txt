@@ -1,0 +1,47 @@
+
+namespace AdalyFormal.Round13.Detection
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round2.Guarded.Pin
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round9.Guarded.AnalyticR2
+open AdalyFormal.Round10.Dictionary.KKT
+
+/-- The genuine full constraint matrix in the top-jet dictionary is a unit.
+This is a flat-point prerequisite, not crossing-jet nonvanishing. -/
+theorem flat_N_unit {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    IsUnit (N (flatData q R)) := by
+  let D := flatData q R
+  have hL : D.Laws := dataS_laws selIn selIn _
+  have hB : IsUnit D.Ginv := dil_flat_unit hq (by omega)
+  have hp : AdalyFormal.D1Literal.PSD D.Ginv := by
+    intro x
+    by_cases hx : x = 0
+    · rw [hx, inner_zero_left]
+    · exact (dil_flat_pos hq (by omega) x hx).le
+  have hQs : Function.Injective D.Qs :=
+    dil_Qs_inj hq (by omega) (dil_admissible hq hR)
+  obtain ⟨m, hm, hmc⟩ := AdalyFormal.D1Literal.psd_coercive
+    D.Ginv (D.Ginv_symm hL) hp hB
+  exact isUnit_Q_inv_Qs (D.Ginv_symm hL) hm hmc D.Q_adj hQs
+
+/-- In particular, the nested dyadic/even family has no missing flat N guard. -/
+theorem cofinal_flat_N_units :
+    ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+      R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      IsUnit (N (flatData (2^j) R)) := by
+  intro j₀
+  refine ⟨j₀, le_rfl, fun R₀ => ?_⟩
+  let R := 2 * (R₀ + 9)
+  have he : 2 ∣ R := dvd_mul_right 2 (R₀ + 9)
+  have h18 : 18 ≤ R := by dsimp [R]; omega
+  exact ⟨R, by dsimp [R]; omega, he, h18, flat_N_unit (by positivity) he h18⟩
+
+#print axioms flat_N_unit
+#print axioms cofinal_flat_N_units
+#print axioms AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos
+#print axioms AdalyFormal.Round9.Guarded.AnalyticR2.dil_Qs_inj
+end AdalyFormal.Round13.Detection

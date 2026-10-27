@@ -1,0 +1,26 @@
+assembled 2 22 1 n 6532 aug 9108 nnz 289882 seconds 2.506971836090088
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r1/numerics/left_q2_R22_p190.json c1 -2.77209622826237508173501482418e-85 K -0.0383278683889973412626542729662 residual/c1 2.44785e-99

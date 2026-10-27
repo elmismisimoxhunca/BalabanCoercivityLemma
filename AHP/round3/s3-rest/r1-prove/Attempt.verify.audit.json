@@ -1,0 +1,44 @@
+{
+  "checks": {
+    "byte_identical_copy": true,
+    "pin_byte_identical_prefix": true,
+    "pin_whitespace_normalized_prefix": true,
+    "round2_dictionary_whitespace_identical": true,
+    "round2_proof_block_byte_identical": true,
+    "sole_import_ZT5A": true,
+    "main_header_exact": true,
+    "main_namespace_exact": true,
+    "no_ambient_variables_or_local_notation": true,
+    "no_duplicate_explicit_declarations": true,
+    "exit_zero": true,
+    "no_errors": true,
+    "all_axioms_allowed": true,
+    "all_prints_accounted_for": true,
+    "every_explicit_declaration_printed": true,
+    "main_print_present": true,
+    "no_forbidden_tokens_raw": true
+  },
+  "all_pass": true,
+  "exitCode": 0,
+  "declarations": 143,
+  "requestedPrints": 143,
+  "dependencyRecords": 143,
+  "warnings": 28,
+  "badAxioms": [],
+  "forbiddenTokens": [],
+  "mainHeader": [
+    "theorem goalPos2_proved : GoalPos2 := by"
+  ],
+  "mainAxioms": [
+    "propext, Classical.choice, Quot.sound"
+  ],
+  "sha256": {
+    "AHP/round3/s3-rest/pin/Statement.lean": "799b0124e2075c575d18c83c68af06e8501f6ee50f9d88b57647d8c2deb9ab3b",
+    "AHP/round3/s3-rest/r1-prove/Attempt.lean": "9aa7238ddbff572aea7b0f0394eb22325280451f46087ec6e99da0f3518ae6a2",
+    "AHP/round3/s3-rest/r1-prove/Attempt.verify.lean": "9aa7238ddbff572aea7b0f0394eb22325280451f46087ec6e99da0f3518ae6a2",
+    "AHP/round3/s3-rest/r1-prove/Attempt.verify.lean.log": "25c714d0d87a315a0db64008db860dd9e285898afc45cda2a6975579c9f7c678",
+    "AHP/round3/s3-rest/r1-prove/Attempt.verify.lean.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "pinBytes": 26607,
+  "attemptBytes": 61934
+}

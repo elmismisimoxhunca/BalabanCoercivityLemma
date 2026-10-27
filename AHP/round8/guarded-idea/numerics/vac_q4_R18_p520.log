@@ -1,0 +1,26 @@
+assembled 4 18 1 n 10756 aug 15012 nnz 492098 seconds 5.07398796081543
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+VAC /home/sebastian/BalabanCoercivityLemma/AHP/round8/guarded-idea/numerics/out/vac_q4_R18_p520_s15_15.json root 0.5593474882146264681 splitting 9.410501715e-276 c1 -4.71991599525234e-127

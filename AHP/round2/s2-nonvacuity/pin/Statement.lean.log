@@ -1,0 +1,28 @@
+AdalyFormal.AHP.Round2.S2Nonvacuity.ProperFourAt (ell m R : ℕ) (a₀ : ℝ) : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.ProperCornerAt (ell m R : ℕ) (a₀ : ℝ) : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos1 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg1 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos2 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg2 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg1_implies_not_goalPos1 : GoalNeg1 → ¬GoalPos1
+AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_implies_not_goalPos2 : GoalNeg2 → ¬GoalPos2
+'AdalyFormal.AHP.Round2.S2Nonvacuity.TouchBond' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.plaqCorner' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ProperFourAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ProperCornerAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg1_implies_not_goalPos1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_implies_not_goalPos2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,107 @@
+{
+  "closedGoal": "none",
+  "file": "AHP/round6/placement-r1/Attempt.lean",
+  "mainDeclaration": "AdalyFormal.Round6.Guarded.PlacementR1.boundary_strip_correction_zero",
+  "mainLine": 2749,
+  "pinVerbatimBytePrefix": true,
+  "round5BridgeVerbatimBytePrefix": true,
+  "soleImport": "DrEquiv",
+  "sourceSha256": "840438cdf7b48ac936939cecae20e6ec5b9f999a0ebb1258241ad3b28755b674",
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "bridgeSha256": "b95973c476baecbdbce5ca1c04c414ae7bfb4388f1bda17a9b4dfb6e0532dd99",
+  "localDeclarations": 158,
+  "allLocalDeclarationsPrinted": true,
+  "allAxiomsAllowed": true,
+  "compileEvidence": {
+    "Attempt.lean": {
+      "exitCode": 0,
+      "warningCount": 0,
+      "dependencyRecords": 178,
+      "logSha256": "cbb7801974ceb731d07bd4e6a4cd4ec6d8b728c0b0a99e46c721070d83fc9dd7",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "Attempt.verify.lean": {
+      "exitCode": 0,
+      "warningCount": 0,
+      "dependencyRecords": 178,
+      "logSha256": "cbb7801974ceb731d07bd4e6a4cd4ec6d8b728c0b0a99e46c721070d83fc9dd7",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "newDeclarations": {
+    "AdalyFormal.Round6.Guarded.PlacementR1.correction_zero_of_flat_near_top": 2423,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementPattern": 2451,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementU": 2455,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_regular": 2460,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_flat_near_top": 2473,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementP": 2496,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_correction_zero": 2502,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_guard_iff_pencil": 2511,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementDefectSite": 2530,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementDefectPlaquette": 2534,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementU_on_base": 2539,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_holonomy": 2546,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_plaq_level0": 2581,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_plaq_in": 2609,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementU_curved": 2615,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementU_nonflat": 2623,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placementU_not_pure_gauge": 2636,
+    "AdalyFormal.Round6.Guarded.PlacementR1.uniform_placement_class_family": 2654,
+    "AdalyFormal.Round6.Guarded.PlacementR1.cofinal_curved_placement_no_separation": 2691,
+    "AdalyFormal.Round6.Guarded.PlacementR1.boundary_strip_correction_zero": 2749,
+    "AdalyFormal.Round6.Guarded.PlacementR1.boundary_strip_guard_iff_pencil": 2780,
+    "AdalyFormal.Round6.Guarded.PlacementR1.placement_pairing_zero": 2793
+  },
+  "numericalRuns": [
+    {
+      "file": "placement_q1_R18_e1e-3_p80.json",
+      "sha256": "022857cae942659dbae5b4ce6823bd34d1cd24d7089cfb147b2d54c0e68c0947",
+      "q": 1,
+      "epsilon": "1e-3",
+      "dps": 80,
+      "peakRSSKiB": 172192,
+      "positivePairing": false,
+      "certified": false
+    },
+    {
+      "file": "placement_q1_R18_e1e-3_p160.json",
+      "sha256": "7193edc97f21c79c187f35191321e66334de3573a0f19279d6f23ede51d8fe0a",
+      "q": 1,
+      "epsilon": "1e-3",
+      "dps": 160,
+      "peakRSSKiB": 169716,
+      "positivePairing": false,
+      "certified": false
+    },
+    {
+      "file": "placement_q2_R18_e1e-100_p160.json",
+      "sha256": "5c89dfdb3600b3d0de82c6cf89cc46b24b1b895d7fa1e6d550dd98d7428d40ca",
+      "q": 2,
+      "epsilon": "1e-100",
+      "dps": 160,
+      "peakRSSKiB": 276144,
+      "positivePairing": false,
+      "certified": false
+    },
+    {
+      "file": "placement_q2_R18_e1e-100_p240.json",
+      "sha256": "23995df978d090a677cc0d75121974ffaa8f4dece69a806281fdc2274d4e3c62",
+      "q": 2,
+      "epsilon": "1e-100",
+      "dps": 240,
+      "peakRSSKiB": 275388,
+      "positivePairing": false,
+      "certified": false
+    }
+  ],
+  "replay": "Byte-identical builder replay; not an independent judge replay.",
+  "obstacle": "The relocated curvature is supported on linear level-zero constraints. The genuine correction is exactly zero; boundary-only masks separated by three sites from Omega1 cannot separate A and A-D. No pinned goal is closed."
+}

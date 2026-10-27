@@ -1,0 +1,187 @@
+{
+  "closedGoal": "none",
+  "file": "AHP/round6/placement-r2/Attempt.lean",
+  "exitCode": -1,
+  "mainDeclaration": "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_correction_formula",
+  "mainLineInFinal": 3193,
+  "mainAxioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "mainCompiledIn": "AHP/round6/placement-r2/HybridCertificate.lean",
+  "mainLineInCompiledFile": 2509,
+  "finalSourceSha256": "8491b44d6a3099798ef494e896107c2aebc553b793f74aaa12fc558c4bbbe967",
+  "pinVerbatim": true,
+  "round5BridgeVerbatim": true,
+  "placementR1Verbatim": true,
+  "newSectionsCopiedVerbatimFromSuccessfulFocusedCompile": true,
+  "finalCompilation": "NO COMPLETION EVIDENCE. Interrupted call was not relaunched; assembled final file was not compiled as a whole.",
+  "interrupted": {
+    "interruptedSourceSha256": "fdbafaeddb2244797223f864e8ee827fcf3f724611f99c3bba2db3ea5af0f7a3",
+    "logSha256": "07cdbfb0af7bb86d4acde81bb5870d9c817bd6a8e978259548e9d394382c2725",
+    "timeoutSeconds": 600,
+    "exitPresent": false,
+    "logBytes": 16384,
+    "status": "Interrupted full-file attempt, no completion file; not relaunched. Separate focused targets compiled later."
+  },
+  "focusedCompilations": {
+    "SourceReduction.lean": {
+      "file": "AHP/round6/placement-r2/SourceReduction.lean",
+      "exitCode": 0,
+      "localDeclarations": 51,
+      "dependencyRecords": 51,
+      "warningCount": 0,
+      "sourceSha256": "dc02298f05baa36ae242220c90d8ca40ff611d457cd25fe277b557b3e2f0c475",
+      "logSha256": "e5b43ff8bd448f91bef82ad3a02a41b71bd78a500b7127367b96c1e59c3250e0"
+    },
+    "HybridCertificate.lean": {
+      "file": "AHP/round6/placement-r2/HybridCertificate.lean",
+      "exitCode": 0,
+      "localDeclarations": 147,
+      "dependencyRecords": 167,
+      "warningCount": 0,
+      "sourceSha256": "222368e4321067368f84719fc682ee161c53db658c51188fe4e4b2ed6cfcef0f",
+      "logSha256": "d2e5617b5fc018d634e14ee5438d1343460eb41509441b7df1f2d863eaef1843"
+    }
+  },
+  "inheritedPriorCompilation": {
+    "file": "AHP/round6/placement-r1/Attempt.lean",
+    "exitCode": 0,
+    "localDeclarations": 158,
+    "dependencyRecords": 178,
+    "warningCount": 0,
+    "sourceSha256": "840438cdf7b48ac936939cecae20e6ec5b9f999a0ebb1258241ad3b28755b674",
+    "logSha256": "cbb7801974ceb731d07bd4e6a4cd4ec6d8b728c0b0a99e46c721070d83fc9dd7"
+  },
+  "finalLocalDeclarations": 180,
+  "allFinalDeclarationsHaveIndividualPrintCommands": true,
+  "dependencyEvidence": "Every declaration has allowed dependencies in a successful focused or prior file; not a final-file compile claim.",
+  "newDeclarations": {
+    "AdalyFormal.Round6.Guarded.PlacementR2.activeField": 2825,
+    "AdalyFormal.Round6.Guarded.PlacementR2.activeSource": 2829,
+    "AdalyFormal.Round6.Guarded.PlacementR2.source_split": 2833,
+    "AdalyFormal.Round6.Guarded.PlacementR2.correction_uses_active_source": 2861,
+    "AdalyFormal.Round6.Guarded.PlacementR2.nonzero_correction_requires_active_source": 2874,
+    "AdalyFormal.Round6.Guarded.PlacementR2.FnuMuLoc_congr_region": 2897,
+    "AdalyFormal.Round6.Guarded.PlacementR2.JfieldLoc_congr_region": 2925,
+    "AdalyFormal.Round6.Guarded.PlacementR2.activeSource_congr_near_top": 2962,
+    "AdalyFormal.Round6.Guarded.PlacementR2.boundary_modification_correction_formula": 2997,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybridMask": 3038,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybridU": 3042,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybridP": 3046,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybridMask_bound": 3050,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_regular": 3057,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_agrees_near_top": 3065,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_boundary_holonomy": 3089,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_core_holonomy": 3115,
+    "AdalyFormal.Round6.Guarded.PlacementR2.uniform_hybrid_class_family": 3143,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_activeSource_independent": 3181,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_correction_formula": 3193,
+    "AdalyFormal.Round6.Guarded.PlacementR2.hybrid_zero_core_correction_zero": 3207,
+    "AdalyFormal.Round6.Guarded.PlacementR2.cofinal_hybrid_class_family": 3220
+  },
+  "numericalCases": [
+    {
+      "q": 1,
+      "R": 18,
+      "epsilon": "1e-3",
+      "sector": [
+        0,
+        0
+      ],
+      "precisions": [
+        100,
+        180
+      ],
+      "pairing": "1.5180746767660055662085e-38",
+      "sign": "positive",
+      "relativeAgreementDigits": 85.31832500781518,
+      "kernelResidualOverAbsolutePairing": "5.95524546887e-143",
+      "leftHalfMass": "1.0",
+      "secondBoundarySchurEigenvalue": "1.78369438417372e-8",
+      "alternativeCorrectedTestForm": "-7.59037338382876e-39",
+      "maximumRSSKiB": 299056,
+      "data": [
+        {
+          "file": "b1_c-1/q1_R18_e1e-3_p100_s0_0.json",
+          "sha256": "8fac50a42852c4ce0f037cfd282c12e40bd7bf08d42877c5e34c2e8247921ae6"
+        },
+        {
+          "file": "b1_c-1/q1_R18_e1e-3_p180_s0_0.json",
+          "sha256": "ee51725f911f6c1ed47226a1b6e7b548de5daf0c11c648fe166b7882b228eedf"
+        }
+      ],
+      "formalCertificate": false,
+      "firstFullCarrierCrossingChecked": false
+    },
+    {
+      "q": 2,
+      "R": 18,
+      "epsilon": "1e-100",
+      "sector": [
+        7,
+        7
+      ],
+      "precisions": [
+        400,
+        500
+      ],
+      "pairing": "-2.71789232427982439943479e-285",
+      "sign": "negative",
+      "relativeAgreementDigits": 296.3227289226077,
+      "kernelResidualOverAbsolutePairing": "3.63306567669e-215",
+      "leftHalfMass": "1.20938373727674e-117",
+      "secondBoundarySchurEigenvalue": "3.0408055750058e-103",
+      "alternativeCorrectedTestForm": "4.07683848641996e-285",
+      "maximumRSSKiB": 765244,
+      "data": [
+        {
+          "file": "b1_c-1/q2_R18_e1e-100_p400_s7_7.json",
+          "sha256": "410866b47d5cc1b7e5c150219dbb4a151230c6e751bc6c098a6bf291e65990ca"
+        },
+        {
+          "file": "b1_c-1/q2_R18_e1e-100_p500_s7_7.json",
+          "sha256": "da9f283388acc0c805dd2098b445041b91d37f54e42785db8de22695c9c1d32d"
+        }
+      ],
+      "formalCertificate": false,
+      "firstFullCarrierCrossingChecked": false
+    },
+    {
+      "q": 2,
+      "R": 18,
+      "epsilon": "1e-220",
+      "sector": [
+        7,
+        7
+      ],
+      "precisions": [
+        500,
+        600
+      ],
+      "pairing": "1.81246810408949136824037e-290",
+      "sign": "positive",
+      "relativeAgreementDigits": 283.0814901031325,
+      "kernelResidualOverAbsolutePairing": "8.06192819964e-311",
+      "leftHalfMass": "0.5",
+      "secondBoundarySchurEigenvalue": "2.11495295144451e-161",
+      "alternativeCorrectedTestForm": "-9.06234052044595e-291",
+      "maximumRSSKiB": 791424,
+      "data": [
+        {
+          "file": "b1_c-1/q2_R18_e1e-220_p500_s7_7.json",
+          "sha256": "9a44eb95aa64fdb57e05957031045def11e200a41d7a9b74655985a549c904bd"
+        },
+        {
+          "file": "b1_c-1/q2_R18_e1e-220_p600_s7_7.json",
+          "sha256": "d9ef4f401b82f3716dd09f279d5103058c826e5a2c151c730a86e379e546623a"
+        }
+      ],
+      "formalCertificate": false,
+      "firstFullCarrierCrossingChecked": false
+    }
+  ],
+  "maximumRSSKiB": 791424,
+  "obstacle": "Hybrid source is exactly unchanged by boundary placement. H and dressed C2 may still change. Selected-sector signs reverse again at tiny amplitude; no all-q,R closed-form sign, initial positivity proof or full-carrier first-crossing dictionary exists. No pinned goal is proved."
+}

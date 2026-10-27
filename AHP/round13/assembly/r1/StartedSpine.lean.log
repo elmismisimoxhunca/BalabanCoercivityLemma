@@ -1,0 +1,407 @@
+'AdalyFormal.Round4.Guarded.RefuteR1.dilLu' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilTower' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilLam' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilPattern' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round5.Guarded.IVTR2.maskedU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.dilMask' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.bulkU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.bulkP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.uθ_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.uθ_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_uθ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rot_bulkU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_dilMask' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dataFam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dilV' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.flatData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.IsSourceDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.half_rotation_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.oriented' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.circulation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.im_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.N' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.Q_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.Ginv_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.source_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.source_of_weak_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.coupling_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.two_site_residual_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.alternating_pair_constraint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.recurrence_fine_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.interiorProfile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkU_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.profileSourceStencil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkSource_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.canonicalSourceStencil' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.canonical_isSourceDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.sourceDerivative_eq_stencil' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacJet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.C2_level_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_top_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.flat_source_of_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_of_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkSource_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.sourceDerivative_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.flatH_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralSource_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralCoord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralSource_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_U1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_neutral_top_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.half_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.half_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.flatQ_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseField' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseField_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseField_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.Q_level_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_level_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseProfile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.adaptive_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.all_profiles_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_interior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.liftJet_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.fixed_of_slope_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.sourceLinear_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileSource_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_U1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Response.quadratic_on_charged_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Response.norm_sq_on_charged_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Response.response_eq_norm_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Response.response_ne_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Response.unit_response_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AnM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AnFam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.double_inner_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.profileCoupling_quad' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.responseGradient_on_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.responseHull_singleton' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.noCancellation_iff_curlDetected_of_kernelLine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.all_kernel_detected_of_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.zeroJet_not_crossing_of_detected_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.ResponseActual.cofinal_noCancellation_of_curlLine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R3.CofinalAnyPathCurlLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.KernelLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_concentrates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.opposite_character_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.no_flip_eigenvector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.charged_span_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_eq_charged_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.boundary_observable_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.charged_of_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.kernelBoundaryEquiv' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.oneColor_not_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.kernelLine_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.crossing_coordinate_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.chargedCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.vacA_rot_of_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.uθ_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.chargedCoordinate_quarter_twice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.kernelLine_of_boundary_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge_singular_without_isolation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/assembly/r1/StartedSpine.lean:2788:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'AdalyFormal.Round12.Kernel.Crossing.psdEdge_same_after_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Crossing.exists_kernel_of_nonunit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.CrossingActual.kernelLine_exists_before_halfpi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AnM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AnFam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starLinks' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_cont' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_an' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starLinks_exterior' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_off_exterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_normal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.star_holonomy1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.star_holonomy2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.star_negative_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_cont' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_an' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.pathU_rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.dilU_rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.cofinal_rightStar_paths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/assembly/r1/StartedSpine.lean:3393:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/assembly/r1/StartedSpine.lean:3393:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/assembly/r1/StartedSpine.lean:3398:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/assembly/r1/StartedSpine.lean:3398:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/assembly/r1/StartedSpine.lean:3406:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/assembly/r1/StartedSpine.lean:3406:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'AdalyFormal.Round13.Assembly.R1.P1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.P2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.StartInputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.CofinalRightStarCurlLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.rightStar_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.detected_line_of_physicalInputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.cofinalRightStarCurlLine_of_physicalInputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.cofinalAnyPathCurlLine_of_rightStar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_rightStar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_physicalInputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.CofinalPhysicalInputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.cofinalRightStarCurlLine_of_cofinalPhysical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_cofinalPhysical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.rightStar_vacA_cont' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.rightStar_vacA_pd_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.startInputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_P1_P2_P3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

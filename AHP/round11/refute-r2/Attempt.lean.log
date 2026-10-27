@@ -1,0 +1,76 @@
+Round3.S1Proper.plaqCorner {L : PeriodicLatticeExtent} (S : Set (PeriodicLatticeSite L)) :
+  Set (PeriodicLatticePlaquette L)
+Round3.S1Proper.TouchBond {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L)) (b : Bond L) : Prop
+Round3.S1Proper.CoversPlaqFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) : Prop
+Round3.S1Proper.CurlReadsTouch {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L))
+  (x : PeriodicLatticeSite L) (a b : Fin 3) : Prop
+Round3.S1Proper.PerCubeRegularTouch {L : PeriodicLatticeExtent} (ell M f k : ℕ) (S : Tower L) (α₀ η : ℝ)
+  (U : LinkCfg L) : Prop
+Round3.S1Proper.ClassCoupledFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) (α₀ η : ℝ) (U : LinkCfg L) :
+  Prop
+Round3.S1Proper.selCorner : PlaqSel
+Round3.S1Proper.P428TouchFour : Prop
+Round3.S1Proper.GoalPos1 : Prop
+Round3.S1Proper.GoalNeg1 : Prop
+'Round3.S1Proper.plaqCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.TouchBond' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.CoversPlaqFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.ClassCoupledFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.selCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.P428TouchFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+Round7.S1Odd.P428TouchFourAt (ell : ℕ) (hell : 2 ≤ ell) (a : ℝ) : Prop
+Round7.S1Odd.Goal1 : Prop
+Round7.S1Odd.Goal2 : Prop
+'Round7.S1Odd.P428TouchFourAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round7.S1Odd.Goal1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round7.S1Odd.Goal2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.GoalAllA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.GoalLargeA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.edge_not_touch_of_not_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.deltaKLocCLM_eq_univ_of_zero_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.deltaKLocCLM_corner_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.corner_Dpi_eq_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.corner_Ginv_eq_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.mass_le_of_high_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.nvN_even' depends on axioms: [propext]
+'Round11.Refute.neg_one_succ_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.checkerSign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.checkerSign_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.checkerSign_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.checkerAmp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.checkerAmp_bd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.checkerAmp_skew' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.Refute.side_of_uniform' depends on axioms: [propext, Quot.sound]
+'Round11.Refute.exists_nonunit_path_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.four_touch_cubeBond_of_transverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.slabNv_transverse' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.slabNv_coversFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.perCubeRegularTouch_of_one_on_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.Uth_one_on_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.Uth_perCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.exists_nonunit_corner_Ginv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.GoalWindowSqrt5Closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.window_sqrt5_closed_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.not_touchFour_every_ell_le_sqrt5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.not_touchFour_every_ell_le_rational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixed_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.radical_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.Fth_pi_bound_sqrt5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.exists_nonunit_sqrt5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.RMap_Uth_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.hol_Uth_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.plaq_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.plaq_pi_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixed_curl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixed_curl_transverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixed_delta_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.collar_locality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixedField' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixedField_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.bd_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixed_locality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.mixed_inner' depends on axioms: [propext, Classical.choice, Quot.sound]

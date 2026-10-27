@@ -1,0 +1,13 @@
+[
+  {
+    "path": "AHP/round10/shared/dictionary/R4_ColorSelection.lean",
+    "entireFile": true,
+    "sha256": "a8ac7ec7f04812c8c4f5bc5b5224e8088387e1dfd14743bed5deccfe8b425404"
+  },
+  {
+    "path": "AHP/round10/shared/dictionary/R4_ColorResponse.lean",
+    "start": "theorem half_pauliE1",
+    "end": "theorem oneColor_charged",
+    "sha256": "47cf0534a140bad7c1411fff3649fd54e0f460534dbde62c4d374da6ff9d226c"
+  }
+]

@@ -1,0 +1,48 @@
+assembled 2 20 1 n 5956 aug 8308 nnz 255146 seconds 1.5782513618469238
+ORBIT (0, 0) size 1 remaining 63 seconds 11.418732166290283
+assembled 2 20 1 n 5956 aug 8308 nnz 277322 seconds 2.1522600650787354
+ORBIT (0, 1) size 4 remaining 59 seconds 29.79486608505249
+assembled 2 20 1 n 5956 aug 8308 nnz 271946 seconds 2.294879674911499
+ORBIT (0, 2) size 4 remaining 55 seconds 48.1468825340271
+assembled 2 20 1 n 5956 aug 8308 nnz 262202 seconds 2.212191581726074
+ORBIT (0, 3) size 4 remaining 51 seconds 65.71298384666443
+assembled 2 20 1 n 5956 aug 8308 nnz 257834 seconds 2.163489580154419
+ORBIT (0, 4) size 2 remaining 49 seconds 82.89198350906372
+assembled 2 20 1 n 5956 aug 8308 nnz 292778 seconds 2.4982547760009766
+ORBIT (1, 1) size 4 remaining 45 seconds 103.39692854881287
+assembled 2 20 1 n 5956 aug 8308 nnz 290090 seconds 2.5701980590820312
+ORBIT (1, 2) size 8 remaining 37 seconds 124.29558634757996
+assembled 2 20 1 n 5956 aug 8308 nnz 282026 seconds 2.5904595851898193
+ORBIT (1, 3) size 8 remaining 29 seconds 144.898864030838
+assembled 2 20 1 n 5956 aug 8308 nnz 278330 seconds 2.5525364875793457
+ORBIT (1, 4) size 4 remaining 25 seconds 165.755047082901
+assembled 2 20 1 n 5956 aug 8308 nnz 282698 seconds 2.6322431564331055
+ORBIT (2, 2) size 4 remaining 21 seconds 185.95644855499268
+assembled 2 20 1 n 5956 aug 8308 nnz 275978 seconds 2.5524489879608154
+ORBIT (2, 3) size 8 remaining 13 seconds 206.25710201263428
+assembled 2 20 1 n 5956 aug 8308 nnz 272282 seconds 2.499631881713867
+ORBIT (2, 4) size 4 remaining 9 seconds 226.0954511165619
+assembled 2 20 1 n 5956 aug 8308 nnz 266234 seconds 2.4794726371765137
+ORBIT (3, 3) size 4 remaining 5 seconds 245.63834810256958
+assembled 2 20 1 n 5956 aug 8308 nnz 262202 seconds 2.5197198390960693
+ORBIT (3, 4) size 4 remaining 1 seconds 265.5747859477997
+assembled 2 20 1 n 5956 aug 8308 nnz 258506 seconds 2.422945261001587
+ORBIT (4, 4) size 1 remaining 0 seconds 284.88086557388306
+SUMMARY {
+  "q": 2,
+  "R": 20,
+  "dps": 40,
+  "root": "0.61875940172739258203948621112494835",
+  "charged_low": [
+    "-7.2263877106261612258152458810078525e-41",
+    "0.80387754974442755866838021832849314",
+    "1.0719116559582733488515957847251788",
+    "1.273795859120555970837007647995357"
+  ],
+  "flat_resolvent_absolute_residual": "1.3775511262226853773492309357181596e-40",
+  "compressed_resolvent_hermitian_error": "0.58195909736762342930314725223609778",
+  "boundary_null_residual": "4.9742882749035546513750086804473065e-40",
+  "seconds": 285.05162715911865,
+  "peak_rss_KiB": 540900,
+  "qualification": "Non-interval numerical evidence only; D4 orbit reduction of full flat augmented resolvent."
+}

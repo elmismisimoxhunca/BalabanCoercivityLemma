@@ -1,0 +1,100 @@
+'AdalyFormal.Round12.Noncancel.Star.pairForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.tripleForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_middle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.pair_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.pair_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.star_mass_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.trace_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.trace_kernel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.kernel_line_of_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.positive_on_trace_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.starTrialEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.starTrial_null' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Star.starTrial_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.chargedMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.realHol' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.imagHol' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.charged_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.first_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.comm_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.curl_atoms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.Plaquette.frozen_two_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.full_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.full_first_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.full_comm_atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_right' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.full_pair_mass_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.FullPlaquette.full_star_mass_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.rowZero' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.Qfull_rowZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.collar_levelZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.carrier_leaf_mass_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.mass_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.potential_zero_off_om1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.gradAdj_sing_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Tfull_sing_zero_near' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Wop_sing_near' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.delta_form_sum_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.plaqEnergy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.carrier_form_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.localized_Dpi_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.carrier_ge_scaled_local' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.carrier_ge_scaled_local_leaves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Positivity.carrier_positive_of_absorption' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Positivity.full_pair_loss_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.full_star_loss_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.omitted_loss_of_arm_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Positivity.cos_prefix_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.zero_central_arm_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.halfpi_no_strict_mass_fraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Positivity.plaqEnergy_congr_field' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.omittedEnergy_eq_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.localized_positive_of_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Positivity.physical_positive_of_leaf_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Positivity.frozen_right_zero_first_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Positivity.frozen_right_zero_third_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Positivity.omitted_loss_of_injective_arms' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,87 @@
+bb heavy: all 2 slots busy; waiting for one of:
+  thr_h22iw6yg55 (0m): lake env lean ../AHP/round2/s2-nonvacuity/r1-prove/Attempt.lean
+  thr_h22iw6yg55 (0m): lake env lean ../AHP/round2/s2-nonvacuity/r1-refute/Attempt.lean
+Round2.S1.P428TouchConsistent : Prop
+Round2.S1.TouchCoverageCollapse : Prop
+Round2.S1.P428Target8Extreme : Prop
+Round2.S1.P428Target8Shell : Prop
+Round2.S1.GoalPos1 : Prop
+Round2.S1.GoalNeg1 : Prop
+Round2.S1.GoalPos2 : Prop
+Round2.S1.GoalNeg2 : Prop
+Round2.S1.GoalPos3 : Prop
+Round2.S1.GoalNeg3 : Prop
+'Round2.S1.TouchBond' depends on axioms: [propext, Quot.sound]
+'Round2.S1.plaqCorner' depends on axioms: [propext, Quot.sound]
+'Round2.S1.CoversPlaqCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'Round2.S1.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ClassCoupledCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.selCorner' depends on axioms: [propext, Quot.sound]
+'Round2.S1.P428TouchConsistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ExtremeBase' does not depend on any axioms
+'Round2.S1.P428Target8Extreme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.TouchCoverageCollapse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ReadBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CurlReadsRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.PerCubeRegularShell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ClassCoupledShell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.P428Target8Shell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg3' depends on axioms: [propext, Classical.choice, Quot.sound]
+Round2.S1.goalPos1_proved : GoalPos1
+Round2.S1.goalPos2_proved : GoalPos2
+'Round2.S1.cubeBond_of_touch_of_selector_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.shift_mem_iff_of_selector_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.extreme_of_selector_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.coverage_collapse_nested' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchCoverageCollapse_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.corner_eq_inside_of_extreme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.instIneq_corner_iff_extreme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.target8Extreme_of_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchConsistent_of_extreme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchConsistent_iff_extreme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.goalPos2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.M2RightInv.p428Target8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Balaban.U1AnchorPoincare.eq_of_shiftInvariant' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.StatementLaneR8.shift_ne' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.StatementLaneR8.shift_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.pin_genForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CubeBond.toTouch' depends on axioms: [propext, Quot.sound]
+'Round2.S1.TouchBond.endpoints' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerA' does not depend on any axioms
+'Round2.S1.cornerB' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerC' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerD' depends on axioms: [propext, Quot.sound]
+'Round2.S1.coord_shift_ne' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerD_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.mem_siteBox_iff' does not depend on any axioms
+'Round2.S1.boundary_is_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeAB_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeBD_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeCD_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeAC_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.square_edges_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.siteBox_fill_of_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.siteBox_fill_of_antidiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.opposite_of_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchCover_all_corners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchCover_cubeBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CurlReads.toTouch' depends on axioms: [propext, Quot.sound]
+'Round2.S1.PerCubeRegularTouch.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.om_sub_om0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.classCube_sub_om0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.corner_cover_inside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.corner_eq_inside_of_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CoversPlaqCorner.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ClassCoupledCorner.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.dataS_congr_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.G1invS_congr_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.genFormS_congr_at' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.instIneq_corner_iff_of_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchConsistent_of_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.goalPos1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]

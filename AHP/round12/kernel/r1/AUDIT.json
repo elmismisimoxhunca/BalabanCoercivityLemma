@@ -1,0 +1,147 @@
+{
+  "files": [
+    {
+      "file": "AHP/round12/kernel/r1/KernelStructure.lean",
+      "sha256": "2045c1aa7da0736e826c0fb6fcd2bdfa793a5c0a4b91f88cf5ff99779537506e",
+      "lines": 208,
+      "imports": [
+        "D1IVT"
+      ],
+      "exit": "0",
+      "axiom_records": 11,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "new_records": [
+        "AdalyFormal.Round12.Kernel.kernel_concentrates",
+        "AdalyFormal.Round12.Kernel.opposite_character_disjoint",
+        "AdalyFormal.Round12.Kernel.no_flip_eigenvector",
+        "AdalyFormal.Round12.Kernel.charged_span_finrank",
+        "AdalyFormal.Round12.Kernel.kernel_eq_charged_span",
+        "AdalyFormal.Round12.Kernel.boundary_observable_injective",
+        "AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary",
+        "AdalyFormal.Round12.Kernel.charged_of_boundary",
+        "AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary",
+        "AdalyFormal.Round12.Kernel.kernelBoundaryEquiv",
+        "AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary"
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    },
+    {
+      "file": "AHP/round12/kernel/r1/ActualKernel.lean",
+      "sha256": "374f196e2a5ff24604d121c336725d58ef54009d738e56155d21be5f6be547f8",
+      "lines": 1820,
+      "imports": [
+        "DrEquiv"
+      ],
+      "exit": "0",
+      "axiom_records": 107,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "new_records": [
+        "AdalyFormal.Round12.Kernel.kernel_concentrates",
+        "AdalyFormal.Round12.Kernel.opposite_character_disjoint",
+        "AdalyFormal.Round12.Kernel.no_flip_eigenvector",
+        "AdalyFormal.Round12.Kernel.charged_span_finrank",
+        "AdalyFormal.Round12.Kernel.kernel_eq_charged_span",
+        "AdalyFormal.Round12.Kernel.boundary_observable_injective",
+        "AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary",
+        "AdalyFormal.Round12.Kernel.charged_of_boundary",
+        "AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary",
+        "AdalyFormal.Round12.Kernel.kernelBoundaryEquiv",
+        "AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary",
+        "AdalyFormal.Round12.Kernel.Actual.oneColor_not_crossing",
+        "AdalyFormal.Round12.Kernel.Actual.kernelLine_finrank",
+        "AdalyFormal.Round12.Kernel.Actual.crossing_coordinate_ne_zero",
+        "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate",
+        "AdalyFormal.Round12.Kernel.Actual.vacA_rot_of_fixed",
+        "AdalyFormal.Round12.Kernel.Actual.u\u03b8_add",
+        "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate_quarter_twice",
+        "AdalyFormal.Round12.Kernel.Actual.kernelLine_of_boundary_positive"
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    },
+    {
+      "file": "AHP/round12/shared/kernel/R1_ActualKernel.lean",
+      "sha256": "374f196e2a5ff24604d121c336725d58ef54009d738e56155d21be5f6be547f8",
+      "lines": 1820,
+      "imports": [
+        "DrEquiv"
+      ],
+      "exit": "0",
+      "axiom_records": 107,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "new_records": [
+        "AdalyFormal.Round12.Kernel.kernel_concentrates",
+        "AdalyFormal.Round12.Kernel.opposite_character_disjoint",
+        "AdalyFormal.Round12.Kernel.no_flip_eigenvector",
+        "AdalyFormal.Round12.Kernel.charged_span_finrank",
+        "AdalyFormal.Round12.Kernel.kernel_eq_charged_span",
+        "AdalyFormal.Round12.Kernel.boundary_observable_injective",
+        "AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary",
+        "AdalyFormal.Round12.Kernel.charged_of_boundary",
+        "AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary",
+        "AdalyFormal.Round12.Kernel.kernelBoundaryEquiv",
+        "AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary",
+        "AdalyFormal.Round12.Kernel.Actual.oneColor_not_crossing",
+        "AdalyFormal.Round12.Kernel.Actual.kernelLine_finrank",
+        "AdalyFormal.Round12.Kernel.Actual.crossing_coordinate_ne_zero",
+        "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate",
+        "AdalyFormal.Round12.Kernel.Actual.vacA_rot_of_fixed",
+        "AdalyFormal.Round12.Kernel.Actual.u\u03b8_add",
+        "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate_quarter_twice",
+        "AdalyFormal.Round12.Kernel.Actual.kernelLine_of_boundary_positive"
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    }
+  ],
+  "copy_checks": [
+    {
+      "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R2_SourceGlue.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R2_SourceGlue.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R2_SourceGlue.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/dictionary/R4_ColorResponse.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    }
+  ],
+  "dictionary_prefix_verbatim": true,
+  "generic_body_verbatim": true,
+  "shared_byte_identical": true,
+  "pass": true
+}

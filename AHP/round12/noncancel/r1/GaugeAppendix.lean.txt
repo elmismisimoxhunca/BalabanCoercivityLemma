@@ -1,0 +1,108 @@
+
+namespace AdalyFormal.Round12.Noncancel.Gauge
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLane2
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.GaugeCov
+open AdalyFormal.Balaban.AlphaAnalyticity (GaugeFn)
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Round12.Noncancel.Path
+
+/- Verbatim frozen-operator covariance argument from R1_Dictionary.lean. -/
+theorem Ginv_all_gauge {ell k : ℕ} {Lu : PeriodicLatticeExtent} (hell : 0 < ell)
+    (S : Tower (scaleUp ell k Lu)) (U : LinkCfg (scaleUp ell k Lu)) (a : ℝ)
+    (Lam : Set (PeriodicLatticeSite Lu)) (γ : GaugeFn (scaleUp ell k Lu))
+    (x : ↥(bondSupp (geomOf ell k S))) :
+    (dataS selAll selAll (gparams ell k Lu hell S (periodicGaugeTransform γ U) a Lam)).Ginv
+        (adEL γ (geomOf ell k S) x) =
+      adEL γ (geomOf ell k S) ((dataS selAll selAll (gparams ell k Lu hell S U a Lam)).Ginv x) := by
+  have hB := bondEqv_gauge (gparams ell k Lu hell S U a Lam) γ
+  have hD := hB.baseEqv
+  have hW : ∀ z, Wop (geomOf ell k S) (periodicGaugeTransform γ U) a (adBL γ z) =
+      adBL γ (Wop (geomOf ell k S) U a z) := fun z => hB.W z
+  have hΔ : ∀ z, AdalyFormal.StatementLaneR6.deltaKLocCLM (periodicGaugeTransform γ U) Set.univ
+      (adBL γ z) = adBL γ (AdalyFormal.StatementLaneR6.deltaKLocCLM U Set.univ z) :=
+    fun z => deltaKLocCLM_gauge γ U Set.univ z
+  have hDp : ∀ z, DpiFullS selAll (geomOf ell k S) (periodicGaugeTransform γ U) a (adBL γ z) =
+      adBL γ (DpiFullS selAll (geomOf ell k S) U a z) := by
+    intro z
+    simp only [DpiFullS, DeltaS, selAll, ContinuousLinearMap.comp_apply]
+    rw [hW, hΔ]
+    exact adjoint_intertwine (adBL γ) (adBL γ) hW _
+  have hDpi : (dataS selAll selAll (gparams ell k Lu hell S (periodicGaugeTransform γ U) a Lam)).Dpi
+      (adEL γ (geomOf ell k S) x) =
+      adEL γ (geomOf ell k S) ((dataS selAll selAll (gparams ell k Lu hell S U a Lam)).Dpi x) := by
+    show pE (geomOf ell k S) (DpiFullS selAll (geomOf ell k S) (periodicGaugeTransform γ U) a
+        (iE (geomOf ell k S) (adEL γ (geomOf ell k S) x))) =
+      adEL γ (geomOf ell k S) (pE (geomOf ell k S)
+        (DpiFullS selAll (geomOf ell k S) U a (iE (geomOf ell k S) x)))
+    rw [iE_adEL, hDp, pE_adBL]
+  have hT : (dataS selAll selAll (gparams ell k Lu hell S (periodicGaugeTransform γ U) a Lam)).T
+      (adEL γ (geomOf ell k S) x) =
+      adSL γ ((dataS selAll selAll (gparams ell k Lu hell S U a Lam)).T x) := hD.T x
+  have hTs : ∀ s, (dataS selAll selAll (gparams ell k Lu hell S (periodicGaugeTransform γ U) a
+      Lam)).Ts (adSL γ s) =
+      adEL γ (geomOf ell k S) ((dataS selAll selAll (gparams ell k Lu hell S U a Lam)).Ts s) :=
+    hD.Ts
+  have hM : (dataS selAll selAll (gparams ell k Lu hell S (periodicGaugeTransform γ U) a Lam)).Mass
+      (adEL γ (geomOf ell k S) x) =
+      adEL γ (geomOf ell k S) ((dataS selAll selAll (gparams ell k Lu hell S U a Lam)).Mass x) :=
+    hD.Mass x
+  simp only [BaseDataS.Ginv, add_apply, ContinuousLinearMap.comp_apply]
+  rw [hDpi, hT, hTs, hM, map_add, map_add]
+
+theorem uθ_comm (α s : ℝ) : uθ α * uθ s = uθ s * uθ α := by
+  apply Subtype.ext
+  show uMat α * uMat s = uMat s * uMat α
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [uMat, Matrix.mul_apply, Fin.sum_univ_two, mul_comm]
+
+theorem starPath_fixed {L : PeriodicLatticeExtent}
+    (x : PeriodicLatticeSite L) (t α : ℝ) :
+    periodicGaugeTransform (fun _ => uθ α) (starPath x t) = starPath x t := by
+  funext e
+  change uθ α * starPath x t e * (uθ α)⁻¹ = starPath x t e
+  by_cases he : e ∈ starLinks x
+  · simp only [starPath,he,if_true]
+    rw [uθ_comm, mul_assoc, mul_inv_cancel, mul_one]
+  · simp [starPath,he]
+
+theorem star_all_comm {ell k : ℕ} {Lu : PeriodicLatticeExtent} (hell : 0 < ell)
+    (S : Tower (scaleUp ell k Lu)) (x : PeriodicLatticeSite (scaleUp ell k Lu))
+    (a : ℝ) (Lam : Set (PeriodicLatticeSite Lu)) (t α : ℝ)
+    (u : ↥(bondSupp (geomOf ell k S))) :
+    (dataS selAll selAll (gparams ell k Lu hell S (starPath x t) a Lam)).Ginv
+      (adEL (fun _ => uθ α) (geomOf ell k S) u) =
+      adEL (fun _ => uθ α) (geomOf ell k S)
+        ((dataS selAll selAll (gparams ell k Lu hell S (starPath x t) a Lam)).Ginv u) := by
+  have h := Ginv_all_gauge hell S (starPath x t) a Lam (fun _ => uθ α) u
+  rwa [starPath_fixed] at h
+
+/-- For this ACTUAL star operator, only trace-zero positivity and a nonzero kernel
+vector are needed. Neither hypothesis is asserted at the actual first crossing. -/
+theorem star_kernel_line {ell k : ℕ} {Lu : PeriodicLatticeExtent} (hell : 0 < ell)
+    (S : Tower (scaleUp ell k Lu)) (x : PeriodicLatticeSite (scaleUp ell k Lu))
+    (b : Bond (scaleUp ell k Lu)) (a : ℝ) (Lam : Set (PeriodicLatticeSite Lu)) (t : ℝ)
+    (hp : ∀ u, Trace.bondTrace (geomOf ell k S) b u = 0 → u ≠ 0 →
+      0 < ⟪u, (dataS selAll selAll (gparams ell k Lu hell S (starPath x t) a Lam)).Ginv u⟫)
+    (u₀ : ↥(bondSupp (geomOf ell k S)))
+    (hu₀ : (dataS selAll selAll (gparams ell k Lu hell S (starPath x t) a Lam)).Ginv u₀ = 0)
+    (hne : u₀ ≠ 0) :
+    Trace.quarter (geomOf ell k S) (Trace.quarter (geomOf ell k S) u₀) = -u₀ ∧
+      ∀ u, (dataS selAll selAll (gparams ell k Lu hell S (starPath x t) a Lam)).Ginv u = 0 →
+        u ∈ Submodule.span ℝ {u₀, Trace.quarter (geomOf ell k S) u₀} :=
+  Trace.physical_kernel_line (geomOf ell k S) b _
+    (star_all_comm hell S x a Lam t (Real.pi/4)) hp u₀ hu₀ hne
+
+#print axioms Ginv_all_gauge
+#print axioms uθ_comm
+#print axioms starPath_fixed
+#print axioms star_all_comm
+#print axioms star_kernel_line
+end AdalyFormal.Round12.Noncancel.Gauge

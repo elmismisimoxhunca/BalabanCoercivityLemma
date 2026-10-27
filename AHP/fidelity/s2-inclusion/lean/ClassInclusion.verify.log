@@ -1,0 +1,14 @@
+'AdalyFormal.AHP.FidelS2Inclusion.touchCover_cubeBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.CoversPlaqFour.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.CoversPlaqCorner.toFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.PerCubeRegularTouch.toFrozen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.ClassCoupledFour.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.ClassCoupledCorner.toFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.ClassCoupledCorner.toFrozen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.targetFour_of_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.targetCorner_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.targetCorner_of_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]

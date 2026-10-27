@@ -1,0 +1,4435 @@
+{
+  "compiles": [
+    {
+      "path": "AHP/round12/kernel/r2/BoundaryDressing.lean",
+      "lines": 91,
+      "imports": [
+        "DrEquiv"
+      ],
+      "sha256": "4b9b1fe733307ae20135aa78af9b52f212018ddcda42366b74f78f5e7baa0885",
+      "log_sha256": "cb1c97d5b5f7cba7a12fe2676644e02e6c9be6e1f2f92ff8b30bfd8ef4317c8c",
+      "exit": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "axiom_count": 6,
+      "records": [
+        {
+          "name": "AdalyFormal.Round12.Kernel.Boundary.NQp_vanish",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Boundary.gaugePotential_off",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Boundary.Wop_apply_off",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Boundary.off_one_of_close",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Boundary.Wop_apply_close",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Boundary.Wop_apply_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round12/kernel/r2/LineResponse.lean",
+      "lines": 94,
+      "imports": [
+        "DrEquiv"
+      ],
+      "sha256": "e58b02a0afe72b4991d7225a74caa2bf79353e10b4c0f4599509236f90084bbe",
+      "log_sha256": "22aee4d3146844c1169ee606893a70c97f74a40cfa51b2cb68db1267a7c4db53",
+      "exit": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "axiom_count": 5,
+      "records": [
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.quadratic_on_charged_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.norm_sq_on_charged_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.response_eq_norm_ratio",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.response_ne_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.unit_response_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round12/kernel/r2/ActualResponse.lean",
+      "lines": 2107,
+      "imports": [
+        "DrEquiv"
+      ],
+      "sha256": "dbad5f2268a5d46b66f1f8f96852432813ea3517289baf4d88db4d80491b854a",
+      "log_sha256": "4eaf7f0506680eb11de39c3c9bb358ced07703ccc91edca693ed1b0b2a7c2c0a",
+      "exit": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "axiom_count": 151,
+      "records": [
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLu",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilTower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLam",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilPattern",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round5.Guarded.IVTR2.maskedU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.Qualitative.dilMask",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkP",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_conj",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_u\u03b8",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_bulkU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_dilMask",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dataFam",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dilV",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.flatData",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.IsSourceDerivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_rotation_matrix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.im_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.N",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.Q_H",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.Ginv_H",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.source_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.source_of_weak_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.coupling_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.two_site_residual_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.alternating_pair_constraint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.recurrence_fine_residuals",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.interiorProfile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkU_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.profileSourceStencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.canonicalSourceStencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.canonical_isSourceDerivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_eq_stencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacJet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.C2_level_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_top_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.flat_source_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.flatH_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralCoord",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_neutral_top_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.half_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.half_average",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.flatQ_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseField",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseField_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseField_Q",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.Q_level_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_level_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.all_profiles_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_off",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.liftJet_Q",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.fixed_of_slope_limit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.sourceLinear_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.quadratic_on_charged_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.norm_sq_on_charged_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.response_eq_norm_ratio",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.response_ne_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.unit_response_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.double_inner_linear",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.profileCoupling_quad",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.responseGradient_on_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.responseHull_singleton",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.noCancellation_iff_curlDetected_of_kernelLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.all_kernel_detected_of_generator",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.zeroJet_not_crossing_of_detected_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.cofinal_noCancellation_of_curlLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Assembly.R3.CofinalAnyPathCurlLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Assembly.R2.KernelLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round12/kernel/r2/ActualCrossing.lean",
+      "lines": 2060,
+      "imports": [
+        "DrEquiv"
+      ],
+      "sha256": "11eb1086b9c6b0f1434e3729abcdae395807e746e135ef1d2fda40e712d928a6",
+      "log_sha256": "d9c387f4124b90aee1d5210505959c84f163405e3d9a689d1400aa1e801cd01c",
+      "exit": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "axiom_count": 111,
+      "records": [
+        {
+          "name": "AdalyFormal.Round10.Dictionary.comm_of_quad",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.deriv_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.real_sector_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.opposite_charge_cross_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.kernel_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.involution_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.involution_kernel_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Ginv_all_gauge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.localized_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.all_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.correction_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.H_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.C2_equivariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.localCorrection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.correction_deriv_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.no_canonical_radius_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phaseCfg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.diagonalGauge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.u\u03b8_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phaseCfg_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_all_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_localized_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_correction_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_deriv_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_rotation_matrix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_RMap_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_carrier_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.carrier_neutral_charged_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_kernel_neutral_charged_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.siteTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bondTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.translation_shift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bondPullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.sitePullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.plaqTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.cfgPullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bondPullback_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.sitePullback_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.plaqTranslation_apply",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.grad_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.div_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.lap_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.siteMask_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.curl_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.holonomy_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bilPlaq_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.raw_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.normalized_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.curl_form_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.deltaK_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.deltaK_all_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation_apply",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation_apply",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_shift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_tower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_bondsOm0",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_Zb",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_mem",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslationIsometry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_parity",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_parity",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_dilPattern",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twistU_twoSite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twist_holonomy_twoSite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_inner",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_commute",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_period",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_exact_symmetry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.bulkD_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1_form",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_no_charge_cross",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.bulkB_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.vacuum_kernel_charge_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.twist_deltaK_twoSite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_concentrates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.opposite_character_disjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.no_flip_eigenvector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.charged_span_finrank",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_eq_charged_span",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.boundary_observable_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.charged_of_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernelBoundaryEquiv",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.oneColor_not_crossing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.kernelLine_finrank",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.crossing_coordinate_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.vacA_rot_of_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.u\u03b8_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate_quarter_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.kernelLine_of_boundary_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge_singular_without_isolation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Crossing.psdEdge_same_after_negative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Crossing.exists_kernel_of_nonunit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.CrossingActual.kernelLine_exists_before_halfpi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round12/shared/kernel/R2_ResponseLine.lean",
+      "lines": 2107,
+      "imports": [
+        "DrEquiv"
+      ],
+      "sha256": "dbad5f2268a5d46b66f1f8f96852432813ea3517289baf4d88db4d80491b854a",
+      "log_sha256": "4eaf7f0506680eb11de39c3c9bb358ced07703ccc91edca693ed1b0b2a7c2c0a",
+      "exit": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "axiom_count": 151,
+      "records": [
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLu",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilTower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLam",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilPattern",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round5.Guarded.IVTR2.maskedU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.Qualitative.dilMask",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkP",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_conj",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_u\u03b8",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_bulkU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_dilMask",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dataFam",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dilV",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.flatData",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.AnalyticR2.IsSourceDerivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_rotation_matrix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.im_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.N",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.Q_H",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.Ginv_H",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.source_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.source_of_weak_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.coupling_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.two_site_residual_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.alternating_pair_constraint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.KKT.recurrence_fine_residuals",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.interiorProfile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkU_phase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.profileSourceStencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.canonicalSourceStencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.canonical_isSourceDerivative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_eq_stencil",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacJet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.C2_level_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_top_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.flat_source_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_of_certificate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.flatH_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralCoord",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_component",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_neutral_top_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.half_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.half_average",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.flatQ_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseField",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseField_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseField_Q",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.Q_level_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_level_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.all_profiles_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_off",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_interior",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.liftJet_Q",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.fixed_of_slope_limit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.sourceLinear_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileSource_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.quadratic_on_charged_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.norm_sq_on_charged_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.response_eq_norm_ratio",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.response_ne_zero_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Response.unit_response_image",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.double_inner_linear",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.profileCoupling_quad",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.responseGradient_on_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.responseHull_singleton",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.noCancellation_iff_curlDetected_of_kernelLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.all_kernel_detected_of_generator",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.zeroJet_not_crossing_of_detected_line",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.ResponseActual.cofinal_noCancellation_of_curlLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Assembly.R3.CofinalAnyPathCurlLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Assembly.R2.KernelLine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    },
+    {
+      "path": "AHP/round12/shared/kernel/R2_FirstCrossing.lean",
+      "lines": 2060,
+      "imports": [
+        "DrEquiv"
+      ],
+      "sha256": "11eb1086b9c6b0f1434e3729abcdae395807e746e135ef1d2fda40e712d928a6",
+      "log_sha256": "55ba5307b741269225958bf5e51d1c9daf06a009b29dc7e9eb1a290af49c1511",
+      "exit": 0,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "axiom_count": 111,
+      "records": [
+        {
+          "name": "AdalyFormal.Round10.Dictionary.comm_of_quad",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.deriv_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.real_sector_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.opposite_charge_cross_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.kernel_invariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.involution_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.involution_kernel_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Ginv_all_gauge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.localized_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.all_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.correction_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.H_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.C2_equivariant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.localCorrection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.correction_deriv_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.no_canonical_radius_dilation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phaseCfg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.diagonalGauge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.u\u03b8_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phaseCfg_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_all_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_localized_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_correction_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_deriv_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_rotation_matrix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_RMap_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.half_carrier_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.carrier_neutral_charged_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.phase_kernel_neutral_charged_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.siteTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bondTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.translation_shift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bondPullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.sitePullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.plaqTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.cfgPullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bondPullback_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.sitePullback_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.plaqTranslation_apply",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.grad_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.div_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.lap_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.siteMask_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.curl_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.holonomy_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.bilPlaq_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.raw_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.normalized_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.curl_form_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.deltaK_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Translation.deltaK_all_comm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation_apply",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation_apply",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_shift",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_tower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_bondsOm0",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_Zb",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_mem",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslationIsometry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_parity",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_parity",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_dilPattern",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twistU_twoSite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twist_holonomy_twoSite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_inner",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_commute",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_period",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_exact_symmetry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.bulkD_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1_form",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_no_charge_cross",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.bulkB_U1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.vacuum_kernel_charge_split",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.Actual.twist_deltaK_twoSite",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_concentrates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.opposite_character_disjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.no_flip_eigenvector",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.charged_span_finrank",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_eq_charged_span",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.boundary_observable_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.charged_of_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernelBoundaryEquiv",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.oneColor_not_crossing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.kernelLine_finrank",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.crossing_coordinate_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.vacA_rot_of_fixed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.u\u03b8_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate_quarter_twice",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Actual.kernelLine_of_boundary_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge_singular_without_isolation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Crossing.psdEdge_same_after_negative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.Crossing.exists_kernel_of_nonunit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round12.Kernel.CrossingActual.kernelLine_exists_before_halfpi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "forbidden_tokens": [],
+      "errors": [],
+      "fresh": true,
+      "pass": true
+    }
+  ],
+  "copies": [
+    {
+      "source": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round12/kernel/r1/ActualKernel.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round12/kernel/r1/ActualKernel.lean",
+      "part": "prefix",
+      "hash_matches": true,
+      "present_verbatim": true
+    },
+    {
+      "source": "AHP/round9/qualitative-r2/Attempt.lean",
+      "part": "helpers",
+      "hash_matches": true,
+      "present_verbatim": true
+    }
+  ],
+  "shared_byte_identical": {
+    "ActualResponse.lean": true,
+    "ActualCrossing.lean": true
+  },
+  "new_generic_response_body_verbatim": true,
+  "qualification": "Only conditional geometric implications and actual response identities; no cofinal premise or GoalNeg2 proof.",
+  "pass": true
+}

@@ -1,0 +1,179 @@
+{
+  "summary": [
+    {
+      "q": 1,
+      "characters": 16,
+      "distinct_XZ": 9,
+      "source_repair_count": 0,
+      "dominant_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "dominant_detA": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "dominant_closed_form": "det(A)=1/329; det(A)^-1=329"
+    },
+    {
+      "q": 2,
+      "characters": 64,
+      "distinct_XZ": 25,
+      "source_repair_count": 0,
+      "dominant_detA_inverse": {
+        "expression": "331 + (-54)*zeta^1 + (54)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            3,
+            "54"
+          ]
+        ]
+      },
+      "dominant_detA": {
+        "expression": "331/103729 + (54/103729)*zeta^1 + (-54/103729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            1,
+            "54/103729"
+          ],
+          [
+            3,
+            "-54/103729"
+          ]
+        ]
+      },
+      "dominant_closed_form": "det(A)^-1=331-54*sqrt(2); det(A)=(331+54*sqrt(2))/103729"
+    },
+    {
+      "q": 4,
+      "characters": 256,
+      "distinct_XZ": 81,
+      "source_repair_count": 4,
+      "dominant_detA_inverse": {
+        "expression": "331 + (-54)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (54)*zeta^7",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "54"
+          ]
+        ]
+      },
+      "dominant_detA": {
+        "expression": "34339469/10749959329 + (5723190/10749959329)*zeta^1 + (849805/10749959329)*zeta^2 + (121716/10749959329)*zeta^3 + (-121716/10749959329)*zeta^5 + (-849805/10749959329)*zeta^6 + (-5723190/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "5723190/10749959329"
+          ],
+          [
+            2,
+            "849805/10749959329"
+          ],
+          [
+            3,
+            "121716/10749959329"
+          ],
+          [
+            5,
+            "-121716/10749959329"
+          ],
+          [
+            6,
+            "-849805/10749959329"
+          ],
+          [
+            7,
+            "-5723190/10749959329"
+          ]
+        ]
+      },
+      "dominant_closed_form": "u=sqrt(2+sqrt(2)); det(A)^-1=329+u^2-54*u=331+sqrt(2)-54*u; det(A)=1/(331+sqrt(2)-54*u)",
+      "qsqrt2_obstruction": "The nonzero coefficient -54 on u and u^2=2+sqrt(2) would force u in Q(sqrt(2)) if det(A)^-1 were in Q(sqrt(2)). But u=sqrt(2+sqrt(2)) has degree 4 over Q. Thus this dominant q=4 determinant is not in Q(sqrt(2))."
+    }
+  ],
+  "leading_amplitude_bounded_search": [
+    {
+      "q": 1,
+      "K_R40": "0.013361206893163350347922853212791184761977075727611479605501179451",
+      "basis": [
+        "1",
+        "sqrt(2)",
+        "K"
+      ],
+      "coefficient_bound": 1000000000,
+      "tol": "1e-45",
+      "relation": null,
+      "interpretation": "No small Q(sqrt2) relation was found if relation is null. This bounded floating-point search is not a proof of nonexistence and is not an exact amplitude formula."
+    },
+    {
+      "q": 2,
+      "K_R40": "0.0019184541381844317668645407795820411190356630723843760966048050193",
+      "basis": [
+        "1",
+        "sqrt(2)",
+        "K"
+      ],
+      "coefficient_bound": 1000000000,
+      "tol": "1e-45",
+      "relation": null,
+      "interpretation": "No small Q(sqrt2) relation was found if relation is null. This bounded floating-point search is not a proof of nonexistence and is not an exact amplitude formula."
+    },
+    {
+      "q": 4,
+      "K_R40": "0.00016537005858587852282109042094267766531758433271716630894373698531",
+      "basis": [
+        "1",
+        "sqrt(2)",
+        "K"
+      ],
+      "coefficient_bound": 1000000000,
+      "tol": "1e-45",
+      "relation": null,
+      "interpretation": "No small Q(sqrt2) relation was found if relation is null. This bounded floating-point search is not a proof of nonexistence and is not an exact amplitude formula."
+    }
+  ],
+  "determinant_record_count": 115,
+  "peak_rss_KiB": 35580
+}

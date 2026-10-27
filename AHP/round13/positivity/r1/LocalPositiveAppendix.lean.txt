@@ -1,0 +1,65 @@
+
+namespace AdalyFormal.Round13.Positivity.Local
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round12.Noncancel.Path
+open AdalyFormal.Round2.Guarded.Pin
+
+/-- The localized data are EXACTLY flat at every angle of this right star. -/
+theorem rightStar_local_data_flat {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (a t : ℝ) :
+    dataS selIn selIn (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+      (rightStar hq R t) a (dilLam q R)) =
+    dataS selIn selIn (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+      (fun _ => 1) a (dilLam q R)) := by
+  let P := gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+    (fun _ => 1) a (dilLam q R)
+  have hroom : 17*2 ≤ R*(2*q) := by nlinarith
+  have hbd := rightSite_bd hq R
+  have hboth : ∀ e : Bond (scaleUp 2 1 (dilLu q R)),
+      BothIn ((dilTower q R).Om 0) e → P.U e = rightStar hq R t e := by
+    intro e he
+    symm
+    exact starPath_interior _ _ hbd.hx' hbd.trans t e he.1
+  exact AdalyFormal.StatementLaneR8.data_congr P (dil_admissible hq hR)
+    (by norm_num) hroom (rightStar hq R t) hboth
+
+/-- Unconditional localized strict positivity for every q>0, even R>=18 and
+EVERY real angle. This is the localized carrier, not the all-plaquette P2 claim. -/
+theorem rightStar_local_positive {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (t : ℝ) (x : ↥(bondSupp (geomOf 2 1 (dilTower q R)))) (hx : x ≠ 0) :
+    0 < ⟪x, (dataS selIn selIn (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+      (rightStar hq R t) 1 (dilLam q R))).Ginv x⟫ := by
+  rw [rightStar_local_data_flat hq hR hR18]
+  exact AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos hq (by omega) x hx
+
+/-- Nested cofinal localized positivity, not a reversed forall/exists order. -/
+theorem cofinal_rightStar_local_positive :
+    ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+      R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      ∀ t : ℝ, ∀ x : ↥(bondSupp (geomOf 2 1 (dilTower (2^j) R))), x ≠ 0 →
+        0 < ⟪x, (dataS selIn selIn (gparams 2 1 (dilLu (2^j) R) (by norm_num)
+          (dilTower (2^j) R) (rightStar (by positivity) R t) 1
+          (dilLam (2^j) R))).Ginv x⟫ := by
+  intro j₀
+  refine ⟨j₀,le_rfl,?_⟩
+  intro R₀
+  let R := 2*(R₀+18)
+  have hR : 2 ∣ R := ⟨R₀+18,rfl⟩
+  have hR18 : 18 ≤ R := by dsimp [R]; omega
+  refine ⟨R,by dsimp [R]; omega,hR,hR18,?_⟩
+  intro t x hx
+  exact rightStar_local_positive (by positivity) hR hR18 t x hx
+
+set_option pp.fullNames true
+#print axioms rightStar_local_data_flat
+#print axioms rightStar_local_positive
+#print axioms cofinal_rightStar_local_positive
+end AdalyFormal.Round13.Positivity.Local

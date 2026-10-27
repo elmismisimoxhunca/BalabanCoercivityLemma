@@ -1,0 +1,3 @@
+'AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_fderiv2_qStep' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

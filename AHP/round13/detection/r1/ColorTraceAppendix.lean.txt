@@ -1,0 +1,53 @@
+
+namespace AdalyFormal.Round13.Detection.ColorTrace
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.GaugeCov
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 RMap RMap_coe_apply)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.Round9.Guarded.QualitativeR2 (flipElt)
+open AdalyFormal.Round10.Dictionary.Color
+open AdalyFormal.Round10.Dictionary.ColorObstruction
+
+/-- Arbitrary spatial variation in a single charged color is killed by the actual
+flat dressed jet. This includes fields with nonzero traces on many layers. -/
+theorem flatJet_zero_of_pointwise_color {L : PeriodicLatticeExtent}
+    (G : TowerGeom L) (a : ℝ) (u : ↥(bondSupp G)) (f : Bond L → ℝ)
+    (hf : ∀ b, (u : BondFnL2 L) b = f b • pauliE1) : flatJet G a u = 0 := by
+  have hh : halfE G u = -u := by
+    apply Subtype.ext
+    apply PiLp.ext
+    intro b
+    change RMap (AdalyFormal.D1Literal.uθ (Real.pi/2)) ((u : BondFnL2 L) b) =
+      -((u : BondFnL2 L) b)
+    rw [hf b, map_smul, half_pauliE1, smul_neg]
+  have hw : flipE G u = -u := by
+    apply Subtype.ext
+    apply PiLp.ext
+    intro b
+    change RMap flipElt ((u : BondFnL2 L) b) = -((u : BondFnL2 L) b)
+    rw [hf b, map_smul, flip_pauliE1, smul_neg]
+  exact flatJet_single_color_zero G a u hh (Or.inr hw)
+
+/-- A nonzero trace does not repair that obstruction: the field is nonzero but
+its full physical flat jet is zero, under the displayed pointwise-color condition.
+No claim places such a field in the right-star crossing kernel. -/
+theorem nonzero_trace_with_zero_jet {L : PeriodicLatticeExtent}
+    (G : TowerGeom L) (a : ℝ) (u : ↥(bondSupp G)) (f : Bond L → ℝ)
+    (hf : ∀ b, (u : BondFnL2 L) b = f b • pauliE1)
+    (b : Bond L) (hb : f b ≠ 0) : u ≠ 0 ∧ flatJet G a u = 0 := by
+  refine ⟨?_, flatJet_zero_of_pointwise_color G a u f hf⟩
+  intro hu
+  have hz : f b • pauliE1 = 0 := by
+    rw [← hf b, hu]
+    rfl
+  have he : pauliE1 = 0 := (smul_eq_zero.mp hz).resolve_left hb
+  have hn := hsInner_e1_e1
+  rw [he] at hn
+  norm_num [hsInner] at hn
+
+#print axioms flatJet_zero_of_pointwise_color
+#print axioms nonzero_trace_with_zero_jet
+end AdalyFormal.Round13.Detection.ColorTrace

@@ -1,0 +1,46 @@
+AdalyFormal.AHP.Round2.S2Nonvacuity.ProperFourAt (ell m R : ℕ) (a₀ : ℝ) : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.ProperCornerAt (ell m R : ℕ) (a₀ : ℝ) : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos1 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg1 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos2 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg2 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg1_implies_not_goalPos1 : GoalNeg1 → ¬GoalPos1
+AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_implies_not_goalPos2 : GoalNeg2 → ¬GoalPos2
+'AdalyFormal.AHP.Round2.S2Nonvacuity.TouchBond' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.plaqCorner' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ProperFourAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.ProperCornerAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg1_implies_not_goalPos1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_implies_not_goalPos2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AdalyFormal.AHP.Round7.S2Odd.Goal1 : Prop
+AdalyFormal.AHP.Round7.S2Odd.Goal2 : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.ProperFourAt (ell m R : ℕ) (a₀ : ℝ) : Prop
+AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledFour {L : Target.ClayStatement.PeriodicLatticeExtent} (ell M c k : ℕ)
+  (S : StatementLane.Tower L) (α₀ η : ℝ) (U : Balaban.CoercUMainDesigned.LinkCfg L) : Prop
+AdalyFormal.StatementLane.TorusOK (ell M : ℕ) (Lu : Target.ClayStatement.PeriodicLatticeExtent) : Prop
+AdalyFormal.StatementLane.Admissible {L : Target.ClayStatement.PeriodicLatticeExtent} (ell M R k : ℕ)
+  (S : StatementLane.Tower L) : Prop
+AdalyFormal.StatementLaneG.LambdaOK2 {Lu Lf : Target.ClayStatement.PeriodicLatticeExtent} (ell M R k : ℕ)
+  (S : StatementLane.Tower Lf) (Lam : Set (Target.ClayStatement.PeriodicLatticeSite Lu)) : Prop
+AdalyFormal.StatementLane.OnLambdaTildeIn {Lu : Target.ClayStatement.PeriodicLatticeExtent}
+  (Lam : Set (Target.ClayStatement.PeriodicLatticeSite Lu)) (ell : ℕ)
+  (B : Balaban.AdmissibleSubspace.Bond Lu → ↥Balaban.CovariantOperators.SuTwo) : Prop
+AdalyFormal.StatementLane2.OnLambdaT {Lu : Target.ClayStatement.PeriodicLatticeExtent}
+  (Lam : Set (Target.ClayStatement.PeriodicLatticeSite Lu))
+  (B : Balaban.AdmissibleSubspace.Bond Lu → ↥Balaban.CovariantOperators.SuTwo) : Prop
+'AdalyFormal.AHP.Round7.S2Odd.Goal1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round7.S2Odd.Goal2' depends on axioms: [propext, Classical.choice, Quot.sound]

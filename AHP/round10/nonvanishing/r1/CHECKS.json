@@ -1,0 +1,389 @@
+{
+  "status": "conditional-infrastructure-only",
+  "goalNeg2_proved": false,
+  "distinct_source_files": 3,
+  "distinct_declarations": 27,
+  "independently_compiled_files": 6,
+  "byte_identical_handoffs": true,
+  "pass": true,
+  "files": [
+    {
+      "file": "AHP/round10/nonvanishing/r1/SourceDominance.lean",
+      "sha256": "c982e97c5b60a402d75593af0f7277a9cd94849fd2359aff213bb98ada681559",
+      "declarations": 15,
+      "checks": {
+        "exit_zero": true,
+        "only_frozen_import": true,
+        "no_forbidden_tokens": true,
+        "no_errors_or_warnings": true,
+        "standard_axioms_only": true,
+        "every_declaration_printed": true,
+        "record_count_matches": true,
+        "timestamps_current": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.left": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourceWeight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sum_left_abs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sum_right_abs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.neighbor_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.source_l1_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_decompose": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourceWeight_zero_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_same_sign": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.BlockSourceData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.coupling_ne_zero_of_blockSourceData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/shared/nonvanishing/R1_SourceDominance.lean",
+      "sha256": "c982e97c5b60a402d75593af0f7277a9cd94849fd2359aff213bb98ada681559",
+      "declarations": 15,
+      "checks": {
+        "exit_zero": true,
+        "only_frozen_import": true,
+        "no_forbidden_tokens": true,
+        "no_errors_or_warnings": true,
+        "standard_axioms_only": true,
+        "every_declaration_printed": true,
+        "record_count_matches": true,
+        "timestamps_current": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.left": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourceWeight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sum_left_abs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sum_right_abs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.neighbor_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.source_l1_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_decompose": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourceWeight_zero_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_same_sign": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.BlockSourceData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.coupling_ne_zero_of_blockSourceData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/nonvanishing/r1/RecurrenceNonvanishing.lean",
+      "sha256": "d5384411a01d1a646f6035cbe159bd6dbc3918d7c1e96b74a7f78a69de221757",
+      "declarations": 7,
+      "checks": {
+        "exit_zero": true,
+        "only_frozen_import": true,
+        "no_forbidden_tokens": true,
+        "no_errors_or_warnings": true,
+        "standard_axioms_only": true,
+        "every_declaration_printed": true,
+        "record_count_matches": true,
+        "timestamps_current": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.recurrence_zero_tail_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.recurrence_eq_zero_of_zero_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.recurrence_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.RadiusRecurrenceData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.radius_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.dyadic_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.mathlib_recurrence_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/shared/nonvanishing/R1_RecurrenceNonvanishing.lean",
+      "sha256": "d5384411a01d1a646f6035cbe159bd6dbc3918d7c1e96b74a7f78a69de221757",
+      "declarations": 7,
+      "checks": {
+        "exit_zero": true,
+        "only_frozen_import": true,
+        "no_forbidden_tokens": true,
+        "no_errors_or_warnings": true,
+        "standard_axioms_only": true,
+        "every_declaration_printed": true,
+        "record_count_matches": true,
+        "timestamps_current": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.recurrence_zero_tail_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.recurrence_eq_zero_of_zero_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.recurrence_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.RadiusRecurrenceData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.radius_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.dyadic_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.mathlib_recurrence_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/nonvanishing/r1/TransferNonvanishing.lean",
+      "sha256": "e7b1514878c58e8f20b07fce502cf5a087c9e9461c40e88279ed15def340d464",
+      "declarations": 5,
+      "checks": {
+        "exit_zero": true,
+        "only_frozen_import": true,
+        "no_forbidden_tokens": true,
+        "no_errors_or_warnings": true,
+        "standard_axioms_only": true,
+        "every_declaration_printed": true,
+        "record_count_matches": true,
+        "timestamps_current": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.invariant_backward": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_eq_zero_of_zero_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_quotient_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_progression_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/shared/nonvanishing/R1_TransferNonvanishing.lean",
+      "sha256": "e7b1514878c58e8f20b07fce502cf5a087c9e9461c40e88279ed15def340d464",
+      "declarations": 5,
+      "checks": {
+        "exit_zero": true,
+        "only_frozen_import": true,
+        "no_forbidden_tokens": true,
+        "no_errors_or_warnings": true,
+        "standard_axioms_only": true,
+        "every_declaration_printed": true,
+        "record_count_matches": true,
+        "timestamps_current": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.invariant_backward": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_eq_zero_of_zero_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_quotient_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_progression_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ]
+}

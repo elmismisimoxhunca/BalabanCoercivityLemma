@@ -1,0 +1,16 @@
+'AdalyFormal.Round10.Assembly.R4.responseHull' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.R4.separator_of_notMem_responseHull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R4.notMem_responseHull_of_separator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R4.norm_square_lower_of_unit_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R4.common_coercive_iff_notMem_responseHull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R4.response_ne_zero_of_notMem_responseHull' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

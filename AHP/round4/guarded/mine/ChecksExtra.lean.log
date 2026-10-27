@@ -1,0 +1,62 @@
+AdalyFormal.OneGap.BallChartsAtG {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} (ell M k : ℕ)
+  (S : AdalyFormal.StatementLane.Tower L) (U : AdalyFormal.Balaban.CoercUMainDesigned.LinkCfg L) (C α₀ η : ℝ) : Prop
+'AdalyFormal.OneGap.BallChartsAtG' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.OneGap.BallChartsG : Prop
+'AdalyFormal.OneGap.BallChartsG' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.ClassJets.classSmall_exists (ell : ℕ) :
+  ∃ a₀, 0 < a₀ ∧ ∀ (a : ℝ), 0 ≤ a → a ≤ a₀ → AdalyFormal.ClassJets.ClassSmall ell a
+'AdalyFormal.ClassJets.classSmall_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.D1Literal.InstIneqSG (sD sJ : AdalyFormal.D1Literal.PlaqSel) (ell k : ℕ) (hell : 0 < ell) (a : ℝ)
+  (Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent) (γ₀ : ℝ)
+  (S : AdalyFormal.StatementLane.Tower (AdalyFormal.StatementLane.scaleUp ell k Lu))
+  (Lam : Set (AdalyFormal.Target.ClayStatement.PeriodicLatticeSite Lu))
+  (U : AdalyFormal.Balaban.CoercUMainDesigned.LinkCfg (AdalyFormal.StatementLane.scaleUp ell k Lu)) : Prop
+'AdalyFormal.D1Literal.InstIneqSG' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.D1Literal.CoercG8AtSG (sD sJ : AdalyFormal.D1Literal.PlaqSel) (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ)
+  (Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent) (c : ℕ) (α₀ γ₀ : ℝ) : Prop
+'AdalyFormal.D1Literal.CoercG8AtSG' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.D1Literal.P428Target8SG (sD sJ : AdalyFormal.D1Literal.PlaqSel) : Prop
+'AdalyFormal.D1Literal.P428Target8SG' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.OneGap.FieldsKAt (ell : ℕ) (hell : 0 < ell) (a : ℝ) (df M R k : ℕ)
+  (Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent) (K : ℝ)
+  (S : AdalyFormal.StatementLane.Tower (AdalyFormal.StatementLane.scaleUp ell k Lu))
+  (Lam : Set (AdalyFormal.Target.ClayStatement.PeriodicLatticeSite Lu))
+  (U : AdalyFormal.Balaban.CoercUMainDesigned.LinkCfg (AdalyFormal.StatementLane.scaleUp ell k Lu)) (α₀ : ℝ) : Prop
+'AdalyFormal.OneGap.FieldsKAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.OneGap.FieldsK (ell : ℕ) (hell : 0 < ell) (a : ℝ) : Prop
+'AdalyFormal.OneGap.FieldsK' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.OneGap.fieldsK_of_ball (hB : AdalyFormal.OneGap.BallCharts) {ell : ℕ} (hell : 2 ≤ ell) (a : ℝ)
+  (ha : 0 < a) : AdalyFormal.OneGap.FieldsK ell ⋯ a
+'AdalyFormal.OneGap.fieldsK_of_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.M2OpLayer.ClassRightInv : Prop
+'AdalyFormal.M2OpLayer.ClassRightInv' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.M2OpLayer.OpLayerThick : Prop
+'AdalyFormal.M2OpLayer.OpLayerThick' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.M2OpLayer.ClassRightInvCov : Prop
+'AdalyFormal.M2OpLayer.ClassRightInvCov' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.M2Skel.ClassFam (ell : ℕ) (Cs : Type) (Q : ℕ → ℕ → Cs → Prop)
+  (P :
+    ℕ →
+      ℕ →
+        (k : ℕ) →
+          (Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent) →
+            Cs →
+              AdalyFormal.StatementLane.Tower (AdalyFormal.StatementLane.scaleUp ell k Lu) →
+                Set (AdalyFormal.Target.ClayStatement.PeriodicLatticeSite Lu) →
+                  AdalyFormal.Balaban.CoercUMainDesigned.LinkCfg (AdalyFormal.StatementLane.scaleUp ell k Lu) →
+                    ℝ → Prop) :
+  Prop
+'AdalyFormal.M2Skel.ClassFam' depends on axioms: [propext, Classical.choice, Quot.sound]
+ORIGIN|AdalyFormal.OneGap.BallChartsAtG|BallCharts
+ORIGIN|AdalyFormal.OneGap.BallChartsG|BallCharts
+ORIGIN|AdalyFormal.ClassJets.classSmall_exists|CJ4
+ORIGIN|AdalyFormal.D1Literal.InstIneqSG|D2Cons
+ORIGIN|AdalyFormal.D1Literal.CoercG8AtSG|D2Cons
+ORIGIN|AdalyFormal.D1Literal.P428Target8SG|D2Cons
+ORIGIN|AdalyFormal.OneGap.FieldsKAt|OG8
+ORIGIN|AdalyFormal.OneGap.FieldsK|OG8
+ORIGIN|AdalyFormal.OneGap.fieldsK_of_ball|OG9
+ORIGIN|AdalyFormal.M2OpLayer.ClassRightInv|OL11
+ORIGIN|AdalyFormal.M2OpLayer.OpLayerThick|OL11
+ORIGIN|AdalyFormal.M2OpLayer.ClassRightInvCov|OL15
+ORIGIN|AdalyFormal.M2Skel.ClassFam|SK1

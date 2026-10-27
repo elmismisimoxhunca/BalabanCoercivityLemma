@@ -1,0 +1,156 @@
+AdalyFormal.Round2.S3Pin.PrintedFirstTerm (P : IngrBParams) (r : Reading) (B : UnitB P) : ℝ
+AdalyFormal.Round2.S3Pin.AdmissibleConfiguration (P : IngrBParams) : Prop
+AdalyFormal.Round2.S3Pin.AdmissibleB (P : IngrBParams) (B : UnitB P) : Prop
+AdalyFormal.Round2.S3Pin.InversesExist (P : IngrBParams) (r : Reading) : Prop
+AdalyFormal.Round2.S3Pin.GoalPos1 : Prop
+AdalyFormal.Round2.S3Pin.GoalNeg1 : Prop
+AdalyFormal.Round2.S3Pin.GoalPos2 : Prop
+AdalyFormal.Round2.S3Pin.GoalNeg2 : Prop
+'AdalyFormal.Round2.S3Pin.PrintedCjBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedCBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedFirstTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleConfiguration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.InversesExist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg1_implies_not_GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg2_implies_not_GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.RatioWitness_no_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:405:30: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:406:4: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:412:15: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:418:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:418:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:457:32: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:457:63: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:458:4: warning: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:458:35: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:468:28: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:468:59: warning: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:469:36: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:542:45: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:551:59: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:581:45: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:592:23: warning: This simp argument is unused:
+  starRingEnd_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [map_smul, s̵t̵a̵r̵R̵i̵n̵g̵E̵n̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵star_trivial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:592:42: warning: This simp argument is unused:
+  star_trivial
+
+Hint: Omit it from the simp argument list.
+  simp only [map_smul, starRingEnd_apply,̵ ̵s̵t̵a̵r̵_̵t̵r̵i̵v̵i̵a̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:614:45: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:642:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:686:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:693:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:693:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:704:29: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:707:15: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:710:29: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:726:56: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:744:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+'AdalyFormal.Round2.S3Pin.ring_inverse_eq_of_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.inverse_smul'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.mesh_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.mesh_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.pow_ell_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.spacing_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDs_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedLap_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQpa_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDelp_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedR_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedGp_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedW_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedCjBil_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedC_plain_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedC_plain_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedHC_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedFirstTerm_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.InversesExist_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQ_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQs_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedT_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDpi_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.metric_mass_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedMass_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedGinv_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedN0_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedH_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedJ_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.e_inner_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.e_inner_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil_diag_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedN_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.physical_schur_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedB_eq_tau_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.firstTerm_eq_printed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.goalPos1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalPos2_iff_GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.goalPos2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]

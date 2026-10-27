@@ -1,0 +1,614 @@
+lean/src/GdGen8.lean:30:theorem WellDefAt_loc_of_inst (ell k : ℕ) (hell : 0 < ell) (a : ℝ) (ha : 0 ≤ a) (Lu : PeriodicLatticeExtent) (γ₀ : ℝ) (hγ : 0 < γ₀)
+lean/src/GdGen8.lean:41:theorem nv_SG_iff_G1inv_unit (sJ : PlaqSel) (hsJ : ∀ (L : PeriodicLatticeExtent) (G : TowerGeom L), plaqIn G.Om0 ⊆ sJ L G) :
+lean/src/GdAlg.lean:27:theorem dirichlet_value {M : E →L[ℝ] E} (hM : IsUnit M) {Q : E →L[ℝ] F} {Qs : F →L[ℝ] E}
+lean/src/GdAlg.lean:43:theorem dirichlet_min {M : E →L[ℝ] E} (hs : ∀ x y, ⟪M x, y⟫ = ⟪x, M y⟫) (hM : IsUnit M) {Q : E →L[ℝ] F} {Qs : F →L[ℝ] E}
+lean/src/GdAlg.lean:64:theorem compare_inverse_forms {M₁ M₂ : E →L[ℝ] E} (hM₁ : IsUnit M₁)
+lean/src/GdGen9.lean:29:/-- if the localised data are NOT well defined, the localised inequality forces every admissible test field to have zero energy, and then the literal inequality is trivial. -/
+lean/src/GdGen9.lean:62:/-- **the residual**: at a printed-class configuration with well-defined localised data, `IsUnit Ginv → IsUnit G1inv` for the literal selectors. -/
+lean/src/DrPath2.lean:40:theorem Delta2_congr_data {E S F : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [NormedAddCommGroup S]
+lean/src/DrPath2.lean:63:theorem Delta2_loc_const (t : ℝ) :
+lean/src/DrPath2.lean:69:theorem G1invS_loc_const (t : ℝ) :
+lean/src/DrPath2.lean:77:theorem WellDefAt_loc_const (t : ℝ) (h0 : WellDefAt selIn selIn (Ppt hell0 S a Lam U 0)) :
+lean/src/GdFam.lean:30:theorem G1invS_eq_Ginv_theta {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (hell : 0 < P.ell) (h3 : 3 ≤ R * M) (θ : ℝ)
+lean/src/GdFam.lean:35:theorem GapAt_theta_iff {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (hell : 0 < P.ell) (h3 : 3 ≤ R * M) (θ : ℝ)
+lean/src/GdGap2.lean:42:theorem Ginv_psd_flat (sD sJ : PlaqSel) (ha : 0 ≤ a) :
+lean/src/GdGap2.lean:102:theorem ginv_form_le (D1 D2 : BaseDataS E S F) (hT : D1.T = D2.T) (hM : D1.Mass = D2.Mass) (w : E)
+lean/src/GdGap2.lean:125:theorem Ginv_form_mono_flat (sJ sJ' : PlaqSel) (w : ↥(bondSupp (Pth ell k Lu hell0 S a Lam 0).G)) :
+lean/src/GdGap2.lean:137:theorem Q_level0_coord (sD sJ : PlaqSel) (P : IngrBParams) (x : ↥(bondSupp P.G)) (β : Bond P.Lf)
+lean/src/DrPath4.lean:52:theorem exterior_path_separation_unit (hcont : ContFam U) (hWD0 : WellDefAt selIn selIn (Ppt hell0 S a Lam U 0))
+lean/src/DrBracket.lean:22:theorem isUnit_of_coercive (F : E →L[ℝ] E) {c : ℝ} (hc : 0 < c) (hco : ∀ x, c * ‖x‖ ^ 2 ≤ ⟪x, F x⟫) : IsUnit F := by
+lean/src/DrBracket.lean:50:/-- CONTROL: with `Δ = 0` the hypotheses of the bracketing lemma contradict each other (coercivity at `T` against a negative direction of `M T - Δ`);
+lean/src/DrPath3.lean:5:The three operators along the path are given a constant carrier `E0 := bondSupp (geomOf ell k S)` by definition (`GinvLit`, `G1Lit`, `DeltaLoc0`),
+lean/src/DrPath3.lean:35:noncomputable def GinvLit {ell k : ℕ} {Lu : PeriodicLatticeExtent} (hell0 : 0 < ell) (S : Tower (scaleUp ell k Lu)) (a : ℝ)
+lean/src/DrPath3.lean:69:theorem GinvLit_cont (hcont : ContFam U) : Continuous (GinvLit hell0 S a Lam U) := by
+lean/src/DrPath3.lean:85:theorem G1Lit_eq (hWD0 : WellDefAt selIn selIn (Ppt hell0 S a Lam U 0)) (t : ℝ)
+lean/src/DrPath3.lean:95:semidefinite and `Ginv_lit(T) - Delta2_loc` has a negative direction, then at some `t < T` the configuration `U t` is in class (if `U 0` is),
+lean/src/DrPath3.lean:97:theorem exterior_path_separation (hcont : ContFam U) (hWD0 : WellDefAt selIn selIn (Ppt hell0 S a Lam U 0))
+lean/src/DrBracket2.lean:4:# DrBracket2 -- the sign-free bracketing lemma: it needs `M t` to be a UNIT on `[ta, tb]` (not coercive from `0`), so it covers both signs of the coupling.
+lean/src/DrBracket2.lean:32:theorem pencil_bracket_unit_of_coercive (M : ℝ → (E →L[ℝ] E)) (Δ : E →L[ℝ] E) (hc : Continuous M)
+lean/src/DLR92.lean:97:theorem ginv_nW_FF (I : GinvHyp S E Y P B) : I.nW = FF.nW I.c I.δD I.δQ I.m I.q I.cG := rfl
+lean/src/DLR92.lean:98:theorem ginv_δCW_FF (I : GinvHyp S E Y P B) : I.δCW = FF.δCW I.c I.δD I.δQ I.m I.q I.cG I.δC I.κ I.δK := rfl
+lean/src/DLR92.lean:99:theorem ginv_EG_FF (I : GinvHyp S E Y P B) :
+lean/src/DLR58.lean:39:theorem LocRep.J_local_bound (h : LocRep V η A a1 a2 InC) (x : PeriodicLatticeSite L) (μ : Fin 3) (a3 : ℝ)
+lean/src/DLR81.lean:41:theorem dataDelta2_eq :
+lean/src/DLR81.lean:66:theorem dataG1inv_eq :
+lean/src/DLR81.lean:136:noncomputable def ginv1M0 (ell k : ℕ) (Lu : PeriodicLatticeExtent) (U : Cfg (scaleUp ell k Lu)) (a t e q0 : ℝ)
+lean/src/DLR81.lean:154:theorem ginv1M0_eq (ell k : ℕ) (Lu : PeriodicLatticeExtent) (U : Cfg (scaleUp ell k Lu)) (a t e q0 : ℝ)
+lean/src/GdStat.lean:73:theorem TwoData.H_eq (h : TwoData D1 D2 V Z) (u1 : IsUnit D1.Ginv) (u2 : IsUnit D2.Ginv)
+lean/src/GdStat.lean:83:theorem TwoData.Delta2_eq (h : TwoData D1 D2 V Z) (hL1 : D1.Laws) (hL2 : D2.Laws) (u1 : IsUnit D1.Ginv) (u2 : IsUnit D2.Ginv)
+lean/src/GdStat.lean:101:theorem TwoData.G1inv_eq_on (h : TwoData D1 D2 V Z) (hL1 : D1.Laws) (hL2 : D2.Laws) (u1 : IsUnit D1.Ginv) (u2 : IsUnit D2.Ginv)
+lean/src/GdStat.lean:109:theorem TwoData.N1inv_H1_eq (h : TwoData D1 D2 V Z) (hL1 : D1.Laws) (hL2 : D2.Laws) (u1 : IsUnit D1.Ginv) (u2 : IsUnit D2.Ginv)
+lean/src/DLR80.lean:28:def pert (I : GinvHyp S E Y P B) (M : E →L[ℝ] E) (νM δM : ℝ) (hνM : 0 ≤ νM) (hδM : 0 ≤ δM)
+lean/src/DLR80.lean:78:theorem pert_Ginv :
+lean/src/DLR80.lean:109:theorem pert_form_lower (f : E) :
+lean/src/DLR47.lean:83:theorem Ginv_upper (v : E) :
+lean/src/GdGapAll.lean:35:theorem GapAt_twist (sJ : PlaqSel) {ell M R k : ℕ} {Lu : PeriodicLatticeExtent} (hell0 : 0 < ell)
+lean/src/DLR38.lean:111:noncomputable def ginv : GinvHyp Z0 Z0 Z0 Z0 Z0 :=
+lean/src/DLR38.lean:120:noncomputable def EGM0 (ell : ℕ) (a ρ θ : ℝ) (h : CondM0 ell a ρ θ) : ℝ := h.ginv.EG
+lean/src/DX6.lean:32:def DLayerObligationW4 (ell M R : ℕ) (hell : 0 < ell) (a cw : ℝ) : Prop :=
+lean/src/DX6.lean:44:theorem dlayerObligationW4_holds {ell : ℕ} (hell2 : 2 ≤ ell) (hell : 0 < ell) {a : ℝ} (ha : 0 < a) {cw : ℝ}
+lean/src/DX6.lean:78:theorem dlayerObligation_of_W4 {ell M R : ℕ} {hell : 0 < ell} {a cw : ℝ} (h : DLayerObligationW4 ell M R hell a cw)
+lean/src/DLR27.lean:33:theorem hol_congr {G : Type*} [Group G] (s : ℕ) (W W' : PeriodicLinkConfiguration G L) :
+lean/src/DLR27.lean:53:theorem sBlock_congr (s ell : ℕ) (V0 V1 V1' : PeriodicLinkConfiguration SU2 L) (y : PeriodicLatticeSite L)
+lean/src/DLR27.lean:61:theorem loopVar_congr {G : Type*} [Group G] (s ell : ℕ) (W W' : PeriodicLinkConfiguration G L)
+lean/src/DLR27.lean:93:theorem rawStep_congr (s ell : ℕ) (V0 V1 V1' : PeriodicLinkConfiguration SU2 L) (c : PeriodicLatticeEdge L)
+lean/src/DLR27.lean:117:theorem qStepX_congr (s ell : ℕ) (V0 : PeriodicLinkConfiguration SU2 L) (a a' : XS L) (c : PeriodicLatticeEdge L)
+lean/src/DLR36.lean:86:noncomputable def modelGinv (c δD δQ : ℝ) (hc : 0 < c) (hδD : 0 ≤ δD) (hδQ : 0 ≤ δQ)
+lean/src/DrRed1.lean:6:For a configuration `P` at which the literal `Ginv` is a unit and the localised data are well defined (`WellDefAt selIn selIn P`),
+lean/src/DrRed1.lean:36:theorem Delta2_lit_eq_loc (hu : IsUnit (dataS selAll selAll P).Ginv) (WD : WellDefAt selIn selIn P) :
+lean/src/DrRed1.lean:51:/-- **the pencil identity**: at `P` with `IsUnit Ginv_lit` and the localised data well defined, `G1inv_lit = Ginv_lit - Delta2_loc`. -/
+lean/src/DrRed1.lean:52:theorem G1inv_lit_eq_pencil (hu : IsUnit (dataS selAll selAll P).Ginv) (WD : WellDefAt selIn selIn P) :
+lean/src/DrRed1.lean:59:/-- the guard question at `P`: with `Ginv_lit` a unit and the localised data well defined, `IsUnit G1inv_lit` is `IsUnit (Ginv_lit - Delta2_loc)`. -/
+lean/src/DrRed1.lean:60:theorem isUnit_G1inv_lit_iff_pencil (hu : IsUnit (dataS selAll selAll P).Ginv) (WD : WellDefAt selIn selIn P) :
+lean/src/DLR16.lean:23:structure GinvHyp (S E Y P B : Type*) [NormedAddCommGroup S] [InnerProductSpace ℝ S]
+lean/src/DLR16.lean:70:noncomputable def Ginv : E →L[ℝ] E :=
+lean/src/DLR16.lean:74:theorem Ginv_form (f : E) : ⟪f, I.Ginv f⟫
+lean/src/DLR16.lean:108:noncomputable def inv : GinvHyp S E Y P B :=
+lean/src/DLR48.lean:36:theorem Pfl_FS : (Pfl ell k Lu hell).FullSupp := fullTower_fullSupp ell k Lu hell flatCfg 1 ∅
+lean/src/DLR37.lean:111:theorem m0_hu : IsUnit (DelpA (GF ell k Lu) U a + (1 - siteMask (GF ell k Lu).Om0)) := by
+lean/src/DLR82.lean:9:Concrete: `ginv1M0_EG`, `ginv1M0_nW` (definitional), `coer1M0`, `G1Full_isUnit`, `GiM1`, `ext1M0`, `N1opM0`, `n1M0`,
+lean/src/DLR82.lean:31:noncomputable def modelNOf (I : GinvHyp Z0 Z0 Z0 Z0 Z0) (cg qb bN : ℝ) (hcg : 0 < cg) (hEG : 4 * I.EG ≤ cg)
+lean/src/DLR82.lean:57:noncomputable def ginv1 (νψ δψ : ℝ) (hν : 0 ≤ νψ) (hδ : 0 ≤ δψ) : GinvHyp Z0 Z0 Z0 Z0 Z0 :=
+lean/src/DLR82.lean:73:theorem nW_model_nonneg {ell : ℕ} {a ρ θ : ℝ} (hc : CondM0 ell a ρ θ) : 0 ≤ hc.ginv.nW := by
+lean/src/DLR82.lean:130:theorem G1M0_eq : (G1M0 ell k Lu U a t e q0 R H φ θ hφ hc pd).Ginv = ((ell : ℝ) ^ k) ^ 2 • G1Full ell k Lu U a pd.ψ :=
+lean/src/DLR82.lean:136:theorem G1M0_Qb : (G1M0 ell k Lu U a t e q0 R H φ θ hφ hc pd).Qb = (ginvM0 ell k Lu U a t e q0 R φ θ hφ hc H).Qb := rfl
+lean/src/DLR82.lean:141:theorem G1M0_lower (f : BondFnL2 (scaleUp ell k Lu)) :
+lean/src/DLR82.lean:161:theorem G1Full_isUnit (hcg : 0 < cg1 ell a t (rhoM0 ell k e q0) θ hc pd.νψ) : IsUnit (G1Full ell k Lu U a pd.ψ) := by
+lean/src/GdTheta.lean:92:theorem G1invS_eq_Ginv_of
+lean/src/DeltaAlpha0Conv.lean:396:theorem frobSupBond_gauge_gap {ell : ℕ} (hell : 0 < ell) :
+lean/src/DK3Corridor.lean:94:theorem supported_reconstruct (D : K)
+lean/src/DLR28.lean:50:theorem QlinStepX_row_local (s ell : ℕ) (V0 : PeriodicLinkConfiguration SU2 L) (hreg : RegBg s ell V0)
+lean/src/DLR28.lean:93:theorem QlinCompX_row_local (ell : ℕ) (bg : ℕ → PeriodicLinkConfiguration SU2 L) (J : ℕ)
+lean/src/DC2.lean:72:noncomputable def En (h : E) : ℝ := ⟪h, J.Ginv h⟫
+lean/src/DC2.lean:90:theorem cjpGinv_Gi (x : E) : cjp J.ωE J.ωE J.Ginv (cjp J.ωE J.ωE J.Gi x) = x := by
+lean/src/DC2.lean:94:theorem cjp_form_lower (y : E) : (1 - J.κ) * J.En y ≤ ⟪y, cjp J.ωE J.ωE J.Ginv y⟫ := by
+lean/src/DC2.lean:112:theorem sqrtE_of_pair (h : E) (y : F) (hp : ⟪h, cjp J.ωE J.ωE J.Ginv h⟫ = ⟪cjm J.ωE J.ωF J.Q h, y⟫) :
+lean/src/DC2.lean:149:theorem N_lower (u : F) : ‖J.Mw.wi u‖ ^ 2 ≤ J.bN * ⟪u, J.N u⟫ := by
+lean/src/DC2.lean:211:theorem cjpN_lower (u : F) : ⟪u, J.N u⟫ - J.EN * ‖J.Mw.wi u‖ ^ 2 ≤ ⟪u, cjp J.ωF J.ωF J.N u⟫ := by
+lean/src/DLR17.lean:30:theorem cjpGinv_form (f : E) : ⟪f, cjp I.ωE I.ωE I.Ginv f⟫
+lean/src/DLR17.lean:74:theorem Ginv_CT (f : E) : (3 / 4) * ⟪f, I.Ginv f⟫ - I.EG * ‖f‖ ^ 2 ≤ ⟪f, cjp I.ωE I.ωE I.Ginv f⟫ := by
+lean/src/DLR17.lean:161:theorem G_cjp_le (Gi : E →L[ℝ] E) (hGi : ∀ x, I.Ginv (Gi x) = x) (cg : ℝ) (hcg : 0 < cg)
+lean/src/DLR100.lean:54:theorem Delta2_norm_le (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ)
+lean/src/DLR100.lean:96:theorem dlayer_M0_class (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell)
+lean/src/DLR100.lean:206:theorem DLayer_M0_class (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell)
+lean/src/GdGap.lean:43:theorem genFormS_collapse_N (sD sJ : PlaqSel) (P : IngrBParams) (h : ¬ IsUnit (GenS.NmatS sD sJ P))
+lean/src/GdGap.lean:56:theorem genFormS_collapse_G1inv (sD sJ : PlaqSel) (P : IngrBParams) (h : ¬ IsUnit (G1invS sD sJ P))
+lean/src/GdGap.lean:77:def WellDefAt (sD sJ : PlaqSel) (P : IngrBParams) : Prop :=
+lean/src/GdGap.lean:81:def GapAt (sD sJ : PlaqSel) (P : IngrBParams) : Prop :=
+lean/src/GdGap.lean:109:theorem gap_of_instIneqSG (sD sJ : PlaqSel) (ell k : ℕ) (hell : 0 < ell) (a : ℝ) (ha : 0 ≤ a)
+lean/src/GdGap.lean:129:theorem instIneqSG_of_gap (sD sJ : PlaqSel) (ell k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/GdGap.lean:151:def CoercG8AtSG2 (sD sJ : PlaqSel) (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/GdGap.lean:179:theorem localised_SG2_holds : P428Target8SG2 selIn selIn :=
+lean/src/GdGap.lean:183:def GapEverywhere (sD sJ : PlaqSel) : Prop :=
+lean/src/GdGap.lean:194:theorem P428Target8SG_of_SG2_gap {sD sJ : PlaqSel} (h2 : P428Target8SG2 sD sJ) (hg : GapEverywhere sD sJ) :
+lean/src/GdGap.lean:209:theorem SG_forces_gap_slab (sJ : PlaqSel) (h : P428Target8SG selAll sJ) :
+lean/src/GdGap.lean:241:theorem not_SG_of_gapfail (sJ : PlaqSel)
+lean/src/ZR8DataB.lean:54:theorem data_congr (P : IngrBParams) {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (hell : 2 ≤ P.ell)
+lean/src/ZR8DataB.lean:87:theorem G1inv_congr (P : IngrBParams) {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (hell : 2 ≤ P.ell)
+lean/src/ZR2Flat5.lean:45:theorem coarseGammaPath_congr (s : ℕ) (y x y' x' : PeriodicLatticeSite L)
+lean/src/ZXG3M.lean:26:theorem P0_mem_bondSupp (Lu : PeriodicLatticeExtent) (hell : 0 < 2) (a : ℝ)
+lean/src/ZXG3M.lean:43:theorem closed_point_coerc (Lu : PeriodicLatticeExtent) (hL : ∀ μ : Fin 3, 4 ≤ Lu μ)
+lean/src/D2Cons.lean:28:theorem localised_holds_both_fails : P428Target8S selIn selIn ∧ ¬ P428Target8LiteralBoth :=
+lean/src/D2Cons.lean:32:theorem both_Ginv_indefinite (sJ : PlaqSel) {ell M R : ℕ} (hell : 2 ≤ ell) (hdvd : ell ∣ M) (hM : 0 < M) (hR : 18 ≤ R)
+lean/src/D2Cons.lean:60:def CoercG8AtSG (sD sJ : PlaqSel) (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/D2Cons.lean:89:theorem localised_guarded_holds : P428Target8SG selIn selIn := P428Target8S.toGuard AdalyFormal.M2RightInv.p428Target8
+lean/src/DS1.lean:77:theorem delta2_strat (P : IngrBParams) (Sψ K2 CW : ℝ) (hS : 0 ≤ Sψ) (hK2 : 0 ≤ K2)
+lean/src/DS1.lean:144:theorem dlayerStrat_of_parts (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (S : Tower (scaleUp ell k Lu))
+lean/src/D2Geo2.lean:84:theorem Afield_supp (H : SlabH Om P Q N) (X : SuTwo) (b : Bond L) (hb : (Afield Q X) b ≠ 0) :
+lean/src/D2Geo2.lean:125:theorem Afield_mem_bondSupp (H : SlabH Om P Q N) (G : TowerGeom L) (hG : G.Om0 = Om) (X : SuTwo) :
+lean/src/AC_OL8.lean:77:theorem delta2_classAC (hell0 : 0 < ell) (hell2 : 2 ≤ ell) (hS : Admissible ell M R k S) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/DC1.lean:81:theorem Wop_eq_gen (G : TowerGeom L) (U : Cfg L) (a : ℝ) (hu : IsUnit (LP G U a)) (B : BondFnL2 L) :
+lean/src/DC1.lean:90:theorem GpT_eq (G : TowerGeom L) (U : Cfg L) (a : ℝ) (hw : ∀ j, 0 < wq G a j) (hu : IsUnit (LP G U a))
+lean/src/ZR8Class.lean:186:theorem InstIneq_congr_class {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/ZR8Class.lean:193:theorem InstAtWD_congr_class {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/ZR8Class.lean:201:theorem genForm_congr_class (P : IngrBParams) {M R c : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam) (hM : 2 ≤ M)
+lean/src/DrFamily2.lean:8:`Ginv_lit(ta) - Delta2_loc` is positive semidefinite, `Ginv_lit(tb) - Delta2_loc` has a negative direction.
+lean/src/ZR8Data.lean:76:theorem suCoordFInv_apply_congr {Lx : PeriodicLatticeExtent} {x x' : XS Lx} {b : Bond Lx} (h : x b = x' b) :
+lean/src/ZR8Data.lean:82:theorem Q1_rows_congr (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:94:theorem C2tilde_rows_congr (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:106:theorem H0_congr_rows {Lu : PeriodicLatticeExtent} {ell : ℕ} (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/ZR8Data.lean:112:theorem rhoD_congr_rows {Lu : PeriodicLatticeExtent} {ell : ℕ} (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/ZR8Data.lean:116:theorem hLift_congr_rows {Lu : PeriodicLatticeExtent} {ell : ℕ} (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/ZR8Data.lean:136:theorem Cop_congr_rows {Lu : PeriodicLatticeExtent} {ell : ℕ} (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/ZR8Data.lean:145:theorem genC_congr (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:151:theorem D2in_congr (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:162:theorem WellDef_congr (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:173:theorem genForm_congr_outside (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:187:theorem GuardsUnit_congr (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:198:theorem WellDefG_congr (P : IngrBParams) {M R : ℕ} (h : LocHyp P.ell M R P.k P.S P.Lam)
+lean/src/ZR8Data.lean:207:theorem InstIneq_congr {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/ZR8Data.lean:220:theorem InstAtWD_congr {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/GdPlaq.lean:94:theorem deltaPrimeBilRaw_congr_X (Pz : Set (PeriodicLatticePlaquette L))
+lean/src/GdPlaq.lean:114:theorem second_term_congr (Pz : Set (PeriodicLatticePlaquette L))
+lean/src/GdPlaq.lean:133:theorem first_term_congr (Pz : Set (PeriodicLatticePlaquette L))
+lean/src/GdPlaq.lean:149:theorem deltaK_univ_congr_apply (Pz : Set (PeriodicLatticePlaquette L))
+lean/src/ZR2Ops2.lean:181:theorem Delta_congr_outside (G : TowerGeom L) {U U' : Cfg L}
+lean/src/ZXG3B.lean:29:theorem isUnit_of_coercive {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+lean/src/ZXG3B.lean:47:theorem P0_wellDef (hdvd : ∀ μ, ell ∣ (Lu μ + 1)) (ha : 0 < a) :
+lean/src/ZR8DataA.lean:45:theorem suCoordInv_apply_congr {x x' : XS L} {b : Bond L} (h : x b = x' b) :
+lean/src/ZR8DataA.lean:51:theorem QfullOf_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8DataA.lean:67:theorem C2fullOf_congr_U {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8DataA.lean:83:theorem C2fullOf_congr_in {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8DataA.lean:103:theorem sector_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/GdGen1.lean:37:theorem deltaPrimeBilRawLoc_set_congr (P Q : Set (PeriodicLatticePlaquette L)) (A X : Bond L → SuTwo)
+lean/src/GdGen1.lean:58:theorem deltaK_set_congr (P Q : Set (PeriodicLatticePlaquette L)) (X : BondFnL2 L)
+lean/src/MS13.lean:58:theorem site_coercive_M1_hol (ell M R k : ℕ) (hell : 2 ≤ ell) {S : Tower Lf} (hS : Admissible ell M R k S)
+lean/src/DLR83.lean:34:theorem dataG1_eq (hu : IsUnit (G1Full ell k Lu U a (psiD (PU ell k Lu hell U a Lam)))) :
+lean/src/DLR83.lean:55:theorem dataN1_eq (hu : IsUnit (G1Full ell k Lu U a (psiD (PU ell k Lu hell U a Lam)))) :
+lean/src/DLR83.lean:65:theorem dataH1_eq (hu : IsUnit (G1Full ell k Lu U a (psiD (PU ell k Lu hell U a Lam)))) (w : FSp (GF ell k Lu)) :
+lean/src/DLR83.lean:121:theorem N1f_isUnit (hcg : 0 < cg1 ell a t (rhoM0 ell k e q0) θ hc pd.νψ) : IsUnit (N1f ell k Lu U a pd.ψ) := by
+lean/src/AC_MR4.lean:26:theorem patchCoercive_class_existsAC {ell : ℕ} (hell : 2 ≤ ell) {a : ℝ} (ha : 0 < a) :
+lean/src/DY2.lean:65:theorem C2row_congr (hell : 0 < G.ell) (V : Cfg L) (p : BIdx G) (z z' : BondFnL2 L)
+lean/src/MI2.lean:59:theorem hbond_supp {ell M k κ c : ℕ} {S : Tower L} (hc : 5 ≤ c) (hκ : 0 < κ) (hM : 0 < M) (hell : 0 < ell)
+lean/src/MI2.lean:125:noncomputable def ginvForm (A : ↥(bondSupp (gparams ell k Lu hell S U a Lam).G)) : ℝ :=
+lean/src/MI2.lean:129:noncomputable def wN (A : ↥(bondSupp (gparams ell k Lu hell S U a Lam).G)) : ℝ :=
+lean/src/MI2.lean:133:def PatchCoercive (cP : ℝ) : Prop :=
+lean/src/MI2.lean:141:def GinvIMS (ε e : ℝ) : Prop :=
+lean/src/MI2.lean:146:theorem ginvForm_zero : ginvForm ell k Lu hell S U a Lam 0 = 0 := by
+lean/src/MI2.lean:150:theorem patch_of_PatchCoercive (hc : 5 ≤ c) (hκ : 0 < κ) (hM : 0 < M) (cP : ℝ)
+lean/src/MI2.lean:178:theorem wN_partition (hc : 5 ≤ c) (hκ : 0 < κ) (hM : 0 < M) (A : ↥(bondSupp (gparams ell k Lu hell S U a Lam).G)) :
+lean/src/MI2.lean:185:theorem ginv_weighted_coercive_of (hc : 5 ≤ c) (hκ : 0 < κ) (hM : 0 < M) (ε e cP : ℝ) (hε : 0 ≤ ε)
+lean/src/DS2.lean:41:theorem dlayerObligation_of_package {ell M R : ℕ} {hell : 0 < ell} {a : ℝ} (h : DPackage ell M R hell a) :
+lean/src/R2Algebra.lean:145:noncomputable def Ginv : E →L[ℝ] E := D.Dpi + D.Ts.comp D.T + D.Mass
+lean/src/R2Algebra.lean:147:noncomputable def G : E →L[ℝ] E := Ring.inverse D.Ginv
+lean/src/R2Algebra.lean:157:structure IsG1inv (G1inv : E →L[ℝ] E) : Prop where
+lean/src/R2Algebra.lean:167:theorem inner_Ginv (A : E) :
+lean/src/R2Algebra.lean:173:theorem K_eq (A : E) : D.K A = ⟪A, D.Ginv A⟫ - 2 * ⟪D.H (D.C2 A), D.J⟫ := by
+lean/src/R2Algebra.lean:176:theorem Ginv_symm (hL : D.Laws) (x y : E) : ⟪D.Ginv x, y⟫ = ⟪x, D.Ginv y⟫ := by
+lean/src/R2Algebra.lean:186:theorem exists_G1inv (hL : D.Laws) : ∃ G1inv : E →L[ℝ] E, D.IsG1inv G1inv := by
+lean/src/R2Algebra.lean:205:theorem G1inv_unique {A B : E →L[ℝ] E} (hA : D.IsG1inv A) (hB : D.IsG1inv B) : A = B :=
+lean/src/R2Algebra.lean:212:noncomputable def delta2Bil (β : E →ₗ[ℝ] E →ₗ[ℝ] F) : E →ₗ[ℝ] E →ₗ[ℝ] ℝ :=
+lean/src/R2Algebra.lean:220:noncomputable def Delta2 (hL : D.Laws) : E →L[ℝ] E := symmOp (D.delta2Bil hL.C2_quad.choose)
+lean/src/R2Algebra.lean:222:theorem Delta2_spec (hL : D.Laws) :
+lean/src/R2Algebra.lean:230:theorem isG1inv_sub (hL : D.Laws) : D.IsG1inv (D.Ginv - D.Delta2 hL) := by
+lean/src/R2Algebra.lean:238:theorem G1inv_coercive (hL : D.Laws) {G1inv : E →L[ℝ] E} (hG : D.IsG1inv G1inv) {c ε : ℝ}
+lean/src/R2Algebra.lean:258:theorem isUnit_Q_inv_Qs {M : E →L[ℝ] E} (hsym : ∀ x y, ⟪M x, y⟫ = ⟪x, M y⟫) {c : ℝ} (hc : 0 < c)
+lean/src/R2Algebra.lean:307:noncomputable def G1 (_D : BaseDataS E S F) (G1inv : E →L[ℝ] E) : E →L[ℝ] E := Ring.inverse G1inv
+lean/src/R2Algebra.lean:308:noncomputable def H1 (G1inv : E →L[ℝ] E) : F →L[ℝ] E :=
+lean/src/R2Algebra.lean:311:theorem QG1Qs_isUnit {G1inv : E →L[ℝ] E} (hG : D.IsG1inv G1inv) {c : ℝ} (hc : 0 < c)
+lean/src/R2Algebra.lean:318:theorem QG1Qs_isUnit_of_small (hL : D.Laws) {G1inv : E →L[ℝ] E} (hG : D.IsG1inv G1inv)
+lean/src/R2Algebra.lean:330:theorem inverse_sub_eq_tsum {M N : E →L[ℝ] E} (hM : IsUnit M)
+lean/src/R2Algebra.lean:364:theorem toy_Ginv (C2 : ℝ → ℝ) (J : ℝ) : (toy C2 J).Ginv = 1 := by
+lean/src/R2Algebra.lean:392:theorem toy_good_G1inv : (toy (fun x => x ^ 2) (1 / 4)).IsG1inv ((1 / 2 : ℝ) • (1 : ℝ →L[ℝ] ℝ)) := by
+lean/src/R2Algebra.lean:398:theorem toy_good_unit : IsUnit (((toy (fun x => x ^ 2) (1 / 4)).Q.comp
+lean/src/R2Algebra.lean:407:theorem toy_cubic_no_G1inv : ¬ ∃ G1inv : ℝ →L[ℝ] ℝ, (toy (fun x => x ^ 3) 1).IsG1inv G1inv := by
+lean/src/R2Algebra.lean:425:theorem toy_good_not_signflip : ¬ (toy (fun x => x ^ 2) (1 / 4)).IsG1inv ((3 / 2 : ℝ) • (1 : ℝ →L[ℝ] ℝ)) := by
+lean/src/R2Algebra.lean:432:theorem toy_good_not_dropC2 : ¬ (toy (fun x => x ^ 2) (1 / 4)).IsG1inv (1 : ℝ →L[ℝ] ℝ) := by
+lean/src/R2Algebra.lean:441:theorem toy_big_not_coercive : ¬ ∃ c : ℝ, 0 < c ∧ ∀ x : ℝ, c * ‖x‖ ^ 2 ≤
+lean/src/GdR5b.lean:35:theorem isOpen_isUnit_clm : IsOpen {F : E →L[ℝ] E | IsUnit F} := by
+lean/src/GdR5b.lean:39:theorem isUnit_of_psd_ge {M₁ M₂ : E →L[ℝ] E} (hs₂ : ∀ x y, ⟪M₂ x, y⟫ = ⟪x, M₂ y⟫) (hp₂ : PSD M₂) (hu₂ : IsUnit M₂)
+lean/src/GdR5b.lean:59:theorem Fth_zero_isUnit (ha : 0 ≤ a) (WD2 : WellDefAt selIn selIn (Pth ell k Lu hell0 S a Lam 0)) :
+lean/src/GdR5b.lean:65:theorem Fth_isUnit_near_zero (hS : Admissible ell M R k S) (hell : 2 ≤ ell) (hroom : 17 * ell ≤ R * M) (ha : 0 ≤ a)
+lean/src/DLR61.lean:153:theorem exp_second_order (A B : Mt) (hB : ‖B‖ ≤ 1) :
+lean/src/GdGen3.lean:66:theorem Ginv_eq_on_V (sD sJ sD' sJ' : PlaqSel) (hsD : ∀ (L : PeriodicLatticeExtent) (G : TowerGeom L), plaqIn G.Om0 ⊆ sD L G)
+lean/src/DP1.lean:170:theorem dlayer_clause1 {ell M R k : ℕ} {Lu : PeriodicLatticeExtent} {S : Tower (scaleUp ell k Lu)} {W : ℕ}
+lean/src/M2B5b.lean:78:theorem f_second_back {f : ℕ → ℝ} {τ1 τ2 : ℝ} {lo hi : ℕ} (hs : ProfSpec f τ1 τ2 lo hi) (o : ℕ) :
+lean/src/M2B5b.lean:258:theorem chi_second (x : PeriodicLatticeSite L) (ν : Fin 3) :
+lean/src/M2B5b.lean:316:theorem chi_support_box {s : ℕ} (hR : ∀ σ, Reach z σ s (F σ))
+lean/src/AU_XMZ5.lean:27:def DLayerObligationClassX (ell M R : ℕ) (hell : 0 < ell) (a θ KH KH1 K2 CW KD : ℝ) : Prop :=
+lean/src/AU_XMZ5.lean:37:theorem dlayerObligationClass_holdsX {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/DLR50.lean:8:This is the `extN` field of the M0 Schur-complement structure (DL51): it gives the SHARP lower bound `N' ≥ 1/bNS`.
+lean/src/MS1.lean:299:theorem Rproj_eq_strat (G : TowerGeom L) (U : Cfg L) (a : ℝ) (hw : ∀ j, 0 < wq G a j) (hu : IsUnit (LP G U a))
+lean/src/ZXG3C.lean:29:theorem P0_Q_apply (x : ↥(bondSupp (PP).G)) (p : BIdx (PP).G) :
+lean/src/ZXG3C.lean:33:theorem P0_Q_norm_sq (x : ↥(bondSupp (PP).G)) : ‖(PP).data.Q x‖ ^ 2 = ‖x‖ ^ 2 := by
+lean/src/ZXG3C.lean:41:noncomputable def P0_Qiso : ↥(bondSupp (PP).G) →ₗᵢ[ℝ] FSp (PP).G where
+lean/src/ZXG3C.lean:50:theorem P0_Q_inner (x y : ↥(bondSupp (PP).G)) : ⟪(PP).data.Q x, (PP).data.Q y⟫ = ⟪x, y⟫ :=
+lean/src/ZXG3C.lean:53:theorem P0_Qs_Q (x : ↥(bondSupp (PP).G)) : (PP).data.Qs ((PP).data.Q x) = x := by
+lean/src/ZXG3C.lean:57:theorem P0_Q_surj (f : FSp (PP).G) : ∃ A : ↥(bondSupp (PP).G), (PP).data.Q A = f := by
+lean/src/ZXG3C.lean:67:theorem P0_firstTerm_core (hdvd : ∀ μ, ell ∣ (Lu μ + 1)) (ha : 0 < a) (x : ↥(bondSupp (PP).G)) :
+lean/src/ZXG3C.lean:98:theorem P0_genForm_eq (hdvd : ∀ μ, ell ∣ (Lu μ + 1)) (ha : 0 < a) (x : ↥(bondSupp (PP).G)) :
+lean/src/ZXG3C.lean:127:theorem P0_genForm_zero_of_laws (hdvd : ∀ μ, ell ∣ (Lu μ + 1)) (ha : 0 < a) (x : ↥(bondSupp (PP).G))
+lean/src/DLR3.lean:137:theorem units_PU_f (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu))
+lean/src/DLR62.lean:72:theorem exp_second_order_F (A B : Mt) (hB : frobNorm B ≤ 1 / 2) :
+lean/src/MI1.lean:88:theorem ims_sq_lower (Y : E → F) (m : ι → E → E) (P : ι → F → F)
+lean/src/MF8.lean:37:theorem delta2_zero_of_J {E S F : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
+lean/src/DLR18.lean:54:theorem Ginv_sym (x y : E) : ⟪J.Iv.Ginv x, y⟫ = ⟪x, J.Iv.Ginv y⟫ := by
+lean/src/DLR18.lean:76:theorem N_lower (u : B) : ‖u‖ ^ 2 ≤ J.bN * ⟪u, J.N u⟫ := by
+lean/src/DLR51.lean:45:theorem pE_iE_full (z : ↥(bondSupp (GF ell k Lu))) : pE (GF ell k Lu) (iE (GF ell k Lu) z) = z := by
+lean/src/DLR51.lean:55:theorem dataGinv_eq :
+lean/src/DLR51.lean:76:theorem dataG_eq (hu : IsUnit (GinvFull ell k Lu U a)) :
+lean/src/DLR51.lean:98:theorem dataN_eq (hu : IsUnit (GinvFull ell k Lu U a)) :
+lean/src/DLR51.lean:107:theorem dataH_eq (hu : IsUnit (GinvFull ell k Lu U a)) (w : FSp (GF ell k Lu)) :
+lean/src/DLR103.lean:5:# DL103 -- plug-in check: the m0_finish theorems `instIneq_M0_kuniform` (MF7) and `wellDef_M0` (MF11) with their D-layer premises
+lean/src/DLR103.lean:50:theorem wellDef_M0_discharged (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell)
+lean/src/DLR103.lean:66:theorem witness_wellDef_instIneq (k : ℕ) :
+lean/src/MSal.lean:81:theorem hol_dev_local2 (B C : Set (PeriodicLatticeSite L)) (s : ℕ)
+lean/src/MSal.lean:141:theorem stepAverage_drift_sq_local_al (s ell : ℕ) (hs : 0 < s) (hell : 0 < ell) (hdvd : ∀ ν, s ∣ L ν + 1)
+lean/src/MSal.lean:239:theorem NsZ_telescope_local_al (ell : ℕ) (hell : 0 < ell)
+lean/src/GdGen2.lean:37:theorem dataS_Ginv_eq : (dataS sD sJ P).Ginv =
+lean/src/GdGen2.lean:46:def V0 (G : TowerGeom L) : Submodule ℝ ↥(bondSupp G) where
+lean/src/GdGen2.lean:79:theorem FnuMuLoc_congr_sets (P P' : Set (PeriodicLatticePlaquette L))
+lean/src/GdGen2.lean:99:theorem JfieldLoc_congr_sets (P P' : Set (PeriodicLatticePlaquette L))
+lean/src/DLR2.lean:37:theorem delta2_pair (P : IngrBParams) (A : ↥(bondSupp P.G)) :
+lean/src/DLR2.lean:42:theorem delta2_abs_le (P : IngrBParams) (S : ℝ) (hψ : ∀ p, ‖psiD P p‖ ≤ S) (A : ↥(bondSupp P.G)) :
+lean/src/DLR2.lean:52:theorem mem_bondSupp_univ (P : IngrBParams) (hOm : P.G.Om0 = Set.univ) (x : BondFnL2 P.Lf) :
+lean/src/DY4a.lean:32:theorem pert_lower (x : E) : (cw0 - δ0) * n x ^ 2 ≤ ⟪x, (J.Ginv - Dl) x⟫ := by
+lean/src/DY4a.lean:40:theorem pert_E_le (x : E) : ⟪x, J.Ginv x⟫ ≤ cw0 / (cw0 - δ0) * ⟪x, (J.Ginv - Dl) x⟫ := by
+lean/src/DY4a.lean:63:theorem pert_n (x : E) : n x ≤ Real.sqrt (1 / (cw0 - δ0)) * Real.sqrt ⟪x, (J.Ginv - Dl) x⟫ := by
+lean/src/MS11.lean:58:theorem isUnit_LP_M1 (h216 : 216 * (((ell : ℝ) + 3 * Real.pi * (ell : ℝ) ^ 2) * ρ) ^ 2 < 1) (ha : 0 < a) :
+lean/src/MS11.lean:66:theorem gamma_lower_M1 (h216 : 216 * (((ell : ℝ) + 3 * Real.pi * (ell : ℝ) ^ 2) * ρ) ^ 2 < 1) (ha : 0 < a)
+lean/src/MS11.lean:89:theorem siteCT_inv_M1 (ha : 0 < a) (hu : IsUnit (DelpA (geomOf ell k S) U a + (1 - siteMask (geomOf ell k S).Om0)))
+lean/src/DLR19.lean:26:theorem Ginv_bil (y x : E) : ⟪y, J.Iv.Ginv x⟫
+lean/src/DLR19.lean:32:theorem cjpGinv_bil (y x : E) : ⟪y, cjp J.ωE J.ωE J.Iv.Ginv x⟫
+lean/src/MXQ_AC_MZ5.lean:30:theorem dlayerStrat_classACΦ {ell M R k : ℕ} {Lu : PeriodicLatticeExtent} (hell : 0 < ell) (hell2 : 2 ≤ ell)
+lean/src/MXQ_AC_MZ5.lean:72:def DLayerObligationClassACΦ (Fm : CF) (ell M R : ℕ) (hell : 0 < ell) (a θ KH KH1 K2 CW KD : ℝ) : Prop :=
+lean/src/MXQ_AC_MZ5.lean:82:theorem dlayerObligationClass_holdsACΦ {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/DY3.lean:58:theorem delta2_bil (P : IngrBParams) (A B : ↥(bondSupp P.G)) :
+lean/src/DY3.lean:158:theorem delta2_conj (hell0 : 0 < ell) (V : Cfg (scaleUp ell k Lu)) (a : ℝ) (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/MZ5.lean:70:theorem dlayerStrat_class {ell M R k : ℕ} {Lu : PeriodicLatticeExtent} (hell : 0 < ell) (hell2 : 2 ≤ ell)
+lean/src/MZ5.lean:112:def DLayerObligationClass (ell M R : ℕ) (hell : 0 < ell) (a θ KH KH1 K2 CW KD : ℝ) : Prop :=
+lean/src/MZ5.lean:122:theorem dlayerObligationClass_holds {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/MA7.lean:38:theorem ginv_eq_Fform {ell k : ℕ} {Lu : PeriodicLatticeExtent} (hell0 : 0 < ell) (S : Tower (scaleUp ell k Lu))
+lean/src/DU1.lean:335:theorem ginv_upper (hell0 : 0 < ell) (V : Cfg (scaleUp ell k Lu)) (a cs : ℝ)
+lean/src/MS2.lean:211:theorem site_coercive_weighted_core (ell k : ℕ) (hell : 2 ≤ ell) (hdvd : ∀ μ, ell ^ k ∣ L μ + 1)
+lean/src/MS2.lean:356:theorem site_coercive_weighted (ell k : ℕ) (hell : 2 ≤ ell) (hdvd : ∀ μ, ell ^ k ∣ L μ + 1)
+lean/src/MI28.lean:85:theorem ginv_weighted_coercive_M1 (U : LinkCfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 < a)
+lean/src/DK3LocalLift.lean:50:theorem second_ray_eq_hessian {E F : Type*}
+lean/src/DK3LocalLift.lean:86:theorem crossingMatrix_zero_unit : IsUnit (crossingMatrix 0) := by rw [crossingMatrix_zero]; exact isUnit_one
+lean/src/DK3LocalLift.lean:88:theorem eventually_crossingMatrix_unit : ∀ᶠ t in nhds (0 : ℝ), IsUnit (crossingMatrix t) :=
+lean/src/DK3LocalLift.lean:92:def localLift (t : ℝ) : W →L[ℝ] K := corridorLift.comp (Ring.inverse (crossingMatrix t))
+lean/src/DK3LocalLift.lean:94:theorem smoothAt_localLift : ContDiffAt ℝ ⊤ localLift 0 :=
+lean/src/DK3LocalLift.lean:97:theorem localLift_right (t : ℝ) (ht : IsUnit (crossingMatrix t)) :
+lean/src/DK3LocalLift.lean:100:theorem localLift_support (t : ℝ) (v : W) (b : Bond unitL) (hb : ¬ Crossing b) :
+lean/src/DK3LocalLift.lean:105:theorem localLift_unique (t : ℝ) (ht : IsUnit (crossingMatrix t)) (D : K) (v : W)
+lean/src/DK3LocalLift.lean:128:def unitD2 (t : ℝ) (B : K) : K := localLift t ((1/2 : ℝ) • rawHessianAt t B B)
+lean/src/DK3LocalLift.lean:130:def liftedRaw (t : ℝ) (B : K) : K := localLift t (raw t B)
+lean/src/DK3LocalLift.lean:140:theorem unitD2_characterization (t : ℝ) (ht : IsUnit (crossingMatrix t)) (B : K) :
+lean/src/DriftCentre.lean:200:not a theorem): the type below is only the flip-invariant lower bound `2 ≤ α₁(centralFlipConfig ε
+lean/src/DriftCentre.lean:295:noncomputable def twoGauge (z₀ z : AdalyFormal.Balaban.LocalizedEstimates.CSite witL3 3) :
+lean/src/DriftCentre.lean:301:theorem twoGauge_genuinely_differs (z₀ : AdalyFormal.Balaban.LocalizedEstimates.CSite witL3 3) :
+lean/src/RI5.lean:287:theorem target8_of_thin (hThin : AdalyFormal.OneGap.ThinTori) : AdalyFormal.StatementLaneG.P428Target8 :=
+lean/src/DLR86.lean:17:structure GinvSmall {S E Y P B : Type*} [NormedAddCommGroup S] [InnerProductSpace ℝ S]
+lean/src/MF3.lean:40:theorem mem_bondSupp_PU (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ)
+lean/src/AC_Base.lean:72:theorem PerCubeRegular2H.congr_bound {L : PeriodicLatticeExtent} {ell M f b b' k : ℕ} {S : Tower L} {α₀ α₀' η : ℝ}
+lean/src/AC_Base.lean:78:theorem ClassCoupledH.congr_bound {L : PeriodicLatticeExtent} {ell M f b b' k : ℕ} {S : Tower L} {α₀ α₀' η : ℝ}
+lean/src/AC_Base.lean:161:theorem m1Regular_congr_bound {L : PeriodicLatticeExtent} {ell M f f' k : ℕ} {S : Tower L} {α α' η : ℝ} {V : LinkCfg L}
+lean/src/D1Geo2.lean:27:theorem gradAdj_sing_supp (U : Cfg L) (x : PeriodicLatticeSite L) (X : SuTwo) (z : PeriodicLatticeSite L)
+lean/src/DLR75.lean:39:theorem Q1jet_row_congr (ell : ℕ) (V : PeriodicLinkConfiguration SU2 L) (hreg : RegBg 1 ell V)
+lean/src/DLR75.lean:53:theorem Q1_drift_local {ell : ℕ} (hell : 0 < ell) (hdvd : ∀ μ : Fin 3, ell ∣ (L μ + 1))
+lean/src/ZR2A.lean:134:def CoercAt2 (ell M R k : ℕ) {Lu Lf : PeriodicLatticeExtent} (I : IngrFam ell Lu Lf)
+lean/src/MA3.lean:65:theorem local_unit_stokes_good {ell k : ℕ} (hell : 0 < ell) {Lu : PeriodicLatticeExtent} (hu : ∀ ρ, 1 ≤ Lu ρ)
+lean/src/ZXG3D3.lean:45:theorem P0_not_wellDef_a_zero : ¬ GenP.WellDef (P0 ell (Ltile ell) hell 0 Set.univ) := by
+lean/src/DLR63.lean:44:theorem second_deriv_le_of_even (f : E → F) (hf : ContDiffAt ℝ 2 f 0) (π : F →L[ℝ] G) (b : E) (M t0 : ℝ)
+lean/src/MultiscaleTarget.lean:127:def bondSupport (s ell : ℕ) (c : PeriodicLatticeEdge L) : Finset (PeriodicLatticeSite L) :=
+lean/src/DLR53.lean:163:theorem Nf_isUnit : IsUnit (Nf ell k Lu U a) := by
+lean/src/DLR52.lean:40:theorem Ginv_sym' (x y : E) : ⟪I.Ginv x, y⟫ = ⟪x, I.Ginv y⟫ := by
+lean/src/DLR52.lean:47:theorem N_lower_of (Gi : E →L[ℝ] E) (hGi1 : ∀ x, I.Ginv (Gi x) = x) (cg : ℝ) (hcg : 0 < cg)
+lean/src/DLR52.lean:173:theorem m0_hQbN : ‖(ginvM0 ell k Lu U a t e q0 R φ θ hφ hc H).Qb‖ ≤ qBS ell a (rhoM0 ell k e q0) := by
+lean/src/MS3.lean:82:theorem row_conj_lower (G : TowerGeom L) (U : Cfg L) (hell : 0 < G.ell) (j : ℕ) (y : PeriodicLatticeSite L)
+lean/src/DLR42.lean:58:noncomputable def ginvM0 (H : AdalyFormal.RegBgKU.KUSmall ell (rhoM0 ell k e q0)) :
+lean/src/DLR42.lean:71:theorem ginvM0_eq (H : AdalyFormal.RegBgKU.KUSmall ell (rhoM0 ell k e q0)) : (ginvM0 ell k Lu U a t e q0 R φ θ hφ hc H).Ginv = ((ell : ℝ) ^ k) ^ 2 • GinvFull ell k Lu U a :=
+lean/src/DLR42.lean:84:theorem ginvM0_EG (H : AdalyFormal.RegBgKU.KUSmall ell (rhoM0 ell k e q0)) : (ginvM0 ell k Lu U a t e q0 R φ θ hφ hc H).EG = EGM0 ell a (rhoM0 ell k e q0) θ hc := rfl
+lean/src/DLR42.lean:108:theorem GinvFull_coer' (f : BondFnL2 (scaleUp ell k Lu)) :
+lean/src/DLR42.lean:118:theorem GinvFull_isUnit : IsUnit (GinvFull ell k Lu U a) := by
+lean/src/M2B4.lean:77:theorem prof_second {a b w : ℕ} (hw : 1 ≤ w) (o : ℕ) :
+lean/src/M2B4.lean:125:theorem prof_support {a b w o : ℕ} (h : prof a b w o ≠ 0) : o < b ∧ a + 2 ≤ o + 2 * w := by
+lean/src/DLR30.lean:47:theorem Qfull_row_local (U : Cfg (scaleUp ell k Lu)) (hreg : RegTower ell (bgTower (GF ell k Lu) U) k)
+lean/src/MR2.lean:95:theorem patchCoercive_charts {a Ci : ℝ} (ha : 0 < a) (hCi : 0 ≤ Ci) (hI : LemIFlat ell a Ci)
+lean/src/MR2.lean:183:theorem patchCoercive_charts_exists {ell : ℕ} (hell : 2 ≤ ell) {a : ℝ} (ha : 0 < a) :
+lean/src/DLR31.lean:40:theorem Qfull_local_pt (U : Cfg (scaleUp ell k Lu)) (hreg : RegTower ell (bgTower (GF ell k Lu) U) k)
+lean/src/ZR8Jet.lean:34:theorem QlinStepL_congr_bg (s ell : ℕ) (hs : 0 < s) {V0 V0' : PeriodicLinkConfiguration SU2 L} (c : PeriodicLatticeEdge L)
+lean/src/ZR8Jet.lean:38:theorem QlinStepL_congr_in (s ell : ℕ) (hs : 0 < s) (V0 : PeriodicLinkConfiguration SU2 L) (c : PeriodicLatticeEdge L)
+lean/src/ZR8Jet.lean:44:theorem D2StepL_congr_bg (s ell : ℕ) (hs : 0 < s) {V0 V0' : PeriodicLinkConfiguration SU2 L} (c : PeriodicLatticeEdge L)
+lean/src/ZR8Jet.lean:48:theorem D2StepL_congr_in (s ell : ℕ) (hs : 0 < s) (V0 : PeriodicLinkConfiguration SU2 L) (c : PeriodicLatticeEdge L)
+lean/src/ZR8Jet.lean:56:theorem C2StepL_congr_bg (s ell : ℕ) (hs : 0 < s) {V0 V0' : PeriodicLinkConfiguration SU2 L} (c : PeriodicLatticeEdge L)
+lean/src/ZR8Jet.lean:61:theorem C2StepL_congr_in (s ell : ℕ) (hs : 0 < s) (V0 : PeriodicLinkConfiguration SU2 L) (c : PeriodicLatticeEdge L)
+lean/src/ZR8Jet.lean:68:theorem QlinCompL_congr_in (ell : ℕ) (hell : 0 < ell) (bg : ℕ → PeriodicLinkConfiguration SU2 L) (j : ℕ) :
+lean/src/ZR8Jet.lean:79:theorem C2CompL_congr_in (ell : ℕ) (hell : 0 < ell) (bg : ℕ → PeriodicLinkConfiguration SU2 L) (j : ℕ) :
+lean/src/ZR8Jet.lean:97:theorem QlinCompL_congr_U (G : TowerGeom L) (hell : 0 < G.ell) {U U' : Cfg L} (v : XS L) (j : ℕ) :
+lean/src/ZR8Jet.lean:111:theorem C2CompL_congr_U (G : TowerGeom L) (hell : 0 < G.ell) {U U' : Cfg L} (a : XS L) (j : ℕ) :
+lean/src/DLR1.lean:65:theorem coercive_isUnit (M : E →L[ℝ] E) {c : ℝ} (hc : 0 < c) (h : ∀ x, c * ‖x‖ ^ 2 ≤ ⟪x, M x⟫) :
+lean/src/DLR1.lean:77:theorem coercive_apply_inverse (M : E →L[ℝ] E) {c : ℝ} (hc : 0 < c) (h : ∀ x, c * ‖x‖ ^ 2 ≤ ⟪x, M x⟫)
+lean/src/DLR1.lean:84:theorem coercive_inv_bound (M : E →L[ℝ] E) {c : ℝ} (hc : 0 < c) (h : ∀ x, c * ‖x‖ ^ 2 ≤ ⟪x, M x⟫) (y : E) :
+lean/src/DLR1.lean:103:theorem pair_lower (u up um : F) :
+lean/src/DLR20.lean:36:theorem cjpN_lower (u : B) : ⟪u, J.N u⟫ - J.EN * ‖u‖ ^ 2 ≤ ⟪u, cjp J.ωB J.ωB J.N u⟫ := by
+lean/src/MI21.lean:51:theorem G1inv_coercive_strat (cw ε2 : ℝ)
+lean/src/MI21.lean:68:theorem G1inv_coercive_plain (cw ε2 : ℝ) (hε : ε2 ≤ cw)
+lean/src/MI21.lean:86:theorem units_strat (cw ε2 : ℝ) (hε : ε2 < cw)
+lean/src/M1G4.lean:61:theorem bump_supp {ell M κ c j : ℕ} (hc : 5 ≤ c) (hG : 0 < gsp ell M κ j) {w y : PeriodicLatticeSite L}
+lean/src/M1G4.lean:114:theorem psi_supp {ell M k κ c : ℕ} {S : Tower L} (hc : 5 ≤ c) (hκ : 0 < κ) (hM : 0 < M) (hell : 0 < ell)
+lean/src/M1G4.lean:142:theorem hpart_supp {ell M k κ c : ℕ} {S : Tower L} (hc : 5 ≤ c) (hκ : 0 < κ) (hM : 0 < M) (hell : 0 < ell)
+lean/src/DK3Objects.lean:74:theorem second_jet_exact (t : ℝ) (ht : |t| ≤ interval) (B : K) :
+lean/src/DK3Objects.lean:79:theorem second_jet_solve (t : ℝ) (ht : |t| ≤ interval) (B : K) :
+lean/src/MI29.lean:41:theorem Qrow_local (U : Cfg (scaleUp ell k Lu)) (hreg : RegTower ell (bgTower (GF ell k Lu) U) k)
+lean/src/AU_CUT.lean:128:theorem rcut_supp (w : PeriodicLatticeSite L) {T W ρ : ℕ} (hW : 1 ≤ W) (hT : T + 5 ≤ ρ)
+lean/src/AU_CUT.lean:202:theorem cut_htU (hc : CutSpec1 sites χ τ1) (hd : AdalyFormal.OneGap.CubeData12 ell M f α₀ η sites i A) :
+lean/src/DLR107.lean:120:    rw [hAdef]; gcongr; exact (min_le_left _ _).trans (min_le_left _ _)
+lean/src/DLR107.lean:122:    rw [hAdef]; gcongr; exact (min_le_left _ _).trans (min_le_right _ _)
+lean/src/DLR107.lean:124:    rw [hAdef]; gcongr; exact (min_le_right _ _).trans (min_le_left _ _)
+lean/src/DLR107.lean:126:    rw [hAdef]; gcongr; exact (min_le_right _ _).trans (min_le_right _ _)
+lean/src/MXQ_ZR8.lean:40:theorem InstIneq_congr_classΦ {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/MXQ_ZR8.lean:47:theorem InstAtWD_congr_classΦ {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/RI6.lean:35:theorem thin_core_RI (hF : ∀ (ell : ℕ) (hell : 2 ≤ ell) (a : ℝ), 0 < a → AdalyFormal.OneGap.FieldsK ell (by omega) a)
+lean/src/MI18.lean:114:theorem Wop_eq (hu : IsUnit (LP (geomOf ell k S) U a)) (B : BondFnL2 (scaleUp ell k Lu)) :
+lean/src/MI18.lean:124:theorem ginv_form (ha : 0 ≤ a) (hu : IsUnit (LP (geomOf ell k S) U a))
+lean/src/MI11.lean:54:theorem Kq_supp (U : Cfg L) (j : ℕ) (y : PeriodicLatticeSite L) (c : SuTwo) {x : PeriodicLatticeSite L}
+lean/src/D2Geo5.lean:27:theorem QlinB_supp_zero {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/D2Geo5.lean:70:theorem Mass_supp_le {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/MF5e.lean:137:theorem units_PU (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu))
+lean/src/ZXG3F.lean:113:theorem P1_mass_inner (x : ↥(bondSupp (PP).G)) :
+lean/src/ZXG3F.lean:135:theorem P1_Ginv_coercive (x : ↥(bondSupp (PP).G)) :
+lean/src/ZXG3F.lean:145:theorem P1_Delta2_zero : (PP).data.Delta2 (PP).data_laws = 0 := by
+lean/src/ZXG3F.lean:183:theorem P1_wellDef (hdvd : ∀ μ, ell ∣ (Lu μ + 1)) (ha : 0 < a) : GenP.WellDef (PP) := by
+lean/src/MXQ_C.lean:52:theorem dlayer_explicitΦ {Fm : CF} [CubeFamOK Fm] {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/M1B.lean:155:def DLayerStrat (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (S : Tower (scaleUp ell k Lu))
+lean/src/M1B.lean:178:def DLayerObligation (ell M R : ℕ) (hell : 0 < ell) (a : ℝ) : Prop :=
+lean/src/M1B.lean:268:theorem dlayerStrat_of_dlayer_full {ell k : ℕ} {Lu : PeriodicLatticeExtent} {hell : 0 < ell}
+lean/src/D1IVT.lean:47:theorem psd_coercive (F : E →L[ℝ] E) (hs : ∀ x y, ⟪F x, y⟫ = ⟪x, F y⟫) (hp : PSD F) (hu : IsUnit F) :
+lean/src/DC7.lean:46:theorem pert_gram_lower (t N ε γ : ℝ) (hγ : 0 < γ) (hN : 0 ≤ N) (hε : 0 ≤ ε) (hεγ : ε * γ ≤ 1)
+lean/src/M1Proof.lean:394:formalized (88) — is deferred**, because the second operand does not exist yet:
+lean/src/D2Geo6.lean:29:theorem Afield_hsupp (H : SlabH Om P Q N) (X : SuTwo) (e : Bond L) (he : (Afield Q X) e ≠ 0) :
+lean/src/MXQ_AC_OL8.lean:81:theorem delta2_classACΦ (hell0 : 0 < ell) (hell2 : 2 ≤ ell) (hS : Admissible ell M R k S) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/ZXR2Wire2.lean:54:noncomputable def data : BaseDataS ↥(bondSupp P.G) (SiteL2 (scaleUp P.ell P.k P.Lu)) (FSp P.G) :=
+lean/src/ZXR2Wire2.lean:61:noncomputable def G1inv : ↥(bondSupp P.G) →L[ℝ] ↥(bondSupp P.G) :=
+lean/src/ZXR2Wire2.lean:64:theorem G1inv_spec : P.data.IsG1inv P.G1inv := Classical.choose_spec (P.data.exists_G1inv P.data_laws)
+lean/src/ZXR2Wire2.lean:180:theorem Jf_congr_outside (P : IngrBParams)
+lean/src/MI33.lean:64:theorem ginv_weighted_coercive_full (U : LinkCfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 < a)
+lean/src/MI33.lean:95:theorem wellDef_strat (U : LinkCfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 < a)
+lean/src/MI33.lean:131:theorem wellDef_strat_small (U : LinkCfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 < a)
+lean/src/MC4.lean:27:def DLayer (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ)
+lean/src/RI2.lean:56:theorem Dvec_supp (U : LinkCfg (scaleUp ell k Lu)) (γ : BIdx (geomOf ell k S) → GaugeFn (scaleUp ell k Lu))
+lean/src/RI2.lean:64:theorem Tvec_supp (U : LinkCfg (scaleUp ell k Lu)) (γ : BIdx (geomOf ell k S) → GaugeFn (scaleUp ell k Lu))
+lean/src/D1Lit.lean:60:noncomputable def dataS : BaseDataS ↥(bondSupp P.G) (SiteL2 (scaleUp P.ell P.k P.Lu)) (FSp P.G) :=
+lean/src/D1Lit.lean:71:noncomputable def G1invS : ↥(bondSupp P.G) →L[ℝ] ↥(bondSupp P.G) :=
+lean/src/D1Lit.lean:74:theorem G1invS_spec : (dataS sD sJ P).IsG1inv (G1invS sD sJ P) :=
+lean/src/D1Lit.lean:103:def CoercG8AtS (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/MI22.lean:71:theorem ginvIMS_of (U : LinkCfg (scaleUp ell k Lu)) (a cs : ℝ) (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/MI22.lean:172:theorem ginv_weighted_coercive (U : LinkCfg (scaleUp ell k Lu)) (a cs : ℝ) (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/MX_C.lean:51:theorem dlayer_explicitΦ {Φ : Set ℕ} [CubeFactorSet Φ] {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/MX_AC_MZ5.lean:29:theorem dlayerStrat_classACΦ {ell M R k : ℕ} {Lu : PeriodicLatticeExtent} (hell : 0 < ell) (hell2 : 2 ≤ ell)
+lean/src/MX_AC_MZ5.lean:71:def DLayerObligationClassACΦ (Φ : Set ℕ) (ell M R : ℕ) (hell : 0 < ell) (a θ KH KH1 K2 CW KD : ℝ) : Prop :=
+lean/src/MX_AC_MZ5.lean:81:theorem dlayerObligationClass_holdsACΦ {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/ZR8Read.lean:37:theorem coarsePathHolonomy_congr {G : Type*} [Group G] (s : ℕ) {V V' : PeriodicLinkConfiguration G L}
+lean/src/ZR8Read.lean:53:theorem stridedBlockedGauge_congr {G 𝔤 : Type*} [Group G] [AddCommGroup 𝔤] [Module ℚ 𝔤]
+lean/src/ZR8Read.lean:112:theorem UbarTower_congr {G 𝔤 : Type*} [Group G] [AddCommGroup 𝔤] [Module ℚ 𝔤]
+lean/src/ZR8Read.lean:128:theorem bgTower_congr (G : TowerGeom L) (hell : 0 < G.ell) {U U' : Cfg L} (l : ℕ) (y : PeriodicLatticeSite L)
+lean/src/ZR8Read.lean:141:theorem rProd_congr (s : ℕ) {V0 V0' V1 V1' : PeriodicLinkConfiguration SU2 L} (y : PeriodicLatticeSite L)
+lean/src/ZR8Read.lean:149:theorem sBlock_congr (s ell : ℕ) (hs : 0 < s) {V0 V0' V1 V1' : PeriodicLinkConfiguration SU2 L} (y : PeriodicLatticeSite L)
+lean/src/ZR8Read.lean:160:theorem rawStep_congr (s ell : ℕ) (hs : 0 < s) {V0 V0' V1 V1' : PeriodicLinkConfiguration SU2 L} (c : PeriodicLatticeEdge L)
+lean/src/ZR8Read.lean:196:theorem qStepComp_congr_bg (s ell : ℕ) (hs : 0 < s) {V0 V0' : PeriodicLinkConfiguration SU2 L} (c : PeriodicLatticeEdge L)
+lean/src/ZR8Read.lean:213:theorem stepAverage_congr (s ell : ℕ) (hs : 0 < s) {V V' : PeriodicLinkConfiguration SU2 L}
+lean/src/ZR8Read.lean:226:theorem Qcomposite_congr (G : TowerGeom L) (hell : 0 < G.ell) {U U' : Cfg L} (lam : PeriodicLatticeSite L → SuTwo) (j : ℕ) :
+lean/src/MI34.lean:44:theorem data_congr_U (hS : Admissible ell M R k S) (hell : 2 ≤ ell) (hroom : 17 * ell ≤ R * M)
+lean/src/MI34.lean:50:theorem ginv_congr_U (hS : Admissible ell M R k S) (hell : 2 ≤ ell) (hroom : 17 * ell ≤ R * M)
+lean/src/MI34.lean:57:theorem patch_congr_U {κ c : ℕ} (hS : Admissible ell M R k S) (hell : 2 ≤ ell) (hroom : 17 * ell ≤ R * M)
+lean/src/MI34.lean:74:theorem ginv_weighted_coercive_loc (hroom : 17 * ell ≤ R * M) (U U' : LinkCfg (scaleUp ell k Lu))
+lean/src/MI34.lean:107:theorem wellDef_strat_loc (Lam0 : Set (PeriodicLatticeSite Lu)) (hloc : AdalyFormal.StatementLaneR8.LocHyp ell M R k S Lam0)
+lean/src/MS4.lean:155:theorem gamma_lower_approx (G : TowerGeom L) (U : Cfg L) (a : ℝ) (hw : ∀ j, 0 ≤ wq G a j)
+lean/src/MS4.lean:186:theorem exists_Gami_of_lower (G : TowerGeom L) (U : Cfg L) (a : ℝ) (β : PIdx G → ℝ) (hβ : ∀ p, 0 < β p)
+lean/src/ZR3B.lean:20:theorem Ginv_unit (Q : E →L[ℝ] F) :
+lean/src/ZR3B.lean:70:theorem form_core_coercive (Q : E →L[ℝ] F) (hQ : ∀ x, ‖Q x‖ ≤ ‖x‖)
+lean/src/MR4.lean:70:theorem patchCoercive_class_exists {ell : ℕ} (hell : 2 ≤ ell) {a : ℝ} (ha : 0 < a) :
+lean/src/MI12.lean:93:theorem dpSecond_le_p {α₀ : ℝ} (hα₀ : 0 ≤ α₀)
+lean/src/AC_SV1.lean:27:theorem wellDefG_of_coverHyp {hp : PhiOK (covers_scaleUp ell k hell hu) (fun _ => 0) (ell ^ k)}
+lean/src/ZXR2Wire3.lean:36:def FullSupp : Prop :=
+lean/src/ZXR2Wire3.lean:41:theorem mem_of_fullSupp (h : P.FullSupp) (e : Bond P.Lu) :
+lean/src/ZXR2Wire3.lean:45:noncomputable def eqv (h : P.FullSupp) : Bond P.Lu ≃ BIdx P.G :=
+lean/src/ZXR2Wire3.lean:61:theorem tau_apply (h : P.FullSupp) (f : FSp P.G) (e : Bond P.Lu) :
+lean/src/ZXR2Wire3.lean:69:theorem tau_bijective (h : P.FullSupp) : Function.Bijective P.tau := by
+lean/src/ZXR2Wire3.lean:163:theorem fullTower_fullSupp (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell)
+lean/src/ZXR2Close0b.lean:42:theorem P0_bondSupp_top : bondSupp (P0 ell Lu hell a Lam).G = ⊤ := by
+lean/src/ZXG3I.lean:31:theorem genC_supported {ell M R k F : ℕ} (hell : 0 < ell) (hp : 2 ≤ ell ∧ 0 < M ∧ 10 ≤ F ∧ F + 2 ≤ R)
+lean/src/MX_ZR8.lean:39:theorem InstIneq_congr_classΦ {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/MX_ZR8.lean:46:theorem InstAtWD_congr_classΦ {ell k : ℕ} (hell0 : 0 < ell) (a : ℝ) {Lu : PeriodicLatticeExtent} (γ₀ : ℝ)
+lean/src/MS7.lean:49:theorem lower_block_out {ell M R k : ℕ} (hell : 0 < ell) {S : Tower Lf} (hS : Admissible ell M R k S)
+lean/src/MS7.lean:134:theorem site_coercive_weighted_gauge (ell k : ℕ) (hell : 2 ≤ ell) (hdvd : ∀ μ, ell ^ k ∣ L μ + 1)
+lean/src/MS7.lean:160:theorem site_coercive_weighted_perblock (ell k : ℕ) (hell : 2 ≤ ell) (hdvd : ∀ μ, ell ^ k ∣ L μ + 1)
+lean/src/MS6.lean:172:theorem Qlev_congr_box (G : TowerGeom L) (U : Cfg L) (j : ℕ) (y : PeriodicLatticeSite L) (f f' : SiteL2 L)
+lean/src/MS6.lean:425:theorem gamma_lower_strat (h6 : 6 * ρ ≤ 1) (hu : IsUnit (LP G U a)) (v : YP G) :
+lean/src/MS6.lean:510:theorem isUnit_LP_strat (ell k : ℕ) (hell : 2 ≤ ell) (hdvd : ∀ μ, ell ^ k ∣ L μ + 1)
+lean/src/MA18.lean:50:theorem cwW4_lower {ell M R d : ℕ} {a cW α₀ ε1 c δ : ℝ} (hε1 : 0 < ε1) (hα0 : 0 ≤ α₀)
+lean/src/AC_MZ5.lean:27:theorem dlayerStrat_classAC {ell M R k : ℕ} {Lu : PeriodicLatticeExtent} (hell : 0 < ell) (hell2 : 2 ≤ ell)
+lean/src/AC_MZ5.lean:69:def DLayerObligationClassAC (fc ell M R : ℕ) (hell : 0 < ell) (a θ KH KH1 K2 CW KD : ℝ) : Prop :=
+lean/src/AC_MZ5.lean:79:theorem dlayerObligationClass_holdsAC {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/MF10.lean:189:    rw [hρdef, ← rhoM0_smul]; congr 1 <;> ring
+lean/src/MX_F.lean:29:def CoercG8AtWDMixed (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/ZXR2Close0c.lean:46:theorem P0_mass_inner (x : ↥(bondSupp (PP).G)) :
+lean/src/ZXR2Close0c.lean:67:theorem P0_Ginv_coercive (x : ↥(bondSupp (PP).G)) :
+lean/src/ZXR2Close0c.lean:77:theorem P0_Delta2_zero : (PP).data.Delta2 (PP).data_laws = 0 := by
+lean/src/MX_AC_OL8.lean:80:theorem delta2_classACΦ (hell0 : 0 < ell) (hell2 : 2 ≤ ell) (hS : Admissible ell M R k S) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/UMC.lean:45:theorem dlayer_explicit {ell M R : ℕ} (hell : 0 < ell) (hell2 : 2 ≤ ell) (hR : 1 ≤ R) (hM : 1 ≤ M)
+lean/src/MF11.lean:26:theorem wellDef_M0 (ell k : ℕ) (Lu : PeriodicLatticeExtent) (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu))
+lean/src/MXQ_F.lean:24:def CoercG8AtWDFamily (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/DLR32.lean:35:noncomputable def ginvHypOf (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 ≤ a)
+lean/src/DLR32.lean:114:noncomputable def GinvFull (U : Cfg (scaleUp ell k Lu)) (a : ℝ) :
+lean/src/DLR32.lean:120:theorem Ginv_eq_full (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 ≤ a)
+lean/src/DK3FineSecond.lean:41:def secondDeltaPort (t : ℝ) (H : K →L[ℝ] F) : F →L[ℝ] F :=
+lean/src/DK3FineSecond.lean:45:theorem secondDeltaPort_bilinear (t : ℝ) (H : K →L[ℝ] F) (A B : F) :
+lean/src/DK3FineSecond.lean:54:theorem secondDeltaPort_energy (t : ℝ) (H : K →L[ℝ] F) (A : F) :
+lean/src/DK3FineSecond.lean:61:theorem secondDeltaPort_selfAdjoint (t : ℝ) (H : K →L[ℝ] F) (A B : F) :
+lean/src/DK3FineSecond.lean:66:theorem secondDeltaPort_zero (H : K →L[ℝ] F) : secondDeltaPort 0 H = 0 := by
+lean/src/DG1.lean:91:noncomputable def En (x : E) : ℝ := ⟪x, J.Ginv x⟫
+lean/src/DLR10.lean:71:theorem form_lower (f : S) :
+lean/src/DLR10.lean:187:theorem gamma_lower (q b : ℝ) (hq : 0 ≤ q) (hb : 0 ≤ b) (hQ : ‖H.Qp‖ ≤ q)
+lean/src/ZR8Site.lean:75:theorem bond_inner_congr {Om : Set (PeriodicLatticeSite L)} {U U' : Cfg L}
+lean/src/ZR8Site.lean:89:theorem lapDir_congr (G : TowerGeom L) {U U' : Cfg L} (hUU : ∀ e : Bond L, BothIn G.Om0 e → U e = U' e) :
+lean/src/ZR8Site.lean:105:theorem Qlev_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:118:theorem Qpa_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:128:theorem DelpA_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:143:theorem Gp_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:148:theorem NQp_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:160:theorem RImage_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:166:theorem Rproj_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:190:theorem RImage_support {ell k : ℕ} (S : Tower L) (U : Cfg L) {v : SiteL2 L}
+lean/src/ZR8Site.lean:212:theorem grad_RImage_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hRM : 2 ≤ R * M)
+lean/src/ZR8Site.lean:236:theorem Tfull_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:253:theorem Wop_congr_both {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR8Site.lean:272:theorem Delta_inner_congr_both (G : TowerGeom L) (U : Cfg L) {X X' Y Y' : BondFnL2 L}
+lean/src/ZR8Site.lean:288:theorem DpiFull_congr {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/D2Lit.lean:88:noncomputable def dataM : BaseDataS ↥(bondSupp P.G) (SiteL2 (scaleUp P.ell P.k P.Lu)) (FSp P.G) :=
+lean/src/D2Lit.lean:99:noncomputable def G1invM : ↥(bondSupp P.G) →L[ℝ] ↥(bondSupp P.G) :=
+lean/src/D2Lit.lean:102:theorem G1invM_spec : (dataM sD sJ bs P).IsG1inv (G1invM sD sJ bs P) :=
+lean/src/D2Lit.lean:130:def CoercG8AtM (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/D2Lit.lean:174:theorem Wop_mem_bondSupp (G : TowerGeom L) (U : Cfg L) (a : ℝ) (A : BondFnL2 L) (hA : A ∈ bondSupp G) :
+lean/src/DY4b.lean:38:noncomputable def nq {L : PeriodicLatticeExtent} (S : Tower L) (ell k : ℕ) (G : TowerGeom L) (x : ↥(bondSupp G)) : ℝ :=
+lean/src/DY4b.lean:68:theorem nq_nonneg (x : ↥(bondSupp (geomOf ell k S))) : 0 ≤ nq S ell k (geomOf ell k S) x := norm_nonneg _
+lean/src/DY4b.lean:71:theorem Nw_le_nq (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DY4b.lean:80:theorem W4_nq (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DY4b.lean:85:noncomputable def gsplit1 : GSplit ↥(bondSupp (geomOf ell k S)) (PlaqFnL2 (scaleUp ell k Lu))
+lean/src/DY4b.lean:91:theorem gsplit1_Ginv : (D.gsplit1 hell0 Lam ρ hρ hreg hεγ hcG cw hcw hW4 θ' hθ' hL hR8 Sstar Dr δ0 δ1 hδ0 hδ1 hlt hD0
+lean/src/DY4b.lean:95:theorem G1_symm (x y : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DY4b.lean:102:theorem G1_coer (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DY4b.lean:116:theorem G1_unit : IsUnit ((gparams ell k Lu hell0 S D.U D.a Lam).data.Ginv - (gparams ell k Lu hell0 S D.U D.a Lam).data.Delta2 (gparams ell k Lu hell0 S D.U D.a Lam).data_laws) := by
+lean/src/DY4b.lean:133:theorem N1_unit : IsUnit (((gparams ell k Lu hell0 S D.U D.a Lam).data.Q.comp (Ring.inverse ((gparams ell k Lu hell0 S D.U D.a Lam).data.Ginv - (gparams ell k Lu hell0 S D.U D.a Lam).data.Delta2 (gparams ell k Lu hell0 S D.U D.a Lam).data_laws))).comp
+lean/src/ZR3C.lean:31:theorem goodBase_Ginv : (goodBase ell hell k Lu U).Ginv =
+lean/src/ZR3C.lean:62:theorem goodIngr'_coerc (ell : ℕ) (hell : 0 < ell) (k : ℕ) (Lu : PeriodicLatticeExtent)
+lean/src/DLR87.lean:336:theorem ginvSmall_two : GinvSmall (condM0_two ρ h0 h1).ginv where
+lean/src/DLR87.lean:349:theorem EGM0_two_le : EGM0 2 1 ρ θ₀ (condM0_two ρ h0 h1) ≤ 1 / 10 ^ 36 := (ginvSmall_two ρ h0 h1).EG_le
+lean/src/DLR87.lean:351:theorem EGM0_two_nn : 0 ≤ EGM0 2 1 ρ θ₀ (condM0_two ρ h0 h1) := (ginvSmall_two ρ h0 h1).EG_nonneg
+lean/src/ZXG3H.lean:164:theorem Cop_support {ell M R k : ℕ} (hell : 0 < ell) {Lu : PeriodicLatticeExtent}
+lean/src/ZXG3H.lean:244:theorem tau_tauAdj_of_supp (B : BondFnL2 P.Lu)
+lean/src/ZXG3H.lean:252:theorem inner_tauAdj_of_supp (B : BondFnL2 P.Lu)
+lean/src/D1Main.lean:29:theorem E0_Dpi_inner (G : TowerGeom L) (U : Cfg L) (a : ℝ) (w : ↥(bondSupp G)) :
+lean/src/D1Main.lean:37:theorem E0_Mass_inner (G : TowerGeom L) (a : ℝ) (S : BondSector G) (w : ↥(bondSupp G)) :
+lean/src/D1Main.lean:49:theorem Fth_symm (θ : ℝ) (u v : ↥(bondSupp (geomOf ell k S))) :
+lean/src/D1Main.lean:87:theorem sing_mem_bondSupp (G : TowerGeom (scaleUp ell k Lu)) {x : PeriodicLatticeSite (scaleUp ell k Lu)} (hx : x ∈ G.Om0)
+lean/src/D1Main.lean:141:theorem exists_nonunit_Ginv (hS : Admissible ell M R k S) (hell : 2 ≤ ell) (hroom : 17 * ell ≤ R * M)
+lean/src/GdGen4.lean:31:theorem NG_unit_of_N1 (D : BaseDataS E S F) (hL : D.Laws) {G1inv : E →L[ℝ] E} (hG : D.IsG1inv G1inv)
+lean/src/GdGen4.lean:50:theorem Q_H1_apply (D : BaseDataS E S F) (G1inv : E →L[ℝ] E) (hN : IsUnit ((D.Q.comp (D.G1 G1inv)).comp D.Qs)) (f : F) :
+lean/src/GdGen4.lean:87:theorem TwoData.inner_H1_J_eq (h : TwoData D1 D2 V Z) (hL1 : D1.Laws) (hL2 : D2.Laws) (u1 : IsUnit D1.Ginv) (u2 : IsUnit D2.Ginv)
+lean/src/DriftPerCube.lean:162:theorem local_relDrift_le (hell2 : 2 ≤ ell) (hdvd : ∀ μ : Fin 3, ell ∣ (L μ + 1))
+lean/src/GdR6a.lean:12:  `⟨v, Ginv_lit v⟩ < 0 ≤ ⟨v, Ginv_loc v⟩`.  Hence `Θ` is not positive semidefinite in general and "dominate the localised `G1inv`" (the route that decided `Ginv`
+lean/src/GdR6a.lean:40:theorem G1inv_diff_eq (sD sJ sD' sJ' : PlaqSel)
+lean/src/GdR6a.lean:77:theorem Ginv_loc_psd_twist (sJ' : PlaqSel) (ha : 0 ≤ a) (θ : ℝ) :
+lean/src/GdR6a.lean:108:so `Θ = Ginv_lit - Ginv_loc` is not positive semidefinite, and neither is `G1inv_lit - G1inv_loc` (`G1inv_diff_eq`). -/
+lean/src/DQ4.lean:70:theorem units1 (η c X : ℝ) (P : ℝ) (hη : 0 < η) (hP : 0 < P) (h : X < c * ((P * η)⁻¹) ^ 1) : η * X ≤ c / P := by
+lean/src/DQ4.lean:75:theorem units2 (η c : ℝ) (D : Mt) (P : ℝ) (hη : 0 < η) (hP : 0 < P)
+lean/src/DG2a.lean:38:theorem pE_iE (z : ↥(bondSupp G)) : pE G (iE G z) = z := by
+lean/src/DG2a.lean:43:theorem iE_pE (y : BondFnL2 L) (hy : y ∈ bondSupp G) : iE G (pE G y) = y := by
+lean/src/DG2a.lean:47:theorem bondWt_mem (φ : PeriodicLatticeSite L → ℝ) (x : ↥(bondSupp G)) : bondWt φ (iE G x) ∈ bondSupp G := by
+lean/src/DG2a.lean:55:noncomputable def eW (φ : PeriodicLatticeSite L → ℝ) : ↥(bondSupp G) →L[ℝ] ↥(bondSupp G) :=
+lean/src/DG2a.lean:58:theorem iE_eW (φ : PeriodicLatticeSite L → ℝ) (x : ↥(bondSupp G)) : iE G (eW G φ x) = bondWt φ (iE G x) := by
+lean/src/DG2a.lean:62:theorem norm_E (x : ↥(bondSupp G)) : ‖x‖ = ‖iE G x‖ := rfl
+lean/src/DG2a.lean:64:theorem inner_E (x y : ↥(bondSupp G)) : ⟪x, y⟫ = ⟪iE G x, iE G y⟫ := Submodule.coe_inner (bondSupp G) x y
+lean/src/DG2a.lean:67:noncomputable def EWP (φ : PeriodicLatticeSite L → ℝ) : WPair ↥(bondSupp G) where
+lean/src/DG2a.lean:121:noncomputable def Y1 : ↥(bondSupp G) →L[ℝ] PlaqFnL2 Lf := plaqMaskC Pq ∘L curlC U ∘L iE G
+lean/src/DG2a.lean:122:noncomputable def Y2 : ↥(bondSupp G) →L[ℝ] SiteL2 Lf := Tfull G U ∘L iE G
+lean/src/DG2a.lean:123:noncomputable def Y3 : ↥(bondSupp G) →L[ℝ] FSp G := Ymass G U a ∘L iE G
+lean/src/DG2a.lean:124:noncomputable def Kz : ↥(bondSupp G) →L[ℝ] PlaqFnL2 Lf :=
+lean/src/DG2a.lean:126:noncomputable def Wb : ↥(bondSupp G) →L[ℝ] BondFnL2 Lf := Wop G U a ∘L iE G
+lean/src/DG2a.lean:129:noncomputable def Δg (x y : ↥(bondSupp G)) : ℝ :=
+lean/src/DG2a.lean:145:theorem ginv_bil {ell k : ℕ} {Lu : PeriodicLatticeExtent} (hell0 : 0 < ell) (S : Tower (scaleUp ell k Lu))
+lean/src/D2Main.lean:27:theorem genFormM_collapse (sD sJ : PlaqSel) (bs : BondSel) (P : IngrBParams) (h : ¬ IsUnit (dataM sD sJ bs P).Ginv)
+lean/src/D2Main.lean:59:theorem E0_DpiM_inner {L : PeriodicLatticeExtent} (sD : PlaqSel) (bs : BondSel) (G : TowerGeom L) (U : Cfg L) (a : ℝ) (w : ↥(bondSupp G)) :
+lean/src/D2Main.lean:72:noncomputable def FthM (θ : ℝ) : ↥(bondSupp (geomOf ell k S)) →L[ℝ] ↥(bondSupp (geomOf ell k S)) :=
+lean/src/D2Main.lean:94:theorem FthM_symm (θ : ℝ) (u v : ↥(bondSupp (geomOf ell k S))) :
+lean/src/D2Main.lean:136:theorem exists_nonunit_GinvM (hS : Admissible ell M R k S) (hell : 2 ≤ ell) (hroom : 17 * ell ≤ R * M) (ha : 0 ≤ a)
+lean/src/DLR22.lean:43:theorem Gam_isUnit [FiniteDimensional ℝ Y] (q b : ℝ) (hq : 0 ≤ q) (hb : 0 ≤ b) (hqb : 0 < q * b) (hQ : ‖H.Qp‖ ≤ q)
+lean/src/D1Collapse.lean:30:theorem gen_G_zero (h : ¬ IsUnit D.Ginv) : D.G = 0 := Ring.inverse_non_unit _ h
+lean/src/D1Collapse.lean:32:theorem gen_H_zero (h : ¬ IsUnit D.Ginv) : D.H = 0 := by
+lean/src/D1Collapse.lean:37:theorem gen_Ginv_isG1inv (hL : D.Laws) (h : ¬ IsUnit D.Ginv) : D.IsG1inv D.Ginv := by
+lean/src/D1Collapse.lean:42:theorem gen_G1inv_eq (hL : D.Laws) (h : ¬ IsUnit D.Ginv) {G1inv : E →L[ℝ] E} (hG : D.IsG1inv G1inv) : G1inv = D.Ginv :=
+lean/src/D1Collapse.lean:45:theorem gen_G1_zero (hL : D.Laws) (h : ¬ IsUnit D.Ginv) {G1inv : E →L[ℝ] E} (hG : D.IsG1inv G1inv) : D.G1 G1inv = 0 := by
+lean/src/D1Collapse.lean:50:theorem gen_H1_zero (hL : D.Laws) (h : ¬ IsUnit D.Ginv) {G1inv : E →L[ℝ] E} (hG : D.IsG1inv G1inv) : D.H1 G1inv = 0 := by
+lean/src/D1Collapse.lean:57:theorem genFormS_collapse (sD sJ : PlaqSel) (P : IngrBParams) (h : ¬ IsUnit (dataS sD sJ P).Ginv) (B : BondFnL2 P.Lu) :
+lean/src/DriftTerminal.lean:115:theorem local_curlDrift_le_percube (hell2 : 2 ≤ ell) (hdvd : ∀ μ : Fin 3, ell ∣ (L μ + 1))
+lean/src/DriftTerminal.lean:363:theorem localization_price :
+lean/src/DLR88.lean:200:theorem ginv1Small_two : GinvSmall (hc.ginv1 νψ δψ hν hδ) where
+lean/src/DLR88.lean:253:theorem n1Small_two : NSmall (modelNOf (hc.ginv1 νψ δψ hν hδ) (cg1 2 1 1 ρ θ₀ hc νψ) (qBS 2 1 ρ) (bN1 2 1 1 ρ θ₀ hc νψ)
+lean/src/D1Mass.lean:27:theorem suCoordInv_apply_congr' {x x' : XS L} {b : Bond L} (h : x b = x' b) :
+lean/src/DLR77.lean:118:theorem second_deriv_eq_of_even (f : E → F) (hf : ContDiffAt ℝ 2 f 0) (π : F →L[ℝ] G) (b b' : E)
+lean/src/DLR77.lean:171:theorem C2StepX_row_congr (s ell : ℕ) (V0 : PeriodicLinkConfiguration SU2 L) (hreg : RegBg s ell V0)
+lean/src/DLR77.lean:188:theorem C2CompX_row_congr (ell : ℕ) (bg : ℕ → PeriodicLinkConfiguration SU2 L) (J : ℕ)
+lean/src/DLR34.lean:123:noncomputable def ginvHypS (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 ≤ a)
+lean/src/GdR6b.lean:40:theorem Delta2_eq_zero_of_Jperp (D : BaseDataS E S F) (hL : D.Laws) (V : Submodule ℝ E) (Z : Submodule ℝ F)
+lean/src/GdR6b.lean:82:theorem G1invS_eq_Ginv_base (sD : PlaqSel) {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (hell : 0 < P.ell) (h3 : 3 ≤ R * M)
+lean/src/DD.lean:74:theorem bump_supp (z : PeriodicLatticeSite L) (hz : bump y n hn hfit z ≠ 0) : pdist (cen y n hfit) z ≤ 8 * (n / 24) := by
+lean/src/MC1.lean:96:theorem near_shift_second {L : PeriodicLatticeExtent} (x : PeriodicLatticeSite L) (μ ν : Fin 3) (hne : μ ≠ ν) :
+lean/src/MI6.lean:120:theorem Lh_Linvh (G : TowerGeom L) (U : Cfg L) (a : ℝ) (hw : ∀ j, 0 ≤ wq G a j) (hu : IsUnit (LP G U a))
+lean/src/MI6.lean:130:theorem Linvh_Lh (G : TowerGeom L) (U : Cfg L) (a : ℝ) (hw : ∀ j, 0 ≤ wq G a j) (hu : IsUnit (LP G U a))
+lean/src/MI6.lean:394:noncomputable def hatSiteHyp (G : TowerGeom L) (U : Cfg L) (a : ℝ) (hw : ∀ j, 0 ≤ wq G a j) (hu : IsUnit (LP G U a))
+lean/src/DLR12.lean:183:theorem gamma_cjp_lower (q : ℝ) (hq : 0 ≤ q) (hQ : ‖H.Qp‖ ≤ q) (u : Y) :
+lean/src/MA1.lean:34:theorem fform_lower (U : Cfg Lf) (a cs : ℝ) (hp : HatPack (ell := ell) (k := k) (S := S) (W := W) U a cs)
+lean/src/D1Path.lean:80:theorem Gp_supp (G : TowerGeom L) (U : Cfg L) (a : ℝ) (f : SiteL2 L) (x : PeriodicLatticeSite L)
+lean/src/D1Path.lean:95:theorem Wop_congr_Z {ell M R k : ℕ} {S : Tower L} (hS : Admissible ell M R k S) (hell : 2 ≤ ell)
+lean/src/ZR2C4d.lean:41:theorem goodBase_isG1inv : (goodBase ell hell k Lu U).IsG1inv (goodBase ell hell k Lu U).Ginv := by
+lean/src/ZR2C4d.lean:61:theorem goodBase_unit : IsUnit (((goodBase ell hell k Lu U).Q.comp
+lean/src/DLR9.lean:94:theorem xtx_cjp_lower (ωX : WPair X) (ωZ : WPair Z) (T : X →L[ℝ] Z) (δ : ℝ) (hδ : 0 ≤ δ)
+lean/src/D1Cons.lean:23:theorem localised_holds_literal_fails :
+lean/src/D1Cons.lean:29:theorem literal_Ginv_indefinite (sJ : PlaqSel) {m R : ℕ} (hm : 1 ≤ m) (hR : 18 ≤ R) {α₀ : ℝ} (hα : 0 < α₀) :
+lean/src/D1Cons.lean:56:theorem literal_Ginv_depends_outside (sJ : PlaqSel) {m R : ℕ} (hm : 1 ≤ m) (hR : 18 ≤ R) :
+lean/src/DG2b.lean:118:noncomputable def NnE {L : PeriodicLatticeExtent} (G : TowerGeom L) (x : ↥(bondSupp G)) : ℝ :=
+lean/src/DG2b.lean:136:theorem Kz_le (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:177:theorem Wb_le (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:193:theorem NE (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:202:theorem E_nonneg (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:206:theorem Nn_le (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:216:theorem Y1_le (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:317:theorem Kz_cjp (y : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:334:theorem Kz_cjm (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:352:theorem dpW_cj (x y : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:400:theorem Nn_eq (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:416:theorem Dg0 (x y : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:488:theorem Dg1 (x y : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DG2b.lean:640:noncomputable def gsplit : GSplit ↥(bondSupp (geomOf ell k S)) (PlaqFnL2 (scaleUp ell k Lu))
+lean/src/DG2b.lean:698:theorem hHB_genuine (x y : ↥(bondSupp (geomOf ell k S))) :
+lean/src/GdGen6.lean:32:theorem genFormS_collapse_of_not_wd (sD sJ : PlaqSel) (P : IngrBParams) (h : ¬ WellDefAt sD sJ P) (B : BondFnL2 P.Lu) :
+lean/src/GdSchur.lean:28:theorem isUnit_Q_inv_Qs_of_pos_ker {M : E →L[ℝ] E} (hsym : ∀ x y, ⟪M x, y⟫ = ⟪x, M y⟫) (hM : IsUnit M)
+lean/src/GdSchur.lean:59:theorem GapAt_theta_of_pos_ker {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (hell : 0 < P.ell) (h3 : 3 ≤ R * M) (θ : ℝ)
+lean/src/DLR78.lean:111:theorem C2full_row_congr (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (hreg : RegTower ell (bgTower (GF ell k Lu) U) k)
+lean/src/DLR78.lean:123:theorem polar_row_congr (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (hreg : RegTower ell (bgTower (GF ell k Lu) U) k)
+lean/src/DLR35.lean:28:theorem GinvHyp.Ginv_apply {S E Y P B : Type*} [NormedAddCommGroup S] [InnerProductSpace ℝ S]
+lean/src/DLR35.lean:41:theorem GinvS_eq (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ) (ha : 0 ≤ a)
+lean/src/DLR35.lean:107:theorem mem_bondSupp_full (x : BondFnL2 (scaleUp ell k Lu)) : x ∈ bondSupp (GF ell k Lu) := by
+lean/src/DLR35.lean:112:theorem data_Ginv_form (hell : 0 < ell) (U : Cfg (scaleUp ell k Lu)) (a : ℝ) (Lam : Set (PeriodicLatticeSite Lu))
+lean/src/DLR35.lean:126:theorem GinvFull_coercive (U : Cfg (scaleUp ell k Lu)) (a t e q0 : ℝ)
+lean/src/GdAbs.lean:23:theorem Q_H_apply (hN : IsUnit ((D.Q.comp D.G).comp D.Qs)) (f : F) : D.Q (D.H f) = f := by
+lean/src/GdAbs.lean:38:theorem Delta2_eq_zero (hL : D.Laws) (j0 : F) (hJ : D.J = D.Qs j0) (hC : ∀ A, ⟪D.C2 A, j0⟫ = 0) :
+lean/src/GdAbs.lean:45:theorem G1inv_eq_Ginv_of (hL : D.Laws) (j0 : F) (hJ : D.J = D.Qs j0) (hC : ∀ A, ⟪D.C2 A, j0⟫ = 0)
+lean/src/GdAbs.lean:50:theorem inner_H1_Qs (G1inv : E →L[ℝ] E) (j0 f : F) (hf : ⟪f, j0⟫ = 0) : ⟪D.H1 G1inv f, D.Qs j0⟫ = 0 := by
+lean/src/DX1.lean:88:theorem coercive_to_gauge (U : LinkCfg (scaleUp ell k Lu)) (γ : GaugeFn (scaleUp ell k Lu)) (c : ℝ)
+lean/src/DX1.lean:102:theorem dlayer_form_ungauge (U : LinkCfg (scaleUp ell k Lu)) (γ : GaugeFn (scaleUp ell k Lu)) (ε : ℝ)
+lean/src/DrMargin.lean:7:If `Ginv_lit` is coercive with constant `c` and the localised correction has operator norm `ε < c` (and the localised data are well defined), then `G1inv_lit` is a unit.
+lean/src/DrMargin.lean:33:theorem G1inv_lit_isUnit_of_margin {c ε : ℝ} (hc : 0 < c)
+lean/src/DrMargin.lean:52:/-- **window**: if `G1inv_lit` is not a unit (localised data well defined), no coercivity constant of `Ginv_lit` exceeds `‖Delta2_loc‖`
+lean/src/DrMargin.lean:54:theorem coercivity_le_Delta2_of_gap (WD : WellDefAt selIn selIn P)
+lean/src/DrPath1.lean:31:theorem dataS_loc_congr (P : IngrBParams) {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (hell : 2 ≤ P.ell)
+lean/src/DrPath1.lean:47:theorem Ginv_lit_path (sJ : PlaqSel) (t : ℝ) :
+lean/src/DM1a.lean:24:theorem local_sum_sq_coarseCurl_le {ell : ℕ} (hell : 0 < ell)
+lean/src/GdGen7.lean:32:theorem GapAt_of_loc (sD sJ : PlaqSel)
+lean/src/ZXG3A.lean:43:def WellDef : Prop :=
+lean/src/ZXG3A.lean:73:def CoercGenAt (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/ZXG3A.lean:87:def CoercGenAtBoth (ell M R k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent)
+lean/src/ZXG3A.lean:100:theorem CoercGenAt.toBoth {ell M R k : ℕ} {hell : 0 < ell} {a : ℝ} {Lu : PeriodicLatticeExtent}
+lean/src/DK3C.lean:172:theorem C_norm_sq_lower (t : ℝ) (B : Reduced) : ‖B‖^2 ≤ ‖C t B‖^2 := by
+lean/src/DK3C.lean:193:theorem difference_supported (B : K) (hB : B ∈ axialSpace) :
+lean/src/MS10.lean:79:theorem site_coercive_M1_strat (ell M R k : ℕ) (hell : 2 ≤ ell) {S : Tower Lf} (hS : Admissible ell M R k S)
+lean/src/DH1.lean:112:theorem sig_lower (B : BondFnL2 (scaleUp ell k Lu)) :
+lean/src/DH1.lean:137:theorem Ginv_inj : Function.Injective (gparams ell k Lu hell0 S D.U D.a Lam).data.Ginv := by
+lean/src/DH1.lean:155:theorem Ginv_unit : IsUnit (gparams ell k Lu hell0 S D.U D.a Lam).data.Ginv := by
+lean/src/DH1.lean:162:theorem Ginv_G (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DH1.lean:168:theorem G_Ginv (x : ↥(bondSupp (geomOf ell k S))) :
+lean/src/DH1.lean:174:theorem N_unit : IsUnit (((gparams ell k Lu hell0 S D.U D.a Lam).data.Q.comp
+lean/src/DatumWitness.lean:278:theorem starDatum_Ginv_definite (bc : BaseConstant) {eps : ℝ} (heps : 0 < eps)
+lean/src/DatumWitness.lean:548:theorem starFloorConst_lower {t : ℝ} (ht0 : 0 ≤ t) (htpi : t ≤ Real.pi)
+lean/src/DatumWitness.lean:660:theorem starDatum_eps_coercive (bc : BaseConstant) {eps : ℝ} (heps : 0 < eps)
+lean/src/DatumWitness.lean:677:theorem norm_H1_le_of_eps_coercive {H K : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+lean/src/ZXR2Ops3.lean:30:def bondSupp (G : TowerGeom L) : Submodule ℝ (BondFnL2 L) where
+lean/src/ZXR2Ops3.lean:119:noncomputable def iE (G : TowerGeom L) : ↥(bondSupp G) →L[ℝ] BondFnL2 L := (bondSupp G).subtypeL
+lean/src/ZXR2Ops3.lean:121:noncomputable def pE (G : TowerGeom L) : BondFnL2 L →L[ℝ] ↥(bondSupp G) :=
+lean/src/ZXR2Ops3.lean:124:theorem pE_inner_left (G : TowerGeom L) (x : ↥(bondSupp G)) (y : BondFnL2 L) :
+lean/src/ZXR2Ops3.lean:128:theorem pE_inner_right (G : TowerGeom L) (x : ↥(bondSupp G)) (y : BondFnL2 L) :
+lean/src/MXQ_Base.lean:111:theorem RegBodyH.congr_bound {L : PeriodicLatticeExtent} {ell M b b' : ℕ} {sites : Set (PeriodicLatticeSite L)} {j : ℕ} {α₀ α₀' η : ℝ}
+lean/src/MI27.lean:44:theorem gamma_lower_approx (H : SiteHyp S E Y) (q b η : ℝ) (hq : 0 ≤ q) (hb : 0 ≤ b) (hη : η ≤ 1)
+lean/src/MS9.lean:203:theorem site_coercive_M1 (ell M R k : ℕ) (hell : 2 ≤ ell) {S : Tower Lf} (hS : Admissible ell M R k S)

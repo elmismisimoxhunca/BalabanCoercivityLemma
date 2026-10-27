@@ -1,0 +1,94 @@
+{
+  "closedGoal": "none",
+  "file": "AHP/round5/guarded/ivt-r1/Attempt.lean",
+  "mainDeclaration": "AdalyFormal.Round5.Guarded.IVTR1.goalNeg2_of_twist_crossings",
+  "mainLine": 1888,
+  "axiomLine": "'AdalyFormal.Round5.Guarded.IVTR1.goalNeg2_of_twist_crossings' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "compileExit": 0,
+  "warningCount": 0,
+  "imports": [
+    "DrEquiv"
+  ],
+  "pinVerbatimBytePrefix": true,
+  "inheritedRound4AttemptVerbatimBytePrefix": true,
+  "sourceSha256": "64a93e3f111abbddfcac55216a66665695c339272f99483851cc0bed973c90c6",
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "inheritedAttemptSha256": "df30c794c74bda3d1fbbc66c8cf13bcd1b0045d29a0a07cd78733e4bb4b735e1",
+  "logSha256": "b0fbcd95d7d6978b4bc11520f5aafed23a74e961706ec437cea9c85acf59d2fa",
+  "localDeclarationCount": 116,
+  "printedDependencyRecords": 136,
+  "allLocalDeclarationsPrinted": true,
+  "allAxiomsAllowed": true,
+  "forbiddenTokens": [],
+  "newDeclarations": {
+    "guarded_separation_of_kernel_positive": 1666,
+    "unit_of_strict_quadratic": 1686,
+    "twistU": 1703,
+    "twistP": 1706,
+    "twistA": 1709,
+    "twistD": 1713,
+    "twist_agrees": 1717,
+    "twist_cont": 1724,
+    "twist_data_constant": 1734,
+    "twistD_constant": 1742,
+    "uniform_curved_family": 1757,
+    "exterior_carrier_path": 1798,
+    "twistA_continuous": 1819,
+    "twist_separation_of_kernel_positive": 1843,
+    "KernelPositiveCrossing": 1878,
+    "goalNeg2_of_twist_crossings": 1888
+  },
+  "numericalRuns": [
+    {
+      "file": "AHP/round5/guarded/ivt-r1/numerics/crossing_R2_eps-0.0015625.json",
+      "sha256": "06744e72fd0b6ae1b28c608916a6e4d19fe4f6a762bc7fe8edbefbe085fa77bd",
+      "epsilon": -0.0015625,
+      "R": 2,
+      "peakRssKiB": 218980,
+      "projectedCorrectionEigenvalues": [
+        1.4227224114074203e-11,
+        1.4227227594658022e-11
+      ]
+    },
+    {
+      "file": "AHP/round5/guarded/ivt-r1/numerics/crossing_R2_eps0.00078125.json",
+      "sha256": "42e218984c6058c268c3a154a2bbfa1818b010ae7b8febc328e5d73260fce50a",
+      "epsilon": 0.00078125,
+      "R": 2,
+      "peakRssKiB": 219360,
+      "projectedCorrectionEigenvalues": [
+        2.8581029452559974e-12,
+        2.858103249257963e-12
+      ]
+    },
+    {
+      "file": "AHP/round5/guarded/ivt-r1/numerics/crossing_R2_eps0.0015625.json",
+      "sha256": "dd1afb4e8621bd0229d5639b36afc89732017ddde2d5fe09ecc76f1a3ecf149e",
+      "epsilon": 0.0015625,
+      "R": 2,
+      "peakRssKiB": 219556,
+      "projectedCorrectionEigenvalues": [
+        1.4227226852040449e-11,
+        1.422722877547428e-11
+      ]
+    },
+    {
+      "file": "AHP/round5/guarded/ivt-r1/numerics/crossing_R6_eps0.0015625.json",
+      "sha256": "4c2fd7ad4dda223933c04baa23c229e2b887204961c33e0658cf18599d0e2983",
+      "epsilon": 0.0015625,
+      "R": 6,
+      "peakRssKiB": 796628,
+      "projectedCorrectionEigenvalues": [
+        -1.0220141049337767e-37,
+        3.804777158533769e-37,
+        4.283038350480707e-18,
+        4.2830384025078754e-18
+      ]
+    }
+  ],
+  "sectorFileSha256": "e23effe286f1443657424168c890cb13d7b7578351f4b8bd3b41d3decd344f02",
+  "sectorCount": 16,
+  "numericalMinimumCarrierEigenvalue": 2.222855974198487e-12,
+  "scope": "Conditional IVT reduction for actual curved-twist assemblies, with cofinal radius-before-cap bookkeeping. The arbitrarily small KernelPositiveCrossing premise is NOT proved. No pinned goal is closed; numerical signs are not certified.",
+  "independentReplay": false
+}

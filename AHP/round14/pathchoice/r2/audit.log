@@ -1,0 +1,143 @@
+{
+  "verdict": "A genuinely better modified path is found numerically. Its negative-pi endpoint is proved; original P3 and the remaining crossing-positivity and area inputs stay open. Lean proves path infrastructure and conditional reductions only.",
+  "lean": [
+    {
+      "local": "AHP/round14/pathchoice/r2/LongArm.lean",
+      "shared": "AHP/round14/shared/pathchoice/R2_LongArm.lean",
+      "sha256": "ea553e4e37fcd03d762115dca4915d88d903047df35291b93a7bb0d4ca89ab5e",
+      "byte_identical": true,
+      "lines": 5479,
+      "executions": [
+        {
+          "path": "AHP/round14/pathchoice/r2/LongArm.lean",
+          "exit": 0,
+          "axiom_records": 376,
+          "new_pathchoice_records": 52,
+          "other_new_records": 7,
+          "warnings": 0,
+          "errors": 0,
+          "sorryAx": 0,
+          "forbidden_mechanisms": false
+        },
+        {
+          "path": "AHP/round14/shared/pathchoice/R2_LongArm.lean",
+          "exit": 0,
+          "axiom_records": 376,
+          "new_pathchoice_records": 52,
+          "other_new_records": 7,
+          "warnings": 0,
+          "errors": 0,
+          "sorryAx": 0,
+          "forbidden_mechanisms": false
+        }
+      ]
+    },
+    {
+      "local": "AHP/round14/pathchoice/r2/LongCrossing.lean",
+      "shared": "AHP/round14/shared/pathchoice/R2_LongCrossing.lean",
+      "sha256": "806e2b27e62ad33352bc1aaf46f80615edf792c7e1d3baf3a618b84bbd1a771e",
+      "byte_identical": true,
+      "lines": 11651,
+      "executions": [
+        {
+          "path": "AHP/round14/pathchoice/r2/LongCrossing.lean",
+          "exit": 0,
+          "axiom_records": 30,
+          "new_pathchoice_records": 18,
+          "other_new_records": 0,
+          "warnings": 0,
+          "errors": 0,
+          "sorryAx": 0,
+          "forbidden_mechanisms": false
+        },
+        {
+          "path": "AHP/round14/shared/pathchoice/R2_LongCrossing.lean",
+          "exit": 0,
+          "axiom_records": 30,
+          "new_pathchoice_records": 18,
+          "other_new_records": 0,
+          "warnings": 0,
+          "errors": 0,
+          "sorryAx": 0,
+          "forbidden_mechanisms": false
+        }
+      ]
+    }
+  ],
+  "tail_endpoint": {
+    "proved": true,
+    "theorem": "AdalyFormal.Round14.PathChoice.tailEndpointNegative",
+    "crossing_theorem": "AdalyFormal.Round14.PathChoice.tailKernelLinePackage_of_crossingPositive",
+    "scope": "Unconditional negative-pi input; whole kernel line remains conditional on TailCrossingPositive."
+  },
+  "q4_R18_high_precision": {
+    "dps": 110,
+    "right_row_j": 303,
+    "root_double": 1.1308445374655998,
+    "positive_cells": 256,
+    "negative_cells": 0,
+    "sum": "3.86367835166634921737679719687187106426445849770689651771677799247029381435454420195675350623811215111921e-129",
+    "max_over_abs_sum": "0.00604231654413030162367532478582202331066586354176151303759420011776077948850607148561041477313470854701743",
+    "abs_sum_over_l1": "1.0",
+    "residual": "1.90217373535624469939621409249350291876341748087325162693135583667314819486629039077956454449635269673818e-106",
+    "scope": "High-precision dressed solve from a double-precision drive; not a root enclosure or proof."
+  },
+  "q4_R20_double": {
+    "root": 1.1308445374656007,
+    "positive_cells": 256,
+    "negative_cells": 0,
+    "ratio": 0.005798533663131647,
+    "scope": "Double-precision non-interval evidence only."
+  },
+  "q2_R20_high_precision": {
+    "dps": 110,
+    "right_row_j": 167,
+    "positive_cells": 62,
+    "negative_cells": 2,
+    "ratio": "0.0410964393929628414666920387746052755729040975382443619632101422135987690727343790024456745671024685479602",
+    "abs_sum_over_l1": "0.999582572218818153530637897905391696759192830753053877979166594287882788079356266141526133699028604175013",
+    "residual": "1.68508668071120942686129510743418734065256554516034950360020424924874149439863840039105815699052598534786e-106"
+  },
+  "q2_R22_double": {
+    "root": 1.130845186864259,
+    "ratio": 0.055152365895134975,
+    "central_zero_minima": [
+      1.3667857243156196,
+      0.26234755000318366,
+      0.1331866476149964
+    ]
+  },
+  "q1_caution": {
+    "ratio": 37.140087307726645,
+    "scope": "The same coefficients do not give a uniform all-q common-sign regime; q=1 is outside the dyadic cofinal sequence after j=0."
+  },
+  "q4_sweep": {
+    "variants": 54,
+    "common_sign_variants": [
+      "c2_-0.25_c3_-2.25"
+    ]
+  },
+  "cluster_control": {
+    "original_root": 1.2080305375347549,
+    "equal_ratios": [
+      16.61872103156341,
+      1.7560619027311704,
+      2.310222450552898
+    ],
+    "scope": "Same-side double stars did not improve cancellation."
+  },
+  "screen_exits": {
+    "screen_cluster_2x0.exit": 0,
+    "screen_longer_L3.exit": 0,
+    "screen_tail_sweep_L3.exit": 0,
+    "screen_tail_targeted_L3.exit": 0,
+    "screen_tail_q1_R20.exit": 0,
+    "screen_tail_q2_R22.exit": 0,
+    "screen_tail_q4_R18.exit": 0,
+    "screen_tail_q4_R20.exit": 0,
+    "screen_tail_q4_sweep.exit": 0,
+    "verify_tail_q2_R20_p110.exit": 0,
+    "verify_tail_q4_R18_p110.exit": 0
+  },
+  "qualification": "All numerical values are non-interval evidence only. No numerical root, sign, nonzero sum, P1/P2/KernelLine, or cofinal statement is used as a Lean premise."
+}

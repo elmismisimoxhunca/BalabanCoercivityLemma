@@ -1,0 +1,90 @@
+{
+  "eigenmode_decomposition": [
+    {
+      "label": "main_sequence_eps0.05 (min -0.2233 row)",
+      "min_eig": -0.22330356989996256,
+      "curl_part": 0.019013294997935498,
+      "bilplaq_part": -0.2423168648978977,
+      "sum": -0.22330356989996208,
+      "flat_div_energy": 4.349721101657764,
+      "eigvalsh_min_check": -0.22330356989996297
+    },
+    {
+      "label": "gauge_penalty_seed0_eps0.05 (raw min -0.2573 row)",
+      "min_eig": -0.25726242407280503,
+      "curl_part": 0.02384352414994631,
+      "bilplaq_part": -0.2811059482227508,
+      "sum": -0.25726242407280475,
+      "flat_div_energy": 4.632463712193261,
+      "eigvalsh_min_check": -0.25726242407280425
+    }
+  ],
+  "bond_inclusions": [
+    {
+      "label": "slab_N4_W2",
+      "cubeBond_subset_readBond": true,
+      "cubeBond_subset_touchBond": true,
+      "n_both": 80,
+      "n_read": 176
+    },
+    {
+      "label": "slab_N6_W2",
+      "cubeBond_subset_readBond": true,
+      "cubeBond_subset_touchBond": true,
+      "n_both": 180,
+      "n_read": 396
+    },
+    {
+      "label": "slab_N6_W4",
+      "cubeBond_subset_readBond": true,
+      "cubeBond_subset_touchBond": true,
+      "n_both": 396,
+      "n_read": 612
+    },
+    {
+      "label": "slab_N8_W2",
+      "cubeBond_subset_readBond": true,
+      "cubeBond_subset_touchBond": true,
+      "n_both": 320,
+      "n_read": 704
+    },
+    {
+      "label": "cube_compare",
+      "cubeBond_subset_readBond": true,
+      "cubeBond_subset_touchBond": true,
+      "n_both": 12,
+      "n_read": 108
+    }
+  ],
+  "cap_arithmetic": {
+    "a0=1.110721": {
+      "phase_cap_j0": 0.7853981633974483,
+      "two_diff_bound_j0": 1.5707963267948966,
+      "cos_nonneg_guaranteed": true
+    },
+    "a0=2.221441": {
+      "phase_cap_j0": 1.5707963267948966,
+      "two_diff_bound_j0": 3.141592653589793,
+      "cos_nonneg_guaranteed": false
+    },
+    "a0=4.442883": {
+      "phase_cap_j0": 3.141592653589793,
+      "two_diff_bound_j0": 6.283185307179586,
+      "cos_nonneg_guaranteed": false
+    }
+  },
+  "rewrite_monotonicity": [
+    {
+      "label": "slab_N4_W2",
+      "all_touching_corners_forced": true,
+      "n_witness_plaquettes_in_plaqIn_C_outside_plaqCorner": 64,
+      "rewrite_impossible_for_any_S": true
+    },
+    {
+      "label": "cube_compare",
+      "all_touching_corners_forced": true,
+      "n_witness_plaquettes_in_plaqIn_C_outside_plaqCorner": 30,
+      "rewrite_impossible_for_any_S": true
+    }
+  ]
+}

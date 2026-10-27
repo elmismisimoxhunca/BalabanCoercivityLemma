@@ -1,0 +1,146 @@
+namespace AdalyFormal.Round13.Positivity.Physical
+open Classical
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.StatementLaneR6
+open AdalyFormal.StatementLaneR8
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 curlValueCovariant)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Balaban.CovariantHjMinimizer
+  (periodicLatticeShiftBack periodicLatticeShift_shiftBack periodicLatticeShiftBack_shift)
+open AdalyFormal.Round12.Noncancel.Path
+open AdalyFormal.Round12.Noncancel.Plaquette
+open AdalyFormal.Round12.Noncancel.FullPlaquette
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round13.Positivity.Leaves
+variable {L : PeriodicLatticeExtent}
+
+/-- Two exterior normal layers; transverse shifts preserve this property. -/
+def exteriorPair (Om : Set (PeriodicLatticeSite L)) (z : PeriodicLatticeSite L) : Prop :=
+  z ∉ Om ∧ periodicLatticeShift z 0 ∉ Om
+
+theorem exteriorPair_shift {Om : Set (PeriodicLatticeSite L)} {x z : PeriodicLatticeSite L}
+    (hb : BdPt Om x) (hz : exteriorPair Om z) {ν : Fin 3} (hν : ν ≠ 0) :
+    exteriorPair Om (periodicLatticeShift z ν) := by
+  constructor
+  · exact fun h => hz.1 ((hb.trans z ν hν).mp h)
+  · rw [shift_comm z hν]
+    exact fun h => hz.2 ((hb.trans _ ν hν).mp h)
+
+theorem exteriorPair_back {Om : Set (PeriodicLatticeSite L)} {x z : PeriodicLatticeSite L}
+    (hb : BdPt Om x) (hz : exteriorPair Om z) {ν : Fin 3} (hν : ν ≠ 0) :
+    exteriorPair Om (periodicLatticeShiftBack z ν) := by
+  have hz0 : periodicLatticeShiftBack z ν ∉ Om := by
+    intro h
+    exact hz.1 (by simpa only [periodicLatticeShift_shiftBack] using
+      (hb.trans _ ν hν).mpr h)
+  refine ⟨hz0, ?_⟩
+  intro h
+  have hh := (hb.trans _ ν hν).mpr h
+  rw [shift_comm _ (Ne.symm hν), periodicLatticeShift_shiftBack] at hh
+  exact hz.2 hh
+
+/-- Any plaquette based on two exterior layers has four exterior vertices. -/
+theorem exteriorPair_vertices {Om : Set (PeriodicLatticeSite L)} {x : PeriodicLatticeSite L}
+    (hb : BdPt Om x) (p : PeriodicLatticePlaquette L) (hp : exteriorPair Om p.1) :
+    ∀ e ∈ periodicPlaquetteBoundaryEdges p,
+      e.1 ∉ Om ∧ periodicLatticeShift e.1 e.2 ∉ Om := by
+  have hν : p.2.1.2 ≠ 0 := ne_of_gt (lt_of_le_of_lt (Fin.zero_le _) p.2.2)
+  have hμ : periodicLatticeShift p.1 p.2.1.1 ∉ Om := by
+    by_cases h : p.2.1.1 = 0
+    · simpa only [h] using hp.2
+    · exact (exteriorPair_shift hb hp h).1
+  have hμν : periodicLatticeShift (periodicLatticeShift p.1 p.2.1.1) p.2.1.2 ∉ Om :=
+    fun h => hμ ((hb.trans _ _ hν).mp h)
+  have hν' := (exteriorPair_shift hb hp hν).1
+  intro e he
+  rcases (edge_mem p e).mp he with rfl | rfl | rfl | rfl
+  · exact ⟨hp.1,hμ⟩
+  · exact ⟨hμ,hμν⟩
+  · refine ⟨hν', ?_⟩
+    rw [shift_comm _ (ne_of_gt p.2.2)]
+    exact hμν
+  · exact ⟨hp.1,hν'⟩
+
+/-- A curved plaquette touching the star is either one of its FOUR arms or is
+entirely exterior. The latter may be curved, but its supported input is zero. -/
+theorem star_edge_cases {Om : Set (PeriodicLatticeSite L)} {x : PeriodicLatticeSite L}
+    (hb : BdPt Om x) (hf : periodicLatticeShift (periodicLatticeShift x 0) 0 ∉ Om)
+    (p : PeriodicLatticePlaquette L) (e : Bond L)
+    (he : e ∈ periodicPlaquetteBoundaryEdges p)
+    (hs : e ∈ starLinks (periodicLatticeShift x 0)) :
+    (∃ ν : {ν : Fin 3 // 0 < ν}, p = P1 x ν ∨ p = P2 x ν) ∨
+      exteriorPair Om p.1 := by
+  have hx : exteriorPair Om (periodicLatticeShift x 0) := ⟨hb.hx',hf⟩
+  have hsites : e.1 = periodicLatticeShift x 0 ∨
+      e.1 = periodicLatticeShiftBack (periodicLatticeShift x 0) e.2 := by
+    rcases hs.2 with h | h
+    · exact Or.inl h
+    · right
+      have := congrArg (fun z => periodicLatticeShiftBack z e.2) h
+      simpa only [periodicLatticeShiftBack_shift] using this
+  have hext : exteriorPair Om e.1 := by
+    rcases hsites with h | h
+    · rw [h]; exact hx
+    · rw [h]; exact exteriorPair_back hb hx hs.1
+  rcases (edge_mem p e).mp he with he | he | he | he
+  · right
+    have hsite := congrArg Prod.fst he
+    simpa only [hsite] using hext
+  · have hsite := congrArg Prod.fst he
+    have hdir := congrArg Prod.snd he
+    by_cases hμ : p.2.1.1 = 0
+    · left
+      have hν : 0 < p.2.1.2 := lt_of_le_of_lt (Fin.zero_le _) p.2.2
+      refine ⟨⟨p.2.1.2,hν⟩, ?_⟩
+      have hh : periodicLatticeShift p.1 0 = e.1 := by simpa only [hμ] using hsite.symm
+      rcases hsites with hx | hx
+      · left
+        have hbase : p.1 = x := by
+          have := congrArg (fun z => periodicLatticeShiftBack z 0) (hh.trans hx)
+          simpa only [periodicLatticeShiftBack_shift] using this
+        apply Prod.ext hbase
+        apply Subtype.ext
+        exact Prod.ext hμ rfl
+      · right
+        have hscomm : periodicLatticeShiftBack (periodicLatticeShift x 0) p.2.1.2 =
+            periodicLatticeShift (periodicLatticeShiftBack x p.2.1.2) 0 := by
+          have hh : periodicLatticeShift
+              (periodicLatticeShift (periodicLatticeShiftBack x p.2.1.2) 0) p.2.1.2 =
+              periodicLatticeShift x 0 := by
+            rw [shift_comm _ (Ne.symm (ne_of_gt hν)), periodicLatticeShift_shiftBack]
+          have := congrArg (fun z => periodicLatticeShiftBack z p.2.1.2) hh
+          simpa only [periodicLatticeShiftBack_shift] using this.symm
+        rw [hdir,hscomm] at hx
+        have hbase : p.1 = periodicLatticeShiftBack x p.2.1.2 := by
+          have := congrArg (fun z => periodicLatticeShiftBack z 0) (hh.trans hx)
+          simpa only [periodicLatticeShiftBack_shift] using this
+        apply Prod.ext hbase
+        apply Subtype.ext
+        exact Prod.ext hμ rfl
+    · right
+      have hh := exteriorPair_back hb hext hμ
+      simpa only [hsite,periodicLatticeShiftBack_shift] using hh
+  · right
+    have hsite := congrArg Prod.fst he
+    have hν : p.2.1.2 ≠ 0 := ne_of_gt (lt_of_le_of_lt (Fin.zero_le _) p.2.2)
+    have hh := exteriorPair_back hb hext hν
+    simpa only [hsite,periodicLatticeShiftBack_shift] using hh
+  · right
+    have hsite := congrArg Prod.fst he
+    simpa only [hsite] using hext
+
+end AdalyFormal.Round13.Positivity.Physical
+#print axioms AdalyFormal.Round13.Positivity.Physical.exteriorPair
+#print axioms AdalyFormal.Round13.Positivity.Physical.exteriorPair_shift
+#print axioms AdalyFormal.Round13.Positivity.Physical.exteriorPair_back
+#print axioms AdalyFormal.Round13.Positivity.Physical.exteriorPair_vertices
+#print axioms AdalyFormal.Round13.Positivity.Physical.star_edge_cases

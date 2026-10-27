@@ -1,0 +1,17 @@
+'AdalyFormal.Round10.Nonvanishing.left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourceWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sum_left_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sum_right_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.neighbor_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.source_l1_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_decompose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourceWeight_zero_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_same_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.BlockSourceData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.coupling_ne_zero_of_blockSourceData' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

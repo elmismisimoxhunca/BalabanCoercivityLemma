@@ -1,0 +1,52 @@
+'AdalyFormal.AHP.FidelS3Normalisation.raw_level_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS3Normalisation.linear_level_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS3Normalisation.plainH_eq_uniformBody_at_depth_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Fidelity.S1.cubeBond_readBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Fidelity.S1.perCubeRegularShell_toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Fidelity.S1.classCoupledShell_toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Fidelity.S1.classCoupledShell_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Fidelity.S1.shell_slab_nonvacuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Fidelity.S1.readBond_not_touchBond_slab6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Fidelity.S1.no_plaqIn_eq_plaqCorner_slab6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.touchCover_cubeBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.CoversPlaqFour.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.CoversPlaqCorner.toFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.PerCubeRegularTouch.toFrozen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.ClassCoupledFour.toFrozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.ClassCoupledCorner.toFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.ClassCoupledCorner.toFrozen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.targetFour_of_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.targetCorner_of_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.FidelS2Inclusion.targetCorner_of_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.admissible_imp_nonstrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.admissibleNonStrict_k1_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.pdist_L8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.collar_separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.readingB_of_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.scaleUp_length' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.unitEmb_val' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.pcd_scale' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.pdist_emb_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.lambda_collar_scale_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.headline_fine_side_ge16' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.global_imp_perCube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.globalClass_imp_frozenClass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.global_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.bondEnergyHS_eq_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.instIneqHS_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.target_iff_hs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.total_imp_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.threshold_order_toy' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.FidelityGuarded.Ginv_lit_psd_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.FidelityGuarded.Uth_hits_nonunit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.FidelityGuarded.Uth_singular_is_not_a_split' depends on axioms: [propext, Classical.choice, Quot.sound]

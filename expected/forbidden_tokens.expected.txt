@@ -1,0 +1,5 @@
+AdalyFormal.Balaban.SpineCovariant	sorry
+AdalyFormal.Balaban.TheLemma	sorry
+R7Fork.AdalyFormal.Balaban.FaithfulCoercivitySU2	sorry
+R7Fork.AdalyFormal.Balaban.FaithfulDeltaKNonScalar	sorry
+R7Fork.AdalyFormal.Balaban.TheLemmaNormalized	sorry

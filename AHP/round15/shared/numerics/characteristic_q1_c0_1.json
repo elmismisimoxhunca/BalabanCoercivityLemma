@@ -1,0 +1,436 @@
+{
+  "source": "AHP/round15/shared/numerics/characters/q1_R22/c0_1.json",
+  "q": 1,
+  "R": 22,
+  "character": [
+    0,
+    1
+  ],
+  "field": "Q(zeta_4), zeta_4=exp(2*pi*i/4), zeta_4^2=-1",
+  "charpoly_highest_first": [
+    {
+      "expression": "1",
+      "terms": [
+        [
+          0,
+          "1"
+        ]
+      ]
+    },
+    {
+      "expression": "-56",
+      "terms": [
+        [
+          0,
+          "-56"
+        ]
+      ]
+    },
+    {
+      "expression": "1356",
+      "terms": [
+        [
+          0,
+          "1356"
+        ]
+      ]
+    },
+    {
+      "expression": "-18592",
+      "terms": [
+        [
+          0,
+          "-18592"
+        ]
+      ]
+    },
+    {
+      "expression": "158698",
+      "terms": [
+        [
+          0,
+          "158698"
+        ]
+      ]
+    },
+    {
+      "expression": "-872984",
+      "terms": [
+        [
+          0,
+          "-872984"
+        ]
+      ]
+    },
+    {
+      "expression": "3097008",
+      "terms": [
+        [
+          0,
+          "3097008"
+        ]
+      ]
+    },
+    {
+      "expression": "-6901720",
+      "terms": [
+        [
+          0,
+          "-6901720"
+        ]
+      ]
+    },
+    {
+      "expression": "9180819",
+      "terms": [
+        [
+          0,
+          "9180819"
+        ]
+      ]
+    },
+    {
+      "expression": "-6901720",
+      "terms": [
+        [
+          0,
+          "-6901720"
+        ]
+      ]
+    },
+    {
+      "expression": "3097008",
+      "terms": [
+        [
+          0,
+          "3097008"
+        ]
+      ]
+    },
+    {
+      "expression": "-872984",
+      "terms": [
+        [
+          0,
+          "-872984"
+        ]
+      ]
+    },
+    {
+      "expression": "158698",
+      "terms": [
+        [
+          0,
+          "158698"
+        ]
+      ]
+    },
+    {
+      "expression": "-18592",
+      "terms": [
+        [
+          0,
+          "-18592"
+        ]
+      ]
+    },
+    {
+      "expression": "1356",
+      "terms": [
+        [
+          0,
+          "1356"
+        ]
+      ]
+    },
+    {
+      "expression": "-56",
+      "terms": [
+        [
+          0,
+          "-56"
+        ]
+      ]
+    },
+    {
+      "expression": "1",
+      "terms": [
+        [
+          0,
+          "1"
+        ]
+      ]
+    }
+  ],
+  "dominant_factor_highest_first": [
+    {
+      "expression": "1",
+      "terms": [
+        [
+          0,
+          "1"
+        ]
+      ]
+    },
+    {
+      "expression": "-56",
+      "terms": [
+        [
+          0,
+          "-56"
+        ]
+      ]
+    },
+    {
+      "expression": "1356",
+      "terms": [
+        [
+          0,
+          "1356"
+        ]
+      ]
+    },
+    {
+      "expression": "-18592",
+      "terms": [
+        [
+          0,
+          "-18592"
+        ]
+      ]
+    },
+    {
+      "expression": "158698",
+      "terms": [
+        [
+          0,
+          "158698"
+        ]
+      ]
+    },
+    {
+      "expression": "-872984",
+      "terms": [
+        [
+          0,
+          "-872984"
+        ]
+      ]
+    },
+    {
+      "expression": "3097008",
+      "terms": [
+        [
+          0,
+          "3097008"
+        ]
+      ]
+    },
+    {
+      "expression": "-6901720",
+      "terms": [
+        [
+          0,
+          "-6901720"
+        ]
+      ]
+    },
+    {
+      "expression": "9180819",
+      "terms": [
+        [
+          0,
+          "9180819"
+        ]
+      ]
+    },
+    {
+      "expression": "-6901720",
+      "terms": [
+        [
+          0,
+          "-6901720"
+        ]
+      ]
+    },
+    {
+      "expression": "3097008",
+      "terms": [
+        [
+          0,
+          "3097008"
+        ]
+      ]
+    },
+    {
+      "expression": "-872984",
+      "terms": [
+        [
+          0,
+          "-872984"
+        ]
+      ]
+    },
+    {
+      "expression": "158698",
+      "terms": [
+        [
+          0,
+          "158698"
+        ]
+      ]
+    },
+    {
+      "expression": "-18592",
+      "terms": [
+        [
+          0,
+          "-18592"
+        ]
+      ]
+    },
+    {
+      "expression": "1356",
+      "terms": [
+        [
+          0,
+          "1356"
+        ]
+      ]
+    },
+    {
+      "expression": "-56",
+      "terms": [
+        [
+          0,
+          "-56"
+        ]
+      ]
+    },
+    {
+      "expression": "1",
+      "terms": [
+        [
+          0,
+          "1"
+        ]
+      ]
+    }
+  ],
+  "factor_residual_highest_first": [
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    },
+    {
+      "expression": "0",
+      "terms": []
+    }
+  ],
+  "a_squared": {
+    "expression": "2",
+    "terms": [
+      [
+        0,
+        "2"
+      ]
+    ]
+  },
+  "factor_explanation": "Q5=x^2-5x+1, Q9=x^2-9x+1, a^2=2+zeta+zeta^(N-1); candidate=(Q5^2-a^2*x^2)^2*(Q9^2-a^2*x^2)^2",
+  "detA": {
+    "expression": "1/329",
+    "terms": [
+      [
+        0,
+        "1/329"
+      ]
+    ]
+  },
+  "detC": {
+    "expression": "1/329",
+    "terms": [
+      [
+        0,
+        "1/329"
+      ]
+    ]
+  },
+  "qualification": "Exact arithmetic on the numerically transcribed collar matrices; not a Lean identification or an area-seed proof.",
+  "dominant_y": {
+    "expression": "5 - sqrt(a_squared)",
+    "a_squared": {
+      "expression": "2",
+      "terms": [
+        [
+          0,
+          "2"
+        ]
+      ]
+    },
+    "numeric": "(3.585786437626904951198311275790301921430328124623051926823320262009267521537893 + 0.0j)"
+  },
+  "dominant_discriminant": {
+    "expression": "(5-sqrt(a_squared))^2-4",
+    "numeric": "(8.8578643762690495119831127579030192143032812462305192682332026200926752153789296 + 0.0j)"
+  }
+}

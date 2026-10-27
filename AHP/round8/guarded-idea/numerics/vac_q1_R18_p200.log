@@ -1,0 +1,29 @@
+bb heavy: all 2 slots busy; waiting for one of:
+  thr_kb83gbci8j (0m): env MAX_LEAN=2 LEAN_NUM_THREADS=1 MIN_AVAIL_GB=6 PACKAGES_FROM=/home/sebastian/BalabanCoercivityLemma-integrate/lean/.lake/packages ./REPRODUCE.sh
+  thr_66p73ef63i (6m): lake env lean /home/sebastian/BalabanCoercivityLemma/AHP/round8/guarded-idea/Attempt.lean
+assembled 1 18 1 n 2692 aug 3756 nnz 115222 seconds 0.7099518775939941
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+VAC /home/sebastian/BalabanCoercivityLemma/AHP/round8/guarded-idea/numerics/out/vac_q1_R18_p200_s0_0.json root 0.58655896863860883947 splitting 4.002093996e-64 c1 2.06014797028772e-246

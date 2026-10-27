@@ -1,0 +1,160 @@
+namespace AdalyFormal.Round13.Trial
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneR8
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 RMap curlValueCovariant)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Balaban.CovariantHjMinimizer
+  (periodicLatticeShiftBack periodicLatticeShift_shiftBack periodicLatticeShiftBack_shift)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round12.Noncancel.Path
+open Classical
+
+def stepCoord (v : Fin 3 → Fin 7) (μ : Fin 3) := Function.update v μ (v μ+1)
+def backCoord (v : Fin 3 → Fin 7) (μ : Fin 3) := Function.update v μ (v μ-1)
+
+theorem patchSite_back {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (v : Fin 3 → Fin 7) (μ : Fin 3) (hv : 0 < (v μ).val) :
+    periodicLatticeShiftBack (patchSite hq R v) μ = patchSite hq R (backCoord v μ) := by
+  have hb : ((backCoord v μ) μ).val < 6 := by
+    simp only [backCoord, Function.update_self]
+    have hvlt := (v μ).isLt
+    rw [Fin.val_sub]
+    norm_num
+    omega
+  have h := patchSite_shift hq R (backCoord v μ) μ hb
+  have hu : Function.update (backCoord v μ) μ ((backCoord v μ) μ+1) = v := by
+    simp [backCoord]
+  rw [hu] at h
+  have hh := congrArg (fun z => periodicLatticeShiftBack z μ) h
+  rw [periodicLatticeShiftBack_shift] at hh
+  exact hh.symm
+
+def d02 : PeriodicPlaquetteDirections := ⟨(0,2),by decide⟩
+def d12 : PeriodicPlaquetteDirections := ⟨(1,2),by decide⟩
+
+def trialPlaqPattern : Fin 19 → ((Fin 3 → Fin 7) × PeriodicPlaquetteDirections) :=
+  ![(![2,3,3],d01), (![3,1,3],d01), (![3,2,2],d01), (![3,2,2],d02),
+    (![3,2,3],d01), (![3,2,3],d02), (![3,2,4],d01), (![3,3,1],d02),
+    (![3,3,2],d01), (![3,3,2],d02), (![3,3,2],d12), (![3,3,3],d01),
+    (![3,3,3],d02), (![3,3,3],d12), (![3,3,4],d01), (![3,3,4],d02),
+    (![3,4,2],d02), (![3,4,3],d01), (![3,4,3],d02)]
+
+def trialPlaq {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 19) : PeriodicLatticePlaquette (Fine q R) :=
+  (patchSite hq R (trialPlaqPattern i).1, (trialPlaqPattern i).2)
+
+theorem trialPlaqPattern_injective : Function.Injective trialPlaqPattern := by decide
+
+theorem trialPlaq_injective {q : ℕ} (hq : 0 < q) (R : ℕ) : Function.Injective (trialPlaq hq R) := by
+  intro i j h
+  apply trialPlaqPattern_injective
+  exact Prod.ext (patchSite_injective hq R (congrArg Prod.fst h))
+    (congrArg (fun p : PeriodicLatticePlaquette (Fine q R) => p.2) h)
+
+theorem pattern_front : ∀ (i : Fin 6) (d : PeriodicPlaquetteDirections),
+    (d.1.1 = trialDir i ∨ d.1.2 = trialDir i) →
+      ∃ k : Fin 19, trialPlaqPattern k = (trialCoord i,d) := by decide
+
+theorem pattern_back1 : ∀ (i : Fin 6) (d : PeriodicPlaquetteDirections),
+    d.1.1 = trialDir i →
+      ∃ k : Fin 19, trialPlaqPattern k = (backCoord (trialCoord i) d.1.2,d) := by decide
+
+theorem pattern_back2 : ∀ (i : Fin 6) (d : PeriodicPlaquetteDirections),
+    d.1.2 = trialDir i →
+      ∃ k : Fin 19, trialPlaqPattern k = (backCoord (trialCoord i) d.1.1,d) := by decide
+
+theorem trialCoord_positive (i : Fin 6) (μ : Fin 3) : 0 < (trialCoord i μ).val := by
+  fin_cases i <;> fin_cases μ <;> decide
+
+theorem front_mem {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (i : Fin 6) (d : PeriodicPlaquetteDirections) (hd : d.1.1 = trialDir i ∨ d.1.2 = trialDir i) :
+    (patchSite hq R (trialCoord i),d) ∈ Finset.univ.image (trialPlaq hq R) := by
+  obtain ⟨k,hk⟩ := pattern_front i d hd
+  exact Finset.mem_image.mpr ⟨k,Finset.mem_univ _, by simp [trialPlaq, hk]⟩
+
+theorem back_mem1 {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (i : Fin 6) (d : PeriodicPlaquetteDirections) (hd : d.1.1 = trialDir i) :
+    (periodicLatticeShiftBack (patchSite hq R (trialCoord i)) d.1.2,d) ∈
+      Finset.univ.image (trialPlaq hq R) := by
+  obtain ⟨k,hk⟩ := pattern_back1 i d hd
+  rw [patchSite_back hq R _ _ (trialCoord_positive i _)]
+  exact Finset.mem_image.mpr ⟨k,Finset.mem_univ _, by simp [trialPlaq, hk]⟩
+
+theorem back_mem2 {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (i : Fin 6) (d : PeriodicPlaquetteDirections) (hd : d.1.2 = trialDir i) :
+    (periodicLatticeShiftBack (patchSite hq R (trialCoord i)) d.1.1,d) ∈
+      Finset.univ.image (trialPlaq hq R) := by
+  obtain ⟨k,hk⟩ := pattern_back2 i d hd
+  rw [patchSite_back hq R _ _ (trialCoord_positive i _)]
+  exact Finset.mem_image.mpr ⟨k,Finset.mem_univ _, by simp [trialPlaq, hk]⟩
+
+/-- All plaquettes outside the explicit nineteen have exactly zero frozen contribution,
+for every background, not only for the right star. -/
+theorem trial_plaq_zero_off {q : ℕ} (hq : 0 < q) (R : ℕ) (U : Cfg (Fine q R))
+    (p : PeriodicLatticePlaquette (Fine q R)) (hp : p ∉ Finset.univ.image (trialPlaq hq R)) :
+    contrib U (WithLp.ofLp (trialField hq R)) p = 0 := by
+  have hc : curlValueCovariant U (WithLp.ofLp (trialField hq R)) p = 0 ∧
+      bilPlaq U p (WithLp.ofLp (trialField hq R)) (WithLp.ofLp (trialField hq R)) = 0 := by
+    apply curl_bil_zero
+    · by_contra hn
+      obtain ⟨i,hi⟩ := trialField_support hq R _ hn
+      have hx := congrArg Prod.fst hi
+      have hd := congrArg Prod.snd hi
+      dsimp only [trialBond] at hx hd
+      have hx' : p.1 = periodicLatticeShiftBack (patchSite hq R (trialCoord i)) p.2.1.2 := by
+        rw [← hx, periodicLatticeShiftBack_shift]
+      exact hp (by simpa only [← hx', Prod.mk.eta] using back_mem1 hq R i p.2 hd)
+    · by_contra hn
+      obtain ⟨i,hi⟩ := trialField_support hq R _ hn
+      have hx := congrArg Prod.fst hi
+      have hd := congrArg Prod.snd hi
+      dsimp only [trialBond] at hx hd
+      exact hp (by simpa only [← hx, Prod.mk.eta] using front_mem hq R i p.2 (Or.inr hd))
+    · by_contra hn
+      obtain ⟨i,hi⟩ := trialField_support hq R _ hn
+      have hx := congrArg Prod.fst hi
+      have hd := congrArg Prod.snd hi
+      dsimp only [trialBond] at hx hd
+      exact hp (by simpa only [← hx, Prod.mk.eta] using front_mem hq R i p.2 (Or.inl hd))
+    · by_contra hn
+      obtain ⟨i,hi⟩ := trialField_support hq R _ hn
+      have hx := congrArg Prod.fst hi
+      have hd := congrArg Prod.snd hi
+      dsimp only [trialBond] at hx hd
+      have hx' : p.1 = periodicLatticeShiftBack (patchSite hq R (trialCoord i)) p.2.1.1 := by
+        rw [← hx, periodicLatticeShiftBack_shift]
+      exact hp (by simpa only [← hx', Prod.mk.eta] using back_mem2 hq R i p.2 hd)
+  unfold contrib
+  rw [hc.1, hc.2]
+  change ⟪(0 : SuTwo), 0⟫ + (1/2 : ℝ)*0 = 0
+  simp
+
+/-- Exact enumeration of the FROZEN all-plaquette form. No integer-lattice surrogate. -/
+theorem trial_delta_sum {q : ℕ} (hq : 0 < q) (R : ℕ) (U : Cfg (Fine q R)) :
+    ⟪trialField hq R, AdalyFormal.StatementLaneR6.deltaKLocCLM U Set.univ (trialField hq R)⟫ =
+      ∑ i : Fin 19, contrib U (WithLp.ofLp (trialField hq R)) (trialPlaq hq R i) := by
+  rw [delta_form_sum]
+  change (∑ p, contrib U (WithLp.ofLp (trialField hq R)) p) = _
+  rw [← Finset.sum_image (f := contrib U (WithLp.ofLp (trialField hq R)))
+    (s := Finset.univ) (g := trialPlaq hq R)
+    (fun i _ j _ h => trialPlaq_injective hq R h)]
+  symm
+  exact Finset.sum_subset (Finset.subset_univ _) (fun p _ hp => trial_plaq_zero_off hq R U p hp)
+
+end AdalyFormal.Round13.Trial
+#print axioms AdalyFormal.Round13.Trial.patchSite_back
+#print axioms AdalyFormal.Round13.Trial.trialPlaq_injective
+#print axioms AdalyFormal.Round13.Trial.pattern_front
+#print axioms AdalyFormal.Round13.Trial.pattern_back1
+#print axioms AdalyFormal.Round13.Trial.pattern_back2
+#print axioms AdalyFormal.Round13.Trial.trial_plaq_zero_off
+#print axioms AdalyFormal.Round13.Trial.trial_delta_sum

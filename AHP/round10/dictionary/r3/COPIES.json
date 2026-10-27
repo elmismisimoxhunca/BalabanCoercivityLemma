@@ -1,0 +1,38 @@
+[
+  {
+    "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+    "start": 40,
+    "sha256": "1009dbf0c9c55b4b02e10750477f86cc6f82f983e946116380e70c0207265342",
+    "fragment": "def circulation (f : Bond L \u2192 \u211d) (p : PeriodicLatticePlaquette L) : \u211d :=\n  f (p.1, p.2.1.1) + f (periodicLatticeShift p.1 p.2.1.1, p.2.1.2) -\n    f (periodicLatticeShift p.1 p.2.1.2, p.2.1.1) - f (p.1, p.2.1.2)\n"
+  },
+  {
+    "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+    "start": 86,
+    "sha256": "cb19b9200eda3d18c77cd8b9396c1b1238588a6a374ca1e18b9689c403e33986",
+    "fragment": "def oriented (P : Set (PeriodicLatticePlaquette L)) (g : PeriodicLatticePlaquette L \u2192 \u211d)\n    (\u03bd \u03bc : Fin 3) (x : PeriodicLatticeSite L) : \u211d := by\n  classical\n  exact if h : \u03bd < \u03bc then (if (x, \u27e8(\u03bd, \u03bc), h\u27e9) \u2208 P then g (x, \u27e8(\u03bd, \u03bc), h\u27e9) else 0)\n    else if h' : \u03bc < \u03bd then (if (x, \u27e8(\u03bc, \u03bd), h'\u27e9) \u2208 P then -g (x, \u27e8(\u03bc, \u03bd), h'\u27e9) else 0)\n    else 0\n\ndef scalarDiv (g : Fin 3 \u2192 Fin 3 \u2192 PeriodicLatticeSite L \u2192 \u211d) (b : Bond L) : \u211d :=\n  \u2211 \u03bd : Fin 3, if \u03bd = b.2 then 0 else g \u03bd b.2 (periodicLatticeShiftBack b.1 \u03bd) - g \u03bd b.2 b.1\n"
+  },
+  {
+    "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+    "start": 99,
+    "sha256": "efcc057847352c9e3519ae45c2de5cef82bcaebda016d772d795d9f8321834e3",
+    "fragment": "def linearSourceScalar (P : Set (PeriodicLatticePlaquette L)) (f : Bond L \u2192 \u211d) (b : Bond L) : \u211d :=\n  scalarDiv (oriented P (circulation f)) b\n"
+  },
+  {
+    "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+    "start": 178,
+    "sha256": "2fe02c9d5030abe7d8fbece28d1ca1016c0afebf4a6a2b87ec835a663df875a3",
+    "fragment": "def sourceLinear (P : Set (PeriodicLatticePlaquette L)) (f : Bond L \u2192 \u211d) : BondFnL2 L :=\n  WithLp.toLp 2 (fun b => linearSourceScalar P f b \u2022 pauliE3)\n"
+  },
+  {
+    "source": "AHP/round10/dictionary/r2/Source.lean",
+    "start": 1,
+    "sha256": "c52d96a2771eeb36394eb65fd39859c792834615ff9224faa9139ce39c90ee93",
+    "wholeFile": true
+  },
+  {
+    "source": "AHP/round10/shared/nonvanishing/R3_DilatedFlux.lean",
+    "sha256": "8be0beba113429eaed395127651ad71239d0866a718cd2dca9de7e991b345b37",
+    "wholeFileExceptImportsAndDuplicateGeometry": true,
+    "omitted": "def dilLu (q R : \u2115) : PeriodicLatticeExtent :=\n  fun \u03bc => if \u03bc = 0 then 6 * (R * q) + 8 * q - 1 else 4 * q - 1\n\ndef dilTower (q R : \u2115) : Tower (scaleUp 2 1 (dilLu q R)) where\n  Om j := if j = 0 then {x | 4 * q \u2264 (x 0).val \u2227 (x 0).val < 12 * (R * q) + 12 * q}\n    else if j = 1 then {x | 2 * (R * q) + 4 * q \u2264 (x 0).val \u2227 (x 0).val < 10 * (R * q) + 12 * q}\n    else \u2205\n\n"
+  }
+]

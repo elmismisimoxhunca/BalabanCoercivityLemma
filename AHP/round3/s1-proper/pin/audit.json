@@ -1,0 +1,38 @@
+{
+  "status": "pin-compiled-goals-unproved",
+  "namespace": "Round3.S1Proper",
+  "source_sha256": "dff1d868790779a2def248238b348234402a065760bdb0d0c9b675136fe7cf9f",
+  "log_sha256": "56ace50794b6845104c39852e8277768a7696d866815b4cf67721dd7b00fea98",
+  "exit": 0,
+  "local_definitions": 10,
+  "check_lines": 10,
+  "permitted_axiom_records": 10,
+  "warnings": 0,
+  "forbidden_token_hits": [],
+  "imports": [
+    "D1Lit"
+  ],
+  "verbatim_copies": {
+    "TouchBond": "AHP/round2/s2-nonvacuity/pin/Statement.lean",
+    "CoversPlaqFour": "AHP/round2/s2-nonvacuity/pin/Statement.lean",
+    "CurlReadsTouch": "AHP/round2/s2-nonvacuity/pin/Statement.lean",
+    "PerCubeRegularTouch": "AHP/round2/s2-nonvacuity/pin/Statement.lean",
+    "ClassCoupledFour": "AHP/round2/s2-nonvacuity/pin/Statement.lean",
+    "plaqCorner": "AHP/round2/s1-touching/pin/Statement.lean",
+    "selCorner": "AHP/round2/s1-touching/pin/Statement.lean"
+  },
+  "headline_matches_round2_except_name_and_class": true,
+  "negative_is_exact_negation": true,
+  "declaration_lines": {
+    "plaqCorner": 30,
+    "TouchBond": 40,
+    "CoversPlaqFour": 43,
+    "CurlReadsTouch": 48,
+    "PerCubeRegularTouch": 53,
+    "ClassCoupledFour": 73,
+    "selCorner": 77,
+    "P428TouchFour": 83,
+    "GoalPos1": 98,
+    "GoalNeg1": 101
+  }
+}

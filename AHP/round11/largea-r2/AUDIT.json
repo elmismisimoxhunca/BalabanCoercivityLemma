@@ -1,0 +1,44 @@
+{
+  "closedGoal": "none",
+  "pinBytes": 8342,
+  "pinSha256": "c7155e6fd03dd61422316853ea7e8c1f056542c16bfa38228ba848113592c35f",
+  "pinVerbatimOccurrences": 1,
+  "sourceLines": 1638,
+  "explicitDeclarations": 95,
+  "axiomPrintCommands": 95,
+  "missingAxiomPrints": [],
+  "forbiddenTokens": [],
+  "importsFrozenSourceOnly": [
+    "GdR6b",
+    "CvOX1",
+    "DLR26",
+    "GdGen6",
+    "D2Lit",
+    "AdalyFormal.Balaban.CoercUMainRegular",
+    "RI6",
+    "GN1",
+    "GdR5b",
+    "D1Lit"
+  ],
+  "allowedAxioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compilations": [
+    {
+      "file": "Attempt.lean",
+      "exitCode": 0,
+      "printedDeclarations": 95,
+      "sha256": "25838972ed3189ff4f252f52c3f4525fe7429a56e1df00d32dd89c18a7ac5410"
+    },
+    {
+      "file": "Attempt.verify.lean",
+      "exitCode": 0,
+      "printedDeclarations": 95,
+      "sha256": "25838972ed3189ff4f252f52c3f4525fe7429a56e1df00d32dd89c18a7ac5410"
+    }
+  ],
+  "mainDeclaration": "Round11.LargeA.base_flat_large_mass_slice",
+  "remainingAnalyticInput": "Round11.LargeA.EventualHalfPositive"
+}

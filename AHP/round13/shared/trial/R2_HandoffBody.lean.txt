@@ -1,0 +1,89 @@
+
+/-! Round 13 trial R2. The R1 physical certificate above is retained verbatim.
+This appendix exposes its nonzero witness, exact Rayleigh quotient and complete
+nested cofinal path handoff. It makes no crossing or detection assertion. -/
+namespace AdalyFormal.Round13.Trial.R2
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+open AdalyFormal.Round4.Guarded.RefuteR1 (dilLu)
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round9.Guarded.Qualitative (vacA)
+open AdalyFormal.Round9.Guarded.QualitativeR2 (AnFam)
+open AdalyFormal.Round12.Noncancel.RightFamily
+
+/-- The carrier subspace uses the actual ambient physical norm. -/
+theorem trialVector_norm_sq {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    ‖trialVector hq R‖^2 = (21/16 : ℝ) := by
+  exact trialField_norm hq R
+
+theorem trialVector_ne_zero {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    trialVector hq R ≠ 0 := by
+  intro h
+  have hn := trialVector_norm_sq hq R
+  rw [h] at hn
+  norm_num at hn
+
+/-- A quantitative negative Rayleigh value, not a statement about the crossing vector. -/
+theorem trial_rayleigh {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    ⟪trialVector hq R,
+      vacA q R (rightStar hq R) 1 (Real.pi/2) (trialVector hq R)⟫ /
+        ‖trialVector hq R‖^2 = (-4/21 : ℝ) := by
+  rw [trial_carrier_energy hq hR hR18, trialVector_norm_sq hq R]
+  norm_num
+
+/-- P1 exactly as requested, obtained from the already verified R1 theorem. -/
+theorem rightStar_negative_halfpi :
+    ∀ {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R),
+      ∃ w : TwistSpace q R,
+        ⟪w, vacA q R (rightStar hq R) 1 (Real.pi/2) w⟫ < 0 :=
+  AdalyFormal.Round13.Trial.rightStar_negative_halfpi
+
+/-- All path clauses and the exact physical trial hold at ANY selected admissible
+scale and radius; no intersection of unrelated cofinal subsequences is used. -/
+theorem rightStar_physical_halfpi {q R : ℕ}
+    (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    AdalyFormal.D1Literal.ContFam (rightStar hq R) ∧
+    AnFam (rightStar hq R) ∧ rightStar hq R 0 = (fun _ => 1) ∧
+    (∃ w : TwistSpace q R, ⟪w, vacA q R (rightStar hq R) 1 Real.pi w⟫ < 0) ∧
+    trialVector hq R ≠ 0 ∧ ‖trialVector hq R‖^2 = (21/16 : ℝ) ∧
+    ⟪trialVector hq R,
+      vacA q R (rightStar hq R) 1 (Real.pi/2) (trialVector hq R)⟫ = (-1/4 : ℝ) :=
+  ⟨rightStar_cont hq R, rightStar_an hq R, rightStar_zero hq R,
+    rightStar_negative hq hR hR18, trialVector_ne_zero hq R,
+    trialVector_norm_sq hq R, trial_carrier_energy hq hR hR18⟩
+
+/-- Original nested scale/radius order, now with path validity and an explicit
+half-pi witness at the SAME indices. No KernelLine or CurlDetected is asserted. -/
+theorem cofinal_rightStar_paths_halfpi :
+    ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+      R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      ∃ V : ℝ → LinkCfg (scaleUp 2 1 (dilLu (2^j) R)),
+        V = rightStar (by positivity) R ∧
+        AdalyFormal.D1Literal.ContFam V ∧ AnFam V ∧ V 0 = (fun _ => 1) ∧
+        (∃ z : TwistSpace (2^j) R, ⟪z, vacA (2^j) R V 1 Real.pi z⟫ < 0) ∧
+        ∃ w : TwistSpace (2^j) R,
+          w = trialVector (by positivity) R ∧ w ≠ 0 ∧ ‖w‖^2 = (21/16 : ℝ) ∧
+          ⟪w, vacA (2^j) R V 1 (Real.pi/2) w⟫ = (-1/4 : ℝ) ∧
+          ⟪w, vacA (2^j) R V 1 (Real.pi/2) w⟫ < 0 := by
+  intro j₀
+  refine ⟨j₀, le_rfl, ?_⟩
+  intro R₀
+  let R := 2*(R₀+18)
+  have hR : 2 ∣ R := dvd_mul_right _ _
+  have hR18 : 18 ≤ R := by dsimp [R]; omega
+  have hq : 0 < 2^j₀ := by positivity
+  obtain ⟨hc, ha, hz, hp, hn, hnorm, he⟩ := rightStar_physical_halfpi hq hR hR18
+  refine ⟨R, by dsimp [R]; omega, hR, hR18, rightStar hq R, rfl,
+    hc, ha, hz, hp, trialVector hq R, rfl, hn, hnorm, he, ?_⟩
+  rw [he]
+  norm_num
+
+#print axioms trialVector_norm_sq
+#print axioms trialVector_ne_zero
+#print axioms trial_rayleigh
+#print axioms rightStar_negative_halfpi
+#print axioms rightStar_physical_halfpi
+#print axioms cofinal_rightStar_paths_halfpi
+end AdalyFormal.Round13.Trial.R2

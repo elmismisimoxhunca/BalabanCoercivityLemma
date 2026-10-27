@@ -1,0 +1,11 @@
+'AdalyFormal.Round10.Nonvanishing.recurrence_zero_tail_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.recurrence_eq_zero_of_zero_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.recurrence_cofinal_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.RadiusRecurrenceData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.radius_cofinal_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.dyadic_cofinal_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.mathlib_recurrence_cofinal_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

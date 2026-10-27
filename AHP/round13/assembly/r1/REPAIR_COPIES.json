@@ -1,0 +1,20 @@
+{
+  "original": "AHP/round10/assembly/r4/Attempt.lean",
+  "original_sha256": "26bbba350ebf059ca73bcc4c726a0f43a9605c3c1ef13b08583ec84843cf1e62",
+  "output_sha256": "a25d71c4da93da0c87aa2d9f55764a7e0bb745022687a1b6429f3a0a75359fde",
+  "only_change": "insert namespace/header and three verbatim helpers immediately before Color section, with axiom prints",
+  "helpers": [
+    {
+      "source": "AHP/round10/shared/dictionary/R4_ColorResponse.lean",
+      "start_line": 1376,
+      "end_line_exclusive": 1389,
+      "sha256": "84030ce26876595050e0b3af93cbad570aeb5b38ecd973812b487f973418db78"
+    },
+    {
+      "source": "AHP/round10/shared/dictionary/R4_ColorResponse.lean",
+      "start_line": 1467,
+      "end_line_exclusive": 1498,
+      "sha256": "73676f355c90bb4331295d507660d5b89fbf9921706112279ed3c40825cd609e"
+    }
+  ]
+}

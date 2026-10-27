@@ -1,0 +1,90 @@
+{
+  "pass": true,
+  "checks": {
+    "source_shared_byte_identity": true,
+    "log_shared_byte_identity": true,
+    "local_exit_zero": true,
+    "shared_exit_zero": true,
+    "main_declaration_present": true,
+    "inverse_present": true,
+    "recurrence_present": true,
+    "eigenpairs_present": true,
+    "no_forbidden_mechanisms": true,
+    "only_frozen_import": true,
+    "clean_Collar.lean.log": true,
+    "axiom_records_Collar.lean.log": true,
+    "clean_R1_Collar.lean.log": true,
+    "axiom_records_R1_Collar.lean.log": true,
+    "same_axiom_record_count": true,
+    "physical_gap_source_shared_byte_identity": true,
+    "physical_gap_log_shared_byte_identity": true,
+    "physical_gap_local_exit_zero": true,
+    "physical_gap_shared_exit_zero": true,
+    "physical_gap_declaration_present": true,
+    "physical_gap_not_claimed_proved": true,
+    "physical_gap_no_forbidden_mechanisms": true,
+    "clean_PhysicalGap.lean.log": true,
+    "axiom_records_PhysicalGap.lean.log": true,
+    "clean_R1_PhysicalGap.lean.log": true,
+    "axiom_records_R1_PhysicalGap.lean.log": true,
+    "physical_gap_same_axiom_record_count": true,
+    "factor_audit_pass": true,
+    "crossing_R20_sector_matches": true,
+    "crossing_R20_recurrence": true,
+    "crossing_R20_modal_one_step": true,
+    "crossing_R22_sector_matches": true,
+    "crossing_R22_recurrence": true,
+    "crossing_R22_modal_one_step": true,
+    "exact_inverse_left": true,
+    "exact_inverse_right": true,
+    "factor_audit_exit_zero": true,
+    "build_lean_exit_zero": true,
+    "build_physical_gap_exit_zero": true,
+    "interface_c10_exit_zero": true,
+    "crossing_c10_exit_zero": true,
+    "crossing_c10_R22_exit_zero": true,
+    "full_c00_exit_zero": true,
+    "full_c01_exit_zero": true,
+    "full_c02_exit_zero": true,
+    "full_c03_exit_zero": true,
+    "full_c10_exit_zero": true,
+    "full_c11_exit_zero": true,
+    "full_c12_exit_zero": true,
+    "full_c13_exit_zero": true,
+    "full_c20_exit_zero": true,
+    "full_c21_exit_zero": true,
+    "full_c22_exit_zero": true,
+    "full_c23_exit_zero": true,
+    "full_c30_exit_zero": true,
+    "full_c31_exit_zero": true,
+    "full_c32_exit_zero": true,
+    "full_c33_exit_zero": true,
+    "all": true
+  },
+  "axiom_records": [
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r1/Collar.lean.log",
+      "count": 26
+    },
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/dictionary/R1_Collar.lean.log",
+      "count": 26
+    }
+  ],
+  "source_sha256": "86612ee79e4b431df90da21404e224a6a4de1b907aa10ea18f826c64bb100936",
+  "shared_sha256": "86612ee79e4b431df90da21404e224a6a4de1b907aa10ea18f826c64bb100936",
+  "factor_worst_relative_error": 1.0550829885525958e-14,
+  "physical_gap_axiom_records": [
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r1/PhysicalGap.lean.log",
+      "count": 375
+    },
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/dictionary/R1_PhysicalGap.lean.log",
+      "count": 375
+    }
+  ],
+  "physicalGapDeclaration": "AdalyFormal.Round15.Dictionary.Q1C10PhysicalDictionary",
+  "mainDeclaration": "AdalyFormal.Round15.Dictionary.collar_dictionary",
+  "qualification": "Exact compiled model certificate plus non-interval numerical evidence. The frozen right-star physical identification and area seed remain open."
+}

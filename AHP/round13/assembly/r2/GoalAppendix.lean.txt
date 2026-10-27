@@ -1,0 +1,18 @@
+
+namespace AdalyFormal.Round13.Assembly.R2
+open AdalyFormal.Round13.Assembly.R1
+open AdalyFormal.Round2.Guarded.Pin (GoalNeg2)
+
+/-- Exact pinned goal, conditional only on the still-open physical P2/P3. -/
+theorem goalNeg2_of_P2_P3 (h2 : P2) (h3 : P3) : GoalNeg2 :=
+  AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation
+    (cofinalNoCancellation_of_P2_P3 h2 h3)
+
+/-- Same nested cofinal indices: no intersection of unrelated cofinal sets. -/
+theorem goalNeg2_of_cofinalP2P3 (h : CofinalP2P3) : GoalNeg2 :=
+  AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation
+    (cofinalNoCancellation_of_cofinalP2P3 h)
+
+#print axioms goalNeg2_of_P2_P3
+#print axioms goalNeg2_of_cofinalP2P3
+end AdalyFormal.Round13.Assembly.R2

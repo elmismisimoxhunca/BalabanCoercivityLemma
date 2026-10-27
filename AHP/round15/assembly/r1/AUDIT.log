@@ -1,0 +1,209 @@
+{
+  "pass": true,
+  "checks": {
+    "publication_byte_identical": true,
+    "build_hash_current": true,
+    "both_lean_exits_zero": true,
+    "no_errors_or_sorryAx": true,
+    "no_forbidden_proof_mechanism": true,
+    "only_frozen_imports": true,
+    "all_main_records_present_once_per_log": true,
+    "all_main_records_permitted": true,
+    "main_statement_is_conditional": true,
+    "cofinal_charged_statement_present": true,
+    "failed_dictionary_not_used": true,
+    "held_out_numerics_pass": true,
+    "held_out_is_q1_R34": true,
+    "candidate_rate_retested": true,
+    "memory_below_2GiB": true
+  },
+  "mainDeclarations": [
+    "goalNeg2_of_areaSeed",
+    "goalNeg2_of_unitAreaSeed",
+    "goalNeg2_of_cofinalAreaSeed",
+    "goalNeg2_of_laurentAreaSeed",
+    "goalNeg2_of_dominantAreaSeed",
+    "goalNeg2_of_unitDominantAreaSeed",
+    "goalNeg2_of_chargedLeading",
+    "CofinalChargedLeadingCertificate",
+    "cofinalUnitDominantAreaSeed_of_cofinalChargedLeading",
+    "goalNeg2_of_cofinalChargedLeading"
+  ],
+  "axiomRecords": {
+    "AHP/round15/assembly/r1/AreaGoal.lean.log": {
+      "goalNeg2_of_areaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_unitAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_laurentAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_dominantAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_unitDominantAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_chargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "CofinalChargedLeadingCertificate": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalUnitDominantAreaSeed_of_cofinalChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ]
+    },
+    "AHP/round15/shared/assembly/R1_AreaGoal.lean.log": {
+      "goalNeg2_of_areaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_unitAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_laurentAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_dominantAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_unitDominantAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_chargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "CofinalChargedLeadingCertificate": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalUnitDominantAreaSeed_of_cofinalChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ]
+    }
+  },
+  "source": {
+    "path": "AHP/round15/assembly/r1/AreaGoal.lean",
+    "published": "AHP/round15/shared/assembly/R1_AreaGoal.lean",
+    "lines": 15475,
+    "sha256": "4cfcd3b1b146a16405678dc04a097e50fe4e024e887f1da2beb0e0bd7f4c3aa9"
+  },
+  "heldOutEvidence": {
+    "path": "AHP/round15/assembly/r1/HELD_OUT.json",
+    "qualification": "Finite non-interval numerical evidence only. q=1,R=34 was not used by the round-14 cancellation R=20,...,30 analysis or the assembly R=32 held-out audit. Stable positive tangential aggregates and a similar dominant rate do not prove an exact recurrence, RadiusDominantData, a matrix limit, a nonzero leading coefficient, AreaSeedRightStar, P3, CofinalP3, or GoalNeg2. Large cell/sum ratios continue to rule out a naive common-sign shortcut. Doubling a physical aggregate only applies the compiled aggregate=(1/2)*areaSum dictionary.",
+    "candidateRates": [
+      {
+        "direction": 0,
+        "candidate_rho_pow8": "0.00007446438830808222443183745580375456520020185904700553553955679980126818477146107249566456125428893140984359253502664898563515499658441960441433821528782654136577744080228429011839799856701573",
+        "R32_to_R34_held_out": "0.00007446438829129332982948301260709215078692932459717298437900230988619541906936596878110064440766480947803788564915706158613053251920356869525261409981923094179765025944983700255879759347716495",
+        "relative_difference": "0.000000000225462062924543062461995657744602711929649156270255782419683711545154746811906643812486002349659181101161203669822681283110444898387552380889531024846987989138314721292206913616719953264693"
+      },
+      {
+        "direction": 1,
+        "candidate_rho_pow8": "0.00007446438830808222443183745580375456520020185904700553553955679980126818477146107249566456125428893140984359253502664898563515499658441960441433821528782654136577744080228429011839799856701573",
+        "R32_to_R34_held_out": "0.00007446438830079955212083535629114185769697677227755905327487789678270051931252594751474440065243899236437941780928646426469393368503138369872792969585028057405408864435963057110208020264612932",
+        "relative_difference": "0.00000000009780074041394699778910709492639059052679703832345315751578032076940451793066897135127533590814721568427407247517316732555606688128344519734324341990111486889099789345750202989249173869408828"
+      },
+      {
+        "direction": 2,
+        "candidate_rho_pow8": "0.00007446438830808222443183745580375456520020185904700553553955679980126818477146107249566456125428893140984359253502664898563515499658441960441433821528782654136577744080228429011839799856701573",
+        "R32_to_R34_held_out": "0.00007446438830080313471623656144561284461631965607624058775805127423796316218676124225511509417262398522670094144045662202472532232751243642891407277811243075951217337278297164755140683084052127",
+        "relative_difference": "0.00000000009775262888731519564060290356651233261153676258464974285563638301521197358068881457851433555351757210948454348944440882619049497341982589009503917453580972757621685463087509329176168113273724"
+      }
+    ]
+  },
+  "boundary": "All goal arrows are conditional on their displayed physical inputs. No AreaSeedRightStar, CofinalUnitDominantAreaSeed, charged-leading certificate, P3, CofinalP3, or GoalNeg2 inhabitant is asserted. The failed round-15 dictionary R1 prototype is not imported or used."
+}

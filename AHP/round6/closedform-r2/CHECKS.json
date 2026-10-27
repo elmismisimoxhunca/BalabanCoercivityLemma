@@ -1,0 +1,42 @@
+{
+  "closedGoal": "none",
+  "file": "AHP/round6/closedform-r2/Attempt.lean",
+  "freshCompilationSucceeded": false,
+  "wrapperBashTimeoutSeconds": 1200,
+  "exitFilePresent": false,
+  "recordedExitCode": null,
+  "reportedExitCode": -1,
+  "reportedExitMeaning": "-1 means missing wrapper exit, not an observed Lean exit code",
+  "logErrorCount": 20,
+  "logWarningCount": 0,
+  "newDependencyRecords": [],
+  "newVerifiedResultClaimed": false,
+  "mainDeclaration": "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_exact_symmetry",
+  "mainLine": 2643,
+  "mainEvidenceStatus": "prior pass compilation only; inherited unchanged",
+  "mainAxioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "priorSource": "AHP/round6/closedform-r1/Attempt.lean",
+  "priorExitCode": 0,
+  "priorSourceSha256": "2849fe7e047e040fb9675a280beeff39e2a3cee4c4856e487058056d2a7e571d",
+  "priorLogSha256": "5aaf2ba180a725b5edcba4ac9dd6a26c27017280d09f6df14858a22d0a191d14",
+  "pinVerbatimBytePrefix": true,
+  "round5BridgeVerbatimBytePrefix": true,
+  "round6Pass1VerbatimBytePrefix": true,
+  "imports": [
+    "DrEquiv"
+  ],
+  "forbiddenSourceTokens": [],
+  "sourceSha256": "82b69540a99a5d98ef1a206119a2790f62f985002adda9f47f808f2c9b62f405",
+  "logSha256": "79c6a9b50f80ce79d29d340adeae43644965baf70701bdc0ec6ed52948bf41fc",
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "round5BridgeSha256": "b95973c476baecbdbce5ca1c04c414ae7bfb4388f1bda17a9b4dfb6e0532dd99",
+  "completeCurrentDependencyRecordCount": 186,
+  "completeCurrentRecordsUseAllowedAxioms": true,
+  "completeCurrentRecordsDoNotProveFileSuccess": true,
+  "numericalJobsRun": 0,
+  "timedOutInvocationRelaunched": false
+}

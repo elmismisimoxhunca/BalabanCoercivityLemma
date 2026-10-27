@@ -1,0 +1,120 @@
+{
+  "status": "open",
+  "closedGoal": "none",
+  "finalAssemblyCompiled": false,
+  "pinSHA256": "27a16f875b66d6fce71129ca3b0c08f1e4579fcac86fc742b1c186ffc00385ab",
+  "files": {
+    "Attempt.lean": {
+      "sha256": "f828185b5aa242a271455ff12f20289f5d56485cc5267a152317281d45952ae6",
+      "pinPrefixVerbatim": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "frozenOnlyImports": true,
+      "declaredCount": 55,
+      "printCount": 55,
+      "missingPrints": [],
+      "rawForbiddenTokens": [],
+      "exit": null,
+      "logBytes": 0,
+      "dependencyRecords": 0,
+      "disallowedDependencies": []
+    },
+    "GuardNearZero.lean": {
+      "sha256": "0d7c038aff56235016711ca44cac25e3006ef8dca5328c5a5d1bba926b6bbd9a",
+      "pinPrefixVerbatim": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "frozenOnlyImports": true,
+      "declaredCount": 48,
+      "printCount": 48,
+      "missingPrints": [],
+      "rawForbiddenTokens": [],
+      "exit": null,
+      "logBytes": 0,
+      "dependencyRecords": 0,
+      "disallowedDependencies": []
+    },
+    "GuardedGeometry.lean": {
+      "sha256": "bc2906600fd20c7d2f408bb93154936502c14e8a541291d6d40026c516958ade",
+      "pinPrefixVerbatim": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "frozenOnlyImports": true,
+      "declaredCount": 14,
+      "printCount": 14,
+      "missingPrints": [],
+      "rawForbiddenTokens": [],
+      "exit": null,
+      "logBytes": 0,
+      "dependencyRecords": 0,
+      "disallowedDependencies": []
+    },
+    "InterruptedAttempt.lean": {
+      "sha256": "6a50c906762adb8e59b8874ada9e19813ed9097e134ad76fb3cc52112fcf5723",
+      "pinPrefixVerbatim": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "frozenOnlyImports": true,
+      "declaredCount": 43,
+      "printCount": 43,
+      "missingPrints": [],
+      "rawForbiddenTokens": [],
+      "exit": null,
+      "logBytes": null,
+      "dependencyRecords": 0,
+      "disallowedDependencies": []
+    },
+    "WeightCertificate.lean": {
+      "sha256": "ddcc228d2e77c560b197cb3d161b7d09c6c29bb65f0037c7565ff9205efca987",
+      "pinPrefixVerbatim": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "frozenOnlyImports": true,
+      "declaredCount": 34,
+      "printCount": 34,
+      "missingPrints": [],
+      "rawForbiddenTokens": [],
+      "exit": null,
+      "logBytes": 197,
+      "dependencyRecords": 0,
+      "disallowedDependencies": []
+    }
+  },
+  "finalContainsPriorPartialVerbatimExceptImports": true,
+  "priorCompiledPartial": {
+    "file": "AHP/round7/s4-odd-sites/attempt/Partial.lean",
+    "sourceSHA256": "dba5828837f1378b65e1ca9fade00d42c4755d712b0900e47395d3e6f5719698",
+    "replayByteIdentical": true,
+    "exit": "0",
+    "replayExit": "0",
+    "dependencyRecords": 21,
+    "replayDependencyRecords": 21,
+    "disallowedDependencies": [],
+    "main": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_cofinal_class",
+    "mainDependencies": [
+      [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    ],
+    "replayMainDependencies": [
+      [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    ]
+  },
+  "limitations": "No r2 source has a successful wrapper exit. Static checks certify neither elaboration nor proof. Prior compiled partial is prior evidence only."
+}

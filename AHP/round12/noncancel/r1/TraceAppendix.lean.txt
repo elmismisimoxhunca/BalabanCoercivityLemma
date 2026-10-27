@@ -1,0 +1,61 @@
+
+namespace AdalyFormal.Round12.Noncancel.Trace
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.GaugeCov
+open AdalyFormal.Balaban.CovariantOperators
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.D1Literal (uθ uMat)
+
+variable {L : PeriodicLatticeExtent}
+
+/-- Actual charged coordinate at a physical bond, on the touching-bond carrier. -/
+def bondTrace (G : TowerGeom L) (b : Bond L) : ↥(bondSupp G) →ₗ[ℝ] ℂ where
+  toFun u := (((u : BondFnL2 L) b : SuTwo) : Matrix (Fin 2) (Fin 2) ℂ) 0 1
+  map_add' u v := rfl
+  map_smul' a u := by
+    change ((a : ℂ) • (((u : BondFnL2 L) b : SuTwo) : Matrix (Fin 2) (Fin 2) ℂ)) 0 1 = _
+    rfl
+
+def quarter (G : TowerGeom L) : ↥(bondSupp G) ≃ₗᵢ[ℝ] ↥(bondSupp G) :=
+  adEL (fun _ => uθ (Real.pi/4)) G
+
+theorem rotation_entry (α : ℝ) (X : SuTwo) :
+    (((RMap (uθ α) X) : SuTwo) : Matrix (Fin 2) (Fin 2) ℂ) 0 1 =
+      Complex.exp (((2*α : ℝ) : ℂ)*Complex.I) *
+        (X : Matrix (Fin 2) (Fin 2) ℂ) 0 1 := by
+  rw [RMap_coe_apply]
+  change (uMat α * (X : Matrix (Fin 2) (Fin 2) ℂ) * (uMat α)ᴴ) 0 1 = _
+  simp [uMat, Matrix.mul_apply, Matrix.vecMul, dotProduct, Fin.sum_univ_two,
+    Matrix.conjTranspose_apply, ← Complex.exp_conj]
+  rw [mul_right_comm, ← Complex.exp_add]
+  congr 2
+  ring
+
+theorem bondTrace_quarter (G : TowerGeom L) (b : Bond L) (u : ↥(bondSupp G)) :
+    bondTrace G b (quarter G u) = Complex.I * bondTrace G b u := by
+  change (((RMap (uθ (Real.pi/4)) ((u : BondFnL2 L) b)) : SuTwo) :
+    Matrix (Fin 2) (Fin 2) ℂ) 0 1 = _
+  rw [rotation_entry, show (2 : ℝ)*(Real.pi/4) = Real.pi/2 by ring]
+  simp only [Complex.ofReal_div, Complex.ofReal_ofNat, Complex.exp_pi_div_two_mul_I]
+  rfl
+
+/-- Concrete frozen carrier conclusion: one positive trace-zero fiber suffices for
+whole-kernel charged-line containment. The positivity hypothesis remains explicit. -/
+theorem physical_kernel_line (G : TowerGeom L) (b : Bond L)
+    (A : ↥(bondSupp G) →L[ℝ] ↥(bondSupp G))
+    (hcomm : ∀ u, A (quarter G u) = quarter G (A u))
+    (hp : ∀ u, bondTrace G b u = 0 → u ≠ 0 → 0 < ⟪u, A u⟫)
+    (u₀ : ↥(bondSupp G)) (hu₀ : A u₀ = 0) (hne : u₀ ≠ 0) :
+    quarter G (quarter G u₀) = -u₀ ∧
+      ∀ u, A u = 0 → u ∈ Submodule.span ℝ {u₀, quarter G u₀} :=
+  Star.kernel_line_of_trace A.toLinearMap (quarter G).toLinearEquiv.toLinearMap
+    (bondTrace G b) hcomm (bondTrace_quarter G b) hp u₀ hu₀ hne
+
+#print axioms bondTrace
+#print axioms quarter
+#print axioms rotation_entry
+#print axioms bondTrace_quarter
+#print axioms physical_kernel_line
+end AdalyFormal.Round12.Noncancel.Trace

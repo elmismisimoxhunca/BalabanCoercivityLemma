@@ -1,0 +1,12 @@
+'AdalyFormal.Round10.Assembly.ProfileQuantifiers.form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.ProfileQuantifiers.form_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.ProfileQuantifiers.form_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.ProfileQuantifiers.self_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.ProfileQuantifiers.every_vector_has_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.ProfileQuantifiers.no_profile_definite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

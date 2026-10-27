@@ -1,0 +1,2 @@
+'AdalyFormal.Round2.S3Pin.goalPos1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.goalPos2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,33 @@
+import DrEquiv
+open scoped RealInnerProductSpace Topology
+open Filter
+#check @tendsto_subtype_rng
+#check @ContinuousLinearMap.smulRight
+#check @innerSL
+#check @OrthonormalBasis.sum_repr'
+#check @NormedRing.inverse_continuousAt
+#check @PiLp.inner_apply
+#check @continuous_clm_apply
+#check @ContinuousLinearMap.smulRightL
+#check @ContDiffAt.continuousAt
+#check @HasDerivAt.tendsto_slope_zero
+#check @hasDerivAt_iff_tendsto_slope_zero
+#check @AdalyFormal.IngredientFamilyR2.SG_su2Exp_sum_log
+#check @AdalyFormal.Balaban.SmoothLog.su2Log_comp_contDiffAt
+#check @AdalyFormal.IngredientFamilyR2.rawStep_expCfgX_zero
+#check @AdalyFormal.IngredientFamilyR2.rProd_expCfgX_zero
+#check @AdalyFormal.IngredientFamilyR2.SG_su2Exp
+#check @AdalyFormal.IngredientFamilyR2.SG.hol
+#check @AdalyFormal.IngredientFamilyR2.one_mem_LogReg
+#check @AdalyFormal.Balaban.SuTwoLogExp.su2LogExp_log
+#check @AdalyFormal.Balaban.SuTwoLogExp.su2LogExp_exp
+#check @AdalyFormal.StatementLaneG.inner_DpiFull_flat
+#check @AdalyFormal.W6.Qflat_row
+#check @AdalyFormal.IngredientFamilyR2.QlinB_zero
+#check @AdalyFormal.W6.regTower_triv
+#check @AdalyFormal.W6.towerClass_triv
+#check @AdalyFormal.W6.delW
+#check @AdalyFormal.SliceCoerc.GF
+#check @AdalyFormal.IngredientFamilyR2.bgTower
+example : (2:ℕ)^0 = 1 := pow_zero 2
+#check @ZR2B4.Ug

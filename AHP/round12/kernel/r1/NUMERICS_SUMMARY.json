@@ -1,0 +1,91 @@
+{
+  "left_twist": {
+    "case": "left twist q=2 R=32 charge=1 character=(7,7)",
+    "root_absolute_190_230_difference": "6.30804769693e-187",
+    "relative_190_230_differences": {
+      "canonical_coupling": "4.60612749258e-173",
+      "first_tangential_jet": "3.8474402675e-173",
+      "kernel_form_slope": "3.8427085535e-186"
+    },
+    "root": "0.563971517986",
+    "next_schur_eigenvalue": "0.998075759859",
+    "canonical_coupling": "-4.48309700498e-123",
+    "first_tangential_jet": "-2.51198220731e-123",
+    "kernel_form_slope": "-3.12652935691",
+    "residual_over_coupling": "8.06577515556e-107",
+    "color_gram_anisotropy": "7.55970136095e-233"
+  },
+  "competitors": [
+    {
+      "file": "precise_q2_R32_s0_0_c1_p80.json",
+      "min_schur_eigenvalue": "0.0519609465731",
+      "reconstructed_vector_A_norm_not_solver_error": "0.0214990706135",
+      "theta_trig_identity_error": "1.45349855209e-81"
+    },
+    {
+      "file": "precise_q2_R32_s1_1_c1_p80.json",
+      "min_schur_eigenvalue": "0.260322902343",
+      "reconstructed_vector_A_norm_not_solver_error": "0.0907908864638",
+      "theta_trig_identity_error": "6.40147296376e-81"
+    },
+    {
+      "file": "precise_q2_R32_s0_0_c0_p80.json",
+      "min_schur_eigenvalue": "1.0",
+      "reconstructed_vector_A_norm_not_solver_error": "0.5",
+      "theta_trig_identity_error": "0.0"
+    }
+  ],
+  "finite_stars": [
+    {
+      "case": "left star q=1 R=20",
+      "root_absolute_90_120_difference": "5.15650519452e-86",
+      "relative_90_120_top_jet_sum_differences": [
+        "4.50018134825e-80",
+        "8.22872372851e-81",
+        "7.97710123146e-81"
+      ],
+      "root": "1.20798785642",
+      "next_schur_eigenvalue": "0.932012806276",
+      "neutral_min_at_crossing": "1.12322456351",
+      "central_zero_schur_min_at_0_root_halfpi": [
+        "1.50062137035",
+        "0.931888514752",
+        "0.585118794375"
+      ],
+      "top_jet_sums": [
+        "7.51140822786e-46",
+        "3.63040925187e-44",
+        "3.63040925515e-44"
+      ],
+      "residual": "6.7774226519e-121",
+      "boundary_null_residual": "3.48999069902e-120",
+      "central_coordinate_abs": "0.727415743683"
+    },
+    {
+      "case": "right star q=1 R=20",
+      "root_absolute_90_120_difference": "5.15650519452e-86",
+      "relative_90_120_top_jet_sum_differences": [
+        "9.15087777186e-81",
+        "5.07679407971e-83",
+        "2.27183590602e-82"
+      ],
+      "root": "1.20798785642",
+      "next_schur_eigenvalue": "0.932012806276",
+      "neutral_min_at_crossing": "1.12322456351",
+      "central_zero_schur_min_at_0_root_halfpi": [
+        "1.50062137035",
+        "0.931888514752",
+        "0.585118794375"
+      ],
+      "top_jet_sums": [
+        "-7.39403098556e-45",
+        "3.50188782839e-44",
+        "3.5018878273e-44"
+      ],
+      "residual": "7.7456182884e-121",
+      "boundary_null_residual": "4.91600398878e-120",
+      "central_coordinate_abs": "0.727415743683"
+    }
+  ],
+  "qualification": "All spectra are boundary Schur spectra, not full-carrier eigenvalues. No interval certificate, frozen-operator Fourier identification, cofinal proof, or proved premise."
+}

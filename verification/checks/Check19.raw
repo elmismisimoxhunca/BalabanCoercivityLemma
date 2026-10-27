@@ -1,0 +1,3 @@
+'Round11.RefuteR2.not_touchFour_every_ell_le_sqrt5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.window_sqrt5_closed_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round11.RefuteR2.not_touchFour_every_ell_le_rational' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,6997 @@
+{
+  "formula": "X=2+zeta^iy+zeta^-iy, Z=2+zeta^iz+zeta^-iz; det(A)^-1=(25-X-Z)^2-4*X*Z",
+  "fields": {
+    "q1": "All exact collar entries are Gaussian rational; the audited determinants and inverses are rational.",
+    "q2": "Entries are in Q(zeta8)=Q(i,sqrt2). Real determinant values are converted explicitly to Q(sqrt2).",
+    "q4": "Entries are in Q(zeta16), whose degree over Q is 8 (not 4). Its maximal real subfield is Q(u), u=2*cos(pi/8)=sqrt(2+sqrt2), of degree 4. Exact cyclotomic forms are retained; no false Q(sqrt2) claim is made."
+  },
+  "summary": [
+    {
+      "q": 1,
+      "characters": 16,
+      "distinct_XZ": 9,
+      "source_repair_count": 0,
+      "dominant_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "dominant_detA": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "dominant_closed_form": "det(A)=1/329; det(A)^-1=329"
+    },
+    {
+      "q": 2,
+      "characters": 64,
+      "distinct_XZ": 25,
+      "source_repair_count": 0,
+      "dominant_detA_inverse": {
+        "expression": "331 + (-54)*zeta^1 + (54)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            3,
+            "54"
+          ]
+        ]
+      },
+      "dominant_detA": {
+        "expression": "331/103729 + (54/103729)*zeta^1 + (-54/103729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            1,
+            "54/103729"
+          ],
+          [
+            3,
+            "-54/103729"
+          ]
+        ]
+      },
+      "dominant_closed_form": "det(A)^-1=331-54*sqrt(2); det(A)=(331+54*sqrt(2))/103729"
+    },
+    {
+      "q": 4,
+      "characters": 256,
+      "distinct_XZ": 81,
+      "source_repair_count": 4,
+      "dominant_detA_inverse": {
+        "expression": "331 + (-54)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (54)*zeta^7",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "54"
+          ]
+        ]
+      },
+      "dominant_detA": {
+        "expression": "34339469/10749959329 + (5723190/10749959329)*zeta^1 + (849805/10749959329)*zeta^2 + (121716/10749959329)*zeta^3 + (-121716/10749959329)*zeta^5 + (-849805/10749959329)*zeta^6 + (-5723190/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "5723190/10749959329"
+          ],
+          [
+            2,
+            "849805/10749959329"
+          ],
+          [
+            3,
+            "121716/10749959329"
+          ],
+          [
+            5,
+            "-121716/10749959329"
+          ],
+          [
+            6,
+            "-849805/10749959329"
+          ],
+          [
+            7,
+            "-5723190/10749959329"
+          ]
+        ]
+      },
+      "dominant_closed_form": "u=sqrt(2+sqrt(2)); det(A)^-1=329+u^2-54*u=331+sqrt(2)-54*u; det(A)=1/(331+sqrt(2)-54*u)",
+      "qsqrt2_obstruction": "The nonzero coefficient -54 on u and u^2=2+sqrt(2) would force u in Q(sqrt(2)) if det(A)^-1 were in Q(sqrt(2)). But u=sqrt(2+sqrt(2)) has degree 4 over Q. Thus this dominant q=4 determinant is not in Q(sqrt(2))."
+    }
+  ],
+  "determinants": [
+    {
+      "q": 1,
+      "characters": [
+        [
+          0,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "225",
+        "terms": [
+          [
+            0,
+            "225"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/225",
+        "terms": [
+          [
+            0,
+            "1/225"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "225",
+      "detA_real_closed_form": "1/225"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "329",
+      "detA_real_closed_form": "1/329"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          0,
+          2
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "441",
+      "detA_real_closed_form": "1/441"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "329",
+      "detA_real_closed_form": "1/329"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "425",
+      "detA_real_closed_form": "1/425"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "529",
+      "detA_real_closed_form": "1/529"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          2,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "441",
+      "detA_real_closed_form": "1/441"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "529",
+      "detA_real_closed_form": "1/529"
+    },
+    {
+      "q": 1,
+      "characters": [
+        [
+          2,
+          2
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "625",
+        "terms": [
+          [
+            0,
+            "625"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/625",
+        "terms": [
+          [
+            0,
+            "1/625"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "625",
+      "detA_real_closed_form": "1/625"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          0,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "225",
+        "terms": [
+          [
+            0,
+            "225"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/225",
+        "terms": [
+          [
+            0,
+            "1/225"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "225",
+      "detA_real_closed_form": "1/225"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-54)*zeta^1 + (54)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            3,
+            "54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (54/103729)*zeta^1 + (-54/103729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            1,
+            "54/103729"
+          ],
+          [
+            3,
+            "-54/103729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "331 + (-54)*sqrt(2)",
+      "detA_real_closed_form": "331/103729 + (54/103729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "329",
+      "detA_real_closed_form": "1/329"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (54)*zeta^1 + (-54)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "54"
+          ],
+          [
+            3,
+            "-54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (-54/103729)*zeta^1 + (54/103729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            1,
+            "-54/103729"
+          ],
+          [
+            3,
+            "54/103729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "331 + (54)*sqrt(2)",
+      "detA_real_closed_form": "331/103729 + (-54/103729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          0,
+          4
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "441",
+      "detA_real_closed_form": "1/441"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          1,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-54)*zeta^1 + (54)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            3,
+            "54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (54/103729)*zeta^1 + (-54/103729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            1,
+            "54/103729"
+          ],
+          [
+            3,
+            "-54/103729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "331 + (-54)*sqrt(2)",
+      "detA_real_closed_form": "331/103729 + (54/103729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (-100)*zeta^1 + (100)*zeta^3",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            1,
+            "-100"
+          ],
+          [
+            3,
+            "100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "17/6425 + (4/6425)*zeta^1 + (-4/6425)*zeta^3",
+        "terms": [
+          [
+            0,
+            "17/6425"
+          ],
+          [
+            1,
+            "4/6425"
+          ],
+          [
+            3,
+            "-4/6425"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "425 + (-100)*sqrt(2)",
+      "detA_real_closed_form": "17/6425 + (4/6425)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-50)*zeta^1 + (50)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            3,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (50/177329)*zeta^1 + (-50/177329)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            1,
+            "50/177329"
+          ],
+          [
+            3,
+            "-50/177329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "427 + (-50)*sqrt(2)",
+      "detA_real_closed_form": "427/177329 + (50/177329)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433",
+        "terms": [
+          [
+            0,
+            "433"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/433",
+        "terms": [
+          [
+            0,
+            "1/433"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "433",
+      "detA_real_closed_form": "1/433"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          1,
+          4
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-46)*zeta^1 + (46)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "-46"
+          ],
+          [
+            3,
+            "46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (46/277729)*zeta^1 + (-46/277729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            1,
+            "46/277729"
+          ],
+          [
+            3,
+            "-46/277729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "531 + (-46)*sqrt(2)",
+      "detA_real_closed_form": "531/277729 + (46/277729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          2,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "329",
+      "detA_real_closed_form": "1/329"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-50)*zeta^1 + (50)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            3,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (50/177329)*zeta^1 + (-50/177329)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            1,
+            "50/177329"
+          ],
+          [
+            3,
+            "-50/177329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "427 + (-50)*sqrt(2)",
+      "detA_real_closed_form": "427/177329 + (50/177329)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "425",
+      "detA_real_closed_form": "1/425"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (50)*zeta^1 + (-50)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            3,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (-50/177329)*zeta^1 + (50/177329)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            1,
+            "-50/177329"
+          ],
+          [
+            3,
+            "50/177329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "427 + (50)*sqrt(2)",
+      "detA_real_closed_form": "427/177329 + (-50/177329)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "529",
+      "detA_real_closed_form": "1/529"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (54)*zeta^1 + (-54)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "54"
+          ],
+          [
+            3,
+            "-54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (-54/103729)*zeta^1 + (54/103729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            1,
+            "-54/103729"
+          ],
+          [
+            3,
+            "54/103729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "331 + (54)*sqrt(2)",
+      "detA_real_closed_form": "331/103729 + (-54/103729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433",
+        "terms": [
+          [
+            0,
+            "433"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/433",
+        "terms": [
+          [
+            0,
+            "1/433"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "433",
+      "detA_real_closed_form": "1/433"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (50)*zeta^1 + (-50)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            3,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (-50/177329)*zeta^1 + (50/177329)*zeta^3",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            1,
+            "-50/177329"
+          ],
+          [
+            3,
+            "50/177329"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "427 + (50)*sqrt(2)",
+      "detA_real_closed_form": "427/177329 + (-50/177329)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (100)*zeta^1 + (-100)*zeta^3",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            1,
+            "100"
+          ],
+          [
+            3,
+            "-100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "17/6425 + (-4/6425)*zeta^1 + (4/6425)*zeta^3",
+        "terms": [
+          [
+            0,
+            "17/6425"
+          ],
+          [
+            1,
+            "-4/6425"
+          ],
+          [
+            3,
+            "4/6425"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "425 + (100)*sqrt(2)",
+      "detA_real_closed_form": "17/6425 + (-4/6425)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (46)*zeta^1 + (-46)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "46"
+          ],
+          [
+            3,
+            "-46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (-46/277729)*zeta^1 + (46/277729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            1,
+            "-46/277729"
+          ],
+          [
+            3,
+            "46/277729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "531 + (46)*sqrt(2)",
+      "detA_real_closed_form": "531/277729 + (-46/277729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          4,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "441",
+      "detA_real_closed_form": "1/441"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-46)*zeta^1 + (46)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "-46"
+          ],
+          [
+            3,
+            "46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (46/277729)*zeta^1 + (-46/277729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            1,
+            "46/277729"
+          ],
+          [
+            3,
+            "-46/277729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "531 + (-46)*sqrt(2)",
+      "detA_real_closed_form": "531/277729 + (46/277729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "529",
+      "detA_real_closed_form": "1/529"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (46)*zeta^1 + (-46)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "46"
+          ],
+          [
+            3,
+            "-46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (-46/277729)*zeta^1 + (46/277729)*zeta^3",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            1,
+            "-46/277729"
+          ],
+          [
+            3,
+            "46/277729"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "531 + (46)*sqrt(2)",
+      "detA_real_closed_form": "531/277729 + (-46/277729)*sqrt(2)"
+    },
+    {
+      "q": 2,
+      "characters": [
+        [
+          4,
+          4
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "625",
+        "terms": [
+          [
+            0,
+            "625"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/625",
+        "terms": [
+          [
+            0,
+            "1/625"
+          ]
+        ]
+      },
+      "detA_inverse_real_closed_form": "625",
+      "detA_real_closed_form": "1/625"
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "225",
+        "terms": [
+          [
+            0,
+            "225"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/225",
+        "terms": [
+          [
+            0,
+            "1/225"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-54)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (54)*zeta^7",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (5723190/10749959329)*zeta^1 + (849805/10749959329)*zeta^2 + (121716/10749959329)*zeta^3 + (-121716/10749959329)*zeta^5 + (-849805/10749959329)*zeta^6 + (-5723190/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "5723190/10749959329"
+          ],
+          [
+            2,
+            "849805/10749959329"
+          ],
+          [
+            3,
+            "121716/10749959329"
+          ],
+          [
+            5,
+            "-121716/10749959329"
+          ],
+          [
+            6,
+            "-849805/10749959329"
+          ],
+          [
+            7,
+            "-5723190/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-54)*zeta^2 + (54)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "-54"
+          ],
+          [
+            6,
+            "54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (54/103729)*zeta^2 + (-54/103729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            2,
+            "54/103729"
+          ],
+          [
+            6,
+            "-54/103729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-1)*zeta^2 + (-54)*zeta^3 + (54)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "-54"
+          ],
+          [
+            5,
+            "54"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (-121716/10749959329)*zeta^1 + (-849805/10749959329)*zeta^2 + (5723190/10749959329)*zeta^3 + (-5723190/10749959329)*zeta^5 + (849805/10749959329)*zeta^6 + (121716/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "-121716/10749959329"
+          ],
+          [
+            2,
+            "-849805/10749959329"
+          ],
+          [
+            3,
+            "5723190/10749959329"
+          ],
+          [
+            5,
+            "-5723190/10749959329"
+          ],
+          [
+            6,
+            "849805/10749959329"
+          ],
+          [
+            7,
+            "121716/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-1)*zeta^2 + (54)*zeta^3 + (-54)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "54"
+          ],
+          [
+            5,
+            "-54"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (121716/10749959329)*zeta^1 + (-849805/10749959329)*zeta^2 + (-5723190/10749959329)*zeta^3 + (5723190/10749959329)*zeta^5 + (849805/10749959329)*zeta^6 + (-121716/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "121716/10749959329"
+          ],
+          [
+            2,
+            "-849805/10749959329"
+          ],
+          [
+            3,
+            "-5723190/10749959329"
+          ],
+          [
+            5,
+            "5723190/10749959329"
+          ],
+          [
+            6,
+            "849805/10749959329"
+          ],
+          [
+            7,
+            "-121716/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (54)*zeta^2 + (-54)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "54"
+          ],
+          [
+            6,
+            "-54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (-54/103729)*zeta^2 + (54/103729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            2,
+            "-54/103729"
+          ],
+          [
+            6,
+            "54/103729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (54)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (-54)*zeta^7",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "54"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "-54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (-5723190/10749959329)*zeta^1 + (849805/10749959329)*zeta^2 + (-121716/10749959329)*zeta^3 + (121716/10749959329)*zeta^5 + (-849805/10749959329)*zeta^6 + (5723190/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "-5723190/10749959329"
+          ],
+          [
+            2,
+            "849805/10749959329"
+          ],
+          [
+            3,
+            "-121716/10749959329"
+          ],
+          [
+            5,
+            "121716/10749959329"
+          ],
+          [
+            6,
+            "-849805/10749959329"
+          ],
+          [
+            7,
+            "5723190/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          0,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          0
+        ],
+        [
+          15,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-54)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (54)*zeta^7",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "-54"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (5723190/10749959329)*zeta^1 + (849805/10749959329)*zeta^2 + (121716/10749959329)*zeta^3 + (-121716/10749959329)*zeta^5 + (-849805/10749959329)*zeta^6 + (-5723190/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "5723190/10749959329"
+          ],
+          [
+            2,
+            "849805/10749959329"
+          ],
+          [
+            3,
+            "121716/10749959329"
+          ],
+          [
+            5,
+            "-121716/10749959329"
+          ],
+          [
+            6,
+            "-849805/10749959329"
+          ],
+          [
+            7,
+            "-5723190/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (-100)*zeta^1 + (100)*zeta^7",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            1,
+            "-100"
+          ],
+          [
+            7,
+            "100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "4369/1638425 + (1092/1638425)*zeta^1 + (272/1638425)*zeta^2 + (64/1638425)*zeta^3 + (-64/1638425)*zeta^5 + (-272/1638425)*zeta^6 + (-1092/1638425)*zeta^7",
+        "terms": [
+          [
+            0,
+            "4369/1638425"
+          ],
+          [
+            1,
+            "1092/1638425"
+          ],
+          [
+            2,
+            "272/1638425"
+          ],
+          [
+            3,
+            "64/1638425"
+          ],
+          [
+            5,
+            "-64/1638425"
+          ],
+          [
+            6,
+            "-272/1638425"
+          ],
+          [
+            7,
+            "-1092/1638425"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-52)*zeta^1 + (-49)*zeta^2 + (-2)*zeta^3 + (2)*zeta^5 + (49)*zeta^6 + (52)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-52"
+          ],
+          [
+            2,
+            "-49"
+          ],
+          [
+            3,
+            "-2"
+          ],
+          [
+            5,
+            "2"
+          ],
+          [
+            6,
+            "49"
+          ],
+          [
+            7,
+            "52"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (385984/954982559)*zeta^1 + (332117/954982559)*zeta^2 + (84334/954982559)*zeta^3 + (-84334/954982559)*zeta^5 + (-332117/954982559)*zeta^6 + (-385984/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "385984/954982559"
+          ],
+          [
+            2,
+            "332117/954982559"
+          ],
+          [
+            3,
+            "84334/954982559"
+          ],
+          [
+            5,
+            "-84334/954982559"
+          ],
+          [
+            6,
+            "-332117/954982559"
+          ],
+          [
+            7,
+            "-385984/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          15,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-50)*zeta^1 + (-2)*zeta^2 + (-50)*zeta^3 + (50)*zeta^5 + (2)*zeta^6 + (50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            2,
+            "-2"
+          ],
+          [
+            3,
+            "-50"
+          ],
+          [
+            5,
+            "50"
+          ],
+          [
+            6,
+            "2"
+          ],
+          [
+            7,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (9374050/30202845089)*zeta^1 + (2533066/30202845089)*zeta^2 + (8702450/30202845089)*zeta^3 + (-8702450/30202845089)*zeta^5 + (-2533066/30202845089)*zeta^6 + (-9374050/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "9374050/30202845089"
+          ],
+          [
+            2,
+            "2533066/30202845089"
+          ],
+          [
+            3,
+            "8702450/30202845089"
+          ],
+          [
+            5,
+            "-8702450/30202845089"
+          ],
+          [
+            6,
+            "-2533066/30202845089"
+          ],
+          [
+            7,
+            "-9374050/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          15,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-50)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (8948850/31440864929)*zeta^1 + (880173/31440864929)*zeta^2 + (82300/31440864929)*zeta^3 + (-82300/31440864929)*zeta^5 + (-880173/31440864929)*zeta^6 + (-8948850/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "8948850/31440864929"
+          ],
+          [
+            2,
+            "880173/31440864929"
+          ],
+          [
+            3,
+            "82300/31440864929"
+          ],
+          [
+            5,
+            "-82300/31440864929"
+          ],
+          [
+            6,
+            "-880173/31440864929"
+          ],
+          [
+            7,
+            "-8948850/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          15,
+          5
+        ],
+        [
+          15,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-50)*zeta^1 + (2)*zeta^2 + (50)*zeta^3 + (-50)*zeta^5 + (-2)*zeta^6 + (50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            2,
+            "2"
+          ],
+          [
+            3,
+            "50"
+          ],
+          [
+            5,
+            "-50"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            7,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (8702450/30202845089)*zeta^1 + (-2533066/30202845089)*zeta^2 + (-9374050/30202845089)*zeta^3 + (9374050/30202845089)*zeta^5 + (2533066/30202845089)*zeta^6 + (-8702450/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "8702450/30202845089"
+          ],
+          [
+            2,
+            "-2533066/30202845089"
+          ],
+          [
+            3,
+            "-9374050/30202845089"
+          ],
+          [
+            5,
+            "9374050/30202845089"
+          ],
+          [
+            6,
+            "2533066/30202845089"
+          ],
+          [
+            7,
+            "-8702450/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-48)*zeta^1 + (51)*zeta^2 + (2)*zeta^3 + (-2)*zeta^5 + (-51)*zeta^6 + (48)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-48"
+          ],
+          [
+            2,
+            "51"
+          ],
+          [
+            3,
+            "2"
+          ],
+          [
+            5,
+            "-2"
+          ],
+          [
+            6,
+            "-51"
+          ],
+          [
+            7,
+            "48"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (6946196/30617684129)*zeta^1 + (-8451873/30617684129)*zeta^2 + (-2451754/30617684129)*zeta^3 + (2451754/30617684129)*zeta^5 + (8451873/30617684129)*zeta^6 + (-6946196/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "6946196/30617684129"
+          ],
+          [
+            2,
+            "-8451873/30617684129"
+          ],
+          [
+            3,
+            "-2451754/30617684129"
+          ],
+          [
+            5,
+            "2451754/30617684129"
+          ],
+          [
+            6,
+            "8451873/30617684129"
+          ],
+          [
+            7,
+            "-6946196/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433 + (4)*zeta^2 + (-4)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433"
+          ],
+          [
+            2,
+            "4"
+          ],
+          [
+            6,
+            "-4"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "433/187457 + (-4/187457)*zeta^2 + (4/187457)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433/187457"
+          ],
+          [
+            2,
+            "-4/187457"
+          ],
+          [
+            6,
+            "4/187457"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          1,
+          8
+        ],
+        [
+          15,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-46)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (46)*zeta^7",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "-46"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (12824110/77132286529)*zeta^1 + (837405/77132286529)*zeta^2 + (48484/77132286529)*zeta^3 + (-48484/77132286529)*zeta^5 + (-837405/77132286529)*zeta^6 + (-12824110/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "12824110/77132286529"
+          ],
+          [
+            2,
+            "837405/77132286529"
+          ],
+          [
+            3,
+            "48484/77132286529"
+          ],
+          [
+            5,
+            "-48484/77132286529"
+          ],
+          [
+            6,
+            "-837405/77132286529"
+          ],
+          [
+            7,
+            "-12824110/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          0
+        ],
+        [
+          14,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-54)*zeta^2 + (54)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "-54"
+          ],
+          [
+            6,
+            "54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (54/103729)*zeta^2 + (-54/103729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            2,
+            "54/103729"
+          ],
+          [
+            6,
+            "-54/103729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          14,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-52)*zeta^1 + (-49)*zeta^2 + (-2)*zeta^3 + (2)*zeta^5 + (49)*zeta^6 + (52)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-52"
+          ],
+          [
+            2,
+            "-49"
+          ],
+          [
+            3,
+            "-2"
+          ],
+          [
+            5,
+            "2"
+          ],
+          [
+            6,
+            "49"
+          ],
+          [
+            7,
+            "52"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (385984/954982559)*zeta^1 + (332117/954982559)*zeta^2 + (84334/954982559)*zeta^3 + (-84334/954982559)*zeta^5 + (-332117/954982559)*zeta^6 + (-385984/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "385984/954982559"
+          ],
+          [
+            2,
+            "332117/954982559"
+          ],
+          [
+            3,
+            "84334/954982559"
+          ],
+          [
+            5,
+            "-84334/954982559"
+          ],
+          [
+            6,
+            "-332117/954982559"
+          ],
+          [
+            7,
+            "-385984/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          14,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (-100)*zeta^2 + (100)*zeta^6",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            2,
+            "-100"
+          ],
+          [
+            6,
+            "100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "17/6425 + (4/6425)*zeta^2 + (-4/6425)*zeta^6",
+        "terms": [
+          [
+            0,
+            "17/6425"
+          ],
+          [
+            2,
+            "4/6425"
+          ],
+          [
+            6,
+            "-4/6425"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-2)*zeta^1 + (-51)*zeta^2 + (-48)*zeta^3 + (48)*zeta^5 + (51)*zeta^6 + (2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-2"
+          ],
+          [
+            2,
+            "-51"
+          ],
+          [
+            3,
+            "-48"
+          ],
+          [
+            5,
+            "48"
+          ],
+          [
+            6,
+            "51"
+          ],
+          [
+            7,
+            "2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (2451754/30617684129)*zeta^1 + (8451873/30617684129)*zeta^2 + (6946196/30617684129)*zeta^3 + (-6946196/30617684129)*zeta^5 + (-8451873/30617684129)*zeta^6 + (-2451754/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "2451754/30617684129"
+          ],
+          [
+            2,
+            "8451873/30617684129"
+          ],
+          [
+            3,
+            "6946196/30617684129"
+          ],
+          [
+            5,
+            "-6946196/30617684129"
+          ],
+          [
+            6,
+            "-8451873/30617684129"
+          ],
+          [
+            7,
+            "-2451754/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-50)*zeta^2 + (50)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "-50"
+          ],
+          [
+            6,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (50/177329)*zeta^2 + (-50/177329)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            2,
+            "50/177329"
+          ],
+          [
+            6,
+            "-50/177329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (2)*zeta^1 + (-51)*zeta^2 + (48)*zeta^3 + (-48)*zeta^5 + (51)*zeta^6 + (-2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "2"
+          ],
+          [
+            2,
+            "-51"
+          ],
+          [
+            3,
+            "48"
+          ],
+          [
+            5,
+            "-48"
+          ],
+          [
+            6,
+            "51"
+          ],
+          [
+            7,
+            "-2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (-2451754/30617684129)*zeta^1 + (8451873/30617684129)*zeta^2 + (-6946196/30617684129)*zeta^3 + (6946196/30617684129)*zeta^5 + (-8451873/30617684129)*zeta^6 + (2451754/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "-2451754/30617684129"
+          ],
+          [
+            2,
+            "8451873/30617684129"
+          ],
+          [
+            3,
+            "-6946196/30617684129"
+          ],
+          [
+            5,
+            "6946196/30617684129"
+          ],
+          [
+            6,
+            "-8451873/30617684129"
+          ],
+          [
+            7,
+            "2451754/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          14,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433",
+        "terms": [
+          [
+            0,
+            "433"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/433",
+        "terms": [
+          [
+            0,
+            "1/433"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (52)*zeta^1 + (-49)*zeta^2 + (2)*zeta^3 + (-2)*zeta^5 + (49)*zeta^6 + (-52)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "52"
+          ],
+          [
+            2,
+            "-49"
+          ],
+          [
+            3,
+            "2"
+          ],
+          [
+            5,
+            "-2"
+          ],
+          [
+            6,
+            "49"
+          ],
+          [
+            7,
+            "-52"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (-385984/954982559)*zeta^1 + (332117/954982559)*zeta^2 + (-84334/954982559)*zeta^3 + (84334/954982559)*zeta^5 + (-332117/954982559)*zeta^6 + (385984/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "-385984/954982559"
+          ],
+          [
+            2,
+            "332117/954982559"
+          ],
+          [
+            3,
+            "-84334/954982559"
+          ],
+          [
+            5,
+            "84334/954982559"
+          ],
+          [
+            6,
+            "-332117/954982559"
+          ],
+          [
+            7,
+            "385984/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          2,
+          8
+        ],
+        [
+          14,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-46)*zeta^2 + (46)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "-46"
+          ],
+          [
+            6,
+            "46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (46/277729)*zeta^2 + (-46/277729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            2,
+            "46/277729"
+          ],
+          [
+            6,
+            "-46/277729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          0
+        ],
+        [
+          13,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-1)*zeta^2 + (-54)*zeta^3 + (54)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "-54"
+          ],
+          [
+            5,
+            "54"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (-121716/10749959329)*zeta^1 + (-849805/10749959329)*zeta^2 + (5723190/10749959329)*zeta^3 + (-5723190/10749959329)*zeta^5 + (849805/10749959329)*zeta^6 + (121716/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "-121716/10749959329"
+          ],
+          [
+            2,
+            "-849805/10749959329"
+          ],
+          [
+            3,
+            "5723190/10749959329"
+          ],
+          [
+            5,
+            "-5723190/10749959329"
+          ],
+          [
+            6,
+            "849805/10749959329"
+          ],
+          [
+            7,
+            "121716/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          13,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-50)*zeta^1 + (-2)*zeta^2 + (-50)*zeta^3 + (50)*zeta^5 + (2)*zeta^6 + (50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            2,
+            "-2"
+          ],
+          [
+            3,
+            "-50"
+          ],
+          [
+            5,
+            "50"
+          ],
+          [
+            6,
+            "2"
+          ],
+          [
+            7,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (9374050/30202845089)*zeta^1 + (2533066/30202845089)*zeta^2 + (8702450/30202845089)*zeta^3 + (-8702450/30202845089)*zeta^5 + (-2533066/30202845089)*zeta^6 + (-9374050/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "9374050/30202845089"
+          ],
+          [
+            2,
+            "2533066/30202845089"
+          ],
+          [
+            3,
+            "8702450/30202845089"
+          ],
+          [
+            5,
+            "-8702450/30202845089"
+          ],
+          [
+            6,
+            "-2533066/30202845089"
+          ],
+          [
+            7,
+            "-9374050/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          13,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-2)*zeta^1 + (-51)*zeta^2 + (-48)*zeta^3 + (48)*zeta^5 + (51)*zeta^6 + (2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-2"
+          ],
+          [
+            2,
+            "-51"
+          ],
+          [
+            3,
+            "-48"
+          ],
+          [
+            5,
+            "48"
+          ],
+          [
+            6,
+            "51"
+          ],
+          [
+            7,
+            "2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (2451754/30617684129)*zeta^1 + (8451873/30617684129)*zeta^2 + (6946196/30617684129)*zeta^3 + (-6946196/30617684129)*zeta^5 + (-8451873/30617684129)*zeta^6 + (-2451754/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "2451754/30617684129"
+          ],
+          [
+            2,
+            "8451873/30617684129"
+          ],
+          [
+            3,
+            "6946196/30617684129"
+          ],
+          [
+            5,
+            "-6946196/30617684129"
+          ],
+          [
+            6,
+            "-8451873/30617684129"
+          ],
+          [
+            7,
+            "-2451754/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (-100)*zeta^3 + (100)*zeta^5",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            3,
+            "-100"
+          ],
+          [
+            5,
+            "100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "4369/1638425 + (-64/1638425)*zeta^1 + (-272/1638425)*zeta^2 + (1092/1638425)*zeta^3 + (-1092/1638425)*zeta^5 + (272/1638425)*zeta^6 + (64/1638425)*zeta^7",
+        "terms": [
+          [
+            0,
+            "4369/1638425"
+          ],
+          [
+            1,
+            "-64/1638425"
+          ],
+          [
+            2,
+            "-272/1638425"
+          ],
+          [
+            3,
+            "1092/1638425"
+          ],
+          [
+            5,
+            "-1092/1638425"
+          ],
+          [
+            6,
+            "272/1638425"
+          ],
+          [
+            7,
+            "64/1638425"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          13,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-1)*zeta^2 + (-50)*zeta^3 + (50)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "-50"
+          ],
+          [
+            5,
+            "50"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (-82300/31440864929)*zeta^1 + (-880173/31440864929)*zeta^2 + (8948850/31440864929)*zeta^3 + (-8948850/31440864929)*zeta^5 + (880173/31440864929)*zeta^6 + (82300/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "-82300/31440864929"
+          ],
+          [
+            2,
+            "-880173/31440864929"
+          ],
+          [
+            3,
+            "8948850/31440864929"
+          ],
+          [
+            5,
+            "-8948850/31440864929"
+          ],
+          [
+            6,
+            "880173/31440864929"
+          ],
+          [
+            7,
+            "82300/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433 + (-4)*zeta^2 + (4)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433"
+          ],
+          [
+            2,
+            "-4"
+          ],
+          [
+            6,
+            "4"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "433/187457 + (4/187457)*zeta^2 + (-4/187457)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433/187457"
+          ],
+          [
+            2,
+            "4/187457"
+          ],
+          [
+            6,
+            "-4/187457"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (2)*zeta^1 + (49)*zeta^2 + (-52)*zeta^3 + (52)*zeta^5 + (-49)*zeta^6 + (-2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "2"
+          ],
+          [
+            2,
+            "49"
+          ],
+          [
+            3,
+            "-52"
+          ],
+          [
+            5,
+            "52"
+          ],
+          [
+            6,
+            "-49"
+          ],
+          [
+            7,
+            "-2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (-84334/954982559)*zeta^1 + (-332117/954982559)*zeta^2 + (385984/954982559)*zeta^3 + (-385984/954982559)*zeta^5 + (332117/954982559)*zeta^6 + (84334/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "-84334/954982559"
+          ],
+          [
+            2,
+            "-332117/954982559"
+          ],
+          [
+            3,
+            "385984/954982559"
+          ],
+          [
+            5,
+            "-385984/954982559"
+          ],
+          [
+            6,
+            "332117/954982559"
+          ],
+          [
+            7,
+            "84334/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (50)*zeta^1 + (2)*zeta^2 + (-50)*zeta^3 + (50)*zeta^5 + (-2)*zeta^6 + (-50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            2,
+            "2"
+          ],
+          [
+            3,
+            "-50"
+          ],
+          [
+            5,
+            "50"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            7,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (-8702450/30202845089)*zeta^1 + (-2533066/30202845089)*zeta^2 + (9374050/30202845089)*zeta^3 + (-9374050/30202845089)*zeta^5 + (2533066/30202845089)*zeta^6 + (8702450/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "-8702450/30202845089"
+          ],
+          [
+            2,
+            "-2533066/30202845089"
+          ],
+          [
+            3,
+            "9374050/30202845089"
+          ],
+          [
+            5,
+            "-9374050/30202845089"
+          ],
+          [
+            6,
+            "2533066/30202845089"
+          ],
+          [
+            7,
+            "8702450/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          3,
+          8
+        ],
+        [
+          13,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-1)*zeta^2 + (-46)*zeta^3 + (46)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "-46"
+          ],
+          [
+            5,
+            "46"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (-48484/77132286529)*zeta^1 + (-837405/77132286529)*zeta^2 + (12824110/77132286529)*zeta^3 + (-12824110/77132286529)*zeta^5 + (837405/77132286529)*zeta^6 + (48484/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "-48484/77132286529"
+          ],
+          [
+            2,
+            "-837405/77132286529"
+          ],
+          [
+            3,
+            "12824110/77132286529"
+          ],
+          [
+            5,
+            "-12824110/77132286529"
+          ],
+          [
+            6,
+            "837405/77132286529"
+          ],
+          [
+            7,
+            "48484/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          0
+        ],
+        [
+          12,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          12,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-50)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (8948850/31440864929)*zeta^1 + (880173/31440864929)*zeta^2 + (82300/31440864929)*zeta^3 + (-82300/31440864929)*zeta^5 + (-880173/31440864929)*zeta^6 + (-8948850/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "8948850/31440864929"
+          ],
+          [
+            2,
+            "880173/31440864929"
+          ],
+          [
+            3,
+            "82300/31440864929"
+          ],
+          [
+            5,
+            "-82300/31440864929"
+          ],
+          [
+            6,
+            "-880173/31440864929"
+          ],
+          [
+            7,
+            "-8948850/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-50)*zeta^2 + (50)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "-50"
+          ],
+          [
+            6,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (50/177329)*zeta^2 + (-50/177329)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            2,
+            "50/177329"
+          ],
+          [
+            6,
+            "-50/177329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-1)*zeta^2 + (-50)*zeta^3 + (50)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "-50"
+          ],
+          [
+            5,
+            "50"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (-82300/31440864929)*zeta^1 + (-880173/31440864929)*zeta^2 + (8948850/31440864929)*zeta^3 + (-8948850/31440864929)*zeta^5 + (880173/31440864929)*zeta^6 + (82300/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "-82300/31440864929"
+          ],
+          [
+            2,
+            "-880173/31440864929"
+          ],
+          [
+            3,
+            "8948850/31440864929"
+          ],
+          [
+            5,
+            "-8948850/31440864929"
+          ],
+          [
+            6,
+            "880173/31440864929"
+          ],
+          [
+            7,
+            "82300/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-1)*zeta^2 + (50)*zeta^3 + (-50)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "50"
+          ],
+          [
+            5,
+            "-50"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (82300/31440864929)*zeta^1 + (-880173/31440864929)*zeta^2 + (-8948850/31440864929)*zeta^3 + (8948850/31440864929)*zeta^5 + (880173/31440864929)*zeta^6 + (-82300/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "82300/31440864929"
+          ],
+          [
+            2,
+            "-880173/31440864929"
+          ],
+          [
+            3,
+            "-8948850/31440864929"
+          ],
+          [
+            5,
+            "8948850/31440864929"
+          ],
+          [
+            6,
+            "880173/31440864929"
+          ],
+          [
+            7,
+            "-82300/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (50)*zeta^2 + (-50)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "50"
+          ],
+          [
+            6,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (-50/177329)*zeta^2 + (50/177329)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            2,
+            "-50/177329"
+          ],
+          [
+            6,
+            "50/177329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (50)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (-50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (-8948850/31440864929)*zeta^1 + (880173/31440864929)*zeta^2 + (-82300/31440864929)*zeta^3 + (82300/31440864929)*zeta^5 + (-880173/31440864929)*zeta^6 + (8948850/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "-8948850/31440864929"
+          ],
+          [
+            2,
+            "880173/31440864929"
+          ],
+          [
+            3,
+            "-82300/31440864929"
+          ],
+          [
+            5,
+            "82300/31440864929"
+          ],
+          [
+            6,
+            "-880173/31440864929"
+          ],
+          [
+            7,
+            "8948850/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          4,
+          8
+        ],
+        [
+          12,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          0
+        ],
+        [
+          11,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (-1)*zeta^2 + (54)*zeta^3 + (-54)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "54"
+          ],
+          [
+            5,
+            "-54"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (121716/10749959329)*zeta^1 + (-849805/10749959329)*zeta^2 + (-5723190/10749959329)*zeta^3 + (5723190/10749959329)*zeta^5 + (849805/10749959329)*zeta^6 + (-121716/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "121716/10749959329"
+          ],
+          [
+            2,
+            "-849805/10749959329"
+          ],
+          [
+            3,
+            "-5723190/10749959329"
+          ],
+          [
+            5,
+            "5723190/10749959329"
+          ],
+          [
+            6,
+            "849805/10749959329"
+          ],
+          [
+            7,
+            "-121716/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-50)*zeta^1 + (2)*zeta^2 + (50)*zeta^3 + (-50)*zeta^5 + (-2)*zeta^6 + (50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-50"
+          ],
+          [
+            2,
+            "2"
+          ],
+          [
+            3,
+            "50"
+          ],
+          [
+            5,
+            "-50"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            7,
+            "50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (8702450/30202845089)*zeta^1 + (-2533066/30202845089)*zeta^2 + (-9374050/30202845089)*zeta^3 + (9374050/30202845089)*zeta^5 + (2533066/30202845089)*zeta^6 + (-8702450/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "8702450/30202845089"
+          ],
+          [
+            2,
+            "-2533066/30202845089"
+          ],
+          [
+            3,
+            "-9374050/30202845089"
+          ],
+          [
+            5,
+            "9374050/30202845089"
+          ],
+          [
+            6,
+            "2533066/30202845089"
+          ],
+          [
+            7,
+            "-8702450/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (2)*zeta^1 + (-51)*zeta^2 + (48)*zeta^3 + (-48)*zeta^5 + (51)*zeta^6 + (-2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "2"
+          ],
+          [
+            2,
+            "-51"
+          ],
+          [
+            3,
+            "48"
+          ],
+          [
+            5,
+            "-48"
+          ],
+          [
+            6,
+            "51"
+          ],
+          [
+            7,
+            "-2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (-2451754/30617684129)*zeta^1 + (8451873/30617684129)*zeta^2 + (-6946196/30617684129)*zeta^3 + (6946196/30617684129)*zeta^5 + (-8451873/30617684129)*zeta^6 + (2451754/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "-2451754/30617684129"
+          ],
+          [
+            2,
+            "8451873/30617684129"
+          ],
+          [
+            3,
+            "-6946196/30617684129"
+          ],
+          [
+            5,
+            "6946196/30617684129"
+          ],
+          [
+            6,
+            "-8451873/30617684129"
+          ],
+          [
+            7,
+            "2451754/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433 + (-4)*zeta^2 + (4)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433"
+          ],
+          [
+            2,
+            "-4"
+          ],
+          [
+            6,
+            "4"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "433/187457 + (4/187457)*zeta^2 + (-4/187457)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433/187457"
+          ],
+          [
+            2,
+            "4/187457"
+          ],
+          [
+            6,
+            "-4/187457"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (-1)*zeta^2 + (50)*zeta^3 + (-50)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "50"
+          ],
+          [
+            5,
+            "-50"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (82300/31440864929)*zeta^1 + (-880173/31440864929)*zeta^2 + (-8948850/31440864929)*zeta^3 + (8948850/31440864929)*zeta^5 + (880173/31440864929)*zeta^6 + (-82300/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "82300/31440864929"
+          ],
+          [
+            2,
+            "-880173/31440864929"
+          ],
+          [
+            3,
+            "-8948850/31440864929"
+          ],
+          [
+            5,
+            "8948850/31440864929"
+          ],
+          [
+            6,
+            "880173/31440864929"
+          ],
+          [
+            7,
+            "-82300/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (100)*zeta^3 + (-100)*zeta^5",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            3,
+            "100"
+          ],
+          [
+            5,
+            "-100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "4369/1638425 + (64/1638425)*zeta^1 + (-272/1638425)*zeta^2 + (-1092/1638425)*zeta^3 + (1092/1638425)*zeta^5 + (272/1638425)*zeta^6 + (-64/1638425)*zeta^7",
+        "terms": [
+          [
+            0,
+            "4369/1638425"
+          ],
+          [
+            1,
+            "64/1638425"
+          ],
+          [
+            2,
+            "-272/1638425"
+          ],
+          [
+            3,
+            "-1092/1638425"
+          ],
+          [
+            5,
+            "1092/1638425"
+          ],
+          [
+            6,
+            "272/1638425"
+          ],
+          [
+            7,
+            "-64/1638425"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          11,
+          6
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-2)*zeta^1 + (49)*zeta^2 + (52)*zeta^3 + (-52)*zeta^5 + (-49)*zeta^6 + (2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-2"
+          ],
+          [
+            2,
+            "49"
+          ],
+          [
+            3,
+            "52"
+          ],
+          [
+            5,
+            "-52"
+          ],
+          [
+            6,
+            "-49"
+          ],
+          [
+            7,
+            "2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (84334/954982559)*zeta^1 + (-332117/954982559)*zeta^2 + (-385984/954982559)*zeta^3 + (385984/954982559)*zeta^5 + (332117/954982559)*zeta^6 + (-84334/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "84334/954982559"
+          ],
+          [
+            2,
+            "-332117/954982559"
+          ],
+          [
+            3,
+            "-385984/954982559"
+          ],
+          [
+            5,
+            "385984/954982559"
+          ],
+          [
+            6,
+            "332117/954982559"
+          ],
+          [
+            7,
+            "-84334/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (50)*zeta^1 + (-2)*zeta^2 + (50)*zeta^3 + (-50)*zeta^5 + (2)*zeta^6 + (-50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            2,
+            "-2"
+          ],
+          [
+            3,
+            "50"
+          ],
+          [
+            5,
+            "-50"
+          ],
+          [
+            6,
+            "2"
+          ],
+          [
+            7,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (-9374050/30202845089)*zeta^1 + (2533066/30202845089)*zeta^2 + (-8702450/30202845089)*zeta^3 + (8702450/30202845089)*zeta^5 + (-2533066/30202845089)*zeta^6 + (9374050/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "-9374050/30202845089"
+          ],
+          [
+            2,
+            "2533066/30202845089"
+          ],
+          [
+            3,
+            "-8702450/30202845089"
+          ],
+          [
+            5,
+            "8702450/30202845089"
+          ],
+          [
+            6,
+            "-2533066/30202845089"
+          ],
+          [
+            7,
+            "9374050/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          5,
+          8
+        ],
+        [
+          11,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-1)*zeta^2 + (46)*zeta^3 + (-46)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "46"
+          ],
+          [
+            5,
+            "-46"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (48484/77132286529)*zeta^1 + (-837405/77132286529)*zeta^2 + (-12824110/77132286529)*zeta^3 + (12824110/77132286529)*zeta^5 + (837405/77132286529)*zeta^6 + (-48484/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "48484/77132286529"
+          ],
+          [
+            2,
+            "-837405/77132286529"
+          ],
+          [
+            3,
+            "-12824110/77132286529"
+          ],
+          [
+            5,
+            "12824110/77132286529"
+          ],
+          [
+            6,
+            "837405/77132286529"
+          ],
+          [
+            7,
+            "-48484/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          0
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (54)*zeta^2 + (-54)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            2,
+            "54"
+          ],
+          [
+            6,
+            "-54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "331/103729 + (-54/103729)*zeta^2 + (54/103729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "331/103729"
+          ],
+          [
+            2,
+            "-54/103729"
+          ],
+          [
+            6,
+            "54/103729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-48)*zeta^1 + (51)*zeta^2 + (2)*zeta^3 + (-2)*zeta^5 + (-51)*zeta^6 + (48)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-48"
+          ],
+          [
+            2,
+            "51"
+          ],
+          [
+            3,
+            "2"
+          ],
+          [
+            5,
+            "-2"
+          ],
+          [
+            6,
+            "-51"
+          ],
+          [
+            7,
+            "48"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (6946196/30617684129)*zeta^1 + (-8451873/30617684129)*zeta^2 + (-2451754/30617684129)*zeta^3 + (2451754/30617684129)*zeta^5 + (8451873/30617684129)*zeta^6 + (-6946196/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "6946196/30617684129"
+          ],
+          [
+            2,
+            "-8451873/30617684129"
+          ],
+          [
+            3,
+            "-2451754/30617684129"
+          ],
+          [
+            5,
+            "2451754/30617684129"
+          ],
+          [
+            6,
+            "8451873/30617684129"
+          ],
+          [
+            7,
+            "-6946196/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433",
+        "terms": [
+          [
+            0,
+            "433"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/433",
+        "terms": [
+          [
+            0,
+            "1/433"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (2)*zeta^1 + (49)*zeta^2 + (-52)*zeta^3 + (52)*zeta^5 + (-49)*zeta^6 + (-2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "2"
+          ],
+          [
+            2,
+            "49"
+          ],
+          [
+            3,
+            "-52"
+          ],
+          [
+            5,
+            "52"
+          ],
+          [
+            6,
+            "-49"
+          ],
+          [
+            7,
+            "-2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (-84334/954982559)*zeta^1 + (-332117/954982559)*zeta^2 + (385984/954982559)*zeta^3 + (-385984/954982559)*zeta^5 + (332117/954982559)*zeta^6 + (84334/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "-84334/954982559"
+          ],
+          [
+            2,
+            "-332117/954982559"
+          ],
+          [
+            3,
+            "385984/954982559"
+          ],
+          [
+            5,
+            "-385984/954982559"
+          ],
+          [
+            6,
+            "332117/954982559"
+          ],
+          [
+            7,
+            "84334/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (50)*zeta^2 + (-50)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            2,
+            "50"
+          ],
+          [
+            6,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "427/177329 + (-50/177329)*zeta^2 + (50/177329)*zeta^6",
+        "terms": [
+          [
+            0,
+            "427/177329"
+          ],
+          [
+            2,
+            "-50/177329"
+          ],
+          [
+            6,
+            "50/177329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (-2)*zeta^1 + (49)*zeta^2 + (52)*zeta^3 + (-52)*zeta^5 + (-49)*zeta^6 + (2)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "-2"
+          ],
+          [
+            2,
+            "49"
+          ],
+          [
+            3,
+            "52"
+          ],
+          [
+            5,
+            "-52"
+          ],
+          [
+            6,
+            "-49"
+          ],
+          [
+            7,
+            "2"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (84334/954982559)*zeta^1 + (-332117/954982559)*zeta^2 + (-385984/954982559)*zeta^3 + (385984/954982559)*zeta^5 + (332117/954982559)*zeta^6 + (-84334/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "84334/954982559"
+          ],
+          [
+            2,
+            "-332117/954982559"
+          ],
+          [
+            3,
+            "-385984/954982559"
+          ],
+          [
+            5,
+            "385984/954982559"
+          ],
+          [
+            6,
+            "332117/954982559"
+          ],
+          [
+            7,
+            "-84334/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (100)*zeta^2 + (-100)*zeta^6",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            2,
+            "100"
+          ],
+          [
+            6,
+            "-100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "17/6425 + (-4/6425)*zeta^2 + (4/6425)*zeta^6",
+        "terms": [
+          [
+            0,
+            "17/6425"
+          ],
+          [
+            2,
+            "-4/6425"
+          ],
+          [
+            6,
+            "4/6425"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (48)*zeta^1 + (51)*zeta^2 + (-2)*zeta^3 + (2)*zeta^5 + (-51)*zeta^6 + (-48)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "48"
+          ],
+          [
+            2,
+            "51"
+          ],
+          [
+            3,
+            "-2"
+          ],
+          [
+            5,
+            "2"
+          ],
+          [
+            6,
+            "-51"
+          ],
+          [
+            7,
+            "-48"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (-6946196/30617684129)*zeta^1 + (-8451873/30617684129)*zeta^2 + (2451754/30617684129)*zeta^3 + (-2451754/30617684129)*zeta^5 + (8451873/30617684129)*zeta^6 + (6946196/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "-6946196/30617684129"
+          ],
+          [
+            2,
+            "-8451873/30617684129"
+          ],
+          [
+            3,
+            "2451754/30617684129"
+          ],
+          [
+            5,
+            "-2451754/30617684129"
+          ],
+          [
+            6,
+            "8451873/30617684129"
+          ],
+          [
+            7,
+            "6946196/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          6,
+          8
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (46)*zeta^2 + (-46)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "46"
+          ],
+          [
+            6,
+            "-46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (-46/277729)*zeta^2 + (46/277729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            2,
+            "-46/277729"
+          ],
+          [
+            6,
+            "46/277729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          0
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "331 + (54)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (-54)*zeta^7",
+        "terms": [
+          [
+            0,
+            "331"
+          ],
+          [
+            1,
+            "54"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "-54"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "34339469/10749959329 + (-5723190/10749959329)*zeta^1 + (849805/10749959329)*zeta^2 + (-121716/10749959329)*zeta^3 + (121716/10749959329)*zeta^5 + (-849805/10749959329)*zeta^6 + (5723190/10749959329)*zeta^7",
+        "terms": [
+          [
+            0,
+            "34339469/10749959329"
+          ],
+          [
+            1,
+            "-5723190/10749959329"
+          ],
+          [
+            2,
+            "849805/10749959329"
+          ],
+          [
+            3,
+            "-121716/10749959329"
+          ],
+          [
+            5,
+            "121716/10749959329"
+          ],
+          [
+            6,
+            "-849805/10749959329"
+          ],
+          [
+            7,
+            "5723190/10749959329"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          9,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "433 + (4)*zeta^2 + (-4)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433"
+          ],
+          [
+            2,
+            "4"
+          ],
+          [
+            6,
+            "-4"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "433/187457 + (-4/187457)*zeta^2 + (4/187457)*zeta^6",
+        "terms": [
+          [
+            0,
+            "433/187457"
+          ],
+          [
+            2,
+            "-4/187457"
+          ],
+          [
+            6,
+            "4/187457"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          9,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (52)*zeta^1 + (-49)*zeta^2 + (2)*zeta^3 + (-2)*zeta^5 + (49)*zeta^6 + (-52)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "52"
+          ],
+          [
+            2,
+            "-49"
+          ],
+          [
+            3,
+            "2"
+          ],
+          [
+            5,
+            "-2"
+          ],
+          [
+            6,
+            "49"
+          ],
+          [
+            7,
+            "-52"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "2396293/954982559 + (-385984/954982559)*zeta^1 + (332117/954982559)*zeta^2 + (-84334/954982559)*zeta^3 + (84334/954982559)*zeta^5 + (-332117/954982559)*zeta^6 + (385984/954982559)*zeta^7",
+        "terms": [
+          [
+            0,
+            "2396293/954982559"
+          ],
+          [
+            1,
+            "-385984/954982559"
+          ],
+          [
+            2,
+            "332117/954982559"
+          ],
+          [
+            3,
+            "-84334/954982559"
+          ],
+          [
+            5,
+            "84334/954982559"
+          ],
+          [
+            6,
+            "-332117/954982559"
+          ],
+          [
+            7,
+            "385984/954982559"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (50)*zeta^1 + (2)*zeta^2 + (-50)*zeta^3 + (50)*zeta^5 + (-2)*zeta^6 + (-50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            2,
+            "2"
+          ],
+          [
+            3,
+            "-50"
+          ],
+          [
+            5,
+            "50"
+          ],
+          [
+            6,
+            "-2"
+          ],
+          [
+            7,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (-8702450/30202845089)*zeta^1 + (-2533066/30202845089)*zeta^2 + (9374050/30202845089)*zeta^3 + (-9374050/30202845089)*zeta^5 + (2533066/30202845089)*zeta^6 + (8702450/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "-8702450/30202845089"
+          ],
+          [
+            2,
+            "-2533066/30202845089"
+          ],
+          [
+            3,
+            "9374050/30202845089"
+          ],
+          [
+            5,
+            "-9374050/30202845089"
+          ],
+          [
+            6,
+            "2533066/30202845089"
+          ],
+          [
+            7,
+            "8702450/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          9,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "427 + (50)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (-50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "427"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "75723629/31440864929 + (-8948850/31440864929)*zeta^1 + (880173/31440864929)*zeta^2 + (-82300/31440864929)*zeta^3 + (82300/31440864929)*zeta^5 + (-880173/31440864929)*zeta^6 + (8948850/31440864929)*zeta^7",
+        "terms": [
+          [
+            0,
+            "75723629/31440864929"
+          ],
+          [
+            1,
+            "-8948850/31440864929"
+          ],
+          [
+            2,
+            "880173/31440864929"
+          ],
+          [
+            3,
+            "-82300/31440864929"
+          ],
+          [
+            5,
+            "82300/31440864929"
+          ],
+          [
+            6,
+            "-880173/31440864929"
+          ],
+          [
+            7,
+            "8948850/31440864929"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (50)*zeta^1 + (-2)*zeta^2 + (50)*zeta^3 + (-50)*zeta^5 + (2)*zeta^6 + (-50)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "50"
+          ],
+          [
+            2,
+            "-2"
+          ],
+          [
+            3,
+            "50"
+          ],
+          [
+            5,
+            "-50"
+          ],
+          [
+            6,
+            "2"
+          ],
+          [
+            7,
+            "-50"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74640157/30202845089 + (-9374050/30202845089)*zeta^1 + (2533066/30202845089)*zeta^2 + (-8702450/30202845089)*zeta^3 + (8702450/30202845089)*zeta^5 + (-2533066/30202845089)*zeta^6 + (9374050/30202845089)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74640157/30202845089"
+          ],
+          [
+            1,
+            "-9374050/30202845089"
+          ],
+          [
+            2,
+            "2533066/30202845089"
+          ],
+          [
+            3,
+            "-8702450/30202845089"
+          ],
+          [
+            5,
+            "8702450/30202845089"
+          ],
+          [
+            6,
+            "-2533066/30202845089"
+          ],
+          [
+            7,
+            "9374050/30202845089"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "429 + (48)*zeta^1 + (51)*zeta^2 + (-2)*zeta^3 + (2)*zeta^5 + (-51)*zeta^6 + (-48)*zeta^7",
+        "terms": [
+          [
+            0,
+            "429"
+          ],
+          [
+            1,
+            "48"
+          ],
+          [
+            2,
+            "51"
+          ],
+          [
+            3,
+            "-2"
+          ],
+          [
+            5,
+            "2"
+          ],
+          [
+            6,
+            "-51"
+          ],
+          [
+            7,
+            "-48"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "74956683/30617684129 + (-6946196/30617684129)*zeta^1 + (-8451873/30617684129)*zeta^2 + (2451754/30617684129)*zeta^3 + (-2451754/30617684129)*zeta^5 + (8451873/30617684129)*zeta^6 + (6946196/30617684129)*zeta^7",
+        "terms": [
+          [
+            0,
+            "74956683/30617684129"
+          ],
+          [
+            1,
+            "-6946196/30617684129"
+          ],
+          [
+            2,
+            "-8451873/30617684129"
+          ],
+          [
+            3,
+            "2451754/30617684129"
+          ],
+          [
+            5,
+            "-2451754/30617684129"
+          ],
+          [
+            6,
+            "8451873/30617684129"
+          ],
+          [
+            7,
+            "6946196/30617684129"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "425 + (100)*zeta^1 + (-100)*zeta^7",
+        "terms": [
+          [
+            0,
+            "425"
+          ],
+          [
+            1,
+            "100"
+          ],
+          [
+            7,
+            "-100"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "4369/1638425 + (-1092/1638425)*zeta^1 + (272/1638425)*zeta^2 + (-64/1638425)*zeta^3 + (64/1638425)*zeta^5 + (-272/1638425)*zeta^6 + (1092/1638425)*zeta^7",
+        "terms": [
+          [
+            0,
+            "4369/1638425"
+          ],
+          [
+            1,
+            "-1092/1638425"
+          ],
+          [
+            2,
+            "272/1638425"
+          ],
+          [
+            3,
+            "-64/1638425"
+          ],
+          [
+            5,
+            "64/1638425"
+          ],
+          [
+            6,
+            "-272/1638425"
+          ],
+          [
+            7,
+            "1092/1638425"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (46)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (-46)*zeta^7",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "46"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "-46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (-12824110/77132286529)*zeta^1 + (837405/77132286529)*zeta^2 + (-48484/77132286529)*zeta^3 + (48484/77132286529)*zeta^5 + (-837405/77132286529)*zeta^6 + (12824110/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "-12824110/77132286529"
+          ],
+          [
+            2,
+            "837405/77132286529"
+          ],
+          [
+            3,
+            "-48484/77132286529"
+          ],
+          [
+            5,
+            "48484/77132286529"
+          ],
+          [
+            6,
+            "-837405/77132286529"
+          ],
+          [
+            7,
+            "12824110/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          0
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-46)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (46)*zeta^7",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "-46"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (12824110/77132286529)*zeta^1 + (837405/77132286529)*zeta^2 + (48484/77132286529)*zeta^3 + (-48484/77132286529)*zeta^5 + (-837405/77132286529)*zeta^6 + (-12824110/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "12824110/77132286529"
+          ],
+          [
+            2,
+            "837405/77132286529"
+          ],
+          [
+            3,
+            "48484/77132286529"
+          ],
+          [
+            5,
+            "-48484/77132286529"
+          ],
+          [
+            6,
+            "-837405/77132286529"
+          ],
+          [
+            7,
+            "-12824110/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          14
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-46)*zeta^2 + (46)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "-46"
+          ],
+          [
+            6,
+            "46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (46/277729)*zeta^2 + (-46/277729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            2,
+            "46/277729"
+          ],
+          [
+            6,
+            "-46/277729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          13
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-1)*zeta^2 + (-46)*zeta^3 + (46)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "-46"
+          ],
+          [
+            5,
+            "46"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (-48484/77132286529)*zeta^1 + (-837405/77132286529)*zeta^2 + (12824110/77132286529)*zeta^3 + (-12824110/77132286529)*zeta^5 + (837405/77132286529)*zeta^6 + (48484/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "-48484/77132286529"
+          ],
+          [
+            2,
+            "-837405/77132286529"
+          ],
+          [
+            3,
+            "12824110/77132286529"
+          ],
+          [
+            5,
+            "-12824110/77132286529"
+          ],
+          [
+            6,
+            "837405/77132286529"
+          ],
+          [
+            7,
+            "48484/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          12
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          11
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (-1)*zeta^2 + (46)*zeta^3 + (-46)*zeta^5 + (1)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "-1"
+          ],
+          [
+            3,
+            "46"
+          ],
+          [
+            5,
+            "-46"
+          ],
+          [
+            6,
+            "1"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (48484/77132286529)*zeta^1 + (-837405/77132286529)*zeta^2 + (-12824110/77132286529)*zeta^3 + (12824110/77132286529)*zeta^5 + (837405/77132286529)*zeta^6 + (-48484/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "48484/77132286529"
+          ],
+          [
+            2,
+            "-837405/77132286529"
+          ],
+          [
+            3,
+            "-12824110/77132286529"
+          ],
+          [
+            5,
+            "12824110/77132286529"
+          ],
+          [
+            6,
+            "837405/77132286529"
+          ],
+          [
+            7,
+            "-48484/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (46)*zeta^2 + (-46)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            2,
+            "46"
+          ],
+          [
+            6,
+            "-46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "531/277729 + (-46/277729)*zeta^2 + (46/277729)*zeta^6",
+        "terms": [
+          [
+            0,
+            "531/277729"
+          ],
+          [
+            2,
+            "-46/277729"
+          ],
+          [
+            6,
+            "46/277729"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "531 + (46)*zeta^1 + (1)*zeta^2 + (-1)*zeta^6 + (-46)*zeta^7",
+        "terms": [
+          [
+            0,
+            "531"
+          ],
+          [
+            1,
+            "46"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            6,
+            "-1"
+          ],
+          [
+            7,
+            "-46"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "147477269/77132286529 + (-12824110/77132286529)*zeta^1 + (837405/77132286529)*zeta^2 + (-48484/77132286529)*zeta^3 + (48484/77132286529)*zeta^5 + (-837405/77132286529)*zeta^6 + (12824110/77132286529)*zeta^7",
+        "terms": [
+          [
+            0,
+            "147477269/77132286529"
+          ],
+          [
+            1,
+            "-12824110/77132286529"
+          ],
+          [
+            2,
+            "837405/77132286529"
+          ],
+          [
+            3,
+            "-48484/77132286529"
+          ],
+          [
+            5,
+            "48484/77132286529"
+          ],
+          [
+            6,
+            "-837405/77132286529"
+          ],
+          [
+            7,
+            "12824110/77132286529"
+          ]
+        ]
+      }
+    },
+    {
+      "q": 4,
+      "characters": [
+        [
+          8,
+          8
+        ]
+      ],
+      "detA_inverse_cyclotomic": {
+        "expression": "625",
+        "terms": [
+          [
+            0,
+            "625"
+          ]
+        ]
+      },
+      "detA_cyclotomic": {
+        "expression": "1/625",
+        "terms": [
+          [
+            0,
+            "1/625"
+          ]
+        ]
+      }
+    }
+  ],
+  "leading_amplitude_bounded_search": [
+    {
+      "q": 1,
+      "K_R40": "0.013361206893163350347922853212791184761977075727611479605501179451",
+      "basis": [
+        "1",
+        "sqrt(2)",
+        "K"
+      ],
+      "coefficient_bound": 1000000000,
+      "tol": "1e-45",
+      "relation": null,
+      "interpretation": "No small Q(sqrt2) relation was found if relation is null. This bounded floating-point search is not a proof of nonexistence and is not an exact amplitude formula."
+    },
+    {
+      "q": 2,
+      "K_R40": "0.0019184541381844317668645407795820411190356630723843760966048050193",
+      "basis": [
+        "1",
+        "sqrt(2)",
+        "K"
+      ],
+      "coefficient_bound": 1000000000,
+      "tol": "1e-45",
+      "relation": null,
+      "interpretation": "No small Q(sqrt2) relation was found if relation is null. This bounded floating-point search is not a proof of nonexistence and is not an exact amplitude formula."
+    },
+    {
+      "q": 4,
+      "K_R40": "0.00016537005858587852282109042094267766531758433271716630894373698531",
+      "basis": [
+        "1",
+        "sqrt(2)",
+        "K"
+      ],
+      "coefficient_bound": 1000000000,
+      "tol": "1e-45",
+      "relation": null,
+      "interpretation": "No small Q(sqrt2) relation was found if relation is null. This bounded floating-point search is not a proof of nonexistence and is not an exact amplitude formula."
+    }
+  ],
+  "amplitude_status": "No exact rational or Q(sqrt2) closed form for the physical leading area amplitude is established. The exact rate and determinant formulas do not determine the amplitude: it also involves the star/Omega1 interfaces, the nine-bond crossing drive, mode projection, and the quadratic dressed-jet observable.",
+  "qualification": "Exact rational/cyclotomic determinant arithmetic plus explicitly bounded, non-proof numerical relation searches. No interval certificate or Lean/area-seed claim.",
+  "peak_rss_KiB": 35580
+}

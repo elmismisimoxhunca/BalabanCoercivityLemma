@@ -1,0 +1,106 @@
+assembled 1 8 1 n 1252 aug 1756 nnz 56446 seconds 0.43146181106567383
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+k -0.39269908 root 0.563971517985561 c1 -2.9310457701e-17 K_L -0.038327868389 rho 0.336984265268
+  j=  0 dir=1 h=    0.9116882454 term=  -2.994590028e-17 share=1.0216797
+  j=  1 dir=1 h=   -0.4995667241 term=   6.465265675e-19 share=-0.02205788
+  j=  2 dir=1 h=   0.08571209924 term=  -1.114399595e-20 share=0.00038020546
+  j=  3 dir=1 h=  -0.01470587131 term=   6.136044221e-23 share=-2.0934658e-6
+  j=  4 dir=1 h=  0.002523128624 term=  -1.359244981e-24 share=4.6374062e-8
+  j=  5 dir=1 h=-0.0004329004326 term=   5.572295698e-27 share=-1.9011289e-10
+  j=  6 dir=1 h=  7.427397192e-5 term=  -1.757576123e-28 share=5.9964131e-12
+  j=  7 dir=1 h= -1.274339892e-5 term=   4.915370273e-31 share=-1.6770022e-14
+  collar successive ratios of the dominant component: ['0.3369842653', '0.3369842653', '0.3369842653', '0.3369842654', '0.3369842665', '0.3369842762', '0.3369843614', '0.336985114', '0.3369917901', '0.3370515577', '0.3375976794', '0.3428015924']
+assembled 1 8 1 n 1252 aug 1756 nnz 62494 seconds 0.4698929786682129
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+k -0.267 root 0.557495691512455 c1 -2.34836333177e-16 K_L -0.0390657164417 rho 0.359412185049
+  j=  0 dir=1 h=    0.9116882454 term=  -2.419535195e-16 share=1.030307
+  j=  1 dir=1 h=   -0.4995667241 term=   7.289180099e-18 share=-0.031039405
+  j=  2 dir=1 h=   0.08571209924 term=  -1.734665169e-19 share=0.00073866984
+  j=  3 dir=1 h=  -0.01470587131 term=   1.511530061e-21 share=-6.4365256e-6
+  j=  4 dir=1 h=  0.002523128624 term=  -3.912199254e-23 share=1.6659259e-7
+  j=  5 dir=1 h=-0.0004329004326 term=    3.10937184e-25 share=-1.3240591e-9
+  j=  6 dir=1 h=  7.427397192e-5 term=   -8.87714687e-27 share=3.780142e-11
+  j=  7 dir=1 h= -1.274339892e-5 term=   6.330521239e-29 share=-2.6957163e-13
+  collar successive ratios of the dominant component: ['0.359412185', '0.3594121851', '0.3594121851', '0.3594121855', '0.3594121885', '0.359412212', '0.3594123934', '0.3594138004', '0.3594247339', '0.3595101594', '0.3601863133', '0.3656943632']
+assembled 1 8 1 n 1252 aug 1756 nnz 56446 seconds 0.4477195739746094
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+k -0.09817477 root 0.568913893226149 c1 -7.58515870661e-16 K_L -0.0236700025693 rho 0.378708627425
+  j=  0 dir=1 h=    0.9116882454 term=   -7.91763966e-16 share=1.0438331
+  j=  1 dir=1 h=   -0.4995667241 term=   3.431091703e-17 share=-0.045234277
+  j=  2 dir=1 h=   0.08571209924 term=  -1.077562692e-18 share=0.0014206198
+  j=  3 dir=1 h=  -0.01470587131 term=   1.519261236e-20 share=-2.0029393e-5
+  j=  4 dir=1 h=  0.002523128624 term=  -4.581642658e-22 share=6.0402726e-7
+  j=  5 dir=1 h=-0.0004329004326 term=   6.706197096e-24 share=-8.8412087e-9
+  j=  6 dir=1 h=  7.427397192e-5 term=  -1.950633581e-25 share=2.571645e-10
+  j=  7 dir=1 h= -1.274339892e-5 term=   2.953187152e-27 share=-3.8933756e-12
+  collar successive ratios of the dominant component: ['0.3787086274', '0.3787086274', '0.3787086276', '0.3787086285', '0.3787086346', '0.3787086775', '0.3787089767', '0.3787110635', '0.3787256233', '0.3788273119', '0.379539258', '0.3845482197']
+rc=0

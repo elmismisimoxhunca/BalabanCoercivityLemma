@@ -1,0 +1,7 @@
+geo3_grid_checks 36 (M in 1..4, R in (1,10,21), cf in (10,12,16), ell=2)
+formula_min_cf10 P0=5 Q0=71 N=120 om0_width=66 nonempty=True proper=True geo3=True
+failEllCS_two_smallest P0=20 Q0=284 N=480 om0_width=264 nonempty=True proper=True geo3=True
+constFam_witness_two_R_ge_c P0=56 Q0=824 N=1056 om0_width=768 nonempty=True proper=True geo3=True
+note nonempty/proper Omega_0 is also a consequence of the committed
+Admissible proof (ne_admissible_two); this script is evidence only
+operator_modelled no

@@ -1,0 +1,693 @@
+{
+  "goalNeg2_proved": false,
+  "round9_premise_proved": false,
+  "concrete_glue_compiled": false,
+  "full_compilation_status": "Two confirmed memory kills; no exit. Further large attempts stopped by coordinator.",
+  "assembled_sha256": "6ecdc93a9870fce26ab32b0030651f85ee16bf17019a277ae5e6ff2a5e695991",
+  "prefix_sha256": "b6dc8553ad1b8a7fdc5ff731b5c7df0fde0009979bdc90dbaba23b10efc5d052",
+  "structure_checks": {
+    "prefix_unchanged": true,
+    "exact_assembly": true,
+    "shared_cofinal_identical": true,
+    "source_snapshot_identical": true,
+    "dictionary_shared_identical": true,
+    "no_full_exit_file": true,
+    "imports": true,
+    "no_forbidden_tokens": true
+  },
+  "compiled_short_files": [
+    {
+      "path": "AHP/round10/assembly/r1/Cofinal.lean",
+      "sha256": "7a12e13c59dd6eb512a3d58d099722fecad904c51f3b7d364ab379c3cd5e63b0",
+      "checks": {
+        "exit_zero": true,
+        "timestamps": true,
+        "no_diagnostics": true,
+        "records_present": true,
+        "allowed_axioms": true,
+        "no_forbidden_tokens": true,
+        "expected_declarations": true
+      },
+      "axiom_records": {
+        "AdalyFormal.Round10.Assembly.eventually_ne_zero_of_normalized_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Assembly.cofinal_of_eventual_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Assembly.even_radius_progression": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Assembly.nested_cofinal_of_eventual": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "pass_checks": true
+    },
+    {
+      "path": "AHP/round10/shared/assembly/R1_Cofinal.lean",
+      "sha256": "7a12e13c59dd6eb512a3d58d099722fecad904c51f3b7d364ab379c3cd5e63b0",
+      "checks": {
+        "exit_zero": true,
+        "timestamps": true,
+        "no_diagnostics": true,
+        "records_present": true,
+        "allowed_axioms": true,
+        "no_forbidden_tokens": true,
+        "expected_declarations": true
+      },
+      "axiom_records": {
+        "AdalyFormal.Round10.Assembly.eventually_ne_zero_of_normalized_limit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Assembly.cofinal_of_eventual_subsequence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Assembly.even_radius_progression": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Assembly.nested_cofinal_of_eventual": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "pass_checks": true
+    }
+  ],
+  "reviewed_shared_files": [
+    {
+      "path": "AHP/round10/shared/nonvanishing/R1_SourceDominance.lean",
+      "sha256": "c982e97c5b60a402d75593af0f7277a9cd94849fd2359aff213bb98ada681559",
+      "checks": {
+        "exit_zero": true,
+        "timestamps": true,
+        "no_diagnostics": true,
+        "records_present": true,
+        "allowed_axioms": true,
+        "no_forbidden_tokens": true
+      },
+      "axiom_records": {
+        "AdalyFormal.Round10.Nonvanishing.left": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourceWeight": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sum_left_abs": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sum_right_abs": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.neighbor_sum_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.source_l1_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_decompose": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_error": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourceWeight_zero_lower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_ne_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.sourcePairing_same_sign": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.BlockSourceData": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.coupling_ne_zero_of_blockSourceData": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "pass_checks": true
+    },
+    {
+      "path": "AHP/round10/shared/nonvanishing/R1_RecurrenceNonvanishing.lean",
+      "sha256": "d5384411a01d1a646f6035cbe159bd6dbc3918d7c1e96b74a7f78a69de221757",
+      "checks": {
+        "exit_zero": true,
+        "timestamps": true,
+        "no_diagnostics": true,
+        "records_present": true,
+        "allowed_axioms": true,
+        "no_forbidden_tokens": true
+      },
+      "axiom_records": {
+        "AdalyFormal.Round10.Nonvanishing.recurrence_zero_tail_step": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.recurrence_eq_zero_of_zero_tail": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.recurrence_cofinal_nonzero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.RadiusRecurrenceData": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.radius_cofinal_nonzero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.dyadic_cofinal_nonzero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.mathlib_recurrence_cofinal_nonzero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "pass_checks": true
+    },
+    {
+      "path": "AHP/round10/shared/nonvanishing/R1_TransferNonvanishing.lean",
+      "sha256": "e7b1514878c58e8f20b07fce502cf5a087c9e9461c40e88279ed15def340d464",
+      "checks": {
+        "exit_zero": true,
+        "timestamps": true,
+        "no_diagnostics": true,
+        "records_present": true,
+        "allowed_axioms": true,
+        "no_forbidden_tokens": true
+      },
+      "axiom_records": {
+        "AdalyFormal.Round10.Nonvanishing.invariant_backward": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_eq_zero_of_zero_tail": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_cofinal_nonzero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_quotient_cofinal_nonzero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.transfer_progression_cofinal_nonzero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "pass_checks": true
+    },
+    {
+      "path": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+      "sha256": "8addcf951497b1468f852bacfcddee99fda29012186da0e97ac36f4922940148",
+      "checks": {
+        "exit_zero": true,
+        "timestamps": true,
+        "no_diagnostics": true,
+        "records_present": true,
+        "allowed_axioms": true,
+        "no_forbidden_tokens": true
+      },
+      "axiom_records": {
+        "AdalyFormal.Round10.Dictionary.comm_of_quad": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.deriv_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.real_sector_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.opposite_charge_cross_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.kernel_invariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.involution_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.involution_kernel_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Ginv_all_gauge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.localized_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.all_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.correction_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.H_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.C2_equivariant": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.localCorrection": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.correction_deriv_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.no_canonical_radius_dilation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.phaseCfg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.diagonalGauge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.u\u03b8_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.phaseCfg_fixed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.phase_all_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.phase_localized_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.phase_correction_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.phase_deriv_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.half_rotation_matrix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.half_RMap_twice": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.half_carrier_twice": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.carrier_neutral_charged_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.phase_kernel_neutral_charged_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.siteTranslation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.bondTranslation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.translation_shift": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.bondPullback": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.sitePullback": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.plaqTranslation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.cfgPullback": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.bondPullback_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.sitePullback_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.plaqTranslation_apply": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.grad_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.div_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.lap_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.siteMask_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.curl_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.holonomy_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.bilPlaq_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.raw_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.normalized_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.curl_form_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.deltaK_translate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Translation.deltaK_all_comm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation_apply": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation_apply": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_shift": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_tower": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_bondsOm0": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_Zb": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_mem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslationIsometry": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_zero": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.translation_parity": [
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_parity": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_dilPattern": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twistU_twoSite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twist_holonomy_twoSite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_inner": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_add": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_commute": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_period": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_exact_symmetry": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Actual.bulkD_U1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1_form": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Actual.corrDeriv_no_charge_cross": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Actual.bulkB_U1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Actual.vacuum_kernel_charge_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round10.Dictionary.Actual.twist_deltaK_twoSite": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "pass_checks": true
+    }
+  ],
+  "numerical_process_exit_zero": {
+    "140": true,
+    "190": true,
+    "220": true
+  },
+  "artifact_checks_pass": true
+}

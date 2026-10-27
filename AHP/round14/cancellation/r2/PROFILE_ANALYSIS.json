@@ -1,0 +1,611 @@
+{
+  "qualification": "Non-interval numerical evidence only; not a Lean proof or a recurrence certificate.",
+  "row_profile": {
+    "q": 1,
+    "R": 20,
+    "row_count": 84,
+    "positive_rows": 84,
+    "all_rows_positive": true,
+    "rows": [
+      {
+        "j": 0,
+        "x": 44,
+        "areaSum_direct": "8.17664124215e-140",
+        "source": "partial log"
+      },
+      {
+        "j": 1,
+        "x": 46,
+        "areaSum_direct": "1.27100060282e-138",
+        "source": "partial log"
+      },
+      {
+        "j": 2,
+        "x": 48,
+        "areaSum_direct": "1.71357334227e-137",
+        "source": "partial log"
+      },
+      {
+        "j": 3,
+        "x": 50,
+        "areaSum_direct": "2.28792195863e-136",
+        "source": "partial log"
+      },
+      {
+        "j": 4,
+        "x": 52,
+        "areaSum_direct": "3.05253475098e-135",
+        "source": "partial log"
+      },
+      {
+        "j": 5,
+        "x": 54,
+        "areaSum_direct": "4.07245388546e-134",
+        "source": "partial log"
+      },
+      {
+        "j": 6,
+        "x": 56,
+        "areaSum_direct": "5.43312797605e-133",
+        "source": "partial log"
+      },
+      {
+        "j": 7,
+        "x": 58,
+        "areaSum_direct": "7.24842372963e-132",
+        "source": "partial log"
+      },
+      {
+        "j": 8,
+        "x": 60,
+        "areaSum_direct": "9.67023848585e-131",
+        "source": "partial log"
+      },
+      {
+        "j": 9,
+        "x": 62,
+        "areaSum_direct": "1.2901221097e-129",
+        "source": "partial log"
+      },
+      {
+        "j": 10,
+        "x": 64,
+        "areaSum_direct": "1.72117258969e-128",
+        "source": "partial log"
+      },
+      {
+        "j": 11,
+        "x": 66,
+        "areaSum_direct": "2.29624415704e-127",
+        "source": "partial log"
+      },
+      {
+        "j": 12,
+        "x": 68,
+        "areaSum_direct": "3.06345605234e-126",
+        "source": "partial log"
+      },
+      {
+        "j": 13,
+        "x": 70,
+        "areaSum_direct": "4.0870063688e-125",
+        "source": "partial log"
+      },
+      {
+        "j": 14,
+        "x": 72,
+        "areaSum_direct": "5.45254027555e-124",
+        "source": "partial log"
+      },
+      {
+        "j": 15,
+        "x": 74,
+        "areaSum_direct": "7.27432284818e-123",
+        "source": "partial log"
+      },
+      {
+        "j": 16,
+        "x": 76,
+        "areaSum_direct": "9.70478906658e-122",
+        "source": "partial log"
+      },
+      {
+        "j": 17,
+        "x": 78,
+        "areaSum_direct": "1.29473188105e-120",
+        "source": "partial log"
+      },
+      {
+        "j": 18,
+        "x": 80,
+        "areaSum_direct": "1.72732199029e-119",
+        "source": "partial log"
+      },
+      {
+        "j": 19,
+        "x": 82,
+        "areaSum_direct": "2.3044491754e-118",
+        "source": "partial log"
+      },
+      {
+        "j": 20,
+        "x": 84,
+        "areaSum_direct": "3.07440072886e-117",
+        "source": "partial log"
+      },
+      {
+        "j": 21,
+        "x": 86,
+        "areaSum_direct": "4.10161095948e-116",
+        "source": "partial log"
+      },
+      {
+        "j": 22,
+        "x": 88,
+        "areaSum_direct": "5.47201899069e-115",
+        "source": "partial log"
+      },
+      {
+        "j": 23,
+        "x": 90,
+        "areaSum_direct": "7.30031942043e-114",
+        "source": "partial log"
+      },
+      {
+        "j": 24,
+        "x": 92,
+        "areaSum_direct": "9.73945439971e-113",
+        "source": "partial log"
+      },
+      {
+        "j": 25,
+        "x": 94,
+        "areaSum_direct": "1.29935965612e-111",
+        "source": "partial log"
+      },
+      {
+        "j": 26,
+        "x": 96,
+        "areaSum_direct": "1.73349065947e-110",
+        "source": "partial log"
+      },
+      {
+        "j": 27,
+        "x": 98,
+        "areaSum_direct": "2.31268827643e-109",
+        "source": "partial log"
+      },
+      {
+        "j": 28,
+        "x": 100,
+        "areaSum_direct": "3.08537610671e-108",
+        "source": "partial log"
+      },
+      {
+        "j": 29,
+        "x": 102,
+        "areaSum_direct": "4.11628255003e-107",
+        "source": "partial log"
+      },
+      {
+        "j": 30,
+        "x": 104,
+        "areaSum_direct": "5.4915411762e-106",
+        "source": "partial log"
+      },
+      {
+        "j": 31,
+        "x": 106,
+        "areaSum_direct": "7.32645494579e-105",
+        "source": "partial log"
+      },
+      {
+        "j": 32,
+        "x": 108,
+        "areaSum_direct": "9.77416236568e-104",
+        "source": "partial log"
+      },
+      {
+        "j": 33,
+        "x": 110,
+        "areaSum_direct": "1.30401828837e-102",
+        "source": "partial log"
+      },
+      {
+        "j": 34,
+        "x": 112,
+        "areaSum_direct": "1.73965611679e-101",
+        "source": "partial log"
+      },
+      {
+        "j": 35,
+        "x": 114,
+        "areaSum_direct": "2.32100134299e-100",
+        "source": "partial log"
+      },
+      {
+        "j": 36,
+        "x": 116,
+        "areaSum_direct": "3.09631219197e-99",
+        "source": "partial log"
+      },
+      {
+        "j": 37,
+        "x": 118,
+        "areaSum_direct": "4.13114499807e-98",
+        "source": "partial log"
+      },
+      {
+        "j": 38,
+        "x": 120,
+        "areaSum_direct": "5.5108890423e-97",
+        "source": "partial log"
+      },
+      {
+        "j": 39,
+        "x": 122,
+        "areaSum_direct": "7.35311426194e-96",
+        "source": "partial log"
+      },
+      {
+        "j": 40,
+        "x": 124,
+        "areaSum_direct": "9.80823555203e-95",
+        "source": "partial log"
+      },
+      {
+        "j": 41,
+        "x": 126,
+        "areaSum_direct": "1.30882738818e-93",
+        "source": "partial log"
+      },
+      {
+        "j": 42,
+        "x": 128,
+        "areaSum_direct": "1.74560770735e-92",
+        "source": "partial log"
+      },
+      {
+        "j": 43,
+        "x": 130,
+        "areaSum_direct": "2.32976021556e-91",
+        "source": "partial log"
+      },
+      {
+        "j": 44,
+        "x": 132,
+        "areaSum_direct": "3.10655400952e-90",
+        "source": "partial log"
+      },
+      {
+        "j": 45,
+        "x": 134,
+        "areaSum_direct": "4.14735449697e-89",
+        "source": "partial log"
+      },
+      {
+        "j": 46,
+        "x": 136,
+        "areaSum_direct": "5.52802638132e-88",
+        "source": "partial log"
+      },
+      {
+        "j": 47,
+        "x": 138,
+        "areaSum_direct": "7.38389324738e-87",
+        "source": "partial log"
+      },
+      {
+        "j": 48,
+        "x": 140,
+        "areaSum_direct": "9.83534470966e-86",
+        "source": "partial log"
+      },
+      {
+        "j": 49,
+        "x": 142,
+        "areaSum_direct": "1.31490568169e-84",
+        "source": "partial log"
+      },
+      {
+        "j": 50,
+        "x": 144,
+        "areaSum_direct": "1.7493785483e-83",
+        "source": "partial log"
+      },
+      {
+        "j": 51,
+        "x": 146,
+        "areaSum_direct": "2.34244723542e-82",
+        "source": "partial log"
+      },
+      {
+        "j": 52,
+        "x": 148,
+        "areaSum_direct": "3.1099917879e-81",
+        "source": "partial log"
+      },
+      {
+        "j": 53,
+        "x": 150,
+        "areaSum_direct": "4.17576023733e-80",
+        "source": "partial log"
+      },
+      {
+        "j": 54,
+        "x": 152,
+        "areaSum_direct": "5.52398838046e-79",
+        "source": "partial log"
+      },
+      {
+        "j": 55,
+        "x": 154,
+        "areaSum_direct": "7.4526419799e-78",
+        "source": "partial log"
+      },
+      {
+        "j": 56,
+        "x": 156,
+        "areaSum_direct": "9.79670201193e-77",
+        "source": "partial log"
+      },
+      {
+        "j": 57,
+        "x": 158,
+        "areaSum_direct": "1.33284077527e-75",
+        "source": "partial log"
+      },
+      {
+        "j": 58,
+        "x": 160,
+        "areaSum_direct": "1.73278983103e-74",
+        "source": "partial log"
+      },
+      {
+        "j": 59,
+        "x": 162,
+        "areaSum_direct": "2.39231723048e-73",
+        "source": "partial log"
+      },
+      {
+        "j": 60,
+        "x": 164,
+        "areaSum_direct": "3.05066084596e-72",
+        "source": "partial log"
+      },
+      {
+        "j": 61,
+        "x": 166,
+        "areaSum_direct": "4.32155171092e-71",
+        "source": "partial log"
+      },
+      {
+        "j": 62,
+        "x": 168,
+        "areaSum_direct": "5.3278807445e-70",
+        "source": "partial log"
+      },
+      {
+        "j": 63,
+        "x": 170,
+        "areaSum_direct": "7.89601567555e-69",
+        "source": "partial log"
+      },
+      {
+        "j": 64,
+        "x": 172,
+        "areaSum_direct": "9.17831716053e-68",
+        "source": "partial log"
+      },
+      {
+        "j": 65,
+        "x": 174,
+        "areaSum_direct": "1.472460281e-66",
+        "source": "partial log"
+      },
+      {
+        "j": 66,
+        "x": 176,
+        "areaSum_direct": "1.54570496204e-65",
+        "source": "partial log"
+      },
+      {
+        "j": 67,
+        "x": 178,
+        "areaSum_direct": "2.84863904492e-64",
+        "source": "partial log"
+      },
+      {
+        "j": 68,
+        "x": 180,
+        "areaSum_direct": "2.51570322096e-63",
+        "source": "partial log"
+      },
+      {
+        "j": 69,
+        "x": 182,
+        "areaSum_direct": "5.88350118205e-62",
+        "source": "partial log"
+      },
+      {
+        "j": 70,
+        "x": 184,
+        "areaSum_direct": "3.95759010633e-61",
+        "source": "partial log"
+      },
+      {
+        "j": 71,
+        "x": 186,
+        "areaSum_direct": "1.35742926915e-59",
+        "source": "partial log"
+      },
+      {
+        "j": 72,
+        "x": 188,
+        "areaSum_direct": "6.6200495182023578492033622471208918e-59",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 73,
+        "x": 190,
+        "areaSum_direct": "3.6977385114290121534797454575468553e-57",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 74,
+        "x": 192,
+        "areaSum_direct": "1.723751030455732853173798135664329e-56",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 75,
+        "x": 194,
+        "areaSum_direct": "1.2342840423015979266185975444333578e-54",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 76,
+        "x": 196,
+        "areaSum_direct": "8.6612062685290329939242861125761e-54",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 77,
+        "x": 198,
+        "areaSum_direct": "5.001488757787318418682255797168053e-52",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 78,
+        "x": 200,
+        "areaSum_direct": "5.565786591854302709822724633812922e-51",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 79,
+        "x": 202,
+        "areaSum_direct": "2.3542802814951654049620607565224051e-49",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 80,
+        "x": 204,
+        "areaSum_direct": "3.6170434045132325038842740387815149e-48",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 81,
+        "x": 206,
+        "areaSum_direct": "1.2323138825861151711081524377368365e-46",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 82,
+        "x": 208,
+        "areaSum_direct": "2.3260837674900024507664246101554131e-45",
+        "source": "exit-0 tail JSON"
+      },
+      {
+        "j": 83,
+        "x": 210,
+        "areaSum_direct": "7.003775656783032392218496848132055e-44",
+        "source": "exit-0 tail JSON"
+      }
+    ],
+    "partial_log_timeout_after_row": 74,
+    "tail_exit": "0",
+    "last_row_matches_round1_hermitian": true,
+    "early_precision_check": {
+      "dps": 80,
+      "rows": 8,
+      "relative_errors": {
+        "0": "2.87516304695408316800432779545747116247570118028873066493872E-13",
+        "1": "2.96469058472296742047313062521159828807942006485087046617191E-12",
+        "2": "2.00946625539172455941156497764577763312253827435709220084517E-12",
+        "3": "1.31184794469990139910505289094468620903053462870207987115895E-12",
+        "4": "1.24763061705416888463675254969725703183929277151427466370416E-13",
+        "5": "4.04133522650030079599303576182241275988663813249496748644355E-13",
+        "6": "4.53944268370165937261679117782352944655015560040090284045280E-13",
+        "7": "8.48740262547801624146724834158341157508245077804750793243390E-14"
+      },
+      "max_relative_error": "2.96469058472296742047313062521159828807942006485087046617191E-12",
+      "exit": "0"
+    }
+  },
+  "radius_dominant_fit": {
+    "areaSum": {
+      "20": "7.00377565678303239221849684813205528668504105E-44",
+      "22": "5.21531620692522784087126546431281100076428306691144239562539E-48",
+      "24": "3.88355286098211346764311975472057533046246258860281691275735E-52",
+      "26": "2.89186380106619108619936730871036883215790155392836662370471E-56",
+      "28": "2.15340867543900655452228656822405889725419010257663327638845E-60",
+      "30": "1.60352259527690258648623450020714911910928499160665490212321E-64"
+    },
+    "successive_ratios": {
+      "22": "13429.2445153813964189549958302879256163917876712041860661484",
+      "24": "13429.2396514626664015084822127915379927893615631177660752897",
+      "26": "13429.2384708792303165640582620714209455388661103657675977457",
+      "28": "13429.2381843248529110871589986958360949907736181237324340553",
+      "30": "13429.2381147716068052680505419307157685312835051235220939179"
+    },
+    "kappa_R28_to_R30": "13429.2381147716068052680505419307157685312835051235220939179",
+    "normalized_by_kappa_pow_R_over_2": {
+      "20": "0.0133612155535738149576540989109491178224817520013621265385534",
+      "22": "0.0133612091853878030497151235168099950894333093801992483504285",
+      "24": "0.0133612076564813844093773232382534012149417868258630300891420",
+      "26": "0.0133612073021777568352514474156362148704699937190931400411936",
+      "28": "0.0133612072329768589880473406366938411333966672082175051614895",
+      "30": "0.0133612072329768589880473406366938411333966672082175051614896"
+    },
+    "warning": "This is a stable one-rate fit, not an exact matrix limit or a proof of the leading coefficient."
+  },
+  "symmetric_boundary_orientation": {
+    "20": {
+      "hermitian_eigenvalues": [
+        -2.6958000184031207e-44,
+        -4.5771655366254444e-52,
+        -6.199848491656152e-61,
+        4.5771654346935224e-52,
+        2.6958000184031207e-44
+      ],
+      "eigen_contributions": [
+        -9.446662029859382e-45,
+        -9.621374713796448e-52,
+        -4.679443817043339e-60,
+        1.558056701129379e-51,
+        7.948441800177047e-44
+      ],
+      "sum_contributions": 7.003775656783031e-44,
+      "boundary_vector_norm_squared": 16.352564728290538,
+      "dominant_negative_contribution": -9.446662029859382e-45,
+      "dominant_positive_contribution": 7.948441800177047e-44
+    },
+    "22": {
+      "hermitian_eigenvalues": [
+        -2.0074097751780215e-48,
+        -8.272859037600116e-57,
+        1.2585352928338017e-64,
+        8.272859584486548e-57,
+        2.0074097751780215e-48
+      ],
+      "eigen_contributions": [
+        -7.034396823404351e-49,
+        -1.7389863553999337e-56,
+        9.499014615208513e-64,
+        2.816062019764055e-56,
+        5.918755878494905e-48
+      ],
+      "sum_contributions": 5.215316206925227e-48,
+      "boundary_vector_norm_squared": 16.352564728290538,
+      "dominant_negative_contribution": -7.034396823404351e-49,
+      "dominant_positive_contribution": 5.918755878494905e-48
+    }
+  },
+  "inputs": {
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/cancellation/r2/row_profile_right_q1_R20_p40.log": "e78535b52276b9b28c83e4317f6b9cf9c940e2fa4a97ac078d1e594f937a6558",
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/cancellation/r2/row_profile_right_q1_R20_p40_tail72.json": "21102e6e251d626bd47e7038b9279290fcb5c09c3c260c9fbce27347a5cc44c9",
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/cancellation/r1/structure_right_q1_R20_p50.json": "3a1081f6ade0f1fdf8b6a26f4dbeed72a16adb401fe92e58d0f9a351de241ebf",
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/cancellation/r2/structure_right_q1_R22_p40.json": "50bd510b7f408ad6cac5254156978dc6f13a5ec91d9b3625349ca18edff0939f",
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/cancellation/r2/row_profile_right_q1_R20_p80_early80.json": "d9ed9c63865db4cdb69fa00447db13b996cc9923d4018e57a7c20c2ef29bdfca"
+  }
+}

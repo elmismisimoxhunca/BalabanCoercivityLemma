@@ -1,0 +1,98 @@
+
+namespace AdalyFormal.Round13.Assembly.R1
+open scoped RealInnerProductSpace Topology
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.StatementLaneG (gparams)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round12.Noncancel.RightFamily
+
+/-- The actual right-star full carrier is continuous, by the frozen exterior-path theorem. -/
+theorem rightStar_vacA_cont {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    Continuous (vacA q R (rightStar hq R) 1) := by
+  have hc := AdalyFormal.D1Residual.GinvLit_cont (by norm_num : 0 < 2)
+    (dil_admissible hq hR) (by norm_num) (by nlinarith : 17*2 ≤ R*(2*q))
+    1 (dilLam q R) (rightStar hq R)
+    (fun t e he => (rightStar_off_exterior hq R t e he).trans
+      (rightStar_off_exterior hq R 0 e he).symm)
+    (rightStar_cont hq R)
+  have heq : vacA q R (rightStar hq R) 1 =
+      AdalyFormal.D1Residual.GinvLit (by norm_num : 0 < 2)
+        (dilTower q R) 1 (dilLam q R) (rightStar hq R) := by
+    funext t
+    exact vacA_rightStar hq R 1 t
+  rw [heq]
+  exact hc
+
+/-- Full-carrier strict positivity at zero, not a Schur or charged-block estimate. -/
+theorem rightStar_vacA_pd_zero {q R : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (x : TwistSpace q R) (hx : x ≠ 0) :
+    0 < ⟪x, vacA q R (rightStar hq R) 1 0 x⟫ := by
+  rw [vacA_rightStar, rightStar_zero]
+  have hp := AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos hq hR x hx
+  have hm := Ginv_loc_le_all_flat
+    (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+      (fun _ => 1) 1 (dilLam q R)) rfl x
+  exact lt_of_lt_of_le hp hm
+
+/-- The two former integration inputs are now discharged unconditionally. -/
+theorem startInputs : StartInputs := by
+  intro q R hq hR hR18
+  exact ⟨rightStar_vacA_cont hq hR hR18,
+    rightStar_vacA_pd_zero hq (by omega)⟩
+
+/-- The only hypotheses here are the EXACT three open physical propositions.
+This is a reduction, not an inhabitant of any of those propositions. -/
+theorem cofinalNoCancellation_of_P1_P2_P3 (h1 : P1) (h2 : P2) (h3 : P3) :
+    AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation :=
+  cofinalNoCancellation_of_physicalInputs startInputs h1 h2 h3
+
+/-- Joint nested quantifiers: all three physical clauses at the SAME scale/radius.
+Separately cofinal assertions would not justify taking an intersection. -/
+def CofinalPhysicalInputs : Prop :=
+  ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+    R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+    (∃ w : TwistSpace (2^j) R,
+      ⟪w, vacA (2^j) R (rightStar (by positivity) R) 1 (Real.pi/2) w⟫ < 0) ∧
+    (∀ t : ℝ, 0 < t → t < Real.pi/2 → ∀ x : TwistSpace (2^j) R,
+      x ≠ 0 → AdalyFormal.Round12.Kernel.Actual.chargedCoordinate (2^j) R
+        (AdalyFormal.Round5.Guarded.IVTR2.rightSite (by positivity) R, (0 : Fin 3)) x = 0 →
+      0 < ⟪x, vacA (2^j) R (rightStar (by positivity) R) 1 t x⟫) ∧
+    (∀ u : TwistSpace (2^j) R,
+      AdalyFormal.Round10.Assembly.R2.KernelLine (2^j) R (rightStar (by positivity) R) u →
+      AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected (2^j) R u)
+
+/-- Cofinal physical input version of the reduction; no uniform all-q assertion is required. -/
+theorem cofinalRightStarCurlLine_of_cofinalPhysical (h : CofinalPhysicalInputs) :
+    CofinalRightStarCurlLine := by
+  intro j₀
+  obtain ⟨j,hj,hRs⟩ := h j₀
+  refine ⟨j,hj,?_⟩
+  intro R₀
+  obtain ⟨R,hR0,hR,hR18,hw,hp,hd⟩ := hRs R₀
+  have hq : 0 < 2^j := by positivity
+  obtain ⟨hc,hpd⟩ := startInputs hq hR hR18
+  obtain ⟨_,_,u,hl,_⟩ :=
+    AdalyFormal.Round12.Kernel.CrossingActual.kernelLine_exists_before_halfpi
+      (2^j) R (rightStar hq R)
+      (AdalyFormal.Round5.Guarded.IVTR2.rightSite hq R,0) hc hpd hw
+      (fun t => rightStar_fixed hq R t (Real.pi/4)) hp
+  exact ⟨R,hR0,hR,hR18,u,hl,hd u hl⟩
+
+theorem cofinalNoCancellation_of_cofinalPhysical (h : CofinalPhysicalInputs) :
+    AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation :=
+  cofinalNoCancellation_of_rightStar (cofinalRightStarCurlLine_of_cofinalPhysical h)
+
+#print axioms CofinalPhysicalInputs
+#print axioms cofinalRightStarCurlLine_of_cofinalPhysical
+#print axioms cofinalNoCancellation_of_cofinalPhysical
+#print axioms AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_kernel
+#print axioms AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos
+#print axioms rightStar_vacA_cont
+#print axioms rightStar_vacA_pd_zero
+#print axioms startInputs
+#print axioms cofinalNoCancellation_of_P1_P2_P3
+end AdalyFormal.Round13.Assembly.R1

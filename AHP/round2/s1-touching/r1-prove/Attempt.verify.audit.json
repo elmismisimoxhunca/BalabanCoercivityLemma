@@ -1,0 +1,208 @@
+{
+  "exit_code": 0,
+  "main_declaration": "Round2.S1.goalPos2_proved",
+  "main_type": "Round2.S1.GoalPos2",
+  "main_declaration_line": 689,
+  "pin_namespace_prefix_byte_identical": true,
+  "pin_definition_checks": [
+    {
+      "name": "TouchBond",
+      "pin_line": 30,
+      "attempt_line": 34,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "plaqCorner",
+      "pin_line": 33,
+      "attempt_line": 37,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "CoversPlaqCorner",
+      "pin_line": 45,
+      "attempt_line": 49,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "CurlReadsTouch",
+      "pin_line": 50,
+      "attempt_line": 54,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "PerCubeRegularTouch",
+      "pin_line": 55,
+      "attempt_line": 59,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "ClassCoupledCorner",
+      "pin_line": 75,
+      "attempt_line": 79,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "selCorner",
+      "pin_line": 79,
+      "attempt_line": 83,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "P428TouchConsistent",
+      "pin_line": 84,
+      "attempt_line": 88,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "GoalPos1",
+      "pin_line": 99,
+      "attempt_line": 103,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "GoalNeg1",
+      "pin_line": 101,
+      "attempt_line": 105,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "ExtremeBase",
+      "pin_line": 104,
+      "attempt_line": 108,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "P428Target8Extreme",
+      "pin_line": 108,
+      "attempt_line": 112,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "TouchCoverageCollapse",
+      "pin_line": 125,
+      "attempt_line": 129,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "GoalPos2",
+      "pin_line": 134,
+      "attempt_line": 138,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "GoalNeg2",
+      "pin_line": 137,
+      "attempt_line": 141,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "ReadBond",
+      "pin_line": 142,
+      "attempt_line": 146,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "CurlReadsRead",
+      "pin_line": 145,
+      "attempt_line": 149,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "PerCubeRegularShell",
+      "pin_line": 150,
+      "attempt_line": 154,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "ClassCoupledShell",
+      "pin_line": 171,
+      "attempt_line": 175,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "P428Target8Shell",
+      "pin_line": 176,
+      "attempt_line": 180,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "GoalPos3",
+      "pin_line": 190,
+      "attempt_line": 194,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    },
+    {
+      "name": "GoalNeg3",
+      "pin_line": 192,
+      "attempt_line": 196,
+      "byte_identical": true,
+      "whitespace_normalised_identical": true
+    }
+  ],
+  "extra_helper_definition_checks": [
+    {
+      "name": "cornerA",
+      "matches_stage_b_source": true
+    },
+    {
+      "name": "cornerB",
+      "matches_stage_b_source": true
+    },
+    {
+      "name": "cornerC",
+      "matches_stage_b_source": true
+    },
+    {
+      "name": "cornerD",
+      "matches_stage_b_source": true
+    }
+  ],
+  "local_declarations": 67,
+  "dependency_records": 72,
+  "missing_dependency_records": [],
+  "all_dependencies_allowed": true,
+  "main_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "raw_forbidden_token_hits": [],
+  "imports": [
+    "ZStatementP428",
+    "ZR2A",
+    "ZR6A",
+    "ZR2Ops2",
+    "D1Lit",
+    "ZR8Class",
+    "RI6",
+    "AdalyFormal.Balaban.U1AnchorPoincare"
+  ],
+  "all_imports_in_frozen_source_tree": true,
+  "hashes": {
+    "AHP/round2/s1-touching/pin/Statement.lean": "0ad24d3129dc87c72d1fdc8281a9f7f08a66526a17ef2a697431b8ad8be5ea7c",
+    "AHP/round2/s1-touching/r1-prove/Attempt.lean": "d45e27d564812a3b7679b3efdaad008ba833a74604dac5dc66cf32fd78bc5d40",
+    "AHP/round2/s1-touching/r1-prove/Attempt.verify.log": "153aef38bce2a0d463ab46fd1907e808a32d11075111d53410026def37385b40",
+    "AHP/round2/s1-touching/r1-prove/Attempt.verify.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  }
+}

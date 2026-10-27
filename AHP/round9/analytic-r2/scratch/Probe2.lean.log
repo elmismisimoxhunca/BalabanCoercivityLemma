@@ -1,0 +1,121 @@
+@tendsto_subtype_rng : ∀ {X : Type u_1} [inst : TopologicalSpace X] {Y : Type u_2} {p : X → Prop} {l : Filter Y}
+  {f : Y → Subtype p} {x : Subtype p}, Tendsto f l (𝓝 x) ↔ Tendsto (fun x => ↑(f x)) l (𝓝 ↑x)
+@ContinuousLinearMap.smulRight : {M₁ : Type u_1} →
+  [inst : TopologicalSpace M₁] →
+    [inst_1 : AddCommMonoid M₁] →
+      {M₂ : Type u_2} →
+        [inst_2 : TopologicalSpace M₂] →
+          [inst_3 : AddCommMonoid M₂] →
+            {R : Type u_3} →
+              {S : Type u_4} →
+                [inst_4 : Semiring R] →
+                  [inst_5 : Semiring S] →
+                    [inst_6 : Module R M₁] →
+                      [inst_7 : Module R M₂] →
+                        [inst_8 : Module R S] →
+                          [inst_9 : Module S M₂] →
+                            [IsScalarTower R S M₂] →
+                              [inst_11 : TopologicalSpace S] → [ContinuousSMul S M₂] → (M₁ →L[R] S) → M₂ → M₁ →L[R] M₂
+innerSL : (𝕜 : Type u_1) →
+  {E : Type u_2} →
+    [inst : RCLike 𝕜] → [inst_1 : SeminormedAddCommGroup E] → [inst_2 : InnerProductSpace 𝕜 E] → E →L⋆[𝕜] E →L[𝕜] 𝕜
+@OrthonormalBasis.sum_repr' : ∀ {ι : Type u_1} {𝕜 : Type u_2} [inst : RCLike 𝕜] {E : Type u_3}
+  [inst_1 : NormedAddCommGroup E] [inst_2 : InnerProductSpace 𝕜 E] [inst_3 : Fintype ι] (b : OrthonormalBasis ι 𝕜 E)
+  (x : E), ∑ i, inner 𝕜 (b i) x • b i = x
+@NormedRing.inverse_continuousAt : ∀ {R : Type u_1} [inst : NormedRing R] [HasSummableGeomSeries R] (x : Rˣ),
+  ContinuousAt Ring.inverse ↑x
+@PiLp.inner_apply : ∀ {𝕜 : Type u_1} [inst : RCLike 𝕜] {ι : Type u_2} [inst_1 : Fintype ι] {f : ι → Type u_3}
+  [inst_2 : (i : ι) → NormedAddCommGroup (f i)] [inst_3 : (i : ι) → InnerProductSpace 𝕜 (f i)] (x y : PiLp 2 f),
+  inner 𝕜 x y = ∑ i, inner 𝕜 (x.ofLp i) (y.ofLp i)
+@continuous_clm_apply : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {E : Type u_2}
+  [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] {F : Type u_3} [inst_3 : NormedAddCommGroup F]
+  [inst_4 : NormedSpace 𝕜 F] [CompleteSpace 𝕜] {X : Type u_4} [inst_6 : TopologicalSpace X] [FiniteDimensional 𝕜 E]
+  {f : X → E →L[𝕜] F}, Continuous f ↔ ∀ (y : E), Continuous fun x => (f x) y
+ContinuousLinearMap.smulRightL : (𝕜 : Type u_1) →
+  (E : Type u_2) →
+    (Fₗ : Type u_3) →
+      [inst : SeminormedAddCommGroup E] →
+        [inst_1 : SeminormedAddCommGroup Fₗ] →
+          [inst_2 : NontriviallyNormedField 𝕜] →
+            [inst_3 : NormedSpace 𝕜 E] → [inst_4 : NormedSpace 𝕜 Fₗ] → StrongDual 𝕜 E →L[𝕜] Fₗ →L[𝕜] E →L[𝕜] Fₗ
+@ContDiffAt.continuousAt : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {E : Type u_2}
+  [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] {F : Type u_3} [inst_3 : NormedAddCommGroup F]
+  [inst_4 : NormedSpace 𝕜 F] {f : E → F} {x : E} {n : WithTop ℕ∞}, ContDiffAt 𝕜 n f x → ContinuousAt f x
+@HasDerivAt.tendsto_slope_zero : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {F : Type u_2}
+  [inst_1 : NormedAddCommGroup F] [inst_2 : NormedSpace 𝕜 F] {f : 𝕜 → F} {f' : F} {x : 𝕜},
+  HasDerivAt f f' x → Tendsto (fun t => t⁻¹ • (f (x + t) - f x)) (𝓝[≠] 0) (𝓝 f')
+@hasDerivAt_iff_tendsto_slope_zero : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {F : Type u_2}
+  [inst_1 : NormedAddCommGroup F] [inst_2 : NormedSpace 𝕜 F] {f : 𝕜 → F} {f' : F} {x : 𝕜},
+  HasDerivAt f f' x ↔ Tendsto (fun t => t⁻¹ • (f (x + t) - f x)) (𝓝[≠] 0) (𝓝 f')
+@AdalyFormal.IngredientFamilyR2.SG_su2Exp_sum_log : ∀ {E : Type u_1} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] {ι : Type u_2} (s : Finset ι) (q : ℚ) (G : ι → E → AdalyFormal.Balaban.SuTwoLogExp.SU2),
+  (∀ i ∈ s, AdalyFormal.IngredientFamilyR2.SG (G i)) →
+    (∀ i ∈ s, ↑(G i 0) ∈ AdalyFormal.IngredientFamilyR2.LogReg) →
+      AdalyFormal.IngredientFamilyR2.SG fun A =>
+        AdalyFormal.Balaban.SuTwoLogExp.su2Exp (∑ i ∈ s, q • AdalyFormal.Balaban.SuTwoLogExp.su2Log (G i A))
+@AdalyFormal.Balaban.SmoothLog.su2Log_comp_contDiffAt : ∀ {E : Type u_1} [inst : NormedAddCommGroup E]
+  [inst_1 : NormedSpace ℝ E] (G : E → AdalyFormal.Balaban.SuTwoLogExp.SU2) {n : WithTop ℕ∞},
+  ContDiffAt ℝ n (fun A => ↑(G A)) 0 →
+    G 0 = 1 → ContDiffAt ℝ n (fun A => AdalyFormal.Balaban.SuTwoLogExp.su2Log (G A)) 0
+@AdalyFormal.IngredientFamilyR2.rawStep_expCfgX_zero : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (s ell : ℕ) (V0 : AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L)
+  (c : AdalyFormal.Target.ClayStatement.PeriodicLatticeEdge L),
+  AdalyFormal.IngredientFamilyR2.rawStep s ell V0 (AdalyFormal.IngredientFamilyR2.expCfgX 0) c = 1
+@AdalyFormal.IngredientFamilyR2.rProd_expCfgX_zero : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (s : ℕ) (V0 : AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L)
+  (y : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L) (p : List (Fin 3)),
+  AdalyFormal.IngredientFamilyR2.rProd s V0 (AdalyFormal.IngredientFamilyR2.expCfgX 0) y p = 1
+@AdalyFormal.IngredientFamilyR2.SG_su2Exp : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E]
+  {S : E → AdalyFormal.Balaban.SuTwoLogExp.M2},
+  ContDiffAt ℝ ⊤ S 0 →
+    (∀ (A : E), Matrix.conjTranspose (S A) = -S A) →
+      (∀ (A : E), Matrix.trace (S A) = 0) →
+        AdalyFormal.IngredientFamilyR2.SG fun A => AdalyFormal.Balaban.SuTwoLogExp.su2Exp (S A)
+@AdalyFormal.IngredientFamilyR2.SG.hol : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : NormedSpace ℝ E]
+  {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} (s : ℕ)
+  (V : E → AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L),
+  (∀ (b : AdalyFormal.Target.ClayStatement.PeriodicLatticeEdge L), AdalyFormal.IngredientFamilyR2.SG fun A => V A b) →
+    ∀ (p : List (Fin 3)) (y : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L),
+      AdalyFormal.IngredientFamilyR2.SG fun A => AdalyFormal.Balaban.TowerLawCov.coarsePathHolonomy s (V A) y p
+AdalyFormal.IngredientFamilyR2.one_mem_LogReg : 1 ∈ AdalyFormal.IngredientFamilyR2.LogReg
+AdalyFormal.Balaban.SuTwoLogExp.su2LogExp_log : ∀ (g : AdalyFormal.Balaban.SuTwoLogExp.SU2),
+  AdalyFormal.Balaban.SuTwoLogExp.su2LogExp.log g = AdalyFormal.Balaban.SuTwoLogExp.su2Log g
+AdalyFormal.Balaban.SuTwoLogExp.su2LogExp_exp : ∀ (A : AdalyFormal.Balaban.SuTwoLogExp.M2),
+  AdalyFormal.Balaban.SuTwoLogExp.su2LogExp.exp A = AdalyFormal.Balaban.SuTwoLogExp.su2Exp A
+@AdalyFormal.StatementLaneG.inner_DpiFull_flat : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (a : ℝ) (A : AdalyFormal.Balaban.CovariantOperators.BondFnL2 L),
+  ⟪A, (AdalyFormal.IngredientFamilyR2.DpiFull G AdalyFormal.IngredientFamilyR2.flatCfg a) A⟫ =
+    ‖(AdalyFormal.StatementLaneR6.plaqMask (AdalyFormal.IngredientFamilyR2.plaqIn G.Om0))
+          ((AdalyFormal.Balaban.DeltaKFull.curlCovariantCLM_L2 AdalyFormal.IngredientFamilyR2.flatCfg) A)‖ ^
+      2
+@AdalyFormal.W6.Qflat_row : ∀ {ell k : ℕ} {Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  {S : AdalyFormal.StatementLane.Tower (AdalyFormal.StatementLane.scaleUp ell k Lu)} (hell : 0 < ell)
+  (A : AdalyFormal.Balaban.CovariantOperators.BondFnL2 (AdalyFormal.StatementLane.scaleUp ell k Lu))
+  (p : AdalyFormal.IngredientFamilyR2.BIdx (AdalyFormal.IngredientFamilyR2.geomOf ell k S)),
+  ((AdalyFormal.IngredientFamilyR2.bondSectorOf (AdalyFormal.IngredientFamilyR2.geomOf ell k S)
+              (AdalyFormal.Balaban.CovariantHjMinimizer.trivialU (AdalyFormal.StatementLane.scaleUp ell k Lu))).Qfull
+          A).ofLp
+      p =
+    AdalyFormal.Balaban.LineIntegralCovariant.lineCoarseRestrictSuTwo (ell ^ ↑p.fst) A.ofLp
+      (AdalyFormal.W6.rowCB hell p)
+@AdalyFormal.IngredientFamilyR2.QlinB_zero : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L)
+  (A : AdalyFormal.Balaban.CovariantOperators.BondFnL2 L), (AdalyFormal.IngredientFamilyR2.QlinB G U 0) A = A
+@AdalyFormal.W6.regTower_triv : ∀ {ell k : ℕ} {Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent},
+  0 < ell →
+    AdalyFormal.IngredientFamilyR2.RegTower ell
+      (AdalyFormal.IngredientFamilyR2.bgTower (AdalyFormal.SliceCoerc.GF ell k Lu)
+        (AdalyFormal.Balaban.CovariantHjMinimizer.trivialU (AdalyFormal.StatementLane.scaleUp ell k Lu)))
+      k
+@AdalyFormal.W6.towerClass_triv : ∀ {ell k : ℕ} {Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent},
+  0 < ell →
+    AdalyFormal.BondComposite.TowerClass ell k Lu
+      (AdalyFormal.Balaban.CovariantHjMinimizer.trivialU (AdalyFormal.StatementLane.scaleUp ell k Lu)) fun x => 0
+AdalyFormal.W6.delW : ℕ → ℕ → (ℕ → ℝ) → ℝ
+AdalyFormal.SliceCoerc.GF : (ell k : ℕ) →
+  (Lu : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent) →
+    AdalyFormal.IngredientFamilyR2.TowerGeom (AdalyFormal.StatementLane.scaleUp ell k Lu)
+@AdalyFormal.IngredientFamilyR2.bgTower : {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} →
+  AdalyFormal.IngredientFamilyR2.TowerGeom L →
+    AdalyFormal.IngredientFamilyR2.Cfg L → ℕ → AdalyFormal.IngredientFamilyR2.Cfg L
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe2.lean:33:8: error(lean.unknownIdentifier): Unknown identifier `ZR2B4.Ug`

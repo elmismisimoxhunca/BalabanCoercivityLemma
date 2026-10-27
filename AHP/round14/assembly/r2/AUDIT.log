@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "source_byte_identical": true,
+  "source_sha256": "445296f28fa28e42994c9bb831f2aea9ca84c675548c9b7d6ffe16f5ddd8b8db",
+  "forbidden_proof_mechanisms": [],
+  "exits": {
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/assembly/r2/AreaLine.lean": "0",
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/shared/assembly/R2_AreaLine.lean": "0"
+  },
+  "logs": [
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round14/assembly/r2/AreaLine.lean.log",
+      "sha256": "acb027f10d8474fa1de9cdb312aa72d32092778b4ac388e63270453402463e58",
+      "total_axiom_records": 367,
+      "new_records_checked": 6,
+      "all_new_records_permitted": true,
+      "all_records_permitted": true,
+      "no_error_warning_or_sorryAx": true
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round14/shared/assembly/R2_AreaLine.lean.log",
+      "sha256": "acb027f10d8474fa1de9cdb312aa72d32092778b4ac388e63270453402463e58",
+      "total_axiom_records": 367,
+      "new_records_checked": 6,
+      "all_new_records_permitted": true,
+      "all_records_permitted": true,
+      "no_error_warning_or_sorryAx": true
+    }
+  ],
+  "qualification": "Builder and separate-publication audit only. These are conditional area-line reductions, not a physical area seed, independent mathematical review, or a proof of P3/CofinalP3/GoalNeg2."
+}

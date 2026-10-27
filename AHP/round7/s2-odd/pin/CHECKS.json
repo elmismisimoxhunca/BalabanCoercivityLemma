@@ -1,0 +1,56 @@
+{
+  "round2_pin_bytes": 10509,
+  "round2_pin_sha256": "826f93c754d1c78a13e8ee7a832fc3041b36cd9cbe4628cde3a7475d752909f9",
+  "round2_pin_is_exact_prefix": true,
+  "proof_contains_complete_exact_round7_pin": true,
+  "four_helpers_verbatim": true,
+  "verification_scope": "Builder compilation and read-only byte/hash/axiom/source audit; not independent recompilation or a whole-project rebuild.",
+  "files": {
+    "Statement.lean": {
+      "command": "AHP/round3/lean1.sh AHP/round7/s2-odd/pin/Statement.lean",
+      "source_sha256": "fcba7f81a4d1e8f358d2bae1c7627f017919795b2bf3de257c39b3d68afaca41",
+      "log_sha256": "7aec37dd272d6a680f8f6f3bada0561c5f112e3b548106e849d3642eaa93ae88",
+      "exit": 0,
+      "warnings": 0,
+      "errors": 0,
+      "axiom_prints": 18,
+      "disallowed_axioms": [],
+      "forbidden_source_tokens": [],
+      "direct_imports": ["ZT5A"],
+      "source_older_than_log_and_exit": true,
+      "goal_declarations": {"Goal1": 249, "Goal2": 257}
+    },
+    "Proof.lean": {
+      "command": "AHP/round3/lean1.sh AHP/round7/s2-odd/pin/Proof.lean",
+      "source_sha256": "8bf18d38c55dae67f9dc17284c78b7ead3d435876249562ab531d81c6b4867e6",
+      "log_sha256": "80519682a33d19b3c7476178a9ced2889e3846a69aceb34e13a4a4f66e5546bc",
+      "exit": 0,
+      "warnings": 0,
+      "errors": 0,
+      "axiom_prints": 37,
+      "disallowed_axioms": [],
+      "forbidden_source_tokens": [],
+      "direct_imports": ["D1Final", "ZR8Class", "ZT5A"],
+      "source_older_than_log_and_exit": true,
+      "goal_declarations": {"Goal1": 252, "Goal2": 260}
+    }
+  },
+  "settling_declarations": {
+    "AdalyFormal.AHP.Round7.S2Odd.properFourAt_every_ell": {
+      "line": 413,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    },
+    "AdalyFormal.AHP.Round7.S2Odd.goal1_proved": {
+      "line": 455,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    },
+    "AdalyFormal.AHP.Round7.S2Odd.goal2_proved": {
+      "line": 443,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    },
+    "AdalyFormal.AHP.Round7.S2Odd.odd_gt_eleven_cofinal": {
+      "line": 462,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  }
+}

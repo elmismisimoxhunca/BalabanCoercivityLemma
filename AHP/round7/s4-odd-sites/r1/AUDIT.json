@@ -1,0 +1,395 @@
+{
+  "status": "OPEN; no new compiled result",
+  "closedGoal": "none",
+  "pinSha256": "27a16f875b66d6fce71129ca3b0c08f1e4579fcac86fc742b1c186ffc00385ab",
+  "attemptIncludesVerbatimInheritedPartial": true,
+  "priorSuccessfulPartialChecks": [
+    {
+      "source": "/home/sebastian/BalabanCoercivityLemma/AHP/round7/s4-odd-sites/attempt/Partial.lean",
+      "sha256": "dba5828837f1378b65e1ca9fade00d42c4755d712b0900e47395d3e6f5719698",
+      "exitCode": 0,
+      "logSha256": "227a51d3a2b02bdbee03712fdac3e6c904ece36c8c1e178c26e39076f64f0bc8",
+      "dependencyRecords": [
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.alternating_even_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_periodic",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_aligned",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_block_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_first_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_seam_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_not_const_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_class",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_holonomy_01",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.thinWidth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.arithmetic_window",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_cofinal_class",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero_wellDefG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.EventualCoverageUpgrade",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.no_eventual_geometric_upgrade",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_holCos_01",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "provenance": "pre-existing builder/replay, not this attack"
+    },
+    {
+      "source": "/home/sebastian/BalabanCoercivityLemma/AHP/round7/s4-odd-sites/verify/Partial.lean",
+      "sha256": "dba5828837f1378b65e1ca9fade00d42c4755d712b0900e47395d3e6f5719698",
+      "exitCode": 0,
+      "logSha256": "227a51d3a2b02bdbee03712fdac3e6c904ece36c8c1e178c26e39076f64f0bc8",
+      "dependencyRecords": [
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.alternating_even_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_periodic",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_aligned",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_block_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_first_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_seam_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_not_const_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_class",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_holonomy_01",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.thinWidth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.arithmetic_window",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_cofinal_class",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero_wellDefG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.EventualCoverageUpgrade",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.no_eventual_geometric_upgrade",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_holCos_01",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "provenance": "pre-existing builder/replay, not this attack"
+    }
+  ],
+  "currentFiles": [
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round7/s4-odd-sites/r1/Attempt.lean",
+      "sha256": "6a50c906762adb8e59b8874ada9e19813ed9097e134ad76fb3cc52112fcf5723",
+      "pinVerbatimPrefix": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "forbiddenTokenHits": [],
+      "localDeclarationCount": 43,
+      "printCommandCount": 43,
+      "missingLocalPrints": [],
+      "exitCode": null,
+      "verifiedCompilation": false
+    },
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round7/s4-odd-sites/r1/BlockingCertificate.lean",
+      "sha256": "e07c3d8687abd7fa54a7f8c9a659e61bbb72d4ef3d8ff400d984b1778645a76d",
+      "pinVerbatimPrefix": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "forbiddenTokenHits": [],
+      "localDeclarationCount": 30,
+      "printCommandCount": 30,
+      "missingLocalPrints": [],
+      "exitCode": null,
+      "verifiedCompilation": false
+    },
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round7/s4-odd-sites/r1/GuardedGeometry.lean",
+      "sha256": "1ac994c7320c1cf97aca1ae1c84fc37a0aeed6e91b712290fa43de60329b0adb",
+      "pinVerbatimPrefix": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "forbiddenTokenHits": [],
+      "localDeclarationCount": 34,
+      "printCommandCount": 34,
+      "missingLocalPrints": [],
+      "exitCode": null,
+      "verifiedCompilation": false
+    }
+  ],
+  "mainPreviouslyCompiledDeclaration": "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_cofinal_class",
+  "limitations": [
+    "Static audit is not compilation.",
+    "New blocking/H0 and full-guard coverage drafts are unverified.",
+    "No odd-scale analytic goal is proved or refuted."
+  ]
+}

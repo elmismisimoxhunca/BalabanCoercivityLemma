@@ -1,0 +1,2589 @@
+{
+  "track": "noncancel",
+  "round": 2,
+  "closedGoal": false,
+  "disprovedGoal": false,
+  "compiler": "AHP/round3/lean1.sh only",
+  "newNumerics": false,
+  "allImportsFrozen": [
+    "DrEquiv"
+  ],
+  "allAllowedAxioms": true,
+  "pairedCompiles": [
+    {
+      "path": "AHP/round12/noncancel/r2/Boundary.lean",
+      "lines": 135,
+      "sha256": "3c790eae0be27c2ff45ca498ff6ec33a8475e0b83433f986ef3ad20a1632a910",
+      "exitCode": 0,
+      "axiomRecords": 6,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.potential_zero_off_om1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.gradAdj_sing_support",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Tfull_sing_zero_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_sing_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/shared/noncancel/R2_Boundary.lean",
+      "lines": 135,
+      "sha256": "3c790eae0be27c2ff45ca498ff6ec33a8475e0b83433f986ef3ad20a1632a910",
+      "exitCode": 0,
+      "axiomRecords": 6,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.potential_zero_off_om1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.gradAdj_sing_support",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Tfull_sing_zero_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_sing_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/noncancel/r2/FullPlaquette.lean",
+      "lines": 453,
+      "sha256": "55f109b21206ea74258b339f964ea02d3ecc108b8722349e82ed9a48a1a5d19c",
+      "exitCode": 0,
+      "axiomRecords": 38,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pairForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_middle",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_completion",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_ne_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_kernel_injective",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.kernel_line_of_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.positive_on_trace_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrialEnergy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_null",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.realHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.imagHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.charged_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.curl_atoms",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_two_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_coordinates",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/shared/noncancel/R2_FullPlaquette.lean",
+      "lines": 453,
+      "sha256": "55f109b21206ea74258b339f964ea02d3ecc108b8722349e82ed9a48a1a5d19c",
+      "exitCode": 0,
+      "axiomRecords": 38,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pairForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_middle",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_completion",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_ne_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_kernel_injective",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.kernel_line_of_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.positive_on_trace_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrialEnergy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_null",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.realHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.imagHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.charged_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.curl_atoms",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_two_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_coordinates",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/noncancel/r2/Mass.lean",
+      "lines": 91,
+      "sha256": "4c29e43be2de023705639c6ed7ebd47e6e01719a1cfdece7dab6a08ba6178cf8",
+      "exitCode": 0,
+      "axiomRecords": 6,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.rowZero",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.Qfull_rowZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.collar_levelZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.carrier_leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.mass_split",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/shared/noncancel/R2_Mass.lean",
+      "lines": 91,
+      "sha256": "4c29e43be2de023705639c6ed7ebd47e6e01719a1cfdece7dab6a08ba6178cf8",
+      "exitCode": 0,
+      "axiomRecords": 6,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.rowZero",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.Qfull_rowZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.collar_levelZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.carrier_leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.mass_split",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/noncancel/r2/RightFamily.lean",
+      "lines": 693,
+      "sha256": "53dd048a1fd668e42110ce58fd83f7a05bdbebf8c57d87ffc45dcc7d6b37de17",
+      "exitCode": 0,
+      "axiomRecords": 28,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks_exterior",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_interior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_normal",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy2",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_negative_endpoint",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.pathU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.dilU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.cofinal_rightStar_paths",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+      "lines": 693,
+      "sha256": "53dd048a1fd668e42110ce58fd83f7a05bdbebf8c57d87ffc45dcc7d6b37de17",
+      "exitCode": 0,
+      "axiomRecords": 28,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks_exterior",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_interior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_normal",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy2",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_negative_endpoint",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.pathU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.dilU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.cofinal_rightStar_paths",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/noncancel/r2/Attempt.lean",
+      "lines": 1372,
+      "sha256": "31b27325a8795d0d0af68398818c38c8d0e028097e65e873f8862792376344ad",
+      "exitCode": 0,
+      "axiomRecords": 78,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pairForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_middle",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_completion",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_ne_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_kernel_injective",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.kernel_line_of_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.positive_on_trace_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrialEnergy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_null",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.realHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.imagHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.charged_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.curl_atoms",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_two_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_coordinates",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.potential_zero_off_om1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.gradAdj_sing_support",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Tfull_sing_zero_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_sing_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.rowZero",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.Qfull_rowZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.collar_levelZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.carrier_leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.mass_split",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks_exterior",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_interior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_normal",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy2",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_negative_endpoint",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.pathU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.dilU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.cofinal_rightStar_paths",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round12/shared/noncancel/R2_StarLocal.lean",
+      "lines": 1372,
+      "sha256": "31b27325a8795d0d0af68398818c38c8d0e028097e65e873f8862792376344ad",
+      "exitCode": 0,
+      "axiomRecords": 78,
+      "declarations": [
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pairForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_middle",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_completion",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_ne_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.trace_kernel_injective",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.kernel_line_of_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.positive_on_trace_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrialEnergy",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_null",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Star.starTrial_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.realHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.imagHol",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.charged_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.curl_atoms",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_three_form_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Plaquette.frozen_two_form",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_add",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_coordinates",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_inner",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_first_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_comm_atom",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_right",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_left",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_pair_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_star_mass_lower",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.potential_zero_off_om1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.gradAdj_sing_support",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Tfull_sing_zero_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Boundary.Wop_sing_near",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.rowZero",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.Qfull_rowZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.collar_levelZero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.carrier_leaf_mass_le",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Mass.mass_split",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starLinks_exterior",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_interior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.starPath_normal",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy1",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_holonomy2",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.Path.star_negative_endpoint",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_zero",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_cont",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_an",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.pathU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.dilU_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_negative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round12.Noncancel.RightFamily.cofinal_rightStar_paths",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ]
+    }
+  ],
+  "remaining": "Actual crossing-range/form positivity and crossing-specific CurlDetected, or direct whole-kernel NoResponseCancellation; no cofinal proof."
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "path": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "sha256": "8addcf951497b1468f852bacfcddee99fda29012186da0e97ac36f4922940148",
+    "entire_file": true
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R2_SourceGlue.lean",
+    "start_line": 365,
+    "end_line_exclusive": 375,
+    "sha256": "0a0929597698e05b51502b19fc550882c7a2896c4e1f9ce551801262ef25a69c"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R2_SourceGlue.lean",
+    "start_line": 391,
+    "end_line_exclusive": 394,
+    "sha256": "883e0b361084d7b2a72e18c49e0ca19aa9df7e9aac1c919946337f76f9c25bdd"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R2_SourceGlue.lean",
+    "start_line": 1323,
+    "end_line_exclusive": 1332,
+    "sha256": "6f9c1bdb3adfbe3b65e1af7cb0c6bd0dbfc14e721bbd7b0f4d7db744bc209dd1"
+  },
+  {
+    "path": "AHP/round10/shared/dictionary/R4_ColorResponse.lean",
+    "start_line": 2098,
+    "end_line_exclusive": 2123,
+    "sha256": "6df83eca395cb0ea0d9df53af176b7bde3fc485db828b17ee7e5837e5271a58f"
+  }
+]

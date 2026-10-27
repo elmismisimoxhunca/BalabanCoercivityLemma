@@ -1,0 +1,70 @@
+[
+  {
+    "path": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+    "entire_file": true,
+    "sha256": "6fb957329d43fc60ed65c6af8e36051b3c975c07ca223df21dd11aef2a9cccf1"
+  },
+  {
+    "path": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "start": "noncomputable def pathU",
+    "end": "noncomputable def dilMask",
+    "start_line": 170,
+    "sha256": "81ad5801bcdcdd7f84445fbc4f40efe67798fc3cc46a4a6d388ddd1212138b40"
+  },
+  {
+    "path": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "start": "noncomputable def vacA",
+    "end": "end AdalyFormal.Round9.Guarded.Qualitative",
+    "start_line": 189,
+    "sha256": "1b3973f57e91ca1048e9d1f4ef1e62e09db69ed53346913538a1d6fa5a9fd26f"
+  },
+  {
+    "path": "AHP/round12/kernel/r1/ActualKernel.lean",
+    "start": "namespace AdalyFormal.Round9.Guarded.QualitativeR2\nopen Set\n",
+    "end": "namespace AdalyFormal.Round10.Dictionary.ColorObstruction\n",
+    "start_line": 1555,
+    "sha256": "2410706c291f1856943346b3fb1122b5d138e3b60d8001374fa7ae7fbff9c56b"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+    "start": "def AnM ",
+    "end": "end AdalyFormal.Round9.Guarded.QualitativeR2\n",
+    "start_line": 1680,
+    "sha256": "f54364ad53c802371759ed17866ddbf4ca035fc11b89fd9b82e90e93c37baf3c"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+    "start": "def responseHull ",
+    "end": "theorem separator_of_notMem_responseHull",
+    "start_line": 2264,
+    "sha256": "d036973a84acba3293e4a7ffe22ef8b7632567a255901c29f226b3a243a06c9c"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+    "start": "abbrev ProfileSpace",
+    "end": "theorem exists_positive_profile_iff_noCancellation",
+    "start_line": 2372,
+    "sha256": "07d05978f33ad319c5bc409f1e4637530ec9171213beb65e3d8d359c95e3f66c"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+    "start": "theorem responseGradient_ne_zero_iff",
+    "end": "theorem curlDetected_of_noCancellation",
+    "start_line": 2524,
+    "sha256": "dc4a2b74349a126861bb5927215a815ea5f2fc4259d18b20265d52f12ad2120e"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+    "start": "def CofinalAnyPathNoResponseCancellation",
+    "end": "theorem cofinalAnyProfileCoupling_iff_noCancellation",
+    "start_line": 2550,
+    "sha256": "923c19cc2cf8e3583bc5ea43251d72f1445930ac9ad37c90e1018b0fdfcc7c5b"
+  },
+  {
+    "path": "AHP/round10/shared/assembly/R4_ResponseHull.lean",
+    "start": "def CofinalAnyPathCurlLine",
+    "end": "theorem cofinalAnyProfileCoupling_of_curlLine",
+    "start_line": 2208,
+    "sha256": "931f97d07b3310b507c9603104940d61b5941b2a0823deaeaf1889e05f7a2a3b"
+  }
+]

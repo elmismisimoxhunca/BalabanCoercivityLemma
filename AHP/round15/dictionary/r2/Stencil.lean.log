@@ -1,0 +1,129 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:467:54: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:472:54: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:477:54: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:482:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:487:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:492:58: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:751:13: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:833:36: warning: This simp argument is unused:
+  q1_shiftBack_right
+
+Hint: Omit it from the simp argument list.
+  simp_all [q1Plaquettes, q1Plaq, q̵1̵_̵s̵h̵i̵f̵t̵B̵a̵c̵k̵_̵r̵i̵g̵h̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:6: warning: This simp argument is unused:
+  periodicLatticeShift_shiftBack
+
+Hint: Omit it from the simp argument list.
+  simp_all [q1Plaquettes, q1Plaq, q1_shiftBack_right, p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵_̵s̵h̵i̵f̵t̵B̵a̵c̵k̵,̵ ̵periodicLatticeShiftBack_shift]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:834:38: warning: This simp argument is unused:
+  periodicLatticeShiftBack_shift
+
+Hint: Omit it from the simp argument list.
+  simp_all [q1Plaquettes, q1Plaq, q1_shiftBack_right, p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵_̵s̵h̵i̵f̵t̵B̵a̵c̵k̵,̵ ̵p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵B̵a̵c̵k̵_̵s̵h̵i̵f̵t̵]̵p̲e̲r̲i̲o̲d̲i̲c̲L̲a̲t̲t̲i̲c̲e̲S̲h̲i̲f̲t̲_̲s̲h̲i̲f̲t̲B̲a̲c̲k̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:993:81: error: unexpected token '/-!'; expected 'lemma'
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.collarA' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.collarB' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.collarC' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominantTransferInverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.transfer_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.observation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_mode0_recurrence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_mode1_recurrence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_recurrence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.collar_dictionary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.rho' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.phase' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.mode0' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.mode1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.forward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.backward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominantTransfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.rho_pos' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.rho_quad' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.rho_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.phase_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_mode0_forward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_mode1_forward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_mode0_backward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_mode1_backward' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.AdalyFormal.Round15.Dictionary.dominant_eigenpairs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/Balaba

@@ -1,0 +1,52 @@
+{
+  "closedGoal": "none",
+  "exitCode": 0,
+  "sourceSha256": "43c3bd051cf4ec664e8ba2d21d0bc0b7740f35ddf30a941e0fcc73eba258f34a",
+  "logSha256": "691b54df662f5624443e5ff07e0a59a83bae4abda49277a37de5774e3d728a3f",
+  "exitSha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+  "pinVerbatimBytePrefix": true,
+  "round5BridgeVerbatimBytePrefix": true,
+  "round6Pass1VerbatimBytePrefix": true,
+  "polarizationHelperVerbatim": true,
+  "imports": [
+    "DrEquiv"
+  ],
+  "forbiddenTokens": [],
+  "localDeclarationCount": 158,
+  "dependencyRecordCount": 178,
+  "everyLocalDeclarationHasMatchedPermittedRecord": true,
+  "allDependencyRecordsPermitted": true,
+  "sourceLogExitTimestampOrder": true,
+  "warnings": [
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round6/limits-r2/Attempt.lean:2828:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead."
+  ],
+  "mainDeclaration": "AdalyFormal.Round6.Guarded.LimitsR2.twistD_kills_interiorInvisible",
+  "mainDeclarationLine": 2713,
+  "axiomLine": "'AdalyFormal.Round6.Guarded.LimitsR2.twistD_kills_interiorInvisible' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "round6Declarations": {
+    "AdalyFormal.Round6.Guarded.LimitsR1.twistD_zero_amplitude": 2421,
+    "AdalyFormal.Round6.Guarded.LimitsR1.vacuum_correction_pairing": 2445,
+    "AdalyFormal.Round6.Guarded.LimitsR1.vacuum_pencil_iff_carrier_unit": 2454,
+    "AdalyFormal.Round6.Guarded.LimitsR1.initial_control_has_positive_correction": 2463,
+    "AdalyFormal.Round6.Guarded.LimitsR1.not_initial_control_of_correction_nonpositive": 2476,
+    "AdalyFormal.Round6.Guarded.LimitsR1.not_initial_control_zero": 2487,
+    "AdalyFormal.Round6.Guarded.LimitsR1.not_initial_control_of_kernel_nonpositive": 2495,
+    "AdalyFormal.Round6.Guarded.LimitsR1.no_small_control_of_kernel_expansion": 2508,
+    "AdalyFormal.Round6.Guarded.LimitsR1.not_round5_premise_of_small_obstruction": 2535,
+    "AdalyFormal.Round3.Guarded.R2Prove.correction_kills_of_jet_translation": 2580,
+    "AdalyFormal.Round6.Guarded.LimitsR1.rightVector": 2624,
+    "AdalyFormal.Round6.Guarded.LimitsR1.twistD_rightVector_zero": 2632,
+    "AdalyFormal.Round6.Guarded.LimitsR1.rightVector_orthogonal_correction_range": 2663,
+    "AdalyFormal.Round6.Guarded.LimitsR2.interiorInvisible": 2700,
+    "AdalyFormal.Round6.Guarded.LimitsR2.twistD_kills_interiorInvisible": 2713,
+    "AdalyFormal.Round6.Guarded.LimitsR2.rightVector_mem_interiorInvisible": 2732,
+    "AdalyFormal.Round6.Guarded.LimitsR2.interiorInvisible_orthogonal_correction_range": 2748,
+    "AdalyFormal.Round6.Guarded.LimitsR2.correction_pairing_remove_invisible": 2760,
+    "AdalyFormal.Round6.Guarded.LimitsR2.correction_pairing_tail_bound": 2771,
+    "AdalyFormal.Round6.Guarded.LimitsR2.no_invisible_negative_test": 2786,
+    "AdalyFormal.Round6.Guarded.LimitsR2.not_initial_control_of_invisible_kernel": 2800,
+    "AdalyFormal.Round6.Guarded.LimitsR2.initial_control_requires_interior_tail": 2815
+  },
+  "numericalJobsRun": 0,
+  "scope": "Fresh final compilation and complete axiom audit. No positive-amplitude crossing-kernel sign, cofinal obstruction, or pinned-goal closure is claimed."
+}

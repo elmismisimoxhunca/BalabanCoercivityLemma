@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "q": 2,
+      "R": 20,
+      "side": "right",
+      "dps": 130,
+      "tests": [
+        {
+          "tangent_amplitude": "0.0",
+          "mass": "1.25",
+          "untwisted_plaquette_energy": "0.75",
+          "star_plaquette_energy": "-2.0",
+          "total_energy": "0.0",
+          "expected": "0",
+          "support_bonds": 5,
+          "plaquettes": 16,
+          "all_endpoints_off_omega1": true
+        },
+        {
+          "tangent_amplitude": "0.25",
+          "mass": "1.3125",
+          "untwisted_plaquette_energy": "0.9375",
+          "star_plaquette_energy": "-2.5",
+          "total_energy": "-0.25",
+          "expected": "-0.25",
+          "support_bonds": 6,
+          "plaquettes": 19,
+          "all_endpoints_off_omega1": true
+        }
+      ]
+    },
+    {
+      "q": 4,
+      "R": 22,
+      "side": "right",
+      "dps": 130,
+      "tests": [
+        {
+          "tangent_amplitude": "0.0",
+          "mass": "1.25",
+          "untwisted_plaquette_energy": "0.75",
+          "star_plaquette_energy": "-2.0",
+          "total_energy": "0.0",
+          "expected": "0",
+          "support_bonds": 5,
+          "plaquettes": 16,
+          "all_endpoints_off_omega1": true
+        },
+        {
+          "tangent_amplitude": "0.25",
+          "mass": "1.3125",
+          "untwisted_plaquette_energy": "0.9375",
+          "star_plaquette_energy": "-2.5",
+          "total_energy": "-0.25",
+          "expected": "-0.25",
+          "support_bonds": 6,
+          "plaquettes": 19,
+          "all_endpoints_off_omega1": true
+        }
+      ]
+    },
+    {
+      "q": 8,
+      "R": 24,
+      "side": "right",
+      "dps": 130,
+      "tests": [
+        {
+          "tangent_amplitude": "0.0",
+          "mass": "1.25",
+          "untwisted_plaquette_energy": "0.75",
+          "star_plaquette_energy": "-2.0",
+          "total_energy": "0.0",
+          "expected": "0",
+          "support_bonds": 5,
+          "plaquettes": 16,
+          "all_endpoints_off_omega1": true
+        },
+        {
+          "tangent_amplitude": "0.25",
+          "mass": "1.3125",
+          "untwisted_plaquette_energy": "0.9375",
+          "star_plaquette_energy": "-2.5",
+          "total_energy": "-0.25",
+          "expected": "-0.25",
+          "support_bonds": 6,
+          "plaquettes": 19,
+          "all_endpoints_off_omega1": true
+        }
+      ]
+    }
+  ],
+  "qualification": "Independent direct finite-support physical stencil evidence; no Schur complement or reduced inverse. W=id,T=0 and level-zero masses have separate generic Lean locality lemmas, but finite plaquette enumeration and its frozen-operator join remain unproved.",
+  "peak_rss_KiB": 28228
+}

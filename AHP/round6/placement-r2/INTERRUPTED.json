@@ -1,0 +1,8 @@
+{
+  "interruptedSourceSha256": "fdbafaeddb2244797223f864e8ee827fcf3f724611f99c3bba2db3ea5af0f7a3",
+  "logSha256": "07cdbfb0af7bb86d4acde81bb5870d9c817bd6a8e978259548e9d394382c2725",
+  "timeoutSeconds": 600,
+  "exitPresent": false,
+  "logBytes": 16384,
+  "status": "Interrupted full-file attempt, no completion file; not relaunched. Separate focused targets compiled later."
+}

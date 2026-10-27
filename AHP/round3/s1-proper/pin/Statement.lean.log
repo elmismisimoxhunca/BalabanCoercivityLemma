@@ -1,0 +1,24 @@
+Round3.S1Proper.plaqCorner {L : PeriodicLatticeExtent} (S : Set (PeriodicLatticeSite L)) :
+  Set (PeriodicLatticePlaquette L)
+Round3.S1Proper.TouchBond {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L)) (b : Bond L) : Prop
+Round3.S1Proper.CoversPlaqFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) : Prop
+Round3.S1Proper.CurlReadsTouch {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L))
+  (x : PeriodicLatticeSite L) (a b : Fin 3) : Prop
+Round3.S1Proper.PerCubeRegularTouch {L : PeriodicLatticeExtent} (ell M f k : ℕ) (S : Tower L) (α₀ η : ℝ)
+  (U : LinkCfg L) : Prop
+Round3.S1Proper.ClassCoupledFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) (α₀ η : ℝ) (U : LinkCfg L) :
+  Prop
+Round3.S1Proper.selCorner : PlaqSel
+Round3.S1Proper.P428TouchFour : Prop
+Round3.S1Proper.GoalPos1 : Prop
+Round3.S1Proper.GoalNeg1 : Prop
+'Round3.S1Proper.plaqCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.TouchBond' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.CoversPlaqFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.ClassCoupledFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.selCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.P428TouchFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]

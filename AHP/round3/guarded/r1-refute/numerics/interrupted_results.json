@@ -1,0 +1,117 @@
+{
+  "status": "exploratory quotient numerics, no certified guard or in-class separating instance",
+  "results": [
+    {
+      "R": 2,
+      "eps": 0.08,
+      "geometry": {
+        "fine_lift_sides": [
+          24,
+          8,
+          8
+        ],
+        "Om0": [
+          4,
+          16
+        ],
+        "Om1": [
+          8,
+          12
+        ],
+        "torus_arithmetic": true,
+        "base_law": true,
+        "block0": true,
+        "block1": true,
+        "collar": true,
+        "site_cover": false,
+        "plaq_cover": false,
+        "class_cubes": 0,
+        "lambda_and_positive_competitor": false
+      },
+      "checks": {
+        "qtop_rows": 21,
+        "V0_dimension": 156,
+        "source_norm": 0.5343897879990708,
+        "HtJ_top_norm": 0.10235497605329219,
+        "correction_dimension": 237,
+        "correction_norm": 0.033388945244073605,
+        "hessian_refinement_norm": 6.438615858076378e-08,
+        "pruning_threshold": 2e-13,
+        "local_top_gap": 0.12422099630049946,
+        "N_gap": 0.0740250551096533
+      },
+      "n": 444,
+      "boundary_dimension": 72,
+      "boundary_interior_green_norm": 0.08236548707431421,
+      "correction_to_boundary_green_norm": 1.0906645356922813e-06,
+      "local_boundary_green_norm": 1.0000000000000009,
+      "Schur_change_norm": 2.8533622846536096e-06,
+      "carrier_endpoints": [
+        0.9999999999999939,
+        -7.988896906254743
+      ],
+      "carrier_root": 0.5864157757417368,
+      "corrected_root": 0.5864158006053745,
+      "root_shift": 2.4863637704264363e-08,
+      "carrier_schur_gap_at_corrected": -5.714015447209922e-08,
+      "seconds": 104.37171411514282,
+      "peak_rss_kib": 114524
+    },
+    {
+      "R": 6,
+      "eps": 0.08,
+      "geometry": {
+        "fine_lift_sides": [
+          40,
+          8,
+          8
+        ],
+        "Om0": [
+          4,
+          32
+        ],
+        "Om1": [
+          16,
+          20
+        ],
+        "torus_arithmetic": true,
+        "base_law": true,
+        "block0": true,
+        "block1": true,
+        "collar": true,
+        "site_cover": true,
+        "plaq_cover": true,
+        "class_cubes": 3,
+        "lambda_and_positive_competitor": false
+      },
+      "checks": {
+        "qtop_rows": 21,
+        "V0_dimension": 156,
+        "source_norm": 0.5343897879990708,
+        "HtJ_top_norm": 0.10235497605329226,
+        "correction_dimension": 237,
+        "correction_norm": 0.03338894524409536,
+        "hessian_refinement_norm": 6.438615238669083e-08,
+        "pruning_threshold": 2e-13,
+        "local_top_gap": 0.12422099630048823,
+        "N_gap": 0.07402505510965358
+      },
+      "n": 1020,
+      "boundary_dimension": 72,
+      "boundary_interior_green_norm": 3.702117038862003e-05,
+      "correction_to_boundary_green_norm": 2.2371437664674678e-13,
+      "local_boundary_green_norm": 1.0000000000000002,
+      "Schur_change_norm": 5.858632406871954e-13,
+      "carrier_endpoints": [
+        0.9999999999999987,
+        -7.988896899044017
+      ],
+      "carrier_root": 0.5865589686091986,
+      "corrected_root": 0.5865589686092035,
+      "root_shift": 4.884981308350689e-15,
+      "carrier_schur_gap_at_corrected": -7.416758033220867e-15,
+      "seconds": 131.32996559143066,
+      "peak_rss_kib": 160804
+    }
+  ]
+}

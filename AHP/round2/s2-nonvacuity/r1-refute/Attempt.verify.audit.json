@@ -1,0 +1,416 @@
+{
+  "attemptSHA256": "c4a1d4d0614dd1fcf700219fbd12fd03349a4b7f600dea0da15d678dfb553ccd",
+  "pinSHA256": "826f93c754d1c78a13e8ee7a832fc3041b36cd9cbe4628cde3a7475d752909f9",
+  "freshLogSHA256": "e1655d2cf3f404d10c43c6b276067885c95561679d1b535a009e9b71be67de56",
+  "recompiledExit": 0,
+  "pinDefinitions": {
+    "TouchBond": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "CoversPlaqFour": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "plaqCorner": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "CoversPlaqCorner": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "CurlReadsTouch": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "PerCubeRegularTouch": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "ClassCoupledFour": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "ClassCoupledCorner": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "ProperFourAt": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "ProperCornerAt": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "GoalPos1": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "GoalNeg1": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "GoalPos2": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "GoalNeg2": {
+      "exact": true,
+      "whitespaceNormalized": true
+    }
+  },
+  "stageBCopies": {
+    "TouchBond": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "CoversPlaqFour": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "plaqCorner": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "CoversPlaqCorner": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "CurlReadsTouch": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "PerCubeRegularTouch": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "ClassCoupledFour": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "ClassCoupledCorner": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "cornerA": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "cornerB": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "cornerC": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "cornerD": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "TouchBond.endpoints": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "coord_shift_ne": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "cornerD_comm": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "mem_siteBox_iff": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "boundary_is_square": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "edgeAB_mem": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "edgeBD_mem": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "edgeCD_mem": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "edgeAC_mem": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "square_edges_touch": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "siteBox_fill_of_diagonal": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "siteBox_fill_of_antidiagonal": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "opposite_of_touch": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "touchCover_all_corners": {
+      "exact": true,
+      "whitespaceNormalized": true
+    }
+  },
+  "frozenConnectivityCopies": {
+    "shift_iter": {
+      "exact": true,
+      "whitespaceNormalized": true
+    },
+    "forall_of_shift": {
+      "exact": true,
+      "whitespaceNormalized": true
+    }
+  },
+  "mainDeclaration": "AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_proved",
+  "mainType": "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg2",
+  "localDeclarations": 45,
+  "axiomRecordCount": 48,
+  "axioms": {
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.class_sites_subset_om0": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.covered_corners_in_om0": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.corner_coverage_shift_closed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.exists_exit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.explicit_exit_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.proper_domain_uncovered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.StatementLaneR8.admissible_mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.StatementLaneR8.shift_ne": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.StatementLaneR8.shift_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.corner_saturation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_proved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.not_goalPos2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.TouchBond": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.plaqCorner": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqCorner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.CurlReadsTouch": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.PerCubeRegularTouch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledCorner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ProperFourAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ProperCornerAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg1_implies_not_goalPos1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_implies_not_goalPos2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.TouchBond.endpoints": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.cornerA": [],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.cornerB": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.cornerC": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.cornerD": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.coord_shift_ne": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.cornerD_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.mem_siteBox_iff": [],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.boundary_is_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.edgeAB_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.edgeBD_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.edgeCD_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.edgeAC_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.square_edges_touch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.siteBox_fill_of_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.siteBox_fill_of_antidiagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.opposite_of_touch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.touchCover_all_corners": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.shift_iter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.forall_of_shift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "forbiddenTokensFullSource": [],
+  "imports": [
+    "ZT5A",
+    "ZR8Class"
+  ],
+  "verdict": "closes-goal",
+  "scope": "GoalNeg2 only; not the four-bond branch or the complete item."
+}

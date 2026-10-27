@@ -1,0 +1,44 @@
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.oriented' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.circulation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.im_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

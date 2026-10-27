@@ -1,0 +1,25 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/detection/r1/Transfer.lean:48:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/detection/r1/Transfer.lean:102:25: warning: This simp argument is unused:
+  pow_add
+
+Hint: Omit it from the simp argument list.
+  simp only [pow_succ,̵ ̵p̵o̵w̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'AdalyFormal.Round13.Detection.Transfer.zero_pair_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.Transfer.zero_prefix_of_zero_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.Transfer.pair_ne_zero_of_seed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.Transfer.area_step' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round13.Detection.Transfer.area_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.Transfer.area_proportional_zero' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round13.Detection.Transfer.decaying_trace_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

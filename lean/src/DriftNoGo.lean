@@ -1,0 +1,369 @@
+/-
+Copyright (c) 2026 Sebastian Rodrigo. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sebastian Rodrigo
+-/
+import DriftPerCube
+import AdalyFormal.HoleHunt.CenterBlindness
+
+set_option autoImplicit false
+set_option maxHeartbeats 3200000
+set_option maxRecDepth 40000
+set_option linter.style.longLine false
+
+/-!
+# THE OBSTRUCTION: per-cube gauged data CANNOT price the FLAT-referenced drift.
+
+Lane `compute/drift_percube/`.  Write scope: that directory only.  Never `lake build`.
+
+`DriftPerCube.global_drift_from_percube_gauges` prices the drift of `U` against the cube's own PURE
+GAUGE `1^{γ_i⁻¹}`.  The chain's binder `TerminalBinder.HrawAt` prices it against the FLAT background
+`1` — because the star datum's carrier `HrawCarriers.composedQ` and its `d = ∂₁` are built at the
+FLAT fine background.  This module proves the gap between the two references is not removable.
+
+## THE WITNESS AND WHAT IT SETTLES
+
+`bumpU := 1^{γ₀}` with `γ₀` the gauge that is `witnessMElem = !![0,1;-1,0]` at ONE site and `1`
+everywhere else.  It is a PURE GAUGE, so:
+
+* it lies in the per-cube gauged class at radius `0`, for **every** cube family, **every** radius,
+  with the single gauge `γ₀⁻¹` — `pureGauge_percube_zero`;
+* it lies in `AlphaAnalyticity.GaugeRegular 0` — the full gauge-orbit class `∃γ, α₁(U^γ) ≤ 0` —
+  `pureGauge_gaugeRegular`.  This is the class `hrawr_discharge` §2a attempted and could not reach;
+* yet `α₁(bumpU) ≥ 2`, so `hdrift : α₁ ≤ 1/(13336·ℓ³)` FAILS at it by a factor `> 2·10⁵`
+  (`bumpU_drift_hypothesis_fails`);
+* and the failure is NOT the centre's: `α₁(centralFlipConfig ε bumpU) ≥ 2` for **every** flip
+  `ε` (`bumpU_centralFlip_ge_two`), so `HrawRCentreClass.CentreNear` does not contain it either;
+* and the FLAT-referenced drift really is large there — not merely its price:
+  `‖(D_{bumpU} − D_1)A(p)‖ = 2‖A‖` at an explicit `A` and `p` (`norm_curlDrift_bump`), while the
+  SAME per-cube certificate is carried by the flat background, where the drift is `0`.
+
+**Conclusion, stated as one theorem** (`percube_data_cannot_price_the_drift`): two configurations
+with IDENTICAL per-cube gauged data — both gauge to `1` exactly, on every cube, at radius `0` —
+have flat-referenced drift energies `0` and `≥ 4·bondEnergy A`.  So the flat-referenced drift is not
+a function of per-cube gauged data, and no bound `κ ≤ f(per-cube data)` with `f(0) = 0` exists.
+Any valid `f` must satisfy `f(0) ≥ 2`, which no threshold of the chain admits.
+
+**Nothing here is graded by this lane (BUILD DISCIPLINE 8): it reports facts.  The gates adjudicate.**
+-/
+
+namespace AdalyFormal.Balaban.DriftPerCube
+
+open Finset
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Balaban.AdmissibleSubspace
+open AdalyFormal.Balaban.CovariantOperators
+open AdalyFormal.Balaban.CovariantHjMinimizer (trivialU)
+open AdalyFormal.Balaban.RegularUPerturbation
+open AdalyFormal.Balaban.AlphaAnalyticity (GaugeFn GaugeRegular gaugeInv gaugeTransform_inv)
+open AdalyFormal.Balaban.LocalizedEstimates
+open AdalyFormal.HoleHunt.CenterBlindness (negI flipSign centralFlipConfig)
+
+variable {L : PeriodicLatticeExtent}
+
+/-! ## §1 — EVERY PURE GAUGE CARRIES THE PER-CUBE CERTIFICATE AT RADIUS ZERO -/
+
+/-- `(1^γ)^{γ⁻¹} = 1`: a pure gauge is gauged flat by the inverse gauge. -/
+theorem pureGauge_gauged_flat (γ : GaugeFn L) :
+    periodicGaugeTransform (gaugeInv γ) (pureGauge γ) = trivialU L :=
+  gaugeTransform_inv γ (trivialU L)
+
+/-- **THE PER-CUBE CERTIFICATE, AT RADIUS `0`, ON EVERY BOND.**  One gauge — the same one on every
+cube — makes the deviations of a pure gauge vanish IDENTICALLY.  So a pure gauge satisfies the
+hypothesis `hclass` of `LocFeed.global_floor_from_percube_gauges` and of
+`DriftPerCube.global_drift_from_percube_gauges` at `α = 0`, for every cube family whatsoever. -/
+theorem pureGauge_percube_zero (γ : GaugeFn L) (b : Bond L) :
+    RMapLipschitz.frobNorm
+      (((periodicGaugeTransform (gaugeInv γ) (pureGauge γ)) b : Matrix (Fin 2) (Fin 2) ℂ) - 1)
+      = 0 := by
+  rw [pureGauge_gauged_flat]
+  have h1 : ((trivialU L b : Matrix.specialUnitaryGroup (Fin 2) ℂ) :
+      Matrix (Fin 2) (Fin 2) ℂ) - 1 = 0 := by
+    show ((1 : Matrix.specialUnitaryGroup (Fin 2) ℂ) : Matrix (Fin 2) (Fin 2) ℂ) - 1 = 0
+    simp
+  rw [h1, RMapLipschitz.frobNorm_zero]
+
+/-- **AND THE GAUGE-ORBIT CLASS AT RADIUS `0`.**  `GaugeRegular 0` is `∃γ, α₁(U^γ) ≤ 0` — the
+largest class `hrawr_discharge` §2a tried to reach.  Every pure gauge is in it. -/
+theorem pureGauge_gaugeRegular (γ : GaugeFn L) : GaugeRegular 0 (pureGauge γ) := by
+  refine ⟨gaugeInv γ, ?_⟩
+  rw [pureGauge_gauged_flat, AdalyFormal.Balaban.RegularUDomainWitness.frobSupBond_trivialU]
+
+/-! ## §2 — THE CONCRETE WITNESS ON `witnessL` -/
+
+/-- The gauge that is `witnessMElem` at the origin and `1` elsewhere. -/
+noncomputable def bumpGauge : GaugeFn witnessL :=
+  fun x => if x = witnessY then witnessMElem else 1
+
+/-- **THE WITNESS BACKGROUND**: the pure gauge generated by `bumpGauge`. -/
+noncomputable def bumpU : PeriodicLinkConfiguration (Matrix.specialUnitaryGroup (Fin 2) ℂ) witnessL :=
+  pureGauge bumpGauge
+
+/-- A forward step never returns to its own site on `witnessL` (side `4`). -/
+theorem shift_witnessY_ne (μ : Fin 3) : periodicLatticeShift witnessY μ ≠ witnessY := by
+  fin_cases μ <;> decide
+
+theorem bumpGauge_origin : bumpGauge witnessY = witnessMElem := by
+  show (if witnessY = witnessY then witnessMElem else 1) = witnessMElem
+  rw [if_pos rfl]
+
+theorem bumpGauge_shift (μ : Fin 3) :
+    bumpGauge (periodicLatticeShift witnessY μ) = 1 := by
+  show (if periodicLatticeShift witnessY μ = witnessY then witnessMElem else 1) = 1
+  rw [if_neg (shift_witnessY_ne μ)]
+
+/-- **THE WITNESS'S LINK AT THE ORIGIN IS `witnessMElem`**, in every direction. -/
+theorem bumpU_origin (μ : Fin 3) : bumpU (witnessY, μ) = witnessMElem := by
+  show pureGauge bumpGauge (witnessY, μ) = witnessMElem
+  rw [pureGauge_apply]
+  show bumpGauge witnessY * (bumpGauge (periodicLatticeShift witnessY μ))⁻¹ = witnessMElem
+  rw [bumpGauge_origin, bumpGauge_shift, inv_one, mul_one]
+
+/-! ## §3 — THE DEVIATION AT THE WITNESS IS `2`, AND STAYS `2` UNDER EVERY CENTRAL FLIP -/
+
+theorem frobNorm_witnessM_sub_one :
+    RMapLipschitz.frobNorm ((witnessMElem : Matrix (Fin 2) (Fin 2) ℂ) - 1) = 2 := by
+  have hsq : RMapLipschitz.frobSq ((witnessMElem : Matrix (Fin 2) (Fin 2) ℂ) - 1) = 4 := by
+    show RMapLipschitz.frobSq (witnessM - 1) = 4
+    unfold RMapLipschitz.frobSq
+    simp [witnessM, Matrix.sub_apply, Complex.normSq_apply]
+    norm_num
+  show Real.sqrt (RMapLipschitz.frobSq _) = 2
+  rw [hsq, show (4 : ℝ) = 2 ^ 2 by norm_num, Real.sqrt_sq (by norm_num)]
+
+theorem frobNorm_negI_witnessM_sub_one :
+    RMapLipschitz.frobNorm (((negI * witnessMElem : Matrix.specialUnitaryGroup (Fin 2) ℂ) :
+      Matrix (Fin 2) (Fin 2) ℂ) - 1) = 2 := by
+  have hcoe : ((negI * witnessMElem : Matrix.specialUnitaryGroup (Fin 2) ℂ) :
+      Matrix (Fin 2) (Fin 2) ℂ) = -witnessM := by
+    show (negI : Matrix (Fin 2) (Fin 2) ℂ) * (witnessMElem : Matrix (Fin 2) (Fin 2) ℂ) = -witnessM
+    rw [AdalyFormal.HoleHunt.CenterBlindness.negI_coe]
+    show (-1 : Matrix (Fin 2) (Fin 2) ℂ) * witnessM = -witnessM
+    rw [neg_one_mul]
+  have hsq : RMapLipschitz.frobSq (((negI * witnessMElem :
+      Matrix.specialUnitaryGroup (Fin 2) ℂ) : Matrix (Fin 2) (Fin 2) ℂ) - 1) = 4 := by
+    rw [hcoe]
+    unfold RMapLipschitz.frobSq
+    simp [witnessM, Matrix.sub_apply, Complex.normSq_apply]
+    norm_num
+  show Real.sqrt (RMapLipschitz.frobSq _) = 2
+  rw [hsq, show (4 : ℝ) = 2 ^ 2 by norm_num, Real.sqrt_sq (by norm_num)]
+
+/-- **`α₁(bumpU) ≥ 2`.**  The sup is over all bonds; the bond `(0, e₀)` alone gives `2`. -/
+theorem two_le_frobSupBond_bumpU : 2 ≤ frobSupBond bumpU := by
+  have h := frobNorm_le_frobSupBond bumpU (witnessY, (0 : Fin 3))
+  rwa [bumpU_origin, frobNorm_witnessM_sub_one] at h
+
+/-- **AND EVERY CENTRAL FLIP OF IT IS STILL AT DISTANCE `2`.**  Both `M` and `−M` are at Frobenius
+distance exactly `2` from `1`, so the centre enlargement — the one that rescued `U ≡ −1` — does not
+reach this configuration. -/
+theorem bumpU_centralFlip_ge_two (ε : Bond witnessL → Bool) :
+    2 ≤ frobSupBond (centralFlipConfig ε bumpU) := by
+  have h := frobNorm_le_frobSupBond (centralFlipConfig ε bumpU) (witnessY, (0 : Fin 3))
+  have hval : centralFlipConfig ε bumpU (witnessY, (0 : Fin 3))
+      = flipSign (ε (witnessY, (0 : Fin 3))) * witnessMElem := by
+    show flipSign (ε (witnessY, (0 : Fin 3))) * bumpU (witnessY, (0 : Fin 3)) = _
+    rw [bumpU_origin]
+  rw [hval] at h
+  cases hb : ε (witnessY, (0 : Fin 3)) with
+  | false =>
+      rw [hb] at h
+      have hf : flipSign false = (1 : Matrix.specialUnitaryGroup (Fin 2) ℂ) := by
+        show (if false then negI else 1) = 1
+        rw [if_neg (by simp)]
+      rw [hf, one_mul, frobNorm_witnessM_sub_one] at h
+      exact h
+  | true =>
+      rw [hb] at h
+      have hf : flipSign true = negI := by
+        show (if true then negI else 1) = negI
+        rw [if_pos (by simp)]
+      rw [hf, frobNorm_negI_witnessM_sub_one] at h
+      exact h
+
+/-- **THE ADDED HYPOTHESIS OF `HrawRDischarge` §6 FAILS AT THE WITNESS**, by a factor `> 2·10⁵`:
+`α₁(bumpU) ≥ 2` while the hypothesis asks `α₁ ≤ 1/(13336·2³) = 1/106688`. -/
+theorem bumpU_drift_hypothesis_fails :
+    ¬ (frobSupBond bumpU ≤ 1 / (13336 * (((2 : ℕ)) : ℝ) ^ 3)) := by
+  intro hcon
+  have h := two_le_frobSupBond_bumpU
+  norm_num at hcon
+  linarith
+
+/-! ## §4 — THE FLAT-REFERENCED DRIFT AT THE WITNESS IS LARGE, NOT MERELY ITS PRICE
+
+The centre showed a case where the PRICE `4√2·α₁` is large while the DRIFT ITSELF is zero
+(`RMap` is blind to `±1`).  Here the drift itself is large: `RMap witnessMElem ≠ id`, on the nose. -/
+
+/-- The single-bond test field: `suTwoWitness = diag(i,−i)` on the bond `(e₀, e₁)`, zero elsewhere. -/
+noncomputable def bumpA : Bond witnessL → SuTwo :=
+  fun b => if b = (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3)) then suTwoWitness else 0
+
+/-- The test plaquette: based at the origin, in the `(0,1)` plane. -/
+def bumpP : PeriodicLatticePlaquette witnessL := (witnessY, ⟨(0, 1), by decide⟩)
+
+theorem norm_suTwoWitness : ‖suTwoWitness‖ = 1 := by
+  have hsq : ‖suTwoWitness‖ ^ 2 = 1 := by
+    rw [RMapLipschitz.norm_sq_eq_half_frobSq]
+    show (1 / 2 : ℝ) * RMapLipschitz.frobSq suTwoWitnessVal = 1
+    unfold RMapLipschitz.frobSq
+    simp [suTwoWitnessVal, Complex.normSq_apply]
+    norm_num
+  have hnn : (0 : ℝ) ≤ ‖suTwoWitness‖ := norm_nonneg _
+  nlinarith [hsq, hnn]
+
+theorem bumpA_at_test :
+    bumpA (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3)) = suTwoWitness := by
+  show (if _ = _ then suTwoWitness else 0) = suTwoWitness
+  rw [if_pos rfl]
+
+theorem bumpA_off_test :
+    bumpA (periodicLatticeShift witnessY (1 : Fin 3), (0 : Fin 3)) = 0 := by
+  show (if (periodicLatticeShift witnessY (1 : Fin 3), (0 : Fin 3))
+      = (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3)) then suTwoWitness else 0) = 0
+  rw [if_neg]
+  intro hcon
+  have := congrArg Prod.snd hcon
+  simp at this
+
+/-- **THE DRIFT AT THE WITNESS, COMPUTED**: `(D_{bumpU} − D_1)(bumpA)(p) = −(X + X)` with
+`X = suTwoWitness`, because `RMap witnessMElem X = −X` (`CovariantOperators.RMap_witnessMElem`,
+CITED) and the second term of the drift reads `bumpA` at a bond where it vanishes. -/
+theorem curlDrift_bump : curlDrift bumpU bumpA bumpP = -(suTwoWitness + suTwoWitness) := by
+  rw [curlDrift_apply]
+  show (RMap (bumpU (witnessY, (0 : Fin 3)))
+        (bumpA (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3)))
+      - bumpA (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3)))
+    - (RMap (bumpU (witnessY, (1 : Fin 3)))
+        (bumpA (periodicLatticeShift witnessY (1 : Fin 3), (0 : Fin 3)))
+      - bumpA (periodicLatticeShift witnessY (1 : Fin 3), (0 : Fin 3))) = _
+  rw [bumpU_origin, bumpA_at_test, bumpA_off_test, RMap_witnessMElem, map_zero]
+  abel
+
+/-- **AND ITS SIZE IS `2 = 2·‖bumpA‖`** — the flat-referenced drift OPERATOR at `bumpU` has norm at
+least `2`, five orders of magnitude past every threshold the chain can carry. -/
+theorem norm_curlDrift_bump : ‖curlDrift bumpU bumpA bumpP‖ = 2 := by
+  rw [curlDrift_bump, norm_neg]
+  have h : suTwoWitness + suTwoWitness = (2 : ℝ) • suTwoWitness := by
+    rw [two_smul]
+  rw [h, norm_smul, norm_suTwoWitness]
+  simp
+
+theorem bondEnergy_bumpA : bondEnergy bumpA = 1 := by
+  show ∑ b : Bond witnessL, ‖bumpA b‖ ^ 2 = 1
+  have hone : ∀ b : Bond witnessL, ‖bumpA b‖ ^ 2
+      = if b = (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3)) then (1 : ℝ) else 0 := by
+    intro b
+    by_cases hb : b = (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3))
+    · rw [if_pos hb, hb, bumpA_at_test, norm_suTwoWitness]; norm_num
+    · rw [if_neg hb]
+      have : bumpA b = 0 := by
+        show (if b = _ then suTwoWitness else 0) = 0
+        rw [if_neg hb]
+      rw [this, norm_zero]; norm_num
+  rw [Finset.sum_congr rfl (fun b _ => hone b)]
+  rw [Finset.sum_ite_eq' Finset.univ
+    (periodicLatticeShift witnessY (0 : Fin 3), (1 : Fin 3)) (fun _ => (1 : ℝ))]
+  rw [if_pos (Finset.mem_univ _)]
+
+/-- The drift energy at the witness is at least `4 = 4·bondEnergy(bumpA)`: one plaquette already
+supplies it, and every other term is nonnegative. -/
+theorem plaqEnergy_curlDrift_bump_ge : 4 * bondEnergy bumpA ≤ plaqEnergy (curlDrift bumpU bumpA) := by
+  have hterm : ‖curlDrift bumpU bumpA bumpP‖ ^ 2 ≤ plaqEnergy (curlDrift bumpU bumpA) := by
+    show _ ≤ ∑ p : PeriodicLatticePlaquette witnessL, ‖curlDrift bumpU bumpA p‖ ^ 2
+    exact Finset.single_le_sum (f := fun p => ‖curlDrift bumpU bumpA p‖ ^ 2)
+      (fun _ _ => sq_nonneg _) (Finset.mem_univ bumpP)
+  rw [norm_curlDrift_bump] at hterm
+  rw [bondEnergy_bumpA]
+  norm_num at hterm ⊢
+  exact hterm
+
+/-- At the FLAT background the drift is identically zero — the same per-cube certificate, the other
+end of the comparison. -/
+theorem plaqEnergy_curlDrift_trivial (A : Bond witnessL → SuTwo) :
+    plaqEnergy (curlDrift (trivialU witnessL) A) = 0 := by
+  have hz : curlDrift (trivialU witnessL) A = 0 := by
+    funext p
+    show curlValueCovariant (trivialU witnessL) A p - curlValueCovariant (trivialU witnessL) A p = 0
+    exact sub_self _
+  rw [hz]
+  show ∑ p : PeriodicLatticePlaquette witnessL, ‖(0 : PeriodicLatticePlaquette witnessL → SuTwo) p‖ ^ 2 = 0
+  simp
+
+/-! ## §5 — THE OBSTRUCTION, AS ONE THEOREM -/
+
+/-- **PER-CUBE GAUGED DATA DOES NOT DETERMINE THE FLAT-REFERENCED DRIFT.**
+
+Two backgrounds on the same lattice:
+
+* `trivialU` — gauged flat by the trivial gauge, deviations `0` on every bond;
+* `bumpU`   — gauged flat by `bumpGauge⁻¹`, deviations `0` on every bond;
+
+so **every** per-cube certificate that the first satisfies, the second satisfies too, at radius `0`,
+for every cube family and every threshold.  Their flat-referenced drift energies at the SAME test
+field are `0` and `≥ 4·bondEnergy(bumpA) = 4`.
+
+Hence there is no function `f` of per-cube gauged data with `κ ≤ f(data)` and `f(0) = 0`; any valid
+`f` must return at least `2` at the zero certificate, and no threshold of the recomposed chain
+(`κ ≤ ½√(gammaSum ℓ) < 10⁻³`) admits that.  The fourth conjunct records that this is not the
+centre's blindness: the failure survives every central flip. -/
+theorem percube_data_cannot_price_the_drift :
+    (∀ b : Bond witnessL, RMapLipschitz.frobNorm
+        (((periodicGaugeTransform (gaugeInv bumpGauge) bumpU) b : Matrix (Fin 2) (Fin 2) ℂ) - 1) = 0)
+    ∧ (∀ b : Bond witnessL, RMapLipschitz.frobNorm
+        (((trivialU witnessL) b : Matrix (Fin 2) (Fin 2) ℂ) - 1) = 0)
+    ∧ plaqEnergy (curlDrift (trivialU witnessL) bumpA) = 0
+    ∧ 4 * bondEnergy bumpA ≤ plaqEnergy (curlDrift bumpU bumpA)
+    ∧ bondEnergy bumpA = 1
+    ∧ (∀ ε : Bond witnessL → Bool, 2 ≤ frobSupBond (centralFlipConfig ε bumpU))
+    ∧ GaugeRegular 0 bumpU
+    ∧ ¬ (frobSupBond bumpU ≤ 1 / (13336 * (((2 : ℕ)) : ℝ) ^ 3)) := by
+  refine ⟨fun b => pureGauge_percube_zero bumpGauge b, fun b => ?_,
+    plaqEnergy_curlDrift_trivial bumpA, plaqEnergy_curlDrift_bump_ge, bondEnergy_bumpA,
+    bumpU_centralFlip_ge_two, pureGauge_gaugeRegular bumpGauge, bumpU_drift_hypothesis_fails⟩
+  have h1 : ((trivialU witnessL b : Matrix.specialUnitaryGroup (Fin 2) ℂ) :
+      Matrix (Fin 2) (Fin 2) ℂ) - 1 = 0 := by
+    show ((1 : Matrix.specialUnitaryGroup (Fin 2) ℂ) : Matrix (Fin 2) (Fin 2) ℂ) - 1 = 0
+    simp
+  rw [h1, RMapLipschitz.frobNorm_zero]
+
+/-- **THE `hraw` BINDER IS NOT GAUGE INVARIANT, AND THIS IS WHY.**  `RMap` kills exactly the centre:
+`RMap negI = id` (`CenterBlindness.RMap_negI`, CITED) but `RMap witnessMElem ≠ id`
+(`DeltaKFull.RMap_witnessMElem_ne_id`, CITED).  A gauge built from central elements acts trivially
+on the covariant curl — which is precisely why `HrawRCentreClass.CentreNear` closes — and a gauge
+built from anything else does not.  Stated here as the pair of facts, so the boundary of the
+centre trick is a compiled statement rather than a remark. -/
+theorem centre_is_exactly_the_trivially_acting_gauge :
+    RMap negI = LinearMap.id
+    ∧ RMap witnessMElem ≠ LinearMap.id :=
+  ⟨AdalyFormal.HoleHunt.CenterBlindness.RMap_negI,
+    AdalyFormal.Balaban.DeltaKFull.RMap_witnessMElem_ne_id⟩
+
+#print axioms pureGauge_gauged_flat
+#print axioms pureGauge_percube_zero
+#print axioms pureGauge_gaugeRegular
+#print axioms bumpGauge
+#print axioms bumpU
+#print axioms shift_witnessY_ne
+#print axioms bumpGauge_origin
+#print axioms bumpGauge_shift
+#print axioms bumpU_origin
+#print axioms frobNorm_witnessM_sub_one
+#print axioms frobNorm_negI_witnessM_sub_one
+#print axioms two_le_frobSupBond_bumpU
+#print axioms bumpU_centralFlip_ge_two
+#print axioms bumpU_drift_hypothesis_fails
+#print axioms bumpA
+#print axioms bumpP
+#print axioms norm_suTwoWitness
+#print axioms bumpA_at_test
+#print axioms bumpA_off_test
+#print axioms curlDrift_bump
+#print axioms norm_curlDrift_bump
+#print axioms bondEnergy_bumpA
+#print axioms plaqEnergy_curlDrift_bump_ge
+#print axioms plaqEnergy_curlDrift_trivial
+#print axioms percube_data_cannot_price_the_drift
+#print axioms centre_is_exactly_the_trivially_acting_gauge
+
+end AdalyFormal.Balaban.DriftPerCube

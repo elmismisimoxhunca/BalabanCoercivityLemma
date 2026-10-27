@@ -1,0 +1,45 @@
+AdalyFormal.Round7.S4OddSites.Goal1 : Prop
+AdalyFormal.Round7.S4OddSites.Goal2 : Prop
+AdalyFormal.Round7.S4OddSites.Goal3 : Prop
+AdalyFormal.Round7.S4OddSites.Goal4 : Prop
+CovAssume.FamilyTorusSitesConstAt (c ell : ℕ) (hell : 2 ≤ ell) (a : ℝ) : Prop
+NcwdhFam.CovSitesF {L : PeriodicLatticeExtent} (ell M : ℕ) (F : CubeFam L) (k : ℕ) (S : Tower L) : Prop
+NcwdhFam.PerCubeRegularF {L : PeriodicLatticeExtent} (ell M : ℕ) (F : CubeFam L) (k : ℕ) (S : Tower L) (α₀ η : ℝ)
+  (U : LinkCfg L) : Prop
+AdalyFormal.CoverStrong.InstIneqWDH (ell k : ℕ) (hell : 0 < ell) (a : ℝ) (Lu : PeriodicLatticeExtent) (γ₀ : ℝ)
+  (S : Tower (scaleUp ell k Lu)) (Lam : Set (PeriodicLatticeSite Lu)) (U : LinkCfg (scaleUp ell k Lu)) : Prop
+AdalyFormal.SitesOnly.main_neg_S [CfData] {ell M R c : ℕ} (hell3 : 3 ≤ ell) (hE : 2 ∣ ell) (hdvd : ell ∣ M)
+  (hMe2 : ell * ell ≤ M) (hR : 1 ≤ R) (hrel : SitesOnly.SoRel ell c) (hc : 10 ≤ c) {a : ℝ} (ha : 0 < a)
+  (hinj :
+    ∀ (y : IngredientFamilyR2.FSp (IngredientFamilyR2.geomOf ell 2 (CoverNested.neS ell M R))),
+      (NcwdhTwo.Pt ell M R ⋯ (SitesOnly.soC ell M R c) 0 a).data.Qs y = 0 → y = 0)
+  (h0 : CoverOmega.UnitsFour (NcwdhTwo.Pt ell M R ⋯ (SitesOnly.soC ell M R c) 0 a)) :
+  ∃ uE,
+    uE % ell + 2 ≤ ell ∧
+      CoverNested.neLo M R ≤ uE ∧
+        uE + 1 < CoverNested.neLo M R + M ∧
+          ∃ t,
+            |t| < Real.pi / 2 ∧
+              GenP.WellDefG (NcwdhTwo.Pt ell M R ⋯ (SitesOnly.soC ell M R c) t a) ∧
+                GenP.genForm (NcwdhTwo.Pt ell M R ⋯ (SitesOnly.soC ell M R c) t a)
+                    (WithLp.toLp 2
+                      ((GenP.genC (NcwdhTwo.Pt ell M R ⋯ (SitesOnly.soC ell M R c) t a)) (SitesOnly.Bpatf ell uE))) <
+                  0
+AdalyFormal.SitesOnly.sites_not_imp_plaq_S [CfData] {ell M R c : ℕ} (hell : 2 ≤ ell) (hM : 0 < M) (hR1 : 1 ≤ R)
+  (hrel : SitesOnly.SoRel ell c) (hc : 10 ≤ c) (hRc : c ≤ R) :
+  CovSitesF ell M (constFam c (scaleUp ell 2 (CoverNested.neLu M R))) 2 (CoverNested.neS ell M R) ∧
+    ¬CovPlaqF ell M (constFam c (scaleUp ell 2 (CoverNested.neLu M R))) 2 (CoverNested.neS ell M R)
+AdalyFormal.SitesOnly.no_uniform_step_blockzero_odd (ell : ℕ) (hodd : ell % 2 = 1) (h : ℕ → ℕ → ℤ)
+  (hstep : ∀ (x y : ℕ), h (x + 1) y = h x y + 1 ∨ h (x + 1) y = h x y - 1) :
+  ¬(∑ i ∈ Finset.range ell, ∑ j ∈ Finset.range ell, h i j = 0 ∧
+      ∑ i ∈ Finset.range ell, ∑ j ∈ Finset.range ell, h (ell + i) j = 0)
+'AdalyFormal.Round7.S4OddSites.FamilyTorusSitesConstAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.body_eq_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Goal1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Goal2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Goal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Goal4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.goal1_implies_goal3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.goal2_implies_goal4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.goal3_goal4_incompatible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.goal1_goal2_incompatible' depends on axioms: [propext, Classical.choice, Quot.sound]

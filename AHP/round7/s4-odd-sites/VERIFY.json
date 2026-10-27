@@ -1,0 +1,364 @@
+{
+  "status": "pass",
+  "analyticStatus": "open",
+  "goalsClosed": [],
+  "bodyVerbatimFromFrozen": true,
+  "byteIdenticalBuilderReplays": true,
+  "verificationScope": "serial wrapper compilations and read-only audit; no independent reviewer or full rebuild",
+  "files": [
+    {
+      "file": "AHP/round7/s4-odd-sites/pin/Statement.lean",
+      "sourceSha256": "27a16f875b66d6fce71129ca3b0c08f1e4579fcac86fc742b1c186ffc00385ab",
+      "logSha256": "0bb65390b4ba23f8a30178fea9863231c07e9e9fdda5fa506c19c3c3c19fdb7c",
+      "exitCode": 0,
+      "printedDeclarations": 10,
+      "diagnostics": 0,
+      "rawForbiddenMatches": 0,
+      "sourceBeforeLogBeforeExit": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "axioms": {
+        "AdalyFormal.Round7.S4OddSites.FamilyTorusSitesConstAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.body_eq_frozen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal2": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal3": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal4": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal1_implies_goal3": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal2_implies_goal4": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal3_goal4_incompatible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal1_goal2_incompatible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round7/s4-odd-sites/attempt/Partial.lean",
+      "sourceSha256": "dba5828837f1378b65e1ca9fade00d42c4755d712b0900e47395d3e6f5719698",
+      "logSha256": "227a51d3a2b02bdbee03712fdac3e6c904ece36c8c1e178c26e39076f64f0bc8",
+      "exitCode": 0,
+      "printedDeclarations": 21,
+      "diagnostics": 0,
+      "rawForbiddenMatches": 0,
+      "sourceBeforeLogBeforeExit": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "axioms": {
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile": [
+          "propext"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.alternating_even_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_periodic": [
+          "propext"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_aligned": [
+          "propext"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_block_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_first_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_seam_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_not_const_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_class": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_holonomy_01": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.thinWidth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.arithmetic_window": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_cofinal_class": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero_wellDefG": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.EventualCoverageUpgrade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.no_eventual_geometric_upgrade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_holCos_01": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round7/s4-odd-sites/verify/Statement.lean",
+      "sourceSha256": "27a16f875b66d6fce71129ca3b0c08f1e4579fcac86fc742b1c186ffc00385ab",
+      "logSha256": "0bb65390b4ba23f8a30178fea9863231c07e9e9fdda5fa506c19c3c3c19fdb7c",
+      "exitCode": 0,
+      "printedDeclarations": 10,
+      "diagnostics": 0,
+      "rawForbiddenMatches": 0,
+      "sourceBeforeLogBeforeExit": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "axioms": {
+        "AdalyFormal.Round7.S4OddSites.FamilyTorusSitesConstAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.body_eq_frozen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal2": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal3": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Goal4": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal1_implies_goal3": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal2_implies_goal4": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal3_goal4_incompatible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.goal1_goal2_incompatible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round7/s4-odd-sites/verify/Partial.lean",
+      "sourceSha256": "dba5828837f1378b65e1ca9fade00d42c4755d712b0900e47395d3e6f5719698",
+      "logSha256": "227a51d3a2b02bdbee03712fdac3e6c904ece36c8c1e178c26e39076f64f0bc8",
+      "exitCode": 0,
+      "printedDeclarations": 21,
+      "diagnostics": 0,
+      "rawForbiddenMatches": 0,
+      "sourceBeforeLogBeforeExit": true,
+      "imports": [
+        "SoA3",
+        "SoPar"
+      ],
+      "axioms": {
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile": [
+          "propext"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.alternating_even_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_periodic": [
+          "propext"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_aligned": [
+          "propext"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_block_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_first_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_seam_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddProfile_not_const_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_class": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_holonomy_01": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.thinWidth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.arithmetic_window": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_cofinal_class": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero_wellDefG": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.EventualCoverageUpgrade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.no_eventual_geometric_upgrade": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round7.S4OddSites.Partial.oddCfg_holCos_01": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "closedGoal": "none",
+  "strongestCompiledTheorem": "Round11.Refute.window8_closed_proved",
+  "statement": "For every ell >= 2 and every 0 < a <= 8, not Round7.S1Odd.P428TouchFourAt ell hell a.",
+  "allAClosed": false,
+  "largeAClosed": false,
+  "attempt": "AHP/round11/refute-r1/Attempt.lean",
+  "notes": "AHP/round11/refute-r1/NOTES.md",
+  "pin": "AHP/round11/pin/Statement.lean",
+  "attemptSHA256": "a8f205f07752f718ebeb2ccdb58b784a2cd3e2c843592b97c9b52302ac46c1c7",
+  "pinSHA256": "c7155e6fd03dd61422316853ea7e8c1f056542c16bfa38228ba848113592c35f",
+  "attemptExit": 0,
+  "pinExit": 0,
+  "pinVerbatimInAttempt": true,
+  "round7PinVerbatimPrefix": true,
+  "imports": [
+    "D1Final",
+    "GdPlaq",
+    "D1Lit"
+  ],
+  "localDeclarationCount": 54,
+  "axiomPrintoutCount": 54,
+  "axiomWhitelist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "allAxiomPrintoutsWhitelisted": true,
+  "forbiddenTokensAbsent": true,
+  "compilerWarningsAbsent": true,
+  "obstacle": "The certified checkerboard endpoint bound is (a-8) times the squared norm; for a>8 it supplies no nonpositive direction. Mixed collar witnesses and all-a mechanisms remain unproved."
+}

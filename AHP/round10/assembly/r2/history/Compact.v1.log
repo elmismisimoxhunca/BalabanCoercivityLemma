@@ -1,0 +1,64 @@
+'AdalyFormal.Round10.Nonvanishing.left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourceWeight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sum_left_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sum_right_abs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.neighbor_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.source_l1_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_decompose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourceWeight_zero_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.sourcePairing_same_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.BlockSourceData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.coupling_ne_zero_of_blockSourceData' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.eventually_ne_zero_of_normalized_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.cofinal_of_eventual_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.even_radius_progression' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Assembly.nested_cofinal_of_eventual' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r2/Compact.lean:802:46: error: Application type mismatch: The argument
+  hs s x y
+has type
+  ⟪(D s) x, y⟫ = ⟪x, (D s) y⟫
+but is expected to have type
+  ⟪y, (D s) x⟫ = ?m.232
+in the application
+  Eq.trans (real_inner_comm y ((D s) x)) (hs s x y)
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r2/Compact.lean:805:50: error: Application type mismatch: The argument
+  HasDerivAt.unique hl hm
+has type
+  L (deriv D t) = M (deriv D t)
+but is expected to have type
+  ⟪(deriv D t) x, y⟫ = ?m.270
+in the application
+  Eq.trans (real_inner_comm ((deriv D t) x) y) (HasDerivAt.unique hl hm)
+'AdalyFormal.Round10.Assembly.R2.deriv_symmetric' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.corrDeriv_symmetric' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.KernelLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_line' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_dominatedSource' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.CofinalDominatedSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.cofinalAnyProfileCoupling_of_dominatedSource' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.signed_source_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_kernelSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

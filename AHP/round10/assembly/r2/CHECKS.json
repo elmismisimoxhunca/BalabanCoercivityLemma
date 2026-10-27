@@ -1,0 +1,146 @@
+{
+  "failures": [],
+  "goalNeg2_proved": false,
+  "round9_premise_proved": false,
+  "actual_source_dictionary_proved": false,
+  "actual_crossing_jet_proved": false,
+  "full_kernel_line_proved": false,
+  "concrete_conditional_glue_compiled": true,
+  "full_attempt_compiled": false,
+  "compiled": [
+    {
+      "path": "AHP/round10/assembly/r2/Compact.lean",
+      "sha256": "822ac629d717a7e6041d60e3a8957448d88d0aaf6dbdaff7931de933b5907eb4",
+      "lines": 1506,
+      "exit": "0",
+      "records": 80,
+      "new_records": [
+        "AdalyFormal.Round10.Assembly.R2.exists_profile_coupling_of_sourceColumns",
+        "AdalyFormal.Round10.Assembly.R2.exists_profile_coupling_of_sourceFamily",
+        "AdalyFormal.Round10.Assembly.R2.SourceFamilyData",
+        "AdalyFormal.Round10.Assembly.R2.CofinalSourceFamily",
+        "AdalyFormal.Round10.Assembly.R2.cofinalAnyProfileCoupling_of_sourceFamily",
+        "AdalyFormal.Round10.Assembly.R2.deriv_symmetric",
+        "AdalyFormal.Round10.Assembly.R2.corrDeriv_symmetric",
+        "AdalyFormal.Round10.Assembly.R2.KernelLine",
+        "AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_line",
+        "AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_dominatedSource",
+        "AdalyFormal.Round10.Assembly.R2.CofinalDominatedSource",
+        "AdalyFormal.Round10.Assembly.R2.cofinalAnyProfileCoupling_of_dominatedSource",
+        "AdalyFormal.Round10.Assembly.R2.signed_source_lower",
+        "AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_kernelSource"
+      ]
+    },
+    {
+      "path": "AHP/round10/shared/assembly/R2_SourceGlue.lean",
+      "sha256": "822ac629d717a7e6041d60e3a8957448d88d0aaf6dbdaff7931de933b5907eb4",
+      "lines": 1506,
+      "exit": "0",
+      "records": 80,
+      "new_records": [
+        "AdalyFormal.Round10.Assembly.R2.exists_profile_coupling_of_sourceColumns",
+        "AdalyFormal.Round10.Assembly.R2.exists_profile_coupling_of_sourceFamily",
+        "AdalyFormal.Round10.Assembly.R2.SourceFamilyData",
+        "AdalyFormal.Round10.Assembly.R2.CofinalSourceFamily",
+        "AdalyFormal.Round10.Assembly.R2.cofinalAnyProfileCoupling_of_sourceFamily",
+        "AdalyFormal.Round10.Assembly.R2.deriv_symmetric",
+        "AdalyFormal.Round10.Assembly.R2.corrDeriv_symmetric",
+        "AdalyFormal.Round10.Assembly.R2.KernelLine",
+        "AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_line",
+        "AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_dominatedSource",
+        "AdalyFormal.Round10.Assembly.R2.CofinalDominatedSource",
+        "AdalyFormal.Round10.Assembly.R2.cofinalAnyProfileCoupling_of_dominatedSource",
+        "AdalyFormal.Round10.Assembly.R2.signed_source_lower",
+        "AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_kernelSource"
+      ]
+    },
+    {
+      "path": "AHP/round10/assembly/r2/ProfileQuantifiers.lean",
+      "sha256": "1e9baedfa9d80f366b0ea1c3bbe4bc4a5a2b2b11d9ad46a1d28989346ccc1679",
+      "lines": 67,
+      "exit": "0",
+      "records": 6,
+      "new_records": [
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.form",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.form_scale",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.form_U1",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.self_profile",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.every_vector_has_profile",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.no_profile_definite"
+      ]
+    },
+    {
+      "path": "AHP/round10/shared/assembly/R2_ProfileQuantifiers.lean",
+      "sha256": "1e9baedfa9d80f366b0ea1c3bbe4bc4a5a2b2b11d9ad46a1d28989346ccc1679",
+      "lines": 67,
+      "exit": "0",
+      "records": 6,
+      "new_records": [
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.form",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.form_scale",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.form_U1",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.self_profile",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.every_vector_has_profile",
+        "AdalyFormal.Round10.Assembly.ProfileQuantifiers.no_profile_definite"
+      ]
+    }
+  ],
+  "copied_declarations": 33,
+  "shared_bodies": [
+    {
+      "path": "AHP/round10/shared/nonvanishing/R1_SourceDominance.lean",
+      "sha256": "c982e97c5b60a402d75593af0f7277a9cd94849fd2359aff213bb98ada681559"
+    },
+    {
+      "path": "AHP/round10/shared/nonvanishing/R2_SourceFamily.lean",
+      "sha256": "3bbb898b6bce272e90136faeb02c4dc7c6bb9d0f28055b170ce32a2d97b5517b"
+    },
+    {
+      "path": "AHP/round10/shared/assembly/R1_Cofinal.lean",
+      "sha256": "7a12e13c59dd6eb512a3d58d099722fecad904c51f3b7d364ab379c3cd5e63b0"
+    }
+  ],
+  "dictionary_half_rotation_copies": 1,
+  "reviewed_dictionary": {
+    "pass": true,
+    "path": "AHP/round10/shared/dictionary/R2_SourceDictionary.lean",
+    "sha256": "c52d96a2771eeb36394eb65fd39859c792834615ff9224faa9139ce39c90ee93",
+    "exit": "0",
+    "axiom_records": 88,
+    "only_standard_axioms": true,
+    "timestamps_current": true,
+    "no_diagnostics": true,
+    "read_parts_verbatim": {
+      "PhaseSource.lean": true,
+      "KKT.lean": true,
+      "SourceAppendix.lean": true
+    },
+    "actual_source_derivative_stencil_proved": true,
+    "physical_one_dimensional_source_certificate_proved": false,
+    "cofinal_coupling_proved": false
+  },
+  "dictionary_appendix_sha256": "a61ab157e341830e456d227b49047d25405d2f13a5b51c0cc08fa96a578ba10c",
+  "round9_prefix_bytes": 628675,
+  "round9_sha256": "b6dc8553ad1b8a7fdc5ff731b5c7df0fde0009979bdc90dbaba23b10efc5d052",
+  "full_attempt_lines": 13948,
+  "full_attempt_sha256": "85093864c5860f6b291093b57f2de6947063b27e8bc02f150ce080531b5529a5",
+  "numerics": [
+    {
+      "path": "AHP/round10/assembly/r2/numerics/left_q4_R20_p200.json",
+      "sha256": "c0e3eb8514f2ff2d5644d3bf48dcdbbd5b56966f3e39041d59efab6049179b46"
+    },
+    {
+      "path": "AHP/round10/assembly/r2/numerics/left_q4_R20_p250.json",
+      "sha256": "e2494b281e53c1ab0713f5a5937c08b09682d686ef0cefb32e3534ee844239f8"
+    },
+    {
+      "path": "AHP/round10/assembly/r2/numerics/source_q4_R20_p150.json",
+      "sha256": "7f42925c369289317f7b19a650512976e73807ec0cfb75035874c84baa360e8e"
+    },
+    {
+      "path": "AHP/round10/assembly/r2/numerics/source_q4_R20_p190.json",
+      "sha256": "76db7b79ee3bf4926a739e2459a3d80caa39b15f4d8f8d057aaf9b0142d08323"
+    }
+  ],
+  "pass": true
+}

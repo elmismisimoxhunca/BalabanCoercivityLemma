@@ -1,0 +1,305 @@
+{
+  "finite_coverage": {
+    "N": 4,
+    "M": 2,
+    "block_domains_tested": 256,
+    "relaxed_boxes_per_domain": 256,
+    "box_plaquette_pairs_checked": 49152,
+    "passing_block_masks": [
+      0,
+      255
+    ],
+    "proper_nonempty_passes": 0
+  },
+  "hidden_bond_scan": [
+    {
+      "N": 4,
+      "width": 2,
+      "corner_plaquettes": 128,
+      "read_bonds_outside_touch": 64,
+      "uncoverable_plaquette": [
+        [
+          1,
+          0,
+          0
+        ],
+        0,
+        1
+      ],
+      "opposite_bond_outside_Omega": [
+        [
+          2,
+          0,
+          0
+        ],
+        1
+      ],
+      "Uth_rayleigh": [
+        {
+          "theta": 0.0,
+          "raw_delta_unit_bond": 4.0
+        },
+        {
+          "theta": 0.01,
+          "raw_delta_unit_bond": 3.999800001666661
+        },
+        {
+          "theta": 0.7853981633974483,
+          "raw_delta_unit_bond": 2.8284271247461903
+        },
+        {
+          "theta": 1.5707963267948966,
+          "raw_delta_unit_bond": 2.4492935982947064e-16
+        },
+        {
+          "theta": 3.141592653589793,
+          "raw_delta_unit_bond": -4.0
+        }
+      ],
+      "primary_class": "fails corner coverage for every theta, regardless of regularity"
+    },
+    {
+      "N": 6,
+      "width": 2,
+      "corner_plaquettes": 288,
+      "read_bonds_outside_touch": 144,
+      "uncoverable_plaquette": [
+        [
+          1,
+          0,
+          0
+        ],
+        0,
+        1
+      ],
+      "opposite_bond_outside_Omega": [
+        [
+          2,
+          0,
+          0
+        ],
+        1
+      ],
+      "Uth_rayleigh": [
+        {
+          "theta": 0.0,
+          "raw_delta_unit_bond": 4.0
+        },
+        {
+          "theta": 0.01,
+          "raw_delta_unit_bond": 3.999800001666661
+        },
+        {
+          "theta": 0.7853981633974483,
+          "raw_delta_unit_bond": 2.8284271247461903
+        },
+        {
+          "theta": 1.5707963267948966,
+          "raw_delta_unit_bond": 2.4492935982947064e-16
+        },
+        {
+          "theta": 3.141592653589793,
+          "raw_delta_unit_bond": -4.0
+        }
+      ],
+      "primary_class": "fails corner coverage for every theta, regardless of regularity"
+    },
+    {
+      "N": 8,
+      "width": 2,
+      "corner_plaquettes": 512,
+      "read_bonds_outside_touch": 256,
+      "uncoverable_plaquette": [
+        [
+          1,
+          0,
+          0
+        ],
+        0,
+        1
+      ],
+      "opposite_bond_outside_Omega": [
+        [
+          2,
+          0,
+          0
+        ],
+        1
+      ],
+      "Uth_rayleigh": [
+        {
+          "theta": 0.0,
+          "raw_delta_unit_bond": 4.0
+        },
+        {
+          "theta": 0.01,
+          "raw_delta_unit_bond": 3.999800001666661
+        },
+        {
+          "theta": 0.7853981633974483,
+          "raw_delta_unit_bond": 2.8284271247461903
+        },
+        {
+          "theta": 1.5707963267948966,
+          "raw_delta_unit_bond": 2.4492935982947064e-16
+        },
+        {
+          "theta": 3.141592653589793,
+          "raw_delta_unit_bond": -4.0
+        }
+      ],
+      "primary_class": "fails corner coverage for every theta, regardless of regularity"
+    },
+    {
+      "N": 16,
+      "width": 8,
+      "corner_plaquettes": 6656,
+      "read_bonds_outside_touch": 1024,
+      "uncoverable_plaquette": [
+        [
+          7,
+          0,
+          0
+        ],
+        0,
+        1
+      ],
+      "opposite_bond_outside_Omega": [
+        [
+          8,
+          0,
+          0
+        ],
+        1
+      ],
+      "Uth_rayleigh": [
+        {
+          "theta": 0.0,
+          "raw_delta_unit_bond": 4.0
+        },
+        {
+          "theta": 0.01,
+          "raw_delta_unit_bond": 3.999800001666661
+        },
+        {
+          "theta": 0.7853981633974483,
+          "raw_delta_unit_bond": 2.8284271247461903
+        },
+        {
+          "theta": 1.5707963267948966,
+          "raw_delta_unit_bond": 2.4492935982947064e-16
+        },
+        {
+          "theta": 3.141592653589793,
+          "raw_delta_unit_bond": -4.0
+        }
+      ],
+      "primary_class": "fails corner coverage for every theta, regardless of regularity"
+    }
+  ],
+  "small_phase": [
+    {
+      "N": 4,
+      "ell": 2,
+      "k": 2,
+      "a0": 1.1107207345395915,
+      "trials": 4,
+      "global_three_bound_max_ratio": 0.9,
+      "max_link_phase": 0.001646968986035356,
+      "min_cos_plaquette_flux": 0.9999898614276199,
+      "min_sampled_raw_rayleigh": {
+        "all": 3.6741806987846255,
+        "corner": 2.375298360652175,
+        "inside": 1.1457942326131365
+      },
+      "corner_dense_minimum": -4.814631378237334e-15,
+      "scope": "raw Cartan Delta only; no full InstIneqS, tower or threshold certificate"
+    },
+    {
+      "N": 4,
+      "ell": 2,
+      "k": 2,
+      "a0": 0.1,
+      "trials": 4,
+      "global_three_bound_max_ratio": 0.9000000000000001,
+      "max_link_phase": 0.00013301402772234808,
+      "min_cos_plaquette_flux": 0.9999999210214904,
+      "min_sampled_raw_rayleigh": {
+        "all": 3.5683048744387396,
+        "corner": 2.163681955729111,
+        "inside": 1.2203963805116702
+      },
+      "corner_dense_minimum": -4.7161183430901395e-15,
+      "scope": "raw Cartan Delta only; no full InstIneqS, tower or threshold certificate"
+    },
+    {
+      "N": 4,
+      "ell": 2,
+      "k": 2,
+      "a0": 0.01,
+      "trials": 4,
+      "global_three_bound_max_ratio": 0.9,
+      "max_link_phase": 1.4163558857736533e-05,
+      "min_cos_plaquette_flux": 0.9999999991312337,
+      "min_sampled_raw_rayleigh": {
+        "all": 3.6906999415338575,
+        "corner": 2.2161954816201623,
+        "inside": 1.0322529648359184
+      },
+      "corner_dense_minimum": -5.190300376123868e-15,
+      "scope": "raw Cartan Delta only; no full InstIneqS, tower or threshold certificate"
+    },
+    {
+      "N": 16,
+      "ell": 2,
+      "k": 2,
+      "a0": 1.1107207345395915,
+      "trials": 4,
+      "global_three_bound_max_ratio": 0.9000000000000001,
+      "max_link_phase": 0.001146431128922098,
+      "min_cos_plaquette_flux": 0.9999910026553012,
+      "min_sampled_raw_rayleigh": {
+        "all": 3.955315888653836,
+        "corner": 2.14722407361489,
+        "inside": 1.8037678663334304
+      },
+      "corner_dense_minimum": null,
+      "scope": "raw Cartan Delta only; no full InstIneqS, tower or threshold certificate"
+    },
+    {
+      "N": 16,
+      "ell": 2,
+      "k": 2,
+      "a0": 0.1,
+      "trials": 4,
+      "global_three_bound_max_ratio": 0.9000000000000001,
+      "max_link_phase": 0.00010422971651687172,
+      "min_cos_plaquette_flux": 0.9999999256408548,
+      "min_sampled_raw_rayleigh": {
+        "all": 3.995131277616302,
+        "corner": 2.168306082673521,
+        "inside": 1.83160618903737
+      },
+      "corner_dense_minimum": null,
+      "scope": "raw Cartan Delta only; no full InstIneqS, tower or threshold certificate"
+    },
+    {
+      "N": 16,
+      "ell": 2,
+      "k": 2,
+      "a0": 0.01,
+      "trials": 4,
+      "global_three_bound_max_ratio": 0.9000000000000002,
+      "max_link_phase": 1.0187960141730657e-05,
+      "min_cos_plaquette_flux": 0.9999999992929776,
+      "min_sampled_raw_rayleigh": {
+        "all": 3.990988229866621,
+        "corner": 2.1166753006911696,
+        "inside": 1.7829235405092585
+      },
+      "corner_dense_minimum": null,
+      "scope": "raw Cartan Delta only; no full InstIneqS, tower or threshold certificate"
+    }
+  ],
+  "closed_negative_goal": false
+}

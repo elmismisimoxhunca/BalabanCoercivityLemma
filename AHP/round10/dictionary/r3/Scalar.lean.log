@@ -1,0 +1,31 @@
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

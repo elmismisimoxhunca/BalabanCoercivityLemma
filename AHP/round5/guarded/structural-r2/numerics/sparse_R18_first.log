@@ -1,0 +1,35 @@
+{"offset": 0.01, "theta": 0.5765589686386086, "observed_transfer_lower_bound": 2.322241495226157e-10, "offset_times_bound": 2.322241495226157e-12, "carrier_Schur_min": 0.022990571707308123, "schur_vs_direct_relative_error": 1.6165485025995886e-14, "direct_solve_residual": 5.743038345608063e-14}
+{"offset": 0.001, "theta": 0.5855589686386086, "observed_transfer_lower_bound": 2.3823661214020625e-09, "offset_times_bound": 2.3823661214020627e-12, "carrier_Schur_min": 0.002297871597128396, "schur_vs_direct_relative_error": 1.2394479305632188e-13, "direct_solve_residual": 5.161548959326734e-13}
+{"offset": 0.0001, "theta": 0.5864589686386086, "observed_transfer_lower_bound": 2.3884155756058985e-08, "offset_times_bound": 2.3884155756058988e-12, "carrier_Schur_min": 0.00022977439889426598, "schur_vs_direct_relative_error": 6.484191155267701e-13, "direct_solve_residual": 4.1933817426035265e-12}
+{"offset": 1e-05, "theta": 0.5865489686386086, "observed_transfer_lower_bound": 2.389020884453198e-07, "offset_times_bound": 2.389020884453198e-12, "carrier_Schur_min": 2.2977311383710548e-05, "schur_vs_direct_relative_error": 1.3253432772226933e-11, "direct_solve_residual": 4.4644416470027673e-11}
+{"offset": 1e-06, "theta": 0.5865579686386085, "observed_transfer_lower_bound": 2.3890814185096405e-06, "offset_times_bound": 2.3890814185096406e-12, "carrier_Schur_min": 2.297729846831442e-06, "schur_vs_direct_relative_error": 1.4984271533548545e-10, "direct_solve_residual": 4.860846810948652e-10}
+{"offset": 1e-07, "theta": 0.5865588686386086, "observed_transfer_lower_bound": 2.3890874719612684e-05, "offset_times_bound": 2.3890874719612684e-12, "carrier_Schur_min": 2.2977297167645174e-07, "schur_vs_direct_relative_error": 1.1611729498234318e-09, "direct_solve_residual": 3.7140358956054103e-09}
+{"sector": [0, 0], "carrier_dimension": 8076, "local_min": 0.12354666199658391, "local_eigen_residual": 2.3846275291230867e-10, "carrier_Schur_min": 2.2977297167645174e-07}
+Traceback (most recent call last):
+  File "/home/sebastian/BalabanCoercivityLemma/AHP/round5/guarded/structural-r2/numerics/sparse_probe.py", line 301, in <module>
+    else:run(18, '--all-sectors' in sys.argv)
+         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sebastian/BalabanCoercivityLemma/AHP/round5/guarded/structural-r2/numerics/sparse_probe.py", line 284, in run
+    emin,eres=sec.local_min()
+              ~~~~~~~~~~~~~^^
+  File "/home/sebastian/BalabanCoercivityLemma/AHP/round5/guarded/structural-r2/numerics/sparse_probe.py", line 204, in local_min
+    val, vec = eigsh(op, k=1, which='SA', tol=2e-9, maxiter=3000,
+               ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     v0=np.random.default_rng(718).normal(size=self.n))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1664, in eigsh
+    ret = eigs(A, k, M=M, sigma=sigma, which=which, v0=v0,
+               ncv=ncv, maxiter=maxiter, tol=tol,
+               return_eigenvectors=return_eigenvectors, Minv=Minv,
+               OPinv=OPinv)
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1438, in eigs
+    params.iterate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 850, in iterate
+    self._raise_no_convergence()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 441, in _raise_no_convergence
+    raise ArpackNoConvergence(f"No convergence ({num_iter} iterations, "
+                              f"{k_ok}/{self.k} eigenvectors converged)",
+                              ev, vec)
+scipy.sparse.linalg._eigen.arpack.arpack.ArpackNoConvergence: ARPACK error -1: No convergence (3001 iterations, 0/1 eigenvectors converged)

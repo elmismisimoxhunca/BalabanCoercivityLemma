@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "time_utc": "2026-10-27T05:53:39.713026+00:00",
+  "scope": "Parent static documentation/source/log cross-check; not Lean/TeX compilation, a new independent proof replay, or a full dependency-DAG audit.",
+  "new_nodes": 119,
+  "status_counts": {
+    "B": 101,
+    "O": 8,
+    "N": 5,
+    "C": 4,
+    "U": 1
+  },
+  "accepted_kinds": {
+    "definition": 39,
+    "theorem": 62
+  },
+  "canonical_source_and_axiom_citations_checked": 101,
+  "secondary_qualified_source_citations_checked": 89,
+  "inherited_markdown_byte_identical": true,
+  "inherited_tex_byte_identical": true,
+  "audited_lean_sources_and_logs_unchanged": true,
+  "unique_labels_and_resolved_references": true,
+  "new_tex_environments_balanced": true,
+  "proof_markers_only_for_B": true,
+  "corrections": [
+    "Removed an unrelated PhaseSource.phase line 461 from the secondary citation for Round15.Dictionary.phase; correct line is 5379.",
+    "Clarified that collarTestLeadingConstant names a theorem about chargedArea, not a real-valued constant.",
+    "Replaced no-inhabitant wording by no-supplied-inhabitant wording where found in new front matter."
+  ],
+  "sha256": {
+    "AHP/round15/BLUEPRINT.md": "ec7c2ef24a953d86aae583e9940c84e1175ac372ca84da6bf21c9575e427f3c5",
+    "AHP/round15/blueprint/content.tex": "04fbee95e91687ab7244ca15e78af597c19147c3983d909a1b0e291051e573fb"
+  }
+}

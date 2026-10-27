@@ -1,0 +1,66 @@
+Round2.S1.P428TouchConsistent : Prop
+Round2.S1.TouchCoverageCollapse : Prop
+Round2.S1.P428Target8Extreme : Prop
+Round2.S1.P428Target8Shell : Prop
+Round2.S1.GoalPos1 : Prop
+Round2.S1.GoalNeg1 : Prop
+Round2.S1.GoalPos2 : Prop
+Round2.S1.GoalNeg2 : Prop
+Round2.S1.GoalPos3 : Prop
+Round2.S1.GoalNeg3 : Prop
+'Round2.S1.TouchBond' depends on axioms: [propext, Quot.sound]
+'Round2.S1.plaqCorner' depends on axioms: [propext, Quot.sound]
+'Round2.S1.CoversPlaqCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'Round2.S1.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ClassCoupledCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.selCorner' depends on axioms: [propext, Quot.sound]
+'Round2.S1.P428TouchConsistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ExtremeBase' does not depend on any axioms
+'Round2.S1.P428Target8Extreme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.TouchCoverageCollapse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ReadBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CurlReadsRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.PerCubeRegularShell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ClassCoupledShell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.P428Target8Shell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.TouchBond.endpoints' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerA' does not depend on any axioms
+'Round2.S1.cornerB' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerC' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerD' depends on axioms: [propext, Quot.sound]
+'Round2.S1.coord_shift_ne' depends on axioms: [propext, Quot.sound]
+'Round2.S1.cornerD_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.mem_siteBox_iff' does not depend on any axioms
+'Round2.S1.boundary_is_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeAB_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeBD_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeCD_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.edgeAC_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.square_edges_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.siteBox_fill_of_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.siteBox_fill_of_antidiagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.opposite_of_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchCover_all_corners' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.touchCover_cubeBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.cornerCoverage_no_unseen_read_bond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.cornerCoverage_selector_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.genForm_corner_eq_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.corner_instIneq_iff_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.bdpt_not_cornerCoverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.old_slab_family_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.classCube_sub_om0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.om_sub_om0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.SlabNv_bdpt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.slabGeo_inst' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.scaleUp_nv' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.NonVac.slab3_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.pin_genForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.StatementLaneR8.shift_ne' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.StatementLaneR8.shift_comm' depends on axioms: [propext, Classical.choice, Quot.sound]

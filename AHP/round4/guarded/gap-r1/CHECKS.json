@@ -1,0 +1,38 @@
+{
+  "source": "/home/sebastian/BalabanCoercivityLemma/AHP/round4/guarded/gap-r1/Attempt.lean",
+  "compiledCopy": "/home/sebastian/BalabanCoercivityLemma/AHP/round4/guarded/gap-r1/Check3.lean",
+  "compileCommand": "AHP/round3/lean1.sh AHP/round4/guarded/gap-r1/Check3.lean",
+  "exitCode": 0,
+  "pinBytePrefix": true,
+  "identicalToCompiledCopy": true,
+  "sourceSha256": "efa8a63101212eaedb1f771224ee8fe795e39000f8bf2b86bd7d5781784784c6",
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "imports": [
+    "DrEquiv"
+  ],
+  "forbiddenTokens": [],
+  "dependencyRecordCount": 54,
+  "newDependencyRecordCount": 12,
+  "disallowedDependencies": {},
+  "unprintedLocalDeclarations": [],
+  "diagnostics": [],
+  "compiledSourceMtimeNs": 1792612177688832738,
+  "logMtimeNs": 1792612228952382635,
+  "exitMtimeNs": 1792612229192795875,
+  "newDependencyRecords": [
+    "'AdalyFormal.Round4.Guarded.GapR1.pencil_lower_on_V0' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.response_lower_of_carrier_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.inverse_response_norm_of_carrier_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.weighted_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.weighted_norm_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.delta2_norm_le_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.delta2_norm_le_source' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.correction_cap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.pencil_weighted_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.pencil_isUnit_of_weighted_boundary_gap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.pencil_failure_forces_negative_boundary_energy' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'AdalyFormal.Round4.Guarded.GapR1.scalar_gap_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "closure": "none",
+  "initialAttemptWrapper": "No exit record, empty log, no surviving process; not relaunched."
+}

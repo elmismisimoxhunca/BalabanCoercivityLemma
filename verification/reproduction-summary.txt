@@ -1,0 +1,30 @@
+[05:47:16] toolchain pin: leanprover/lean4:v4.31.0
+[05:47:16] lean: Lean (version 4.31.0, x86_64-unknown-linux-gnu, commit 68218e876d2a38b1985b8590fff244a83c321783, Release)
+[05:47:16] offline mode: copying packages from $CHECKOUT/lean/.lake/packages
+[05:47:16] lake build (MAX_LEAN=2, threads/process=1); this takes many hours on a cold tree
+[05:47:27] lake build exit=0 after 11 s
+[05:47:27] modules in project: 2782
+[05:48:16] Check1.lean exit=0; complete axiom records: 315
+[05:48:21] Check2.lean exit=0; complete axiom records: 2
+[05:48:27] Check3.lean exit=0; complete axiom records: 19
+[05:48:31] Check4.lean exit=0; complete axiom records: 61
+[05:48:35] Check5.lean exit=0; complete axiom records: 19
+[05:48:39] Check6.lean exit=0; complete axiom records: 14
+[05:48:43] Check7.lean exit=0; complete axiom records: 29
+[05:48:49] Check8.lean exit=0; complete axiom records: 49
+[05:48:53] Check9.lean exit=0; complete axiom records: 3
+[05:48:57] Check10.lean exit=0; complete axiom records: 42
+[05:49:01] Check11.lean exit=0; complete axiom records: 1
+[05:49:04] Check12.lean exit=0; complete axiom records: 2
+[05:49:09] Check13.lean exit=0; complete axiom records: 2
+[05:49:13] Check14.lean exit=0; complete axiom records: 1
+[05:49:16] Check15.lean exit=0; complete axiom records: 2
+[05:49:20] Check16.lean exit=0; complete axiom records: 3
+[05:49:23] Check17.lean exit=0; complete axiom records: 2
+[05:49:27] Check18.lean exit=0; complete axiom records: 3
+[05:49:30] Check19.lean exit=0; complete axiom records: 3
+[05:49:33] CheckR7.lean exit=0; complete axiom records: 1
+[05:49:33] PASS: Check axiom output identical to axioms.expected.txt (572 lines)
+[05:49:33] PASS: CheckR7 axiom output identical to axioms.r7.expected.txt (1 lines)
+[05:49:36] PASS: forbidden-token scan equals expected list (5 modules; see HANDOFF.md)
+[05:49:36] ALL CHECKS PASSED

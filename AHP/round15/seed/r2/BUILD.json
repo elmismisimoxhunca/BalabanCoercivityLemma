@@ -1,0 +1,9 @@
+{
+  "base": "AHP/round15/seed/r1/Seed.lean",
+  "fragment": "AHP/round15/seed/r2/R2Declarations.lean",
+  "local": "AHP/round15/seed/r2/Leading.lean",
+  "shared": "AHP/round15/shared/seed/R2_Leading.lean",
+  "sha256": "12074eaafe4107864fdc737bddb90001cc00d1ed554dba58fea07e460f9064d3",
+  "lines": 6311,
+  "identical": true
+}

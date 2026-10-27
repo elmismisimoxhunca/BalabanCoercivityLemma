@@ -1,0 +1,39 @@
+{
+  "q": 4,
+  "R": 18,
+  "characters": {
+    "0_1": {
+      "source": "AHP/round15/shared/numerics/characters/q4_R18/c0_1.json",
+      "source_sha256": "379debdbdcd6ab7af10b81bb9e15add17e290c67bdb5411fcce96aa34ef07981",
+      "repaired": "AHP/round15/shared/numerics/R2_repaired/q4_R18/c0_1.json",
+      "repaired_sha256": "0d38c15ad0d6a19b9b7a421d8a55c29a425e9e7507e5153997419e67e0bbb077",
+      "reconstructed_A_equals_C": true,
+      "recomputed_B_and_C_match_retained_exactly": true
+    },
+    "0_15": {
+      "source": "AHP/round15/shared/numerics/characters/q4_R18/c0_15.json",
+      "source_sha256": "753716d0dcc254232c9b03eba85e54a39f6380afe514f7e61b42a00c91f0e586",
+      "repaired": "AHP/round15/shared/numerics/R2_repaired/q4_R18/c0_15.json",
+      "repaired_sha256": "fe57a230145e54cc861a3740016c7742151c8edab26f7bfa3e37122a3677bd30",
+      "reconstructed_A_equals_C": true,
+      "recomputed_B_and_C_match_retained_exactly": true
+    },
+    "1_0": {
+      "source": "AHP/round15/shared/numerics/characters/q4_R18/c1_0.json",
+      "source_sha256": "0cbec6388652c50019b2c474fc6d68ae9d85b89d314ed0f7f5ae40d4f150b668",
+      "repaired": "AHP/round15/shared/numerics/R2_repaired/q4_R18/c1_0.json",
+      "repaired_sha256": "4c5d50e2be967fe0f4609695754fad2473647c98680c0f3cadbadea9471e4f65",
+      "reconstructed_A_equals_C": true,
+      "recomputed_B_and_C_match_retained_exactly": true
+    },
+    "15_0": {
+      "source": "AHP/round15/shared/numerics/characters/q4_R18/c15_0.json",
+      "source_sha256": "930791566105ccc8f43da4f6821362dbd409d89adc1140bdfab62723ef2db0ef",
+      "repaired": "AHP/round15/shared/numerics/R2_repaired/q4_R18/c15_0.json",
+      "repaired_sha256": "8f3ae77e062e97f5c7c8fd2062e7f48049384fc24ec4762b82ae45535b7ec57b",
+      "reconstructed_A_equals_C": true,
+      "recomputed_B_and_C_match_retained_exactly": true
+    }
+  },
+  "qualification": "Exact Schur reconstruction from retained 12-block matrices. Original R1 files are unchanged; numerical physical identification is still not a Lean proof."
+}

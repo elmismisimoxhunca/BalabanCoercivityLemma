@@ -1,0 +1,148 @@
+namespace AdalyFormal.Round12.Kernel.ResponseActual
+open scoped RealInnerProductSpace Topology
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round9.Guarded.AnalyticR1
+open AdalyFormal.Round9.Guarded.AnalyticR2
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round10.Dictionary.Source
+open AdalyFormal.Round10.Dictionary.FreeSource
+open AdalyFormal.Round10.Assembly.R2
+open AdalyFormal.Round10.Assembly.R3
+open AdalyFormal.Round10.Assembly.R4
+open AdalyFormal.GaugeCov
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+open AdalyFormal.Round12.Kernel.Response
+
+theorem double_inner_linear {X : Type*} [NormedAddCommGroup X] [InnerProductSpace ℝ X]
+    (x y : X) (a : ℝ) : 2 * ⟪a • x,y⟫ = a * (2 * ⟪x,y⟫) := by
+  rw [real_inner_smul_left]; ring
+
+/-- Quadraticity of the actual explicit free-profile form; no derivative or regularity. -/
+theorem profileCoupling_quad (q R : ℕ)
+    (f : Bond (scaleUp 2 1 (dilLu q R)) → ℝ) :
+    IsQuadMap (profileCoupling q R f) := by
+  let G := geomOf 2 1 (dilTower q R)
+  let M : FSp G →ₗ[ℝ] ℝ :=
+    { toFun := fun z => 2 * ⟪(flatData q R).H z, profileSourceStencil q R f⟫
+      map_add' := by intros; simp only [map_add, inner_add_left]; ring
+      map_smul' := by
+        intro c z
+        change 2 * ⟪(flatData q R).H (c • z), profileSourceStencil q R f⟫ =
+          c * (2 * ⟪(flatData q R).H z, profileSourceStencil q R f⟫)
+        rw [map_smul]
+        exact double_inner_linear (X := TwistSpace q R) _ _ c }
+  exact ((C2fullOf_quad G (fun _ => 1)).comp_linear
+    (((Wop G (fun _ => 1) 1).comp (iE G)).toLinearMap)).map_linear M
+
+/-- Every actual response gradient in the charged line is a nonnegative scalar
+multiple of the generator's response, with the exact norm ratio. -/
+theorem responseGradient_on_line (q R : ℕ) (u : TwistSpace q R)
+    (hu : u ≠ 0)
+    (hJu : adEL (rotGauge (Real.pi/4)) (geomOf 2 1 (dilTower q R))
+      (adEL (rotGauge (Real.pi/4)) (geomOf 2 1 (dilTower q R)) u) = -u)
+    (v : TwistSpace q R)
+    (hv : v ∈ Submodule.span ℝ {u,
+      adEL (rotGauge (Real.pi/4)) (geomOf 2 1 (dilTower q R)) u}) :
+    responseGradient q R v = (‖v‖^2 / ‖u‖^2) • responseGradient q R u := by
+  apply ext_inner_left ℝ
+  intro f
+  rw [inner_smul_right, ← profileCoupling_gradient q R (fun b => f b),
+    ← profileCoupling_gradient q R (fun b => f b)]
+  exact response_eq_norm_ratio (profileCoupling q R (fun b => f b))
+    (profileCoupling_quad q R _) (adEL (rotGauge (Real.pi/4)) (geomOf 2 1 (dilTower q R)))
+    (profileCoupling_U1 q R _ (Real.pi/4)) u hJu hu v hv
+
+/-- Full physical unit-kernel responses collapse to one point under the ORIGINAL
+KernelLine predicate. No regularity, sector screen, or extra gauge hypothesis. -/
+theorem responseHull_singleton (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (u : TwistSpace q R) (hline : KernelLine q R V u) :
+    responseHull (crossingKernel q R V) (responseGradient q R) =
+      {(‖u‖^2)⁻¹ • responseGradient q R u} := by
+  have himage : responseGradient q R ''
+      {v | v ∈ crossingKernel q R V ∧ ‖v‖ = 1} =
+      {(‖u‖^2)⁻¹ • responseGradient q R u} := by
+    ext z
+    constructor
+    · rintro ⟨v,⟨hv,hn⟩,rfl⟩
+      rw [Set.mem_singleton_iff,
+        responseGradient_on_line q R u hline.1 hline.2.2.1 v (hline.2.2.2 v hv), hn]
+      simp
+    · intro hz
+      rw [Set.mem_singleton_iff] at hz
+      subst z
+      refine ⟨‖u‖⁻¹ • u, ⟨(crossingKernel q R V).smul_mem _ hline.2.1, ?_⟩, ?_⟩
+      · rw [norm_smul, norm_inv, norm_norm, inv_mul_cancel₀ (norm_ne_zero_iff.mpr hline.1)]
+      · rw [responseGradient_smul, inv_pow]
+  rw [responseHull, himage, closedConvexHull_eq_closure_convexHull, convexHull_singleton,
+    isClosed_singleton.closure_eq]
+
+/-- Exact detection/noncancellation equivalence on a whole charged kernel line.
+Unlike the old derivative-based sufficient bridge, this needs no RegularityFacts. -/
+theorem noCancellation_iff_curlDetected_of_kernelLine (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (u : TwistSpace q R) (hline : KernelLine q R V u) :
+    NoResponseCancellation q R V ↔ CurlDetected q R u := by
+  rw [NoResponseCancellation, responseHull_singleton q R V u hline,
+    Set.mem_singleton_iff, eq_comm]
+  change (‖u‖^2)⁻¹ • responseGradient q R u ≠ 0 ↔ CurlDetected q R u
+  rw [smul_ne_zero_iff, responseGradient_ne_zero_iff]
+  simp [hline.1]
+
+/-- Detecting the generator excludes ALL zero-response kernel fields, not only
+the historical oneColor example. The generator detection remains explicit. -/
+theorem all_kernel_detected_of_generator (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (u : TwistSpace q R) (hline : KernelLine q R V u)
+    (hu : CurlDetected q R u) (v : TwistSpace q R)
+    (hv : vacA q R V 1 (vacEdge q R V) v = 0) (hne : v ≠ 0) :
+    CurlDetected q R v := by
+  apply (responseGradient_ne_zero_iff q R v).mp
+  rw [responseGradient_on_line q R u hline.1 hline.2.2.1 v (hline.2.2.2 v hv)]
+  exact smul_ne_zero (div_ne_zero (pow_ne_zero _ (norm_ne_zero_iff.mpr hne))
+    (pow_ne_zero _ (norm_ne_zero_iff.mpr hline.1)))
+    ((responseGradient_ne_zero_iff q R u).mpr hu)
+
+/-- Conditional exclusion of EVERY nonzero zero-full-jet field from this kernel.
+Unlike the R1 oneColor exclusion, no support or color-eigenvector assumption is used. -/
+theorem zeroJet_not_crossing_of_detected_line (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (u : TwistSpace q R) (hline : KernelLine q R V u)
+    (hu : CurlDetected q R u) (v : TwistSpace q R)
+    (hne : v ≠ 0) (hz : vacJet q R v = 0) :
+    vacA q R V 1 (vacEdge q R V) v ≠ 0 := by
+  intro hv
+  have hdet := all_kernel_detected_of_generator q R V u hline hu v hv hne
+  obtain ⟨f,hf⟩ := (exists_profile_iff_curlDetected q R v).mpr hdet
+  apply hf
+  change 2 * ⟪(flatData q R).H (vacJet q R v), profileSourceStencil q R f⟫ = 0
+  rw [hz, map_zero, inner_zero_left, mul_zero]
+
+/-- Direct bridge into the EXACT requested cofinal premise. This is an implication,
+not a proof of its cofinal hypothesis. It removes the old regularity join here. -/
+theorem cofinal_noCancellation_of_curlLine
+    (h : CofinalAnyPathCurlLine) : CofinalAnyPathNoResponseCancellation := by
+  intro j₀
+  obtain ⟨j,hj,hRs⟩ := h j₀
+  refine ⟨j,hj,fun R₀ => ?_⟩
+  obtain ⟨R,hRR,hR,hR18,V,hcont,han,hzero,hneg,u,hline,hcurl⟩ := hRs R₀
+  exact ⟨R,hRR,hR,hR18,V,hcont,han,hzero,hneg,
+    (noCancellation_iff_curlDetected_of_kernelLine (2^j) R V u hline).mpr hcurl⟩
+
+#print axioms double_inner_linear
+#print axioms profileCoupling_quad
+#print axioms responseGradient_on_line
+#print axioms responseHull_singleton
+#print axioms noCancellation_iff_curlDetected_of_kernelLine
+#print axioms all_kernel_detected_of_generator
+#print axioms zeroJet_not_crossing_of_detected_line
+#print axioms cofinal_noCancellation_of_curlLine
+#print axioms AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation
+#print axioms AdalyFormal.Round10.Assembly.R3.CofinalAnyPathCurlLine
+#print axioms AdalyFormal.Round10.Assembly.R2.KernelLine
+end AdalyFormal.Round12.Kernel.ResponseActual

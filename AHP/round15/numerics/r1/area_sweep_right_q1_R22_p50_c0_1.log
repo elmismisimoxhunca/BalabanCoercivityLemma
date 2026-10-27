@@ -1,0 +1,3 @@
+assembled 1 22 1 n 3268 aug 4556 nnz 149038 seconds 1.0699234008789062
+CASE 1 22 0 1 area 3.29317848929e-47 seconds 9.73117446899414
+OUTPUT /home/sebastian/BalabanCoercivityLemma/AHP/round15/numerics/r1/area_sweep_right_q1_R22_p50.json seconds 9.739796876907349

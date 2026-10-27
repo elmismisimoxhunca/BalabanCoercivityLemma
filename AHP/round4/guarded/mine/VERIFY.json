@@ -1,0 +1,87 @@
+{
+  "pin": "AHP/round3/guarded/pin/Statement.lean",
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "attemptMatchesPin": true,
+  "newMathematicalResults": false,
+  "compiledFiles": [
+    {
+      "file": "AHP/round4/guarded/Attempt.lean",
+      "sha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+      "exit": 0,
+      "axiomRecords": 42,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": []
+    },
+    {
+      "file": "AHP/round4/guarded/mine/Trace.lean",
+      "sha256": "997be41715cdddeed3d969052b195c59ec79f1be33a8c06d4b0b5974b1a714f4",
+      "exit": 0,
+      "axiomRecords": 5,
+      "imports": [
+        "TT_F",
+        "MXQ_Br",
+        "MXQ_Tor",
+        "DrEquiv"
+      ],
+      "diagnostics": []
+    },
+    {
+      "file": "AHP/round4/guarded/mine/ChecksV2.lean",
+      "sha256": "370d4b114c24a67ba8d04b608a3e08d2caa00062e68d4d21a9729e05517154e4",
+      "exit": 0,
+      "axiomRecords": 404,
+      "imports": [
+        "TT_F",
+        "MXQ_Br",
+        "MXQ_Tor",
+        "DrEquiv",
+        "MI34",
+        "DLR1"
+      ],
+      "diagnostics": []
+    },
+    {
+      "file": "AHP/round4/guarded/mine/ChecksV3.lean",
+      "sha256": "837ff5697848ef5db52388e263b88cd66e88548de10bc4ca3bc4f222dda35dba",
+      "exit": 0,
+      "axiomRecords": 406,
+      "imports": [
+        "TT_F",
+        "MXQ_Br",
+        "MXQ_Tor",
+        "DrEquiv",
+        "MI34",
+        "DLR1"
+      ],
+      "diagnostics": []
+    },
+    {
+      "file": "AHP/round4/guarded/mine/ChecksExtra.lean",
+      "sha256": "59fc65159c297384b3ea90d3abc4cec46ada6f55664b4e15275e0ab571826e1c",
+      "exit": 0,
+      "axiomRecords": 13,
+      "imports": [
+        "TT_F",
+        "MXQ_Br",
+        "MXQ_Tor",
+        "DrEquiv",
+        "MI34",
+        "DLR1"
+      ],
+      "diagnostics": []
+    }
+  ],
+  "declarations": 419,
+  "allSourceModulesMatch": true,
+  "allSourceSignaturesBalanced": true,
+  "allPermittedAxioms": true,
+  "traceConstantCount": 15162,
+  "report": "AHP/round4/guarded/MINE.md",
+  "reportSha256": "41c91856088142276a6f5cf88738c9a1cf3abbfcd012dceaf9321d97718925b2",
+  "trackedDiffPaths": [
+    "lean/lakefile.toml"
+  ],
+  "scope": "Mining only; pinned guarded goals remain open. Existing unrelated lakefile/Compact work was not edited."
+}

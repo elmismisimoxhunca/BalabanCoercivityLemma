@@ -1,0 +1,228 @@
+{
+  "pass": true,
+  "checks": {
+    "publication_byte_identical": true,
+    "build_hash_current": true,
+    "accepted_source_hash": true,
+    "accepted_log_hash": true,
+    "retained_publication_record_reused": true,
+    "both_lean_exits_zero": true,
+    "no_errors_or_sorryAx": true,
+    "no_forbidden_proof_mechanism": true,
+    "only_frozen_imports": true,
+    "all_main_records_present_once_per_log": true,
+    "all_main_records_permitted": true,
+    "main_statement_is_conditional": true,
+    "radius_cofinal_not_all_indices": true,
+    "old_certificate_weakened": true,
+    "failed_physical_dictionary_not_used": true,
+    "held_out_numerics_pass": true,
+    "held_out_is_unused_q1_R42": true,
+    "candidate_rate_retested": true,
+    "normalized_constant_retested": true,
+    "memory_below_2GiB": true,
+    "partial_q2_probe_excluded": true
+  },
+  "mainDeclarations": [
+    "CofinalRadiusChargedLeadingData",
+    "CofinalRadiusAreaSeed",
+    "cofinalRadiusChargedLeadingData_of_chargedLeading",
+    "cofinalRadiusAreaSeed_of_cofinalRadiusChargedLeadingData",
+    "CofinalRadiusChargedLeadingCertificate",
+    "cofinalRadiusChargedLeadingCertificate_of_cofinalChargedLeading",
+    "cofinalAreaSeed_of_cofinalRadiusChargedLeading",
+    "goalNeg2_of_cofinalRadiusChargedLeading",
+    "goalNeg2_of_cofinalAreaSeed"
+  ],
+  "baseDeclarationsChecked": [
+    "goalNeg2_of_areaSeed",
+    "goalNeg2_of_unitAreaSeed",
+    "goalNeg2_of_cofinalAreaSeed",
+    "goalNeg2_of_laurentAreaSeed",
+    "goalNeg2_of_dominantAreaSeed",
+    "goalNeg2_of_unitDominantAreaSeed",
+    "goalNeg2_of_chargedLeading",
+    "CofinalChargedLeadingCertificate",
+    "cofinalUnitDominantAreaSeed_of_cofinalChargedLeading",
+    "goalNeg2_of_cofinalChargedLeading"
+  ],
+  "axiomRecords": {
+    "AHP/round15/assembly/r2/AreaGoal.lean.log": {
+      "CofinalRadiusChargedLeadingData": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "CofinalRadiusAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalRadiusChargedLeadingData_of_chargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalRadiusAreaSeed_of_cofinalRadiusChargedLeadingData": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "CofinalRadiusChargedLeadingCertificate": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalRadiusChargedLeadingCertificate_of_cofinalChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalAreaSeed_of_cofinalRadiusChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalRadiusChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ]
+    },
+    "AHP/round15/shared/assembly/R2_AreaGoal.lean.log": {
+      "CofinalRadiusChargedLeadingData": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "CofinalRadiusAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalRadiusChargedLeadingData_of_chargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalRadiusAreaSeed_of_cofinalRadiusChargedLeadingData": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "CofinalRadiusChargedLeadingCertificate": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalRadiusChargedLeadingCertificate_of_cofinalChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "cofinalAreaSeed_of_cofinalRadiusChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalRadiusChargedLeading": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ],
+      "goalNeg2_of_cofinalAreaSeed": [
+        [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      ]
+    }
+  },
+  "source": {
+    "path": "AHP/round15/assembly/r2/AreaGoal.lean",
+    "published": "AHP/round15/shared/assembly/R2_AreaGoal.lean",
+    "lines": 15591,
+    "sha256": "a6d141eb46842741e72e9b8dd758fa1203c0dfa53c6b07a64ef6d86bf1ced5dc"
+  },
+  "heldOutEvidence": {
+    "path": "AHP/round15/assembly/r2/HELD_OUT.json",
+    "qualification": "Finite non-interval numerical evidence only. The primary q=1,R=42 case is outside every R=18,...,40 direct sweep used by numerics R1. Stable positive tangential aggregates, the candidate rho^8 rate, and a stable normalized constant do not prove an exact recurrence, RadiusDominantData, a matrix limit, a nonzero leading coefficient, AreaSeedRightStar, P3, CofinalP3, or GoalNeg2. Large cell/sum ratios rule out a naive common-sign shortcut. Doubling a physical aggregate only applies the compiled aggregate=(1/2)*areaSum dictionary.",
+    "candidateRates": [
+      {
+        "direction": 0,
+        "candidate_rho_pow8": "0.00007446438830808222443183745580375456520020185904700553553955679980126818477146107249566456125428893140984359253502664898563515499658441960441433821528782654136577744080228429011839799856701573",
+        "R36_to_R42_geometric_mean_rate": "0.00007446438830765302956166729485830716219966579416855918038137202597740574152358923012935590932126095072951449872309896782786043948920710025216104528654735407083976083352311439920731965479371483",
+        "relative_difference": "0.000000000005763760099585440934204030284082610038006002599359114753452478195629059100184285778876885141579083154949293952765701568852887227688669853319912505690713681622222454705768248838807842761538648"
+      },
+      {
+        "direction": 1,
+        "candidate_rho_pow8": "0.00007446438830808222443183745580375456520020185904700553553955679980126818477146107249566456125428893140984359253502664898563515499658441960441433821528782654136577744080228429011839799856701573",
+        "R36_to_R42_geometric_mean_rate": "0.00007446438830789606711934094332236945310978482770445092729493784450895305034473036098813935813268890959469103891376109583016319610656421329983964952310419457551067863466918307088241327296114065",
+        "relative_difference": "0.00000000000249995087217156818258122568450870796677019778068486664427385626026644614727723087137071090961855109768156306566144351671590810105850794690146777617883187710926516348405524597019776486213928"
+      },
+      {
+        "direction": 2,
+        "candidate_rho_pow8": "0.00007446438830808222443183745580375456520020185904700553553955679980126818477146107249566456125428893140984359253502664898563515499658441960441433821528782654136577744080228429011839799856701573",
+        "R36_to_R42_geometric_mean_rate": "0.00007446438830789615869648096733093123383701832952156382200270168464650074215689340338585592406863775155528472172195734768470525429065787399322072867196471773903877166356354219987131032343779155",
+        "relative_difference": "0.000000000002498721060954357539738753833897859662542755227195964680707666872122210656040451104873613544232112525478189776387846444607653637715542258460022490991835228467564059289047267157498152518194439"
+      }
+    ],
+    "normalizedConstants": [
+      {
+        "dps": 120,
+        "areaSum_evidence_only": "2.733800645076869969021468381026641858075158062849443728273731676278451601123701988059422740017952421983939575574462e-89",
+        "normalized_full_area_constant": "0.01336120689316480408093461539364719129236994505232449543852528918499339872310929291184496515405560403780209628839663737347381972884063139546419645203854018336651773834098108538496855246197219",
+        "direct_R40_constant": "0.013361206893163350347922853212791184761977075727611479605501179451",
+        "relative_difference": "0.0000000000001088025223609122902400663659644367225934226800460491571013497933213730677648140227484559700730989223027363296132032957129711636471256056822489946618408069227077537891179633029415799536227143"
+      },
+      {
+        "dps": 155,
+        "areaSum_evidence_only": "2.73380064507686996902146838102664185807515806284944372827373167627845160112370198805942274001795242198376489205693877525607887390087832757860456173998e-89",
+        "normalized_full_area_constant": "0.01336120689316480408093461539364719129236994505232449543852528918499339872310929291184496515405560403780124253828041850867519754124733170657902764193432162733667671781132690141061982092559345",
+        "direct_R40_constant": "0.013361206893163350347922853212791184761977075727611479605501179451",
+        "relative_difference": "0.0000000000001088025223609122902400663659644367225934226800460491571013497933213730677648140227484559700092012427708288604486819517657039750520310393272565992066601640115692280190614992188611127538472589"
+      }
+    ]
+  },
+  "boundary": "All goal arrows are conditional on their displayed physical inputs. The new matrix certificate requires only cofinally many radii at each selected dyadic scale. No AreaSeedRightStar, CofinalUnitDominantAreaSeed, charged-leading certificate, P3, CofinalP3, or GoalNeg2 inhabitant is asserted. The unfinished dictionary R2 physical dictionary and the unassembled seed R2 vector certificate are not used. The retained publication log records an earlier successful compilation of the identical source; no independent recompilation is claimed."
+}

@@ -1,0 +1,88 @@
+'AdalyFormal.Round10.Nonvanishing.Flux.flux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.curl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.sum_curl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.flux_eq_of_curl_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.flux_zero_of_curl_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.coarseFlux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.exists_curl_of_coarseFlux' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.exists_curl_of_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.sum_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.exists_curl_of_blockRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.Slice' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.site' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.site_zero' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.site_one' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.site_two' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.shift1' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.shift2' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.shift_site_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.shift_site_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.shift_site_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.component' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.plaq01' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.plaq02' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.curl01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.curl02' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.sum_curl01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.sum_curl02' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.exists_curl01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.exists_curl02' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.TorusFlux.flux_zero_of_layer_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.mkS' depends on axioms: [propext]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val' depends on axioms: [propext]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val0' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val1' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val2' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_eta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.shift_val_self' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.shift_val_ne' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.shift_mkS1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_mem_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Coordinate.sum_block_eq_cube' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.Qfull_level_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.C2full_level_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.collar_flux_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.sum_Q1jet_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.Qfull_level_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.sum_Qfull_level_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.exists_curl_of_constrained_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.tiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.site_tiling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.qOnePathSum_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.sum_qOnePathSum_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PhysicalBlocking.exists_curl_of_qOnePathSum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

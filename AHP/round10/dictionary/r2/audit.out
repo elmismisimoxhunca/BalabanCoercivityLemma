@@ -1,0 +1,89 @@
+{
+  "passAudit": true,
+  "goalNeg2_proved": false,
+  "round9_coupling_premise_proved": false,
+  "actual_tridiagonal_source_identification_proved": false,
+  "actual_source_derivative_stencil_proved": true,
+  "actual_Hstar_source_neutral_proved": true,
+  "sourceCertificate_is_conditional": true,
+  "published_identical": true,
+  "copied_fragments_verified": 26,
+  "results": [
+    {
+      "path": "AHP/round10/dictionary/r2/PhaseSource.lean",
+      "lines": 243,
+      "sha256": "26c1cdaa9b243487fc9cdbed3941cf0a030784c1b5e50b7db090d24996ecb94a",
+      "exitCode": 0,
+      "dependencyRecords": 30,
+      "dictionaryDeclarations": 30,
+      "newDictionaryDeclarations": 30,
+      "unprintedNewDeclarations": [],
+      "missingPrints": [],
+      "nonstandardAxioms": {},
+      "diagnostics": [],
+      "prohibitedTokens": [],
+      "imports": [
+        "DrEquiv"
+      ],
+      "fresh": true,
+      "passAudit": true
+    },
+    {
+      "path": "AHP/round10/dictionary/r2/KKT.lean",
+      "lines": 100,
+      "sha256": "0ca4985cb692685250a5d9059bf74ed4a6b6e5a77251551ed988bddbc199192a",
+      "exitCode": 0,
+      "dependencyRecords": 9,
+      "dictionaryDeclarations": 9,
+      "newDictionaryDeclarations": 9,
+      "unprintedNewDeclarations": [],
+      "missingPrints": [],
+      "nonstandardAxioms": {},
+      "diagnostics": [],
+      "prohibitedTokens": [],
+      "imports": [
+        "DrEquiv"
+      ],
+      "fresh": true,
+      "passAudit": true
+    },
+    {
+      "path": "AHP/round10/dictionary/r2/Source.lean",
+      "lines": 1055,
+      "sha256": "c52d96a2771eeb36394eb65fd39859c792834615ff9224faa9139ce39c90ee93",
+      "exitCode": 0,
+      "dependencyRecords": 88,
+      "dictionaryDeclarations": 64,
+      "newDictionaryDeclarations": 63,
+      "unprintedNewDeclarations": [],
+      "missingPrints": [],
+      "nonstandardAxioms": {},
+      "diagnostics": [],
+      "prohibitedTokens": [],
+      "imports": [
+        "DrEquiv"
+      ],
+      "fresh": true,
+      "passAudit": true
+    },
+    {
+      "path": "AHP/round10/shared/dictionary/R2_SourceDictionary.lean",
+      "lines": 1055,
+      "sha256": "c52d96a2771eeb36394eb65fd39859c792834615ff9224faa9139ce39c90ee93",
+      "exitCode": 0,
+      "dependencyRecords": 88,
+      "dictionaryDeclarations": 64,
+      "newDictionaryDeclarations": 63,
+      "unprintedNewDeclarations": [],
+      "missingPrints": [],
+      "nonstandardAxioms": {},
+      "diagnostics": [],
+      "prohibitedTokens": [],
+      "imports": [
+        "DrEquiv"
+      ],
+      "fresh": true,
+      "passAudit": true
+    }
+  ]
+}

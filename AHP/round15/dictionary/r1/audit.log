@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "checks_failed": [],
+  "axiom_records": [
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r1/Collar.lean.log",
+      "count": 26
+    },
+    {
+      "file": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/dictionary/R1_Collar.lean.log",
+      "count": 26
+    }
+  ],
+  "source_sha256": "86612ee79e4b431df90da21404e224a6a4de1b907aa10ea18f826c64bb100936"
+}

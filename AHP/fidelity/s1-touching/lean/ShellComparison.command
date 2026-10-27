@@ -1,0 +1,1 @@
+export PATH=$HOME/.elan/bin:$PATH; cd /home/sebastian/BalabanCoercivityLemma/lean; "$BB_CLI" heavy run -- lake env lean ../AHP/fidelity/s1-touching/lean/ShellComparison.lean > ../AHP/fidelity/s1-touching/lean/ShellComparison.log 2>&1; echo $? > ../AHP/fidelity/s1-touching/lean/ShellComparison.exit

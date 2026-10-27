@@ -1,0 +1,12 @@
+{'pattern': 'center_minus_one', 'rep': 0, 'lambda_min': -8.94707355695241, 'residual': 9.910361743223537e-13, 'abelian_gap': np.float64(3.375077994860476e-14)}
+{'pattern': 'orthogonal_axes_pi_half', 'rep': 0, 'lambda_min': -3.465969529872079, 'residual': 2.2638542499324166e-13}
+{'pattern': 'haar', 'rep': 0, 'lambda_min': -4.807116208267911, 'residual': 4.999178259820971e-12}
+{'pattern': 'haar', 'rep': 1, 'lambda_min': -5.2077122173482735, 'residual': 1.5574353363491929e-12}
+{'pattern': 'haar', 'rep': 2, 'lambda_min': -4.824923982164492, 'residual': 2.7385728195778973e-11}
+{'pattern': 'haar', 'rep': 3, 'lambda_min': -4.985322294041999, 'residual': 3.6275178906836706e-12}
+{'pattern': 'haar', 'rep': 4, 'lambda_min': -4.806571196917567, 'residual': 4.179778109452173e-12}
+{'pattern': 'near_center', 'rep': 0, 'lambda_min': -8.455117494875294, 'residual': 7.22824200476913e-11}
+{'pattern': 'near_center', 'rep': 1, 'lambda_min': -8.487407666196114, 'residual': 8.467974519844376e-11}
+{'pattern': 'near_center', 'rep': 2, 'lambda_min': -8.533915329297045, 'residual': 6.44859919168903e-11}
+{'pattern': 'near_center', 'rep': 3, 'lambda_min': -8.514040461722551, 'residual': 1.1515763226425317e-11}
+{'pattern': 'near_center', 'rep': 4, 'lambda_min': -8.521950133921372, 'residual': 3.693965359377173e-11}

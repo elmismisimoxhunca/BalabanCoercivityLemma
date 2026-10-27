@@ -1,0 +1,25 @@
+{
+  "source": "AHP/round3/s3-rest/r1-prove/Attempt.lean",
+  "sourceSha256": "9aa7238ddbff572aea7b0f0394eb22325280451f46087ec6e99da0f3518ae6a2",
+  "pinSha256": "799b0124e2075c575d18c83c68af06e8501f6ee50f9d88b57647d8c2deb9ab3b",
+  "logSha256": "52ec1e17af570e49ac1a7a63577c41d768238408a071e7f7207f6c1991628115",
+  "pinByteIdenticalPrefix": true,
+  "roundTwoProofBlockByteIdentical": true,
+  "imports": [
+    "ZT5A"
+  ],
+  "forbiddenRawHits": [],
+  "declarationCount": 143,
+  "explicitPrintCount": 143,
+  "declarationsWithoutPrint": [],
+  "printsWithoutLogRecord": [],
+  "dependencyRecordCount": 143,
+  "nonstandardDependencyRecords": [],
+  "errors": [],
+  "warnings": 28,
+  "exitCode": 0,
+  "mainDeclaration": "AdalyFormal.Round3.S3Rest.goalPos2_proved",
+  "exactMainHeader": true,
+  "mainAxiomLine": "'AdalyFormal.Round3.S3Rest.goalPos2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "passes": true
+}

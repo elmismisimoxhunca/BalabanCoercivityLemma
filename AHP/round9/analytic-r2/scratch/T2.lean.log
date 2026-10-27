@@ -1,0 +1,32 @@
+@sum_apply : ∀ {F : Type u_1} {α : Type u_2} {β : Type u_3} {ι : Type u_4} [inst : FunLike F α β]
+  [inst_1 : AddCommMonoid β] [inst_2 : AddCommMonoid F] [IsZeroApply F α β] [IsAddApply F α β] (s : Finset ι)
+  (f : ι → F) (x : α), (∑ i ∈ s, f i) x = ∑ i ∈ s, (f i) x
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/T2.lean:8:8: warning: `ContinuousLinearMap.coe_sum'` has been deprecated: Use `FunLike.coe_sum` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.coe_sum'` to `FunLike.coe_sum x`).
+@ContinuousLinearMap.coe_sum' : ∀ {F : Type u_1} {α : Type u_2} {β : Type u_3} {ι : Type u_4} [inst : FunLike F α β]
+  [inst_1 : AddCommMonoid β] [inst_2 : AddCommMonoid F] [IsZeroApply F α β] [IsAddApply F α β] (s : Finset ι)
+  (f : ι → F), ⇑(∑ i ∈ s, f i) = ∑ i ∈ s, ⇑(f i)
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/T2.lean:9:8: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+@ContinuousLinearMap.sum_apply : ∀ {F : Type u_1} {α : Type u_2} {β : Type u_3} {ι : Type u_4} [inst : FunLike F α β]
+  [inst_1 : AddCommMonoid β] [inst_2 : AddCommMonoid F] [IsZeroApply F α β] [IsAddApply F α β] (s : Finset ι)
+  (f : ι → F) (x : α), (∑ i ∈ s, f i) x = ∑ i ∈ s, (f i) x
+@continuous_finsetSum : ∀ {ι : Type u_1} {M : Type u_2} {X : Type u_3} [inst : TopologicalSpace X]
+  [inst_1 : TopologicalSpace M] [inst_2 : AddCommMonoid M] [ContinuousAdd M] {f : ι → X → M} (s : Finset ι),
+  (∀ i ∈ s, Continuous (f i)) → Continuous fun a => ∑ i ∈ s, f i a
+@Qlev_apply : ∀ {L : PeriodicLatticeExtent} (G : TowerGeom L) (U : Cfg L) (j : ℕ) (y : PeriodicLatticeSite L)
+  (f : SiteL2 L), (Qlev G U j y) f = AdalyFormal.Balaban.QjComposite.Qcomposite (bgTower G U) G.ell j f.ofLp y
+@AdalyFormal.Balaban.QjComposite.Qcomposite_succ : ∀ {L : PeriodicLatticeExtent}
+  (bg : ℕ → PeriodicLinkConfiguration (↥(Matrix.specialUnitaryGroup (Fin 2) ℂ)) L) (ell j : ℕ)
+  (lam : PeriodicLatticeSite L → ↥SuTwo),
+  AdalyFormal.Balaban.QjComposite.Qcomposite bg ell (j + 1) lam =
+    AdalyFormal.Balaban.QjComposite.stepAverage (ell ^ j) (bg j) ell
+      (AdalyFormal.Balaban.QjComposite.Qcomposite bg ell j lam)
+@AdalyFormal.M1Site.QpP_inr : ∀ {L : PeriodicLatticeExtent} (G : TowerGeom L) (U : Cfg L) (a : ℝ) (f : SiteL2 L)
+  (x : AdalyFormal.M1Site.OffIdx G), ((AdalyFormal.M1Site.QpP G U a) f).ofLp (Sum.inr x) = f.ofLp ↑x
+@AdalyFormal.M1Site.QpP_inl : ∀ {L : PeriodicLatticeExtent} (G : TowerGeom L) (U : Cfg L) (a : ℝ) (f : SiteL2 L)
+  (q : AdalyFormal.M1Site.QIdx G),
+  ((AdalyFormal.M1Site.QpP G U a) f).ofLp (Sum.inl q) =
+    √(AdalyFormal.M1Site.wq G a ↑(↑q).1) • (Qlev G U (↑(↑q).1) (↑q).2) ((siteMask G.Om0) f)

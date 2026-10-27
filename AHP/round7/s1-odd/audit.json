@@ -1,0 +1,325 @@
+{
+  "round3_pin_byte_prefix": true,
+  "round7_pin_verbatim_in_proof": true,
+  "round3_helpers_verbatim": true,
+  "slice_body_same_modulo_whitespace": true,
+  "round3_pin_sha256": "dff1d868790779a2def248238b348234402a065760bdb0d0c9b675136fe7cf9f",
+  "round3_helper_block_sha256": "3f811d543efbafaa8f50301175632072f31cdc7fd5354a6c9cd06cb928113395",
+  "mass_range": "0 < a < 4",
+  "goals": {
+    "Round7.S1Odd.Goal1": "Round7.S1Odd.goal1_proved",
+    "Round7.S1Odd.Goal2": "Round7.S1Odd.goal2_proved"
+  },
+  "files": [
+    {
+      "path": "AHP/round7/s1-odd/pin/Statement.lean",
+      "source_sha256": "0c7cc8458e7d862e549c8e091325d906c3c448fb0ac7f08c9827a62cac9f3e4f",
+      "command": "AHP/round3/lean1.sh AHP/round7/s1-odd/pin/Statement.lean",
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0,
+      "dependency_records": 13,
+      "dependencies": {
+        "Round3.S1Proper.plaqCorner": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.TouchBond": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.CoversPlaqFour": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.CurlReadsTouch": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.PerCubeRegularTouch": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.ClassCoupledFour": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.selCorner": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.P428TouchFour": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.GoalPos1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.GoalNeg1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.P428TouchFourAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.Goal1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.Goal2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log_sha256": "42db70e413fa657a8241cf2668971d72d386929c44fc5cfc7f8e58b9406b2f02",
+      "imports": [
+        {
+          "module": "D1Lit",
+          "source": "lean/src/D1Lit.lean",
+          "source_sha256": "6f32d4e95f7dd6a2db691e629630b3cd25df182da6c228d1a5b3de1e78da799c"
+        }
+      ],
+      "forbidden_raw_tokens": []
+    },
+    {
+      "path": "AHP/round7/s1-odd/proof/Attempt.lean",
+      "source_sha256": "ab650454a68e454ad582a68d1d684ef703e1e06eeb31c5c13a33e9c42801d2ac",
+      "command": "AHP/round3/lean1.sh AHP/round7/s1-odd/proof/Attempt.lean",
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0,
+      "dependency_records": 41,
+      "dependencies": {
+        "Round3.S1Proper.plaqCorner": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.TouchBond": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.CoversPlaqFour": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.CurlReadsTouch": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.PerCubeRegularTouch": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.ClassCoupledFour": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.selCorner": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.P428TouchFour": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.GoalPos1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.GoalNeg1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.P428TouchFourAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.Goal1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.Goal2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.edge_not_touch_of_not_corner": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.deltaKLocCLM_eq_univ_of_zero_off": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.deltaKLocCLM_corner_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.corner_Dpi_eq_all": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.corner_Ginv_eq_all": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.headline_iff_slices": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.not_touchFour_every_ell": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.goal1_proved": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.goal2_proved": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round7.S1Odd.round3_negative_recovered": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.four_touch_cubeBond_of_transverse": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.slabNv_transverse": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.slabNv_coversFour": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.perCubeRegularTouch_of_one_on_touch": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.Uth_one_on_touch": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.Uth_perCubeRegularTouch": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Round3.S1Proper.exists_nonunit_corner_Ginv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.slabGeo_inst": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.nv_widths": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.scaleUp_nv": [
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.slab3_admissible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.slab3_coversp": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.D1Literal.SlabNv_bdpt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.torusOK_nv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.lambdaOK2_nv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.NonVac.BseedNv_props": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.D1Literal.exists_nonunit_Ginv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.D1Literal.not_InstIneqS_of_not_unit": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "log_sha256": "01fabc5a3acc4412161d81f8c7cad255cb3b98496a6a1415627d48018727f32d",
+      "imports": [
+        {
+          "module": "D1Final",
+          "source": "lean/src/D1Final.lean",
+          "source_sha256": "9059c73432d5fdd6c5b00151ad1ffb130004433aad7ab12a8bb1491389a69635"
+        },
+        {
+          "module": "GdPlaq",
+          "source": "lean/src/GdPlaq.lean",
+          "source_sha256": "346966d9a07886ae8ab284cf885079b80ab6f2e3edadc78307da7af750107570"
+        },
+        {
+          "module": "D1Lit",
+          "source": "lean/src/D1Lit.lean",
+          "source_sha256": "6f32d4e95f7dd6a2db691e629630b3cd25df182da6c228d1a5b3de1e78da799c"
+        }
+      ],
+      "forbidden_raw_tokens": []
+    }
+  ]
+}

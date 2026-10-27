@@ -1,0 +1,830 @@
+{
+  "unit_tests_ok": true,
+  "unit_tests": [
+    {
+      "phi": 0.0,
+      "Q": 1.0,
+      "second": 0.0,
+      "expect_cos": 1.0,
+      "ok": true
+    },
+    {
+      "phi": 1.5707963267948966,
+      "Q": 1.1102230246251565e-16,
+      "second": 0.0,
+      "expect_cos": 0.0,
+      "ok": true
+    },
+    {
+      "phi": 3.141592653589793,
+      "Q": -1.0,
+      "second": 0.0,
+      "expect_cos": -1.0,
+      "ok": true
+    },
+    {
+      "phi": 1.0471975511965976,
+      "Q": 0.5000000000000001,
+      "second": 0.0,
+      "expect_cos": 0.5000000000000001,
+      "ok": true
+    },
+    {
+      "two_edge": true,
+      "Q": 0.8430151183100703,
+      "second": 0.0,
+      "expect": 0.8430151183100703,
+      "ok": true
+    },
+    {
+      "frob_diag": 1.4142135623730951,
+      "expect_sqrt2": 1.4142135623730951,
+      "ok": true
+    },
+    {
+      "hs_T1": 1.0,
+      "ok": true
+    }
+  ],
+  "families": [],
+  "geometries": [
+    {
+      "n_touch": 128,
+      "n_in": 64,
+      "n_all": 192,
+      "touch_minus_in": 64,
+      "forced_corners": 64,
+      "outer_plaquettes_in_plaqIn_of_forced": 3,
+      "example_outer": [
+        {
+          "base": [
+            2,
+            0,
+            0
+          ],
+          "dirs": [
+            0,
+            1
+          ],
+          "corners": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ]
+          ]
+        }
+      ],
+      "forced_is_M2_block_closed": true,
+      "omega_is_M2_block_closed": true,
+      "one_neighborhood_equals_omega": false,
+      "rewrite_impossible": true,
+      "label": "slab_N4_W2",
+      "N": 4,
+      "width": 2,
+      "n_omega": 32,
+      "n_touch_bonds": 112,
+      "n_both_bonds": 80,
+      "n_read_bonds": 176,
+      "n_far_bonds": 80,
+      "read_intersect_far": 64,
+      "touch_intersect_far": 0,
+      "proper_nonempty": true,
+      "uth": {
+        "pi": {
+          "theta": "pi",
+          "rayleigh": {
+            "touch": -4.0,
+            "in": 0.0,
+            "all": -4.0,
+            "expect_touch": -4.0,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -10.000000000000004,
+            "max": 9.899494936611658,
+            "n_neg": 64,
+            "n_zero": 81,
+            "dim": 192
+          },
+          "in_spectrum_min": -3.3109876360879905e-15
+        },
+        "pi_over_2": {
+          "theta": "pi_over_2",
+          "rayleigh": {
+            "touch": 2.4492935982947064e-16,
+            "in": 0.0,
+            "all": 2.4492935982947064e-16,
+            "expect_touch": 2.4492935982947064e-16,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -4.3900949262746835e-15,
+            "max": 10.000000000000007,
+            "n_neg": 0,
+            "n_zero": 145,
+            "dim": 192
+          },
+          "in_spectrum_min": -3.3109876360879905e-15
+        },
+        "pi_over_4": {
+          "theta": "pi_over_4",
+          "rayleigh": {
+            "touch": 2.8284271247461903,
+            "in": 0.0,
+            "all": 2.8284271247461903,
+            "expect_touch": 2.8284271247461903,
+            "ok": true
+          }
+        },
+        "zero": {
+          "theta": "zero",
+          "rayleigh": {
+            "touch": 4.0,
+            "in": 0.0,
+            "all": 4.0,
+            "expect_touch": 4.0,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -4.404201110036513e-15,
+            "max": 11.414213562373092,
+            "n_neg": 0,
+            "n_zero": 81,
+            "dim": 192
+          },
+          "in_spectrum_min": -3.3109876360879905e-15
+        }
+      }
+    },
+    {
+      "n_touch": 288,
+      "n_in": 144,
+      "n_all": 648,
+      "touch_minus_in": 144,
+      "forced_corners": 144,
+      "outer_plaquettes_in_plaqIn_of_forced": 3,
+      "example_outer": [
+        {
+          "base": [
+            2,
+            0,
+            0
+          ],
+          "dirs": [
+            1,
+            2
+          ],
+          "corners": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "forced_is_M2_block_closed": false,
+      "omega_is_M2_block_closed": true,
+      "one_neighborhood_equals_omega": false,
+      "rewrite_impossible": true,
+      "label": "slab_N6_W2",
+      "N": 6,
+      "width": 2,
+      "n_omega": 72,
+      "n_touch_bonds": 252,
+      "n_both_bonds": 180,
+      "n_read_bonds": 396,
+      "n_far_bonds": 396,
+      "read_intersect_far": 144,
+      "touch_intersect_far": 0,
+      "proper_nonempty": true,
+      "uth": {
+        "pi": {
+          "theta": "pi",
+          "rayleigh": {
+            "touch": -4.0,
+            "in": 0.0,
+            "all": -4.0,
+            "expect_touch": -4.0,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -9.99999999999999,
+            "max": 9.899494936611642,
+            "n_neg": 144,
+            "n_zero": 397,
+            "dim": 648
+          },
+          "in_spectrum_min": -3.2715889525256275e-15
+        },
+        "pi_over_2": {
+          "theta": "pi_over_2",
+          "rayleigh": {
+            "touch": 2.4492935982947064e-16,
+            "in": 0.0,
+            "all": 2.4492935982947064e-16,
+            "expect_touch": 2.4492935982947064e-16,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -6.4085850115440615e-15,
+            "max": 10.00000000000001,
+            "n_neg": 0,
+            "n_zero": 541,
+            "dim": 648
+          },
+          "in_spectrum_min": -3.2715889525256275e-15
+        },
+        "pi_over_4": {
+          "theta": "pi_over_4",
+          "rayleigh": {
+            "touch": 2.8284271247461903,
+            "in": 0.0,
+            "all": 2.8284271247461903,
+            "expect_touch": 2.8284271247461903,
+            "ok": true
+          }
+        },
+        "zero": {
+          "theta": "zero",
+          "rayleigh": {
+            "touch": 4.0,
+            "in": 0.0,
+            "all": 4.0,
+            "expect_touch": 4.0,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -5.546153277795999e-15,
+            "max": 11.4142135623731,
+            "n_neg": 0,
+            "n_zero": 397,
+            "dim": 648
+          },
+          "in_spectrum_min": -3.2715889525256275e-15
+        }
+      }
+    },
+    {
+      "n_touch": 504,
+      "n_in": 360,
+      "n_all": 648,
+      "touch_minus_in": 144,
+      "forced_corners": 216,
+      "outer_plaquettes_in_plaqIn_of_forced": 3,
+      "example_outer": [
+        {
+          "base": [
+            4,
+            0,
+            0
+          ],
+          "dirs": [
+            0,
+            1
+          ],
+          "corners": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              5,
+              1,
+              0
+            ]
+          ]
+        }
+      ],
+      "forced_is_M2_block_closed": true,
+      "omega_is_M2_block_closed": true,
+      "one_neighborhood_equals_omega": false,
+      "rewrite_impossible": true,
+      "label": "slab_N6_W4",
+      "N": 6,
+      "width": 4,
+      "n_omega": 144,
+      "n_touch_bonds": 468,
+      "n_both_bonds": 396,
+      "n_read_bonds": 612,
+      "n_far_bonds": 180,
+      "read_intersect_far": 144,
+      "touch_intersect_far": 0,
+      "proper_nonempty": true,
+      "uth": {
+        "pi": {
+          "theta": "pi",
+          "rayleigh": {
+            "touch": -4.0,
+            "in": 0.0,
+            "all": -4.0,
+            "expect_touch": -4.0,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -9.949874371066192,
+            "max": 11.391032434695157,
+            "n_neg": 144,
+            "n_zero": 253,
+            "dim": 648
+          },
+          "in_spectrum_min": -6.661338147750939e-15
+        },
+        "pi_over_2": {
+          "theta": "pi_over_2",
+          "rayleigh": {
+            "touch": 2.4492935982947064e-16,
+            "in": 0.0,
+            "all": 2.4492935982947064e-16,
+            "expect_touch": 2.4492935982947064e-16,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -6.223128944278012e-15,
+            "max": 11.414213562373103,
+            "n_neg": 0,
+            "n_zero": 397,
+            "dim": 648
+          },
+          "in_spectrum_min": -6.661338147750939e-15
+        },
+        "pi_over_4": {
+          "theta": "pi_over_4",
+          "rayleigh": {
+            "touch": 2.8284271247461903,
+            "in": 0.0,
+            "all": 2.8284271247461903,
+            "expect_touch": 2.8284271247461903,
+            "ok": true
+          }
+        },
+        "zero": {
+          "theta": "zero",
+          "rayleigh": {
+            "touch": 4.0,
+            "in": 0.0,
+            "all": 4.0,
+            "expect_touch": 4.0,
+            "ok": true
+          },
+          "touch_spectrum": {
+            "min": -5.389330970072235e-15,
+            "max": 11.732050807568868,
+            "n_neg": 0,
+            "n_zero": 253,
+            "dim": 648
+          },
+          "in_spectrum_min": -6.661338147750939e-15
+        }
+      }
+    },
+    {
+      "n_touch": 512,
+      "n_in": 256,
+      "n_all": 1536,
+      "touch_minus_in": 256,
+      "forced_corners": 256,
+      "outer_plaquettes_in_plaqIn_of_forced": 3,
+      "example_outer": [
+        {
+          "base": [
+            2,
+            0,
+            0
+          ],
+          "dirs": [
+            1,
+            2
+          ],
+          "corners": [
+            [
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "forced_is_M2_block_closed": false,
+      "omega_is_M2_block_closed": true,
+      "one_neighborhood_equals_omega": false,
+      "rewrite_impossible": true,
+      "label": "slab_N8_W2",
+      "N": 8,
+      "width": 2,
+      "n_omega": 128,
+      "n_touch_bonds": 448,
+      "n_both_bonds": 320,
+      "n_read_bonds": 704,
+      "n_far_bonds": 1088,
+      "read_intersect_far": 256,
+      "touch_intersect_far": 0,
+      "proper_nonempty": true,
+      "uth": {
+        "pi": {
+          "theta": "pi",
+          "rayleigh": {
+            "touch": -4.0,
+            "in": 0.0,
+            "all": -4.0,
+            "expect_touch": -4.0,
+            "ok": true
+          }
+        },
+        "pi_over_2": {
+          "theta": "pi_over_2",
+          "rayleigh": {
+            "touch": 2.4492935982947064e-16,
+            "in": 0.0,
+            "all": 2.4492935982947064e-16,
+            "expect_touch": 2.4492935982947064e-16,
+            "ok": true
+          }
+        },
+        "pi_over_4": {
+          "theta": "pi_over_4",
+          "rayleigh": {
+            "touch": 2.8284271247461903,
+            "in": 0.0,
+            "all": 2.8284271247461903,
+            "expect_touch": 2.8284271247461903,
+            "ok": true
+          }
+        },
+        "zero": {
+          "theta": "zero",
+          "rayleigh": {
+            "touch": 4.0,
+            "in": 0.0,
+            "all": 4.0,
+            "expect_touch": 4.0,
+            "ok": true
+          }
+        }
+      }
+    },
+    {
+      "n_touch": 54,
+      "n_in": 6,
+      "n_all": 1536,
+      "touch_minus_in": 48,
+      "forced_corners": 56,
+      "outer_plaquettes_in_plaqIn_of_forced": 3,
+      "example_outer": [
+        {
+          "base": [
+            0,
+            0,
+            2
+          ],
+          "dirs": [
+            0,
+            1
+          ],
+          "corners": [
+            [
+              0,
+              0,
+              2
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ]
+          ]
+        }
+      ],
+      "forced_is_M2_block_closed": false,
+      "omega_is_M2_block_closed": true,
+      "one_neighborhood_equals_omega": false,
+      "rewrite_impossible": true,
+      "label": "cube_compare",
+      "N": 8,
+      "width": null,
+      "n_omega": 8,
+      "n_touch_bonds": 36,
+      "n_both_bonds": 12,
+      "n_read_bonds": 108,
+      "n_far_bonds": 1500,
+      "read_intersect_far": 72,
+      "touch_intersect_far": 0,
+      "proper_nonempty": true
+    }
+  ],
+  "single_bond_shell_search": [
+    {
+      "tag": "no_bound_like_frozen_class",
+      "theta_max": 3.141592653589793,
+      "delta_max": 3.141592653589793,
+      "random_min_sum_cos": -3.897247648589953,
+      "phis": [
+        -3.224963297843277,
+        3.112045196206749,
+        3.490309402288065,
+        -2.8626441693096485
+      ],
+      "analytic_4cos_of_2delta": -4.0
+    },
+    {
+      "tag": "half_pi",
+      "theta_max": 1.5707963267948966,
+      "delta_max": 1.5707963267948966,
+      "random_min_sum_cos": -2.6206650898542376,
+      "phis": [
+        -1.9671570881169358,
+        -2.1978905869885184,
+        -2.997748173914842,
+        -2.2891349289908414
+      ],
+      "analytic_4cos_of_2delta": -4.0
+    },
+    {
+      "tag": "quarter_pi",
+      "theta_max": 0.7853981633974483,
+      "delta_max": 0.7853981633974483,
+      "random_min_sum_cos": 0.3423437845673915,
+      "phis": [
+        1.5707963267948966,
+        1.455964136020479,
+        1.517715638974292,
+        1.3951870933383443
+      ],
+      "analytic_4cos_of_2delta": 2.4492935982947064e-16
+    },
+    {
+      "tag": "eighth_pi",
+      "theta_max": 0.39269908169872414,
+      "delta_max": 0.39269908169872414,
+      "random_min_sum_cos": 3.1868278730996575,
+      "phis": [
+        -0.7853981633974483,
+        -0.7491268856873706,
+        0.10156408519448942,
+        -0.718808954046307
+      ],
+      "analytic_4cos_of_2delta": 2.8284271247461903
+    },
+    {
+      "tag": "half_radian",
+      "theta_max": 0.5,
+      "delta_max": 0.5,
+      "random_min_sum_cos": 2.296362605525093,
+      "phis": [
+        0.9772355623421746,
+        1.0,
+        0.9699368969151677,
+        0.887448797948353
+      ],
+      "analytic_4cos_of_2delta": 2.161209223472559
+    },
+    {
+      "tag": "a0_equals_phase_cap",
+      "theta_max": 1.1107207345395915,
+      "delta_max": 1.1107207345395915,
+      "random_min_sum_cos": -1.4616293606960682,
+      "phis": [
+        -2.1186308368662363,
+        -1.4524429773095897,
+        -2.221441469079183,
+        -2.0411110485926045
+      ],
+      "analytic_4cos_of_2delta": -2.4227994683152536
+    }
+  ],
+  "structured_flux_N6": [
+    {
+      "tag": "edges_pi_over_4_holonomy_pi",
+      "t": 0.7853981633974483,
+      "phi": 3.141592653589793,
+      "parallel_gap": 1.5707963267948966,
+      "curl_mode_Q": -9.63603896932107,
+      "spectrum": {
+        "min": -2.9444795809816355,
+        "max": 11.354661047763013,
+        "n_neg": 1,
+        "n_zero": 397,
+        "dim": 648
+      },
+      "inside_pointwise": true,
+      "inside_gradient_delta_eq_theta_max": true
+    },
+    {
+      "tag": "at_quarter_cap",
+      "t": 0.7853981633974483,
+      "phi": 3.141592653589793,
+      "parallel_gap": 1.5707963267948966,
+      "curl_mode_Q": -9.63603896932107,
+      "spectrum": {
+        "min": -2.9444795809816355,
+        "max": 11.354661047763013,
+        "n_neg": 1,
+        "n_zero": 397,
+        "dim": 648
+      },
+      "inside_pointwise": true,
+      "inside_gradient_delta_eq_theta_max": false
+    },
+    {
+      "tag": "at_eighth_cap",
+      "t": 0.39269908169872414,
+      "phi": 1.5707963267948966,
+      "parallel_gap": 0.7853981633974483,
+      "curl_mode_Q": 8.31491579260158,
+      "spectrum": {
+        "min": -4.838092633741496e-15,
+        "max": 11.381464181928113,
+        "n_neg": 0,
+        "n_zero": 398,
+        "dim": 648
+      },
+      "inside_pointwise": true,
+      "inside_gradient_delta_eq_theta_max": false
+    }
+  ],
+  "random_cartan_N6": [
+    {
+      "theta_max": 1.5707963267948966,
+      "trials": 8,
+      "min_of_mins": -6.654372712252824,
+      "max_of_mins": -5.842353836988363,
+      "any_negative": true
+    },
+    {
+      "theta_max": 0.7853981633974483,
+      "trials": 8,
+      "min_of_mins": -3.190488840773673,
+      "max_of_mins": -1.595800913796658,
+      "any_negative": true
+    },
+    {
+      "theta_max": 0.39269908169872414,
+      "trials": 6,
+      "min_of_mins": -4.975372030124769e-15,
+      "max_of_mins": -4.058277242062341e-15,
+      "any_negative": false
+    },
+    {
+      "theta_max": 0.3,
+      "trials": 6,
+      "min_of_mins": -5.180314969813879e-15,
+      "max_of_mins": -4.138759650325953e-15,
+      "any_negative": false
+    }
+  ],
+  "nonabelian_N4_touch": [
+    {
+      "min": -5.08268803286871e-15,
+      "max": 11.414213562373106,
+      "n_neg": 0,
+      "n_zero": 243,
+      "dim": 576,
+      "eps_scale": 0.0,
+      "n_plaquettes": 128,
+      "max_link_frob_herm": 0.0
+    },
+    {
+      "min": -0.2233035698999628,
+      "max": 11.378733762552807,
+      "n_neg": 105,
+      "n_zero": 48,
+      "dim": 576,
+      "eps_scale": 0.05,
+      "n_plaquettes": 128,
+      "max_link_frob_herm": 0.07067737860401992
+    },
+    {
+      "min": -1.1771769148972424,
+      "max": 10.844666741768908,
+      "n_neg": 121,
+      "n_zero": 48,
+      "dim": 576,
+      "eps_scale": 0.2,
+      "n_plaquettes": 128,
+      "max_link_frob_herm": 0.2823057241531859
+    }
+  ],
+  "gauge_penalty_N4": [
+    {
+      "mode": "touch",
+      "eps": 0.05,
+      "lambda": 1.0,
+      "raw": {
+        "min": -0.2572624240728082,
+        "max": 11.372902315160799,
+        "n_neg": 107,
+        "n_zero": 48,
+        "dim": 576
+      },
+      "penalised": {
+        "min": -0.043548049081878086,
+        "max": 12.0128020728881,
+        "n_neg": 33,
+        "n_zero": 0,
+        "dim": 576
+      }
+    },
+    {
+      "mode": "in",
+      "eps": 0.05,
+      "lambda": 1.0,
+      "raw": {
+        "min": -0.24951033486680058,
+        "max": 9.966804212229956,
+        "n_neg": 53,
+        "n_zero": 336,
+        "dim": 576
+      },
+      "penalised": {
+        "min": -0.06623189437577165,
+        "max": 12.004511872165098,
+        "n_neg": 53,
+        "n_zero": 147,
+        "dim": 576
+      }
+    }
+  ],
+  "cartan_flat_N4_touch": {
+    "min": -4.404201110036513e-15,
+    "max": 11.414213562373092,
+    "n_neg": 0,
+    "n_zero": 81,
+    "dim": 192
+  },
+  "seconds": 57.87376260757446,
+  "constants": {
+    "frob_of_diag_1_m1": 1.4142135623730951,
+    "phase_bound": "|theta| < a0 / (sqrt(2) * ell^j) at level j, from frobNorm(A)=sqrt(2)|theta|/eta and eta cancelling",
+    "difference_bound": "|Delta theta| < a0 / (sqrt(2) * ell^(2j))",
+    "phi_bound_from_gradient": "|phi| <= 2 |Delta theta|",
+    "a0_for_cartan_cos_nonneg_at_j0": 1.1107207345395915,
+    "note": "These thresholds are model calculations for the eta-free Cartan quadratic form of Delta. They are not a value of gamma_0 and not a Lean theorem."
+  }
+}

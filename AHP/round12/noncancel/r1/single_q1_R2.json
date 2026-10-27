@@ -1,0 +1,71 @@
+{
+  "q": 1,
+  "R": 2,
+  "method": "double-precision full flat augmented Fourier resolvent; single physical exterior link",
+  "caveat": "floating-point evidence only; no cofinal, kernel, or noncancellation proof",
+  "resolvent_real": [
+    [
+      0.3663226380355311,
+      0.07288062155147612,
+      0.13502275506411943
+    ],
+    [
+      0.07288062155147612,
+      0.36632263803553106,
+      -0.13502275506411943
+    ],
+    [
+      0.13502275506411943,
+      -0.13502275506411943,
+      0.43353233737418556
+    ]
+  ],
+  "resolvent_imag": [
+    [
+      0.0,
+      -1.3010426069826053e-18,
+      -2.168404344971009e-19
+    ],
+    [
+      1.3010426069826053e-18,
+      0.0,
+      3.2526065174565133e-19
+    ],
+    [
+      2.168404344971009e-19,
+      -3.2526065174565133e-19,
+      0.0
+    ]
+  ],
+  "schur_eigenvalues": [
+    1.7640419806211534,
+    2.2768501329892725,
+    6.246313865311702
+  ],
+  "residual": 6.661338147750939e-16,
+  "sectors": 16,
+  "reports": [
+    {
+      "charge": 0,
+      "roots": [],
+      "half_pi_min": 1.7637291780973372,
+      "pi_min": 0.24570299219909011,
+      "grid_min": 0.24570299219909011,
+      "optimizer_min": 0.24570299222043718,
+      "optimizer_angle": 3.1415888805967773,
+      "crossing_spectra": []
+    },
+    {
+      "charge": 1,
+      "roots": [],
+      "half_pi_min": 0.8105997141366145,
+      "pi_min": 0.24570299219909011,
+      "grid_min": 0.24570299219909011,
+      "optimizer_min": 0.24570299220280797,
+      "optimizer_angle": 3.141587989910133,
+      "crossing_spectra": []
+    }
+  ],
+  "seconds": 2.7738661766052246,
+  "peak_rss_KiB": 114164
+}

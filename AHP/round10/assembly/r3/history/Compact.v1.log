@@ -1,0 +1,670 @@
+'AdalyFormal.Round4.Guarded.RefuteR1.dilLu' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilTower' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilLam' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilPattern' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dilU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round5.Guarded.IVTR2.maskedU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.dilMask' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.bulkU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.bulkP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.uθ_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.uθ_conj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_uθ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.rot_bulkU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_dilMask' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dataFam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dilV' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.flatData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.IsSourceDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.half_rotation_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.oriented' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.circulation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.im_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.N' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.Q_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.Ginv_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.source_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.source_of_weak_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.coupling_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.two_site_residual_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.alternating_pair_constraint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.KKT.recurrence_fine_residuals' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.interiorProfile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkU_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.profileSourceStencil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkSource_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.canonicalSourceStencil' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.canonical_isSourceDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.sourceDerivative_eq_stencil' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacJet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.C2_level_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_top_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.flat_source_of_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_of_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.bulkSource_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.sourceDerivative_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.flatH_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralSource_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralCoord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.neutralSource_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1379:9: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HMul (Matrix (Fin 2) (Fin 2) ℂ) (Matrix (Fin 2) (Fin 2) ℂ) Prop
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1379:2: error: 'change' tactic failed, pattern
+  D1Literal.uMat α * ?m.13 * D1Literal.uMat α
+is not definitionally equal to target
+  ↑(D1Literal.uθ α) * ↑pauliE3 * (↑(D1Literal.uθ α)).conjTranspose = ↑pauliE3
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1379:74: error: unexpected token 'ᴴ'; expected command
+'AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseProfile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.adaptive_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.all_profiles_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_off' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_interior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.liftJet_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.fixed_of_slope_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.sourceLinear_U1' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileSource_U1' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_U1' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.pathU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.pathP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.pathA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.uthPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.vacA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.bulkD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.bulkD_rot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2Joint.corrDeriv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.Qualitative.scalar_on_complex_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.CanonicalCoupling' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1736:31: error(lean.unknownIdentifier): Unknown identifier `AnM`
+'AdalyFormal.Round9.Guarded.QualitativeR2.AnFam' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1744:0: error: Unexpected name `AdalyFormal.Round9.Guarded.QualitativeR2` after `end`: The current section is unnamed
+
+Hint: Delete the name `AdalyFormal.Round9.Guarded.QualitativeR2` to end the current unnamed scope; outer named scopes can then be closed using additional `end` command(s):
+  end ̵A̵d̵a̵l̵y̵F̵o̵r̵m̵a̵l̵.̵R̵o̵u̵n̵d̵9̵.̵G̵u̵a̵r̵d̵e̵d̵.̵Q̵u̵a̵l̵i̵t̵a̵t̵i̵v̵e̵R̵2̵
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round9.Guarded.QualitativeR2Joint.CofinalAnyProfileCoupling' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round9.Guarded.QualitativeR2Joint.CofinalAnyPathCoupling' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1807:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Dictionary.comm_of_quad`:
+  hU
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hU in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Dictionary.comm_of_quad' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1826:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Dictionary.deriv_comm`:
+  hU
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hU in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Dictionary.deriv_comm' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1872:19: error: Application type mismatch: The argument
+  (BaseDataS.Delta2_spec (dataS selIn selIn (bulkP q R f ε)) (dataS_laws selIn selIn (bulkP q R f ε))).left
+has type
+  ∀ (x y : ↥(bondSupp (bulkP q R f ε).G)),
+    ⟪((dataS selIn selIn (bulkP q R f ε)).Delta2 ⋯) x, y⟫ = ⟪x, ((dataS selIn selIn (bulkP q R f ε)).Delta2 ⋯) y⟫
+of sort `Prop` but is expected to have type
+  ?m.28 ≃ₗᵢ[ℝ] ?m.28
+of sort `Type ?u.27` in the application
+  comm_of_quad ?m.27 ?m.31
+    (BaseDataS.Delta2_spec (dataS selIn selIn (bulkP q R f ε)) (dataS_laws selIn selIn (bulkP q R f ε))).left
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Dictionary.Actual.bulkD_U1' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1880:63: error: Application type mismatch: The argument
+  q
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  AnFam ?m.33
+of sort `Prop` in the application
+  bulkD_U1 q
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1907:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R2.deriv_symmetric`:
+  hU
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hU in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R2.deriv_symmetric' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1929:40: error: Application type mismatch: The argument
+  ε
+has type
+  PeriodicLatticeEdge ?m.13
+but is expected to have type
+  ℝ
+in the application
+  bulkD q R f ε
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1931:37: error: numerals are data in Lean, but the expected type is a proposition
+  ∀ (t : ℝ) (x y : ?m.16), ⟪?m.35 x, y⟫ = ⟪x, ?m.35 y⟫ : Prop
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1930:14: error: Type mismatch
+  (BaseDataS.Delta2_spec (dataS selIn selIn (bulkP q R f ε)) (dataS_laws selIn selIn (bulkP q R f ε))).left
+has type
+  ∀ (x y : ↥(bondSupp (bulkP q R f ε).G)),
+    ⟪((dataS selIn selIn (bulkP q R f ε)).Delta2 ⋯) x, y⟫ = ⟪x, ((dataS selIn selIn (bulkP q R f ε)).Delta2 ⋯) y⟫
+of sort `Prop` but is expected to have type
+  TwistSpace q R →L[ℝ] TwistSpace q R
+of sort `Type`
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R2.corrDeriv_symmetric' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R2.KernelLine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1954:25: error: Application type mismatch: The argument
+  q
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  AnFam ?m.98
+of sort `Prop` in the application
+  corrDeriv_symmetric q
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1955:45: error: Application type mismatch: The argument
+  q
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  AnFam ?m.112
+of sort `Prop` in the application
+  Dictionary.Actual.corrDeriv_U1 q
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R2.canonicalCoupling_of_line' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:1994:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_clm_apply₂`:
+  hU
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hU in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_clm_apply₂' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2018:23: error: Application type mismatch: The argument
+  Tendsto.mono_left (ContinuousAt.tendsto hH) nhdsWithin_le_nhds
+has type
+  Tendsto (fun ε => (D ε).H) (𝓝[?m.363] 0) (𝓝 (D 0).H)
+but is expected to have type
+  AnFam ?m.347
+in the application
+  @tendsto_clm_apply₂ ?m.346 ?m.347 (Tendsto.mono_left (ContinuousAt.tendsto hH) nhdsWithin_le_nhds)
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_Delta2_div_form' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2033:74: error: Application type mismatch: The argument
+  hD₁
+has type
+  Tendsto (fun ε => ε⁻¹ • (D ε).Delta2 ⋯) (𝓝[>] 0) (𝓝 D₁)
+but is expected to have type
+  AnFam ?m.239
+in the application
+  @tendsto_clm_apply₂ ?m.238 ?m.239 hD₁
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2034:38: error: Application type mismatch: The argument
+  D
+has type
+  ℝ → BaseDataS E S F
+of sort `Type (max (max u_1 u_2) u_3)` but is expected to have type
+  AnFam ?m.261
+of sort `Prop` in the application
+  @tendsto_Delta2_div_form ?m.260 ?m.261 D
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round9.Guarded.AnalyticR2.limit_Delta2_div_form' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2063:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.quarter_twice`:
+  hU
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hU in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2074:10: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2077:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.vacJet_neg`:
+  hU
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hU in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2088:22: error: unsolved goals
+case hU
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+u : TwistSpace q R
+hu : (adEL (rotGauge (Real.pi / 2)) (geomOf 2 1 (dilTower q R))) u = -u
+h :
+  BaseEqv (adEL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+    (adSL (rotGauge (Real.pi / 2)))
+    (adFL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+    (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data
+    (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data
+hc :
+  vacJet q R (-u) =
+    (adFL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+      ((gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data.C2 u)
+⊢ AnFam ?m.110
+
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+u : TwistSpace q R
+hu : (adEL (rotGauge (Real.pi / 2)) (geomOf 2 1 (dilTower q R))) u = -u
+h :
+  BaseEqv (adEL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+    (adSL (rotGauge (Real.pi / 2)))
+    (adFL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+    (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data
+    (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data
+hc :
+  vacJet q R (-u) =
+    (adFL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+      ((gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data.C2 u)
+⊢ PeriodicLatticeExtent
+
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+u : TwistSpace q R
+hu : (adEL (rotGauge (Real.pi / 2)) (geomOf 2 1 (dilTower q R))) u = -u
+h :
+  BaseEqv (adEL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+    (adSL (rotGauge (Real.pi / 2)))
+    (adFL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+    (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data
+    (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data
+hc :
+  vacJet q R (-u) =
+    (adFL (rotGauge (Real.pi / 2)) (gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).G)
+      ((gparams 2 1 (dilLu q R) ⋯ (dilTower q R) (fun x => 1) 1 (dilLam q R)).data.C2 u)
+⊢ ℝ → PeriodicLinkConfiguration ↥SU2m ?m.109
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2099:3: error(lean.unknownIdentifier): Unknown identifier `flatData`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2105:6: warning: declaration uses `sorry`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2101:8: warning: declaration uses `sorry`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2102:5: warning: Variable name `hu` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2118:30: error: Application type mismatch: The argument
+  q
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  AnFam ?m.44
+of sort `Prop` in the application
+  responseField_half_fixed q
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2115:80: error: unsolved goals
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+u : TwistSpace q R
+hu : (adEL (rotGauge (Real.pi / 2)) (geomOf 2 1 (dilTower q R))) u = -u
+b : Bond (scaleUp 2 1 (dilLu q R))
+⊢ (RMap (D1Literal.uθ (Real.pi / 2))) ((↑(responseField q R u)).ofLp b) = (↑(responseField q R u)).ofLp b
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2122:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseProfile_interior`:
+  hU
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit hU in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2143:33: error: Application type mismatch: The argument
+  q
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  AnFam ?m.46
+of sort `Prop` in the application
+  responseField_component q
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.quarter_twice' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.vacJet_neg' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.vacJet_half_fixed' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseField' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseField_half_fixed' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseProfile' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseField_component' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseProfile_interior' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseProfile_lift' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2182:28: error(lean.unknownIdentifier): Unknown identifier `Dictionary.FreeSource.responseProfile`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2186:25: error: Type mismatch
+  (dataS selIn selIn (bulkP q R f ε)).H
+has type
+  FSp (bulkP q R f ε).G →L[ℝ] ↥(bondSupp (bulkP q R f ε).G)
+but is expected to have type
+  ?m.7
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2200:37: error: unsolved goals
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+f : Bond (scaleUp 2 1 (dilLu q R)) → ℝ
+hs :
+  (∀ (x y : ↥(bondSupp (bulkP q R f 0).G)),
+      ⟪((dataS selIn selIn (bulkP q R f 0)).Delta2 ⋯) x, y⟫ = ⟪x, ((dataS selIn selIn (bulkP q R f 0)).Delta2 ⋯) y⟫) ∧
+    ∀ (A : ↥(bondSupp (bulkP q R f 0).G)),
+      ⟪A, ((dataS selIn selIn (bulkP q R f 0)).Delta2 ⋯) A⟫ =
+        2 *
+          ⟪(dataS selIn selIn (bulkP q R f 0)).H ((dataS selIn selIn (bulkP q R f 0)).C2 A),
+            (dataS selIn selIn (bulkP q R f 0)).J⟫
+x y : ↥(bondSupp (bulkP q R f 0).G)
+⊢ ⟪↑(0 x), ↑y⟫ = ⟪↑x, ↑(0 y)⟫
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2197:25: error: unsolved goals
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+f : Bond (scaleUp 2 1 (dilLu q R)) → ℝ
+hs :
+  (∀ (x y : ↥(bondSupp (bulkP q R f 0).G)),
+      ⟪((dataS selIn selIn (bulkP q R f 0)).Delta2 ⋯) x, y⟫ = ⟪x, ((dataS selIn selIn (bulkP q R f 0)).Delta2 ⋯) y⟫) ∧
+    ∀ (A : ↥(bondSupp (bulkP q R f 0).G)),
+      ⟪A, ((dataS selIn selIn (bulkP q R f 0)).Delta2 ⋯) A⟫ =
+        2 *
+          ⟪(dataS selIn selIn (bulkP q R f 0)).H ((dataS selIn selIn (bulkP q R f 0)).C2 A),
+            (dataS selIn selIn (bulkP q R f 0)).J⟫
+u : ↥(bondSupp (bulkP q R f 0).G)
+⊢ 0 = ⟪↑u, ↑(0 u)⟫
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2207:40: error(lean.unknownIdentifier): Unknown identifier `flatData`
+
+Note: It is not possible to treat `flatData` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2211:15: error(lean.unknownIdentifier): Unknown identifier `Dictionary.PhaseSource.phase`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2211:55: error(lean.unknownIdentifier): Unknown identifier `Dictionary.PhaseSource.phase_zero`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2208:44: error: unsolved goals
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+f : Bond (scaleUp 2 1 (dilLu q R)) → ℝ
+b : PeriodicLatticeEdge (scaleUp 2 1 (dilLu q R))
+⊢ Round10.Dictionary.PhaseSource.phase (fun b => 0) b = 1
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2222:13: error(lean.unknownIdentifier): Unknown identifier `Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2221:56: error: unsolved goals
+L : PeriodicLatticeExtent
+U : ℝ → PeriodicLinkConfiguration (↥SU2m) L
+hU : AnFam U
+q R : ℕ
+f : Bond (scaleUp 2 1 (dilLu q R)) → ℝ
+hr : ProfileRegular q R f
+u : TwistSpace q R
+⊢ ⟪u, (corrDeriv q R f) u⟫ = profileCoupling q R f u
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2237:30: error(lean.unknownIdentifier): Unknown identifier `Dictionary.FreeSource.responseProfile`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2239:22: error(lean.unknownIdentifier): Unknown identifier `Dictionary.FreeSource.responseProfile`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2240:34: error: Application type mismatch: The argument
+  V
+has type
+  ℝ → LinkCfg (scaleUp 2 1 (dilLu q R))
+of sort `Type` but is expected to have type
+  AnFam ?m.8
+of sort `Prop` in the application
+  @canonicalCoupling_of_line ?m.7 ?m.8 V
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2240:2: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (2000000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2268:27: error(lean.unknownIdentifier): Unknown identifier `Dictionary.FreeSource.responseProfile`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2269:38: error: Application type mismatch: The argument
+  uthPath ?m.86 ?m.87
+has type
+  ℝ → LinkCfg (scaleUp 2 1 (dilLu ?m.86 ?m.87))
+of sort `Type` but is expected to have type
+  AnFam ?m.85
+of sort `Prop` in the application
+  @canonicalCoupling_of_curlDetected ?m.84 ?m.85 (uthPath ?m.86 ?m.87)
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2279:4: error(lean.unknownIdentifier): Unknown identifier `Dictionary.FreeSource.responseProfile`
+/home/sebastian/BalabanCoercivityLemma/AHP/round10/assembly/r3/Compact.lean:2280:38: error: Application type mismatch: The argument
+  V
+has type
+  ℝ → LinkCfg (scaleUp 2 1 (dilLu (2 ^ j) R))
+of sort `Type` but is expected to have type
+  AnFam ?m.130
+of sort `Prop` in the application
+  @canonicalCoupling_of_curlDetected ?m.129 ?m.130 V
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.responseProfile_eq' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.ProfileRegular' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.RegularityFacts' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.bulkD_zero_source' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.bulkData_zero' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.corrDeriv_profile_form' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.canonicalCoupling_of_curlDetected' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.CofinalCurlLine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.CofinalAnyPathCurlLine' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.cofinalAnyProfileCoupling_of_curlLine' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AdalyFormal.Round10.Assembly.R3.cofinalAnyPathCoupling_of_curlLine' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]

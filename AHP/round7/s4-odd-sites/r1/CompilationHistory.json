@@ -1,0 +1,8 @@
+{
+  "timedOutAttemptSha256": "06cf2a52536599648d6a55df454f05dd33f9e72c794c17ad6bc7dcb000cd8f17",
+  "oldExitStale": true,
+  "retainedOldExit": "1",
+  "currentCompilationExit": null,
+  "focusedBlockingExitExists": false,
+  "guardedGeometryExitExists": false
+}

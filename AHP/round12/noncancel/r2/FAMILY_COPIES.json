@@ -1,0 +1,58 @@
+[
+  {
+    "path": "AHP/round12/noncancel/r1/Attempt.lean",
+    "start": "namespace AdalyFormal.Round9.Guarded.QualitativeR2\n",
+    "end": "namespace AdalyFormal.Round12.Noncancel.Gauge\n",
+    "start_line": 370,
+    "end_line_exclusive": 586,
+    "sha256": "579c72e133e08a7e36b591da55eb0909c8c83b39bd4798d1eb745af2c6c37d4b"
+  },
+  {
+    "path": "AHP/round12/kernel/r1/ActualKernel.lean",
+    "start": "namespace AdalyFormal.Round2.Guarded.Pin\n",
+    "end": "namespace AdalyFormal.Round9.Guarded.QualitativeR2\n",
+    "start_line": 6,
+    "end_line_exclusive": 196,
+    "sha256": "19560e302f4f70f10deebee42f1f546cb1501dd6d3eb4e69a12de4047ce60f41"
+  },
+  {
+    "path": "AHP/round9/qualitative-r2/Attempt.lean",
+    "start": "theorem zero_coord_le_pdist",
+    "end": "/-- All six frozen admissibility clauses",
+    "start_line": 404,
+    "end_line_exclusive": 409,
+    "sha256": "c976b0e087959ed48716ce30a79546593fa4397e4617cdb174d581d2d729b6f0"
+  },
+  {
+    "path": "AHP/round9/qualitative-r2/Attempt.lean",
+    "start": "theorem dil_fine_bound",
+    "end": "theorem dil_torus",
+    "start_line": 1006,
+    "end_line_exclusive": 1012,
+    "sha256": "18e975590a7aa088c36d3af4c5cf9c67408ce4d427772bdfee79cbf36c7d182f"
+  },
+  {
+    "path": "AHP/round9/qualitative-r2/Attempt.lean",
+    "start": "theorem dil_admissible",
+    "end": "def dilEmb",
+    "start_line": 1024,
+    "end_line_exclusive": 1103,
+    "sha256": "b8dc37ab40215b50a25e5972f0764e4a019bfbde8fa7010b70b7632ad5cbd75c"
+  },
+  {
+    "path": "AHP/round9/qualitative-r2/Attempt.lean",
+    "start": "theorem dil_shift_zero",
+    "end": "theorem dil_coverage",
+    "start_line": 1331,
+    "end_line_exclusive": 1342,
+    "sha256": "0609b81d1bdcdd0d72d54638366aa7a547f3566dadd6793dbdc7b9977007339d"
+  },
+  {
+    "path": "AHP/round9/qualitative-r2/Attempt.lean",
+    "start": "def rightSite",
+    "end": "theorem twist_eq_Uth_off_defect",
+    "start_line": 2198,
+    "end_line_exclusive": 2227,
+    "sha256": "8ebc51ccb88afe7a02972f0ee2e420aed0a797965fb117a8e2ae3303efe53a0e"
+  }
+]

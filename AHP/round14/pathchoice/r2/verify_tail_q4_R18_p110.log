@@ -1,0 +1,562 @@
+assembled 4 18 1 n 10756 aug 15012 nnz 461698 seconds 3.0555334091186523
+SECTOR 0 0 seconds 9.12
+assembled 4 18 1 n 10756 aug 15012 nnz 500002 seconds 4.049691677093506
+SECTOR 0 1 seconds 21.02
+assembled 4 18 1 n 10756 aug 15012 nnz 498786 seconds 4.146726131439209
+SECTOR 0 2 seconds 33.12
+assembled 4 18 1 n 10756 aug 15012 nnz 469602 seconds 4.140968084335327
+SECTOR 0 3 seconds 44.85
+assembled 4 18 1 n 10756 aug 15012 nnz 499394 seconds 4.225685358047485
+SECTOR 0 4 seconds 57.15
+assembled 4 18 1 n 10756 aug 15012 nnz 466562 seconds 4.170474290847778
+SECTOR 0 5 seconds 68.92
+assembled 4 18 1 n 10756 aug 15012 nnz 479938 seconds 4.258459568023682
+SECTOR 0 6 seconds 81.04
+assembled 4 18 1 n 10756 aug 15012 nnz 480546 seconds 4.249036550521851
+SECTOR 0 7 seconds 93.24
+assembled 4 18 1 n 10756 aug 15012 nnz 468994 seconds 4.149303436279297
+SECTOR 0 8 seconds 105.02
+assembled 4 18 1 n 10756 aug 15012 nnz 475682 seconds 4.323390007019043
+SECTOR 0 9 seconds 117.23
+assembled 4 18 1 n 10756 aug 15012 nnz 476290 seconds 4.231194257736206
+SECTOR 0 10 seconds 129.38
+assembled 4 18 1 n 10756 aug 15012 nnz 466562 seconds 4.246032238006592
+SECTOR 0 11 seconds 141.42
+assembled 4 18 1 n 10756 aug 15012 nnz 497570 seconds 4.342611074447632
+SECTOR 0 12 seconds 154.04
+assembled 4 18 1 n 10756 aug 15012 nnz 471426 seconds 4.191797256469727
+SECTOR 0 13 seconds 165.8
+assembled 4 18 1 n 10756 aug 15012 nnz 471426 seconds 4.232442140579224
+SECTOR 0 14 seconds 177.75
+assembled 4 18 1 n 10756 aug 15012 nnz 478722 seconds 4.210317134857178
+SECTOR 0 15 seconds 189.71
+assembled 4 18 1 n 10756 aug 15012 nnz 496354 seconds 4.241295337677002
+SECTOR 1 0 seconds 201.94
+assembled 4 18 1 n 10756 aug 15012 nnz 526146 seconds 4.7810962200164795
+SECTOR 1 1 seconds 215.64
+assembled 4 18 1 n 10756 aug 15012 nnz 526146 seconds 4.87222146987915
+SECTOR 1 2 seconds 229.71
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.894188642501831
+SECTOR 1 3 seconds 243.53
+assembled 4 18 1 n 10756 aug 15012 nnz 526754 seconds 4.999319553375244
+SECTOR 1 4 seconds 258.04
+assembled 4 18 1 n 10756 aug 15012 nnz 500002 seconds 4.924067497253418
+SECTOR 1 5 seconds 271.84
+assembled 4 18 1 n 10756 aug 15012 nnz 509122 seconds 4.9958250522613525
+SECTOR 1 6 seconds 285.9
+assembled 4 18 1 n 10756 aug 15012 nnz 510338 seconds 4.967145919799805
+SECTOR 1 7 seconds 300.01
+assembled 4 18 1 n 10756 aug 15012 nnz 501826 seconds 4.935343980789185
+SECTOR 1 8 seconds 313.97
+assembled 4 18 1 n 10756 aug 15012 nnz 508514 seconds 4.956622362136841
+SECTOR 1 9 seconds 327.98
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.939208030700684
+SECTOR 1 10 seconds 341.98
+assembled 4 18 1 n 10756 aug 15012 nnz 500002 seconds 4.952311992645264
+SECTOR 1 11 seconds 355.93
+assembled 4 18 1 n 10756 aug 15012 nnz 526754 seconds 5.007053852081299
+SECTOR 1 12 seconds 370.53
+assembled 4 18 1 n 10756 aug 15012 nnz 504866 seconds 4.962836265563965
+SECTOR 1 13 seconds 384.49
+assembled 4 18 1 n 10756 aug 15012 nnz 503650 seconds 4.916893243789673
+SECTOR 1 14 seconds 398.44
+assembled 4 18 1 n 10756 aug 15012 nnz 510946 seconds 4.933665752410889
+SECTOR 1 15 seconds 412.6
+assembled 4 18 1 n 10756 aug 15012 nnz 498786 seconds 4.49091649055481
+SECTOR 2 0 seconds 425.33
+assembled 4 18 1 n 10756 aug 15012 nnz 528578 seconds 4.947618246078491
+SECTOR 2 1 seconds 439.66
+assembled 4 18 1 n 10756 aug 15012 nnz 527970 seconds 4.978410243988037
+SECTOR 2 2 seconds 453.98
+assembled 4 18 1 n 10756 aug 15012 nnz 506082 seconds 4.936413526535034
+SECTOR 2 3 seconds 468.03
+assembled 4 18 1 n 10756 aug 15012 nnz 527362 seconds 5.020110130310059
+SECTOR 2 4 seconds 482.48
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.917158126831055
+SECTOR 2 5 seconds 496.27
+assembled 4 18 1 n 10756 aug 15012 nnz 511554 seconds 4.967522859573364
+SECTOR 2 6 seconds 510.4
+assembled 4 18 1 n 10756 aug 15012 nnz 512162 seconds 4.924330234527588
+SECTOR 2 7 seconds 524.41
+assembled 4 18 1 n 10756 aug 15012 nnz 503650 seconds 4.921594858169556
+SECTOR 2 8 seconds 538.44
+assembled 4 18 1 n 10756 aug 15012 nnz 510338 seconds 4.9401068687438965
+SECTOR 2 9 seconds 552.43
+assembled 4 18 1 n 10756 aug 15012 nnz 510338 seconds 4.957692623138428
+SECTOR 2 10 seconds 566.53
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.913131475448608
+SECTOR 2 11 seconds 580.46
+assembled 4 18 1 n 10756 aug 15012 nnz 526754 seconds 5.040616750717163
+SECTOR 2 12 seconds 595.0
+assembled 4 18 1 n 10756 aug 15012 nnz 504866 seconds 4.991350173950195
+SECTOR 2 13 seconds 608.94
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.9611451625823975
+SECTOR 2 14 seconds 623.04
+assembled 4 18 1 n 10756 aug 15012 nnz 510946 seconds 4.9648120403289795
+SECTOR 2 15 seconds 637.18
+assembled 4 18 1 n 10756 aug 15012 nnz 471426 seconds 4.4013354778289795
+SECTOR 3 0 seconds 649.51
+assembled 4 18 1 n 10756 aug 15012 nnz 507298 seconds 4.87523889541626
+SECTOR 3 1 seconds 663.5
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.894582271575928
+SECTOR 3 2 seconds 677.48
+assembled 4 18 1 n 10756 aug 15012 nnz 476290 seconds 4.797486066818237
+SECTOR 3 3 seconds 690.74
+assembled 4 18 1 n 10756 aug 15012 nnz 505474 seconds 4.931385040283203
+SECTOR 3 4 seconds 704.84
+assembled 4 18 1 n 10756 aug 15012 nnz 479938 seconds 4.862450361251831
+SECTOR 3 5 seconds 718.3
+assembled 4 18 1 n 10756 aug 15012 nnz 487842 seconds 4.831051588058472
+SECTOR 3 6 seconds 731.87
+assembled 4 18 1 n 10756 aug 15012 nnz 490274 seconds 4.8406078815460205
+SECTOR 3 7 seconds 745.49
+assembled 4 18 1 n 10756 aug 15012 nnz 476898 seconds 4.808248519897461
+SECTOR 3 8 seconds 759.05
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.842185020446777
+SECTOR 3 9 seconds 772.62
+assembled 4 18 1 n 10756 aug 15012 nnz 486626 seconds 4.8269288539886475
+SECTOR 3 10 seconds 786.21
+assembled 4 18 1 n 10756 aug 15012 nnz 477506 seconds 4.807509899139404
+SECTOR 3 11 seconds 799.56
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.803291082382202
+SECTOR 3 12 seconds 813.35
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.833024024963379
+SECTOR 3 13 seconds 826.88
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.812739610671997
+SECTOR 3 14 seconds 840.49
+assembled 4 18 1 n 10756 aug 15012 nnz 487234 seconds 4.818392276763916
+SECTOR 3 15 seconds 854.21
+assembled 4 18 1 n 10756 aug 15012 nnz 497570 seconds 4.404565095901489
+SECTOR 4 0 seconds 866.96
+assembled 4 18 1 n 10756 aug 15012 nnz 527970 seconds 4.966594457626343
+SECTOR 4 1 seconds 881.37
+assembled 4 18 1 n 10756 aug 15012 nnz 525538 seconds 5.039714097976685
+SECTOR 4 2 seconds 895.87
+assembled 4 18 1 n 10756 aug 15012 nnz 501218 seconds 4.902876138687134
+SECTOR 4 3 seconds 909.72
+assembled 4 18 1 n 10756 aug 15012 nnz 523106 seconds 4.9055821895599365
+SECTOR 4 4 seconds 923.78
+assembled 4 18 1 n 10756 aug 15012 nnz 497570 seconds 4.912003993988037
+SECTOR 4 5 seconds 937.5
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.929890155792236
+SECTOR 4 6 seconds 951.51
+assembled 4 18 1 n 10756 aug 15012 nnz 507906 seconds 4.946111440658569
+SECTOR 4 7 seconds 965.49
+assembled 4 18 1 n 10756 aug 15012 nnz 501826 seconds 4.889172554016113
+SECTOR 4 8 seconds 979.31
+assembled 4 18 1 n 10756 aug 15012 nnz 506082 seconds 4.95588493347168
+SECTOR 4 9 seconds 993.27
+assembled 4 18 1 n 10756 aug 15012 nnz 504866 seconds 4.921483755111694
+SECTOR 4 10 seconds 1007.21
+assembled 4 18 1 n 10756 aug 15012 nnz 496962 seconds 4.872840404510498
+SECTOR 4 11 seconds 1021.02
+assembled 4 18 1 n 10756 aug 15012 nnz 526146 seconds 4.933725833892822
+SECTOR 4 12 seconds 1035.24
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.970471620559692
+SECTOR 4 13 seconds 1049.18
+assembled 4 18 1 n 10756 aug 15012 nnz 501826 seconds 4.955736398696899
+SECTOR 4 14 seconds 1063.23
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.9111480712890625
+SECTOR 4 15 seconds 1077.36
+assembled 4 18 1 n 10756 aug 15012 nnz 467170 seconds 4.3873584270477295
+SECTOR 5 0 seconds 1089.56
+assembled 4 18 1 n 10756 aug 15012 nnz 503650 seconds 4.86853551864624
+SECTOR 5 1 seconds 1103.47
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.8894500732421875
+SECTOR 5 2 seconds 1117.33
+assembled 4 18 1 n 10756 aug 15012 nnz 478722 seconds 4.826799392700195
+SECTOR 5 3 seconds 1130.71
+assembled 4 18 1 n 10756 aug 15012 nnz 500610 seconds 4.887209892272949
+SECTOR 5 4 seconds 1144.62
+assembled 4 18 1 n 10756 aug 15012 nnz 472034 seconds 4.7870097160339355
+SECTOR 5 5 seconds 1157.72
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.823409795761108
+SECTOR 5 6 seconds 1171.18
+assembled 4 18 1 n 10756 aug 15012 nnz 482978 seconds 4.796600103378296
+SECTOR 5 7 seconds 1184.63
+assembled 4 18 1 n 10756 aug 15012 nnz 473250 seconds 4.8123297691345215
+SECTOR 5 8 seconds 1198.12
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.855252742767334
+SECTOR 5 9 seconds 1211.67
+assembled 4 18 1 n 10756 aug 15012 nnz 481762 seconds 4.8328094482421875
+SECTOR 5 10 seconds 1225.12
+assembled 4 18 1 n 10756 aug 15012 nnz 469602 seconds 4.696847438812256
+SECTOR 5 11 seconds 1238.14
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.915863752365112
+SECTOR 5 12 seconds 1252.11
+assembled 4 18 1 n 10756 aug 15012 nnz 478722 seconds 4.851613521575928
+SECTOR 5 13 seconds 1265.52
+assembled 4 18 1 n 10756 aug 15012 nnz 477506 seconds 4.7779154777526855
+SECTOR 5 14 seconds 1279.03
+assembled 4 18 1 n 10756 aug 15012 nnz 484194 seconds 4.815191984176636
+SECTOR 5 15 seconds 1292.7
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.379411458969116
+SECTOR 6 0 seconds 1305.23
+assembled 4 18 1 n 10756 aug 15012 nnz 511554 seconds 4.906914710998535
+SECTOR 6 1 seconds 1319.21
+assembled 4 18 1 n 10756 aug 15012 nnz 511554 seconds 4.965706825256348
+SECTOR 6 2 seconds 1333.29
+assembled 4 18 1 n 10756 aug 15012 nnz 487234 seconds 4.862799882888794
+SECTOR 6 3 seconds 1346.79
+assembled 4 18 1 n 10756 aug 15012 nnz 509730 seconds 4.932302236557007
+SECTOR 6 4 seconds 1360.86
+assembled 4 18 1 n 10756 aug 15012 nnz 485410 seconds 4.848726272583008
+SECTOR 6 5 seconds 1374.24
+assembled 4 18 1 n 10756 aug 15012 nnz 492706 seconds 4.885593891143799
+SECTOR 6 6 seconds 1387.88
+assembled 4 18 1 n 10756 aug 15012 nnz 495138 seconds 4.907761573791504
+SECTOR 6 7 seconds 1401.55
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.870869159698486
+SECTOR 6 8 seconds 1415.15
+assembled 4 18 1 n 10756 aug 15012 nnz 491490 seconds 4.879361391067505
+SECTOR 6 9 seconds 1428.81
+assembled 4 18 1 n 10756 aug 15012 nnz 490882 seconds 4.855103969573975
+SECTOR 6 10 seconds 1442.54
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.839928388595581
+SECTOR 6 11 seconds 1456.03
+assembled 4 18 1 n 10756 aug 15012 nnz 510946 seconds 4.948737621307373
+SECTOR 6 12 seconds 1470.2
+assembled 4 18 1 n 10756 aug 15012 nnz 487842 seconds 4.870250940322876
+SECTOR 6 13 seconds 1483.69
+assembled 4 18 1 n 10756 aug 15012 nnz 489058 seconds 4.868391036987305
+SECTOR 6 14 seconds 1497.44
+assembled 4 18 1 n 10756 aug 15012 nnz 492098 seconds 4.882211446762085
+SECTOR 6 15 seconds 1511.19
+assembled 4 18 1 n 10756 aug 15012 nnz 482978 seconds 4.3957178592681885
+SECTOR 7 0 seconds 1523.44
+assembled 4 18 1 n 10756 aug 15012 nnz 515202 seconds 4.843232154846191
+SECTOR 7 1 seconds 1537.17
+assembled 4 18 1 n 10756 aug 15012 nnz 512770 seconds 4.850060939788818
+SECTOR 7 2 seconds 1550.88
+assembled 4 18 1 n 10756 aug 15012 nnz 489058 seconds 4.8352344036102295
+SECTOR 7 3 seconds 1564.06
+assembled 4 18 1 n 10756 aug 15012 nnz 511554 seconds 4.868529796600342
+SECTOR 7 4 seconds 1577.78
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.767125844955444
+SECTOR 7 5 seconds 1590.75
+assembled 4 18 1 n 10756 aug 15012 nnz 494530 seconds 4.747007369995117
+SECTOR 7 6 seconds 1604.1
+assembled 4 18 1 n 10756 aug 15012 nnz 491490 seconds 4.737627983093262
+SECTOR 7 7 seconds 1617.16
+assembled 4 18 1 n 10756 aug 15012 nnz 485410 seconds 4.7004759311676025
+SECTOR 7 8 seconds 1630.46
+assembled 4 18 1 n 10756 aug 15012 nnz 491490 seconds 4.797611474990845
+SECTOR 7 9 seconds 1643.69
+assembled 4 18 1 n 10756 aug 15012 nnz 490882 seconds 4.769067287445068
+SECTOR 7 10 seconds 1656.94
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.754854440689087
+SECTOR 7 11 seconds 1670.13
+assembled 4 18 1 n 10756 aug 15012 nnz 513378 seconds 4.8294947147369385
+SECTOR 7 12 seconds 1683.91
+assembled 4 18 1 n 10756 aug 15012 nnz 489058 seconds 4.7853474617004395
+SECTOR 7 13 seconds 1697.04
+assembled 4 18 1 n 10756 aug 15012 nnz 487842 seconds 4.758811712265015
+SECTOR 7 14 seconds 1710.32
+assembled 4 18 1 n 10756 aug 15012 nnz 492098 seconds 4.786885738372803
+SECTOR 7 15 seconds 1723.72
+assembled 4 18 1 n 10756 aug 15012 nnz 468994 seconds 4.245344877243042
+SECTOR 8 0 seconds 1735.51
+assembled 4 18 1 n 10756 aug 15012 nnz 504258 seconds 4.761659860610962
+SECTOR 8 1 seconds 1749.05
+assembled 4 18 1 n 10756 aug 15012 nnz 501826 seconds 4.797250270843506
+SECTOR 8 2 seconds 1762.71
+assembled 4 18 1 n 10756 aug 15012 nnz 475074 seconds 4.732707262039185
+SECTOR 8 3 seconds 1775.7
+assembled 4 18 1 n 10756 aug 15012 nnz 504258 seconds 4.788944482803345
+SECTOR 8 4 seconds 1789.3
+assembled 4 18 1 n 10756 aug 15012 nnz 473250 seconds 4.777616262435913
+SECTOR 8 5 seconds 1802.27
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.718809366226196
+SECTOR 8 6 seconds 1815.53
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.749368906021118
+SECTOR 8 7 seconds 1828.69
+assembled 4 18 1 n 10756 aug 15012 nnz 472642 seconds 4.542475700378418
+SECTOR 8 8 seconds 1841.24
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.7515788078308105
+SECTOR 8 9 seconds 1854.27
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.725749731063843
+SECTOR 8 10 seconds 1867.48
+assembled 4 18 1 n 10756 aug 15012 nnz 473250 seconds 4.680704832077026
+SECTOR 8 11 seconds 1880.54
+assembled 4 18 1 n 10756 aug 15012 nnz 503650 seconds 4.7906365394592285
+SECTOR 8 12 seconds 1894.2
+assembled 4 18 1 n 10756 aug 15012 nnz 476898 seconds 4.714799880981445
+SECTOR 8 13 seconds 1907.25
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.686839580535889
+SECTOR 8 14 seconds 1920.57
+assembled 4 18 1 n 10756 aug 15012 nnz 487234 seconds 4.804239511489868
+SECTOR 8 15 seconds 1934.08
+assembled 4 18 1 n 10756 aug 15012 nnz 473858 seconds 4.291090488433838
+SECTOR 9 0 seconds 1946.1
+assembled 4 18 1 n 10756 aug 15012 nnz 509122 seconds 4.813638925552368
+SECTOR 9 1 seconds 1959.82
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.855349779129028
+SECTOR 9 2 seconds 1973.69
+assembled 4 18 1 n 10756 aug 15012 nnz 481762 seconds 4.905585765838623
+SECTOR 9 3 seconds 1987.12
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.917605638504028
+SECTOR 9 4 seconds 2001.12
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.842839479446411
+SECTOR 9 5 seconds 2014.36
+assembled 4 18 1 n 10756 aug 15012 nnz 487842 seconds 4.9510722160339355
+SECTOR 9 6 seconds 2028.05
+assembled 4 18 1 n 10756 aug 15012 nnz 488450 seconds 4.923068046569824
+SECTOR 9 7 seconds 2041.69
+assembled 4 18 1 n 10756 aug 15012 nnz 478114 seconds 4.710681676864624
+SECTOR 9 8 seconds 2054.95
+assembled 4 18 1 n 10756 aug 15012 nnz 484194 seconds 4.934463024139404
+SECTOR 9 9 seconds 2068.4
+assembled 4 18 1 n 10756 aug 15012 nnz 487234 seconds 4.861306190490723
+SECTOR 9 10 seconds 2081.91
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.911406755447388
+SECTOR 9 11 seconds 2095.39
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.896579027175903
+SECTOR 9 12 seconds 2109.39
+assembled 4 18 1 n 10756 aug 15012 nnz 484194 seconds 4.900425672531128
+SECTOR 9 13 seconds 2122.89
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.806422233581543
+SECTOR 9 14 seconds 2136.39
+assembled 4 18 1 n 10756 aug 15012 nnz 488450 seconds 4.743698835372925
+SECTOR 9 15 seconds 2149.75
+assembled 4 18 1 n 10756 aug 15012 nnz 476290 seconds 4.321619987487793
+SECTOR 10 0 seconds 2161.75
+assembled 4 18 1 n 10756 aug 15012 nnz 508514 seconds 4.863055944442749
+SECTOR 10 1 seconds 2175.43
+assembled 4 18 1 n 10756 aug 15012 nnz 507906 seconds 4.842510461807251
+SECTOR 10 2 seconds 2189.17
+assembled 4 18 1 n 10756 aug 15012 nnz 484194 seconds 4.789214849472046
+SECTOR 10 3 seconds 2202.24
+assembled 4 18 1 n 10756 aug 15012 nnz 506082 seconds 4.804230213165283
+SECTOR 10 4 seconds 2215.88
+assembled 4 18 1 n 10756 aug 15012 nnz 479330 seconds 4.728258371353149
+SECTOR 10 5 seconds 2228.85
+assembled 4 18 1 n 10756 aug 15012 nnz 489058 seconds 4.756372928619385
+SECTOR 10 6 seconds 2242.14
+assembled 4 18 1 n 10756 aug 15012 nnz 489058 seconds 4.787217855453491
+SECTOR 10 7 seconds 2255.37
+assembled 4 18 1 n 10756 aug 15012 nnz 479938 seconds 4.68981409072876
+SECTOR 10 8 seconds 2268.58
+assembled 4 18 1 n 10756 aug 15012 nnz 488450 seconds 4.7402307987213135
+SECTOR 10 9 seconds 2281.82
+assembled 4 18 1 n 10756 aug 15012 nnz 485410 seconds 4.758923053741455
+SECTOR 10 10 seconds 2294.97
+assembled 4 18 1 n 10756 aug 15012 nnz 478722 seconds 4.712538957595825
+SECTOR 10 11 seconds 2307.99
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.8428120613098145
+SECTOR 10 12 seconds 2321.72
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.790524959564209
+SECTOR 10 13 seconds 2334.83
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.7164928913116455
+SECTOR 10 14 seconds 2348.11
+assembled 4 18 1 n 10756 aug 15012 nnz 490274 seconds 4.753360748291016
+SECTOR 10 15 seconds 2361.45
+assembled 4 18 1 n 10756 aug 15012 nnz 467170 seconds 4.272204875946045
+SECTOR 11 0 seconds 2373.34
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.751134157180786
+SECTOR 11 1 seconds 2386.83
+assembled 4 18 1 n 10756 aug 15012 nnz 502434 seconds 4.7584826946258545
+SECTOR 11 2 seconds 2400.36
+assembled 4 18 1 n 10756 aug 15012 nnz 476290 seconds 4.661083936691284
+SECTOR 11 3 seconds 2413.26
+assembled 4 18 1 n 10756 aug 15012 nnz 500002 seconds 4.74919581413269
+SECTOR 11 4 seconds 2426.86
+assembled 4 18 1 n 10756 aug 15012 nnz 469602 seconds 4.613950252532959
+SECTOR 11 5 seconds 2439.41
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.714564085006714
+SECTOR 11 6 seconds 2452.59
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.709436416625977
+SECTOR 11 7 seconds 2465.69
+assembled 4 18 1 n 10756 aug 15012 nnz 473250 seconds 4.646955728530884
+SECTOR 11 8 seconds 2478.8
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.726263046264648
+SECTOR 11 9 seconds 2491.94
+assembled 4 18 1 n 10756 aug 15012 nnz 479938 seconds 4.67290186882019
+SECTOR 11 10 seconds 2505.03
+assembled 4 18 1 n 10756 aug 15012 nnz 472034 seconds 4.64814019203186
+SECTOR 11 11 seconds 2517.9
+assembled 4 18 1 n 10756 aug 15012 nnz 503042 seconds 4.809160232543945
+SECTOR 11 12 seconds 2531.58
+assembled 4 18 1 n 10756 aug 15012 nnz 479330 seconds 4.770324945449829
+SECTOR 11 13 seconds 2544.65
+assembled 4 18 1 n 10756 aug 15012 nnz 477506 seconds 4.653997421264648
+SECTOR 11 14 seconds 2557.78
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.733179569244385
+SECTOR 11 15 seconds 2571.1
+assembled 4 18 1 n 10756 aug 15012 nnz 493314 seconds 4.315051317214966
+SECTOR 12 0 seconds 2583.61
+assembled 4 18 1 n 10756 aug 15012 nnz 526146 seconds 4.8815083503723145
+SECTOR 12 1 seconds 2597.69
+assembled 4 18 1 n 10756 aug 15012 nnz 523106 seconds 4.867199182510376
+SECTOR 12 2 seconds 2611.78
+assembled 4 18 1 n 10756 aug 15012 nnz 501218 seconds 4.837371826171875
+SECTOR 12 3 seconds 2625.36
+assembled 4 18 1 n 10756 aug 15012 nnz 524322 seconds 4.851285219192505
+SECTOR 12 4 seconds 2639.27
+assembled 4 18 1 n 10756 aug 15012 nnz 498786 seconds 4.868900775909424
+SECTOR 12 5 seconds 2652.78
+assembled 4 18 1 n 10756 aug 15012 nnz 507298 seconds 5.142610788345337
+SECTOR 12 6 seconds 2666.77
+assembled 4 18 1 n 10756 aug 15012 nnz 509122 seconds 4.880589723587036
+SECTOR 12 7 seconds 2680.51
+assembled 4 18 1 n 10756 aug 15012 nnz 500610 seconds 4.777894496917725
+SECTOR 12 8 seconds 2694.11
+assembled 4 18 1 n 10756 aug 15012 nnz 504866 seconds 4.896007776260376
+SECTOR 12 9 seconds 2707.76
+assembled 4 18 1 n 10756 aug 15012 nnz 503650 seconds 4.806572437286377
+SECTOR 12 10 seconds 2721.39
+assembled 4 18 1 n 10756 aug 15012 nnz 499394 seconds 4.802912712097168
+SECTOR 12 11 seconds 2734.94
+assembled 4 18 1 n 10756 aug 15012 nnz 522498 seconds 4.803406000137329
+SECTOR 12 12 seconds 2748.69
+assembled 4 18 1 n 10756 aug 15012 nnz 502434 seconds 4.878324031829834
+SECTOR 12 13 seconds 2762.26
+assembled 4 18 1 n 10756 aug 15012 nnz 500610 seconds 4.856377124786377
+SECTOR 12 14 seconds 2776.2
+assembled 4 18 1 n 10756 aug 15012 nnz 507298 seconds 4.8592848777771
+SECTOR 12 15 seconds 2790.0
+assembled 4 18 1 n 10756 aug 15012 nnz 473250 seconds 4.368322372436523
+SECTOR 13 0 seconds 2802.1
+assembled 4 18 1 n 10756 aug 15012 nnz 509122 seconds 4.809048414230347
+SECTOR 13 1 seconds 2815.82
+assembled 4 18 1 n 10756 aug 15012 nnz 504866 seconds 4.736107349395752
+SECTOR 13 2 seconds 2829.36
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.736278533935547
+SECTOR 13 3 seconds 2842.68
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.820269346237183
+SECTOR 13 4 seconds 2856.43
+assembled 4 18 1 n 10756 aug 15012 nnz 479938 seconds 4.782192230224609
+SECTOR 13 5 seconds 2869.53
+assembled 4 18 1 n 10756 aug 15012 nnz 489058 seconds 4.746340990066528
+SECTOR 13 6 seconds 2882.84
+assembled 4 18 1 n 10756 aug 15012 nnz 489666 seconds 4.768571615219116
+SECTOR 13 7 seconds 2896.29
+assembled 4 18 1 n 10756 aug 15012 nnz 478114 seconds 4.673215866088867
+SECTOR 13 8 seconds 2909.46
+assembled 4 18 1 n 10756 aug 15012 nnz 486018 seconds 4.754457950592041
+SECTOR 13 9 seconds 2922.66
+assembled 4 18 1 n 10756 aug 15012 nnz 487234 seconds 4.729337215423584
+SECTOR 13 10 seconds 2935.88
+assembled 4 18 1 n 10756 aug 15012 nnz 480546 seconds 4.714694499969482
+SECTOR 13 11 seconds 2949.05
+assembled 4 18 1 n 10756 aug 15012 nnz 507906 seconds 4.8124659061431885
+SECTOR 13 12 seconds 2962.89
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.7203428745269775
+SECTOR 13 13 seconds 2975.91
+assembled 4 18 1 n 10756 aug 15012 nnz 482370 seconds 4.745196104049683
+SECTOR 13 14 seconds 2989.2
+assembled 4 18 1 n 10756 aug 15012 nnz 487234 seconds 4.754836559295654
+SECTOR 13 15 seconds 3002.55
+assembled 4 18 1 n 10756 aug 15012 nnz 473858 seconds 4.2719926834106445
+SECTOR 14 0 seconds 3014.53
+assembled 4 18 1 n 10756 aug 15012 nnz 509122 seconds 4.784714937210083
+SECTOR 14 1 seconds 3028.22
+assembled 4 18 1 n 10756 aug 15012 nnz 508514 seconds 4.809773921966553
+SECTOR 14 2 seconds 3041.93
+assembled 4 18 1 n 10756 aug 15012 nnz 481762 seconds 4.737752676010132
+SECTOR 14 3 seconds 3055.06
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.826866149902344
+SECTOR 14 4 seconds 3068.9
+assembled 4 18 1 n 10756 aug 15012 nnz 478722 seconds 4.759850263595581
+SECTOR 14 5 seconds 3081.93
+assembled 4 18 1 n 10756 aug 15012 nnz 490274 seconds 4.781553268432617
+SECTOR 14 6 seconds 3095.36
+assembled 4 18 1 n 10756 aug 15012 nnz 489666 seconds 4.769896030426025
+SECTOR 14 7 seconds 3108.64
+assembled 4 18 1 n 10756 aug 15012 nnz 481154 seconds 4.707017183303833
+SECTOR 14 8 seconds 3121.9
+assembled 4 18 1 n 10756 aug 15012 nnz 487234 seconds 4.74555230140686
+SECTOR 14 9 seconds 3135.16
+assembled 4 18 1 n 10756 aug 15012 nnz 488450 seconds 4.747382879257202
+SECTOR 14 10 seconds 3148.49
+assembled 4 18 1 n 10756 aug 15012 nnz 479330 seconds 4.731349945068359
+SECTOR 14 11 seconds 3161.68
+assembled 4 18 1 n 10756 aug 15012 nnz 506690 seconds 4.809237718582153
+SECTOR 14 12 seconds 3175.5
+assembled 4 18 1 n 10756 aug 15012 nnz 482978 seconds 4.744133710861206
+SECTOR 14 13 seconds 3188.64
+assembled 4 18 1 n 10756 aug 15012 nnz 483586 seconds 4.702330827713013
+SECTOR 14 14 seconds 3201.81
+assembled 4 18 1 n 10756 aug 15012 nnz 488450 seconds 4.72296929359436
+SECTOR 14 15 seconds 3215.14
+assembled 4 18 1 n 10756 aug 15012 nnz 478722 seconds 4.306509256362915
+SECTOR 15 0 seconds 3227.21
+assembled 4 18 1 n 10756 aug 15012 nnz 513378 seconds 4.799302577972412
+SECTOR 15 1 seconds 3240.92
+assembled 4 18 1 n 10756 aug 15012 nnz 511554 seconds 4.8163161277771
+SECTOR 15 2 seconds 3254.65
+assembled 4 18 1 n 10756 aug 15012 nnz 485410 seconds 4.731431245803833
+SECTOR 15 3 seconds 3267.78
+assembled 4 18 1 n 10756 aug 15012 nnz 509122 seconds 4.800440788269043
+SECTOR 15 4 seconds 3281.62
+assembled 4 18 1 n 10756 aug 15012 nnz 484194 seconds 4.728376626968384
+SECTOR 15 5 seconds 3294.73
+assembled 4 18 1 n 10756 aug 15012 nnz 493922 seconds 4.740343809127808
+SECTOR 15 6 seconds 3308.12
+assembled 4 18 1 n 10756 aug 15012 nnz 494530 seconds 4.785028696060181
+SECTOR 15 7 seconds 3321.55
+assembled 4 18 1 n 10756 aug 15012 nnz 484802 seconds 4.725526571273804
+SECTOR 15 8 seconds 3334.93
+assembled 4 18 1 n 10756 aug 15012 nnz 490274 seconds 4.774470806121826
+SECTOR 15 9 seconds 3348.4
+assembled 4 18 1 n 10756 aug 15012 nnz 491490 seconds 4.776290655136108
+SECTOR 15 10 seconds 3361.77
+assembled 4 18 1 n 10756 aug 15012 nnz 484194 seconds 4.719824314117432
+SECTOR 15 11 seconds 3375.03
+assembled 4 18 1 n 10756 aug 15012 nnz 511554 seconds 4.864070653915405
+SECTOR 15 12 seconds 3388.95
+assembled 4 18 1 n 10756 aug 15012 nnz 485410 seconds 4.763692617416382
+SECTOR 15 13 seconds 3402.12
+assembled 4 18 1 n 10756 aug 15012 nnz 488450 seconds 4.709542512893677
+SECTOR 15 14 seconds 3415.51
+assembled 4 18 1 n 10756 aug 15012 nnz 488450 seconds 4.69221830368042
+SECTOR 15 15 seconds 3428.8
+ROW 303 seconds 3452.77
+SUMMARY {
+  "q": 4,
+  "R": 18,
+  "dps": 110,
+  "second_segment_coefficient": -0.25,
+  "third_segment_coefficient": -2.25,
+  "crossing_drive": "double precision; root and spectral values are not high-precision enclosures",
+  "root_double": 1.1308445374655998,
+  "charged_low_double": [
+    -2.607336093617564e-15,
+    0.27958754183190937,
+    0.29780799126077595,
+    0.31723091901951594,
+    0.4355713970893799
+  ],
+  "neutral_min_double": 0.6915871087029114,
+  "central_zero_schur_min_double": [
+    1.3667858092383884,
+    0.26234635041066096,
+    0.1331831606528067
+  ],
+  "boundary_null_norm_double": 4.191729214656475e-15,
+  "flat_resolvent_absolute_residual": "1.90217373535624469939621409249350291876341748087325162693135583667314819486629039077956454449635269673818e-106",
+  "block_count": 304,
+  "right_row_j": 303,
+  "common_weak_sign_rows": [
+    303
+  ],
+  "best_ratio_row_j": 303,
+  "best_l1_row_j": 303,
+  "comparison_with_double_cached_columns": null,
+  "seconds": 3452.773081302643,
+  "peak_rss_KiB": 1051156,
+  "qualification": "High-precision non-interval dressed solves from a double-precision Schur drive. Physical rows use the exact blockBase progression and Taylor raw jets. No high-precision root, interval certificate, P1/P2/KernelLine or P3 proof."
+}
+RIGHT_ROW {
+  "j": 303,
+  "layer": 766,
+  "sum": "3.86367835166634921737679719687187106426445849770689651771677799247029381435454420195675350623811215111921e-129",
+  "max_abs_cell": "2.33455676254716754068186017972249734040789828763340864616463675286002092301822846553299296367160906351213e-131",
+  "l1_abs_cells": "3.86367835166634921737679719687187106426445849770689651771677799247029381435454420195675350623811215111921e-129",
+  "max_over_abs_sum": "0.00604231654413030162367532478582202331066586354176151303759420011776077948850607148561041477313470854701743",
+  "abs_sum_over_l1": "1.0",
+  "negative_count": 0,
+  "positive_count": 256,
+  "zero_count": 0,
+  "common_weak_sign": true,
+  "sign_exceptions": []
+}

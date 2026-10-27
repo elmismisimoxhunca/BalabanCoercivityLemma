@@ -1,0 +1,87 @@
+{
+  "qualification": "All numerical results are double-precision non-interval evidence only. Candidate labels are screening diagnostics, not proved P1/P2/KernelLine facts. No nonzero jet is a Lean certificate.",
+  "original_control": {
+    "root_relative_error": 1.286649787551832e-15,
+    "ratios": [
+      27.066899069440666,
+      1.6282766071581145,
+      1.628408248347208
+    ],
+    "retained_ratios": [
+      27.0668990694421,
+      1.6282766071581007,
+      1.6284082483471973
+    ]
+  },
+  "even_shift_max_relative_error": 0.0,
+  "odd_shift_best": {
+    "ratio": 1.9743853783774172,
+    "shift": [
+      0,
+      1
+    ],
+    "direction": 1
+  },
+  "arm_coefficients": {
+    "variant_count": 112,
+    "candidate_count": 76,
+    "best_worst_tangential_ratio": 1.5843152998156405,
+    "coefficients": [
+      1.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "root": 1.495304795330734
+  },
+  "length_two_alternating": {
+    "variant_count": 202,
+    "candidate_count": 113,
+    "best_worst_tangential_ratio": 1.4935096168218045,
+    "name": "all_-1.0",
+    "root": 1.0785698028265402,
+    "ratios": [
+      27.064745697635637,
+      1.4933888359960268,
+      1.4935096168218045
+    ],
+    "central_zero_diagnostic_min": 0.09212771739540188
+  },
+  "double_star_equal_strength": {
+    "status": "rejected",
+    "second_eigenvalue": 1.530115552490774e-14
+  },
+  "alternating_high_precision_replay": {
+    "dps": 110,
+    "ratios": [
+      27.064745699580968,
+      1.4933888359926808,
+      1.4935096168184767
+    ],
+    "flat_residual": "7.78130813583168118091967738533274514853142117187695926600354179382107817863308701276676083762400284931118e-107",
+    "comparison": {
+      "root_absolute_difference": 4.440892098500626e-16,
+      "ratio_absolute_differences": [
+        1.945330566044512e-09,
+        3.3460007237815626e-12,
+        3.327738732001361e-12
+      ],
+      "sum_relative_differences": [
+        7.189224503153388e-11,
+        2.284591873414831e-12,
+        2.2726765441706522e-12
+      ]
+    },
+    "scope": "High-precision response from a double-precision drive; not a high-precision root or proof."
+  },
+  "lean": {
+    "local": "AHP/round14/pathchoice/r1/PathChoice.lean",
+    "shared": "AHP/round14/shared/pathchoice/R1_WeightedStar.lean",
+    "new_axiom_records_each": 16,
+    "source_sha256": "672250dab629a34f6f5f058b84e8b18d2372126cd0b81eee6160593fe7a28748",
+    "exit_each": 0,
+    "byte_identical": true,
+    "forbidden_mechanisms": false
+  },
+  "verdict": "No screened modified family reaches a dominant-cell or common-sign regime. P3, CofinalP3 and GoalNeg2 remain open."
+}

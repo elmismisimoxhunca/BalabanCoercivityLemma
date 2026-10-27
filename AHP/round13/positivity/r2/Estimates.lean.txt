@@ -1,0 +1,158 @@
+namespace AdalyFormal.Round13.Positivity.Physical
+open Classical
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.StatementLaneR6
+open AdalyFormal.StatementLaneR8
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 RMap curlValueCovariant)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Balaban.CovariantHjMinimizer
+  (periodicLatticeShiftBack periodicLatticeShift_shiftBack periodicLatticeShiftBack_shift)
+open AdalyFormal.Round12.Noncancel.Path
+open AdalyFormal.Round12.Noncancel.Plaquette
+open AdalyFormal.Round12.Noncancel.FullPlaquette
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round13.Positivity.Leaves
+variable {L : PeriodicLatticeExtent}
+
+theorem plaqEnergy_zero_input (U : Cfg L) (A : BondFnL2 L)
+    (p : PeriodicLatticePlaquette L)
+    (hz : ∀ e ∈ periodicPlaquetteBoundaryEdges p, A e = 0) : plaqEnergy U A p = 0 := by
+  rw [plaqEnergy_congr_field U A 0 p (by simpa using hz)]
+  simp [plaqEnergy, curlValueCovariant]
+
+theorem hol_flat_components (U : Cfg L) (p : PeriodicLatticePlaquette L)
+    (h : holonomyElem U p = 1) : reHolonomy U p = 1 ∧ imHolonomy U p = 0 := by
+  constructor
+  · simp [reHolonomy,holonomyElemInv,h]
+    ext i j
+    by_cases hij : i=j <;> norm_num [Matrix.one_apply,hij]
+  · simp [imHolonomy,holonomyElemInv,h]
+
+theorem plaqEnergy_nonneg_links (U : Cfg L) (A : BondFnL2 L)
+    (p : PeriodicLatticePlaquette L)
+    (hU : ∀ e ∈ periodicPlaquetteBoundaryEdges p, U e = 1) : 0 ≤ plaqEnergy U A p := by
+  have hh : holonomyElem U p = 1 := by
+    unfold holonomyElem periodicPlaquetteHolonomy
+    dsimp only
+    rw [hU _ ((edge_mem p _).mpr (Or.inl rfl)),
+      hU _ ((edge_mem p _).mpr (Or.inr (Or.inl rfl))),
+      hU _ ((edge_mem p _).mpr (Or.inr (Or.inr (Or.inl rfl)))),
+      hU _ ((edge_mem p _).mpr (Or.inr (Or.inr (Or.inr rfl))))]
+    simp
+  exact plaqEnergy_nonneg U A p (hol_flat_components U p hh).1 (hol_flat_components U p hh).2
+
+/-- The ENTIRE non-star remainder is nonnegative on the true touching space. -/
+theorem nonstar_nonneg {G : TowerGeom L} {x : PeriodicLatticeSite L}
+    (hb : BdPt G.Om0 x) (hf : periodicLatticeShift (periodicLatticeShift x 0) 0 ∉ G.Om0)
+    (t : ℝ) (u : ↥(bondSupp G)) (p : PeriodicLatticePlaquette L)
+    (hnot : ∀ ν : {ν : Fin 3 // 0 < ν}, p ≠ P1 x ν ∧ p ≠ P2 x ν) :
+    0 ≤ plaqEnergy (starPath (periodicLatticeShift x 0) t) (iE G u) p := by
+  by_cases he : ∃ e ∈ periodicPlaquetteBoundaryEdges p, e ∈ starLinks (periodicLatticeShift x 0)
+  · obtain ⟨e,he,hs⟩ := he
+    rcases star_edge_cases hb hf p e he hs with ⟨ν,h | h⟩ | hp
+    · exact False.elim ((hnot ν).1 h)
+    · exact False.elim ((hnot ν).2 h)
+    · rw [plaqEnergy_zero_input]
+      intro e he
+      have hz := exteriorPair_vertices hb p hp e he
+      exact u.property e (fun h => h.elim hz.1 hz.2)
+  · apply plaqEnergy_nonneg_links
+    intro e he'
+    have hs : e ∉ starLinks (periodicLatticeShift x 0) := fun hs => he ⟨e,he',hs⟩
+    simp [starPath,hs]
+
+/-- The second exterior normal layer does not wrap into the slab. -/
+theorem right_forward_out {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    periodicLatticeShift (periodicLatticeShift (rightSite hq R) 0) 0 ∉ (dilTower q R).Om 0 := by
+  change ¬ (4*q ≤ _ ∧ _ < 12*(R*q)+12*q)
+  have hcoord : ((rightSite hq R) 0).val = 12*(R*q)+12*q-1 := by simp [rightSite]
+  simp only [dil_shift_zero hq R,hcoord,ite_true]
+  have ha : 12*(R*q)+12*q-1+1 = 12*(R*q)+12*q := Nat.sub_add_cancel (by omega)
+  have hb : (12*(R*q)+12*q) % (12*(R*q)+16*q) = 12*(R*q)+12*q :=
+    Nat.mod_eq_of_lt (by omega)
+  have hc : (12*(R*q)+12*q+1) % (12*(R*q)+16*q) = 12*(R*q)+12*q+1 :=
+    Nat.mod_eq_of_lt (by omega)
+  rw [ha,hb,hc]
+  omega
+
+theorem hol_phase_components (U : Cfg L) (p : PeriodicLatticePlaquette L) (t : ℝ)
+    (hh : holonomyElem U p = uθ t) :
+    reHolonomy U p = realHol (Real.cos t) ∧ imHolonomy U p = imagHol (Real.sin t) := by
+  have hinv : (holonomyElemInv U p : Matrix (Fin 2) (Fin 2) ℂ) = star (uMat t) := by
+    change star (holonomyElem U p : Matrix (Fin 2) (Fin 2) ℂ) = _
+    rw [hh]
+    rfl
+  have hcoe : (holonomyElem U p : Matrix (Fin 2) (Fin 2) ℂ) = uMat t := by rw [hh]; rfl
+  have hexp (r : ℝ) : Complex.exp ((r : ℂ)*Complex.I) =
+      (Real.cos r : ℂ) + (Real.sin r : ℂ)*Complex.I := by
+    rw [Complex.exp_mul_I, ← Complex.ofReal_cos, ← Complex.ofReal_sin]
+  have hneg : Complex.exp (-((t : ℂ)*Complex.I)) =
+      (Real.cos t : ℂ) - (Real.sin t : ℂ)*Complex.I := by
+    rw [← neg_mul, ← Complex.ofReal_neg,hexp]
+    simp [Real.cos_neg,Real.sin_neg,sub_eq_add_neg]
+  simp only [reHolonomy, imHolonomy, hcoe,hinv]
+  constructor <;> ext i j <;> fin_cases i <;> fin_cases j <;>
+    simp [uMat,realHol,imagHol,Matrix.star_apply,hexp,hneg,
+      Complex.ext_iff] <;> ring
+
+theorem norm_coordinates (X : SuTwo) :
+    Complex.normSq ((X : Matrix (Fin 2) (Fin 2) ℂ) 0 1) +
+      (((X : Matrix (Fin 2) (Fin 2) ℂ) 0 0).im)^2 = ‖X‖^2 := by
+  rw [← real_inner_self_eq_norm_sq]
+  exact (full_inner X _ _ (lieMat_coordinates X)).symm
+
+/-- The local lower bound in genuine SuTwo norms, with neutral center retained. -/
+theorem right_first_norm_lower (U : Cfg L) (A : BondFnL2 L)
+    (p : PeriodicLatticePlaquette L) (t : ℝ) (ht : 0 ≤ Real.cos t)
+    (X Y Z : SuTwo) (hX : (X : Matrix (Fin 2) (Fin 2) ℂ) 0 1 = 0)
+    (hh : holonomyElem U p = uθ t)
+    (h1 : a1LM U p (WithLp.ofLp A) = (X : Matrix (Fin 2) (Fin 2) ℂ))
+    (h2 : a2LM p (WithLp.ofLp A) = (Y : Matrix (Fin 2) (Fin 2) ℂ))
+    (h3 : a3LM p (WithLp.ofLp A) = (Z : Matrix (Fin 2) (Fin 2) ℂ))
+    (h4 : a4LM U p (WithLp.ofLp A) = 0) :
+    -(1-Real.cos t)*(‖Y‖^2+‖Z‖^2) ≤ plaqEnergy U A p := by
+  have hx := lieMat_coordinates X
+  rw [hX] at hx
+  have hh' := hol_phase_components U p t hh
+  have hp := frozen_right_zero_first_lower U A p (Real.cos t) (Real.sin t)
+    _ _ _ _ _ ht (Real.cos_le_one t) (by nlinarith [Real.sin_sq_add_cos_sq t])
+    hh'.1 hh'.2 (h1.trans hx) (h2.trans (lieMat_coordinates Y))
+    (h3.trans (lieMat_coordinates Z)) h4
+  simpa only [norm_coordinates] using hp
+
+theorem right_third_norm_lower (U : Cfg L) (A : BondFnL2 L)
+    (p : PeriodicLatticePlaquette L) (t : ℝ) (ht : 0 ≤ Real.cos t)
+    (X Y Z : SuTwo) (hZ : (Z : Matrix (Fin 2) (Fin 2) ℂ) 0 1 = 0)
+    (hh : holonomyElem U p = uθ t)
+    (h1 : a1LM U p (WithLp.ofLp A) = (X : Matrix (Fin 2) (Fin 2) ℂ))
+    (h2 : a2LM p (WithLp.ofLp A) = (Y : Matrix (Fin 2) (Fin 2) ℂ))
+    (h3 : a3LM p (WithLp.ofLp A) = (Z : Matrix (Fin 2) (Fin 2) ℂ))
+    (h4 : a4LM U p (WithLp.ofLp A) = 0) :
+    -(1-Real.cos t)*(‖X‖^2+‖Y‖^2) ≤ plaqEnergy U A p := by
+  have hz := lieMat_coordinates Z
+  rw [hZ] at hz
+  have hh' := hol_phase_components U p t hh
+  have hp := frozen_right_zero_third_lower U A p (Real.cos t) (Real.sin t)
+    _ _ _ _ _ ht (Real.cos_le_one t) (by nlinarith [Real.sin_sq_add_cos_sq t])
+    hh'.1 hh'.2 (h1.trans (lieMat_coordinates X)) (h2.trans (lieMat_coordinates Y))
+    (h3.trans hz) h4
+  simpa only [norm_coordinates] using hp
+end AdalyFormal.Round13.Positivity.Physical
+#print axioms AdalyFormal.Round13.Positivity.Physical.hol_flat_components
+#print axioms AdalyFormal.Round13.Positivity.Physical.plaqEnergy_nonneg_links
+#print axioms AdalyFormal.Round13.Positivity.Physical.norm_coordinates
+#print axioms AdalyFormal.Round13.Positivity.Physical.plaqEnergy_zero_input
+#print axioms AdalyFormal.Round13.Positivity.Physical.nonstar_nonneg
+#print axioms AdalyFormal.Round13.Positivity.Physical.right_forward_out
+#print axioms AdalyFormal.Round13.Positivity.Physical.hol_phase_components
+#print axioms AdalyFormal.Round13.Positivity.Physical.right_first_norm_lower
+#print axioms AdalyFormal.Round13.Positivity.Physical.right_third_norm_lower

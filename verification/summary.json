@@ -1,0 +1,18 @@
+{
+  "core_base": "f6199f6ff72b0910d263ddf798d73899e90107e9",
+  "lean_version": "v4.31.0",
+  "module_count": 2782,
+  "main_axiom_records": 572,
+  "r7_axiom_records": 1,
+  "reproduction_exit": 0,
+  "reproduction_finished_utc": "2026-10-27T05:49:36Z",
+  "cache_assisted": true,
+  "cold_build": false,
+  "network_dependency_path_tested": false,
+  "validator_tests": 10,
+  "validator_tests_passed": true,
+  "blueprint_documentation_recheck": "pass",
+  "independent_lean_replay_of_research_archive": false,
+  "core_lean_files_unchanged": 2807,
+  "research_lean_log_exit_files_unchanged": 1696
+}

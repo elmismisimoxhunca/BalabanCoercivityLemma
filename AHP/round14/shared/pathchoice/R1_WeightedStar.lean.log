@@ -1,0 +1,62 @@
+'AdalyFormal.Round9.Guarded.QualitativeR2.AnM' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.AnFam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starLinks' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_cont' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_an' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starLinks_exterior' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_off_exterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.starPath_normal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.star_holonomy1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.star_holonomy2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Path.star_negative_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_cont' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_an' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.pathU_rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.dilU_rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.rightStar_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.RightFamily.cofinal_rightStar_paths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedStarPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedStarPath_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedStarPath_cont' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedStarPath_an' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedStarPath_off_exterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round14.PathChoice.uθ_neg_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedStarPath_pi_of_sign' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedRightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedRightStar_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedRightStar_cont' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedRightStar_an' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedRightStar_off_exterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round14.PathChoice.pathU_weightedRightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.dilU_weightedRightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.vacA_weightedRightStar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.PathChoice.weightedRightStar_negative_pi' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@weightedRightStar_negative_pi : ∀ {q R : ℕ} (hq : 0 < q),
+  2 ∣ R →
+    18 ≤ R →
+      ∀ (c : Bond (scaleUp 2 1 (dilLu q R)) → ℝ),
+        (∀ e ∈ starLinks (periodicLatticeShift (rightSite hq R) 0), c e = 1 ∨ c e = -1) →
+          ∃ w, ⟪w, (vacA q R (weightedRightStar hq R c) 1 Real.pi) w⟫ < 0

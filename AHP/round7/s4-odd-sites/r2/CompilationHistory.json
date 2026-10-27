@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-22T15:10:42.039321+00:00",
+  "invocations": [
+    {
+      "file": "Attempt.lean",
+      "observedToolResult": "code 1, no sibling exit; empty log",
+      "sourceSHA256": "6a50c906762adb8e59b8874ada9e19813ed9097e134ad76fb3cc52112fcf5723",
+      "relaunched": false
+    },
+    {
+      "file": "GuardNearZero.lean",
+      "observedToolResult": "code 1, no sibling exit; empty log",
+      "laterStaticEdit": "replace unfinished flat-loop simplification by RegBg2_of_RegBg (RegBg_flat ...)",
+      "relaunched": false
+    },
+    {
+      "file": "GuardedGeometry.lean",
+      "observedToolResult": "timeout after 300 seconds, no sibling exit; empty log",
+      "relaunched": false
+    },
+    {
+      "file": "WeightCertificate.lean",
+      "observedToolResult": "code 1, no sibling exit; log reports both heavy slots busy",
+      "relaunched": false
+    }
+  ]
+}

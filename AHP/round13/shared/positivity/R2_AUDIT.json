@@ -1,0 +1,414 @@
+{
+  "scope": "Builder plus separate publication-path executions, not independent review",
+  "files": [
+    {
+      "path": "AHP/round13/positivity/r2/StarGeometry.lean",
+      "lines": 2414,
+      "sourceSha256": "ffd042cabdf5e9ca377847cb4138e52a5aec5b58110aeaae81e465dc3e288976",
+      "logSha256": "da6ce8794d221b641e8c55e4d04d274228a89a9bca014627b005d63b892bd8f6",
+      "exitCode": 0,
+      "axiomRecords": 131,
+      "axiomFreeRecords": 0,
+      "imports": [
+        "DrEquiv"
+      ]
+    },
+    {
+      "path": "AHP/round13/shared/positivity/R2_StarGeometry.lean",
+      "lines": 2414,
+      "sourceSha256": "ffd042cabdf5e9ca377847cb4138e52a5aec5b58110aeaae81e465dc3e288976",
+      "logSha256": "da6ce8794d221b641e8c55e4d04d274228a89a9bca014627b005d63b892bd8f6",
+      "exitCode": 0,
+      "axiomRecords": 131,
+      "axiomFreeRecords": 0,
+      "imports": [
+        "DrEquiv"
+      ]
+    },
+    {
+      "path": "AHP/round13/positivity/r2/P2.lean",
+      "lines": 3523,
+      "sourceSha256": "a0094e4a4a93d207bd4552d787ffd2434d0a463c498b426573f08dd286ed478c",
+      "logSha256": "31c4125a4728c7a18564b23ff9a76faaaf5507be5f7cc76658ef4859182f29d5",
+      "exitCode": 0,
+      "axiomRecords": 140,
+      "axiomFreeRecords": 0,
+      "imports": [
+        "DrEquiv"
+      ]
+    },
+    {
+      "path": "AHP/round13/shared/positivity/R2_P2.lean",
+      "lines": 3523,
+      "sourceSha256": "a0094e4a4a93d207bd4552d787ffd2434d0a463c498b426573f08dd286ed478c",
+      "logSha256": "31c4125a4728c7a18564b23ff9a76faaaf5507be5f7cc76658ef4859182f29d5",
+      "exitCode": 0,
+      "axiomRecords": 140,
+      "axiomFreeRecords": 0,
+      "imports": [
+        "DrEquiv"
+      ]
+    }
+  ],
+  "copies": [
+    {
+      "source": "AHP/round13/positivity/r1/MassAbsorption.lean",
+      "start": 1,
+      "end": 1058,
+      "sha256": "ee1b03fd81d2fb7ed8a161d4a6fdab7abfa7e51cd876bdc2b7340810123cec3a",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round13/positivity/r1/EightLeaves.lean",
+      "start": 8,
+      "end": 693,
+      "sha256": "1300b3254be35b738d599365c20a16b7de0022f5b8da251789b37382d196bad3",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round13/positivity/r1/EightLeaves.lean",
+      "start": 780,
+      "end": 914,
+      "sha256": "4f3d14c35958281f592e0552870cd5fe67a3e0cee0c16003b03b5151b1b9e9a8",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round13/positivity/r1/LocalPositive.lean",
+      "start": 230,
+      "end": 1096,
+      "sha256": "ec2856383c146219922f754ce35d13b5bfed42f077e7cacde5d15f23bb6516ab",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round13/positivity/r1/LocalPositive.lean",
+      "start": 1409,
+      "end": 1472,
+      "sha256": "f0182df697a25af93e124cc093641ed2ef9b7b4bfa4c7fa2870676cfb53d82ff",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/kernel/R2_FirstCrossing.lean",
+      "start": 975,
+      "end": 993,
+      "sha256": "cfe80582c6cf1a1b85add3bebd8ad17c25e450de9781610c36d83af99ef23cc2",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/kernel/R2_FirstCrossing.lean",
+      "start": 1670,
+      "end": 1677,
+      "sha256": "146b0ba34892945d01365b667577344a886e8eed58b27ab8ee4798a15ad1d386",
+      "verbatim": true
+    }
+  ],
+  "directEarlierCopies": [
+    {
+      "source": "AHP/round12/shared/noncancel/R2_FullPlaquette.lean",
+      "start": 1,
+      "end": 453,
+      "sha256": "55f109b21206ea74258b339f964ea02d3ecc108b8722349e82ed9a48a1a5d19c",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_Mass.lean",
+      "start": 8,
+      "end": 91,
+      "sha256": "6d1f76a9adc5918a46510a31a2f29e553974088f86ed9262cddb2fabf1ace155",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_Boundary.lean",
+      "start": 8,
+      "end": 135,
+      "sha256": "423ea73c80c83fb0bcd40cba34716dc897ceef7d0ab04d49f83e1d7580b00ded",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+      "start": 8,
+      "end": 693,
+      "sha256": "1300b3254be35b738d599365c20a16b7de0022f5b8da251789b37382d196bad3",
+      "verbatim": true
+    },
+    {
+      "source": "AHP/round13/shared/detection/R1_FlatUnit.lean",
+      "start": 230,
+      "end": 1096,
+      "sha256": "ec2856383c146219922f754ce35d13b5bfed42f077e7cacde5d15f23bb6516ab",
+      "verbatim": true
+    }
+  ],
+  "newDeclarations": [
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair",
+      "part": "Geometry",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair_shift",
+      "part": "Geometry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair_back",
+      "part": "Geometry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair_vertices",
+      "part": "Geometry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.star_edge_cases",
+      "part": "Geometry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.plaqEnergy_zero_input",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.hol_flat_components",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.plaqEnergy_nonneg_links",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.nonstar_nonneg",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.right_forward_out",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.hol_phase_components",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.norm_coordinates",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.right_first_norm_lower",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.right_third_norm_lower",
+      "part": "Estimates",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.arm1_lower",
+      "part": "Arms",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.arm2_lower",
+      "part": "Arms",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.arm1_omitted",
+      "part": "Arms",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.arm2_omitted",
+      "part": "Arms",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.arm",
+      "part": "Sum",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.arm_injective",
+      "part": "Sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.armBudget",
+      "part": "Sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.armBudget_sum",
+      "part": "Sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_omitted_loss",
+      "part": "Sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_raw_omitted_loss",
+      "part": "Sum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_local_hol",
+      "part": "Join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_carrier_lower",
+      "part": "Join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_zero_coordinate_positive",
+      "part": "Join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_prefix_lower",
+      "part": "Join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_P2",
+      "part": "Join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AdalyFormal.Round13.Positivity.Physical.cofinal_rightStar_P2",
+      "part": "Join",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "exactOriginalP2Statement": true,
+  "mainDeclaration": "AdalyFormal.Round13.Positivity.Physical.rightStar_P2",
+  "status": "P2 proved; no P3 or GoalNeg2 claim",
+  "passed": true
+}

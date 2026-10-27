@@ -1,0 +1,143 @@
+{
+  "q": 1,
+  "R": 20,
+  "side": "right",
+  "dps": 40,
+  "root": "1.2079878564190192830439061379856327",
+  "charged_low": [
+    "-3.7970254206891326679017688236942798e-44",
+    "0.93201280627581617153043866331317344",
+    "1.6685450761436181490363964784527772",
+    "1.8254107365080309617264798253646183"
+  ],
+  "flat_resolvent_absolute_residual": "1.3775511262226853773492309357181596e-40",
+  "profile": [
+    {
+      "j": 72,
+      "x": 188,
+      "areaSum_direct": "6.6200495182023578492033622471208918e-59",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "3.0077259678613662236848011262420632e-19",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 73,
+      "x": 190,
+      "areaSum_direct": "3.6977385114290121534797454575468553e-57",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "1.1794416142818587381565307764530213e-17",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 74,
+      "x": 192,
+      "areaSum_direct": "1.723751030455732853173798135664329e-56",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "4.2595005777490111326444133581711081e-17",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 75,
+      "x": 194,
+      "areaSum_direct": "1.2342840423015979266185975444333578e-54",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "1.603161974398000686444592293031073e-15",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 76,
+      "x": 196,
+      "areaSum_direct": "8.6612062685290329939242861125761e-54",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "7.5655686162422918988866311859911822e-15",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 77,
+      "x": 198,
+      "areaSum_direct": "5.001488757787318418682255797168053e-52",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "2.3505549486711582796414342170006723e-13",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 78,
+      "x": 200,
+      "areaSum_direct": "5.565786591854302709822724633812922e-51",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "1.43800545522895037900568959608784e-12",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 79,
+      "x": 202,
+      "areaSum_direct": "2.3542802814951654049620607565224051e-49",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "3.6821914946256144671620280565224131e-11",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 80,
+      "x": 204,
+      "areaSum_direct": "3.6170434045132325038842740387815149e-48",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "0.00000000031707664001603877189613703134456145",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 81,
+      "x": 206,
+      "areaSum_direct": "1.2323138825861151711081524377368365e-46",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "0.0000000060776288332944206846540036358249116",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 82,
+      "x": 208,
+      "areaSum_direct": "2.3260837674900024507664246101554131e-45",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "0.000000063638279175610879135500807392262314",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    },
+    {
+      "j": 83,
+      "x": 210,
+      "areaSum_direct": "7.003775656783032392218496848132055e-44",
+      "areaSum_Fourier": "0.0",
+      "max_cell_over_abs_sum": "0.0000010516167235128371011447480794368774",
+      "dictionary_relative_error": "0.0",
+      "sector_areaSum": []
+    }
+  ],
+  "signs": [
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0",
+    "1.0"
+  ],
+  "start_row": 72,
+  "stop_row": 84,
+  "direct_only": true,
+  "seconds": 226.7083764076233,
+  "qualification": "Non-interval numerical evidence only; no Lean identification or proof."
+}

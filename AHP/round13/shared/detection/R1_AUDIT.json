@@ -1,0 +1,420 @@
+{
+  "status": "P3 OPEN; compact supporting certificates only",
+  "compiles": [
+    {
+      "path": "AHP/round13/detection/r1/FlatUnit.lean",
+      "exit": 0,
+      "lines": 1175,
+      "sha256": "740a1929956b48d0a47c5b46b8428930b24d4fd9a1449eea0a403e8e411003d5",
+      "logSha256": "f0672353e6023331a622dd603a2135dd89dd3205e0e18d8cea9f303fd91342bb",
+      "axiomRecords": 4,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.flat_N_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.cofinal_flat_N_units",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round13/shared/detection/R1_FlatUnit.lean",
+      "exit": 0,
+      "lines": 1175,
+      "sha256": "740a1929956b48d0a47c5b46b8428930b24d4fd9a1449eea0a403e8e411003d5",
+      "logSha256": "f0672353e6023331a622dd603a2135dd89dd3205e0e18d8cea9f303fd91342bb",
+      "axiomRecords": 4,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.flat_N_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.cofinal_flat_N_units",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round13/detection/r1/JetBridge.lean",
+      "exit": 0,
+      "lines": 3577,
+      "sha256": "627d2c956a6909df679f43a76d05f9cb2ab3e7a2558c2332220b9aa84bb8eca8",
+      "logSha256": "143806332263ec6492560dbd2350aa35d47ed3d92e5e804173b9bf10ad2a5b0d",
+      "axiomRecords": 226,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.flat_N_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.cofinal_flat_N_units",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.curlDetected_of_topJet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.curlDetected_of_signed_top_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round13/shared/detection/R1_JetBridge.lean",
+      "exit": 0,
+      "lines": 3577,
+      "sha256": "627d2c956a6909df679f43a76d05f9cb2ab3e7a2558c2332220b9aa84bb8eca8",
+      "logSha256": "143806332263ec6492560dbd2350aa35d47ed3d92e5e804173b9bf10ad2a5b0d",
+      "axiomRecords": 226,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.flat_N_unit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.cofinal_flat_N_units",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.curlDetected_of_topJet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.curlDetected_of_signed_top_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round13/detection/r1/Transfer.lean",
+      "exit": 0,
+      "lines": 116,
+      "sha256": "7b2950ce0b22add01f631d1969c6c6812cf71d20d5f5b4026f31ddedd77ea51f",
+      "logSha256": "f44fa6a203f387c8867a123cc0cbfafb00bb763625beddcaf7b83c234512c51f",
+      "axiomRecords": 7,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.zero_pair_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.zero_prefix_of_zero_pair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.pair_ne_zero_of_seed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.area_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.area_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.area_proportional_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.decaying_trace_counterexample",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round13/shared/detection/R1_Transfer.lean",
+      "exit": 0,
+      "lines": 116,
+      "sha256": "7b2950ce0b22add01f631d1969c6c6812cf71d20d5f5b4026f31ddedd77ea51f",
+      "logSha256": "3e7ba58bf1a7ccc080a19e04e5fd1fcbf9a5f8ebf2ec8bf37871a78c17dbbb95",
+      "axiomRecords": 7,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.zero_pair_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.zero_prefix_of_zero_pair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.pair_ne_zero_of_seed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.area_step",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.area_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.area_proportional_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.Transfer.decaying_trace_counterexample",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round13/detection/r1/ColorTrace.lean",
+      "exit": 0,
+      "lines": 373,
+      "sha256": "ff03b264d900317c1290512ead499c4f21e31f3a988de5908861af358d221cc2",
+      "logSha256": "ff9005b2bdbe6f05bd140fe68357db1ea36fcabe0445f560ead366d38bbc43f8",
+      "axiomRecords": 24,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.ColorTrace.flatJet_zero_of_pointwise_color",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.ColorTrace.nonzero_trace_with_zero_jet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "AHP/round13/shared/detection/R1_ColorTrace.lean",
+      "exit": 0,
+      "lines": 373,
+      "sha256": "ff03b264d900317c1290512ead499c4f21e31f3a988de5908861af358d221cc2",
+      "logSha256": "ff9005b2bdbe6f05bd140fe68357db1ea36fcabe0445f560ead366d38bbc43f8",
+      "axiomRecords": 24,
+      "newRecords": [
+        {
+          "declaration": "AdalyFormal.Round13.Detection.ColorTrace.flatJet_zero_of_pointwise_color",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "declaration": "AdalyFormal.Round13.Detection.ColorTrace.nonzero_trace_with_zero_jet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  ],
+  "copyChecks": [
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round12/shared/kernel/R2_ResponseLine.lean",
+      "sha256": "cfeac9375a44b3222d891b9334279c98c2e1051c2402e26b5482be970dce57c4"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+      "sha256": "d79a6ba35d6324093ac52f7277d9a4416ad6b83cfc36b7c2318e2b95f3c9efcf"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+      "sha256": "5530511a400d4e9f1418e63054bad17bc078b384bc6e1344625133191e9621e0"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round9/analytic-r2/Attempt.lean",
+      "sha256": "59de3230337a9183ab989dba8dc7271829ed22fd451b8d73a2bda806913dc825"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round9/analytic-r2/Attempt.lean",
+      "sha256": "afe77760833f07c2c9569b8410968744ec1685c1a2b863ff1480b1f802cceaff"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round9/analytic-r2/Attempt.lean",
+      "sha256": "7e97b9ae016d80732f49c03fce34493a49d23009e607bd057bc312e9394224b7"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round9/analytic-r2/Attempt.lean",
+      "sha256": "87911936ef19f1311c7567c8836f72103961640c34eabfda61009a21f2c46167"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round9/analytic-r2/Attempt.lean",
+      "sha256": "ca4f4ff9c6af510cb265e313254d4ae50e1efbda00b832a1c69bb39a222e0b20"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round12/shared/kernel/R2_ResponseLine.lean",
+      "sha256": "3c0fa707533a55451e2685b47b1b68c48bb2b5b2390e7f4231351f1c9ae180c5"
+    },
+    {
+      "manifest": "FLAT_UNIT_COPIES.json",
+      "path": "AHP/round12/shared/kernel/R2_ResponseLine.lean",
+      "sha256": "0eca820ebcdbb6b3b5aa6f11a978a4835c28f5463ade3c9ec65fc158c7b003d3"
+    },
+    {
+      "manifest": "JET_BRIDGE_COPIES.json",
+      "path": "AHP/round10/shared/dictionary/R3_JetDetection.lean",
+      "sha256": "9666e5c617ae2aadd466fbdaff9e9b58c2811e0c59777c98fd4af94a821321ba"
+    },
+    {
+      "manifest": "JET_BRIDGE_COPIES.json",
+      "path": "AHP/round13/detection/r1/FlatUnit.lean",
+      "sha256": "f8c98224b241a6e54909fad35dcdb44d50e7bee3dbce3ba818449937da107e4a"
+    },
+    {
+      "manifest": "JET_BRIDGE_COPIES.json",
+      "path": "AHP/round13/detection/r1/FlatUnit.lean",
+      "sha256": "cbead377cea1fcbd0f783316df96c9ce09206c1d467bf6ff7e2eb7fe27a111d2"
+    },
+    {
+      "manifest": "COLOR_TRACE_COPIES.json",
+      "path": "AHP/round10/shared/dictionary/R4_ColorSelection.lean",
+      "sha256": "a8ac7ec7f04812c8c4f5bc5b5224e8088387e1dfd14743bed5deccfe8b425404"
+    },
+    {
+      "manifest": "COLOR_TRACE_COPIES.json",
+      "path": "AHP/round10/shared/dictionary/R4_ColorResponse.lean",
+      "sha256": "47cf0534a140bad7c1411fff3649fd54e0f460534dbde62c4d374da6ff9d226c"
+    }
+  ],
+  "retainedNumericalEvidence": [
+    {
+      "path": "AHP/round12/kernel/r2/star_right_q2_R20_p120.json",
+      "sha256": "ea8101109c6803e892d7312f75fabae5b2c9e541ad0b937481daeb66a50aa5d4",
+      "maxOverAbsSum": [
+        "27.0668990694421031237318073672293072776916384820706416242850506183260996474041946064522343218620360235752206070092673725737986025760655830311366595011929662335608608331317011561766",
+        "1.62827660715810092698757927314778549393202783795159169643367630653155737346041347683952681476979031220479122940182427277005362960485751889676422107607878120046198419510647699158385",
+        "1.62840824834719724193965045627746514538426170196558931734507929898487851490359907514529756647495311589296245487902224722980070233329410120976018370425223697644331342409816478080370"
+      ],
+      "conclusion": "Retained floating-point data has mixed cell signs in all three directions; NOT a Lean physical sign certificate."
+    },
+    {
+      "path": "AHP/round12/kernel/r2/star_right_q2_R20_p155.json",
+      "sha256": "ad1d90802e7e7caf7a411e8aae532d28ef4f287e5487b274a1d2b55d95c833bd",
+      "maxOverAbsSum": [
+        "27.0668990694421031237318073672293072776916384820706416242850506183260996474041946064522343218620360235752206069994944797451942067013990589693379646032743940232689995100430990482816",
+        "1.62827660715810092698757927314778549393202783795159169643367630653155737346041347683952681476979031220479122940188307298194630178686146110293378624817128359720123717019912006057802",
+        "1.62840824834719724193965045627746514538426170196558931734507929898487851490359907514529756647495311589296245487908254841919706090932695558166882301875257080220503551745528907652462"
+      ],
+      "conclusion": "Retained floating-point data has mixed cell signs in all three directions; NOT a Lean physical sign certificate."
+    }
+  ]
+}

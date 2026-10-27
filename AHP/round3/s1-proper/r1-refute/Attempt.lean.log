@@ -1,0 +1,61 @@
+bb heavy: all 2 slots busy; waiting for one of:
+  pid 972852 (0m): /home/sebastian/kerensa/root/projects/kerensa/.venv/bin/python -m unittest discover -s /home/sebastian/kerensa/root/projects/kerensa/dev_survey3009/paper/hd32564-third-signal-search/completeness/tests -v
+  pid 971740 (19m): python3 /home/sebastian/.bb-machines/bb-s6.mesh.srtv.cl/thread-storage/thr_z6brp3rjpf/tmp/check-public-dictionary.py 5 25
+Round3.S1Proper.plaqCorner {L : PeriodicLatticeExtent} (S : Set (PeriodicLatticeSite L)) :
+  Set (PeriodicLatticePlaquette L)
+Round3.S1Proper.TouchBond {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L)) (b : Bond L) : Prop
+Round3.S1Proper.CoversPlaqFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) : Prop
+Round3.S1Proper.CurlReadsTouch {L : PeriodicLatticeExtent} (sites : Set (PeriodicLatticeSite L))
+  (x : PeriodicLatticeSite L) (a b : Fin 3) : Prop
+Round3.S1Proper.PerCubeRegularTouch {L : PeriodicLatticeExtent} (ell M f k : ℕ) (S : Tower L) (α₀ η : ℝ)
+  (U : LinkCfg L) : Prop
+Round3.S1Proper.ClassCoupledFour {L : PeriodicLatticeExtent} (ell M c k : ℕ) (S : Tower L) (α₀ η : ℝ) (U : LinkCfg L) :
+  Prop
+Round3.S1Proper.selCorner : PlaqSel
+Round3.S1Proper.P428TouchFour : Prop
+Round3.S1Proper.GoalPos1 : Prop
+Round3.S1Proper.GoalNeg1 : Prop
+'Round3.S1Proper.plaqCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.TouchBond' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.CoversPlaqFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.ClassCoupledFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.selCorner' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.P428TouchFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.edge_not_touch_of_not_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.deltaKLocCLM_eq_univ_of_zero_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.deltaKLocCLM_corner_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.corner_Dpi_eq_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.corner_Ginv_eq_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.four_touch_cubeBond_of_transverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.slabNv_transverse' depends on axioms: [propext, Quot.sound]
+'Round3.S1Proper.slabNv_coversFour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.perCubeRegularTouch_of_one_on_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.Uth_one_on_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.Uth_perCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.exists_nonunit_corner_Ginv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round3.S1Proper.goalNeg1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Guarded.bilPlaq_zero_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Guarded.bilPlaq_zero_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Guarded.curlValue_zero_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Guarded.curlL2_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.Wop_mem_bondSupp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.classCube_sub_om0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.frobNorm_zero'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.StatementLaneR8.shift_ne' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.StatementLaneR8.shift_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.om0_mem' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.NonVac.slabGeo_inst' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.nv_widths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.scaleUp_nv' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.NonVac.slab3_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.slab3_coversp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.SlabNv_bdpt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.torusOK_nv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.lambdaOK2_nv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.NonVac.BseedNv_props' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.exists_nonunit_Ginv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Literal.not_InstIneqS_of_not_unit' depends on axioms: [propext, Classical.choice, Quot.sound]

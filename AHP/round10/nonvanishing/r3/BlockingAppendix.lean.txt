@@ -1,0 +1,204 @@
+
+namespace AdalyFormal.Round10.Nonvanishing.PhysicalBlocking
+
+open Finset
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond CoarseLattice mem_CoarseLattice)
+open AdalyFormal.Balaban.LatticeOperators (CoarseBond)
+open AdalyFormal.Balaban.QOne (qOnePathSum longBondValue_ell2)
+open AdalyFormal.Round10.Nonvanishing.Coordinate (mkS mkS_val0 mkS_val1 mkS_val2 sum_block_eq_cube cube shift_mkS1)
+open AdalyFormal.Round10.Nonvanishing.Flux
+open AdalyFormal.Round10.Nonvanishing.TorusFlux
+
+variable {L : PeriodicLatticeExtent} {ny nz : ℕ}
+
+/-- Four transverse fine offsets per physical coarse cell. -/
+def tiling (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1) :
+    (Fin ny × Fin nz) × (Fin 2 × Fin 2) ≃ Slice L :=
+  (Equiv.prodProdProdComm (Fin ny) (Fin nz) (Fin 2) (Fin 2)).trans
+    ((finProdFinEquiv.trans (finCongr hy)).prodCongr
+      (finProdFinEquiv.trans (finCongr hz)))
+
+theorem site_tiling (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (x : ℕ) (c : Fin ny × Fin nz) (o : Fin 2 × Fin 2) :
+    site L x (tiling hy hz (c,o)) = mkS L x (2*c.1.val+o.1.val) (2*c.2.val+o.2.val) := by
+  funext μ
+  apply Fin.ext
+  fin_cases μ
+  · simp [mkS]
+  · have hlt : 2*c.1.val+o.1.val < L 1+1 := by omega
+    change o.1.val + 2*c.1.val = (2*c.1.val+o.1.val) % (L 1+1)
+    rw [Nat.mod_eq_of_lt hlt]
+    omega
+  · have hlt : 2*c.2.val+o.2.val < L 2+1 := by omega
+    change o.2.val + 2*c.2.val = (2*c.2.val+o.2.val) % (L 2+1)
+    rw [Nat.mod_eq_of_lt hlt]
+    omega
+
+/-- Actual even-site coarse bond, not a substituted one-cell torus. -/
+def row (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (p : ℕ) (hp : p+2 ≤ L 0+1) (heven : p%2 = 0) (c : Fin ny × Fin nz) : CoarseBond L 2 :=
+  (⟨mkS L p (2*c.1.val) (2*c.2.val),by
+    rw [mem_CoarseLattice]
+    intro μ
+    have hpy : 2*c.1.val < L 1+1 := by omega
+    have hpz : 2*c.2.val < L 2+1 := by omega
+    fin_cases μ
+    · simpa [mkS_val0,Nat.mod_eq_of_lt (show p < L 0+1 by omega)] using heven
+    · simp [mkS_val1,Nat.mod_eq_of_lt hpy]
+    · simp [mkS_val2,Nat.mod_eq_of_lt hpz]⟩,1)
+
+/-- The exact frozen normalized scalar blocking row equals the finite-array row. -/
+theorem qOnePathSum_row (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (p : ℕ) (hp : p+2 ≤ L 0+1) (heven : p%2 = 0)
+    (A : Bond L → ℝ) (c : Fin ny × Fin nz) :
+    qOnePathSum 2 A (row hy hz p hp heven c) =
+      blockRow (tiling hy hz) (shift1 L) (component A 1) p c := by
+  have hp0 : p < L 0+1 := by omega
+  have hy0 : 2*c.1.val < L 1+1 := by omega
+  have hz0 : 2*c.2.val < L 2+1 := by omega
+  have hfit : ∀ μ, ((mkS L p (2*c.1.val) (2*c.2.val)) μ).val+2 ≤ L μ+1 := by
+    intro μ
+    fin_cases μ
+    · simpa [mkS_val0,Nat.mod_eq_of_lt hp0] using hp
+    · change (2*c.1.val) % (L 1+1) + 2 ≤ L 1+1
+      rw [Nat.mod_eq_of_lt hy0]
+      omega
+    · change (2*c.2.val) % (L 2+1) + 2 ≤ L 2+1
+      rw [Nat.mod_eq_of_lt hz0]
+      omega
+  simp only [qOnePathSum,row,longBondValue_ell2]
+  rw [sum_block_eq_cube _ 2 hfit]
+  simp only [mkS_val0,mkS_val1,mkS_val2,Nat.mod_eq_of_lt hp0,
+    Nat.mod_eq_of_lt hy0,Nat.mod_eq_of_lt hz0]
+  simp only [blockRow,component,← shift_site_one,site_tiling,shift_mkS1]
+  simp [cube,Finset.sum_range_succ,Fintype.sum_prod_type,Fin.sum_univ_two]
+  ring
+
+/-- Sum over all physical even transverse cells, with the exact level-one factor. -/
+theorem sum_qOnePathSum_row (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (p : ℕ) (hp : p+2 ≤ L 0+1) (heven : p%2 = 0) (A : Bond L → ℝ) :
+    ∑ c : Fin ny × Fin nz, qOnePathSum 2 A (row hy hz p hp heven c) =
+      coarseFlux (component A 1) p := by
+  simp_rw [qOnePathSum_row]
+  exact sum_blockRow _ _ _ _
+
+/-- A nonzero sum of genuine scalar Q1 rows forces nonzero actual curl. -/
+theorem exists_curl_of_qOnePathSum (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (p : ℕ) (hp : p+2 ≤ L 0+1) (heven : p%2 = 0) (A : Bond L → ℝ)
+    (l : ℕ) (hlp : l ≤ p) (hl : flux (component A 1) l = 0)
+    (hb : (∑ c : Fin ny × Fin nz, qOnePathSum 2 A (row hy hz p hp heven c)) ≠ 0) :
+    ∃ x, l ≤ x ∧ x < p+1 ∧ ∃ t : Slice L,
+      AdalyFormal.Balaban.LatticeOperators.curlValue A (plaq01 L x t) ≠ 0 := by
+  apply exists_curl01 A l p hlp hl
+  simpa [sum_qOnePathSum_row] using hb
+
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+
+/-- Functionals commute with the actual flat Q1 jet, including its 1/2 factor. -/
+theorem sum_Q1jet_row (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (p : ℕ) (hp : p+2 ≤ L 0+1) (heven : p%2 = 0)
+    (hdiv : ∀ μ, 2 ∣ L μ+1) (A : Bond L → SuTwo) (φ : SuTwo →ₗ[ℝ] ℝ) :
+    ∑ c : Fin ny × Fin nz, φ (Q1jet 2 flatCfg A (row hy hz p hp heven c)) =
+      coarseFlux (component (fun e => φ (A e)) 1) p := by
+  simp_rw [Q1jet_flat 2 (by decide) hdiv,AdalyFormal.IngredientFamily.q1SU2_functional]
+  exact sum_qOnePathSum_row hy hz p hp heven _
+
+/-- A level-one full-tower row is exactly the normalized Q1 jet. -/
+theorem Qfull_level_one (G : TowerGeom L) (hG : G.ell = 2) (U : Cfg L)
+    (A : BondFnL2 L) (p : BIdx G) (hp : (p.1 : ℕ) = 1)
+    (c : CoarseBond L 2) (hc : p.2.1 = (c.1.1,c.2)) :
+    QfullOf G U A p = Q1jet 2 U (fun e => A e) c := by
+  change (((G.ell : ℝ) ^ (p.1 : ℕ))⁻¹) •
+    (WithLp.ofLp (QlinB G U p.1 A)) p.2.1 = _
+  rw [hc,hp,QlinB_apply]
+  simp only [QlinCompL,bgTower,AdalyFormal.Balaban.UbarTowerCov.UbarTower,
+    hG,pow_zero,pow_one,ContinuousLinearMap.comp_apply,ContinuousLinearMap.id_apply]
+  rfl
+
+/-- Exact sum identity for genuine frozen full-tower rows on a transverse layer.
+Only row membership/indexing is supplied; no Fourier or source-column formula is assumed. -/
+theorem sum_Qfull_level_one (G : TowerGeom L) (hG : G.ell = 2)
+    (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (p : ℕ) (hp : p+2 ≤ L 0+1) (heven : p%2 = 0)
+    (hdiv : ∀ μ, 2 ∣ L μ+1) (A : BondFnL2 L) (φ : SuTwo →ₗ[ℝ] ℝ)
+    (idx : Fin ny × Fin nz → BIdx G)
+    (hi : ∀ c, ((idx c).1 : ℕ) = 1)
+    (hb : ∀ c, (idx c).2.1 = ((row hy hz p hp heven c).1.1,1)) :
+    ∑ c : Fin ny × Fin nz, φ (QfullOf G flatCfg A (idx c)) =
+      coarseFlux (component (fun e => φ (A e)) 1) p := by
+  have he (c : Fin ny × Fin nz) :=
+    Qfull_level_one G hG flatCfg A (idx c) (hi c) (row hy hz p hp heven c) (hb c)
+  simp_rw [he]
+  exact sum_Q1jet_row hy hz p hp heven hdiv _ φ
+
+/-- Nonzero aggregated genuine top jet implies nonzero curl of a constrained lift.
+The constraint equality is the QH=1 application, kept explicit here. -/
+theorem exists_curl_of_constrained_jet (G : TowerGeom L) (hG : G.ell = 2)
+    (hy : ny*2 = L 1+1) (hz : nz*2 = L 2+1)
+    (p : ℕ) (hp : p+2 ≤ L 0+1) (heven : p%2 = 0)
+    (hdiv : ∀ μ, 2 ∣ L μ+1) (A : BondFnL2 L) (φ : SuTwo →ₗ[ℝ] ℝ)
+    (z : FSp G) (idx : Fin ny × Fin nz → BIdx G)
+    (hi : ∀ c, ((idx c).1 : ℕ) = 1)
+    (hb : ∀ c, (idx c).2.1 = ((row hy hz p hp heven c).1.1,1))
+    (hQ : QfullOf G flatCfg A = z)
+    (l : ℕ) (hlp : l ≤ p)
+    (hl : flux (component (fun e => φ (A e)) 1) l = 0)
+    (hzjet : (∑ c : Fin ny × Fin nz, φ (z (idx c))) ≠ 0) :
+    ∃ x, l ≤ x ∧ x < p+1 ∧ ∃ t : Slice L,
+      AdalyFormal.Balaban.LatticeOperators.curlValue (fun e => φ (A e)) (plaq01 L x t) ≠ 0 := by
+  apply exists_curl01 (fun e => φ (A e)) l p hlp hl
+  have he := sum_Qfull_level_one G hG hy hz p hp heven hdiv A φ idx hi hb
+  rw [hQ] at he
+  exact he ▸ hzjet
+
+/-- The level-zero constraint is literally the fine bond value. -/
+theorem Qfull_level_zero (G : TowerGeom L) (U : Cfg L) (A : BondFnL2 L)
+    (p : BIdx G) (hp : (p.1 : ℕ) = 0) : QfullOf G U A p = A p.2.1 := by
+  change (((G.ell : ℝ) ^ (p.1 : ℕ))⁻¹) •
+    (WithLp.ofLp (QlinB G U p.1 A)) p.2.1 = _
+  have he : QlinB G U p.1 A = A := by simpa only [hp] using QlinB_zero G U A
+  rw [he]
+  simp [hp]
+
+/-- The actual quadratic jet is zero at every level-zero row. -/
+theorem C2full_level_zero (G : TowerGeom L) (U : Cfg L) (A : BondFnL2 L)
+    (p : BIdx G) (hp : (p.1 : ℕ) = 0) : C2fullOf G U A p = 0 := by
+  have he : C2rawB G U p.1 A = 0 := by
+    rw [C2rawB_eq]
+    simp only [hp,C2CompL_zero,map_zero]
+  change (((G.ell : ℝ) ^ (p.1 : ℕ))⁻¹) •
+    (WithLp.ofLp (C2rawB G U p.1 A)) p.2.1 = 0
+  rw [he]
+  simp
+
+/-- QH=1 and the zero level-zero jet give the collar flux hypothesis automatically,
+provided the collar bonds are identified as actual level-zero rows. -/
+theorem collar_flux_zero (G : TowerGeom L) (U : Cfg L) (A v : BondFnL2 L)
+    (hQ : QfullOf G U A = C2fullOf G U v) (φ : SuTwo →ₗ[ℝ] ℝ)
+    (l : ℕ) (μ : Fin 3) (idx0 : Slice L → BIdx G)
+    (hi : ∀ t, ((idx0 t).1 : ℕ) = 0)
+    (hb : ∀ t, (idx0 t).2.1 = (site L l t,μ)) :
+    flux (component (fun e => φ (A e)) μ) l = 0 := by
+  apply flux_zero_of_layer_zero
+  intro t
+  have he := congrArg (fun z : FSp G => z (idx0 t)) hQ
+  rw [Qfull_level_zero G U A (idx0 t) (hi t),
+    C2full_level_zero G U v (idx0 t) (hi t),hb] at he
+  rw [he,map_zero]
+
+#print axioms Qfull_level_zero
+#print axioms C2full_level_zero
+#print axioms collar_flux_zero
+#print axioms sum_Q1jet_row
+#print axioms Qfull_level_one
+#print axioms sum_Qfull_level_one
+#print axioms exists_curl_of_constrained_jet
+#print axioms tiling
+#print axioms site_tiling
+#print axioms row
+#print axioms qOnePathSum_row
+#print axioms sum_qOnePathSum_row
+#print axioms exists_curl_of_qOnePathSum
+end AdalyFormal.Round10.Nonvanishing.PhysicalBlocking

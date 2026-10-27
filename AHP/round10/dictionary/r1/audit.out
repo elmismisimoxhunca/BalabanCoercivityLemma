@@ -1,0 +1,92 @@
+{
+  "status": "partial_dictionary_only_GoalNeg2_open",
+  "files": [
+    {
+      "file": "AHP/round10/dictionary/r1/Core.lean",
+      "sha256": "9ed7aaf5c8d0a817b4a8ed2f584c70207da3098b5c960776e922efd0eabed2a8",
+      "lines": 260,
+      "exit": "0",
+      "records": 16,
+      "axioms_ok": true,
+      "no_errors": true,
+      "no_warnings": true,
+      "chronology": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "no_forbidden": true,
+      "pass": true
+    },
+    {
+      "file": "AHP/round10/dictionary/r1/Gauge.lean",
+      "sha256": "acfaff275af6c75e8805e49c742b1c40399c7d7878c939b4b64d7a929efe4e03",
+      "lines": 391,
+      "exit": "0",
+      "records": 29,
+      "axioms_ok": true,
+      "no_errors": true,
+      "no_warnings": true,
+      "chronology": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "no_forbidden": true,
+      "pass": true
+    },
+    {
+      "file": "AHP/round10/dictionary/r1/Translation.lean",
+      "sha256": "e0a87212ee8cd0765df722017453c33f2d9e11f9d893082e9348a18badb6ed37",
+      "lines": 200,
+      "exit": "0",
+      "records": 22,
+      "axioms_ok": true,
+      "no_errors": true,
+      "no_warnings": true,
+      "chronology": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "no_forbidden": true,
+      "pass": true
+    },
+    {
+      "file": "AHP/round10/dictionary/r1/Actual.lean",
+      "sha256": "8addcf951497b1468f852bacfcddee99fda29012186da0e97ac36f4922940148",
+      "lines": 1345,
+      "exit": "0",
+      "records": 84,
+      "axioms_ok": true,
+      "no_errors": true,
+      "no_warnings": true,
+      "chronology": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "no_forbidden": true,
+      "pass": true
+    },
+    {
+      "file": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+      "sha256": "8addcf951497b1468f852bacfcddee99fda29012186da0e97ac36f4922940148",
+      "lines": 1345,
+      "exit": "0",
+      "records": 84,
+      "axioms_ok": true,
+      "no_errors": true,
+      "no_warnings": true,
+      "chronology": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "no_forbidden": true,
+      "pass": true
+    }
+  ],
+  "own_declarations": 58,
+  "missing_axiom_records": [],
+  "verbatim_copies": 32,
+  "all_verbatim": true,
+  "shared_byte_identical": true,
+  "large_historical_attempt": "killed_by_host_8GiB_command_memory_cap_no_exit_not_a_success",
+  "pass": true
+}

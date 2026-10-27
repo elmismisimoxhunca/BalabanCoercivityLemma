@@ -1,0 +1,82 @@
+AdalyFormal.Round2.Guarded.Pin.GoalPos1 : Prop
+AdalyFormal.Round2.Guarded.Pin.GoalNeg1 : Prop
+AdalyFormal.Round2.Guarded.Pin.GoalPos2 : Prop
+AdalyFormal.Round2.Guarded.Pin.GoalNeg2 : Prop
+AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure : Prop
+AdalyFormal.D1Residual.P428Target8SG_iff_pencilT :
+  D1Literal.P428Target8SG D1Literal.selAll D1Literal.selAll ↔ D1Residual.GuardPencilT
+AdalyFormal.D1Residual.residualT_iff_pencilT :
+  D1Guarded.GuardResidualT D1Literal.selAll D1Literal.selAll ↔ D1Residual.GuardPencilT
+AdalyFormal.D1Residual.G1inv_lit_eq_pencil (P : IngrBParams) {M R : ℕ} (hS : Admissible P.ell M R P.k P.S)
+  (hell0 : 0 < P.ell) (hroom : 17 * P.ell ≤ R * M)
+  (hu : IsUnit (D1Literal.dataS D1Literal.selAll D1Literal.selAll P).Ginv)
+  (WD : D1Guarded.WellDefAt D1Literal.selIn D1Literal.selIn P) :
+  D1Literal.G1invS D1Literal.selAll D1Literal.selAll P =
+    (D1Literal.dataS D1Literal.selAll D1Literal.selAll P).Ginv -
+      (D1Literal.dataS D1Literal.selIn D1Literal.selIn P).Delta2 ⋯
+'AdalyFormal.Round2.Guarded.Pin.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.dataS_laws' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.assembly_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.corrected_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.form_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.goalPos1_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.goalPos2_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.residual_pin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidateLu' does not depend on any axioms
+'AdalyFormal.Round2.Guarded.RefuteR2.candidateLf' depends on axioms: [propext]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidateTower' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.insideSite' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.middleSite' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.outsideSite' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidate_torus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.original_torus_rejected' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_admissible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidate_no_described_cube' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidate_no_class_cube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_covered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.candidate_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.goalNeg1_implies_cofinalPencilFailure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round2.Guarded.RefuteR2.goalNeg2_iff_cofinalPencilFailure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.PlaqSel' does not depend on any axioms
+'AdalyFormal.Round2.Guarded.Pin.selIn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.selAll' does not depend on any axioms
+'AdalyFormal.Round2.Guarded.Pin.DeltaS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.DpiFullS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.JfS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.dataS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.G1invS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.H1inS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GenS.NmatS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GenS.genFormS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.InstIneqS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.InstIneqSG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.P428Target8SG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GuardResidualT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GShape' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.CPen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.Guarded.Pin.GuardPencilT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.D1Residual.P428Target8SG_iff_pencilT' depends on axioms: [propext, Classical.choice, Quot.sound]

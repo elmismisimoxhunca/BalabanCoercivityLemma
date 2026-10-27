@@ -1,0 +1,218 @@
+
+/-! Copies of the two original analytic-family definitions and elementary analytic
+exponential lemmas, in their original namespace. -/
+namespace AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.D1Literal (SU2m)
+variable {L : PeriodicLatticeExtent}
+
+def AnM (f : ℝ → Matrix (Fin 2) (Fin 2) ℂ) : Prop :=
+  ∀ (θ₀ : ℝ) (i j : Fin 2), AnalyticAt ℝ (fun θ => f θ i j) θ₀
+
+def AnFam (U : ℝ → PeriodicLinkConfiguration SU2m L) : Prop :=
+  ∀ e : PeriodicLatticeEdge L, AnM fun θ => ((U θ e : SU2m) : Matrix (Fin 2) (Fin 2) ℂ)
+
+theorem analyticAt_exp_I (s : ℝ) (θ₀ : ℝ) :
+    AnalyticAt ℝ (fun θ : ℝ => Complex.exp (s * θ * Complex.I)) θ₀ := by
+  have hlin : AnalyticAt ℝ (fun θ : ℝ => (s : ℂ) * (θ : ℂ) * Complex.I) θ₀ := by
+    have h1 : AnalyticAt ℝ (fun θ : ℝ => ((θ : ℂ))) θ₀ :=
+      (Complex.ofRealCLM.analyticAt θ₀).congr (Filter.Eventually.of_forall (fun θ => rfl))
+    exact (analyticAt_const.fun_mul h1).fun_mul analyticAt_const
+  have hexp : AnalyticAt ℝ Complex.exp ((fun θ : ℝ => (s : ℂ) * (θ : ℂ) * Complex.I) θ₀) :=
+    (analyticAt_cexp (z := (s : ℂ) * (θ₀ : ℂ) * Complex.I)).restrictScalars
+  exact AnalyticAt.comp (f := fun θ : ℝ => (s : ℂ) * (θ : ℂ) * Complex.I) hexp hlin
+
+theorem anM_uMat : AnM fun θ => AdalyFormal.D1Literal.uMat θ := by
+  intro θ₀ i j
+  fin_cases i <;> fin_cases j
+  · refine (analyticAt_exp_I 1 θ₀).congr (Filter.Eventually.of_forall (fun θ => ?_))
+    simp [AdalyFormal.D1Literal.uMat]
+  · simp only [AdalyFormal.D1Literal.uMat]
+    simp
+    exact analyticAt_const
+  · simp only [AdalyFormal.D1Literal.uMat]
+    simp
+    exact analyticAt_const
+  · refine (analyticAt_exp_I (-1) θ₀).congr (Filter.Eventually.of_forall (fun θ => ?_))
+    simp [AdalyFormal.D1Literal.uMat]
+
+#print axioms AnM
+#print axioms AnFam
+#print axioms analyticAt_exp_I
+#print axioms anM_uMat
+end AdalyFormal.Round9.Guarded.QualitativeR2
+
+namespace AdalyFormal.Round12.Noncancel.Path
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG (gparams)
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.GaugeCov
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner (hsInner)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.CovariantHjMinimizer
+  (periodicLatticeShiftBack periodicLatticeShift_shiftBack)
+open AdalyFormal.D1Literal
+open AdalyFormal.Round9.Guarded.QualitativeR2 (AnM AnFam anM_uMat)
+variable {L : PeriodicLatticeExtent}
+
+/-- The four transverse links incident to one site (when transverse side lengths exceed two). -/
+def starLinks (x : PeriodicLatticeSite L) : Set (Bond L) :=
+  {e | e.2 ≠ 0 ∧ (e.1 = x ∨ periodicLatticeShift e.1 e.2 = x)}
+
+open Classical in
+/-- Equal-sign exterior star; unlike the translation-invariant twist, the support is local. -/
+def starPath (x : PeriodicLatticeSite L) (t : ℝ) : Cfg L :=
+  fun e => if e ∈ starLinks x then uθ t else 1
+
+theorem starPath_zero (x : PeriodicLatticeSite L) : starPath x 0 = fun _ => 1 := by
+  funext e
+  simp [starPath, uθ_zero]
+
+theorem starPath_cont (x : PeriodicLatticeSite L) : ContFam (starPath x) := by
+  intro e
+  by_cases h : e ∈ starLinks x
+  · simp only [starPath, h, if_true]
+    change Continuous fun t => uMat t
+    unfold uMat
+    refine continuous_matrix (fun i j => ?_)
+    fin_cases i <;> fin_cases j <;> simp <;> fun_prop
+  · simp only [starPath, h, if_false]
+    exact continuous_const
+
+theorem starPath_an (x : PeriodicLatticeSite L) : AnFam (starPath x) := by
+  intro e
+  by_cases h : e ∈ starLinks x
+  · simp only [starPath, h, if_true]
+    show AnM fun t => uMat t
+    exact anM_uMat
+  · intro t i j
+    simp only [starPath, h, if_false]
+    exact analyticAt_const
+
+theorem starLinks_exterior (Om : Set (PeriodicLatticeSite L))
+    (x : PeriodicLatticeSite L) (hx : x ∉ Om)
+    (htrans : ∀ z (ν : Fin 3), ν ≠ 0 → (periodicLatticeShift z ν ∈ Om ↔ z ∈ Om)) :
+    starLinks x ⊆ Zb Om := by
+  rintro ⟨z,ν⟩ ⟨hν,hz | hz⟩
+  · change z = x at hz
+    subst z
+    exact ⟨hx, fun h => hx ((htrans x ν hν).mp h)⟩
+  · exact ⟨fun h => hx (hz ▸ (htrans z ν hν).mpr h), fun h => hx (hz ▸ h)⟩
+
+theorem starPath_off_exterior (Om : Set (PeriodicLatticeSite L))
+    (x : PeriodicLatticeSite L) (hx : x ∉ Om)
+    (htrans : ∀ z (ν : Fin 3), ν ≠ 0 → (periodicLatticeShift z ν ∈ Om ↔ z ∈ Om))
+    (t : ℝ) (e : Bond L) (he : e ∉ Zb Om) : starPath x t e = 1 := by
+  have hh : e ∉ starLinks x := fun h => he (starLinks_exterior Om x hx htrans h)
+  simp [starPath, hh]
+
+theorem starPath_interior (Om : Set (PeriodicLatticeSite L))
+    (x : PeriodicLatticeSite L) (hx : x ∉ Om)
+    (htrans : ∀ z (ν : Fin 3), ν ≠ 0 → (periodicLatticeShift z ν ∈ Om ↔ z ∈ Om))
+    (t : ℝ) (e : Bond L) (he : e.1 ∈ Om) : starPath x t e = 1 := by
+  have hh : e ∉ starLinks x := fun h => (starLinks_exterior Om x hx htrans h).1 he
+  simp [starPath, hh]
+
+theorem starPath_normal (x z : PeriodicLatticeSite L) (t : ℝ) :
+    starPath x t (z,0) = 1 := by simp [starPath, starLinks]
+
+/-- Use the exterior site immediately to the right of a frozen boundary point. -/
+theorem star_holonomy1 {Om : Set (PeriodicLatticeSite L)} {x : PeriodicLatticeSite L}
+    (hbd : BdPt Om x) (t : ℝ) (ν : {ν : Fin 3 // 0 < ν}) :
+    holonomyElem (starPath (periodicLatticeShift x 0) t) (P1 x ν) = uθ t := by
+  have hν : ν.1 ≠ 0 := ne_of_gt ν.2
+  have h1 := starPath_normal (periodicLatticeShift x 0) x t
+  have h2 : starPath (periodicLatticeShift x 0) t (periodicLatticeShift x 0,ν.1) = uθ t := by
+    simp [starPath, starLinks, hν]
+  have h3 := starPath_normal (periodicLatticeShift x 0) (periodicLatticeShift x ν.1) t
+  have h4 := starPath_interior Om (periodicLatticeShift x 0) hbd.hx' hbd.trans t (x,ν.1) hbd.hx
+  change periodicPlaquetteHolonomy _ _ = _
+  unfold periodicPlaquetteHolonomy P1
+  simp only
+  rw [h1,h2,h3,h4]
+  simp
+
+theorem star_holonomy2 {Om : Set (PeriodicLatticeSite L)} {x : PeriodicLatticeSite L}
+    (hbd : BdPt Om x) (t : ℝ) (ν : {ν : Fin 3 // 0 < ν}) :
+    holonomyElem (starPath (periodicLatticeShift x 0) t) (P2 x ν) = uθ t := by
+  have hν : ν.1 ≠ 0 := ne_of_gt ν.2
+  have h1 := starPath_normal (periodicLatticeShift x 0) (periodicLatticeShiftBack x ν.1) t
+  have h2 : starPath (periodicLatticeShift x 0) t
+      (periodicLatticeShift (periodicLatticeShiftBack x ν.1) 0,ν.1) = uθ t := by
+    have hs : periodicLatticeShift (periodicLatticeShift (periodicLatticeShiftBack x ν.1) 0) ν.1 =
+        periodicLatticeShift x 0 := by
+      rw [AdalyFormal.StatementLaneR8.shift_comm _ (Ne.symm hν), periodicLatticeShift_shiftBack]
+    simp [starPath, starLinks, hν, hs]
+  have h3 := starPath_normal (periodicLatticeShift x 0) x t
+  have h4 := starPath_interior Om (periodicLatticeShift x 0) hbd.hx' hbd.trans t
+    (periodicLatticeShiftBack x ν.1,ν.1) (hbd.shiftBack_mem ν)
+  change periodicPlaquetteHolonomy _ _ = _
+  unfold periodicPlaquetteHolonomy P2
+  simp only
+  rw [h1,h2,periodicLatticeShift_shiftBack,h3,h4]
+  simp
+
+/-- A genuine negative endpoint on the frozen all-plaquette carrier, for the local star.
+This does not locate the first crossing below pi/2 or prove jet detection. -/
+theorem star_negative_endpoint {ell M R k : ℕ} {Lu : PeriodicLatticeExtent}
+    (hell0 : 0 < ell) (S : Tower (scaleUp ell k Lu))
+    (Lam : Set (PeriodicLatticeSite Lu)) (a : ℝ)
+    (hS : Admissible ell M R k S) (hell : 2 ≤ ell) (hroom : 17*ell ≤ R*M)
+    {x : PeriodicLatticeSite (scaleUp ell k Lu)} (hbd : BdPt (S.Om 0) x)
+    (ha : 0 ≤ a) (ha4 : a < 4) (X : SuTwo) (hX : X ≠ 0) :
+    ∃ v : ↥(bondSupp (geomOf ell k S)),
+      ⟪v, (dataS selAll selAll (gparams ell k Lu hell0 S
+        (starPath (periodicLatticeShift x 0) Real.pi) a Lam)).Ginv v⟫ < 0 := by
+  let U := starPath (periodicLatticeShift x 0) Real.pi
+  let P := gparams ell k Lu hell0 S U a Lam
+  have hm := sing_mem_bondSupp (geomOf ell k S) hbd.hx X
+  let v : ↥(bondSupp (geomOf ell k S)) := ⟨sing (x,0) X,hm⟩
+  have hn : 0 < hsInner X X := by
+    exact lt_of_le_of_ne (real_inner_self_nonneg (x := X))
+      (fun h => hX (AdalyFormal.Balaban.SuTwoInner.hsInner_self_eq_zero h.symm))
+  have hd : ⟪v, (dataS selAll selAll P).Dpi v⟫ = -4*hsInner X X := by
+    have e := E0_Dpi_inner selAll (geomOf ell k S) U a v
+    refine e.trans ?_
+    have hw : Wop (geomOf ell k S) U a (iE (geomOf ell k S) v) = sing (x,0) X :=
+      Wop_sing hS (by omega) hbd U a X
+    rw [hw]
+    apply delta_value U x X hbd.side
+    · intro ν
+      change ((holonomyElem (starPath _ Real.pi) (P1 x ν) : SU2m) : Matrix (Fin 2) (Fin 2) ℂ) = -1
+      rw [star_holonomy1 hbd, uθ_pi_coe]
+    · intro ν
+      change ((holonomyElem (starPath _ Real.pi) (P2 x ν) : SU2m) : Matrix (Fin 2) (Fin 2) ℂ) = -1
+      rw [star_holonomy2 hbd, uθ_pi_coe]
+    · intro ν
+      exact starPath_interior (S.Om 0) _ hbd.hx' hbd.trans _ _ (hbd.shiftBack_mem ν)
+  have ht : (dataS selAll selAll P).T v = 0 :=
+    Tfull_sing_zero hS (by omega) hbd U X
+  have hmass : ⟪v, (dataS selAll selAll P).Mass v⟫ ≤ a*hsInner X X := by
+    change ⟪v, ((pE (geomOf ell k S)).comp ((MassFull (geomOf ell k S) a
+      (bondSectorOf (geomOf ell k S) U)).comp (iE (geomOf ell k S)))) v⟫ ≤ _
+    simp only [ContinuousLinearMap.comp_apply]
+    rw [pE_inner_right]
+    exact Mass_sing_le hS hell (by omega) hbd U a ha X
+  refine ⟨v,?_⟩
+  change ⟪v, (dataS selAll selAll P).Ginv v⟫ < 0
+  rw [BaseDataS.inner_Ginv,hd,ht]
+  simp only [norm_zero]
+  nlinarith
+
+#print axioms starLinks
+#print axioms starPath
+#print axioms starPath_zero
+#print axioms starPath_cont
+#print axioms starPath_an
+#print axioms starLinks_exterior
+#print axioms starPath_off_exterior
+#print axioms starPath_interior
+#print axioms starPath_normal
+#print axioms star_holonomy1
+#print axioms star_holonomy2
+#print axioms star_negative_endpoint
+end AdalyFormal.Round12.Noncancel.Path

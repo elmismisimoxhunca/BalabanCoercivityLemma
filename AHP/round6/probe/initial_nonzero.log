@@ -1,0 +1,27 @@
+assembled 2 18 1 n 5380 aug 7508 nnz 248056 seconds 2.0764174461364746
+assembled 2 18 0 n 5380 aug 7508 nnz 230714 seconds 1.7167644500732422
+raw Hessian templates 7 max check 7.1472224862898268588823810423622123046191527274177072342225152826031178503534856391345361260925e-102
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "/home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/positivity.py", line 164, in initial
+    results['B_min_double'],results['B_eigen_residual_double']=bmin(f)
+                                                               ~~~~^^^
+  File "/home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/positivity.py", line 147, in bmin
+    vals,vecs=eigsh(op,k=1,which='SA',tol=1e-9,maxiter=2500,v0=np.random.default_rng(127).normal(size=n))
+              ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1664, in eigsh
+    ret = eigs(A, k, M=M, sigma=sigma, which=which, v0=v0,
+               ncv=ncv, maxiter=maxiter, tol=tol,
+               return_eigenvectors=return_eigenvectors, Minv=Minv,
+               OPinv=OPinv)
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 1438, in eigs
+    params.iterate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 850, in iterate
+    self._raise_no_convergence()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/sebastian/.local/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/arpack/arpack.py", line 441, in _raise_no_convergence
+    raise ArpackNoConvergence(f"No convergence ({num_iter} iterations, "
+                              f"{k_ok}/{self.k} eigenvectors converged)",
+                              ev, vec)
+scipy.sparse.linalg._eigen.arpack.arpack.ArpackNoConvergence: ARPACK error -1: No convergence (2501 iterations, 0/1 eigenvectors converged)

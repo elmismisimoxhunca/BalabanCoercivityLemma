@@ -1,0 +1,51 @@
+{
+  "closedGoal": "none",
+  "file": "AHP/round3/guarded/r2-refute/Attempt.lean",
+  "mainDeclaration": "AdalyFormal.Round3.Guarded.RefuteR2.wide_probe_geometry_and_competitor",
+  "mainLine": 584,
+  "mainAxiomLine": "'AdalyFormal.Round3.Guarded.RefuteR2.wide_probe_geometry_and_competitor' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "compileExit": 0,
+  "warningCount": 0,
+  "imports": [
+    "DrEquiv"
+  ],
+  "pinVerbatimBytePrefix": true,
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "sourceSha256": "139becc32cb7b989461b3ac9358d3c496d8843425966c6f559a263edb3e1e819",
+  "localDeclarationCount": 56,
+  "printedDependencyRecords": 66,
+  "allLocalDeclarationsPrinted": true,
+  "allAxiomsAllowed": true,
+  "forbiddenTokens": [],
+  "ownDeclarations": {
+    "wideLu": 377,
+    "wideTower": 380,
+    "wideLam": 385,
+    "wide_torus": 388,
+    "wide_fine_size": 392,
+    "wide_fine_bound": 397,
+    "zero_coord_le_pdist": 404,
+    "wide_admissible": 410,
+    "wideEmb": 481,
+    "wide_lambda": 489,
+    "wideSeed": 530,
+    "wideBt": 535,
+    "wide_competitor": 538,
+    "wide_probe_geometry_and_competitor": 584
+  },
+  "numericalExitCodes": {
+    "wide_probe": 0,
+    "smallness_probe": 0,
+    "corrected_probe": 0
+  },
+  "numericalMaxRssKiB": 780976,
+  "numericalScriptSha256": {
+    "assembly.py": "798f7fb42f2de38d03b472d29c53960ce8ac48fb8acddc43f272aaf6417c94c8",
+    "corrected_probe.py": "4b54b143c2d9b04951b854522bd68e37ae883e229c4cf0217bb0d8056cf148e1",
+    "delta_ops.py": "a73e2b14e853e749dd2fc63a24a36b56edd3c7c896c4ddfd73757a2f26dd63c0",
+    "smallness_probe.py": "373688f446831170658e4068a656e06d4ab05089175cbe8a81fa5d6705a34253",
+    "wide_probe.py": "14ba0ba0135010908b34b62d99ee2ff97247875c622de373ee66fad99c4c0de2"
+  },
+  "numericalGeometryMatchesDefinitions": true,
+  "notes": "New admissible geometry and positive-energy competitor only; no coverage/regularity theorem or exact spectral separation. No independent second-agent replay."
+}

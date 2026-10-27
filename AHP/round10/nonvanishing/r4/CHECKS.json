@@ -1,0 +1,528 @@
+{
+  "status": "abstract finite certificate and seed-transport obstruction; actual coupling remains open",
+  "goalNeg2_proved": false,
+  "round9_coupling_premise_proved": false,
+  "actual_polynomial_certificate_proved": false,
+  "actual_crossing_jet_nonzero_proved": false,
+  "actual_whole_kernel_definiteness_proved": false,
+  "distinct_declarations": 29,
+  "independently_compiled_files": 4,
+  "assembly": {
+    "moving_root_exact_append": true,
+    "obstruction_exact_append": true,
+    "shared_byte_identical": true
+  },
+  "files": [
+    {
+      "file": "AHP/round10/nonvanishing/r4/PolynomialGrid.lean",
+      "lines": 114,
+      "sha256": "f1d991d7f165b6b62c515606f6e50086ba957fbe503494a223eeabfe7a8d121b",
+      "log_sha256": "2e57870941cdc91828c1d642190855eda70f3c7475b130ef90862008c2393936",
+      "declarations": 10,
+      "checks": {
+        "exit_zero": true,
+        "frozen_import_only": true,
+        "no_prohibited_devices": true,
+        "no_diagnostics": true,
+        "standard_axioms_only": true,
+        "every_declaration_audited": true,
+        "exact_record_count": true,
+        "fresh_compile": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.eval_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo_eq_eval\u2082": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.dyadic_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.radius_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_of_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/nonvanishing/r4/MovingRoot.lean",
+      "lines": 224,
+      "sha256": "e937d927b7352c39973a445d30d1cb8926f20fc053fb3092d5e832b1f837890d",
+      "log_sha256": "01457fdc2b8bdb556386f728e2dff34d947385087a3b296f33a7f16db3c7fed5",
+      "declarations": 18,
+      "checks": {
+        "exit_zero": true,
+        "frozen_import_only": true,
+        "no_prohibited_devices": true,
+        "no_diagnostics": true,
+        "standard_axioms_only": true,
+        "every_declaration_audited": true,
+        "exact_record_count": true,
+        "fresh_compile": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.eval_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo_eq_eval\u2082": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.dyadic_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.radius_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_of_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom_apply": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalThree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.no_common_root_of_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.coupling_ne_zero_of_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.MovingRootCertificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.moving_root_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.quotient_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/nonvanishing/r4/SeedObstruction.lean",
+      "lines": 306,
+      "sha256": "4462d0322ed5381b0d6436daf90285dd943ff102bdd41bf2fb8cf88118ff2966",
+      "log_sha256": "c5fa041a503273c6984c6d3c975ebb79b1df9b2347414c833e0b4763ec728797",
+      "declarations": 29,
+      "checks": {
+        "exit_zero": true,
+        "frozen_import_only": true,
+        "no_prohibited_devices": true,
+        "no_diagnostics": true,
+        "standard_axioms_only": true,
+        "every_declaration_audited": true,
+        "exact_record_count": true,
+        "fresh_compile": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.eval_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo_eq_eval\u2082": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.dyadic_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.radius_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_of_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom_apply": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalThree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.no_common_root_of_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.coupling_ne_zero_of_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.MovingRootCertificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.moving_root_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.quotient_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sampleCharacteristic": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sampleNumerator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_at_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_at_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_no_nonzero_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_is_root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_numerator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_zero_large_radius": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_not_cofinal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "file": "AHP/round10/shared/nonvanishing/R4_PolynomialCertificate.lean",
+      "lines": 306,
+      "sha256": "4462d0322ed5381b0d6436daf90285dd943ff102bdd41bf2fb8cf88118ff2966",
+      "log_sha256": "c5fa041a503273c6984c6d3c975ebb79b1df9b2347414c833e0b4763ec728797",
+      "declarations": 29,
+      "checks": {
+        "exit_zero": true,
+        "frozen_import_only": true,
+        "no_prohibited_devices": true,
+        "no_diagnostics": true,
+        "standard_axioms_only": true,
+        "every_declaration_audited": true,
+        "exact_record_count": true,
+        "fresh_compile": true
+      },
+      "pass": true,
+      "axioms": {
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.eval_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo_eq_eval\u2082": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.dyadic_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.radius_argument_injective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_eventually": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_of_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom_apply": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalThree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.no_common_root_of_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.coupling_ne_zero_of_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.MovingRootCertificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.moving_root_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.quotient_cofinal_nonzero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sampleCharacteristic": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sampleNumerator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_at_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_at_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_no_nonzero_bezout": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_is_root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_numerator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_seed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_zero_large_radius": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_not_cofinal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,27 @@
+assembled 1 6 1 n 964 aug 1356 nnz 43718 seconds 0.9542193412780762
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+LEFT left_R6_p50_-0.392699_-0.392699.json root 0.5639715179849665 next 0.998076 slope -3.1265294 c1 -1.76256692748e-13 K -0.038327868388 lefthalf 1.0 pencil 1.3e-50 sec 8
+rc=0

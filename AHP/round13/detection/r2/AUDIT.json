@@ -1,0 +1,899 @@
+{
+  "status": "pass",
+  "closedGoal": "none; P3 and GoalNeg2 remain open",
+  "compilations": [
+    {
+      "file": "AHP/round13/detection/r2/Area.lean",
+      "sourceSha256": "fa53aab5249181299452efb16021acd0ec1e99e8a770aa4d6dc2aad8e8a293af",
+      "logSha256": "0be15ea47869b9e38d676e6f4c030ab3d745c433c8287a971a1f8c82d08a431c",
+      "exit": 0,
+      "lines": 86,
+      "records": 5,
+      "newRecords": {
+        "AdalyFormal.Round13.Detection.Area.mixed_bilinear": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.mixed_alternating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_matrix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.quadratic_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "warnings": 0,
+      "forbiddenTokens": [],
+      "imports": [
+        "DrEquiv"
+      ]
+    },
+    {
+      "file": "AHP/round13/shared/detection/R2_Area.lean",
+      "sourceSha256": "fa53aab5249181299452efb16021acd0ec1e99e8a770aa4d6dc2aad8e8a293af",
+      "logSha256": "0be15ea47869b9e38d676e6f4c030ab3d745c433c8287a971a1f8c82d08a431c",
+      "exit": 0,
+      "lines": 86,
+      "records": 5,
+      "newRecords": {
+        "AdalyFormal.Round13.Detection.Area.mixed_bilinear": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.mixed_alternating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_matrix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.quadratic_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "warnings": 0,
+      "forbiddenTokens": [],
+      "imports": [
+        "DrEquiv"
+      ]
+    },
+    {
+      "file": "AHP/round13/detection/r2/ColorArea.lean",
+      "sourceSha256": "4a805e091c6b39d96cd8376ee4ac39d625f71702913175ff93c81fa1951060b2",
+      "logSha256": "099b76e569d657ba878ac45c08f196aee89a30aa61e3a8b564ed4b985fd73191",
+      "exit": 0,
+      "lines": 741,
+      "records": 51,
+      "newRecords": {
+        "AdalyFormal.Round13.Detection.Area.mixed_bilinear": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.mixed_alternating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_matrix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.quadratic_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.imagPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.realPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_negative_diag": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.carrier_color_decompose": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_skew": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.neutralJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_gauge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flip_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_one_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_two_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_sum_charged": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_axis": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_color_quarter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "warnings": 0,
+      "forbiddenTokens": [],
+      "imports": [
+        "DrEquiv"
+      ]
+    },
+    {
+      "file": "AHP/round13/shared/detection/R2_ColorArea.lean",
+      "sourceSha256": "4a805e091c6b39d96cd8376ee4ac39d625f71702913175ff93c81fa1951060b2",
+      "logSha256": "099b76e569d657ba878ac45c08f196aee89a30aa61e3a8b564ed4b985fd73191",
+      "exit": 0,
+      "lines": 741,
+      "records": 51,
+      "newRecords": {
+        "AdalyFormal.Round13.Detection.Area.mixed_bilinear": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.mixed_alternating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_matrix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.quadratic_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.imagPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.realPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_negative_diag": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.carrier_color_decompose": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_skew": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.neutralJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_gauge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flip_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_one_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_two_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_sum_charged": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_axis": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_color_quarter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "warnings": 0,
+      "forbiddenTokens": [],
+      "imports": [
+        "DrEquiv"
+      ]
+    },
+    {
+      "file": "AHP/round13/detection/r2/PhysicalArea.lean",
+      "sourceSha256": "863b70605847a88db05bb8111d30292bceb58d099ffb5afe6711612ce77a816e",
+      "logSha256": "ba855ea289d65331b1c06c4da5b4949875bd702353dfea9c02f54c9cc9a24f0b",
+      "exit": 0,
+      "lines": 4436,
+      "records": 286,
+      "newRecords": {
+        "AdalyFormal.Round13.Detection.Area.mixed_bilinear": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.mixed_alternating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_matrix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.quadratic_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.imagPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.realPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_negative_diag": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.carrier_color_decompose": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_skew": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.neutralJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_gauge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flip_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_one_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_two_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_sum_charged": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_axis": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_color_quarter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.areaSum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient_skew": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.physicalJetAggregate_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.kernelLine_half": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.crossing_physicalJetAggregate_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.crossing_topJet_iff_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.crossing_curlDetected_of_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "warnings": 0,
+      "forbiddenTokens": [],
+      "imports": [
+        "DrEquiv",
+        "ZXR2Flat6"
+      ]
+    },
+    {
+      "file": "AHP/round13/shared/detection/R2_PhysicalArea.lean",
+      "sourceSha256": "863b70605847a88db05bb8111d30292bceb58d099ffb5afe6711612ce77a816e",
+      "logSha256": "ba855ea289d65331b1c06c4da5b4949875bd702353dfea9c02f54c9cc9a24f0b",
+      "exit": 0,
+      "lines": 4436,
+      "records": 286,
+      "newRecords": {
+        "AdalyFormal.Round13.Detection.Area.mixed_bilinear": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.mixed_alternating": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_matrix": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.bilinear_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.Area.quadratic_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.imagPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.realPart": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_negative_diag": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.carrier_color_decompose": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_skew": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.neutralJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_apply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_gauge": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_neg": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.half_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flip_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_one_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_two_zero": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.color_sum_charged": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.quarter_axis": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_color_quarter": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.ColorArea.flatJet_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.areaSum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient_skew": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient_diagonal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.physicalJetAggregate_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.kernelLine_half": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.crossing_physicalJetAggregate_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.crossing_topJet_iff_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "AdalyFormal.Round13.Detection.PhysicalArea.crossing_curlDetected_of_area": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "warnings": 0,
+      "forbiddenTokens": [],
+      "imports": [
+        "DrEquiv",
+        "ZXR2Flat6"
+      ]
+    }
+  ],
+  "verbatimCopies": [
+    {
+      "source": "AHP/round13/detection/r2/Area.lean",
+      "start": 16,
+      "end": 3462,
+      "sha256": "151216ba2674094def289c080121ce0866fb8e7ab7d982774e6d39f881de87bb",
+      "verbatimIn": [
+        "AHP/round13/detection/r2/Area.lean",
+        "AHP/round13/shared/detection/R2_Area.lean",
+        "AHP/round13/detection/r2/ColorArea.lean",
+        "AHP/round13/shared/detection/R2_ColorArea.lean",
+        "AHP/round13/detection/r2/PhysicalArea.lean",
+        "AHP/round13/shared/detection/R2_PhysicalArea.lean"
+      ]
+    },
+    {
+      "source": "AHP/round13/detection/r1/ColorTrace.lean",
+      "start": 0,
+      "end": 15677,
+      "sha256": "ff03b264d900317c1290512ead499c4f21e31f3a988de5908861af358d221cc2",
+      "verbatimIn": [
+        "AHP/round13/detection/r2/ColorArea.lean",
+        "AHP/round13/shared/detection/R2_ColorArea.lean"
+      ]
+    },
+    {
+      "source": "AHP/round13/detection/r1/JetBridge.lean",
+      "start": 0,
+      "end": 157099,
+      "sha256": "627d2c956a6909df679f43a76d05f9cb2ab3e7a2558c2332220b9aa84bb8eca8",
+      "verbatimIn": [
+        "AHP/round13/detection/r2/PhysicalArea.lean",
+        "AHP/round13/shared/detection/R2_PhysicalArea.lean"
+      ]
+    },
+    {
+      "source": "AHP/round13/detection/r1/ColorTrace.lean",
+      "start": 800,
+      "end": 1759,
+      "sha256": "ccb9b21418c13b3b5c6e67c14918b5866f199e0b1a9e517df29ac0ed816fae70",
+      "verbatimIn": [
+        "AHP/round13/detection/r2/ColorArea.lean",
+        "AHP/round13/shared/detection/R2_ColorArea.lean",
+        "AHP/round13/detection/r2/PhysicalArea.lean",
+        "AHP/round13/shared/detection/R2_PhysicalArea.lean"
+      ]
+    },
+    {
+      "source": "AHP/round13/detection/r1/ColorTrace.lean",
+      "start": 3192,
+      "end": 13423,
+      "sha256": "fa64836abb3d9ee5bc25955544b7dc77bda9e77434349a72be0cab3dce60863b",
+      "verbatimIn": [
+        "AHP/round13/detection/r2/ColorArea.lean",
+        "AHP/round13/shared/detection/R2_ColorArea.lean",
+        "AHP/round13/detection/r2/PhysicalArea.lean",
+        "AHP/round13/shared/detection/R2_PhysicalArea.lean"
+      ]
+    },
+    {
+      "source": "AHP/round12/kernel/r2/ActualResponse.lean",
+      "start": 73254,
+      "end": 77160,
+      "sha256": "b8a3873e65e3eb62afca4d931ed4473bbf7909de529d60a8adaa4de452f1d63b",
+      "verbatimIn": [
+        "AHP/round13/detection/r2/PhysicalArea.lean",
+        "AHP/round13/shared/detection/R2_PhysicalArea.lean"
+      ]
+    },
+    {
+      "source": "AHP/round12/shared/kernel/R1_ActualKernel.lean",
+      "start": 76040,
+      "end": 76490,
+      "sha256": "d6dce1f895bc30af4a6293a5dd3367e0dfdab2f513d47f000f4a81361ae2018d",
+      "verbatimIn": [
+        "AHP/round13/detection/r2/PhysicalArea.lean",
+        "AHP/round13/shared/detection/R2_PhysicalArea.lean"
+      ]
+    }
+  ],
+  "newDeclarationCount": 36,
+  "newDeclarations": [
+    "AdalyFormal.Round13.Detection.Area.mixed_bilinear",
+    "AdalyFormal.Round13.Detection.Area.mixed_alternating",
+    "AdalyFormal.Round13.Detection.Area.bilinear_matrix",
+    "AdalyFormal.Round13.Detection.Area.bilinear_area",
+    "AdalyFormal.Round13.Detection.Area.quadratic_area",
+    "AdalyFormal.Round13.Detection.ColorArea.colorCarrier",
+    "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_apply",
+    "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_gauge",
+    "AdalyFormal.Round13.Detection.ColorArea.colorCarrier_neg",
+    "AdalyFormal.Round13.Detection.ColorArea.half_pauliE2",
+    "AdalyFormal.Round13.Detection.ColorArea.flip_pauliE2",
+    "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE1",
+    "AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE2",
+    "AdalyFormal.Round13.Detection.ColorArea.color_one_zero",
+    "AdalyFormal.Round13.Detection.ColorArea.color_two_zero",
+    "AdalyFormal.Round13.Detection.ColorArea.color_sum_charged",
+    "AdalyFormal.Round13.Detection.ColorArea.quarter_axis",
+    "AdalyFormal.Round13.Detection.ColorArea.flatJet_color_quarter",
+    "AdalyFormal.Round13.Detection.ColorArea.flatJet_area",
+    "AdalyFormal.Round13.Detection.ColorArea.imagPart",
+    "AdalyFormal.Round13.Detection.ColorArea.realPart",
+    "AdalyFormal.Round13.Detection.ColorArea.half_negative_diag",
+    "AdalyFormal.Round13.Detection.ColorArea.carrier_color_decompose",
+    "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient",
+    "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_skew",
+    "AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_diagonal",
+    "AdalyFormal.Round13.Detection.ColorArea.neutralJet_area",
+    "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient",
+    "AdalyFormal.Round13.Detection.PhysicalArea.areaSum",
+    "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient_skew",
+    "AdalyFormal.Round13.Detection.PhysicalArea.aggregateCoefficient_diagonal",
+    "AdalyFormal.Round13.Detection.PhysicalArea.physicalJetAggregate_area",
+    "AdalyFormal.Round13.Detection.PhysicalArea.kernelLine_half",
+    "AdalyFormal.Round13.Detection.PhysicalArea.crossing_physicalJetAggregate_area",
+    "AdalyFormal.Round13.Detection.PhysicalArea.crossing_topJet_iff_area",
+    "AdalyFormal.Round13.Detection.PhysicalArea.crossing_curlDetected_of_area"
+  ],
+  "publicationByteIdentity": true,
+  "qualification": "Builder and publication executions, not independent review. Exact operator identities and conditional handoff only; no nonvanishing, cofinal kernel/curl family, or GoalNeg2 inhabitant."
+}

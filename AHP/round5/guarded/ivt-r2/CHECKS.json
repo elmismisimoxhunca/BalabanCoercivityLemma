@@ -1,0 +1,79 @@
+{
+  "closedGoal": "none",
+  "file": "AHP/round5/guarded/ivt-r2/Attempt.lean",
+  "mainDeclaration": "AdalyFormal.Round5.Guarded.IVTR2.goalNeg2_of_initial_kernel_control",
+  "mainLine": 2382,
+  "axiomLine": "'AdalyFormal.Round5.Guarded.IVTR2.goalNeg2_of_initial_kernel_control' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "compileExit": 0,
+  "warningCount": 0,
+  "imports": [
+    "DrEquiv"
+  ],
+  "pinVerbatimBytePrefix": true,
+  "previousRoundVerbatimBytePrefix": true,
+  "sourceSha256": "b95973c476baecbdbce5ca1c04c414ae7bfb4388f1bda17a9b4dfb6e0532dd99",
+  "pinSha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "previousSha256": "64a93e3f111abbddfcac55216a66665695c339272f99483851cc0bed973c90c6",
+  "logSha256": "42317e068200ade1311e6c29d7f63ad89b04edc747819c94a2bd3c46f04b4f89",
+  "localDeclarationCount": 136,
+  "printedDependencyRecords": 156,
+  "allLocalDeclarationsPrinted": true,
+  "allAxiomsAllowed": true,
+  "forbiddenTokens": [],
+  "newDeclarations": {
+    "first_carrier_crossing": 1950,
+    "correction_pairing_error": 2008,
+    "correction_positive_of_error_margin": 2029,
+    "twist_first_carrier_crossing": 2061,
+    "EndpointSignControl": 2079,
+    "kernelPositiveCrossing_of_endpoint_signs": 2088,
+    "goalNeg2_of_endpoint_signs": 2099,
+    "maskedU": 2118,
+    "masked_regular": 2123,
+    "uniform_masked_class_family": 2147,
+    "rightSite": 2198,
+    "rightSite_bd": 2203,
+    "twist_eq_Uth_off_defect": 2227,
+    "right_face_agrees": 2241,
+    "twist_delta_pi": 2260,
+    "twistA_pi_negative": 2288,
+    "twist_first_crossing_of_initial": 2355,
+    "InitialKernelControl": 2368,
+    "endpoint_control_of_initial_kernel": 2376,
+    "goalNeg2_of_initial_kernel_control": 2382
+  },
+  "numericalRuns": [
+    {
+      "file": "AHP/round5/guarded/ivt-r2/numerics/crossing_R2_eps0.000195313.json",
+      "sha256": "df7274c99fef4c6641ebf043afd7d4dc39212182a3e114f34843e835ecebd84f",
+      "epsilon": 0.0001953125,
+      "R": 2,
+      "peakRssKiB": 218884,
+      "projectedCorrectionEigenvalues": [
+        1.6369605555583726e-13,
+        1.6369616078271032e-13
+      ],
+      "carrierResidualNorm": 9.041492286898713e-15,
+      "certified": false,
+      "variant": "Original single-defect dilU transcription"
+    },
+    {
+      "file": "AHP/round5/guarded/ivt-r2/numerics/two_sided_R6_eps0.0015625.json",
+      "sha256": "f06f38e13376528877b51f6b175104fa1c88f3d195292758a1a7550102e48537",
+      "epsilon": 0.0015625,
+      "R": 6,
+      "peakRssKiB": 797376,
+      "projectedCorrectionEigenvalues": [
+        4.283038352311784e-18,
+        4.283038398044371e-18,
+        1.2614447565259446e-17,
+        1.2614447565267172e-17
+      ],
+      "carrierResidualNorm": 2.4927523437642926e-14,
+      "certified": false,
+      "variant": "Two defects at p and q-2; NOT the single-defect dilU."
+    }
+  ],
+  "independentReplay": false,
+  "scope": "Exact curved negative endpoint and first-crossing topology, arbitrary-mask class family, conditional cofinal reduction. Initial positivity and exact kernel correction sign remain unproved."
+}

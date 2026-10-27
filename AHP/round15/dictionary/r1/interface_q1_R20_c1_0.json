@@ -1,0 +1,305 @@
+{
+  "q": 1,
+  "R": 20,
+  "character": [
+    1,
+    0
+  ],
+  "s": 212,
+  "hi": 252,
+  "deep_reference_x": 217,
+  "constant_recurrence_claim": "K_- v_(x-1)+K_0 v_x+K_+ v_(x+1)=0 uses the same blocks for s+1<=x<=hi-2",
+  "block_comparisons": [
+    {
+      "x": 212,
+      "K0_deep_difference": 0.0078125,
+      "Kplus_deep_difference": 0.0,
+      "Kminus_deep_difference": 0.015625
+    },
+    {
+      "x": 213,
+      "K0_deep_difference": 0.0,
+      "Kplus_deep_difference": 0.0,
+      "Kminus_deep_difference": 0.0
+    },
+    {
+      "x": 214,
+      "K0_deep_difference": 0.0,
+      "Kplus_deep_difference": 0.0,
+      "Kminus_deep_difference": 0.0
+    },
+    {
+      "x": 217,
+      "K0_deep_difference": 0.0,
+      "Kplus_deep_difference": 0.0,
+      "Kminus_deep_difference": 0.0
+    },
+    {
+      "x": 250,
+      "K0_deep_difference": 0.0,
+      "Kplus_deep_difference": 0.0,
+      "Kminus_deep_difference": 0.0
+    },
+    {
+      "x": 251,
+      "K0_deep_difference": 4.0,
+      "Kplus_deep_difference": 1.0,
+      "Kminus_deep_difference": 0.0
+    }
+  ],
+  "auxiliary_and_out_by_layer": [
+    {
+      "x": 210,
+      "V_row_l1_max": "3.0320872126070499335111102151157702542175439218373e-51",
+      "F_column_l1_max": "61.781369746089479499939981357446334576547480112725",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 211,
+      "V_row_l1_max": "3.5374350813748915890962952509683986299204679088102e-51",
+      "F_column_l1_max": "94.70682192678823679910536501319445412362652910865",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 212,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "10.0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 213,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 214,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 215,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 216,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 217,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 218,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 219,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 220,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 221,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 222,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 223,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 224,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 225,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 226,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 227,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 228,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 229,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 230,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 231,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 232,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 233,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 234,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 235,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 236,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 237,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 238,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 239,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 240,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 241,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 242,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 243,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 244,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 245,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 246,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 247,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 248,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 249,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 250,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "0"
+    },
+    {
+      "x": 251,
+      "V_row_l1_max": "0",
+      "F_column_l1_max": "0",
+      "out_K_row_l1_max": "15.414213562373095048801688724209698078569671875377"
+    }
+  ],
+  "qualification": "Non-interval numerical evidence only; interface rows are located, not yet identified in Lean."
+}

@@ -1,0 +1,169 @@
+namespace AdalyFormal.Round13.Trial
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneR8
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 RMap curlValueCovariant)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Balaban.CovariantHjMinimizer
+  (periodicLatticeShiftBack periodicLatticeShift_shiftBack periodicLatticeShiftBack_shift)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round12.Noncancel.Path
+open AdalyFormal.Round12.Noncancel.Plaquette
+open Classical
+
+def quadForm (c s : ℝ) (x y z w : ℂ) : ℝ :=
+  c * Complex.normSq (x+y+z+w) + 2*s*((star x*y).im+(star x*z).im+
+    (star x*w).im+(star y*z).im+(star y*w).im+(star z*w).im)
+
+/-- Four-atom extension of the copied frozen three-atom identity. -/
+theorem frozen_four_form {L : PeriodicLatticeExtent} (U : Cfg L)
+    (p : PeriodicLatticePlaquette L) (A : Bond L → SuTwo)
+    (c s : ℝ) (x y z w : ℂ)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p A = chargedMat x) (h2 : a2LM p A = chargedMat y)
+    (h3 : a3LM p A = chargedMat z) (h4 : a4LM U p A = chargedMat w) :
+    contrib U A p = quadForm c s x y z w := by
+  have hc : curlMatLM U p A = chargedMat (x+y+z+w) := by
+    rw [curl_atoms, h1, h2, h3, h4, chargedMat_add, chargedMat_add, chargedMat_add]
+  have hn : ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ =
+      Complex.normSq (x+y+z+w) := charged_inner _ _ hc
+  unfold contrib
+  change ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ + _ = _
+  rw [hn, bilPlaq_atoms]
+  simp only [b1LM,b2LM,b3LM,b4LM,LinearMap.comp_apply,hr,hi,hc,h1,h2,h3,h4]
+  rw [first_atom, comm_atom, comm_atom, comm_atom, comm_atom, comm_atom, comm_atom]
+  unfold quadForm
+  ring
+
+def anchorCoord : Fin 3 → Fin 7 := ![4,3,3]
+
+theorem star_anchor {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    periodicLatticeShift (rightSite hq R) 0 = patchSite hq R anchorCoord := by
+  have h := patchSite_shift hq R centerCoord 0 (by decide)
+  rw [patchSite_center] at h
+  have he : Function.update centerCoord 0 (centerCoord 0+1) = anchorCoord := by decide
+  simpa only [he] using h
+
+def localStar (v : Fin 3 → Fin 7) (μ : Fin 3) : Prop :=
+  μ ≠ 0 ∧ (v = anchorCoord ∨ stepCoord v μ = anchorCoord)
+
+theorem rightStar_patch {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ)
+    (v : Fin 3 → Fin 7) (μ : Fin 3) (hv : (v μ).val < 6) :
+    rightStar hq R t (patchSite hq R v,μ) =
+      if localStar v μ then uθ t else 1 := by
+  unfold rightStar starPath starLinks
+  simp only [Set.mem_setOf_eq, star_anchor, patchSite_shift hq R v μ hv,
+    (patchSite_injective hq R).eq_iff, localStar, stepCoord]
+  split_ifs <;> rfl
+
+def localField (v : Fin 3 → Fin 7) (μ : Fin 3) : SuTwo :=
+  ∑ i : Fin 6, if v = trialCoord i ∧ μ = trialDir i then charged (trialAmplitude i) else 0
+
+theorem trialField_patch {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (v : Fin 3 → Fin 7) (μ : Fin 3) :
+    trialField hq R (patchSite hq R v,μ) = localField v μ := by
+  rw [trialField_apply]
+  simp only [trialBond, Prod.mk.injEq, (patchSite_injective hq R).eq_iff, localField]
+
+theorem charged_zero : charged 0 = 0 := by
+  apply Subtype.ext
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [charged]
+
+theorem charged_neg (z : ℂ) : -charged z = charged (-z) := by
+  apply Subtype.ext
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [charged]
+
+def isCurved (i : Fin 19) : Bool := decide (i = 4 ∨ i = 9 ∨ i = 11 ∨ i = 12)
+
+theorem pattern_room (i : Fin 19) (μ : Fin 3) : ((trialPlaqPattern i).1 μ).val < 5 := by
+  fin_cases i <;> fin_cases μ <;> decide
+
+theorem pattern_base_flat (i : Fin 19) :
+    ¬ localStar (trialPlaqPattern i).1 (trialPlaqPattern i).2.1.1 ∧
+    ¬ localStar (trialPlaqPattern i).1 (trialPlaqPattern i).2.1.2 := by
+  revert i
+  unfold localStar
+  decide
+
+theorem pattern_shift_links (i : Fin 19) :
+    (localStar (stepCoord (trialPlaqPattern i).1 (trialPlaqPattern i).2.1.1)
+      (trialPlaqPattern i).2.1.2 ↔ isCurved i = true) ∧
+    ¬ localStar (stepCoord (trialPlaqPattern i).1 (trialPlaqPattern i).2.1.2)
+      (trialPlaqPattern i).2.1.1 := by
+  revert i
+  unfold localStar
+  decide
+
+theorem trial_base_links {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ) (i : Fin 19) :
+    rightStar hq R t ((trialPlaq hq R i).1,(trialPlaq hq R i).2.1.1) = 1 ∧
+    rightStar hq R t ((trialPlaq hq R i).1,(trialPlaq hq R i).2.1.2) = 1 := by
+  have hm := pattern_room i (trialPlaqPattern i).2.1.1
+  have hn := pattern_room i (trialPlaqPattern i).2.1.2
+  change rightStar hq R t (patchSite hq R (trialPlaqPattern i).1, (trialPlaqPattern i).2.1.1) = 1 ∧
+    rightStar hq R t (patchSite hq R (trialPlaqPattern i).1, (trialPlaqPattern i).2.1.2) = 1
+  rw [rightStar_patch hq R t _ _ (by omega), rightStar_patch hq R t _ _ (by omega)]
+  simp only [(pattern_base_flat i).1,(pattern_base_flat i).2,↓reduceIte,and_self]
+
+theorem trial_holonomy {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ) (i : Fin 19) :
+    holonomyElem (rightStar hq R t) (trialPlaq hq R i) =
+      if isCurved i then uθ t else 1 := by
+  have hb := trial_base_links hq R t i
+  unfold holonomyElem periodicPlaquetteHolonomy
+  dsimp only
+  rw [hb.1,hb.2]
+  change 1 * rightStar hq R t
+      (periodicLatticeShift (patchSite hq R (trialPlaqPattern i).1) (trialPlaqPattern i).2.1.1,
+        (trialPlaqPattern i).2.1.2) *
+      (rightStar hq R t
+      (periodicLatticeShift (patchSite hq R (trialPlaqPattern i).1) (trialPlaqPattern i).2.1.2,
+        (trialPlaqPattern i).2.1.1))⁻¹ * 1⁻¹ = _
+  rw [patchSite_shift hq R _ _ (by have := pattern_room i (trialPlaqPattern i).2.1.1; omega),
+    patchSite_shift hq R _ _ (by have := pattern_room i (trialPlaqPattern i).2.1.2; omega)]
+  have h1 : ((stepCoord (trialPlaqPattern i).1 (trialPlaqPattern i).2.1.1)
+      (trialPlaqPattern i).2.1.2).val < 6 := by
+    fin_cases i <;> decide
+  have h2 : ((stepCoord (trialPlaqPattern i).1 (trialPlaqPattern i).2.1.2)
+      (trialPlaqPattern i).2.1.1).val < 6 := by
+    fin_cases i <;> decide
+  have he1 := rightStar_patch hq R t _ _ h1
+  have he2 := rightStar_patch hq R t _ _ h2
+  have hp := pattern_shift_links i
+  dsimp only [stepCoord] at he1 he2 hp
+  rw [he1,he2]
+  simp only [hp.1, hp.2, ↓reduceIte, inv_one, mul_one, one_mul]
+
+theorem uhalf_coe : ((uθ (Real.pi/2) : SU2m) : Matrix (Fin 2) (Fin 2) ℂ) =
+    !![Complex.I,0;0,-Complex.I] := by
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [uθ,uMat,Complex.ofReal_div,Complex.exp_pi_div_two_mul_I,Complex.exp_neg]
+
+theorem trial_hol_parts {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 19) :
+    reHolonomy (rightStar hq R (Real.pi/2)) (trialPlaq hq R i) = realHol (if isCurved i then 0 else 1) ∧
+    imHolonomy (rightStar hq R (Real.pi/2)) (trialPlaq hq R i) = imagHol (if isCurved i then 1 else 0) := by
+  have he := trial_holonomy hq R (Real.pi/2) i
+  have hinv : ((holonomyElemInv (rightStar hq R (Real.pi/2)) (trialPlaq hq R i) : SU2m) :
+      Matrix (Fin 2) (Fin 2) ℂ) = star ((holonomyElem (rightStar hq R (Real.pi/2))
+        (trialPlaq hq R i) : SU2m) : Matrix (Fin 2) (Fin 2) ℂ) := rfl
+  unfold reHolonomy imHolonomy
+  rw [hinv,he]
+  cases hc : isCurved i <;> simp only [hc, Bool.false_eq_true, ↓reduceIte, uhalf_coe]
+  all_goals constructor <;> ext a b <;> fin_cases a <;> fin_cases b <;>
+    norm_num [realHol,imagHol,Matrix.star_apply,Matrix.ofNat_apply,Complex.ext_iff,Complex.div_re,Complex.div_im]
+
+end AdalyFormal.Round13.Trial
+#print axioms AdalyFormal.Round13.Trial.frozen_four_form
+#print axioms AdalyFormal.Round13.Trial.rightStar_patch
+#print axioms AdalyFormal.Round13.Trial.trial_base_links
+#print axioms AdalyFormal.Round13.Trial.trial_holonomy
+#print axioms AdalyFormal.Round13.Trial.trial_hol_parts

@@ -1,0 +1,17 @@
+'AdalyFormal.Round10.Nonvanishing.Flux.flux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.curl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.sum_curl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.flux_eq_of_curl_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.flux_zero_of_curl_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.coarseFlux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.exists_curl_of_coarseFlux' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.exists_curl_of_jet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.sum_blockRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.Flux.exists_curl_of_blockRows' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

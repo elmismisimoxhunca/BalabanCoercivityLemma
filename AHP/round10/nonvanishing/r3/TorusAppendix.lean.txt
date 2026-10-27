@@ -1,0 +1,134 @@
+
+namespace AdalyFormal.Round10.Nonvanishing.TorusFlux
+
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.LatticeOperators (curlValue)
+open AdalyFormal.Round10.Nonvanishing.Flux
+
+variable {L : PeriodicLatticeExtent}
+
+abbrev Slice (L : PeriodicLatticeExtent) := Fin (L 1+1) × Fin (L 2+1)
+
+/-- The actual physical transverse section, with the longitudinal index periodic. -/
+def site (L : PeriodicLatticeExtent) (x : ℕ) (t : Slice L) : PeriodicLatticeSite L := by
+  intro μ
+  refine Fin.cases (Fin.ofNat (L 0+1) x) ?_ μ
+  intro ν
+  refine Fin.cases t.1 ?_ ν
+  intro κ
+  refine Fin.cases t.2 ?_ κ
+  intro j
+  exact Fin.elim0 j
+
+@[simp] theorem site_zero (x : ℕ) (t : Slice L) : site L x t 0 = Fin.ofNat (L 0+1) x := rfl
+@[simp] theorem site_one (x : ℕ) (t : Slice L) : site L x t 1 = t.1 := rfl
+@[simp] theorem site_two (x : ℕ) (t : Slice L) : site L x t 2 = t.2 := rfl
+
+/-- Unit translation on the actual first transverse circle. -/
+def shift1 (L : PeriodicLatticeExtent) : Slice L ≃ Slice L where
+  toFun t := (t.1+1,t.2)
+  invFun t := (t.1-1,t.2)
+  left_inv t := by ext <;> simp
+  right_inv t := by ext <;> simp
+
+/-- Unit translation on the actual second transverse circle. -/
+def shift2 (L : PeriodicLatticeExtent) : Slice L ≃ Slice L where
+  toFun t := (t.1,t.2+1)
+  invFun t := (t.1,t.2-1)
+  left_inv t := by ext <;> simp
+  right_inv t := by ext <;> simp
+
+@[simp] theorem shift_site_zero (x : ℕ) (t : Slice L) :
+    periodicLatticeShift (site L x t) 0 = site L (x+1) t := by
+  funext μ
+  fin_cases μ <;> simp [periodicLatticeShift]
+  apply Fin.ext
+  change (x % (L 0+1) + 1 % (L 0+1)) % (L 0+1) = (x+1) % (L 0+1)
+  exact (Nat.add_mod x 1 (L 0+1)).symm
+
+@[simp] theorem shift_site_one (x : ℕ) (t : Slice L) :
+    periodicLatticeShift (site L x t) 1 = site L x (shift1 L t) := by
+  funext μ
+  fin_cases μ <;> simp [periodicLatticeShift,shift1]
+
+@[simp] theorem shift_site_two (x : ℕ) (t : Slice L) :
+    periodicLatticeShift (site L x t) 2 = site L x (shift2 L t) := by
+  funext μ
+  fin_cases μ <;> simp [periodicLatticeShift,shift2]
+
+/-- A physical scalar bond field restricted to the indicated layer and direction. -/
+def component (A : Bond L → ℝ) (μ : Fin 3) (x : ℕ) (t : Slice L) : ℝ :=
+  A (site L x t,μ)
+
+def plaq01 (L : PeriodicLatticeExtent) (x : ℕ) (t : Slice L) : PeriodicLatticePlaquette L :=
+  (site L x t,⟨(0,1),by decide⟩)
+
+def plaq02 (L : PeriodicLatticeExtent) (x : ℕ) (t : Slice L) : PeriodicLatticePlaquette L :=
+  (site L x t,⟨(0,2),by decide⟩)
+
+/-- No replacement curl: this is the frozen physical oriented plaquette formula. -/
+theorem curl01 (A : Bond L → ℝ) (x : ℕ) (t : Slice L) :
+    curlValue A (plaq01 L x t) = curl (shift1 L) (component A 0) (component A 1) x t := by
+  simp [curlValue,plaq01,curl,component]
+
+theorem curl02 (A : Bond L → ℝ) (x : ℕ) (t : Slice L) :
+    curlValue A (plaq02 L x t) = curl (shift2 L) (component A 0) (component A 2) x t := by
+  simp [curlValue,plaq02,curl,component]
+
+/-- Exact physical transverse divergence theorem in the 0-1 plane. -/
+theorem sum_curl01 (A : Bond L → ℝ) (x : ℕ) :
+    ∑ t : Slice L, curlValue A (plaq01 L x t) =
+      flux (component A 1) (x+1) - flux (component A 1) x := by
+  simp_rw [curl01]
+  exact sum_curl _ _ _ _
+
+theorem sum_curl02 (A : Bond L → ℝ) (x : ℕ) :
+    ∑ t : Slice L, curlValue A (plaq02 L x t) =
+      flux (component A 2) (x+1) - flux (component A 2) x := by
+  simp_rw [curl02]
+  exact sum_curl _ _ _ _
+
+/-- Nonzero physical coarse tangential flux forces a physical nonzero plaquette curl. -/
+theorem exists_curl01 (A : Bond L → ℝ) (l p : ℕ) (hlp : l ≤ p)
+    (hl : flux (component A 1) l = 0)
+    (hb : coarseFlux (component A 1) p ≠ 0) :
+    ∃ x, l ≤ x ∧ x < p+1 ∧ ∃ t : Slice L, curlValue A (plaq01 L x t) ≠ 0 := by
+  simpa only [curl01] using
+    exists_curl_of_coarseFlux (shift1 L) (component A 0) (component A 1) l p hlp hl hb
+
+theorem exists_curl02 (A : Bond L → ℝ) (l p : ℕ) (hlp : l ≤ p)
+    (hl : flux (component A 2) l = 0)
+    (hb : coarseFlux (component A 2) p ≠ 0) :
+    ∃ x, l ≤ x ∧ x < p+1 ∧ ∃ t : Slice L, curlValue A (plaq02 L x t) ≠ 0 := by
+  simpa only [curl02] using
+    exists_curl_of_coarseFlux (shift2 L) (component A 0) (component A 2) l p hlp hl hb
+
+/-- The collar hypothesis can be supplied by zero level-zero rows. -/
+theorem flux_zero_of_layer_zero (A : Bond L → ℝ) (μ : Fin 3) (l : ℕ)
+    (h : ∀ t : Slice L, A (site L l t,μ) = 0) : flux (component A μ) l = 0 := by
+  apply Finset.sum_eq_zero
+  intro t _
+  exact h t
+
+#print axioms Slice
+#print axioms site
+#print axioms site_zero
+#print axioms site_one
+#print axioms site_two
+#print axioms shift1
+#print axioms shift2
+#print axioms shift_site_zero
+#print axioms shift_site_one
+#print axioms shift_site_two
+#print axioms component
+#print axioms plaq01
+#print axioms plaq02
+#print axioms curl01
+#print axioms curl02
+#print axioms sum_curl01
+#print axioms sum_curl02
+#print axioms exists_curl01
+#print axioms exists_curl02
+#print axioms flux_zero_of_layer_zero
+end AdalyFormal.Round10.Nonvanishing.TorusFlux

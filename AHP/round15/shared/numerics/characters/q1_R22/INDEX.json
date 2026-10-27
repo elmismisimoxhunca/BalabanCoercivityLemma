@@ -1,0 +1,139 @@
+{
+  "characters": {
+    "0_0": {
+      "file": "c0_0.json",
+      "sha256": "c80feb5a6456f5a7b752dc19a6b54192e32f3b3c706cc940c18098245c6a8e34",
+      "detA": "1/225",
+      "detC": "1/225",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "0_1": {
+      "file": "c0_1.json",
+      "sha256": "a7cf5aa0d33fa644ac4d7150b7bb5efe2eaf6409784fec7d7732e76e2720a2ad",
+      "detA": "1/329",
+      "detC": "1/329",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "0_2": {
+      "file": "c0_2.json",
+      "sha256": "0e92ac3f8d72d8807a8c63d8e03503d827f3d462d90018ae048423c666de8584",
+      "detA": "1/441",
+      "detC": "1/441",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "0_3": {
+      "file": "c0_3.json",
+      "sha256": "25eb65b5d36737aab88f806ecb08c265c45aa6bbef71068b33fa61c8a83cd61f",
+      "detA": "1/329",
+      "detC": "1/329",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "1_0": {
+      "file": "c1_0.json",
+      "sha256": "77828872217217c02106182c107f2ef66fa00b309a0db29f5a365379f68d6e9f",
+      "detA": "1/329",
+      "detC": "1/329",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "1_1": {
+      "file": "c1_1.json",
+      "sha256": "412fca159e9cf7f0ba865ec8d7b1d6acb53ca3fe3959990a19c07377a44256c8",
+      "detA": "1/425",
+      "detC": "1/425",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "1_2": {
+      "file": "c1_2.json",
+      "sha256": "36416c3b6bdbd6a376c2bed4c9a42955de41762e2e8afe487971b7d1266ab94f",
+      "detA": "1/529",
+      "detC": "1/529",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "1_3": {
+      "file": "c1_3.json",
+      "sha256": "0d6468c3d56a2f209377f1efa9897249caafbe4360d9a1ebc38996161fafcb5b",
+      "detA": "1/425",
+      "detC": "1/425",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "2_0": {
+      "file": "c2_0.json",
+      "sha256": "61aac36eb5342ccfb0db57eaa2a08815340f619ae9c4181f56304d013ae54921",
+      "detA": "1/441",
+      "detC": "1/441",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "2_1": {
+      "file": "c2_1.json",
+      "sha256": "16b68f48cbca90bc6e14a5744338d749cfdcb9e1dba33cef5ec149e7f88879e1",
+      "detA": "1/529",
+      "detC": "1/529",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "2_2": {
+      "file": "c2_2.json",
+      "sha256": "5a3664dfafcdf13cef11d95554c8d8fc930cd40bdc95da63deabba27fb8c3040",
+      "detA": "1/625",
+      "detC": "1/625",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "2_3": {
+      "file": "c2_3.json",
+      "sha256": "fbbc1b5d26899e0b6859d63c745e36ed796e07d44f00e90ef13e156f72da685b",
+      "detA": "1/529",
+      "detC": "1/529",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "3_0": {
+      "file": "c3_0.json",
+      "sha256": "c28c4332d63a23306999babf89088b0f542142e1f2256ceebf858ba9bb1fc309",
+      "detA": "1/329",
+      "detC": "1/329",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "3_1": {
+      "file": "c3_1.json",
+      "sha256": "2647910c27d79320e109af556590c3615504b48eca1c82fe22df5d0156b7c346",
+      "detA": "1/425",
+      "detC": "1/425",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "3_2": {
+      "file": "c3_2.json",
+      "sha256": "77faaa44c3e619ee4e5053b0f160dd7b639a241a525d4bc09c9fae5c572e58c7",
+      "detA": "1/529",
+      "detC": "1/529",
+      "interface_rows": 72,
+      "solve_present": true
+    },
+    "3_3": {
+      "file": "c3_3.json",
+      "sha256": "d9a9f70269bb4950df54c5a8fa3c6bd9321532c87ef1494dd1025d59d670f61b",
+      "detA": "1/425",
+      "detC": "1/425",
+      "interface_rows": 72,
+      "solve_present": true
+    }
+  },
+  "q": 1,
+  "R": 22,
+  "dps": 70,
+  "drive": null,
+  "qualification": "Exact cyclotomic operator transcription; optional residuals are non-interval numerical evidence only.",
+  "seconds": 24.95353865623474,
+  "descriptor_file": "descriptors.json"
+}

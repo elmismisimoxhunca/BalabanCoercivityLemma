@@ -1,0 +1,31 @@
+{
+  "pin_sha256": "9133de3969b6a26d2f6c373d4bb56c1d0ce6d545bd161b69a851e6af2416962c",
+  "attempt_sha256": "67908d7b3f5a0b882fdbf32376f130e800709d78e1747b43ad6cfaa116d5aa47",
+  "verify_log_sha256": "5c6c392d4679225a0cbaf8165cd390e9c92b79bbb2bfb93f332214d998622d99",
+  "verify_exit": 0,
+  "pin_bytes": 16414,
+  "pin_lines": 357,
+  "byte_identical_pin_prefix": true,
+  "whitespace_normalized_pin_prefix_equal": true,
+  "imports": [
+    "ZT5A"
+  ],
+  "main_signature": [
+    "theorem goalPos1_proved : GoalPos1 := by"
+  ],
+  "main_signature_is_literal_goal": true,
+  "new_declarations": 44,
+  "axiom_commands": 59,
+  "axiom_records": 59,
+  "missing_axiom_records": [],
+  "unexpected_axiom_records": [],
+  "new_declarations_without_print": [],
+  "nonstandard_axioms": {},
+  "forbidden_raw_tokens": [],
+  "warning_count": 27,
+  "error_count": 0,
+  "main_axiom_records": [
+    "AdalyFormal.Round2.S3Pin.goalPos1_proved: [propext, Classical.choice, Quot.sound]",
+    "AdalyFormal.Round2.S3Pin.goalPos2_proved: [propext, Classical.choice, Quot.sound]"
+  ]
+}

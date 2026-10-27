@@ -1,0 +1,13 @@
+{
+  "prefix": {
+    "path": "AHP/round12/kernel/r1/ActualKernel.lean",
+    "sha256": "374f196e2a5ff24604d121c336725d58ef54009d738e56155d21be5f6be547f8"
+  },
+  "helpers": {
+    "path": "AHP/round9/qualitative-r2/Attempt.lean",
+    "start_line": 4941,
+    "end_line": 4998,
+    "sha256": "6d5c13f49dc270b46d88b56aa03ae1227d5689e713ac2e698ae920c0477a9ce4"
+  },
+  "proof_reuse": "psdEdge_spec proof through hnu, excluding unused isolated-nonunit hbef clause"
+}

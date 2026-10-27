@@ -1,0 +1,44 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:25:78: warning: Variable name `B` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:31:78: warning: Variable name `B` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:55:2: error: No goals to be solved
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:56:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.CoverOmega.Qfull_flat_row`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:57:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.CoverOmega.bgTower_flat`
+AdalyFormal.GenuineU1.Qcomp_closed {L : PeriodicLatticeExtent} (ell : ℕ) (hell : 0 < ell)
+  (bg : ℕ → PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L) (hbg : ∀ (j : ℕ), bg j = flatCfg) (J : ℕ)
+  (hdvdJ : ∀ (ν : Fin 3), ell ^ J ∣ L ν + 1) (a : XS L) (j : ℕ) :
+  j ≤ J →
+    ∀ (n : ℕ),
+      n = ell ^ j →
+        ∀ (c : AdalyFormal.Balaban.LatticeOperators.CoarseBond L n),
+          suCoordFInv ((QlinCompX ell bg j) a) (↑c.1, c.2) =
+            ↑n • AdalyFormal.Balaban.LineIntegralCovariant.lineCoarseRestrictSuTwo n (suCoordFInv a) c
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:59:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.GenuineU1.suCoordFInv_suCoordF`
+AdalyFormal.IngredientFamilyR2.QlinCompL_eq_QlinCompX {L : PeriodicLatticeExtent} (ell : ℕ)
+  (bg : ℕ → PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L) (J : ℕ) (hreg : RegTower ell bg J)
+  (j : ℕ) : j ≤ J → QlinCompL ell bg j = QlinCompX ell bg j
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:61:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Balaban.UbarTowerCov.Ubar_flat`
+AdalyFormal.Balaban.LineIntegralCovariant.lineCoarseRestrictSuTwo {L : PeriodicLatticeExtent} (ell : ℕ)
+  (A : Bond L → ↥SuTwo) (b : AdalyFormal.Balaban.LatticeOperators.CoarseBond L ell) : ↥SuTwo
+AdalyFormal.M1IMS.row_aligned {ell k : ℕ} {Lu : PeriodicLatticeExtent} {S : Tower (scaleUp ell k Lu)} (hell : 0 < ell)
+  (p : BIdx (geomOf ell k S)) :
+  (↑p.snd).1 ∈ AdalyFormal.Balaban.AdmissibleSubspace.CoarseLattice (scaleUp ell k Lu) (ell ^ ↑p.fst)
+AdalyFormal.IngredientFamilyR2.Ubar_flat (ell : ℕ) {L : PeriodicLatticeExtent} (l : ℕ) :
+  AdalyFormal.Balaban.UbarTowerCov.UbarTower AdalyFormal.Balaban.SuTwoLogExp.su2LogExp ell flatCfg l = flatCfg
+AdalyFormal.IngredientFamilyR2.suCoordFInv_suCoordF {L : PeriodicLatticeExtent} (B : Bond L → ↥SuTwo) :
+  suCoordFInv (suCoordF B) = B
+Sigma.ext.{u, v} {α : Type u} {β : α → Type v} {x y : Sigma β} (fst : x.fst = y.fst) (snd : x.snd ≍ y.snd) : x = y
+Sigma.ext_iff.{u, v} {α : Type u} {β : α → Type v} {x y : Sigma β} : x = y ↔ x.fst = y.fst ∧ x.snd ≍ y.snd
+Sigma.mk.injEq.{u, v} {α : Type u} {β : α → Type v} (fst : α) (snd : β fst) (fst✝ : α) (snd✝ : β fst✝) :
+  (⟨fst, snd⟩ = ⟨fst✝, snd✝⟩) = (fst = fst✝ ∧ snd ≍ snd✝)
+AdalyFormal.Balaban.RegularityGap.shiftBack_ne_self {L : PeriodicLatticeExtent} (x : PeriodicLatticeSite L) (ν : Fin 3)
+  (h : 1 ≤ L ν) : AdalyFormal.Balaban.CovariantHjMinimizer.periodicLatticeShiftBack x ν ≠ x
+AdalyFormal.Balaban.RegularUCurvedWitness.shift_ne_self {L : PeriodicLatticeExtent} (x : PeriodicLatticeSite L)
+  (ν : Fin 3) (h : 0 < L ν) : periodicLatticeShift x ν ≠ x

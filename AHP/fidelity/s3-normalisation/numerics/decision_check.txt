@@ -1,0 +1,39 @@
+rank Q = 4                                      PASS
+J gives H*J = (1,1,1,1)                         PASS
+exact H-invariance lam(eta*Quad) == lam(Quad)   PASS
+lane S PD (both levels)                         PASS
+det Nmat lane != 0 (both levels)                PASS
+frozen values 14/5, 12/5, 64/5, 27              PASS
+plainH S PD (both levels)                       PASS
+det Nmat plainH != 0 (both levels)              PASS
+draft S PD (both levels)                        PASS
+det Nmat draft != 0 (both levels)               PASS
+linearEta S PD (both levels)                    PASS
+det Nmat linearEta != 0 (both levels)           PASS
+uniformBody S PD (both levels)                  PASS
+det Nmat uniformBody != 0 (both levels)         PASS
+plainH ratio split (both levels)                PASS
+draft ratio split (both levels)                 PASS
+linearEta ratio split (both levels)             PASS
+uniformBody scalar 1 (both levels)              PASS
+plainH pair 56/57 vs 48/53                      PASS
+draft pair 14/13 vs 4/3                         PASS
+linearEta pair 7/6 vs 3/2                       PASS
+lane S PD (top level only)                      PASS
+det Nmat lane != 0 (top level only)             PASS
+plainH S PD (top level only)                    PASS
+det Nmat plainH != 0 (top level only)           PASS
+draft S PD (top level only)                     PASS
+det Nmat draft != 0 (top level only)            PASS
+linearEta S PD (top level only)                 PASS
+det Nmat linearEta != 0 (top level only)        PASS
+uniformBody S PD (top level only)               PASS
+det Nmat uniformBody != 0 (top level only)      PASS
+plainH ratio B-independent (top level only)     PASS
+draft ratio B-independent (top level only)      PASS
+linearEta ratio B-independent (top level only)  PASS
+uniformBody scalar 1 (top level only)           PASS
+top-only plainH = 1                             PASS
+top-only draft = 29/28                          PASS
+top-only linearEta = 29/26                      PASS
+ALL CHECKS PASSED

@@ -1,0 +1,44 @@
+
+== attack 1: Om1 = [0,4)^3 numbers stated in SPEC but not in the design script ==
+[PASS] block-om1-print-448: |Om0Print|=448
+[PASS] block-om1-unit-512: |Om0Unit|=512
+[PASS] block-om1-mindist-3: min dist(complement of Om0Print, Om1)=3
+[PASS] block-om1-subset-both: Om1 sits in both printed and reading-B sets (om1_sub_om0Print direction)
+[PASS] block-om1-excluded-shape: 8 side-2 blocks excluded, all with >=2 block-coordinates >= 2
+
+== attack 2: no proper reading-B Omega_0 at headline sizes on side 8 ==
+[PASS] unqualified-form-false: min dist(block [0,4)^3, site (5,5,5)) = 6 > 4: SPEC's sentence needs Om1 block-closed
+[PASS] block-to-block-max-min-dist-le-3: max over side-4 block pairs of min dist = 3 at ((0, 0, 0), (1, 1, 1)); radius 4R >= 4 for R >= 1
+[PASS] om0unit-full-for-all-255-block-unions: Om0Unit(s=4, rho=4) is the whole torus for 255/255 nonempty side-4-block unions
+
+== attack 3: headline (ell, M=ell^m, k>=2) cases fittable on side <= 8 ==
+[PASS] only-fit-is-2-2-2-on-8: fittable (side, ell, M, k, bigSide(k)) = [(8, 2, 2, 2, 8)]; at the only fit bigSide(k) equals the side, so a block-closed Omega_k is empty or the torus
+
+== attack 4: exhaustive global-gauge impossibility on the 4-cycle ==
+[PASS] no-global-gauge-flattens: all 16 gauges in {+-I}^4 leave a non-identity link
+[PASS] gauged-holonomy-always-minus-I: all 16 gauged holonomies equal -I
+[PASS] per-arc-gauges-exist: each of the 4 two-bond arcs flattens independently
+
+== attack 5: Pauli frobSq entrywise, and the family with explicit entries ==
+[PASS] pauli-E1-frobSq-2: frobSq(E1)=2, half=1
+[PASS] pauli-E2-frobSq-2: frobSq(E2)=2, half=1
+[PASS] pauli-E3-frobSq-2: frobSq(E3)=2, half=1
+[PASS] family-entrywise-factor-2: frobSq = 2(a^2+b^2+c^2) on 7 explicit-entry samples
+
+== attack 6: embedding identity at two more parameter sets ==
+[PASS] emb-scales-ell3-k1: 64 pairs on unit side 2, fine side 6, mismatches=0
+[PASS] emb-scales-ell2-k2: 64 pairs on unit side 2, fine side 8, mismatches=0
+
+== attack 7: collar separator, independent construction ==
+[PASS] sep-conjuncts: nesting=True above=True divides=True closed=True clause6=True
+[PASS] sep-collar-equality-only: min dist over comp(Om1) x Om2 = 2 = R*bigSide(1) = 2; 2 equality pairs, e.g. ((4, 4, 0), (3, 3, 0)); strict fails only by equality
+
+== attack 8: k=1 strict/non-strict agreement sweep (evidence for SPEC's k=1 claim) ==
+[PASS] k1-sweep-M2-all-256: 256 nonempty side-4-block unions: disagreements=0, strict collar held in 255/255 (full-torus Om1 gives an empty complement, also strict)
+[PASS] k1-sweep-M1-sample-300: 300 seeded side-2-block unions at M=1: disagreements=0
+
+== attack 9: Q13 toy, second window ==
+[PASS] toy-window-2: m<60, window 4, R1<20: frozen-shape=True, total-shape=False (toy, not the coercivity predicate)
+
+== attack summary ==
+all_checks True n 9

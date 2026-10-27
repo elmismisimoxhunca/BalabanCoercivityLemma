@@ -1,0 +1,25 @@
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile' depends on axioms: [propext]
+'AdalyFormal.Round7.S4OddSites.Partial.alternating_even_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile_periodic' depends on axioms: [propext]
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile_aligned' depends on axioms: [propext]
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile_block_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile_first_step' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile_seam_step' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddProfile_not_const_step' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.sliceCfg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddCfg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.sliceCfg_holonomy_01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.thinWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.arithmetic_window' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddCfg_cofinal_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddCfg_zero_wellDefG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.EventualCoverageUpgrade' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.no_eventual_geometric_upgrade' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round7.S4OddSites.Partial.oddCfg_holCos_01' depends on axioms: [propext, Classical.choice, Quot.sound]

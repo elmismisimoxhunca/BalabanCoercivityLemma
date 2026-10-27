@@ -1,0 +1,108 @@
+assembled 1 18 1 n 2692 aug 3756 nnz 115598 seconds 0.9016191959381104
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 1 18 0 n 2692 aug 3756 nnz 115260 seconds 0.9328811168670654
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q1_R18_e1e-3_p90_s0_0.json pairing 1.518058730194236667866493919307379444215769973354482509856205725097685075881252778397e-38 root 0.5865589686386088394685259869559252884630409235222786750591302486363625498854458657597 seconds 26.156811952590942
+assembled 1 18 1 n 2692 aug 3756 nnz 115588 seconds 0.8217136859893799
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 1 18 0 n 2692 aug 3756 nnz 115260 seconds 0.8528716564178467
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q1_R18_e1e-4_p90_s0_0.json pairing 1.518035020311060331815341833276670646680134711484601593547833745360793887349999743375e-40 root 0.5865589686386088394685259869559252892555105625517683580098585511969331645843547354685 seconds 25.809986352920532
+assembled 1 18 1 n 2692 aug 3756 nnz 115578 seconds 0.844074010848999
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 1 18 0 n 2692 aug 3756 nnz 115242 seconds 0.8391854763031006
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q1_R18_e1e-5_p90_s0_0.json pairing 1.518034783213137041212949199216288593269407499701257104772517041563193221628030155454e-42 root 0.5865589686386088394685259869559252892634352420859307191400787482744991040600048476549 seconds 27.079426288604736
+assembled 1 18 1 n 2692 aug 3756 nnz 115580 seconds 0.8177413940429688
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 1 18 0 n 2692 aug 3756 nnz 115222 seconds 0.9324362277984619
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q1_R18_e1e-6_p90_s0_0.json pairing 1.518034780842157899153913673694717006152992347416301621851879148321394404476839598704e-44 root 0.5865589686386088394685259869559252892635144888795867334153763531410041062440246332297 seconds 25.35443663597107

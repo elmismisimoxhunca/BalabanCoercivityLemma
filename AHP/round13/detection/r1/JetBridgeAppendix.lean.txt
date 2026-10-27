@@ -1,0 +1,52 @@
+
+namespace AdalyFormal.Round13.Detection
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round9.Guarded.AnalyticR2 (flatData)
+open AdalyFormal.Round10.Dictionary.FreeSource
+open AdalyFormal.Round10.Dictionary.JetDetection
+open AdalyFormal.Round10.Nonvanishing.DilatedFlux
+
+/-- The full flat N-unit guard is discharged, for all required scales/radii.
+The genuine nonzero top jet is still an explicit hypothesis. -/
+theorem curlDetected_of_topJet {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R)
+    (hR18 : 18 ≤ R) (u : TwistSpace q R) (hjet : TopJetDetected hq R u) :
+    CurlDetected q R u :=
+  AdalyFormal.Round10.Dictionary.JetDetection.curlDetected_of_topJet hq (by omega)
+    (flat_N_unit hq hR hR18) u hjet
+
+/-- A sign-controlled sum of the ACTUAL normalized frozen top row suffices.
+This is a sufficient sign interface, not a proof that the crossing satisfies it. -/
+theorem curlDetected_of_signed_top_row {q R j : ℕ}
+    (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) (hj : j < blockCount q R)
+    (u : TwistSpace q R) (sign : ℝ)
+    (hcell : ∀ c : Fin (4*q) × Fin (4*q),
+      0 ≤ sign * AdalyFormal.Round10.Nonvanishing.DilatedFlux.neutralFunctional
+        (C2fullOf (G q R) flatCfg
+          (Wop (G q R) flatCfg 1 (iE (G q R) u)) (topIdx hq hj c)))
+    (hone : ∃ c : Fin (4*q) × Fin (4*q),
+      0 < sign * AdalyFormal.Round10.Nonvanishing.DilatedFlux.neutralFunctional
+        (C2fullOf (G q R) flatCfg
+          (Wop (G q R) flatCfg 1 (iE (G q R) u)) (topIdx hq hj c))) :
+    CurlDetected q R u := by
+  apply curlDetected_of_topJet hq hR hR18 u
+  refine ⟨j, hj, ?_⟩
+  have hp : 0 < sign * jetAggregate hq hj
+      AdalyFormal.Round10.Nonvanishing.DilatedFlux.neutralFunctional
+      (Wop (G q R) flatCfg 1 (iE (G q R) u)) := by
+    rw [jetAggregate, Finset.mul_sum]
+    apply Finset.sum_pos'
+    · intro c _
+      exact hcell c
+    · obtain ⟨c, hc⟩ := hone
+      exact ⟨c, Finset.mem_univ c, hc⟩
+  intro hz
+  rw [hz, mul_zero] at hp
+  exact lt_irrefl 0 hp
+
+#print axioms curlDetected_of_topJet
+#print axioms curlDetected_of_signed_top_row
+end AdalyFormal.Round13.Detection

@@ -1,0 +1,101 @@
+{
+  "characters": [
+    {
+      "q": 1,
+      "R": 22,
+      "expected": 16,
+      "actual": 16,
+      "pass": true
+    },
+    {
+      "q": 2,
+      "R": 20,
+      "expected": 64,
+      "actual": 64,
+      "pass": true
+    },
+    {
+      "q": 4,
+      "R": 18,
+      "expected": 256,
+      "actual": 256,
+      "pass": true
+    }
+  ],
+  "characteristic": [
+    {
+      "q": 1,
+      "character": "0_1",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 1,
+      "character": "0_3",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 1,
+      "character": "1_0",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 1,
+      "character": "3_0",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 2,
+      "character": "0_1",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 2,
+      "character": "0_7",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 2,
+      "character": "1_0",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 2,
+      "character": "7_0",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 4,
+      "character": "0_1",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 4,
+      "character": "0_15",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 4,
+      "character": "1_0",
+      "factor_residual_terms": 0,
+      "pass": true
+    },
+    {
+      "q": 4,
+      "character": "15_0",
+      "factor_residual_terms": 0,
+      "pass": true
+    }
+  ],
+  "pass": true,
+  "qualification": "Structural and exact-arithmetic audit, not a physical area-seed proof."
+}

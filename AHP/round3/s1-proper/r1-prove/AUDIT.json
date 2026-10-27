@@ -1,0 +1,36 @@
+{
+  "file": "AHP/round3/s1-proper/r1-prove/Attempt.lean",
+  "sourceSha256": "86a1c2e204a291061632202377375c7d19e14508cf207e6cce9f79f7c35fcc00",
+  "pinSha256": "dff1d868790779a2def248238b348234402a065760bdb0d0c9b675136fe7cf9f",
+  "exitCode": 0,
+  "logNewerThanSource": true,
+  "definitionsVerbatim": {
+    "plaqCorner": true,
+    "TouchBond": true,
+    "CoversPlaqFour": true,
+    "CurlReadsTouch": true,
+    "PerCubeRegularTouch": true,
+    "ClassCoupledFour": true,
+    "selCorner": true,
+    "P428TouchFour": true,
+    "GoalPos1": true,
+    "GoalNeg1": true
+  },
+  "importsFrozen": {
+    "D1Lit": true,
+    "GdR5a": true,
+    "ZR8Class": true
+  },
+  "forbiddenTokensRaw": [],
+  "localDeclarationCount": 52,
+  "missingLocalPrintCommands": [],
+  "axiomRecordCount": 69,
+  "axiomsStandard": true,
+  "missingLocalDependencyRecords": [],
+  "compilerErrors": [],
+  "compilerWarnings": [],
+  "closedGoal": "none",
+  "mainDeclaration": "Round3.S1Proper.goalPos1_iff_twoUnits",
+  "axiomLine": "'Round3.S1Proper.goalPos1_iff_twoUnits' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "pass": true
+}

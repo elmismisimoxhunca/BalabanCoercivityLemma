@@ -1,0 +1,44 @@
+F.FFF
+======================================================================
+FAIL: test_allowed_wrapped_record_is_complete (__main__.AxiomGateTests.test_allowed_wrapped_record_is_complete)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "$CHECKOUT/tools/tests/test_axiom_gate.py", line 51, in test_allowed_wrapped_record_is_complete
+    self.assertEqual(canonical, "'Example.good' depends on axioms: [propext, Classical.choice, Quot.sound]\n")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "'Example.good' depends on axioms: [propext,\n" != "'Example.good' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+- 'Example.good' depends on axioms: [propext,
++ 'Example.good' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+
+======================================================================
+FAIL: test_truncated_record_rejected (__main__.AxiomGateTests.test_truncated_record_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "$CHECKOUT/tools/tests/test_axiom_gate.py", line 46, in test_truncated_record_rejected
+    self.assertNotEqual(result.returncode, 0, 'An incomplete axiom record was accepted')
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 == 0 : An incomplete axiom record was accepted
+
+======================================================================
+FAIL: test_wrapped_sorry_rejected (__main__.AxiomGateTests.test_wrapped_sorry_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "$CHECKOUT/tools/tests/test_axiom_gate.py", line 38, in test_wrapped_sorry_rejected
+    self.assertNotEqual(result.returncode, 0, 'Continuation-line sorryAx was silently accepted')
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 == 0 : Continuation-line sorryAx was silently accepted
+
+======================================================================
+FAIL: test_wrapped_unexpected_axiom_rejected (__main__.AxiomGateTests.test_wrapped_unexpected_axiom_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "$CHECKOUT/tools/tests/test_axiom_gate.py", line 42, in test_wrapped_unexpected_axiom_rejected
+    self.assertNotEqual(result.returncode, 0, 'Continuation-line nonstandard axiom was accepted')
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 == 0 : Continuation-line nonstandard axiom was accepted
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.046s
+
+FAILED (failures=4)

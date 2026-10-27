@@ -1,0 +1,199 @@
+
+namespace AdalyFormal.Round10.Nonvanishing.FreeProfile
+
+open Finset
+
+lemma sum_prev_mul (n : ℕ) (a b : ℕ → ℝ) (hb : b n = 0) :
+    (∑ j ∈ range n, prev a j * b j) = ∑ j ∈ range n, a j * b (j+1) := by
+  cases n with
+  | zero => simp
+  | succ n =>
+    rw [sum_range_succ']
+    simp only [prev, Nat.add_eq_zero_iff, Nat.one_ne_zero, and_false, ↓reduceIte,
+      Nat.add_sub_cancel, zero_mul, add_zero]
+    rw [sum_range_succ, hb, mul_zero, add_zero]
+
+lemma sum_next_mul (n : ℕ) (a b : ℕ → ℝ) (ha : a n = 0) :
+    (∑ j ∈ range n, a (j+1) * b j) = ∑ j ∈ range n, a j * prev b j := by
+  simpa only [mul_comm] using (sum_prev_mul n b a ha).symm
+
+lemma tri_pairing_symm (n : ℕ) (a c : ℕ → ℝ) (ha : a n = 0) (hc : c n = 0) :
+    (∑ j ∈ range n, a j * (6*c j + prev c j + c (j+1))) =
+      ∑ j ∈ range n, (6*a j + prev a j + a (j+1)) * c j := by
+  simp_rw [mul_add, add_mul]
+  simp only [sum_add_distrib]
+  have h₁ := sum_prev_mul n a c hc
+  have h₂ := sum_next_mul n a c ha
+  have hm : (∑ j ∈ range n, a j * (6*c j)) = ∑ j ∈ range n, (6*a j)*c j := by
+    apply sum_congr rfl
+    intro j _
+    ring
+  rw [h₁, h₂, hm]
+  ring
+
+lemma sum_delta (n i : ℕ) (b : ℕ → ℝ) (hi : i < n) :
+    (∑ j ∈ range n, (if j = i then (1 : ℝ) else 0) * b j) = b i := by
+  simp [hi]
+
+lemma sum_prev_delta (n i : ℕ) (b : ℕ → ℝ) (hi : i < n) :
+    (∑ j ∈ range n, (if j+1 = i then (1 : ℝ) else 0) * b j) = prev b i := by
+  by_cases hz : i = 0
+  · subst i; simp [prev]
+  · have he : ∀ j : ℕ, j+1 = i ↔ j = i-1 := by intro j; omega
+    simp_rw [he]
+    simp [prev, hz, show i-1 < n by omega]
+
+/-- One even-site defect, anywhere in the core; the first site is the old source. -/
+noncomputable def sourceRhs (i j : ℕ) : ℝ :=
+  (3/2 : ℝ) * (if j = i then 1 else 0) +
+  (1/2 : ℝ) * (if j+1 = i then 1 else 0)
+
+/-- Exact finite tridiagonal amplitude for a selected source site. -/
+noncomputable def sourceAmplitude (n i : ℕ) : ℕ → ℝ :=
+  Classical.choose (exists_tri_solution n (sourceRhs i))
+
+lemma sourceAmplitude_boundary (n i : ℕ) : sourceAmplitude n i n = 0 :=
+  (Classical.choose_spec (exists_tri_solution n (sourceRhs i))).1
+
+lemma sourceAmplitude_equation (n i : ℕ) :
+    ∀ j < n, 6*sourceAmplitude n i j + prev (sourceAmplitude n i) j +
+      sourceAmplitude n i (j+1) = sourceRhs i j :=
+  (Classical.choose_spec (exists_tri_solution n (sourceRhs i))).2
+
+/-- The exact source multiplier, with no limiting or floating-point constants. -/
+def columnWeight (a : ℕ → ℝ) (i j : ℕ) : ℝ :=
+  (if j = i then 1 else 0) - (if j+1 = i then 1 else 0) -
+    2*prev a j + 2*a (j+1)
+
+/-- Half-coupling to the source at site i. -/
+noncomputable def sourceResponse (n i : ℕ) (b : ℕ → ℝ) : ℝ :=
+  ∑ j ∈ range n, columnWeight (sourceAmplitude n i) i j * b j
+
+lemma columnWeight_first (a : ℕ → ℝ) (j : ℕ) :
+    columnWeight a 0 j = (if j = 0 then 1 else 0) - 2*prev a j + 2*a (j+1) := by
+  simp [columnWeight]
+
+/-- Reciprocity identifies the source sum with the local Dirichlet response. -/
+theorem column_pairing (n i : ℕ) (a c b : ℕ → ℝ) (hi : i < n)
+    (ha : a n = 0) (hc : c n = 0) (hb : b n = 0)
+    (hsource : ∀ j < n, 6*c j + prev c j + c (j+1) = sourceRhs i j)
+    (hlift : ∀ j < n, 6*a j + prev a j + a (j+1) = prev b j - b (j+1)) :
+    (∑ j ∈ range n, columnWeight c i j * b j) =
+      b i - prev b i + 3*a i + prev a i := by
+  have he : (∑ j ∈ range n, c j * (prev b j - b (j+1))) =
+      (3/2 : ℝ)*a i + (1/2 : ℝ)*prev a i := by
+    calc
+      _ = ∑ j ∈ range n, c j * (6*a j + prev a j + a (j+1)) := by
+        apply sum_congr rfl
+        intro j hj
+        rw [hlift j (mem_range.mp hj)]
+      _ = ∑ j ∈ range n, (6*c j + prev c j + c (j+1))*a j :=
+        tri_pairing_symm n c a hc ha
+      _ = ∑ j ∈ range n, sourceRhs i j * a j := by
+        apply sum_congr rfl
+        intro j hj
+        rw [hsource j (mem_range.mp hj)]
+      _ = _ := by
+        simp only [sourceRhs, add_mul, mul_assoc, sum_add_distrib, ← mul_sum]
+        rw [sum_delta n i a hi, sum_prev_delta n i a hi]
+  have he' : (∑ j ∈ range n, c (j+1)*b j) -
+      (∑ j ∈ range n, prev c j*b j) = (3/2 : ℝ)*a i + (1/2 : ℝ)*prev a i := by
+    rw [sum_next_mul n c b hc, sum_prev_mul n c b hb]
+    simpa only [mul_sub, sum_sub_distrib] using he
+  simp only [columnWeight, sub_mul, add_mul, sum_add_distrib, sum_sub_distrib,
+    mul_assoc, ← mul_sum]
+  rw [sum_delta n i b hi, sum_prev_delta n i b hi]
+  linarith
+
+/-- The entire source-response matrix is positive definite for every finite length. -/
+theorem sourceResponse_pos (n : ℕ) (b : ℕ → ℝ) (hb : b n = 0)
+    (hne : ∃ j < n, b j ≠ 0) :
+    0 < ∑ i ∈ range n, b i * sourceResponse n i b := by
+  obtain ⟨a, ha, heq⟩ := exists_tri_solution n (fun j => prev b j - b (j+1))
+  have hp := tridiagonal_response_pos n a b ha hb heq hne
+  have hd : ∀ i < n, sourceResponse n i b = b i - prev b i + 3*a i + prev a i := by
+    intro i hi
+    exact column_pairing n i a (sourceAmplitude n i) b hi ha
+      (sourceAmplitude_boundary n i) hb (sourceAmplitude_equation n i) heq
+  convert hp using 1
+  apply sum_congr rfl
+  intro i hi
+  rw [hd i (mem_range.mp hi)]
+
+/-- For every nonzero finite jet vector, at least one single-site source couples.
+No jet domination or sign hypothesis occurs. -/
+theorem exists_sourceResponse_ne_zero (n : ℕ) (b : ℕ → ℝ) (hb : b n = 0)
+    (hne : ∃ j < n, b j ≠ 0) :
+    ∃ i < n, sourceResponse n i b ≠ 0 := by
+  by_contra h
+  push Not at h
+  have hp := sourceResponse_pos n b hb hne
+  have hz : (∑ i ∈ range n, b i * sourceResponse n i b) = 0 := by
+    apply sum_eq_zero
+    intro i hi
+    rw [h i (mem_range.mp hi), mul_zero]
+  linarith
+
+/-- The only remaining hypotheses here are the actual block dictionary and a nonzero
+jet. The theorem by itself does not provide either for a vacuum crossing vector. -/
+theorem exists_actual_coupling_of_source_dictionary (n : ℕ) (b coupling : ℕ → ℝ)
+    (factor : ℝ) (hb : b n = 0) (hne : ∃ j < n, b j ≠ 0) (hf : factor ≠ 0)
+    (hdict : ∀ i < n, coupling i = factor * sourceResponse n i b) :
+    ∃ i < n, coupling i ≠ 0 := by
+  obtain ⟨i, hi, hr⟩ := exists_sourceResponse_ne_zero n b hb hne
+  refine ⟨i, hi, ?_⟩
+  rw [hdict i hi]
+  exact mul_ne_zero hf hr
+
+/-- Choice-independent hand-off: the dictionary may supply its own source amplitudes.
+Any family satisfying the displayed finite equations separates every nonzero jet vector. -/
+theorem source_columns_separate (n : ℕ) (b : ℕ → ℝ) (c : ℕ → ℕ → ℝ)
+    (hb : b n = 0) (hne : ∃ j < n, b j ≠ 0)
+    (hc : ∀ i < n, c i n = 0)
+    (heq : ∀ i < n, ∀ j < n,
+      6*c i j + prev (c i) j + c i (j+1) = sourceRhs i j) :
+    ∃ i < n, (∑ j ∈ range n, columnWeight (c i) i j * b j) ≠ 0 := by
+  obtain ⟨a, ha, he⟩ := exists_tri_solution n (fun j => prev b j - b (j+1))
+  have hs := blockLift_stationary n a b he
+  obtain ⟨i, hi, hr⟩ := exists_response_ne_zero n (blockLift a b) b
+    (blockLift_zero a b) (by rw [blockLift_first, hb, ha, add_zero])
+    (fun j _ => blockLift_average a b j) hs hne
+  refine ⟨i, hi, ?_⟩
+  rw [column_pairing n i a (c i) b hi ha (hc i hi) hb (heq i hi) he]
+  simpa only [blockLift_response] using hr
+
+/-- Fully explicit dictionary interface, with no choice-based matrix in its hypotheses. -/
+theorem exists_coupling_of_source_columns (n : ℕ) (b coupling : ℕ → ℝ)
+    (c : ℕ → ℕ → ℝ) (factor : ℝ)
+    (hb : b n = 0) (hne : ∃ j < n, b j ≠ 0) (hf : factor ≠ 0)
+    (hc : ∀ i < n, c i n = 0)
+    (heq : ∀ i < n, ∀ j < n,
+      6*c i j + prev (c i) j + c i (j+1) = sourceRhs i j)
+    (hdict : ∀ i < n, coupling i = factor *
+      (∑ j ∈ range n, columnWeight (c i) i j * b j)) :
+    ∃ i < n, coupling i ≠ 0 := by
+  obtain ⟨i, hi, hr⟩ := source_columns_separate n b c hb hne hc heq
+  refine ⟨i, hi, ?_⟩
+  rw [hdict i hi]
+  exact mul_ne_zero hf hr
+
+#print axioms source_columns_separate
+#print axioms exists_coupling_of_source_columns
+#print axioms sum_prev_mul
+#print axioms sum_next_mul
+#print axioms tri_pairing_symm
+#print axioms sum_delta
+#print axioms sum_prev_delta
+#print axioms sourceRhs
+#print axioms sourceAmplitude
+#print axioms sourceAmplitude_boundary
+#print axioms sourceAmplitude_equation
+#print axioms columnWeight
+#print axioms sourceResponse
+#print axioms columnWeight_first
+#print axioms column_pairing
+#print axioms sourceResponse_pos
+#print axioms exists_sourceResponse_ne_zero
+#print axioms exists_actual_coupling_of_source_dictionary
+
+end AdalyFormal.Round10.Nonvanishing.FreeProfile

@@ -1,0 +1,47 @@
+AdalyFormal.Round2.S3Pin.PrintedFirstTerm (P : IngrBParams) (r : Reading) (B : UnitB P) : ℝ
+AdalyFormal.Round2.S3Pin.AdmissibleConfiguration (P : IngrBParams) : Prop
+AdalyFormal.Round2.S3Pin.AdmissibleB (P : IngrBParams) (B : UnitB P) : Prop
+AdalyFormal.Round2.S3Pin.InversesExist (P : IngrBParams) (r : Reading) : Prop
+AdalyFormal.Round2.S3Pin.GoalPos1 : Prop
+AdalyFormal.Round2.S3Pin.GoalNeg1 : Prop
+AdalyFormal.Round2.S3Pin.GoalPos2 : Prop
+AdalyFormal.Round2.S3Pin.GoalNeg2 : Prop
+'AdalyFormal.Round2.S3Pin.PrintedCjBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedCBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedFirstTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleConfiguration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.InversesExist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg1_implies_not_GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg2_implies_not_GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.RatioWitness_no_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:405:30: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:406:4: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:412:15: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:418:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:418:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:457:32: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:457:63: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+../AHP/round2/s3-normalisation/r1-prove/Attempt.lean:458:4: warning: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self

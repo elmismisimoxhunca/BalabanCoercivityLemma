@@ -1,0 +1,61 @@
+{
+  "pass": true,
+  "source_byte_identical": true,
+  "source_sha256": "f0ebf914cfed386bc7432f906c41d189b0df7d77f552832c8f35b6ca425189da",
+  "forbidden_proof_mechanisms": [],
+  "exits": {
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/transfer/r2/Collar.lean": "0",
+    "/home/sebastian/BalabanCoercivityLemma/AHP/round14/shared/transfer/R2_Collar.lean": "0"
+  },
+  "new_declarations_checked": [
+    "AdalyFormal.Round14.Transfer.twoLayerMode",
+    "AdalyFormal.Round14.Transfer.twoLayerDecay",
+    "AdalyFormal.Round14.Transfer.twoLayerMixed",
+    "AdalyFormal.Round14.Transfer.twoLayerGrow",
+    "AdalyFormal.Round14.Transfer.twoLayerQuadratic",
+    "AdalyFormal.Round14.Transfer.twoLayerQuadratic_eq_laurent",
+    "AdalyFormal.Round14.Transfer.twoLayerQuadratic_eventually_ne_zero",
+    "AdalyFormal.Round14.Transfer.eventually_ne_zero_of_normalized_limit",
+    "AdalyFormal.Round14.Transfer.RadiusDominantData",
+    "AdalyFormal.Round14.Transfer.radiusDominantData_of_laurent",
+    "AdalyFormal.Round14.Transfer.dominant_cofinal_index",
+    "AdalyFormal.Round14.Transfer.radius_cofinal_nonzero_of_dominant",
+    "AdalyFormal.Round14.Transfer.Physical.kernelLine_smul",
+    "AdalyFormal.Round14.Transfer.Physical.areaSum_smul",
+    "AdalyFormal.Round14.Transfer.Physical.areaSum_smul_ne_zero",
+    "AdalyFormal.Round14.Transfer.Physical.normalize",
+    "AdalyFormal.Round14.Transfer.Physical.normalize_norm",
+    "AdalyFormal.Round14.Transfer.Physical.normalize_kernelLine",
+    "AdalyFormal.Round14.Transfer.Physical.exists_unit_area_generator",
+    "AdalyFormal.Round14.Transfer.Physical.UnitAreaSeedRightStar",
+    "AdalyFormal.Round14.Transfer.Physical.unitAreaSeedRightStar_iff",
+    "AdalyFormal.Round14.Transfer.Physical.p3_of_unitAreaSeed",
+    "AdalyFormal.Round14.Transfer.Physical.CofinalUnitAreaSeedRightStar",
+    "AdalyFormal.Round14.Transfer.Physical.cofinalUnitAreaSeedRightStar_iff",
+    "AdalyFormal.Round14.Transfer.Physical.cofinalP3_of_unitAreaSeed",
+    "AdalyFormal.Round14.Transfer.Physical.CofinalDominantAreaSeed",
+    "AdalyFormal.Round14.Transfer.Physical.dominantAreaSeed_of_laurent",
+    "AdalyFormal.Round14.Transfer.Physical.cofinalP3_of_dominantAreaSeed",
+    "AdalyFormal.Round14.Transfer.Physical.CofinalUnitDominantAreaSeed",
+    "AdalyFormal.Round14.Transfer.Physical.cofinalP3_of_unitDominantAreaSeed"
+  ],
+  "logs": [
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round14/transfer/r2/Collar.lean.log",
+      "sha256": "72f802dd5b6b24cbe2f72a979e6f74b15f56e295f2ca8f561d598003d5d92870",
+      "total_axiom_records": 347,
+      "new_records_checked": 30,
+      "all_new_records_permitted": true,
+      "no_error_warning_or_sorryAx": true
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round14/shared/transfer/R2_Collar.lean.log",
+      "sha256": "72f802dd5b6b24cbe2f72a979e6f74b15f56e295f2ca8f561d598003d5d92870",
+      "total_axiom_records": 347,
+      "new_records_checked": 30,
+      "all_new_records_permitted": true,
+      "no_error_warning_or_sorryAx": true
+    }
+  ],
+  "qualification": "Builder and separate-publication audit only. These are conditional transfer reductions, not a physical collar recurrence, an independent mathematical review, or a proof of P3/CofinalP3/GoalNeg2."
+}

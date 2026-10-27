@@ -1,0 +1,148 @@
+
+/-! Full three-color identities: neutral values are retained, not discarded by a
+vanishing charged trace. The displayed local estimates do not yet identify a
+complete-carrier star decomposition. -/
+namespace AdalyFormal.Round12.Noncancel.FullPlaquette
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Balaban.CovariantOperators
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Round12.Noncancel.Star
+open AdalyFormal.Round12.Noncancel.Plaquette
+
+/-- General su(2) matrix with neutral coordinate h and charged coordinate z. -/
+def lieMat (h : ℝ) (z : ℂ) : Matrix (Fin 2) (Fin 2) ℂ :=
+  !![(h : ℂ)*Complex.I, z; -star z, -(h : ℂ)*Complex.I]
+
+theorem lieMat_add (h k : ℝ) (y z : ℂ) :
+    lieMat (h+k) (y+z) = lieMat h y + lieMat k z := by
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [lieMat, add_mul, add_comm]
+
+theorem lieMat_zero : lieMat 0 0 = 0 := by
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [lieMat]
+
+theorem lieMat_coordinates (X : SuTwo) :
+    (X : Matrix (Fin 2) (Fin 2) ℂ) =
+      lieMat ((X : Matrix (Fin 2) (Fin 2) ℂ) 0 0).im
+        ((X : Matrix (Fin 2) (Fin 2) ℂ) 0 1) := by
+  have h00 := re_entry00_eq_zero X
+  have h10 := entry_skew X.property.1 0 1
+  have h11 := entry11_eq_neg_entry00 X
+  ext i j
+  fin_cases i <;> fin_cases j
+  · apply Complex.ext <;> simp [lieMat, h00]
+  · simp [lieMat]
+  · simpa [lieMat] using h10
+  · apply Complex.ext <;> simp [lieMat, h11, h00]
+
+theorem full_inner (X : SuTwo) (h : ℝ) (z : ℂ)
+    (hX : (X : Matrix (Fin 2) (Fin 2) ℂ) = lieMat h z) :
+    ⟪X,X⟫ = Complex.normSq z + h^2 := by
+  change hsInner X X = _
+  rw [hsInner_self_entries,hX]
+  simp [lieMat, add_comm]
+
+theorem full_first_atom (c h : ℝ) (z : ℂ) :
+    (Matrix.trace (smulILM (lieMat h z) * smulILM (lieMat h z) *
+      (realHol c - 1))).re = 2*(c-1)*(Complex.normSq z+h^2) := by
+  simp [lieMat, realHol, smulILM_apply, Matrix.mul_apply, Matrix.trace,
+    Matrix.diag, Fin.sum_univ_two, Complex.normSq_apply]
+  ring
+
+theorem full_comm_atom (s h k : ℝ) (y z : ℂ) :
+    (Matrix.trace (smulILM (smulILM (lieMat h y)) * smulILM (lieMat k z) *
+      imagHol s)).re -
+    (Matrix.trace (smulILM (smulILM (lieMat k z)) * smulILM (lieMat h y) *
+      imagHol s)).re = 4*s*(star y*z).im := by
+  simp [lieMat, imagHol, smulILM_apply, Matrix.mul_apply, Matrix.trace,
+    Matrix.diag, Fin.sum_univ_two]
+  ring
+
+variable {L : PeriodicLatticeExtent}
+
+/-- Exact neutral/charged splitting of the frozen right straddling plaquette form. -/
+theorem frozen_full_three_right
+    (U : PeriodicLinkConfiguration (Matrix.specialUnitaryGroup (Fin 2) ℂ) L)
+    (p : PeriodicLatticePlaquette L) (A : Bond L → SuTwo)
+    (c s h k l : ℝ) (x y z : ℂ)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p A = lieMat h x) (h2 : a2LM p A = lieMat k y)
+    (h3 : a3LM p A = lieMat l z) (h4 : a4LM U p A = 0) :
+    ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ +
+      (1/2 : ℝ) * bilPlaq U p A A = tripleForm c s x y z + c*(h+k+l)^2 := by
+  have hc : curlMatLM U p A = lieMat (h+k+l) (x+y+z) := by
+    rw [curl_atoms,h1,h2,h3,h4,add_zero,lieMat_add,lieMat_add]
+  have hn := full_inner (curlValueCovariant U A p) (h+k+l) (x+y+z) hc
+  rw [hn,bilPlaq_atoms]
+  simp only [b1LM,b2LM,b3LM,b4LM,LinearMap.comp_apply,hr,hi,hc,h1,h2,h3,h4,
+    map_zero,mul_zero,zero_mul,Matrix.trace_zero,Complex.zero_re,sub_zero,add_zero]
+  rw [full_first_atom,full_comm_atom,full_comm_atom,full_comm_atom]
+  unfold tripleForm
+  ring
+
+/-- The left orientation has the same algebra but zeros its second transported atom. -/
+theorem frozen_full_three_left
+    (U : PeriodicLinkConfiguration (Matrix.specialUnitaryGroup (Fin 2) ℂ) L)
+    (p : PeriodicLatticePlaquette L) (A : Bond L → SuTwo)
+    (c s h k l : ℝ) (x y z : ℂ)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p A = lieMat h x) (h2 : a2LM p A = 0)
+    (h3 : a3LM p A = lieMat k y) (h4 : a4LM U p A = lieMat l z) :
+    ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ +
+      (1/2 : ℝ) * bilPlaq U p A A = tripleForm c s x y z + c*(h+k+l)^2 := by
+  have hc : curlMatLM U p A = lieMat (h+k+l) (x+y+z) := by
+    rw [curl_atoms,h1,h2,h3,h4,add_zero,lieMat_add,lieMat_add]
+  have hn := full_inner (curlValueCovariant U A p) (h+k+l) (x+y+z) hc
+  rw [hn,bilPlaq_atoms]
+  simp only [b1LM,b2LM,b3LM,b4LM,LinearMap.comp_apply,hr,hi,hc,h1,h2,h3,h4,
+    map_zero,mul_zero,zero_mul,Matrix.trace_zero,Complex.zero_re,sub_zero,add_zero]
+  rw [full_first_atom,full_comm_atom,full_comm_atom,full_comm_atom]
+  unfold tripleForm
+  ring
+
+/-- Killing only the central CHARGED trace leaves a nonnegative neutral square.
+The full neutral central value h is unrestricted. -/
+theorem full_pair_mass_lower (c s h k l : ℝ) (y z : ℂ)
+    (hc : 0 ≤ c) (hc1 : c ≤ 1) (hcs : c^2+s^2=1) :
+    c*(Complex.normSq y+k^2 + (Complex.normSq z+l^2)) ≤
+      Complex.normSq y+k^2 + (Complex.normSq z+l^2) +
+        pairForm c s y z + c*(h+k+l)^2 := by
+  have hp := pair_mass_lower c s hcs y z
+  have hn := mul_nonneg hc (sq_nonneg (h+k+l))
+  have hk := mul_nonneg (sub_nonneg.mpr hc1) (sq_nonneg k)
+  have hl := mul_nonneg (sub_nonneg.mpr hc1) (sq_nonneg l)
+  nlinarith
+
+/-- All arms may have different neutral values; no neutral/charged cross term was
+silently put into the remainder. An actual whole-carrier form identity is still needed. -/
+theorem full_star_mass_lower {ι : Type*} [Fintype ι]
+    (c s rest : ℝ) (hc : 0 ≤ c) (hc1 : c ≤ 1) (hr : 0 ≤ rest)
+    (hcs : c^2+s^2=1) (h k l : ι → ℝ) (y z : ι → ℂ) :
+    c*(rest+∑ i, (Complex.normSq (y i)+(k i)^2 +
+        (Complex.normSq (z i)+(l i)^2))) ≤
+      rest+∑ i, (Complex.normSq (y i)+(k i)^2 +
+        (Complex.normSq (z i)+(l i)^2) + pairForm c s (y i) (z i) +
+          c*(h i+k i+l i)^2) := by
+  have hs := Finset.sum_le_sum (fun i (_ : i ∈ Finset.univ) =>
+    full_pair_mass_lower c s (h i) (k i) (l i) (y i) (z i) hc hc1 hcs)
+  rw [← Finset.mul_sum] at hs
+  have hh : c*rest ≤ rest := by nlinarith
+  nlinarith
+
+#print axioms lieMat
+#print axioms lieMat_add
+#print axioms lieMat_zero
+#print axioms lieMat_coordinates
+#print axioms full_inner
+#print axioms full_first_atom
+#print axioms full_comm_atom
+#print axioms frozen_full_three_right
+#print axioms frozen_full_three_left
+#print axioms full_pair_mass_lower
+#print axioms full_star_mass_lower
+end AdalyFormal.Round12.Noncancel.FullPlaquette

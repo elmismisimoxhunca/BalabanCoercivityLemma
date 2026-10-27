@@ -1,0 +1,5343 @@
+[
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 31,
+    "last": 31,
+    "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+    "sha256": "7bb8eb83b82c049434880b94f1b522444e91697569dae789fc18369639270323"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 33,
+    "last": 33,
+    "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+    "sha256": "2f4cc1468788b446ac0d4e89c75f9ee0130013c2c29d24531303863e00b18d41"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 35,
+    "last": 35,
+    "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+    "sha256": "ceb38faba0070cfa80e27d8d6aab131ab46697c4c6595844e8af5411fabed8ed"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 40,
+    "last": 41,
+    "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+    "sha256": "ebd377d6767b55bfc6237c4b24989d0fc8c869b4e3eee3c3cbbad1c911109bf9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 43,
+    "last": 44,
+    "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+    "sha256": "cbff49e070f47a05cd980f26963c7c4a5f2e02f607ffd3b91463c0655096a2ad"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 46,
+    "last": 50,
+    "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+    "sha256": "6b6a9297ac168f1f3ff2d722e971c483e3918e5bf28767e8e3b2dc246147288d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 55,
+    "last": 56,
+    "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+    "sha256": "70612d1a2262abb93060416cea4ad4c85c51c4d55f723bb4665110df7d7138a1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 58,
+    "last": 60,
+    "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+    "sha256": "d6e0703acaf120098fc4af04af27dc73d99251fc2f8a67773ee37002ff6b0898"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 62,
+    "last": 67,
+    "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+    "sha256": "c2f7d9b9feebbe0c79642a1ef687c8be13a852ec1493c1f4446c5b0b9c9deb25"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 69,
+    "last": 70,
+    "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+    "sha256": "b911510beb05694829e7a0b26c28dcb1b33b2033c362a6b9e0683e35ec428004"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 72,
+    "last": 73,
+    "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+    "sha256": "0abc5ad384ff616a0ab5e51f32c464c260c9f661a5c708e3c89f1b69b5ab518d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 80,
+    "last": 81,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+    "sha256": "23806152ed9d52afac73cbcc26fcc633905c2a4f0cd170752e6c1955c074d297"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 83,
+    "last": 84,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+    "sha256": "c75ed863b5f623952b80684979e45e3ea6c8769a2dc8fe1dd5d8851a1d985b7e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 86,
+    "last": 87,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+    "sha256": "f95b246e102a510fc74bb37ade4a6308c2dcb84c64fe24656c4e9722328a2bd6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 90,
+    "last": 95,
+    "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+    "sha256": "241e488713f72ea88e3689ff1367564ef52aab2092bd51973e9a0b86eee059ca"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 100,
+    "last": 102,
+    "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+    "sha256": "41fdb04ae9284aac18ed65e6eb086ebc0c4711490633cdf20f1288a03c1d5d8e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 104,
+    "last": 111,
+    "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+    "sha256": "759fdf9ff29dd2363af2ff94fd8a0c8b2ff66e60bb0c02569bfa483e996f6d35"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 113,
+    "last": 118,
+    "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+    "sha256": "0e2f2a86af00c4d38bef7caa3db9deaa0bad4c48c7ecc65e43c128b47aa4162c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 133,
+    "last": 143,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+    "sha256": "053f5c3bdd43cf18bb7bdba18276e9f8828f2e913e98c1aadb4e6dcce5c091a9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 145,
+    "last": 149,
+    "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+    "sha256": "8f3ebd572f0dece5398ead8cde66e44ac2ef6f080a5fb7c712445561973ed4e5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 151,
+    "last": 151,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+    "sha256": "3856a9599c422b6c19f08fa45ae6258a7be45f657513b5de09c27184b208bebe"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 154,
+    "last": 154,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+    "sha256": "e277fda3f11edbac042395ebeefce58619a1f5134a7db86fb969e6e5ee466cd1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 155,
+    "last": 155,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+    "sha256": "205478d0dfa1bf74fcf552eb9ed1e55278538b0c7f6b5ac73aedc44f0b2f5ed5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 157,
+    "last": 157,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+    "sha256": "79d90926d1e16f30bfd1428061d80e180a0282db9f261111ae6bb2647069ab58"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 158,
+    "last": 158,
+    "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+    "sha256": "5211d9a4eb17b43591de4cc31fc0c5c0f2808050929c64706207c76d16cb7401"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 178,
+    "last": 179,
+    "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+    "sha256": "c75d17436950f3e98484d72b08c3fd7305d0eb6c9fa19cdbb0aa546e76bc0d4f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 181,
+    "last": 182,
+    "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+    "sha256": "c5b4a2c83c3319a20ee9d59e98275dcfe9ab98da99afc5208b2a5aa6897fa3c2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 189,
+    "last": 204,
+    "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+    "sha256": "62058e02b9b7288e64db02b666b1177d425d143017b8b264cbbc1148e4af72da"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 206,
+    "last": 216,
+    "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+    "sha256": "774d8b46b21ca20c7b846a232c527bb4845ac511d8b316c5c9fe6a8806fa16cf"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 218,
+    "last": 219,
+    "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+    "sha256": "942441fc8fc6a590452483e865d93988efdac3ebb6a853b461f3fa2b53896e10"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 404,
+    "last": 407,
+    "name": "AdalyFormal.Round3.Guarded.RefuteR2.zero_coord_le_pdist",
+    "sha256": "27d4ff71ccb1b77e4878774d0da37dda64c9d424aeb99e2fbae66828b34cf57e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 986,
+    "last": 987,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLu",
+    "sha256": "618a1481fb5c05166a65cb54024be19d2155bc0d6d6c2f456ddbbd9441e0a4e2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 989,
+    "last": 992,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilTower",
+    "sha256": "9a672750aa64f2c6ecdbc0dd23fe1dc25567c7afd47eb900096f15207d6ef3b7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 994,
+    "last": 995,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLam",
+    "sha256": "1e6b94c7573bca3d85715e4b536136c712d44d432117e7701542d358484c369e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 997,
+    "last": 999,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_unit_size",
+    "sha256": "788042909af7e50663008b54a4cc0e2ddb011aa73a2289933b003e8090f694f6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1001,
+    "last": 1004,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_fine_size",
+    "sha256": "d367f66ba0e56d63331a7ea2ba8aa02dc3f8e9cb67e80d6d23dc26dc97a971f8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1006,
+    "last": 1010,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_fine_bound",
+    "sha256": "522623facf52fb9ed8cf6ffa2fe8d1c9513a45fe1de491019b1a655d4a0c2733"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1012,
+    "last": 1022,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_torus",
+    "sha256": "8e149d87cde054ff8869f063c5ae4c603f78f9d1befb449a3bcb82a6c318c1b6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1024,
+    "last": 1101,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible",
+    "sha256": "5ad65bae2e4fad5047901d1f6b1c83976a266f324ec51fa299a84eff44e39997"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1103,
+    "last": 1109,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilEmb",
+    "sha256": "212667a9a799158dfabb572c5b3f1a0c016dd3eaeae527b4422cb536e3773309"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1111,
+    "last": 1147,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_lambda",
+    "sha256": "56813cd232e3d2bcd029aa255b0bfcf3d5bb6aed9ce028198d29c586468f7378"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1149,
+    "last": 1151,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilSeed",
+    "sha256": "16c878b426352610072496c9490626cc4afc0dc7d0dab01461407d062105cf78"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1153,
+    "last": 1154,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilBt",
+    "sha256": "99f220e56685d1882706f889edac1cfb3857dc7e3f63c01b2351934e22c7fe3a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1156,
+    "last": 1194,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_competitor",
+    "sha256": "c4ab893b4e4dcf1f01bf5eba7e58f7561c74c83ed37701c547c93c9f41bc6a87"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1227,
+    "last": 1253,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_box",
+    "sha256": "f813deff2b348ebbecebb55d05ebe47e319b4f02dde59179046a319ebd77d9b1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1255,
+    "last": 1282,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_region_cube",
+    "sha256": "298a542ce2cc25a272827fef00cbd0fddf3a74feeec9f01fd67bc6c2a11dac87"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1284,
+    "last": 1329,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_cube_neighborhood",
+    "sha256": "f57f2aa457b156df7ca4c27b5539a7898a056a1cbd14c21848ddabbb5813dc17"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1331,
+    "last": 1340,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_shift_zero",
+    "sha256": "86113135df44fef1113b70d2159b91bc66de83d5d1688581d2acc431d51cab42"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1342,
+    "last": 1377,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_coverage",
+    "sha256": "eb9a0e3eca8efdf2f6f2bbbdbd557cf659f101e3953865873540779bfa7be702"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1379,
+    "last": 1380,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilPattern",
+    "sha256": "e32cb4777298be8e563269a811a1362e05301df203443d56399dea25a76f1031"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1382,
+    "last": 1386,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilU",
+    "sha256": "8395b87f3ea29af748b0f1813967845cb4a1790a095df9492426a3bce1416f72"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1388,
+    "last": 1403,
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_regular",
+    "sha256": "748728de0af0b9cba6adeba57b894e757dcfe3ea1251e4d35283663950d5a930"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1703,
+    "last": 1704,
+    "name": "AdalyFormal.Round5.Guarded.IVTR1.twistU",
+    "sha256": "1cf38ff57e7e727e2964cc9980eae2796110a14c6d26a78755f4af01417f97c2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1706,
+    "last": 1707,
+    "name": "AdalyFormal.Round5.Guarded.IVTR1.twistP",
+    "sha256": "b0302a62fcfcfe13c6f6560ed7d44e3bb3966d452191d1d0953db5556022f236"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1709,
+    "last": 1711,
+    "name": "AdalyFormal.Round5.Guarded.IVTR1.twistA",
+    "sha256": "4ff480a5e69e8e41c38b066d6403f9aab142edc60be2ccbdc22fe81c05e648f9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1713,
+    "last": 1715,
+    "name": "AdalyFormal.Round5.Guarded.IVTR1.twistD",
+    "sha256": "78afee9889138250d0571b81163e42c2b93fff4d643217d1df7d51740f7b13f0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1795,
+    "last": 1814,
+    "name": "AdalyFormal.Round5.Guarded.IVTR1.exterior_carrier_path",
+    "sha256": "1f9e8e488dc16196c5fcf1be3e41ac6a970232f0ac23842757046c0c6b09c57a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 1950,
+    "last": 2001,
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.first_carrier_crossing",
+    "sha256": "13c188e3083341424b49addf02573c5202fa532db297275e955d48a52bfd4c55"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2117,
+    "last": 2121,
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.maskedU",
+    "sha256": "53c5e85886fcb44d475f3286583c3aacdd952f7be624e2b24147240a3b2d9994"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2123,
+    "last": 2142,
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.masked_regular",
+    "sha256": "72f1a5710bbb45b60819d49674e0bf06a228a14614a53b9f8841a7d5c24f28a7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2198,
+    "last": 2201,
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.rightSite",
+    "sha256": "4b9f2994012e796342c0f1f0a3aee4b0f425666fa0714603bcfb48903f5b8488"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2203,
+    "last": 2225,
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd",
+    "sha256": "2d8ae711d7d47f7d864469c7746e2d79aaa80f52055ad18739490b0d0f4a8627"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2531,
+    "last": 2571,
+    "name": "AdalyFormal.Round8.Guarded.SignFree.unit_of_definite_complements",
+    "sha256": "e3f0aa42aaff3b82d8a42dcd9e3eaf42da898d454292d26d1bb5023e054e2073"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2656,
+    "last": 2657,
+    "name": "AdalyFormal.Round8.Guarded.SignFree.TwistSeparation",
+    "sha256": "fe7abb5931017a763839971bbf5c59b2a7f893fead35ddb3bfb74f2f0d7071d6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2846,
+    "last": 2848,
+    "name": "AdalyFormal.Round8.Guarded.SignFree.CofinalTwistSeparation",
+    "sha256": "9a2bebc117f861e8dd466c07ccb3d2a890bffcbcf769e3f26613cec4dfdfffa1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2856,
+    "last": 2887,
+    "name": "AdalyFormal.Round8.Guarded.SignFree.goalNeg2_of_cofinalTwistSeparation",
+    "sha256": "bbfaea30093a67d41ff794b64ba79f2fcc30dfa0fcdfd3078f4bef2e01dc18f8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2891,
+    "last": 2892,
+    "name": "AdalyFormal.Round8.Guarded.SignFree.not_cofinalTwistSeparation_of_goalPos1",
+    "sha256": "0521a4400d2a898a2c0907a5c0c2926405a705c4efb6798850793790d0274209"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 2962,
+    "last": 2966,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.abs_inner_op_le",
+    "sha256": "f436d69f1dbf5a120a02392134c94131173a39b9ab29d95d01876264ad6a40ec"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3029,
+    "last": 3044,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.perp_lower",
+    "sha256": "1cdf474d332ed16cd9b72313e5d342d9a69d7fe8aecf554419d65f259d2a5e8a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3046,
+    "last": 3059,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.cross_upper",
+    "sha256": "d4f2e918534bb979b74d08d12916b2334472bb7874719ae0c1ebdfdfac5bfe74"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3437,
+    "last": 3448,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.expansion_of_hasDerivAt",
+    "sha256": "f5a6962e8c5da5cfa381dbeb2cb916af861e804d5331e2b031579b45987cb318"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3463,
+    "last": 3468,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.unit_of_pos",
+    "sha256": "b544d0d1330b4e57454b8be230c15b01c8e1a902292d7f2ad90530d6d52e99e9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3470,
+    "last": 3475,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.psd_of_pos",
+    "sha256": "a8de4823a99259d9e55675d7c6ae1413a8d8d030e07355f61b6f3b33c4e579fd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3477,
+    "last": 3499,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.psd_of_pd_before",
+    "sha256": "7759696cc5ef079f81e5a1a6d8912cd46145ba3d34cf4e8b222b89d46177a63d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3504,
+    "last": 3546,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.exists_gap_of_psd",
+    "sha256": "2471876d78fb7be628445d33d4d44cf713eaef4a2abbeca24e464cb5a8b1c5fb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3549,
+    "last": 3572,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.quad_pos",
+    "sha256": "1c711ba572de7ee2a2fadd8937970ed8151d04417f26a5e2ab96f611db2cb0cf"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3579,
+    "last": 3704,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pos_of_psd_add",
+    "sha256": "8d7b39bf398b9cefb922c7b621bb811866791fcabc02e7e6ac71c81a15b37396"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3706,
+    "last": 3720,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.metric_of_continuousAt",
+    "sha256": "d753eb3cae51a554bbb8b0188ad4c46b581c875d14833f7cb4cfe08f968b299f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3729,
+    "last": 3907,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.first_order_separation",
+    "sha256": "950ec13fc088f50dafa20e4be24e850cff454b7bba1e625088800c762bfbf775"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3962,
+    "last": 3964,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathU",
+    "sha256": "e119200f7c8bd93ea55d6e00e5aa98c45ae43871433792e7b0b3bcc0647ee949"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3966,
+    "last": 3968,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathP",
+    "sha256": "da7e939997fc01ad27926f5903f127fc34579a6bf9a3f85177c252e05b245ef1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3971,
+    "last": 3974,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathA",
+    "sha256": "99e0fd9e1e341114e1798cbf10755b91da2a72ed1a256c120732d8b6309122c8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3977,
+    "last": 3980,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathD",
+    "sha256": "9008c06adfaf18aac57665a3497c37e8740a952d5431e31b5acdbff9c140c5e1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3982,
+    "last": 3988,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.path_agrees",
+    "sha256": "5c3b4eab6e2331819e1f32cfdda30b9cef37e6f2377ae303d52fd97adf7eb5ac"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 3990,
+    "last": 4000,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.path_cont",
+    "sha256": "4b3c14b32d6cfb0a3bd69af3f6aeb2587b30f01bd2bde15d68940d8b62dbec35"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4004,
+    "last": 4026,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathA_continuous",
+    "sha256": "5af473fa58878192ee3ad2b9d0238e4248d514266546079d897bd3f7b27ee7ea"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4029,
+    "last": 4036,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.path_data_constant",
+    "sha256": "2b249430bbb26017fc0c4523c1a61b7e499b92a30065e305275524729491a702"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4038,
+    "last": 4050,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathD_constant",
+    "sha256": "43e3d41b9ba956b46b5aa819dbb8209e2dea1552893021df2cfd1813b4769c9c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4054,
+    "last": 4075,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathD_zero",
+    "sha256": "17bc5b8c213c7d8f41fc7e24e2745af956a7f4102c6c53d11c0834bd95341239"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4078,
+    "last": 4079,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.uthPath",
+    "sha256": "88f9f20d06393c27ca776ff83ee6639e241450470f483c4f954667bc556ae572"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4124,
+    "last": 4126,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.PathSeparation",
+    "sha256": "5c38e0a50219e1dd10208540f1f73d4d7e312d9c7d5c4827577206b4aed5e1b3"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4131,
+    "last": 4135,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.CofinalPathSeparation",
+    "sha256": "6cdf9b74d8ea3435c0e186b1e5118e6bb362c8d5603b27344e9853660cc0d4b9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4139,
+    "last": 4176,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.goalNeg2_of_cofinalPathSeparation",
+    "sha256": "82621e4689f81e143eea811986fd3d4ccc4e937c020f527a441c30d8cc25a207"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4481,
+    "last": 4483,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.vacA",
+    "sha256": "fae72a74b472617aa4efb0cff036a28cd425e6a255df2c46d280481de7b2824c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4485,
+    "last": 4491,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathU_zero",
+    "sha256": "134b1a61c7ea915c0f79c332649f536049f15f4860d9adeedc8e60bf0e2cec8f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4494,
+    "last": 4498,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathA_zero",
+    "sha256": "271a1f6233250bf76806b00212791055d0676d0cd448764bcc65c57c3738e9c2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4500,
+    "last": 4506,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathU_neg",
+    "sha256": "ca2350d1a0e16330289ce357fd4bfa1f54be689df06d9cdf7547a318c4ed982d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4509,
+    "last": 4513,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathA_neg",
+    "sha256": "eb120e5a001579f122880151cc9d7cea072425efbb30cc2a0485223ec1d20c64"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4515,
+    "last": 4529,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathD_neg",
+    "sha256": "065517461c7b4daa677f4ce3f87462ebbfc3d2381d2bee1a39a2ee19fe5d4c16"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4543,
+    "last": 4554,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.VacuumCoupling",
+    "sha256": "ff834dbb30ad05e73152e7aa99ac9ea296a563463040ca0a959e3aa09b781b3e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4557,
+    "last": 4596,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.eventually_pathSeparation_pos",
+    "sha256": "48a6c07b852c56bbbc3d371347106b347eefdb9fbe0352ae80944b65ccef4d37"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4600,
+    "last": 4652,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.eventually_pathSeparation_of_coupling",
+    "sha256": "7de7171ba2527a64f585bc1207fb38af8b3ece5ae03336f6aebdb2f598b4e307"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4657,
+    "last": 4661,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.CofinalVacuumCoupling",
+    "sha256": "693bed70c3c56f0798b9c5a06f70bd608569188113acad365b199ba6830a4e9b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4663,
+    "last": 4676,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.cofinalPathSeparation_of_cofinalVacuumCoupling",
+    "sha256": "e1a3e341c786b0f7764906704aa8cafe3e7a4f8e736b781c3928e18f5b8f55ee"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4680,
+    "last": 4681,
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.goalNeg2_of_cofinalVacuumCoupling",
+    "sha256": "eae17a78a87dab54355532b93428abfb9fc9a54b80bc57165b90ce551a45432b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4787,
+    "last": 4788,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+    "sha256": "daab49ca417bba7a2726d6df3d6b6cae5bdd1cd5120f76ca8f54a0c792917a19"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4790,
+    "last": 4791,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.anM_const",
+    "sha256": "a44c8f93ee0bec4a6065cb9e48a2525a70128fdf87e68438fc2257a39a4f8610"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4794,
+    "last": 4794,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnR",
+    "sha256": "8f162dae8fea3d4f3776b61957e83977301a7bb66a4b247dd9ebdecf944ed3ac"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4796,
+    "last": 4796,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.anR_const",
+    "sha256": "41d1606446497dac928de53f7fc81718ceafe2b1f3204c76a81ca4b0f782457e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4798,
+    "last": 4799,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnR.add",
+    "sha256": "7318151843c734d3badc0fab2eef9bf944020a3294961e233a98da829a482049"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4801,
+    "last": 4802,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnR.sub",
+    "sha256": "c175aff7ff3573f7e120f70d69d2e892367e873e433bc52107883e31863e99ad"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4804,
+    "last": 4805,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnR.mul",
+    "sha256": "0c56349b217e119c63cd20ab87986e39cecb7300cf6ed2bcf39256df6d6b8399"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4807,
+    "last": 4809,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnR.sum",
+    "sha256": "f05dffa0e47d40287c82e2039e6e258120803fba40a223b2d56afb84cf8cd3d9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4811,
+    "last": 4815,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.add",
+    "sha256": "6e1f00c68c4b954a3d1a0876078de732c3b9f9e97ddbedd06e9a4f0d224258fb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4817,
+    "last": 4821,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.sub",
+    "sha256": "03851f4d64e6bd3575f86c9cf357c597da08526cda280addfb6aab78b76c3d2a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4823,
+    "last": 4826,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.neg",
+    "sha256": "e53794de5d8c6846c76f87e1e55a2b7a12daa1bc2a84a2146513cc57b6cf40dd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4828,
+    "last": 4832,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.mul",
+    "sha256": "110c6efe1b87ccc357a856e27e97931823de5ae11dd69ac007b0365feffe1405"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4834,
+    "last": 4838,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.smul",
+    "sha256": "e1b474005ca082383d24b086e5404934dbcb8b2b978968d8bf703563bd389db1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4840,
+    "last": 4849,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.star",
+    "sha256": "e8b0eddc0f243f3c81c228ed23867b3dadf8af2a7c20eaae2939072c8253d85e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4852,
+    "last": 4862,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.trace_re",
+    "sha256": "358ee886f202d93381e5f727047bd5bac88f06c02ad9b4a0a7b48c72ff8fc08d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4864,
+    "last": 4866,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM.tr_re3",
+    "sha256": "689b09c1d7ef4f2f54171db049d4e94a34c3320795ddffd418e2d9685bc1d5bb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4869,
+    "last": 4877,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I",
+    "sha256": "317381e1c1cafe5c9073d4869df32c6a2bd46ef779e420bd29de31ebcc6b5f4b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4885,
+    "last": 4887,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.gramDet",
+    "sha256": "ba3dfb39ac0f26eec9638271824a7f19343aa9666ced0bfae8870bcb23089a5d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4889,
+    "last": 4896,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.gramDet_eq",
+    "sha256": "042bb726ec9bd210a018ba429fc6367477586cfae96025c2be05e4c77c01c62d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4898,
+    "last": 4900,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.isUnit_iff_gramDet",
+    "sha256": "3d78d6c254b71d8905c82fac3fbd1818702b242ef57a52d4a2b79ba4be9b7609"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4904,
+    "last": 4913,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_gramDet",
+    "sha256": "39f8b3fdc34e98942e2f56b6fb8c9372dfa1711b353f5a8edc3bcae4ccd677fe"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4917,
+    "last": 4932,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.isUnit_punctured",
+    "sha256": "96d9a2c7616a073e2a7ddd4b4814a42598c75b428efa0663492ca8bc5407a6d2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4941,
+    "last": 4945,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.abs_inner_le_opNorm",
+    "sha256": "e5356de6f22942eb42a7ee6d72c31dca5261866acf57860d49df6ba7d2007e54"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4948,
+    "last": 4955,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pos_of_psd_unit",
+    "sha256": "7bb451e824122dcedcc6079e33c49c30699dadd8e52fefb374d138bca5699148"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4958,
+    "last": 4966,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.unit_of_pd",
+    "sha256": "430f35f3512ccf528610d9d3447d5ad3d8167517761d135f67705ad6407f6a6f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4968,
+    "last": 4973,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psd_of_pd",
+    "sha256": "bd1415db2e62ab447ad6f2b4ae74c213f8e9e8c0895f6f80372b39e048d2fccc"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4976,
+    "last": 4996,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.eventually_pd",
+    "sha256": "af14f44d5d437a59216244b0d7c72d5080fed4705294172e374e53c9da789be5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 4999,
+    "last": 5000,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge",
+    "sha256": "93ec89da76b9a4892e21d11faad2ed63af8f4d4308e1869f519c7055ffd1d24b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5007,
+    "last": 5102,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge_spec",
+    "sha256": "78fa7157e851c4c515070a840cdeac77fbd3c283c7e75b1f5504953ef6423cc8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5161,
+    "last": 5162,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+    "sha256": "3fa8820bc6a127c46717563f0c807d9ae5ff774532a4731836200ba5332c140f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5168,
+    "last": 5175,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_inv_coe",
+    "sha256": "f40a50a55bc92bae7d47ac42bcf40d75af7079a17aea7f59943fc3ffe7c5d2e8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5177,
+    "last": 5188,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_holonomyElem",
+    "sha256": "9c484417473062d4c1124b815e1e81b8e7b2cee67dff12a1113a73b4bd3e5da0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5190,
+    "last": 5196,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_holonomyElemInv",
+    "sha256": "d2913737e994c2fcd623cff69413fb118a670fec257db05acb6ffca061beafad"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5198,
+    "last": 5200,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_reHolonomy",
+    "sha256": "8094b4b2883fc7e29e1d95830166e4bdf9dab2748db976ffe3733d3d3142a511"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5202,
+    "last": 5204,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_imHolonomy",
+    "sha256": "994ebf7411b79f04ca1734bf6a8932e439216b532e089d31a6fc15281e382a87"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5206,
+    "last": 5214,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_RMap",
+    "sha256": "0b1db0d05fe41319d2430c50957af272fa28056834ffb1cec6b9eec4f177523a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5216,
+    "last": 5221,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_curlMat",
+    "sha256": "7d77dcf9fd31422069d8d3493ce4a4f7a56b6550c94b109dbd60c25e007b179c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5223,
+    "last": 5228,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_a1",
+    "sha256": "63aa9d77d8ce6cc9d1fbc4cd50f313c6d7a03ffb613f58bf7a079851f9ab1459"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5230,
+    "last": 5235,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_a4",
+    "sha256": "c4d778d549fa8d1781d662ceb29f7ab3bce3fc3813cf1bc90d3be3b6f8c302bd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5237,
+    "last": 5256,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_bilPlaq",
+    "sha256": "5ad6a7f0b86d7bbfdd9eee56a6226a58ddbcff7072c91327feb5ecf54667edba"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5258,
+    "last": 5270,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_deltaPrimeBil",
+    "sha256": "851868901019f42dd2cb2c3145fb0fc4aa4440260ac57ee135b2426ba0dde0c0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5272,
+    "last": 5288,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_curlInner",
+    "sha256": "36a77bcff92d91a61872c8f84465c8db6eb8581edfa0e2577114cd26a2237c7b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5291,
+    "last": 5294,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.an_inner_delta",
+    "sha256": "97306e5d336524bfbd178c142bc910b993454fd56f50aeb9d7e5736d8b674f08"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5299,
+    "last": 5311,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat",
+    "sha256": "126d3b90bad88c0a4932378a42e5d5c14df51d0d7a32ff6a6cd581bc7ab5ed38"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5331,
+    "last": 5332,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.ContFamY",
+    "sha256": "98ee72eb292e7b2f8f1778fc5760dd6be573ee869db056ea4c1915c93ae65e07"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5338,
+    "last": 5345,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_inv_coe",
+    "sha256": "6cfa34de3d29c12686144438046bcb7edf462b8bf88f05042432054b4b30d4d8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5347,
+    "last": 5359,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_holonomyElem",
+    "sha256": "1224e599aee6a5bc75a7ed085b0039ad8e45c9897ba4021710388de2d05dbc63"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5361,
+    "last": 5367,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_holonomyElemInv",
+    "sha256": "d4eb7d15998dec5afdc380007bd42dbf93187f544fe647ab5dc9aaf25bafc1b2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5369,
+    "last": 5372,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_reHolonomy",
+    "sha256": "c22d0518f72fe3472e94a997b490c65f15d03a6ed450703a06412bf81c3b88b8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5374,
+    "last": 5377,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_imHolonomy",
+    "sha256": "d2a44c6ddaad050a18eb632bf750f41c0ffcc06cdb4360eea81f2ca2cc9484fd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5379,
+    "last": 5387,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_RMap",
+    "sha256": "f45ecc409806a58cfbd9f7799148f4ae05b6015268f0fc536820dafb69c8a2aa"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5389,
+    "last": 5395,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_curlMat",
+    "sha256": "b357ee42b107c9bbf6b3b9cc2bccad6aad9f73ee92e8534da988f3d163476a3d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5397,
+    "last": 5402,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_a1",
+    "sha256": "decf30dbe911644f753c5a2c96dd00fae0ceebe442574b20bf77834289edb482"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5404,
+    "last": 5409,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_a4",
+    "sha256": "6e576f9aa416b29cd28ea64b4047bbeae51c8f6be000462102df2168b30b5105"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5411,
+    "last": 5415,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_tr_re3",
+    "sha256": "d919ec5c253c8316197a1bcb95e6665bad300005d1d865a640df67aba3543f25"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5417,
+    "last": 5438,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_bilPlaq",
+    "sha256": "0dc36bb934d29d7ee3c461943419d6343fee59e5519a3787241fdf69a9669000"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5440,
+    "last": 5452,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_deltaPrimeBil",
+    "sha256": "08e0a4b1732d5197327178a513a83bdc87fc798a357df191a7c7ff9bbd1826ed"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5454,
+    "last": 5471,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_curlInner",
+    "sha256": "19e78ef0736f79cd0e48cc84b55535547d926009cbda3332547cf7213815ce12"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5473,
+    "last": 5476,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_inner_delta",
+    "sha256": "f9a798451ac6198125cf4571b44fc93469befb7909aa60b9535a445188e86c03"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5480,
+    "last": 5482,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.contY_deltaKLocCLM",
+    "sha256": "f877d72a9fffcdd453a440d297c972641346d841f645e453aa5a6b76c18a14c8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5566,
+    "last": 5574,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathU_anFam",
+    "sha256": "6cce5211c9f49dc20631fe4eaef126b33cf66e4ddeaf7615b4bfa31a861f7483"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5591,
+    "last": 5592,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.uthPath_zero",
+    "sha256": "3403bf457b92ce9ce683051d7b17137dea1b73fb88693c15507e542107e68219"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5601,
+    "last": 5630,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathA_anR",
+    "sha256": "ac939362901bd379c28e0979de1d9004ae333c5b0278c8724410beb7823bb67d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5633,
+    "last": 5638,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathA_isolated",
+    "sha256": "c23ff7c5b44cb15ea4c7c42ac858d05be24e11e1b2d51fcc71ea6bc3efb543e1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5662,
+    "last": 5672,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.inner_Ginv_dataS",
+    "sha256": "76a6234ea748c0d6b9e075fe27cb4766aaea75d71a98529abecca4701cf4fa54"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5675,
+    "last": 5697,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.flat_delta_le_univ",
+    "sha256": "1a7d54cad318622b3c4bd5f661bf5253dda08e8d4f824e2fc18be99b86a0cc30"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5699,
+    "last": 5706,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.mass_nonneg_dataS",
+    "sha256": "915b0dcf3a027c2aec324136d681786107551713989bb778344980c03384dabb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5709,
+    "last": 5720,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ginv_loc_psd_flat",
+    "sha256": "32d1dfb10bfdd917064a535eddd14485530e1e8c61aaf844636142087285f99f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5723,
+    "last": 5735,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ginv_loc_le_all_flat",
+    "sha256": "d4875f96bac38ffd5ea88e9514c71c2add99f39b821853aaca0c90e54a4ca3e2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5739,
+    "last": 5745,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ginv_all_pd_flat",
+    "sha256": "fce1cd70a136cff3e31032502e7fb123fcfdcfc1b9692c9d23fc478069e967e8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5748,
+    "last": 5749,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.flatP",
+    "sha256": "523525deda100aba34962ed1334abe5ccf6fe4147f7035b6cd97186aa5747548"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5795,
+    "last": 5800,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathU_flat_base",
+    "sha256": "e40d018a7f9c42662d02c1b3d25f891a69b4693ac2bc937f2699b83c4fa97072"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5802,
+    "last": 5805,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.vacA_zero_flat",
+    "sha256": "0387f26b192b33993af3db7511a501034bc870c85c505c1b8c98259834e0b9c0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5810,
+    "last": 5814,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.vacA_pd_zero",
+    "sha256": "d8a5ea702546133c88a7592aa7f96188e4059ccbc93b99298ea086e143be1242"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5852,
+    "last": 5853,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge",
+    "sha256": "a46c56368ab1b6748c69e16d7e52dba66ddcea22f244091508e5abf3f4d0d018"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5858,
+    "last": 5862,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.VacuumCrossesAt",
+    "sha256": "37ca9a4aaa0524468150a81a3a84b9673f5a1cd705a665b5109ed87511b64b0a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5867,
+    "last": 5882,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.vacuum_crossing",
+    "sha256": "15ac6bef692754c32515d430a27c8eae3b4c2f0ce8760a9ef63b2be982857271"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5923,
+    "last": 5926,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.uMat_continuous'",
+    "sha256": "347f341b53f5e2a00556c05391218192dbff6b7204ce1c5154be158a2a8d8d17"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5929,
+    "last": 5939,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat",
+    "sha256": "239b33404cce5c905eb3e5555cd841a088596f7d18872f44a1857f7c7926ef5d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5942,
+    "last": 5951,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathU_contFamY",
+    "sha256": "fb9b8fcaae590ec704384b7edc2cab8bebf040b6364a456a607b07d5d23c7c31"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5955,
+    "last": 5994,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathA_jointly_continuousAt",
+    "sha256": "2b16121b0022d707a35903d028ce8d951a5b964b70e7ebc5e7fafb7e83931c0d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 5999,
+    "last": 6001,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkU",
+    "sha256": "84231c0a46b91e93f8083993cac7578fd6f975582053e4d80c8df868ebd9dec6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6003,
+    "last": 6005,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkP",
+    "sha256": "d2a3b87c870d4cfe76f01f0fe5211306d6511ed07d432979992746e6a3051ddf"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6008,
+    "last": 6010,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkA",
+    "sha256": "ca5e32126a470b3e70c3adc34fee81956f2010ef4f24858bbbd53be62506897d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6013,
+    "last": 6015,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkD",
+    "sha256": "9bdc61dd9a33d6013a276d05818e3ad282e5081125edc964c75cee564df1d90d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6020,
+    "last": 6025,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.InteriorSoft",
+    "sha256": "695b6da5c1027a52f0c59c2b44a7581ba79dde0d142e7a6ec1eba02181bba06c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6027,
+    "last": 6031,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathU_base",
+    "sha256": "14997439927d2bd227369c11dd08022a76c14288a33c823a807380b1157ea930"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6039,
+    "last": 6043,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathA_base",
+    "sha256": "188d286c9ab38786d0103dfa7c8e67d71c1d7d0d8cc0f5eabd320d513812556d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6045,
+    "last": 6058,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pathD_base",
+    "sha256": "b9ac810df3d77f0b4b8355f46316ee2f1b2a58190f3aacd8cd81979a75f2ed8a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6060,
+    "last": 6074,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.joint_of_soft",
+    "sha256": "093ba644823556611fa093470b7986ed597e02ef8ae2c60d6e46b166cdb54b0c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6076,
+    "last": 6082,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.deriv_of_soft",
+    "sha256": "edff4e796643b64892c643a85ceaf34d19f1cbad4f033d2ba605c9681295ea22"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6086,
+    "last": 6091,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.CanonicalCoupling",
+    "sha256": "3c87ed57883d3cd0d7c5706f944c38b9cf1e7e459ad1c8a483479903f28964b3"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6102,
+    "last": 6115,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.vacuumCoupling_of_soft",
+    "sha256": "50bf763613bc4e2dbb4e79b20cedcb328e4a8d02711c900d876c508446b00d99"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6381,
+    "last": 6421,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ginv_all_gauge",
+    "sha256": "1e265e3b39b2a4e0c9695e93891e1b1b21d0586f41d01365eb2c40fa0957e77a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6425,
+    "last": 6433,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.flipMat_mem",
+    "sha256": "a44415e3453a9b8f5363d771b3fa28a73c22ea511f2dfed7b02ca3e716fbb42a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6436,
+    "last": 6436,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.flipElt",
+    "sha256": "2199551f4b7bede8d9c2f0ed36dac140bb45ca358ec28735f54c169eefce6bef"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6439,
+    "last": 6439,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.flipGauge",
+    "sha256": "a3d18c0b3de75e62621f51e20e1f6aa823b7a21d332c82e930ab945b395afc5f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6772,
+    "last": 6773,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge",
+    "sha256": "0ce7133518f5dd5e59de6dc540d36b2423417ab984aee3e77a9f5f01ec37b603"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6775,
+    "last": 6783,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_comm",
+    "sha256": "6a73a9538ae03fde2e331c17bbd0f0f0b41b33dec0c93bf4ec4ce76e5ce34a12"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6785,
+    "last": 6788,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_conj",
+    "sha256": "6ab5c487e316f4eed0c514351217e3ffc98e317b0d70f63c2460f107f30a28d7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6790,
+    "last": 6791,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_u\u03b8",
+    "sha256": "876bf5049cf8eecf06a82dd745280d70a196ca6a22781bf2e4a2eeabfbab7495"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6793,
+    "last": 6802,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU",
+    "sha256": "c0ea6d04801d80e73235cd3e87c740ddf348e9a16f017f65d012cf1e1a2807b0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 6813,
+    "last": 6818,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial",
+    "sha256": "970bd96cb19e514203a822d0bcc1a02610ef2bb627c51596da180984bf93b3fa"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 7938,
+    "last": 7938,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace",
+    "sha256": "a0e83048d31099673d1818b3ccccdc891fd7c8886a7ab660fc3b7108770614b6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8025,
+    "last": 8026,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.extP",
+    "sha256": "228ec8d768d73139e5c7df3b8a1bc461942edaa7266be473e1ca80d27e94d041"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8029,
+    "last": 8031,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.extA",
+    "sha256": "8c68d01ece35c46132cd3081b8b4e239a6a3f6f7dd4d031344eadbf9ecf3aec2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8034,
+    "last": 8036,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.extD",
+    "sha256": "cc5cbb77a33bf5d6772dc2f6be3620833589b20a97f69aea1e43c4bb61550bfb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8315,
+    "last": 8316,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.ContFamT",
+    "sha256": "bb228f3de88dee94aba1ffbcc0b48c94e1f3a1e678e197bb009c2938aa6e3009"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8595,
+    "last": 8599,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.InteriorRegularity",
+    "sha256": "9879916ec63791e15297c73ef90c566a32c8c26e2f3d30ae78e819456d642a7f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8612,
+    "last": 8614,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.InteriorSoft",
+    "sha256": "33be7b88ab8bd9f1f5fdc943f00f3e1cd2638fdf5752c11f193ab2df053442aa"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8772,
+    "last": 8780,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_of_inner",
+    "sha256": "8500272b507c802892b8d7540b1269485d9a97fe5faf9b0a94892687c42990c8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8782,
+    "last": 8798,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_clm_of_apply",
+    "sha256": "d4ec783fb33daab3ec4eb5bdbe9114f557959fadd421a3dbe4724f63fb6f58f9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8800,
+    "last": 8804,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_clm_of_inner",
+    "sha256": "50604158ff35fe47900f1d7aaa8cbede9619a667df5a4fd3c5a508fa6bb666c6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8813,
+    "last": 8815,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.inner_suTwo",
+    "sha256": "d88f2fb07cf9f40a50b061b625fb958baa1df3e0e821c72774132a08dff5d79a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8817,
+    "last": 8827,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_suTwo_of_coe",
+    "sha256": "6d5a613e7ed693666057821e0b0b01153371eb04094b284727950ed68aa065c9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8829,
+    "last": 8831,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuous_suTwo_of_coe",
+    "sha256": "1085c2de688964fbb06ae67edc32772b8aaad11410908a392e8fbfd4a1ffb928"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8833,
+    "last": 8842,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_piLp_suTwo",
+    "sha256": "20a52cfb51692674d6ee79c775cfaa9089fc5890470ff49ac4ad54ae1db8fb8a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8844,
+    "last": 8848,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuous_piLp_suTwo",
+    "sha256": "80a88196a27f3b9dcb235feea424b2eca1037eefe1b473874e1d820fb60e6479"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8850,
+    "last": 8852,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuous_coe_suTwo",
+    "sha256": "72dad002ce4a5d60b6a5be6dc242384a44ef7bbfec840b10d000017025d9d276"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8869,
+    "last": 8880,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_coarsePathHolonomy",
+    "sha256": "2f472e52b17f860199ef9681880e3e893a3cc6421a336d7b47cf5b0b7b2fd1d5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8882,
+    "last": 8892,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_RMap_coe",
+    "sha256": "8ece61f517308092a510310719a3829b336b15e298bd408ff53e7000f15bd7c5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8894,
+    "last": 8901,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_gradL2",
+    "sha256": "ad60385a9d843a0f94fd0cb56057f4e32e2b33e6575425bb7256e8a670a2ee11"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8903,
+    "last": 8906,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_adjoint",
+    "sha256": "4e9b0a68f34786d0044917fba60180f9508ab0f8fdb30e28803fe19421cf61bb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8908,
+    "last": 8909,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_gradAdj",
+    "sha256": "af595a72045ff56b6e57239563fbfe0f1ab6caa7a016107145689a46c24b129c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8911,
+    "last": 8912,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_lapFull",
+    "sha256": "4a9dace42226f496792cff48d4228a66a265b63be53caefb913602eaa449fc05"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8914,
+    "last": 8916,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Qcomposite_one'",
+    "sha256": "a8aa6a7b9243756951c82618d5c15a661dec004a936f4b56b07f65de47f441f5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8918,
+    "last": 8918,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.bgTower_zero'",
+    "sha256": "3b9a176b011c8bf45631c91f84637ab7209baea643109f0f044b7524ad14167b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8920,
+    "last": 8930,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_Qlev",
+    "sha256": "0a4000f9a6a74d325cda42ca11154d61b3586671f85df1552b6fd5af689146dc"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8932,
+    "last": 8943,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_Qpa",
+    "sha256": "a57a5071e58047051866100ea5826d62ea58270f6c86d69aa3b3c33079739d6d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8945,
+    "last": 8949,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_DelpA",
+    "sha256": "86da04cec68c70a6f2c79a4c96a65b5c504989ffa20fe0542d005d11d07ae9bf"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8951,
+    "last": 8955,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_LP",
+    "sha256": "095df93cae9bda931b1b46523e28c832f207e85973ed29bf752caf9b019b56b9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8957,
+    "last": 8970,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cont_QpP",
+    "sha256": "f773b69af1d37a0a6f5f8054cd09c8701cc4635fd2fb7fc2945edb91d38ae150"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8990,
+    "last": 8991,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Gam",
+    "sha256": "b7eb61606b65ce344e65bd8dd58bfdcf06601996d6bbd498f01adc78444f56e2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 8993,
+    "last": 9005,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Rproj_formula",
+    "sha256": "6b835c1975f860f43552347406c4fe3fa91e57e982ab5dfa41c36bd41bc01712"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9007,
+    "last": 9013,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_inverse_comp",
+    "sha256": "91e905e0e8030b7dbb3b8475292b0821b4d6af3b874f862fe30213387ddd7def"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9015,
+    "last": 9022,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_clm_comp",
+    "sha256": "76232d3f1e46d77d7efd0fdbdc3e54fff31e09511002c852efe16909a705ee86"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9029,
+    "last": 9030,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_LinvP",
+    "sha256": "27b4f4d2e4b7e46be3ac54477a72b0ef4d3b026f9cdc8f62ed492896d12a40c6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9032,
+    "last": 9034,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_Xop",
+    "sha256": "3efc666de7806eff34046ff2d75bf084c66f404201305eec4977eac32774283f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9036,
+    "last": 9038,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_Gam",
+    "sha256": "28d50b09ac5ba2f4e853e57fa9661ff1f338b312dbcaef1474525d23d1ec8ed4"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9043,
+    "last": 9058,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_Rproj",
+    "sha256": "838a8995802e502a2494a91c74a3b5b3a66ac337d980ae368520760badcbd0cf"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9060,
+    "last": 9061,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_Tfull",
+    "sha256": "4f34dc7998402b4a588260316c0c0811c1d8e96fa8c7c76108cc52371c9fa9da"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9063,
+    "last": 9069,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_Wop",
+    "sha256": "62085f2a58532b95c7397203531ca0076ab26874bb692fc9a506a199a91a61d1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9088,
+    "last": 9099,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.ajSeq_pos",
+    "sha256": "99489c51891f61cfdb798e92a40b81d729963603f95e1768475769c1163962e7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9101,
+    "last": 9107,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Qpa_nonneg",
+    "sha256": "fdfb7913989c14a0398c5c2d138ceb5a6f682ad6935cb6f9b0a656eeceb75462"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9110,
+    "last": 9136,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.delpA_inner_ge",
+    "sha256": "7f6bd2165b6f56b944825470df42c6a766e2fd29d0b0f3f2040f37e01d25b1b5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9139,
+    "last": 9178,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.covConst_norm",
+    "sha256": "d1fa81fe44f7ad4a524135e0450591a74b7dc4be1f7d478d05fedc30ce917734"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9180,
+    "last": 9208,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.delpA_unit",
+    "sha256": "5e3936e0e87491969d17d22324dfb2b4ad5ce1ca38926b43af3f1db9dbdab199"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9211,
+    "last": 9215,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.wq_pos",
+    "sha256": "7dc892998bbdf22c080a174765eb77497bdc2314679884b85e8794f22eca5aab"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9271,
+    "last": 9272,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SmoothAt0",
+    "sha256": "f458084aabe80070ad50c6b9ea6ca288cdf11590924618b4b2dae9ab90d5024b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9277,
+    "last": 9281,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_V0",
+    "sha256": "0a041c4940459e0798c8b93526940f307f5b87c8d1b661f7d5109d60c11c5590"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9283,
+    "last": 9287,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_V1",
+    "sha256": "f008a3840710805fe0c3ce5078b89e253e04cfbac0c503f89e30493ac4f0e6dc"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9289,
+    "last": 9292,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_prod",
+    "sha256": "09545e0da33a15b76de0aa1d5ffdfcd0d192e126fe7ce0c8a0fe638530abd697"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9294,
+    "last": 9299,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_loopVar_fam",
+    "sha256": "b74f5d1c09cf9b9995ae469f6eb13e7541472a3e2ad038e13aad23f5ac16ee51"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9301,
+    "last": 9311,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_sbg_fam",
+    "sha256": "b29dcd3259ed988f89f2719cde471161db2c6331ece58605e6b12d95ac4ed9d0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9313,
+    "last": 9325,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_rProd_fam",
+    "sha256": "9b926a3617e0cb54b608a6dc1794841b37647d68b5f9c8df5547e9e83234956c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9327,
+    "last": 9336,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_su2Exp_sBlock_fam",
+    "sha256": "77ae4b906f4b251f08ca22206be93feb43f57509df8196dc2836171606f94b49"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9338,
+    "last": 9348,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_su2Exp_neg_sBlock_fam",
+    "sha256": "e196efadd15efbd69bd975b9302ea261ff8b01cb70be4408034c9e62cbe3e06d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9350,
+    "last": 9377,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_rawStep_fam",
+    "sha256": "439272afeefde05c6790c45683c4674a719aafea3e680d48ee9bec939086f289"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9379,
+    "last": 9386,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.contDiffAt_qStep_fam",
+    "sha256": "798cb9b730c24f5f5fc3a74b87d35e6526ca91fc9e6d785e61b545bfd7078919"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9388,
+    "last": 9397,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_fderiv_qStep",
+    "sha256": "e11bdfe96310db2f685c6761b5447bd412803a5a6a72cb9a628ef3595198a45c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9399,
+    "last": 9422,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_fderiv2_qStep",
+    "sha256": "5b88d4eecbf8bcdd6fde92194c934352ff52bd93088e448b189c8d52d2ee66d4"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9457,
+    "last": 9461,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_clm_apply\u2082",
+    "sha256": "6a7be83bd3919afbc929920ebd63f36b974bbf7fcb44911889a62a6c8649b7cf"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9464,
+    "last": 9464,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.suCoordL",
+    "sha256": "4c8537c09f134781b9837e8f88c134a64cb5cbcb674ecb09b027a8fa25f5112c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9466,
+    "last": 9468,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.QfullOf_apply",
+    "sha256": "38d1bfe358d7faa391a5de8c2fc04e75c437beb58dc8b6dfe4f2d8d58665438f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9470,
+    "last": 9472,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.C2fullOf_apply",
+    "sha256": "801b4dc991ae585f2bb1c4b7dbb12db9222af728c2a8f184ecf2b969fab6dee7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9474,
+    "last": 9476,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.QlinB_one_coe",
+    "sha256": "ee4ecc194b132d6a1842e855244253cffe7358fa93f2e24d567fd6b769800ae1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9478,
+    "last": 9482,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.C2rawB_zero'",
+    "sha256": "57bc84d6fe9f30b1b4a7ebbdeefcd79733e3c10f9bd05ad5dd2b318ccd1cef57"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9484,
+    "last": 9491,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.C2rawB_one_coe",
+    "sha256": "f4ca31f17dc4dedb379690f513b9db95b8fc0443de02ac0807edc7aff119ed62"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9497,
+    "last": 9503,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_QlinB1_coe",
+    "sha256": "a86f7dbe5d0cefec391c52851b005db0c1338ecbf20d28078a26c08f549850b9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9505,
+    "last": 9514,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_QfullOf",
+    "sha256": "9faab49472b49226f28fb18d533d1f0249d743b7e961607a440a79bce5713300"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9516,
+    "last": 9530,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_C2fullOf",
+    "sha256": "03bed6be9139371a7f17119e80d30bf1e597bef3ffc1640a825e8e737b7b3e63"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9541,
+    "last": 9545,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dataFam",
+    "sha256": "d0aaa6854c848edc810be177bc0224587fff749f8646355510367f10ce4265f7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9547,
+    "last": 9555,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Ginv_dataFam_eq",
+    "sha256": "3cd7266b8733b8cc080703ed594c9cd772d7be027bd9b2cc9d83a0f750d4d351"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9558,
+    "last": 9577,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_Ginv_dataS",
+    "sha256": "992797664f309aa7c26993993a7989d762d51c7b844112df0fee38fb4977f1a1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9580,
+    "last": 9590,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.continuousAt_H",
+    "sha256": "58f2f65213f8a09a4e0b23e8be3b9e83ec6b6cb65af4371e2a69b8c7eb4b08d9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9592,
+    "last": 9597,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.inner_polarization",
+    "sha256": "12d818a6e505be1b98ffeae5ff514e01d5e97588a70a711eaf0b432f81cc0668"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9600,
+    "last": 9619,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_Delta2_div_form",
+    "sha256": "b66ecbbd5f81252ca9ed12463514770479f8212f7a6ea4a830af0349be2e9bb2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9624,
+    "last": 9658,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.tendsto_Delta2_div",
+    "sha256": "8cda4ffb86a2d67c230f03bf3c5a1e175bf2528630fabd0ab9dafe2ddc181448"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9661,
+    "last": 9674,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.limit_Delta2_div_form",
+    "sha256": "1b0ce143d8f01e7cbd5f81622019ec8ae9b059bc6916369b2cc978a5efc07c27"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9706,
+    "last": 9714,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.SG_holonomyElem",
+    "sha256": "be8fc5b81386da3d33b122d6deb2e32322c6799f926a521593568928a8277c6d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9716,
+    "last": 9721,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cd_imHolonomy",
+    "sha256": "b835b73f20b416f54ed5b6f8d2d900ab146fd65789614541a147873739668b5c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9723,
+    "last": 9729,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cd_piProj",
+    "sha256": "4bdd06217c717fb3e655763198c9a8cc84e6d29bd8649616ff2d2245606aaa2b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9731,
+    "last": 9751,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cd_FnuMuLoc",
+    "sha256": "d263989920044a9534b9b794462fd2acfd18dfa5d101418dfb099e94841957e4"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9753,
+    "last": 9766,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cd_DstarDir",
+    "sha256": "babcd4cbcfe8d5faafc0e06649ef1a7aded69654ce0b84c2e825241c602ad0f1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9768,
+    "last": 9777,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cd_JfieldLoc",
+    "sha256": "7e6c68d67b4f47a5355101d249f57e13dc5b38fa0a7703b401a97273dd48a65c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9779,
+    "last": 9785,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.cd_JSU2Loc",
+    "sha256": "579861852589281bca62ffda67294e7707233de06eb43c2f4de459534979b1f3"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9788,
+    "last": 9799,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.source_slope",
+    "sha256": "d08c0ddced9bcd11dda4f2140e87a13d96b44a0023873fb4feb1d4592f51f4ce"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9813,
+    "last": 9830,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.exists_source_derivative",
+    "sha256": "95167b5bc8b8530bf79411229a0f804de2772162a06dc32d819ad264033ed585"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9860,
+    "last": 9866,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.contDiff_Xm",
+    "sha256": "0c60122b6af5fa227d139ed9563ae81db390e3969afbceb80d03ba5a035db00f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9868,
+    "last": 9869,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.contDiffAt_Ug",
+    "sha256": "64e92e135d793d6c4847b273b4dba9ac0fb19bab86f601185458ac523ada3eae"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9903,
+    "last": 9909,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dilU_zero",
+    "sha256": "4e6959dbb8f17f82022b1c1a13e4f35c7b3f29c84fd7c1236c114a9ade2d52e8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9911,
+    "last": 9911,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_G_k",
+    "sha256": "72353cfb7ba390dd0ba12deffc40adbcf258a7d14bbe5025c1fc35637f4c9d6d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9914,
+    "last": 9919,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_out_site",
+    "sha256": "e15b5c07f89fb3d0e28fee23d79122b0d8b6a1ad4596a026043284dc6f65f5c5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9921,
+    "last": 9923,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_LP_unit",
+    "sha256": "a0467b4de79692c1397fbf66a684fa0699e64a9f6b32fca400136fcf0a1544cb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9925,
+    "last": 9926,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_wq_pos",
+    "sha256": "20318edf80ec33bfc7c5394bf12b973998fc326cb13bfff74e37bac8d8e2ffa7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9928,
+    "last": 9930,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.bgTower_one",
+    "sha256": "8b38c95e7b24775cbae7e60bd738dac7c6d52c059af64af384dd5c637461e24b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9932,
+    "last": 9941,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_Gam_unit",
+    "sha256": "5f79bace74876cbe67cdb6016b8500b68bd92d9b225b99a8792cdb881423dda4"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9943,
+    "last": 9945,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.delW_zero",
+    "sha256": "e84e2657ce8c91f386b764693d519356d726db0a09cd0af6a2ebbfd28e33d246"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9947,
+    "last": 9953,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_Qs_inj",
+    "sha256": "6db98a8309d45b912a1ce38c5612b4bc14ed00c859345024caea0a81723018bb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 9994,
+    "last": 10001,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.siteMask_eq_self_of_supp'",
+    "sha256": "8dfcee47b2c0c69b053c3d677749cd37923eaa00da41730ac78de2b63cb14d3c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10003,
+    "last": 10007,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.lapDir_eq_mask_lap'",
+    "sha256": "29a37c47dd81f09612bf08c92202cc48f95f36ef6d5e341affd91c1c7440bf92"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10009,
+    "last": 10048,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.final_step'",
+    "sha256": "86f870af426d3258320958f3a62ab4ffcb03333c58f8b5a6ad1340738458ac43"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10054,
+    "last": 10056,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dsize0",
+    "sha256": "bf31e066c3f1d9c2d2387cb44200a63ec22c7137a66d2645e23adf4ac65bd16c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10058,
+    "last": 10059,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dsizeT",
+    "sha256": "52a7991dfec77c3dcd9fbbd3d8c4bb03df10e4286917ae1e1859580cb1935736"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10061,
+    "last": 10065,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.x0_lt",
+    "sha256": "c0b92b08f910e97420c7d18ec0b236634612a442be44c20e77d5026b864ac6ad"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10067,
+    "last": 10071,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xT_lt",
+    "sha256": "038f70426e32f1c772dd2604d1dd9f308934e98abcb5b5a552de39ebb262a2f2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10073,
+    "last": 10074,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.mem_Om0",
+    "sha256": "8d855577f01b5b9e8d7ec366627052f47f3e2ffee302603598abe2ad7fc89284"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10076,
+    "last": 10078,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.mem_Om1",
+    "sha256": "ea3cb6f2c9fde413e197494086069b5289825ba87b10f12a6f50255af2d7121d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10080,
+    "last": 10082,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.not_mem_Om2",
+    "sha256": "314947cd8967760addc749df173c4fbef426a2d5efea5597613133b3cfc793c5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10084,
+    "last": 10087,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_coord_ne",
+    "sha256": "70e528e01514567813ea16bf487161866eb543383d2b6e1b817f375414dbc0aa"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10089,
+    "last": 10092,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_self_coord",
+    "sha256": "0a769b28fe4054396d7805c361a9b916e46064120e2db58f88e1585a51885f64"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10094,
+    "last": 10099,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift0_val_lt",
+    "sha256": "26070a5caa3ba8379358b326d76b1b8c88f3a39574c6ecf51d359de0d35adc02"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10101,
+    "last": 10106,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift0_val_last",
+    "sha256": "429b5092c89a57e2c004b825804dfa4f50ea5fdc166b03f47689669132e532a7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10115,
+    "last": 10129,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.OmGe1_mem",
+    "sha256": "70614c4456f561789bee7ceb7f7aed67f5021ea27c43210d51a24bde02fc82d9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10131,
+    "last": 10152,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.A_zero_off",
+    "sha256": "138d4289be5c7e323aabe8a30fcf58465404ce3de9eef7a6b8563cad6d53d68e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10155,
+    "last": 10157,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex",
+    "sha256": "070a524f6239fbb61c29d8fb966551910f470cbaf7a7f5066cf664b5dcdcf690"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10159,
+    "last": 10164,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_val",
+    "sha256": "b08679752f2442d28eb94dbac632f83f55e19fe60aaa841b4b71edc3b5718182"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10166,
+    "last": 10170,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_coord",
+    "sha256": "e336aa8fadb4f44bb934485a8ca813342b326f7f808e45f4b2946281798fb26d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10172,
+    "last": 10175,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_self",
+    "sha256": "35936da368ee44afaddeadcb18205ae02633fae31f2b3ffcad6e38d5a5ed29c0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10177,
+    "last": 10181,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_sitex",
+    "sha256": "2a99064de597e1c3ca1fed47dfe3e981389750bac6918fa8a71288a8390fe667"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10183,
+    "last": 10187,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_sitex0",
+    "sha256": "a0776e7217752fbb6351a6d312a21401ce3694c05ead35915fb96120d2fbc964"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10189,
+    "last": 10193,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_sitex",
+    "sha256": "ebe2ef2723e5e9b5edb516e4c645867bfa435e137ab27038773b2a833c38ecfd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10195,
+    "last": 10199,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_of_shift0",
+    "sha256": "90e7af6f50db091e53fa05b4ccbf44ea9960f479cb480a1a729f8cb4928f6520"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10202,
+    "last": 10203,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi",
+    "sha256": "0f6cd09e8a360c7c1a2172452da6b07ce6e6990c320255de6478ece6d3ed4e3d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10205,
+    "last": 10215,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_shift0",
+    "sha256": "6dee29ecb0d0ddbc24d79b270aca182dae6f5922eac8530a87dc2c15561b8281"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10217,
+    "last": 10267,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.trans_step",
+    "sha256": "72427c95d21a511fa3dc0241d75743828d47fe51f8fa60198b76526a633a12fb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10269,
+    "last": 10287,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_shiftT",
+    "sha256": "234674099a68ababf12eddc92af58e581fe93c24058e4d8e41ad583cb3e32d3b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10289,
+    "last": 10299,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_left",
+    "sha256": "8a316871376bbd72975a78e8253aa7f04e652677313e3b1881f6a584c9e40c28"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10301,
+    "last": 10329,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_right",
+    "sha256": "a416dd0b2d11ed2fa27d1c885bb43404ba5905509f16e1a6b3bac26a6c946c4e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10332,
+    "last": 10333,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv",
+    "sha256": "d95d637d2cb1f83c78851248ec505807a1a96b2f725bd90c6570c498c75b2e02"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10335,
+    "last": 10359,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_shiftT",
+    "sha256": "c041f539a1b9450730309c3869a8baca7785ec84c1f891f60bbc726e77ce2609"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10361,
+    "last": 10366,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.update_shift_succ",
+    "sha256": "5d10e1cab96b881fe7d644f9936d67cb296fcc79016d99f378dd1ac7393bcbad"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10368,
+    "last": 10381,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_update",
+    "sha256": "94c5e5e6b3a12bea9daac988871099e4b62a3aa05ce1559991229d4749f490c1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10383,
+    "last": 10387,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_update0",
+    "sha256": "debd97c764cb7446a18848d7ee8c229a1e47e7f26724f163861b95e40e6f7092"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10389,
+    "last": 10398,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_const",
+    "sha256": "337fe892766af446b13675107c50ac8d3494044226c276a67c479eeddcd9c43a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10400,
+    "last": 10404,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.coarseShift_sitex",
+    "sha256": "c69e73bbcd4e00b988887210502785aac0c21d8fa2062234bd541942ade82215"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10406,
+    "last": 10496,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.row_step",
+    "sha256": "1037cefd033d522f869b671671ce3d98f300a062f8b9f7a25ef5451a79a47cff"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10498,
+    "last": 10526,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.chain_zero",
+    "sha256": "fa4953e53032802e0de61aec987353fbbf171d23a5131e1a72a0961b19b1e2a6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10528,
+    "last": 10564,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_zero",
+    "sha256": "4232c118810604cb0961609639ced7de4527314d7ed9cdf332053b3989c05654"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10566,
+    "last": 10609,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_mem_NQp",
+    "sha256": "2ce87c3d8c93a3409b840456199d1153d9555e091551f1d3adb8b593edb0d60d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10611,
+    "last": 10648,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.A_eq_grad",
+    "sha256": "d43a9f1ea9743e9edded67734bca08a1b677d17324c21cb98fa78c35cb55b48f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10650,
+    "last": 10658,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_kernel",
+    "sha256": "e9e005485c3ebc5486fadc96336e2d2e38a664ae5cea90f22ad60e25afe839ff"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10688,
+    "last": 10709,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.flat_ginv_form_in",
+    "sha256": "446c86f9e63b5cef50143895de1df3b812fe9e837a62f887dfb1be2399a32b1a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10712,
+    "last": 10766,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos",
+    "sha256": "769e5370e4638a404688e6b79ca0f3ab8605c345e4797cc7e4557499ca79bb7c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10768,
+    "last": 10783,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_unit",
+    "sha256": "3067568efba4870b0759913985b0a88af8a7602b41ec681458aedaeb555b3bf4"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10808,
+    "last": 10808,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dilV",
+    "sha256": "54164ee65ac4e7f24465407d8d8c5b44c73291eaa6a0953fd4407ff64d7fd800"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10810,
+    "last": 10814,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dataFam_dil_zero",
+    "sha256": "a71494bd499322e2184f6947e2301f1f7b7a51eede4bef9b40d87467f4f5bc29"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10816,
+    "last": 10819,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_B0_unit",
+    "sha256": "158fdce01d51c721b2081d3f3358a1f184994e1f2f60227aff3c1fc58b2f94d0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10821,
+    "last": 10828,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_B0_psd",
+    "sha256": "bbb71009d30593434384053e1a794318b1ab89b6339505d26ca68e72d12a4f42"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10830,
+    "last": 10835,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_Qs0_inj",
+    "sha256": "73885671459d3f1c7e11c97914e735c81e8b08a2b8659b6bb50f1aa1b29b10d2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 10837,
+    "last": 10846,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_N0_unit",
+    "sha256": "bb4fe7babe7b866c61220bd4c83a308cefb1381aae87d235c5df61786eb23913"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11103,
+    "last": 11104,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.flatData",
+    "sha256": "4aa5ae4a1fa245886fbd71eb1470bc151583f3fd7375810305a080a34ad7845b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11107,
+    "last": 11109,
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling",
+    "sha256": "a394317be4bda42e21103680ac661e3342b4b0c5d7651df6348262f136452687"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11439,
+    "last": 11441,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkV",
+    "sha256": "2db61ca126624d11ea12a52f599d42b07ede261699bc15b1497f75def831c6c6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11443,
+    "last": 11454,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_link_contDiff",
+    "sha256": "63407f068a8f63f84dedf50ceb1ad0cfb489bcee50c185ce7b30952c3cf9797f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11456,
+    "last": 11458,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkV_smooth",
+    "sha256": "df42ab73ccd5eed94dc2e41a5979dcd91f8b2d7267a4498dcdc00dcc4d560deb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11460,
+    "last": 11462,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkV_contFam",
+    "sha256": "a162478422f21b6942064a71ccf3be764a17d11548c031d3bc21d731ba01106b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11466,
+    "last": 11470,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_zero",
+    "sha256": "2567882d44a83e4ad282d88b71c7b71fe9bdd0f9f32825a321cae525238ba683"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11472,
+    "last": 11478,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_dataFam_zero",
+    "sha256": "1fafd40b477727266676a239f6c8903584027d6c74da24bd1a53fb4f06ada8f3"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11480,
+    "last": 11484,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_dataFam_zero_eq",
+    "sha256": "8f7a11fcde5602e9be674fff53a3eb4c564acdc30bdab7545670cd3271e21c24"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11486,
+    "last": 11489,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkD_eq_dataFam",
+    "sha256": "2ea417f5eee0a67cd144b1694e862a12e073a1c2eb5a925c6b4336d83b87d818"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11498,
+    "last": 11500,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_LP0",
+    "sha256": "613d0bd58702c485a818222a4984fe30917e0255381c12da356511a489e1c960"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11502,
+    "last": 11506,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_Gam0",
+    "sha256": "d0eea54ebb4f34f1e8d22ba74af18f3e9c0673ea18c67e8e8078631ba606ea49"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11508,
+    "last": 11511,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_reg0",
+    "sha256": "0d839b30870efe5067aead9046c5efba250cf1e5df448f3bafe85b8af241a2cf"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11513,
+    "last": 11517,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_W_cont",
+    "sha256": "35d21e46c23f92e2545847533fa0fff20be038c34554ab818a03fd871eb6356e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11519,
+    "last": 11523,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_T_cont",
+    "sha256": "27ffa91990682668c1a79314582c79e931ce8aaf2196961565a2276ae080b0d7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11525,
+    "last": 11528,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_Q_cont",
+    "sha256": "31b58adb9ccd7c60968af94cfc87d16c78045ecd0853dd6d4ea209b29de8af3f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11530,
+    "last": 11536,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_carrier_cont",
+    "sha256": "018aef30f91e23145efaa170139677b27589314de45c9a2c1f771ce30c0d7b19"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11538,
+    "last": 11569,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_H_cont",
+    "sha256": "e00a705c0f125b7cce360bbad821e01dc520b3c6a1395d8bb4316ec37496d762"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11571,
+    "last": 11582,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_C2_tendsto",
+    "sha256": "0a8ea6f5f11cff92248dad7d4cd9863c16d3b45a3a492d1a05594be5411f26de"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11585,
+    "last": 11597,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_J_tendsto",
+    "sha256": "7c76ca94152e891769eea4697b6527299b60a0abca867d07bcfa9dd6bbb7eaee"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11600,
+    "last": 11613,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_exists_D1",
+    "sha256": "80d005853040a45ad94023e0dd90306ddb4fa8913357665a1586f12d693e5e70"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11616,
+    "last": 11619,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkD_zero",
+    "sha256": "b5027ccd7aa3bf81bd2d5c14c98ed367dbf87413c94a7c63a31a7f087becce62"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11623,
+    "last": 11634,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulk_hasDerivAt",
+    "sha256": "d8777379be401388d8d6d87cf8972dec473e8f69cfeb44ce9c1a8bfa6f454c55"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11638,
+    "last": 11640,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.corrDeriv",
+    "sha256": "6f94f0991cae676d3d73c6b3d8057507f9feb9da49932023ba154f1e132be9c9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11642,
+    "last": 11649,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.hasDerivAt_corrDeriv",
+    "sha256": "d263b5a1731d180c40c104dcf64790a64edb6a0049a18a4e7fde932e211aadfd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11653,
+    "last": 11660,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.interiorSoft_corrDeriv",
+    "sha256": "eeca93f69c0aa0d7a3b915374055e2a789498810d6e8a009cc9f4ae115fef6a9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11671,
+    "last": 11673,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.flat_loc_unit",
+    "sha256": "fdd8ffe8274160560116cec1ac6f807c5afe4ecbe077e9e33376a09236f5a29f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11790,
+    "last": 11795,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_smul",
+    "sha256": "bd763e3bac021cfe46de79ac941d6700f45578d971729c61bf5d9d0e06026059"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11797,
+    "last": 11810,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkD_smul",
+    "sha256": "4c303be5bd6b1ca3bbce1d3c03425b6ef5d7993969574a7d8c0cb862e24f57d5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11813,
+    "last": 11832,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.corrDeriv_smul",
+    "sha256": "18a86870a7d9a9d876b81a8b13b2be2c2386b228407ea41d42799d5288c53bf2"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11835,
+    "last": 11863,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.canonicalCoupling_smul",
+    "sha256": "ab55b69b2dc13dcef7037d43daab2815f620627a33cf28cf55032c119225740c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 11875,
+    "last": 11883,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.exists_profile_scale",
+    "sha256": "800d2b5d36abce7f8d5658052ae23c99ac6ac37a056661e4fc7cc825747eba35"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12077,
+    "last": 12083,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.CofinalAnyPathCoupling",
+    "sha256": "c6a354aeacc2e9e5663461f47a44e7c768276c17f7266eda076130c7a58dc2dd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12085,
+    "last": 12099,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.cofinalVacuumCoupling_of_anyPath",
+    "sha256": "b470df499cf34ec7198666f9caa78705df9d12c85b2bcf99fb5f9504cdb86eff"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12102,
+    "last": 12103,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.goalNeg2_of_cofinalAnyPathCoupling",
+    "sha256": "006f93e3f1c8476dd5703212d69112ae369d5563b3e486ba5fa2c490fb7d3b0f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12209,
+    "last": 12214,
+    "name": "AdalyFormal.Round10.Dictionary.half_rotation_matrix",
+    "sha256": "db2b5e8d3f2beadca8aefc20718609beed66a60b2dc41771eb368985982455d5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12237,
+    "last": 12240,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero",
+    "sha256": "2fd7a0b5a173cc03ef71055f634fee931c2873ae2dd9e0c84264e2218636d856"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12242,
+    "last": 12248,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul",
+    "sha256": "56f0770e143a028f4105c387a09a3287df819e5dd5115bb3cc77d7ea6b56c0d0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12250,
+    "last": 12252,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv",
+    "sha256": "2363560463814b4504fd70f5a40b14be40d0365da3702d871aa0877efcdca484"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12254,
+    "last": 12254,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase",
+    "sha256": "4120ee0d18e4b1fb4cfb23920ceb0c1c406e39ea7d9dd054073ee1abacc9ee59"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12256,
+    "last": 12258,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation",
+    "sha256": "1009dbf0c9c55b4b02e10750477f86cc6f82f983e946116380e70c0207265342"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12260,
+    "last": 12263,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase",
+    "sha256": "c614c199281c3964bd2b4ff368e7642666a61db03204fae6cbdfe3f74e6533de"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12265,
+    "last": 12265,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag",
+    "sha256": "69e539fbfff47df1f70f2ce98b3891aff28735353b3b90e4c39d9f2474abe52d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12267,
+    "last": 12269,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero",
+    "sha256": "f66e252aaa82bb00b44e0cfbecc54c45a81a8432a36e9754498a18c7fbd9ab5c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12271,
+    "last": 12278,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.im_phase",
+    "sha256": "2e077b5f97f76930c8f30cee9fe7f7225a3ad124596ebbb336fee35cb218c3ba"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12280,
+    "last": 12281,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace",
+    "sha256": "274713ae7d193a7c61e14472d9153a6294c727c930c76ba59604e739ee8eaa2a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12283,
+    "last": 12285,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg",
+    "sha256": "14f3815e544dc660b1bb3cfb9d41a113550bc5001e77576da4967d98e550dcbd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12287,
+    "last": 12289,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub",
+    "sha256": "e2d4ce4aad0860ae6a053a40bf960492f4a9fa124a0776656ec488e05c1603fc"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12291,
+    "last": 12299,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag",
+    "sha256": "980fee0684a91688928e3e724a82bca6c0197d324aa1f637c10c131242e3dd3a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12302,
+    "last": 12307,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented",
+    "sha256": "95673468950bdbfbfa1d6eb0cd5a9e199e405bc7fd1911200bdd0948a8264dab"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12309,
+    "last": 12310,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv",
+    "sha256": "dbee22312708938020340641fc4b58b73e6263d7feaa6ada0575deba5e74c581"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12312,
+    "last": 12313,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar",
+    "sha256": "81eca81bd511592c868bffc59d070a6c717fd81cc6f112598ccb206f5022b522"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12315,
+    "last": 12316,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar",
+    "sha256": "efcc057847352c9e3519ae45c2de5cef82bcaebda016d772d795d9f8321834e3"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12318,
+    "last": 12326,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase",
+    "sha256": "722e3873ecbe1e23ddc72eb97322a023d320844944c0f78944f03767cea4bc96"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12328,
+    "last": 12333,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase",
+    "sha256": "e5d16b816f23d16fae543cdba7ec46196554d569a458c5b34bac515f16fd6d48"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12335,
+    "last": 12338,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum",
+    "sha256": "9d13e688da633d96c29b1803331911499c4993c62dfb717886d07457cece9883"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12340,
+    "last": 12347,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase",
+    "sha256": "caf4da416bde3516091f426cb00ea2cbe4bda0a0f466a2ed41a859824fe084c9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12350,
+    "last": 12357,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase",
+    "sha256": "1d9b2bb6a51f486f305d784543ba0b0d2b984c154d4d000a68c31d82f8372f21"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12359,
+    "last": 12362,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul",
+    "sha256": "cfd5b8d851f7ea82adcf59e650af83d67c4e4c96170b78ee2c3b24f309048714"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12364,
+    "last": 12379,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt",
+    "sha256": "0170d00aa590264bd0b0ed7fae9930e0aa745d9593dba58a75ce4fac3e9da884"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12381,
+    "last": 12391,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt",
+    "sha256": "c24c08e84082b7f62c451623161edf2f43f8bbc3a9e46b91d38d5a3193649ad0"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12394,
+    "last": 12395,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear",
+    "sha256": "2fe02c9d5030abe7d8fbece28d1ca1016c0afebf4a6a2b87ec835a663df875a3"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12397,
+    "last": 12404,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt",
+    "sha256": "9a5bf1c82ed91d210eb7906cca01b089a8eda0ad8e24ac4b4bee19146012773c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12406,
+    "last": 12414,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero",
+    "sha256": "f1ddc630e2f123add92fbfef08650acbf43faf836e769b6a0ddcea378bbed027"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12417,
+    "last": 12421,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero",
+    "sha256": "01b4ab318f7d068cc053e4533082359ae35d12297f278bdaf2b1b0184fedcc4a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12423,
+    "last": 12427,
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto",
+    "sha256": "b1a862956c7ffd76814f7ead96669661d0155097e36497e45ad1827581d7e494"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12476,
+    "last": 12476,
+    "name": "AdalyFormal.Round10.Dictionary.KKT.N",
+    "sha256": "a14ea11ab58e67bf77590c096911e2eb3b4889a8cd52f59fe1cf7db5c0bd6971"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12613,
+    "last": 12619,
+    "name": "AdalyFormal.Round10.Dictionary.Source.flatH_U1",
+    "sha256": "3a6fe74243699194b223b103d6f283673d51b2fd2e926c0fda513ac77dd56c12"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12636,
+    "last": 12636,
+    "name": "AdalyFormal.Round10.Dictionary.Source.neutralCoord",
+    "sha256": "e490989fe7f6d9366a405f393e34b505f52b3bbfe8d3803da4a18991c47d43e3"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12638,
+    "last": 12648,
+    "name": "AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag",
+    "sha256": "9a8c1a09e6f525ede903426e46833dff6e08a7e51c84c8e461f06e7695c7ed43"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12650,
+    "last": 12662,
+    "name": "AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed",
+    "sha256": "dbcb865a563567b3100a9aac9baeb1a252ca79d202c49b48ef43ea7fefb7c659"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12691,
+    "last": 12693,
+    "name": "AdalyFormal.Round10.Dictionary.Source.vacJet",
+    "sha256": "0dfd0783aa29eb0818637d50763a0ff9d03cea235b8bacea525ad0a73eca65cd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12761,
+    "last": 12764,
+    "name": "AdalyFormal.Round10.Dictionary.Source.interiorProfile",
+    "sha256": "e2dcafba50dabd07b5d583f34204a318d3976a2a59120ed872d39eeddf2ee879"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12766,
+    "last": 12773,
+    "name": "AdalyFormal.Round10.Dictionary.Source.bulkU_phase",
+    "sha256": "4332a69d2f3709d14b84c3b4a0c8fa3b26be4f21539c1bc5dbb78aaa29d95384"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12775,
+    "last": 12777,
+    "name": "AdalyFormal.Round10.Dictionary.Source.profileSourceStencil",
+    "sha256": "0c7f466b77dadd220485b64c331bb228d0df696a73cab8b86357c4f2f0323f62"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12780,
+    "last": 12789,
+    "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto",
+    "sha256": "3da3de62b3d1936f13c61f9338cd443c7e23bb5b20866318d372a4b00f397bfd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12791,
+    "last": 12805,
+    "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_zero",
+    "sha256": "150f785c2108eee9359bcbfff1ba0594b53fdccf270082ce6bc99478ac1e3d23"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 12941,
+    "last": 12941,
+    "name": "AdalyFormal.Round10.Nonvanishing.left",
+    "sha256": "1c9efa8f727ec27c55bd12cd1ba61ad293f9641fd9acae342ca0b294037e5bcb"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 13748,
+    "last": 13755,
+    "name": "AdalyFormal.Round10.Assembly.R2.KernelLine",
+    "sha256": "b8ee98e3be94a12bc4d9abd74998556aed9b6e3e644900c193b7e169b8055cbd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 13962,
+    "last": 13967,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward",
+    "sha256": "c45ff0ad1d61869be7efa0f9696785d88dbfb2cd92691c3def8645d270a7ba94"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 13969,
+    "last": 13972,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff",
+    "sha256": "f6f3e869b70a74ab443507d91d49da59352bd1b5d874fcb695ef4f91169dc994"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 13974,
+    "last": 13979,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs",
+    "sha256": "16ce7575dc63109535e635faee9d871e8012f799ca3b5464cc8514451d3e5e0a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 13981,
+    "last": 13984,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag",
+    "sha256": "d67ed15b26082b7d91b67debc4d50bb9bbd8d33091894943d03636b596d058c5"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 13986,
+    "last": 14006,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum",
+    "sha256": "a37eb2f832f2ca70e8deba5ef2d5935b776244979d6ec842ecb329657a721e7e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14008,
+    "last": 14022,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point",
+    "sha256": "38b4f34b92afef339fe20b58e2eceb3a652b14950f69db40ae438a9878baf98d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14025,
+    "last": 14031,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp",
+    "sha256": "b9f9a20310d33e8455a6dcf4ca70ffcf2d5dfda537d402136ecfce73be907585"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14038,
+    "last": 14039,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy",
+    "sha256": "37b9f5a542f6a07419c996d3de1c9e8442eb7b9de31d7157d05ca9ebef8c7818"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14046,
+    "last": 14050,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg",
+    "sha256": "3ea2c863ea16692c6813f6eb2d62f45dbbe7ceb64529bd845858d5e69e2d0c32"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14052,
+    "last": 14064,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff",
+    "sha256": "15d67ea4e6597944e333d3156927d2f54bfcef94a6ca15fd598719b0d4d1529d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14066,
+    "last": 14071,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff",
+    "sha256": "8deea0cb1f4aec926feffd00759ac040f9900fe07557730f63c0b99653daca36"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14073,
+    "last": 14073,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate",
+    "sha256": "4bd3daf88e99a257bc8f62f07562007913c4bfb37e9e38d665404adb3b5e9465"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14076,
+    "last": 14087,
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear",
+    "sha256": "8a55d46433a5d09bd309d6f562303ecaa813f09fbceddbbc4f68804375b15d07"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14132,
+    "last": 14139,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary",
+    "sha256": "c87824059a6b3a9f3f2f4a558477f923fc000d16f6200069ad957297c722776c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14142,
+    "last": 14153,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile",
+    "sha256": "173c84acd208a2413feba96743c3b73d8ddb19ffe9cd795374ed68338dfdc446"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14156,
+    "last": 14159,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile",
+    "sha256": "dd79251bb040e7ea7f95b2e2ab1072f45b6ee55fc8ea395c525bbc185a5e61c8"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14162,
+    "last": 14163,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling",
+    "sha256": "24171612559eb87e8043fa4cb267733e5001ef3be19f2f8e4cf5949885ae9f04"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14167,
+    "last": 14181,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl",
+    "sha256": "ca30a8ad2d336944f542784d397ccb0bbcf1f083b2e239e3840ee9b3e723c4c9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14184,
+    "last": 14188,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy",
+    "sha256": "a91ccabff4c12a661376efdfec1bad8ddfa74566aaac223bec7d2e6639dbc3b7"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14196,
+    "last": 14197,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected",
+    "sha256": "288669eedaf9d2b35d90b2d5a6063493c42c2905243b065d54f9183a7aaa5f2f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14199,
+    "last": 14202,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff",
+    "sha256": "7b9275c832df5b68a8384f8bdb78ddb457df63908f9ef35ab3d1b795e8e12eff"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14205,
+    "last": 14225,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected",
+    "sha256": "c18370856dd8ac76a9fd2b46f20334666a996b975b8d34c56465a8b265acb858"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14333,
+    "last": 14334,
+    "name": "AdalyFormal.Round10.Assembly.R3.responseField",
+    "sha256": "4ea7a5138988f10df3194154cb45509f2588eeaaf38d1957fbd093052b87962a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14343,
+    "last": 14345,
+    "name": "AdalyFormal.Round10.Assembly.R3.responseProfile",
+    "sha256": "92ca06d5817f36eb888b0fadfd224a6d4eb63ba1d7965dae3ce8d6dfd9cd9c0c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14420,
+    "last": 14422,
+    "name": "AdalyFormal.Round10.Assembly.R3.profileData",
+    "sha256": "83a770b811a791ca54e89475b78d3e38375e0cf395caba148dee44c24609b359"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14425,
+    "last": 14429,
+    "name": "AdalyFormal.Round10.Assembly.R3.ProfileRegular",
+    "sha256": "415b6bad52167829f305d2361ecc832882871d9f158eba6868714ed1567bec34"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14431,
+    "last": 14433,
+    "name": "AdalyFormal.Round10.Assembly.R3.RegularityFacts",
+    "sha256": "b84588a20d78265d684785143b318247bb3520f0cd7719c5f1c9bfed6a9e732f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14436,
+    "last": 14446,
+    "name": "AdalyFormal.Round10.Assembly.R3.bulkD_zero_source",
+    "sha256": "18ba57501ed42fc7f987949d39a423e9ac0bf68b6cea6d7a9de86c40acf7ba21"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14448,
+    "last": 14455,
+    "name": "AdalyFormal.Round10.Assembly.R3.bulkData_zero",
+    "sha256": "797935679ad3bf307045df326b330ca14df49230a389f2931df6f245a9229843"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14459,
+    "last": 14475,
+    "name": "AdalyFormal.Round10.Assembly.R3.corrDeriv_profile_form",
+    "sha256": "feebf700d631ed47b668dcd8f05a7cd436e539a30774a54d858d7c750302bdfa"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14498,
+    "last": 14504,
+    "name": "AdalyFormal.Round10.Assembly.R3.CofinalAnyPathCurlLine",
+    "sha256": "1cf0fee2650ebaa8a8e8ce46e92b2591a36fa030cd9ec7dd20e74b6487865a9f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14812,
+    "last": 14813,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.cube",
+    "sha256": "4bcf8bb0ae952eca9e23ef38f78d798d21b7129dfab02e5d0dd139532217da90"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14816,
+    "last": 14817,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.mkS",
+    "sha256": "becf7608337906c3443473ca8b052575b222e5a593e9e13bd84f31e40b61518f"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14819,
+    "last": 14819,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val",
+    "sha256": "4a89bafe92bfd38ddab0296fcd1d0afe2794310d77e4a006986ad97d0eedcb87"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14821,
+    "last": 14821,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val0",
+    "sha256": "857776eab2f8e1895a36918c766b384115e39f5fbbd8ae92ab7a8603b76b0cce"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14823,
+    "last": 14823,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val1",
+    "sha256": "af89d098be065c3431c706cdae33e1bdd3d81674a97fb59fe5bdd39e48e8daf6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14825,
+    "last": 14825,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_val2",
+    "sha256": "769a3f9bb957a46111bd06b46896d880bda136935eaf8dbf1fab668b1b4b527e"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14827,
+    "last": 14834,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_eta",
+    "sha256": "ee31db2e0e6507956863ede01cb60572b2dee096e6153ece17ce11f5493a7968"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14836,
+    "last": 14838,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.shift_val_self",
+    "sha256": "a5342d70b5839a58635afca96dab08ac2d8695d14c188f5523fdfbbf0c57eeb6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14840,
+    "last": 14842,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.shift_val_ne",
+    "sha256": "ac74a72ed111dd92be05efaee39a7e0137245dfebf0966c854166655a9e73bde"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14844,
+    "last": 14851,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.shift_mkS1",
+    "sha256": "ae1429590968a00d46d970f731b297e5c69dd2b5fb7b597742c9002d964a163b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14853,
+    "last": 14865,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.mkS_mem_block",
+    "sha256": "d3a04cae762dd85b9a7094c2af757db6f9e828a5dae4f1da5b0cc960ce34044c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 14867,
+    "last": 14904,
+    "name": "AdalyFormal.Round10.Nonvanishing.Coordinate.sum_block_eq_cube",
+    "sha256": "0220bdcb8b0c1480f2c7ffbcff022b06c692b6db68a8b5b0577f72f5da8fa71c"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15152,
+    "last": 15152,
+    "name": "AdalyFormal.Round10.Nonvanishing.DilatedFlux.L",
+    "sha256": "e22522e64d784b63a0b27e96b5c88e9bc1e2173b354886693d08cfee5e1c44b6"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15153,
+    "last": 15153,
+    "name": "AdalyFormal.Round10.Nonvanishing.DilatedFlux.G",
+    "sha256": "7dc0c1958123b5b963b07ee70138c630f433209297140f323584b1c581e11fde"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15154,
+    "last": 15154,
+    "name": "AdalyFormal.Round10.Nonvanishing.DilatedFlux.blockCount",
+    "sha256": "dc0153dad48ba2c0ce46f1c636fc050042a7e930410f1ecce5cd0f451460aa21"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15479,
+    "last": 15483,
+    "name": "AdalyFormal.Round10.Assembly.R3.regularityFacts",
+    "sha256": "06c454ec4e70058b29d83db77e69dd0b787b48b876c7d6032a9dff34dafa9bcc"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15539,
+    "last": 15540,
+    "name": "AdalyFormal.Round10.Assembly.R4.responseHull",
+    "sha256": "ed26ec5074b85c4d265f039952a58062f7331ff50d58acf575cd243256ac24d4"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15542,
+    "last": 15550,
+    "name": "AdalyFormal.Round10.Assembly.R4.separator_of_notMem_responseHull",
+    "sha256": "99664100379ec6beea0d30ea9647433700826ba0a2ed760d702d7c29fedd55dd"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15552,
+    "last": 15565,
+    "name": "AdalyFormal.Round10.Assembly.R4.notMem_responseHull_of_separator",
+    "sha256": "0ac6853e056a7544b781b55bfac24f3fa564f1003d32c0cb4f266d7481f6d0f9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15567,
+    "last": 15590,
+    "name": "AdalyFormal.Round10.Assembly.R4.norm_square_lower_of_unit_lower",
+    "sha256": "94f41e9e75c7e23cee190363a15d361c1826a0267976949b61d635ae8ada4eec"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15592,
+    "last": 15604,
+    "name": "AdalyFormal.Round10.Assembly.R4.common_coercive_iff_notMem_responseHull",
+    "sha256": "da3cc4a54bd24f273ffe67f2c86e5444e995b895cb9ac426fe5f9d73856a7492"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15647,
+    "last": 15647,
+    "name": "AdalyFormal.Round10.Assembly.R4.ProfileSpace",
+    "sha256": "b9ddf414cc12b11839207f1518695c3031b2272bae7e8452c98506fbf550bf5a"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15650,
+    "last": 15652,
+    "name": "AdalyFormal.Round10.Assembly.R4.responseGradient",
+    "sha256": "d486929a8d8cf0157f9ffa173991bcde7c283ad547cbabb3890081d4edb272f9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15654,
+    "last": 15673,
+    "name": "AdalyFormal.Round10.Assembly.R4.profileCoupling_gradient",
+    "sha256": "9bf28a8aa77a201a995f4ff1afc6d4c9841069a52323a92719c10d11cfd40263"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15675,
+    "last": 15678,
+    "name": "AdalyFormal.Round10.Assembly.R4.double_inner_smul",
+    "sha256": "3355c70d366db46c48b095d313b0381448d3b6127f851c9f2514277889093e37"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15680,
+    "last": 15688,
+    "name": "AdalyFormal.Round10.Assembly.R4.profileCoupling_smul_input",
+    "sha256": "4d75312a7ca5c5f48be94c9626330d4b8720915b1d5e727bf6ac272df39a798b"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15690,
+    "last": 15695,
+    "name": "AdalyFormal.Round10.Assembly.R4.responseGradient_smul",
+    "sha256": "dc4ce53a823b39a2e73763756af01e26b59bb5b81c126f991994e5c6212d5c61"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15698,
+    "last": 15699,
+    "name": "AdalyFormal.Round10.Assembly.R4.crossingKernel",
+    "sha256": "12e36bd3cc4f848480c344406163a61095af59d77f8726f7e7afed96f0c7b508"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15703,
+    "last": 15705,
+    "name": "AdalyFormal.Round10.Assembly.R4.NoResponseCancellation",
+    "sha256": "f0e57a2e9a3bc618bb083197b5e30f871b2234b7129936e7b26c087d9866ed15"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15707,
+    "last": 15727,
+    "name": "AdalyFormal.Round10.Assembly.R4.exists_positive_profile_iff_noCancellation",
+    "sha256": "5ef2e59cb37a8caa6c797a125e07a8448a271ef4cb17a2c0fe88efeabb2d72ad"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15729,
+    "last": 15734,
+    "name": "AdalyFormal.Round10.Assembly.R4.profileCoupling_neg_profile",
+    "sha256": "18bffc55decadffa11e4e411ad239d02aa473253d9dd54536881a008fc4b1f77"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15738,
+    "last": 15756,
+    "name": "AdalyFormal.Round10.Assembly.R4.exists_canonicalCoupling_iff_noCancellation",
+    "sha256": "e12f5e6bfb882d88d773218677994fb2c7742527f224e05fe4a052133d171403"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15799,
+    "last": 15809,
+    "name": "AdalyFormal.Round10.Assembly.R4.responseGradient_ne_zero_iff",
+    "sha256": "08598ff8cd50a7dd95b0e2a1477305c1c102c02b2776229b46cfd970aadad96d"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15825,
+    "last": 15831,
+    "name": "AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation",
+    "sha256": "a767bc0e4227c34b74f1e0ef2bbc75cedf6990b0689ff10733fbbc6b30786c46"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15851,
+    "last": 15867,
+    "name": "AdalyFormal.Round10.Assembly.R4.cofinalAnyPathCoupling_iff_noCancellation",
+    "sha256": "36b3293b67a656ee41f2d04b317d12645cf39c515c0cf773097d3cdc3deebad9"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15900,
+    "last": 15903,
+    "name": "AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation",
+    "sha256": "cd22119813853e88dd67a52438ef7e1c66d28b42f0156440d603c40de78d17a1"
+  },
+  {
+    "source": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "first": 15933,
+    "last": 15944,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed",
+    "sha256": "e4c2900a06c078d9aeb61bfbdaf9454518b2e7c19c99d55d7c7abfcfed4b51f9"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1390,
+    "last": 1396,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.sourceLinear_U1",
+    "sha256": "22904e6558eb04bf7e10c6550b8ba31817fd66202f1567007c6424571648a9a1"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1399,
+    "last": 1403,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileSource_U1",
+    "sha256": "41ffeb6838ac2f8f3d6961ef781f80c509718bf1649af7117af97c0b7bdb8599"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1406,
+    "last": 1420,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_U1",
+    "sha256": "9c5b2b6edc27b38ed63a456a5d90651b74850b83f4260380e1b7f67947c2fec6"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1509,
+    "last": 1510,
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseField",
+    "sha256": "fe8fb881f01b192c0b4ba1622875b96ec0836fa045729c4dda080d1d3f097bfe"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1604,
+    "last": 1624,
+    "name": "AdalyFormal.Round12.Kernel.Response.quadratic_on_charged_line",
+    "sha256": "dbcf722e03e90646f23fad5d764dd03886437aee9ac0903ac842ecfc9e980edd"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1627,
+    "last": 1638,
+    "name": "AdalyFormal.Round12.Kernel.Response.norm_sq_on_charged_line",
+    "sha256": "0aea9d9e99b67683014fa1a3ae17a1670752944486da99841b4fe5a5ce14d77c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1641,
+    "last": 1649,
+    "name": "AdalyFormal.Round12.Kernel.Response.response_eq_norm_ratio",
+    "sha256": "65555bd772ee955b7739c4754f7178b71284e0ef7cf72d831318f4fbeeb93360"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1981,
+    "last": 1983,
+    "name": "AdalyFormal.Round12.Kernel.ResponseActual.double_inner_linear",
+    "sha256": "88c9976ffbb9f95e6ae0f4cf8ebbb97f4dbc4bd8d1bade2b4861bac134ee858a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 1986,
+    "last": 2000,
+    "name": "AdalyFormal.Round12.Kernel.ResponseActual.profileCoupling_quad",
+    "sha256": "d315ed7991a8a33d1be4117abcc884edee1f0e285b6ef2accc4b45de1cb7ea45"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2004,
+    "last": 2018,
+    "name": "AdalyFormal.Round12.Kernel.ResponseActual.responseGradient_on_line",
+    "sha256": "f48d5a2d178ead0fb7e8874a9ad8fa45aa412fbad8002e475c19515a0d33c6ea"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2022,
+    "last": 2043,
+    "name": "AdalyFormal.Round12.Kernel.ResponseActual.responseHull_singleton",
+    "sha256": "25d0a465353a8a80d42a33ff59f1fd4a162ac873afc0d94813b728aa45603178"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2047,
+    "last": 2055,
+    "name": "AdalyFormal.Round12.Kernel.ResponseActual.noCancellation_iff_curlDetected_of_kernelLine",
+    "sha256": "b80fecb197e8eba128fe144fd197fd1e2458d4465773225315109a9720916f39"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2088,
+    "last": 2095,
+    "name": "AdalyFormal.Round12.Kernel.ResponseActual.cofinal_noCancellation_of_curlLine",
+    "sha256": "a162e692640b6ab22beacb688bfa6a0e0545eedf81dbe57005e5fa055507bc0c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2148,
+    "last": 2188,
+    "name": "AdalyFormal.Round10.Dictionary.Ginv_all_gauge",
+    "sha256": "1e265e3b39b2a4e0c9695e93891e1b1b21d0586f41d01365eb2c40fa0957e77a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2251,
+    "last": 2271,
+    "name": "AdalyFormal.Round12.Kernel.charged_span_finrank",
+    "sha256": "2e7ec0bf145bbc265c73a0120e046e7e89f7699a1d7620635ab764cd2c5a94b7"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2275,
+    "last": 2292,
+    "name": "AdalyFormal.Round12.Kernel.kernel_eq_charged_span",
+    "sha256": "d60ae42f71cfe513dafb772780650770133e2c59c88ef44cfaefe78666376193"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2296,
+    "last": 2311,
+    "name": "AdalyFormal.Round12.Kernel.boundary_observable_injective",
+    "sha256": "acd3f117fa47e2e561841fbd5a9cfd1d03d8c161e20fc10dbd4112b8c8ea8838"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2315,
+    "last": 2320,
+    "name": "AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary",
+    "sha256": "7456219e6ae96e27c870c1a5600650ec99151abb8b6e2915e78a853208d678e6"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2324,
+    "last": 2336,
+    "name": "AdalyFormal.Round12.Kernel.charged_of_boundary",
+    "sha256": "c7ac3f9883ea048980cd901202332e7d8a403e72378c0aa7e70d57982a39a362"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2340,
+    "last": 2347,
+    "name": "AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary",
+    "sha256": "8cb62579aa5b22150abdf566a3203c3fc82039ff71b49b4d5914aabc99df468f"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2458,
+    "last": 2464,
+    "name": "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate",
+    "sha256": "b21f9e1092f7c9f96c725a8bfa7ba30cd56e9d8f7ad391ad0f53ce7719e6c334"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2466,
+    "last": 2480,
+    "name": "AdalyFormal.Round12.Kernel.Actual.vacA_rot_of_fixed",
+    "sha256": "38ce55e656b0811e244fe2b6895c8f258970b0b5b8b302b2269d1df71cff33ee"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2482,
+    "last": 2490,
+    "name": "AdalyFormal.Round12.Kernel.Actual.u\u03b8_add",
+    "sha256": "9e3003c88a7d91d3752a4fdd72952c5d431791fe2cedb298a4cdcee4678c6652"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2493,
+    "last": 2509,
+    "name": "AdalyFormal.Round12.Kernel.Actual.chargedCoordinate_quarter_twice",
+    "sha256": "d124b8d261c97dd975e591ee0193beb7d38be8ea396e6eb7fcbbcf807a9f6d3a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2513,
+    "last": 2536,
+    "name": "AdalyFormal.Round12.Kernel.Actual.kernelLine_of_boundary_positive",
+    "sha256": "371046190db53140ff4f5cbf461afe506849acf052a38e1932f24efa813f1c05"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2540,
+    "last": 2561,
+    "name": "AdalyFormal.Round12.Kernel.Actual.kernelLine_finrank",
+    "sha256": "5077decd98601a98bd570c5065e572c2f6db563c10433d33329c3bfa5c5691f5"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2674,
+    "last": 2754,
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge_singular_without_isolation",
+    "sha256": "b51cf779134d5c56585b04ef3c224d96b4aaf6cb66facd186b02b00035936915"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2768,
+    "last": 2782,
+    "name": "AdalyFormal.Round12.Kernel.Crossing.psdEdge_same_after_negative",
+    "sha256": "19e0a509c33baf789f393c6b6f51de4de94b61e5e4799cf788a13cb9a9af65eb"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2785,
+    "last": 2794,
+    "name": "AdalyFormal.Round12.Kernel.Crossing.exists_kernel_of_nonunit",
+    "sha256": "05993e417630c95599efa31301eba40f795cd310d459579ac8e818e5923eacef"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2819,
+    "last": 2844,
+    "name": "AdalyFormal.Round12.Kernel.CrossingActual.kernelLine_exists_before_halfpi",
+    "sha256": "1d56498b9f492321a6506e9158f0ed7614f191271f496edca997f4fcc77ca692"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2902,
+    "last": 2903,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starLinks",
+    "sha256": "9744b7ce6138e6b06d51d5b92c63f27892843b2035f9c725d69ed92e994c4fa2"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2905,
+    "last": 2908,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starPath",
+    "sha256": "8ca45641d7020a9b4d57e8f978533675a63b1bc57654caeca5f7a714395f8fb8"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2910,
+    "last": 2912,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starPath_zero",
+    "sha256": "62e86819f18b9c0a385c2619a228b7ed50fb56b46b19ba9f3d9846e926709ef9"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2914,
+    "last": 2923,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starPath_cont",
+    "sha256": "8461e1a959bb745e8fabfc5cbb066d7be9bfb98b958f3b3b8ea22b47b7ad38d2"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2925,
+    "last": 2933,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starPath_an",
+    "sha256": "8ba52a7f7e7d3421da400f34a1a9b37c59a7c008eb9e082909366e9acebd6515"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2935,
+    "last": 2943,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starLinks_exterior",
+    "sha256": "e170f1f2b4f1109a543dd0ca8a7c6ac4a53a1862d07a7963b35cea4c70b08932"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2945,
+    "last": 2950,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starPath_off_exterior",
+    "sha256": "dd8418979555b00c16d984b1c790c676a17688b2ad193d6dbf65e0ac810e89c7"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2952,
+    "last": 2957,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starPath_interior",
+    "sha256": "dbbf76e695c554be84e3299fd4e4e18f00f1f93b9f1479f32036506aa1590dc3"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2959,
+    "last": 2960,
+    "name": "AdalyFormal.Round12.Noncancel.Path.starPath_normal",
+    "sha256": "2ecefb9d4adfb8716a936d2036b70c6f13dd8f5208bedf99ffa9418618f3fea5"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2963,
+    "last": 2976,
+    "name": "AdalyFormal.Round12.Noncancel.Path.star_holonomy1",
+    "sha256": "0e4587f8a0f21cdb320f282f1a9e6d265ec2be7e83306b5ac52552fcab2f5a68"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 2978,
+    "last": 2996,
+    "name": "AdalyFormal.Round12.Noncancel.Path.star_holonomy2",
+    "sha256": "a6cff23ecb040608febde803bd70c42289a4d5809b00508ab5c610a4bf7f0f48"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3000,
+    "last": 3043,
+    "name": "AdalyFormal.Round12.Noncancel.Path.star_negative_endpoint",
+    "sha256": "d2742a1d6021b58c69d23cc0398017eb215416d91949874d03343d0646e467f8"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3251,
+    "last": 3253,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar",
+    "sha256": "2a78c902ac759fff657afd65a920a68d8b9f1b6ff59fb85d89aa0b351980cd0f"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3255,
+    "last": 3256,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_zero",
+    "sha256": "5ba5e9d3f69de60aaa2104b06bf9ef3ace609008e3723f9c3c05e045cc71f9a1"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3258,
+    "last": 3259,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_cont",
+    "sha256": "e99e4f56f4254ed9f3769e5cf996ab76af6f18e2770e42dce0b25ad513c236fe"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3261,
+    "last": 3262,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_an",
+    "sha256": "7d6c4cd27db3e927dfad0afe6828f17e5c28688c62519a0098b27c7f4ac5b2f9"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3264,
+    "last": 3268,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior",
+    "sha256": "c857eba023f55d8396f39605b3c2b2a47a5ffe4abc563919984894a1f9dfd8ea"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3271,
+    "last": 3279,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.pathU_rightStar",
+    "sha256": "aa6c7495b2187ad957deebfc13d3d8b7101115e470d1c52ebdfa4b0a52a18587"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3291,
+    "last": 3298,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar",
+    "sha256": "5eda4c9d3448d0243bdc401897de5a042c5dec75ac6de2950134efc97adefdbd"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3301,
+    "last": 3306,
+    "name": "AdalyFormal.Round12.Noncancel.RightFamily.rightStar_negative",
+    "sha256": "2105f1f49bd07e22eab6595a2cb0338eafc47ca120d2c9b0babc4fd18b1b33a1"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3354,
+    "last": 3359,
+    "name": "AdalyFormal.Round12.Noncancel.Gauge.u\u03b8_comm",
+    "sha256": "53f9228e9ce74e0e22158d951a1529f19d130611d5ff924d0409e1b25684d5c1"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3361,
+    "last": 3369,
+    "name": "AdalyFormal.Round12.Noncancel.Gauge.starPath_fixed",
+    "sha256": "ce64309d9a5007ad3dbea3cda47b876653c15f2bb650f164a2f362d301743955"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3392,
+    "last": 3395,
+    "name": "AdalyFormal.Round13.Assembly.R1.P1",
+    "sha256": "4c8df81a376ce9663665c68d1169823949d5f6d2de4b5212cbfb2bd4c3d7068b"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3397,
+    "last": 3403,
+    "name": "AdalyFormal.Round13.Assembly.R1.P2",
+    "sha256": "784142c8b7fb0f4cc175e0211237d7f74ea5b7e2d9357a107966ca9cf779dfd7"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3405,
+    "last": 3408,
+    "name": "AdalyFormal.Round13.Assembly.R1.P3",
+    "sha256": "123231852042a3700dbfbabe958c4e2a424acfada1b313ee2b0099dc4bff734a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3411,
+    "last": 3415,
+    "name": "AdalyFormal.Round13.Assembly.R1.StartInputs",
+    "sha256": "857e4ccec57ee6de022d5ad836a45dafbf84655bb6b4fd6caab4256e78e7e87c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3418,
+    "last": 3423,
+    "name": "AdalyFormal.Round13.Assembly.R1.CofinalRightStarCurlLine",
+    "sha256": "b3899c82584d1c0e4f813cc830ef3230f0ecb456788c3879e8db629984cfe7bc"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3426,
+    "last": 3428,
+    "name": "AdalyFormal.Round13.Assembly.R1.rightStar_fixed",
+    "sha256": "f5ca058a6c32829dbe3ccae23cdbbc4d07f73e25a10a14444e4b281be63776a8"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3431,
+    "last": 3445,
+    "name": "AdalyFormal.Round13.Assembly.R1.detected_line_of_physicalInputs",
+    "sha256": "b09e381ef81a012cd8ac8bb0feaaa234cfe777e53a91021a12b7ff2065ad4f46"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3448,
+    "last": 3458,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalRightStarCurlLine_of_physicalInputs",
+    "sha256": "bbadc382b623865bf3d4f318fdd0c22b6d2fce8306699a908ea48e39ff62b76d"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3462,
+    "last": 3471,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalAnyPathCurlLine_of_rightStar",
+    "sha256": "bf2f1c0dc9a9c1d96ebf1b9ec3062370e4993c9e3824838674dad080fcf5e345"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3474,
+    "last": 3477,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_rightStar",
+    "sha256": "f6ca29e7245c01fb8fd848979ff0092f9dcb295635858f139496cf83e0ddb271"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 3480,
+    "last": 3483,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_physicalInputs",
+    "sha256": "6d8b1a59498e691553b29d6be5558fe6842b3c84e418380dad2d01e478a6654a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4397,
+    "last": 4411,
+    "name": "AdalyFormal.Round13.Assembly.R1.rightStar_vacA_cont",
+    "sha256": "15a1920e0e41210205db91dabc4e2165e7deed764cd4b4890b236e3ab014b686"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4414,
+    "last": 4422,
+    "name": "AdalyFormal.Round13.Assembly.R1.rightStar_vacA_pd_zero",
+    "sha256": "799837fb1c51128560ef943c796d3908678256f4065188ec021127791e32560d"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4425,
+    "last": 4428,
+    "name": "AdalyFormal.Round13.Assembly.R1.startInputs",
+    "sha256": "b7d2a3c500c1c8e6ab871b16d9e304d5baf9fd723a7337b212e78b5a53a7471a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4432,
+    "last": 4434,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_P1_P2_P3",
+    "sha256": "1bae07c027a2a5ae7e53941e9a33df6f2943e7324f306b104141b20998033a59"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4438,
+    "last": 4449,
+    "name": "AdalyFormal.Round13.Assembly.R1.CofinalPhysicalInputs",
+    "sha256": "444523a862fbd1f9d887fb6f520209a16a64d7aec092ef0c2cae5313b5d4ca67"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4452,
+    "last": 4466,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalRightStarCurlLine_of_cofinalPhysical",
+    "sha256": "0add25ccb0b8766e10d6ead6c9933c5b6ada63d06c0d3c2c72fb9e383462f100"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4468,
+    "last": 4470,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_cofinalPhysical",
+    "sha256": "969ee9e9d33b0b74889220f4042c4c79b153ace6c15b2198273a8ca0b864e125"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4505,
+    "last": 4511,
+    "name": "AdalyFormal.Round12.Noncancel.Boundary.potential_zero_off_om1",
+    "sha256": "dc9628ff55b36ae0a921f1bedc9bd237912feba6d1a11036af8ea55afa2ad9af"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4515,
+    "last": 4527,
+    "name": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar",
+    "sha256": "052ce2f382917e87d251520b6ee928406cd2f28ecf70badc386c99d934300bff"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4531,
+    "last": 4537,
+    "name": "AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted",
+    "sha256": "50be59b9ce2cccbb0a3d086c6d9b32fbb6a3c8c2088d7b112dd9a8a491e32a4d"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4540,
+    "last": 4558,
+    "name": "AdalyFormal.Round12.Noncancel.Boundary.gradAdj_sing_support",
+    "sha256": "82b7d24ad38ad8332919dc794435b2e9aae95e0554d55490820c2a5bc1100d71"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4562,
+    "last": 4593,
+    "name": "AdalyFormal.Round12.Noncancel.Boundary.Tfull_sing_zero_near",
+    "sha256": "9c6736224d19258ff17b758fbd05e8dd56eb0555580c4c360a3c0f7986bbfbbb"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4595,
+    "last": 4608,
+    "name": "AdalyFormal.Round12.Noncancel.Boundary.Wop_sing_near",
+    "sha256": "1cd8f344cdcb117733619a12c1f36c1366cbcc4e879831ff0bea1f8da38c2f48"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4634,
+    "last": 4635,
+    "name": "AdalyFormal.Round12.Noncancel.Mass.rowZero",
+    "sha256": "2dd5fe7df0bd7b388c7bf3ac650001036b795cf7d8b86f2c290844731d4f83ca"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4637,
+    "last": 4642,
+    "name": "AdalyFormal.Round12.Noncancel.Mass.Qfull_rowZero",
+    "sha256": "968c17ed7ae05cc27bf9c13557db22ee299bea71bf68c50bc962a7fea35f736f"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4645,
+    "last": 4653,
+    "name": "AdalyFormal.Round12.Noncancel.Mass.collar_levelZero",
+    "sha256": "3367a9df81d8a0529f3fc6b233f17e3f09f3afc71b7e705ac01e64718576bf62"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4657,
+    "last": 4680,
+    "name": "AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le",
+    "sha256": "74d010e424599ec6653bd3d9f85916513a57c39fe5a94d133e1ba175e57f1da9"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4719,
+    "last": 4720,
+    "name": "AdalyFormal.Round12.Noncancel.Star.pairForm",
+    "sha256": "6616300276001e3b63b2d5c58561f15f03a7d7687c9cb4a767d0d8083a5e5da8"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4723,
+    "last": 4725,
+    "name": "AdalyFormal.Round12.Noncancel.Star.tripleForm",
+    "sha256": "f5e88742dfa34a9dae90d93cc7aa24d8072d6f801795ecd3f581dd779f3aacba"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4727,
+    "last": 4729,
+    "name": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_left",
+    "sha256": "8f6a7dfaf1d8ab1c5d39cf465a9bd5ec5c83a3ab008e27b03814f2c77f19e846"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4735,
+    "last": 4737,
+    "name": "AdalyFormal.Round12.Noncancel.Star.tripleForm_zero_right",
+    "sha256": "ce51f4085aa86d19479122064aeb435eb69e7f65ba80c0dd66801d7b689380a1"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4740,
+    "last": 4750,
+    "name": "AdalyFormal.Round12.Noncancel.Star.pair_completion",
+    "sha256": "0b3b5e416077303d8df107a992c4e7b97cdab259c9cb733fc96daf9a41e8b115"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4752,
+    "last": 4756,
+    "name": "AdalyFormal.Round12.Noncancel.Star.pair_mass_lower",
+    "sha256": "5a3bf610cd7546b2a740213ac8a5d89ecb815fcc97a9234b2d7bc34e57d81a32"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4893,
+    "last": 4893,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat",
+    "sha256": "4f8d224b399430faf0c12168ef9a4f186ec0f02f956c1102e72a929b7650c85b"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4894,
+    "last": 4894,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.realHol",
+    "sha256": "8b377a9cb22a669463ac368621841360a1fa60c975151bb4f6c20f047daa7f5d"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4895,
+    "last": 4895,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.imagHol",
+    "sha256": "4f347661532da68f561a96c6726dff15b91c89d393bc796f70d6fdf9537bbe29"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4897,
+    "last": 4899,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.chargedMat_add",
+    "sha256": "0577511d5c76ae44edf9881e84b2c95bdb1663c342ece8e35c12a5a66688946c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4905,
+    "last": 4911,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.charged_inner",
+    "sha256": "55b00b2c3a04a383cd9a6332efb2e763d493b7ccb98a6268b93495bcbb7632cc"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4913,
+    "last": 4918,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.first_atom",
+    "sha256": "ef22c0470457aa4e77ffedc4730daa20f455775f8e325861e3453ac069d44e15"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4920,
+    "last": 4927,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.comm_atom",
+    "sha256": "7e64e9542de51b85f3c30d775fd1af22e855f5e1ea1a16aa9cb8c9418b9d6ae9"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 4931,
+    "last": 4940,
+    "name": "AdalyFormal.Round12.Noncancel.Plaquette.curl_atoms",
+    "sha256": "6fbe5d060ebce8f6266e901b179752fdd6c025ec9bd834dd4b69f9e2453799ae"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5035,
+    "last": 5035,
+    "name": "AdalyFormal.Round13.Trial.Fine",
+    "sha256": "a7de0e5cd87d607a6c5a7518991e11c41e417cb30acf9e43bab1ec6d7c41bae4"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5037,
+    "last": 5040,
+    "name": "AdalyFormal.Round13.Trial.seven_le_side",
+    "sha256": "4c06ca86bacbd8ba2895769e0760965f4db12d3e973c435502ec63458db5670c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5043,
+    "last": 5045,
+    "name": "AdalyFormal.Round13.Trial.patchSite",
+    "sha256": "401fde179d0819f7c8880b102615fbcff22a99cee37bf929c3dac397574faa7f"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5047,
+    "last": 5055,
+    "name": "AdalyFormal.Round13.Trial.patchSite_injective",
+    "sha256": "4738ff656da1392bd56f21423aadf6e3b6fe06cb000434534c6bfa728236f1fc"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5057,
+    "last": 5063,
+    "name": "AdalyFormal.Round13.Trial.castLE_add_one",
+    "sha256": "ff6bd3ad65a6e1fce3b00f790a08ca061f801387333aa28e64911b0b9dc17ebd"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5065,
+    "last": 5075,
+    "name": "AdalyFormal.Round13.Trial.patchSite_shift",
+    "sha256": "60100bbd4245463dccd35a167f9e3791cebc47c3807e146d58e62de7675cee54"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5077,
+    "last": 5077,
+    "name": "AdalyFormal.Round13.Trial.centerCoord",
+    "sha256": "9b5bf3fd95f83730346d846e4714b9d528f54b8fbb511c609a6061afe03050d2"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5079,
+    "last": 5088,
+    "name": "AdalyFormal.Round13.Trial.patchSite_center",
+    "sha256": "911a4e50db4a7a2b3b4feee964cb3995195dc3fc26b648ee02e7f7e571ae5959"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5091,
+    "last": 5092,
+    "name": "AdalyFormal.Round13.Trial.trialCoord",
+    "sha256": "461f9f644433540a21cd139587c60027f4f30e32937cd6174ce6e490905c69c5"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5093,
+    "last": 5093,
+    "name": "AdalyFormal.Round13.Trial.trialDir",
+    "sha256": "0821bf8e84ab11c5806014c4d67297089499adc7b3c6a636a071687be452544d"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5094,
+    "last": 5095,
+    "name": "AdalyFormal.Round13.Trial.trialBond",
+    "sha256": "e1f28c81891c0220b21221e3d0c64bfab316ed5436ed83111605e0b5f1657439"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5097,
+    "last": 5103,
+    "name": "AdalyFormal.Round13.Trial.trialBond_injective",
+    "sha256": "06b8cc88509852eece5fb6ba9538fbb37f1807df45a5a083b2d61d7888fa2394"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5106,
+    "last": 5111,
+    "name": "AdalyFormal.Round13.Trial.charged",
+    "sha256": "3424acc316f386b28a94d15a410c72949c4556cb7dc338993da427cc5de9cc3b"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5113,
+    "last": 5117,
+    "name": "AdalyFormal.Round13.Trial.charged_norm",
+    "sha256": "7c2977967023d5d88ce2d61c6b3517fb7d7f4b41dbf107f27fcfa332dfcaad0a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5119,
+    "last": 5120,
+    "name": "AdalyFormal.Round13.Trial.trialAmplitude",
+    "sha256": "a027369e3e64452e79c40e56619a1264da5ebca5f4b982599e6672c1355ccb86"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5122,
+    "last": 5123,
+    "name": "AdalyFormal.Round13.Trial.trialField",
+    "sha256": "77336f49e24e37991b8136c9eb64954281568851e127021740a7595bb94f475b"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5125,
+    "last": 5128,
+    "name": "AdalyFormal.Round13.Trial.trialField_apply",
+    "sha256": "d1e1969f5976658305c4c292ec147a603bfdc36b14671f39d30aba2468847112"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5130,
+    "last": 5134,
+    "name": "AdalyFormal.Round13.Trial.trialField_at",
+    "sha256": "5450b365b997870e4c4acf11dd9aaa0a1eb65ce2e8dd0d8fbdef3136638b1ff6"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5136,
+    "last": 5142,
+    "name": "AdalyFormal.Round13.Trial.trialField_support",
+    "sha256": "c2482c15238b2f9fcc2ef9b7d1889f1c85ea8d8865bed0bd4cbf29b4f5ceeacf"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5144,
+    "last": 5162,
+    "name": "AdalyFormal.Round13.Trial.trialField_norm",
+    "sha256": "2dafa0c636940bb003ada55055d46c8d71c459bb1c51580b032b541835a69435"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5194,
+    "last": 5223,
+    "name": "AdalyFormal.Round13.Trial.trial_sites",
+    "sha256": "985afe6b64cf0b303b4feed61aa8e936ce1680c6d38abcd87301d1f9479cfc11"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5225,
+    "last": 5239,
+    "name": "AdalyFormal.Round13.Trial.trial_start_near",
+    "sha256": "e42bae21c02f7ca05cdf03be93402417ff5a8efdbd5025b5fbc73254a40aefe4"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5241,
+    "last": 5248,
+    "name": "AdalyFormal.Round13.Trial.trial_start_zero",
+    "sha256": "d6d79c236cb8dc76cea3e0fc2bd45075464b3706c3ca3f08bbbb0e343eaece7b"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5250,
+    "last": 5255,
+    "name": "AdalyFormal.Round13.Trial.trial_touch",
+    "sha256": "e3b2ed0481e17733f3fcc563330b809477a0407be4ebee1938ef1fda85bebbda"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5257,
+    "last": 5271,
+    "name": "AdalyFormal.Round13.Trial.trial_collar",
+    "sha256": "dd224c7a016d0ae033d44fa555f28c14d63e1440a27ec9133d6e4e1009d5f5c6"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5273,
+    "last": 5276,
+    "name": "AdalyFormal.Round13.Trial.trial_levelZero",
+    "sha256": "5337d15caf92b72a07e68bb6bd7dc9f3ce7905ab6d5d95359822fee5e652cd6c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5278,
+    "last": 5283,
+    "name": "AdalyFormal.Round13.Trial.trialField_mem",
+    "sha256": "dcea732567a61ff7f0792a0fb5673649201f1f1f5c053c71b9c16b7cd8e76544"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5285,
+    "last": 5286,
+    "name": "AdalyFormal.Round13.Trial.trialVector",
+    "sha256": "462d3a58b9ff7626cb60792e73d0aaca6d4f2c54e351347c0908d9de0b5df2c7"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5288,
+    "last": 5301,
+    "name": "AdalyFormal.Round13.Trial.trial_near_exterior",
+    "sha256": "c55fd03fe22f25ba19902dcf489724a54ff9e500660e1b19a7eebcf141629032"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5303,
+    "last": 5309,
+    "name": "AdalyFormal.Round13.Trial.trialField_hsupp",
+    "sha256": "ed6fd46e64343129b0a888ef927eebc316efa67840b8fb0879a14146e3d86d6c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5319,
+    "last": 5325,
+    "name": "AdalyFormal.Round13.Trial.trial_mass_upper",
+    "sha256": "c6f18bca26cd1de3633dcbfdf9e5844e8579ee1004d651618ee7af94e8e5ccc0"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5328,
+    "last": 5341,
+    "name": "AdalyFormal.Round13.Trial.trial_mass_eq",
+    "sha256": "2d833053796475be75de62b80c029a717a71a3dbea47250d19316546d2c26806"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5343,
+    "last": 5351,
+    "name": "AdalyFormal.Round13.Trial.trial_T_zero",
+    "sha256": "2c843a1671128a2baf934d64c0944d73efa49d14b2f42460b5c7b90c61745dc5"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5353,
+    "last": 5362,
+    "name": "AdalyFormal.Round13.Trial.trial_W_eq",
+    "sha256": "e54a68785a181492a55f67d7347fabbf099cb68a709a9d894311c2d6ad604af0"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5396,
+    "last": 5396,
+    "name": "AdalyFormal.Round13.Trial.stepCoord",
+    "sha256": "73bc141751057e935d8a77bbd41450477f9444e5f54d997dd98bba58e1b0c524"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5397,
+    "last": 5397,
+    "name": "AdalyFormal.Round13.Trial.backCoord",
+    "sha256": "5dd71daccc4ffb94dffc43f48e08d82947d551a6f08989c306c1c0b06a8690a3"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5399,
+    "last": 5414,
+    "name": "AdalyFormal.Round13.Trial.patchSite_back",
+    "sha256": "7c8196e610dfd113a461d7bc26ac77f14fc80b84e6c925ebb72fdfa099884ec2"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5416,
+    "last": 5416,
+    "name": "AdalyFormal.Round13.Trial.d02",
+    "sha256": "7dd9ef3b61c04cbec94782c76e5633bae1f3bb3682caeff1175e44b02f08b8d1"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5417,
+    "last": 5417,
+    "name": "AdalyFormal.Round13.Trial.d12",
+    "sha256": "904aa02940af6574a04e7ccb8fd6363dde794f9a66cc8f99eed3ecbd8ea071ea"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5419,
+    "last": 5424,
+    "name": "AdalyFormal.Round13.Trial.trialPlaqPattern",
+    "sha256": "49833d750e0f6281ddb4b75d0c1bff2b1e74317d8f52c74255ec478b010cbbdf"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5426,
+    "last": 5427,
+    "name": "AdalyFormal.Round13.Trial.trialPlaq",
+    "sha256": "bbda6e5377f011c79bddf0c93bdb03f659162ed1c6048a5f7926e19c41acb468"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5429,
+    "last": 5429,
+    "name": "AdalyFormal.Round13.Trial.trialPlaqPattern_injective",
+    "sha256": "8d3bda7ef786fb256726b6337567d6b7b40abf75ef8edd749dc7c2182949264f"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5431,
+    "last": 5435,
+    "name": "AdalyFormal.Round13.Trial.trialPlaq_injective",
+    "sha256": "313a460744cfa8e277bb461a8a75a65060887f2d01ee2f283150c862227c484c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5437,
+    "last": 5439,
+    "name": "AdalyFormal.Round13.Trial.pattern_front",
+    "sha256": "8a84f607214c9ccb826ed919ce990b75d93aea334059b6eebc7c203217e5784f"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5441,
+    "last": 5443,
+    "name": "AdalyFormal.Round13.Trial.pattern_back1",
+    "sha256": "38b745bf7685bf0bfcd7e29221ba5e3365c31546e2af387ca3bedb273e0eb0e1"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5445,
+    "last": 5447,
+    "name": "AdalyFormal.Round13.Trial.pattern_back2",
+    "sha256": "824206f31b9fb59100a57e67c27885c99a843aa13844a389a72a066da15708c8"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5449,
+    "last": 5450,
+    "name": "AdalyFormal.Round13.Trial.trialCoord_positive",
+    "sha256": "f246c1e6f18d2a979efcf138d3e9a0e6f1672d9bce0e570101dd4471a430f4ac"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5452,
+    "last": 5456,
+    "name": "AdalyFormal.Round13.Trial.front_mem",
+    "sha256": "2288e6f2be1774470fe39a4cc3a37b106cc3584f3bfb2353afce578b1dcc9808"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5458,
+    "last": 5464,
+    "name": "AdalyFormal.Round13.Trial.back_mem1",
+    "sha256": "5fcf82c0ec9c46ac5a629260c5b18e65ce9fd08d6aa07075566111b848e25a23"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5466,
+    "last": 5472,
+    "name": "AdalyFormal.Round13.Trial.back_mem2",
+    "sha256": "1419d45dfb1fd079d07f2709b1d44a0023635b2216c7db765074b7625451bdeb"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5476,
+    "last": 5513,
+    "name": "AdalyFormal.Round13.Trial.trial_plaq_zero_off",
+    "sha256": "ad5906345832856ad0d752027cf518063168f62e868888eaa8c1000a3cad4d64"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5516,
+    "last": 5525,
+    "name": "AdalyFormal.Round13.Trial.trial_delta_sum",
+    "sha256": "9157ffe5d6cbe04bbc9e6045e6dcf75ac6c65628f55fe2240ed4ed7e39839508"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5557,
+    "last": 5559,
+    "name": "AdalyFormal.Round13.Trial.quadForm",
+    "sha256": "08ca659b8a3a2b7f7a05341bb2af39aa5d3bf6f9883703935305bf4387e416d8"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5562,
+    "last": 5579,
+    "name": "AdalyFormal.Round13.Trial.frozen_four_form",
+    "sha256": "42ad05e1b47a847c5d0ecd33b98426695b43a541a814965e630acfb7fbb48c06"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5581,
+    "last": 5581,
+    "name": "AdalyFormal.Round13.Trial.anchorCoord",
+    "sha256": "4d6135c9f4e2505f8747dea50b62bb71730c27fe83bf6f859737750ffee986f2"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5583,
+    "last": 5588,
+    "name": "AdalyFormal.Round13.Trial.star_anchor",
+    "sha256": "8635de2931079b6e36105efd8259e3e3af7b5a3c474f33e367178ce384295108"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5590,
+    "last": 5591,
+    "name": "AdalyFormal.Round13.Trial.localStar",
+    "sha256": "5fb879ba648b905cbb1cd8acc5b6b66dceccb467efda8493a3566eb4047e5115"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5593,
+    "last": 5600,
+    "name": "AdalyFormal.Round13.Trial.rightStar_patch",
+    "sha256": "6a15b48bea9081f56cd3891377377ef8b74f26079b4403bc9881759304e42eb8"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5602,
+    "last": 5603,
+    "name": "AdalyFormal.Round13.Trial.localField",
+    "sha256": "352e70a7755569c48a1cd55ccdf0f1283c51a9f8926651a42b728c1c50770f6f"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5605,
+    "last": 5609,
+    "name": "AdalyFormal.Round13.Trial.trialField_patch",
+    "sha256": "e879dc002d889a5e9a023b90802d1cfa16e4fda055878639e4a77814d43bf310"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5611,
+    "last": 5614,
+    "name": "AdalyFormal.Round13.Trial.charged_zero",
+    "sha256": "08a74c661bd9d629c95355bacf31e4bccc0d4368f5e85573ea2b73601c9d983a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5616,
+    "last": 5619,
+    "name": "AdalyFormal.Round13.Trial.charged_neg",
+    "sha256": "9496d8da00d7d2fc8143a276aade75ee6b794c5010b9a6225af9c88de9433294"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5621,
+    "last": 5621,
+    "name": "AdalyFormal.Round13.Trial.isCurved",
+    "sha256": "aa9295c427127272e1a8a48f9243ab1ea77e4aede9fe226dcc1fa4bb2bbe4e28"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5623,
+    "last": 5624,
+    "name": "AdalyFormal.Round13.Trial.pattern_room",
+    "sha256": "877f126e54682eb6d0cc3a9aa9991f777734263fc97b627f701f136f76142118"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5626,
+    "last": 5631,
+    "name": "AdalyFormal.Round13.Trial.pattern_base_flat",
+    "sha256": "148b3eb1f2c86765f2cc8b357b4f204f39ba934b0e564b323c6da8def267e508"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5633,
+    "last": 5640,
+    "name": "AdalyFormal.Round13.Trial.pattern_shift_links",
+    "sha256": "98c3148902af4b2cde0e57b091ea970460e9e3583b86a53655fadf53acfeed35"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5642,
+    "last": 5650,
+    "name": "AdalyFormal.Round13.Trial.trial_base_links",
+    "sha256": "19cf2a6c82c048bc4eb9eedb9343afd1f461e7d4057d5a750ba0098a04eb92f7"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5652,
+    "last": 5678,
+    "name": "AdalyFormal.Round13.Trial.trial_holonomy",
+    "sha256": "58e9839195d965458e25fccc10ce5daf312457eae01054b0db8b4f72a740706c"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5680,
+    "last": 5684,
+    "name": "AdalyFormal.Round13.Trial.uhalf_coe",
+    "sha256": "45b9879a97ec1616aced5f0946be66dcaeaccb1c11d125039117efcf49d20893"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5686,
+    "last": 5697,
+    "name": "AdalyFormal.Round13.Trial.trial_hol_parts",
+    "sha256": "00af528275d25416867791dea7ed81efd76a7929c323c4644007ba598fdc7ec4"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5727,
+    "last": 5730,
+    "name": "AdalyFormal.Round13.Trial.charged_add",
+    "sha256": "97c39d63bdbae779b03f20212ef929cfd0c7928fc58baaf3ea1914d291d0adf2"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5732,
+    "last": 5735,
+    "name": "AdalyFormal.Round13.Trial.chargedHom",
+    "sha256": "e445bd8552bd0cac8adcd6ef14b582b0a8f7e092c56ec4e59f360d9d0a65b176"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5737,
+    "last": 5738,
+    "name": "AdalyFormal.Round13.Trial.localAmplitude",
+    "sha256": "d38b69accd01b7b9119c97d8d741dd17b4ead5015b6d174f8aa110401f059aaf"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5740,
+    "last": 5747,
+    "name": "AdalyFormal.Round13.Trial.localField_amplitude",
+    "sha256": "9694086027d387dd62c61468cea4b1315db5b7a02fd0796a86807d24d685f694"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5749,
+    "last": 5762,
+    "name": "AdalyFormal.Round13.Trial.trial_edge_values",
+    "sha256": "b74f798eeb8077984b248f2508cb29cd1b13268ac0b2d273bd6da9d8c4e9a6d7"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5764,
+    "last": 5800,
+    "name": "AdalyFormal.Round13.Trial.trial_atom_values",
+    "sha256": "11c38a62698d0d55a856b58f57eeb390e8a225587fec5cb69de3e12c3bacaae5"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5802,
+    "last": 5808,
+    "name": "AdalyFormal.Round13.Trial.localQuad",
+    "sha256": "c02b59bcd5c3b8484950e918eecad4aa6206fee7aaf6410caa0c06d91d19b526"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5810,
+    "last": 5815,
+    "name": "AdalyFormal.Round13.Trial.trial_contrib_quad",
+    "sha256": "82e54fc2a785abf70ea509f871d7d6d5c78eb9ea9f525e15b4ae5fb699714b49"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5817,
+    "last": 5817,
+    "name": "AdalyFormal.Round13.Trial.plaqNumerator",
+    "sha256": "d1386010593420258c7b99dbc0e7844d03545e6d8be3fae203ec7da4c8dcacfc"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5819,
+    "last": 5823,
+    "name": "AdalyFormal.Round13.Trial.edgePattern",
+    "sha256": "ac5f772eba0c8846232e451f9ddb39438246df879fb07b4dd9eb9c621b276237"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5826,
+    "last": 5835,
+    "name": "AdalyFormal.Round13.Trial.edgeIndex",
+    "sha256": "08137d609b954f55794f0a36cdb202141a3510a9af4efece9e4ac40168173be4"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5837,
+    "last": 5839,
+    "name": "AdalyFormal.Round13.Trial.edgeIndex_spec",
+    "sha256": "51c6bb56ebfa11011f285e8fef58d551a6d11d7bf587973b53b13bba06b26930"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5841,
+    "last": 5846,
+    "name": "AdalyFormal.Round13.Trial.localAmplitude_edge",
+    "sha256": "9128022a28b332ccd8d565e29e11a46ec69d41cdabe96876dc5a0d7c506d35b4"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5848,
+    "last": 5893,
+    "name": "AdalyFormal.Round13.Trial.localQuad_value",
+    "sha256": "8798b0eb97bfcfe9bf5f63ef179c8ccf2bdecada4ac5900741cfcfe294392b41"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5896,
+    "last": 5901,
+    "name": "AdalyFormal.Round13.Trial.trial_delta_value",
+    "sha256": "9db71a0e2865ed7848704a31782f18b2c7e0c71b4b3be0ab60de3c49ead1e8a7"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5920,
+    "last": 5946,
+    "name": "AdalyFormal.Round13.Trial.trial_carrier_energy",
+    "sha256": "476009521d60486abe6cd783e1b04988e2c66d5ff7fdc8ef26fc0e9e3441d978"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 5949,
+    "last": 5954,
+    "name": "AdalyFormal.Round13.Trial.rightStar_negative_halfpi",
+    "sha256": "2dc26c7c43bed55c460bf527dfa83d9841f7cfe930be043edb693da8343d249a"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 6084,
+    "last": 6084,
+    "name": "AdalyFormal.Round13.Assembly.R1.p1",
+    "sha256": "502a3a865b42a92c5e721a7432dcd2d6e3b1535fc1745e161c077ad24af530a6"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 6116,
+    "last": 6118,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_P2_P3",
+    "sha256": "554bb4b8744a5a44771560df8ccc43765663bf9bf2e4c04dcd276fccf9789631"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 6121,
+    "last": 6129,
+    "name": "AdalyFormal.Round13.Assembly.R1.CofinalP2P3",
+    "sha256": "f463dd3e40d53d4d3000f028ec86d8dff37b62573315e1639a29933d61fe5544"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 6132,
+    "last": 6138,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalPhysical_of_cofinalP2P3",
+    "sha256": "a618386d6f224b69d45be5068c43fe9edb1a6ae541726a96493a02f56c5c7e61"
+  },
+  {
+    "source": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "first": 6140,
+    "last": 6142,
+    "name": "AdalyFormal.Round13.Assembly.R1.cofinalNoCancellation_of_cofinalP2P3",
+    "sha256": "94b148b670d5cff52131ba280b0b4af024294f5b4c4649cf77afa92b0026449f"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/GoalAppendix.lean.txt",
+    "first": 7,
+    "last": 9,
+    "name": "AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P2_P3",
+    "sha256": "bea927e4a01d4e1eeb9b104fd77204a8e279c106430de8e4b5cfa0daa1176993"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/GoalAppendix.lean.txt",
+    "first": 12,
+    "last": 14,
+    "name": "AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP2P3",
+    "sha256": "069cd82495d06d3a7ddaaa4973563258e1269b22e025dfd8f750f1a1c90308e2"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 322,
+    "last": 323,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat",
+    "sha256": "8b8fcbcfd3fbf6401ef66041f31f36935dc8a9c648512ddec72957f227c9ab8c"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 325,
+    "last": 328,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_add",
+    "sha256": "04af3b8f866e383c1846e3c3ce1ea5a3012f2a5d88106692c58b1c9eafad9399"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 334,
+    "last": 346,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.lieMat_coordinates",
+    "sha256": "917a027dfa5aafcf08dbaaedf007e9f359a0bfa22b76a847aeaa02bf62143703"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 348,
+    "last": 353,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_inner",
+    "sha256": "9e4f954d5e5d564d3cde0abb17b37ae63e79d6fa2c5d2889af815ce6450523b2"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 355,
+    "last": 360,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_first_atom",
+    "sha256": "adaae608da61a562f55efd88cc270d1405558e6064c355ae44828535e4a50cdf"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 362,
+    "last": 369,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_comm_atom",
+    "sha256": "7d31f9d28d7bd4ffb075e229f05f13fc137429fa3c2f8154c7d497df8fcac15c"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 374,
+    "last": 391,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.frozen_full_three_right",
+    "sha256": "f9d883e5f75e59067cc013a4ba1326bea1ce1ab9b8dd00e641650782e2c474f8"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 415,
+    "last": 424,
+    "name": "AdalyFormal.Round12.Noncancel.FullPlaquette.full_pair_mass_lower",
+    "sha256": "a724d717d685b49c66bfda50e5d2071c369ca2dc01c629cfe67d65c8dd5c1053"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 688,
+    "last": 690,
+    "name": "AdalyFormal.Round13.Positivity.plaqEnergy",
+    "sha256": "a745c89f626e5b6630911ea57abf52f114494f91a0e6fc118cd99f078873378a"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 693,
+    "last": 718,
+    "name": "AdalyFormal.Round13.Positivity.delta_form_sum_set",
+    "sha256": "1395287aa4b80983dfe6a7d5a1892d8e9832a4bf3305dd1da561aff472686eb2"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 721,
+    "last": 728,
+    "name": "AdalyFormal.Round13.Positivity.plaqEnergy_nonneg",
+    "sha256": "9fdb50c7ca8f4764601986735656c9b9abcbe75e8f08f78c739364efbb5ab86f"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 730,
+    "last": 733,
+    "name": "AdalyFormal.Round13.Positivity.omittedEnergy",
+    "sha256": "a2f4ad124199deb44149dbf441056ab0a4639bad9a8e772a5593b8bad175cc91"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 736,
+    "last": 755,
+    "name": "AdalyFormal.Round13.Positivity.carrier_form_split",
+    "sha256": "40d3a0d42f6042771d4c2ccf13948b1fb55634b390cd7036928e5783d4b3c1c1"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 758,
+    "last": 770,
+    "name": "AdalyFormal.Round13.Positivity.localized_Dpi_nonneg",
+    "sha256": "9ac2b9f3c16f9ca7fbd3732f16a1efe56778eff893c8b1ad7692efbcb5dc24e3"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 774,
+    "last": 787,
+    "name": "AdalyFormal.Round13.Positivity.carrier_ge_scaled_local",
+    "sha256": "041b37a1ac748d787aa72524ccbf51efa5e93e808670b6dfcd1d8cea893be96f"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 818,
+    "last": 823,
+    "name": "AdalyFormal.Round13.Positivity.full_pair_loss_bound",
+    "sha256": "4f4dc8cc9fa761ae5212f77bc92d6e30deff41a83c779cd22dd4eadb5b212ac1"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 907,
+    "last": 930,
+    "name": "AdalyFormal.Round13.Positivity.plaqEnergy_congr_field",
+    "sha256": "496afce22ef74070e256b5e6065811261877955a66c47431b65336023e30a44a"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 934,
+    "last": 946,
+    "name": "AdalyFormal.Round13.Positivity.omittedEnergy_eq_raw",
+    "sha256": "71b1f88c0cb88f6ed2921f57cb7c8eadaaeeb161549c990c359b209dcd255dd6"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 989,
+    "last": 1001,
+    "name": "AdalyFormal.Round13.Positivity.frozen_right_zero_first_lower",
+    "sha256": "69d6daca1cdd2de3c8beb62db9152039f32084d908376e2405f1fbb35be45e34"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1004,
+    "last": 1017,
+    "name": "AdalyFormal.Round13.Positivity.frozen_right_zero_third_lower",
+    "sha256": "d3dd57251da64cdfa641ca2c6f1cd1885f06dc0a9085293db60236230df83dde"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1021,
+    "last": 1048,
+    "name": "AdalyFormal.Round13.Positivity.omitted_loss_of_injective_arms",
+    "sha256": "041cfd31b98669b50516946c015087f71028995d61f6acdd5bcfc401027848a1"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1760,
+    "last": 1768,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf",
+    "sha256": "4fa06512689da7bd72029b03c73e270b4e72c43e5a79bc1ab6165d192174296e"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1770,
+    "last": 1771,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.code",
+    "sha256": "236d81e31ae9a657c98adb932ebf89f0810dca39cd333f34a5b4631b7e40b258"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1773,
+    "last": 1776,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.transverse_sizes",
+    "sha256": "16763cf8ff6064c1cf39e29a304c76bd7c51c9bb76195b399a3feca56bab32c1"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1778,
+    "last": 1780,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.right_coord",
+    "sha256": "74a828b407b2059cc5b4295fe4f4924e8dcb9c9b4be5862810bf3079021e58bd"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1783,
+    "last": 1793,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf_code",
+    "sha256": "3d1bc7f17e0e803dc83f30fbfabb4ddd6ab68d374ff245eaa215b3224f947007"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1796,
+    "last": 1803,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf_injective",
+    "sha256": "c58fa67e3d600d4325b838bf9610b594d31e9f10c413babf90dad58aca78f419"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1806,
+    "last": 1808,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf_zero_coord",
+    "sha256": "1cc1e745c864d92a171efc4b28c2f14c14aedbd23bed7e68b07bbc05ea50fac1"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1811,
+    "last": 1817,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf_end_zero_coord",
+    "sha256": "9ed12ac336417f0f4ae1625745f3644a658d0f4559c32b69caf80f2e3eea184f"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1820,
+    "last": 1830,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf_collar",
+    "sha256": "d9cb40b7f215599cf08178d3305dc9857eeec0b0a14b16e6b9c6f3b3b438b4c8"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1833,
+    "last": 1838,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf_touching",
+    "sha256": "b1f57073472f67c85fa1c6e7ebdc8a62ac8021e6bd6e67f007e25ad74d8b7a3f"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1841,
+    "last": 1844,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leaf_level_zero",
+    "sha256": "789edf1c5a75fe2e578aeae76060fbca6a1075dce59316a8121c715275cfc927"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1847,
+    "last": 1848,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.leafSet",
+    "sha256": "e6c8f137d37f235b1640388032f75add73c512d911cf04ffbc220e48082db24e"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1854,
+    "last": 1869,
+    "name": "AdalyFormal.Round13.Positivity.Leaves.eight_leaf_mass",
+    "sha256": "9205e3c81b3d58138484bd1d7df1598111d0b6f74f834aced265b0e1454ad761"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1909,
+    "last": 1910,
+    "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair",
+    "sha256": "e3d2c574de23000f673023c19d81401a375cfc3c1035960d08561cfc1bb1b54f"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1912,
+    "last": 1918,
+    "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair_shift",
+    "sha256": "cb2d01b800db48d11af2118178de19c1786209c943c8275c86b27e52171d2107"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1920,
+    "last": 1931,
+    "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair_back",
+    "sha256": "f62939f4b1f768f0316499b7b98165d898ddf27e0eac47d53419898b6c204001"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1934,
+    "last": 1953,
+    "name": "AdalyFormal.Round13.Positivity.Physical.exteriorPair_vertices",
+    "sha256": "4f586bf81a695a9b8b8ddaaf408a82259247fc4447c25e430d6fe79dd6a5b254"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 1957,
+    "last": 2021,
+    "name": "AdalyFormal.Round13.Positivity.Physical.star_edge_cases",
+    "sha256": "99d43c57b3a6edb3a8f38ff12fd79d4010419cb00705ea6a47e2c40ecb265215"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2055,
+    "last": 2059,
+    "name": "AdalyFormal.Round13.Positivity.Physical.plaqEnergy_zero_input",
+    "sha256": "1518de9c5bf6902aebd4fee24e58ba824e0bfe91d4ff27ca8bd1a808e94a2a42"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2061,
+    "last": 2067,
+    "name": "AdalyFormal.Round13.Positivity.Physical.hol_flat_components",
+    "sha256": "136e75d7587ddb306bad66397d135394361f50b4bab93c2fcdbddd528d2a0520"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2069,
+    "last": 2080,
+    "name": "AdalyFormal.Round13.Positivity.Physical.plaqEnergy_nonneg_links",
+    "sha256": "c0e05604af0b0496b6c24d72873ec357fb9e216fb8d9221c9dbc53005d1e5d8b"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2083,
+    "last": 2100,
+    "name": "AdalyFormal.Round13.Positivity.Physical.nonstar_nonneg",
+    "sha256": "f542b411237b4f447aa79b5eefb279d1efc6cc4c8555815fc70279060691d56a"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2103,
+    "last": 2114,
+    "name": "AdalyFormal.Round13.Positivity.Physical.right_forward_out",
+    "sha256": "a2ddad41e05d2576b230f0ae664179cbef71edd1e0cef259cfbab21a9e6b1abe"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2116,
+    "last": 2134,
+    "name": "AdalyFormal.Round13.Positivity.Physical.hol_phase_components",
+    "sha256": "50ee9e67ebdc659fbc17f3ef4a778e6bd7e705cb263670d2866e78c8e049660d"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2136,
+    "last": 2140,
+    "name": "AdalyFormal.Round13.Positivity.Physical.norm_coordinates",
+    "sha256": "48a67da3c2f2cb30515fe17d9ad7eea334e96611734f0785ab24685334b11ea0"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2143,
+    "last": 2159,
+    "name": "AdalyFormal.Round13.Positivity.Physical.right_first_norm_lower",
+    "sha256": "a7f9055b2d95d7c9ba51b9f96ca1da71c096bbf82e1c63fcaf09fac510c93419"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2161,
+    "last": 2177,
+    "name": "AdalyFormal.Round13.Positivity.Physical.right_third_norm_lower",
+    "sha256": "bb5d9f281582685718398f4b642be40b1f8396dfffe63d920418e2f6137f6a93"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2215,
+    "last": 2237,
+    "name": "AdalyFormal.Round13.Positivity.Physical.arm1_lower",
+    "sha256": "99bc16052d88a411ba9ae7c5e1d713eb2911308c814f62bf767c90ace4ed484e"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2240,
+    "last": 2267,
+    "name": "AdalyFormal.Round13.Positivity.Physical.arm2_lower",
+    "sha256": "8dcd8ff44aae308523c50709d6541f1ea247aaab2c02b6f36c28d9a1ea57583d"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2270,
+    "last": 2273,
+    "name": "AdalyFormal.Round13.Positivity.Physical.arm1_omitted",
+    "sha256": "2881fbb7013a43caf03acfc22facd66b6af910d9b7c159e154973b0fc5b5c2b8"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2275,
+    "last": 2281,
+    "name": "AdalyFormal.Round13.Positivity.Physical.arm2_omitted",
+    "sha256": "0faa30263628e97f35a6ac45d1f2a5c4e92ee7edd53db2e68787649ee180c91e"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2311,
+    "last": 2312,
+    "name": "AdalyFormal.Round13.Positivity.Physical.arm",
+    "sha256": "ce8fee92fc0892f9ea34d6755288cac4194bb83dd6821eaa2116242d3b862719"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2314,
+    "last": 2324,
+    "name": "AdalyFormal.Round13.Positivity.Physical.arm_injective",
+    "sha256": "78feb9a7f43bb864f0984f8eb6336040198f575d2ada5ff8dc05e82ccd723318"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2326,
+    "last": 2331,
+    "name": "AdalyFormal.Round13.Positivity.Physical.armBudget",
+    "sha256": "960da326f873a58793d3a59cc04e921f73723b62e28f57b10f68c317f6f7b4d0"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2333,
+    "last": 2344,
+    "name": "AdalyFormal.Round13.Positivity.Physical.armBudget_sum",
+    "sha256": "fbad1d636c11ec24006c83ea5fc3a1ad77a962a4146665015ebbb8806cd5275e"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 2348,
+    "last": 2392,
+    "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_omitted_loss",
+    "sha256": "c1a1840fc8bf7d0cc21c0f5cbb8734cd8f97547ea2a6aaa0eefe7f9a4b727a78"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 3298,
+    "last": 3314,
+    "name": "AdalyFormal.Round13.Positivity.Local.rightStar_local_data_flat",
+    "sha256": "53c58b86f87d971c71da28b334a324f80e3c868fe7d07a2521f279e9580756b8"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 3318,
+    "last": 3323,
+    "name": "AdalyFormal.Round13.Positivity.Local.rightStar_local_positive",
+    "sha256": "d4d914543b9ae969f13f10db61d93204904508e017895d1eec41434f1fa57b58"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 3409,
+    "last": 3423,
+    "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_local_hol",
+    "sha256": "a09e872ae1b8c6317ea20798c3391acda406b6c242eee07206e5effab78363ba"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 3427,
+    "last": 3445,
+    "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_carrier_lower",
+    "sha256": "cff0dd6699f85713fa1bfd1bd58694920a64711fb029d48d2eec0ce49932bcb1"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 3448,
+    "last": 3456,
+    "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_zero_coordinate_positive",
+    "sha256": "e5456eb7a43c9cb44934e3cd85edfe275cb74606de63c00ff44aa79795546703"
+  },
+  {
+    "source": "AHP/round13/shared/positivity/R2_P2.lean",
+    "first": 3488,
+    "last": 3498,
+    "name": "AdalyFormal.Round13.Positivity.Physical.rightStar_P2",
+    "sha256": "635877e93e0df193bf04a2f27d06088de475bade7e8cff623e7bbc8bbcc33ccb"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 18,
+    "last": 18,
+    "name": "AdalyFormal.Round13.Assembly.R2.p2",
+    "sha256": "0eca0b419afa96d4b4215c576c88e0f4c22926ee95a73fa871784786a0d382e1"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 21,
+    "last": 31,
+    "name": "AdalyFormal.Round13.Assembly.R2.rightStar_kernelLine",
+    "sha256": "73ee7d5d2f5e16a313eabfbe14b3549a9132b8916f8884d6324a11e9f2519a77"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 34,
+    "last": 47,
+    "name": "AdalyFormal.Round13.Assembly.R2.cofinal_rightStar_kernelLine",
+    "sha256": "7fa3d71f46abeca77898fc5d26c7561dae3ec2c1f9515985e0495d4ec72ed48b"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 50,
+    "last": 51,
+    "name": "AdalyFormal.Round13.Assembly.R2.cofinalNoCancellation_of_P3",
+    "sha256": "dde4c5f4f75bb77cb7b2c6842e2444f411c8d707f5e03205e546cda5c8dc9808"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 53,
+    "last": 53,
+    "name": "AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P3",
+    "sha256": "c838f92f437cfde0e893b82ee4e07fc2740ca4aa180ba16c8bc5467fa0c00e9d"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 56,
+    "last": 60,
+    "name": "AdalyFormal.Round13.Assembly.R2.CofinalP3",
+    "sha256": "1098f7781508fe4a81624ad54e199d2806c5d8ea3a085759560b620fa2b3052f"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 63,
+    "last": 69,
+    "name": "AdalyFormal.Round13.Assembly.R2.cofinalP2P3_of_cofinalP3",
+    "sha256": "159a40557c4dbdb7f0d27b8e207c3aeb8bcc49a0eea306c9ccbbf509b1033f7e"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 71,
+    "last": 73,
+    "name": "AdalyFormal.Round13.Assembly.R2.cofinalNoCancellation_of_cofinalP3",
+    "sha256": "501b6b6ae910b37df50a5d45504b0c9ef32a271171305b7461ed9eb5dedf4a38"
+  },
+  {
+    "source": "AHP/round13/assembly/r2/P2Appendix.lean.txt",
+    "first": 75,
+    "last": 76,
+    "name": "AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP3",
+    "sha256": "ec3259616e6ced84f94bb7944202f6190c9d124a3a51a47e18e50c42f2bbd2d2"
+  }
+]

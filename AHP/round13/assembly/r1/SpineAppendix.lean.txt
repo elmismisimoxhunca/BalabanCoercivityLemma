@@ -1,0 +1,124 @@
+
+namespace AdalyFormal.Round13.Assembly.R1
+open scoped RealInnerProductSpace Topology
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round10.Assembly.R2 (KernelLine)
+open AdalyFormal.Round10.Assembly.R3 (CofinalAnyPathCurlLine)
+open AdalyFormal.Round10.Assembly.R4 (CofinalAnyPathNoResponseCancellation)
+open AdalyFormal.Round10.Dictionary.FreeSource (CurlDetected)
+open AdalyFormal.Round12.Kernel.Actual (chargedCoordinate)
+open AdalyFormal.Round12.Noncancel.RightFamily
+
+/- The three exact physical propositions are definitions, NOT inhabitants. -/
+def P1 : Prop :=
+∀ {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R),
+  ∃ w : TwistSpace q R,
+    ⟪w, vacA q R (rightStar hq R) 1 (Real.pi/2) w⟫ < 0
+
+def P2 : Prop :=
+∀ {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+  (t : ℝ), 0 < t → t < Real.pi/2 →
+  ∀ x : TwistSpace q R, x ≠ 0 →
+    AdalyFormal.Round12.Kernel.Actual.chargedCoordinate q R
+      (rightSite hq R, (0 : Fin 3)) x = 0 →
+    0 < ⟪x, vacA q R (rightStar hq R) 1 t x⟫
+
+def P3 : Prop :=
+∀ {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+  (u : TwistSpace q R), KernelLine q R (rightStar hq R) u →
+    CurlDetected q R u
+
+/-- Explicit integration obligations; these are not physical conjectures. -/
+def StartInputs : Prop :=
+  ∀ {q R : ℕ} (hq : 0 < q), 2 ∣ R → 18 ≤ R →
+    Continuous (vacA q R (rightStar hq R) 1) ∧
+    (∀ x : TwistSpace q R, x ≠ 0 →
+      0 < ⟪x, vacA q R (rightStar hq R) 1 0 x⟫)
+
+/-- Verbatim nested cofinal right-family remainder from round-12 notes B. -/
+def CofinalRightStarCurlLine : Prop :=
+∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+  R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+  ∃ u : TwistSpace (2^j) R,
+    KernelLine (2^j) R (rightStar (by positivity) R) u ∧
+    CurlDetected (2^j) R u
+
+/-- Same-instance quarter gauge is unconditional. -/
+theorem rightStar_fixed {q : ℕ} (hq : 0 < q) (R : ℕ) (t α : ℝ) :
+    periodicGaugeTransform (rotGauge α) (rightStar hq R t) = rightStar hq R t :=
+  AdalyFormal.Round12.Noncancel.Gauge.starPath_fixed _ t α
+
+/-- Conditional instance join: P1/P2 produce the SAME canonical line tested by P3. -/
+theorem detected_line_of_physicalInputs (hs : StartInputs)
+    (h1 : P1) (h2 : P2) (h3 : P3)
+    {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    0 < vacEdge q R (rightStar hq R) ∧
+    vacEdge q R (rightStar hq R) < Real.pi/2 ∧
+    ∃ u : TwistSpace q R, KernelLine q R (rightStar hq R) u ∧
+      CurlDetected q R u ∧
+      Module.finrank ℝ (vacA q R (rightStar hq R) 1
+        (vacEdge q R (rightStar hq R))).ker = 2 := by
+  obtain ⟨hc,hpd⟩ := hs hq hR hR18
+  obtain ⟨h0,ht,u,hl,hfin⟩ :=
+    AdalyFormal.Round12.Kernel.CrossingActual.kernelLine_exists_before_halfpi
+      q R (rightStar hq R) (rightSite hq R,0) hc hpd (h1 hq hR hR18)
+      (fun t => rightStar_fixed hq R t (Real.pi/4)) (h2 hq hR hR18)
+  exact ⟨h0,ht,u,hl,h3 hq hR hR18 u hl,hfin⟩
+
+/-- Conditional all-instance estimates preserve the nested dyadic/radius order. -/
+theorem cofinalRightStarCurlLine_of_physicalInputs (hs : StartInputs)
+    (h1 : P1) (h2 : P2) (h3 : P3) : CofinalRightStarCurlLine := by
+  intro j₀
+  refine ⟨j₀,le_rfl,?_⟩
+  intro R₀
+  let R := 2*(R₀+18)
+  have hR : 2 ∣ R := dvd_mul_right _ _
+  have hR18 : 18 ≤ R := by dsimp [R]; omega
+  obtain ⟨_,_,u,hl,hd,_⟩ := detected_line_of_physicalInputs hs h1 h2 h3
+    (by positivity : 0 < 2^j₀) hR hR18
+  exact ⟨R,by dsimp [R]; omega,hR,hR18,u,hl,hd⟩
+
+/-- The path clauses hold at the very scales/radii chosen by the supplied line
+premise. Intersecting independently chosen cofinal subsequences is not used. -/
+theorem cofinalAnyPathCurlLine_of_rightStar (h : CofinalRightStarCurlLine) :
+    CofinalAnyPathCurlLine := by
+  intro j₀
+  obtain ⟨j,hj,hRs⟩ := h j₀
+  refine ⟨j,hj,?_⟩
+  intro R₀
+  obtain ⟨R,hR0,hR,hR18,u,hl,hd⟩ := hRs R₀
+  have hq : 0 < 2^j := by positivity
+  exact ⟨R,hR0,hR,hR18,rightStar hq R,rightStar_cont hq R,
+    rightStar_an hq R,rightStar_zero hq R,rightStar_negative hq hR hR18,u,hl,hd⟩
+
+/-- Direct round-12 response bridge; no RegularityFacts premise. -/
+theorem cofinalNoCancellation_of_rightStar (h : CofinalRightStarCurlLine) :
+    CofinalAnyPathNoResponseCancellation :=
+  AdalyFormal.Round12.Kernel.ResponseActual.cofinal_noCancellation_of_curlLine
+    (cofinalAnyPathCurlLine_of_rightStar h)
+
+/-- Conditional reduction only, not an unconditional response-hull theorem. -/
+theorem cofinalNoCancellation_of_physicalInputs (hs : StartInputs)
+    (h1 : P1) (h2 : P2) (h3 : P3) : CofinalAnyPathNoResponseCancellation :=
+  cofinalNoCancellation_of_rightStar
+    (cofinalRightStarCurlLine_of_physicalInputs hs h1 h2 h3)
+
+#print axioms P1
+#print axioms P2
+#print axioms P3
+#print axioms StartInputs
+#print axioms CofinalRightStarCurlLine
+#print axioms rightStar_fixed
+#print axioms detected_line_of_physicalInputs
+#print axioms cofinalRightStarCurlLine_of_physicalInputs
+#print axioms cofinalAnyPathCurlLine_of_rightStar
+#print axioms cofinalNoCancellation_of_rightStar
+#print axioms cofinalNoCancellation_of_physicalInputs
+end AdalyFormal.Round13.Assembly.R1

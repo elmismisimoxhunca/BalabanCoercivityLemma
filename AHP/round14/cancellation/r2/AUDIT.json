@@ -1,0 +1,37 @@
+{
+  "local": "/home/sebastian/BalabanCoercivityLemma/AHP/round14/cancellation/r2/AreaStructure.lean",
+  "shared": "/home/sebastian/BalabanCoercivityLemma/AHP/round14/shared/cancellation/R2_AreaStructure.lean",
+  "sha256": "8f82949c0a5a92817ab1343ceab8218c96a41730b9a22787954dfae2ba040b0f",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "axiom_records_each": 298,
+  "new_declaration_records": 28,
+  "new_declarations": [
+    "AdalyFormal.Round14.Cancellation.areaSum_affine",
+    "AdalyFormal.Round14.Cancellation.areaSum_affine_ne_zero",
+    "AdalyFormal.Round14.Cancellation.areaSum_eq_chargedArea",
+    "AdalyFormal.Round14.Cancellation.areaSum_ne_zero_of_mem_charged_span",
+    "AdalyFormal.Round14.Cancellation.areaSum_quarter",
+    "AdalyFormal.Round14.Cancellation.chargedArea",
+    "AdalyFormal.Round14.Cancellation.chargedArea_eventually_ne_zero_of_matrix_limit",
+    "AdalyFormal.Round14.Cancellation.chargedArea_eventually_pos_of_matrix_limit",
+    "AdalyFormal.Round14.Cancellation.imagPart_affine",
+    "AdalyFormal.Round14.Cancellation.imagPart_quarter",
+    "AdalyFormal.Round14.Cancellation.realPart_affine",
+    "AdalyFormal.Round14.Cancellation.realPart_quarter",
+    "AdalyFormal.Round14.Cancellation.rotation_entry",
+    "AdalyFormal.Round14.Cancellation.tendsto_chargedArea"
+  ],
+  "all_axioms_permitted": true,
+  "logs_warning_free": true,
+  "forbidden_mechanisms_absent": true,
+  "local_shared_byte_identical": true,
+  "numerical_auxiliary_exits_zero": true,
+  "row_profile_count": 84,
+  "early_precision_check_max_relative_error": "2.96469058472296742047313062521159828807942006485087046617191E-12",
+  "p3_closed": false,
+  "cofinalP3_closed": false,
+  "goalNeg2_closed": false
+}

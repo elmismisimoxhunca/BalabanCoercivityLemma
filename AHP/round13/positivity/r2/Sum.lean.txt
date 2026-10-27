@@ -1,0 +1,126 @@
+namespace AdalyFormal.Round13.Positivity.Physical
+open Classical
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.StatementLaneR6
+open AdalyFormal.StatementLaneR8
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.CovariantHjMinimizer (periodicLatticeShiftBack)
+open AdalyFormal.Round12.Noncancel.Path
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round13.Positivity.Leaves
+variable {L : PeriodicLatticeExtent}
+
+/-- The four actual star plaquettes, not a surrogate stencil. -/
+def arm (x : PeriodicLatticeSite L) : Fin 4 → PeriodicLatticePlaquette L :=
+  ![P1 x ⟨1,by decide⟩,P2 x ⟨1,by decide⟩,P1 x ⟨2,by decide⟩,P2 x ⟨2,by decide⟩]
+
+theorem arm_injective {Om : Set (PeriodicLatticeSite L)} {x : PeriodicLatticeSite L}
+    (hb : BdPt Om x) : Function.Injective (arm x) := by
+  intro i j h
+  have hd := congrArg (fun p : PeriodicLatticePlaquette L => p.2.1.2.val) h
+  fin_cases i <;> fin_cases j <;> try rfl
+  all_goals norm_num [arm,AdalyFormal.D1Literal.P1,P2] at hd
+  all_goals first
+    | exact False.elim (P1_ne_P2 x hb.side ⟨1,by decide⟩ ⟨1,by decide⟩ h)
+    | exact False.elim (P1_ne_P2 x hb.side ⟨1,by decide⟩ ⟨1,by decide⟩ h.symm)
+    | exact False.elim (P1_ne_P2 x hb.side ⟨2,by decide⟩ ⟨2,by decide⟩ h)
+    | exact False.elim (P1_ne_P2 x hb.side ⟨2,by decide⟩ ⟨2,by decide⟩ h.symm)
+
+def armBudget {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (A : BondFnL2 (scaleUp 2 1 (dilLu q R))) : Fin 4 → ℝ :=
+  ![‖A (leaf hq R 0)‖^2+‖A (leaf hq R 4)‖^2,
+    ‖A (leaf hq R 1)‖^2+‖A (leaf hq R 5)‖^2,
+    ‖A (leaf hq R 2)‖^2+‖A (leaf hq R 6)‖^2,
+    ‖A (leaf hq R 3)‖^2+‖A (leaf hq R 7)‖^2]
+
+theorem armBudget_sum {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (A : BondFnL2 (scaleUp 2 1 (dilLu q R))) :
+    (∑ i, armBudget hq R A i) = ∑ i : Fin 8, ‖A (leaf hq R i)‖^2 := by
+  simp only [Fin.sum_univ_succ]
+  change (‖A (leaf hq R 0)‖^2+‖A (leaf hq R 4)‖^2) +
+    ((‖A (leaf hq R 1)‖^2+‖A (leaf hq R 5)‖^2) +
+    ((‖A (leaf hq R 2)‖^2+‖A (leaf hq R 6)‖^2) +
+    ((‖A (leaf hq R 3)‖^2+‖A (leaf hq R 7)‖^2) + 0))) =
+    ‖A (leaf hq R 0)‖^2 + (‖A (leaf hq R 1)‖^2 + (‖A (leaf hq R 2)‖^2 +
+    (‖A (leaf hq R 3)‖^2 + (‖A (leaf hq R 4)‖^2 + (‖A (leaf hq R 5)‖^2 +
+    (‖A (leaf hq R 6)‖^2 + (‖A (leaf hq R 7)‖^2 + 0)))))))
+  ring
+
+/-- The previously missing COMPLETE physical omitted-sum bound. Every curved
+exterior plaquette is handled by input vanishing, not falsely called flat. -/
+theorem rightStar_omitted_loss {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (t : ℝ) (ht : 0 ≤ Real.cos t)
+    (u : ↥(bondSupp (geomOf 2 1 (dilTower q R))))
+    (hu : (((iE (geomOf 2 1 (dilTower q R)) u) (rightSite hq R,0) : SuTwo) :
+      Matrix (Fin 2) (Fin 2) ℂ) 0 1 = 0) :
+    -(1-Real.cos t)*(∑ i : Fin 8,
+      ‖(iE (geomOf 2 1 (dilTower q R)) u) (leaf hq R i)‖^2) ≤
+    omittedEnergy (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+      (rightStar hq R t) 1 (dilLam q R)) u := by
+  let P := gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+    (rightStar hq R t) 1 (dilLam q R)
+  have hb := rightSite_bd hq R
+  have hPG : P.G = geomOf 2 1 (dilTower q R) := rfl
+  have hPU : P.U = starPath (periodicLatticeShift (rightSite hq R) 0) t := rfl
+  have hh := omitted_loss_of_injective_arms P (dil_admissible hq hR) (by nlinarith)
+    u (Real.cos t) (arm (rightSite hq R)) (arm_injective hb)
+    (by
+      intro i
+      fin_cases i
+      · exact arm1_omitted hb ⟨1,by decide⟩
+      · exact arm2_omitted hb ⟨1,by decide⟩
+      · exact arm1_omitted hb ⟨2,by decide⟩
+      · exact arm2_omitted hb ⟨2,by decide⟩)
+    (armBudget hq R (iE P.G u))
+    (by
+      intro i
+      fin_cases i
+      · simpa [arm,armBudget,leaf,hPG,hPU] using arm1_lower hb t ht u hu ⟨1,by decide⟩
+      · simpa [arm,armBudget,leaf,hPG,hPU] using arm2_lower hb t ht u hu ⟨1,by decide⟩
+      · simpa [arm,armBudget,leaf,hPG,hPU] using arm1_lower hb t ht u hu ⟨2,by decide⟩
+      · simpa [arm,armBudget,leaf,hPG,hPU] using arm2_lower hb t ht u hu ⟨2,by decide⟩)
+    (by
+      intro p _ hn
+      apply nonstar_nonneg hb (right_forward_out hq R) t u p
+      intro ν
+      have hν : ν.1 = 1 ∨ ν.1 = 2 := by have := ν.2; omega
+      rcases hν with hν | hν
+      · have heq : ν = ⟨1,by decide⟩ := Subtype.ext hν
+        subst ν
+        exact ⟨hn 0,hn 1⟩
+      · have heq : ν = ⟨2,by decide⟩ := Subtype.ext hν
+        subst ν
+        exact ⟨hn 2,hn 3⟩)
+  rw [armBudget_sum] at hh
+  exact hh
+
+/-- Raw-field version of the physical loss; no dressing or inverse premise. -/
+theorem rightStar_raw_omitted_loss {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (t : ℝ) (ht : 0 ≤ Real.cos t)
+    (u : ↥(bondSupp (geomOf 2 1 (dilTower q R))))
+    (hu : (((iE (geomOf 2 1 (dilTower q R)) u) (rightSite hq R,0) : SuTwo) :
+      Matrix (Fin 2) (Fin 2) ℂ) 0 1 = 0) :
+    -(1-Real.cos t)*(∑ i : Fin 8,
+      ‖(iE (geomOf 2 1 (dilTower q R)) u) (leaf hq R i)‖^2) ≤
+      ∑ p, if p ∈ plaqIn ((dilTower q R).Om 0) then 0 else
+        plaqEnergy (rightStar hq R t) (iE (geomOf 2 1 (dilTower q R)) u) p := by
+  have h := rightStar_omitted_loss hq hR hR18 t ht u hu
+  rw [omittedEnergy_eq_raw _ (dil_admissible hq hR) (by nlinarith)] at h
+  exact h
+
+end AdalyFormal.Round13.Positivity.Physical
+#print axioms AdalyFormal.Round13.Positivity.Physical.arm
+#print axioms AdalyFormal.Round13.Positivity.Physical.armBudget
+#print axioms AdalyFormal.Round13.Positivity.Physical.arm_injective
+#print axioms AdalyFormal.Round13.Positivity.Physical.armBudget_sum
+#print axioms AdalyFormal.Round13.Positivity.Physical.rightStar_omitted_loss
+#print axioms AdalyFormal.Round13.Positivity.Physical.rightStar_raw_omitted_loss

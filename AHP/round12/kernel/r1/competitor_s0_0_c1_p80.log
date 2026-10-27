@@ -1,0 +1,50 @@
+assembled 2 32 1 n 9412 aug 13108 nnz 401738 seconds 2.6761701107025146
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round12/kernel/r1/precise_q2_R32_s0_0_c1_p80.json {
+  "mode": "high-precision selected block",
+  "q": 2,
+  "R": 32,
+  "character": [
+    0,
+    0
+  ],
+  "charge": 1,
+  "dps": 80,
+  "root": "0.563971517985560942179715334361727273883421139039400530134866542749493564745",
+  "root_solved": false,
+  "schur_low": [
+    "0.0519609465730851656876474456585526103705876815755862346831570762356064127334",
+    "1.0",
+    "1.08957766165812391484848164611027534644342306049468958960754475121398947226",
+    "1.08959853857568686669362090507187440727551377160018417748876067985293963262"
+  ],
+  "kernel_form_slope": "-2.1967064728650316982115949414029955207001844106837248288410140734367360155",
+  "augmented_residual": "0.0214990706135492402146483129686352192033662644848936728535949702379892446753",
+  "pencil_error": "1.4534985520900226512378242267797010273323862462544623749443016049655265261e-81",
+  "qualification": "Non-interval numerical evidence in the R6 cell transcription. No Lean Fourier identification, full-kernel proof, or cofinal result.",
+  "seconds": 43.39900231361389,
+  "peak_rss_KiB": 391284
+}

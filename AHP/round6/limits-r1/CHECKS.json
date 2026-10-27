@@ -1,0 +1,29 @@
+{
+  "closedGoal": "none",
+  "sourceSha256": "735d91253d71b315409743238b4cc5366c208476b092ce5784b37c73e4eaa5eb",
+  "pinVerbatimBytePrefix": true,
+  "round5BridgeVerbatimBytePrefix": true,
+  "onlyFrozenImports": true,
+  "forbiddenTokens": [],
+  "localDeclarationCount": 145,
+  "everyLocalDeclarationHasPrintCommand": true,
+  "newDeclarations": {
+    "twistD_zero_amplitude": 2421,
+    "vacuum_correction_pairing": 2445,
+    "vacuum_pencil_iff_carrier_unit": 2454,
+    "initial_control_has_positive_correction": 2463,
+    "not_initial_control_of_correction_nonpositive": 2476,
+    "not_initial_control_zero": 2487,
+    "not_initial_control_of_kernel_nonpositive": 2495,
+    "no_small_control_of_kernel_expansion": 2508,
+    "not_round5_premise_of_small_obstruction": 2535
+  },
+  "priorExactSourceCompileExit": 0,
+  "priorCompleteLogPreserved": false,
+  "freshFinalCompileExit": null,
+  "interruptedDraftDependencyRecords": 138,
+  "interruptedDraftRecordsAllPermitted": true,
+  "completeFinalDependencyAudit": false,
+  "numericalJobsRun": 0,
+  "scope": "Source/provenance checks passed. Not a fresh final compile or complete retained axiom audit. No positive-amplitude obstruction established."
+}

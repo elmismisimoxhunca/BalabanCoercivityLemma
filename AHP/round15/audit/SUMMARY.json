@@ -1,0 +1,436 @@
+{
+  "scope": "Static audit of retained sources, logs and exit files; no Lean compilation or numerical solve. B does not mean independent verification. Numerical evidence does not close a proposition.",
+  "time_utc": "2026-10-27T03:12:13.816003+00:00",
+  "workflow": {
+    "id": "wfr_5df3dc43-d69b-4118-bbde-2106f7836520",
+    "status": "failed",
+    "error": "Workflow exceeded total run timeout",
+    "phase": "Work",
+    "startedAt": 1792984009530,
+    "finishedAt": 1793070419043
+  },
+  "calls": [
+    {
+      "callIndex": 0,
+      "label": "dictionary:r1",
+      "status": "failed",
+      "childThreadId": "thr_7fws3hbnnu",
+      "error": "Native structured result missing or repair limit exhausted",
+      "resultAvailable": false
+    },
+    {
+      "callIndex": 1,
+      "label": "seed:r1",
+      "status": "succeeded",
+      "childThreadId": "thr_ywdpb2tegh",
+      "error": null,
+      "resultAvailable": true
+    },
+    {
+      "callIndex": 2,
+      "label": "numerics:r1",
+      "status": "failed",
+      "childThreadId": "thr_tpjvj8f6py",
+      "error": "Native child input unanswered",
+      "resultAvailable": false
+    },
+    {
+      "callIndex": 3,
+      "label": "assembly:r1",
+      "status": "succeeded",
+      "childThreadId": "thr_cceknejhym",
+      "error": null,
+      "resultAvailable": true
+    },
+    {
+      "callIndex": 4,
+      "label": "numerics:r1",
+      "status": "succeeded",
+      "childThreadId": "thr_6cmxy9qcgt",
+      "error": null,
+      "resultAvailable": true
+    },
+    {
+      "callIndex": 5,
+      "label": "dictionary:r1",
+      "status": "succeeded",
+      "childThreadId": "thr_sa97sj2tbf",
+      "error": null,
+      "resultAvailable": true
+    },
+    {
+      "callIndex": 6,
+      "label": "dictionary:r2",
+      "status": "cancelled",
+      "childThreadId": "thr_7c9v3fqit9",
+      "error": null,
+      "resultAvailable": false
+    },
+    {
+      "callIndex": 7,
+      "label": "seed:r2",
+      "status": "succeeded",
+      "childThreadId": "thr_vv7f4pru5v",
+      "error": null,
+      "resultAvailable": true
+    },
+    {
+      "callIndex": 8,
+      "label": "numerics:r2",
+      "status": "succeeded",
+      "childThreadId": "thr_frxj4ecbsq",
+      "error": null,
+      "resultAvailable": true
+    },
+    {
+      "callIndex": 9,
+      "label": "assembly:r2",
+      "status": "succeeded",
+      "childThreadId": "thr_i93bmsvnjc",
+      "error": null,
+      "resultAvailable": true
+    }
+  ],
+  "unique_round15_names_with_retained_builder_axiom_evidence": 101,
+  "accepted_names": [
+    "AdalyFormal.Round15.Assembly.CofinalChargedLeadingCertificate",
+    "AdalyFormal.Round15.Assembly.CofinalRadiusAreaSeed",
+    "AdalyFormal.Round15.Assembly.CofinalRadiusChargedLeadingCertificate",
+    "AdalyFormal.Round15.Assembly.CofinalRadiusChargedLeadingData",
+    "AdalyFormal.Round15.Assembly.cofinalAreaSeed_of_cofinalRadiusChargedLeading",
+    "AdalyFormal.Round15.Assembly.cofinalRadiusAreaSeed_of_cofinalRadiusChargedLeadingData",
+    "AdalyFormal.Round15.Assembly.cofinalRadiusChargedLeadingCertificate_of_cofinalChargedLeading",
+    "AdalyFormal.Round15.Assembly.cofinalRadiusChargedLeadingData_of_chargedLeading",
+    "AdalyFormal.Round15.Assembly.cofinalUnitDominantAreaSeed_of_cofinalChargedLeading",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_areaSeed",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_chargedLeading",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_cofinalAreaSeed",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_cofinalChargedLeading",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_cofinalRadiusChargedLeading",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_dominantAreaSeed",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_laurentAreaSeed",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_unitAreaSeed",
+    "AdalyFormal.Round15.Assembly.goalNeg2_of_unitDominantAreaSeed",
+    "AdalyFormal.Round15.Dictionary.Q1C10PhysicalDictionary",
+    "AdalyFormal.Round15.Dictionary.backward",
+    "AdalyFormal.Round15.Dictionary.collarA",
+    "AdalyFormal.Round15.Dictionary.collarB",
+    "AdalyFormal.Round15.Dictionary.collarC",
+    "AdalyFormal.Round15.Dictionary.collar_dictionary",
+    "AdalyFormal.Round15.Dictionary.dominantTransfer",
+    "AdalyFormal.Round15.Dictionary.dominantTransferInverse",
+    "AdalyFormal.Round15.Dictionary.dominant_eigenpairs",
+    "AdalyFormal.Round15.Dictionary.dominant_mode0_backward",
+    "AdalyFormal.Round15.Dictionary.dominant_mode0_forward",
+    "AdalyFormal.Round15.Dictionary.dominant_mode0_recurrence",
+    "AdalyFormal.Round15.Dictionary.dominant_mode1_backward",
+    "AdalyFormal.Round15.Dictionary.dominant_mode1_forward",
+    "AdalyFormal.Round15.Dictionary.dominant_mode1_recurrence",
+    "AdalyFormal.Round15.Dictionary.dominant_recurrence",
+    "AdalyFormal.Round15.Dictionary.forward",
+    "AdalyFormal.Round15.Dictionary.mode0",
+    "AdalyFormal.Round15.Dictionary.mode1",
+    "AdalyFormal.Round15.Dictionary.observation",
+    "AdalyFormal.Round15.Dictionary.phase",
+    "AdalyFormal.Round15.Dictionary.phase_sq",
+    "AdalyFormal.Round15.Dictionary.physicalLayer",
+    "AdalyFormal.Round15.Dictionary.rho",
+    "AdalyFormal.Round15.Dictionary.rho_ne_zero",
+    "AdalyFormal.Round15.Dictionary.rho_pos",
+    "AdalyFormal.Round15.Dictionary.rho_quad",
+    "AdalyFormal.Round15.Dictionary.transfer_inverse",
+    "AdalyFormal.Round15.Seed.ChargedLeadingData",
+    "AdalyFormal.Round15.Seed.ChargedLeadingMatrix",
+    "AdalyFormal.Round15.Seed.ChargedVectorData",
+    "AdalyFormal.Round15.Seed.ChargedVectorLeading",
+    "AdalyFormal.Round15.Seed.CofinalChargedVectorCertificate",
+    "AdalyFormal.Round15.Seed.DyadicChargedLeadingCertificate",
+    "AdalyFormal.Round15.Seed.candidateH",
+    "AdalyFormal.Round15.Seed.candidateH_factor",
+    "AdalyFormal.Round15.Seed.chargedArea_real_smul",
+    "AdalyFormal.Round15.Seed.chargedArea_twoLayerMode",
+    "AdalyFormal.Round15.Seed.chargedBilin",
+    "AdalyFormal.Round15.Seed.chargedBilin_add_left",
+    "AdalyFormal.Round15.Seed.chargedBilin_add_right",
+    "AdalyFormal.Round15.Seed.chargedBilin_real_smul_left",
+    "AdalyFormal.Round15.Seed.chargedBilin_real_smul_right",
+    "AdalyFormal.Round15.Seed.chargedMixed",
+    "AdalyFormal.Round15.Seed.chargedTwoLayerMode",
+    "AdalyFormal.Round15.Seed.chargedVectorLeading_of_twoLayer",
+    "AdalyFormal.Round15.Seed.cofinalUnitDominantAreaSeed_of_chargedLeading",
+    "AdalyFormal.Round15.Seed.cofinalUnitDominantAreaSeed_of_chargedVector",
+    "AdalyFormal.Round15.Seed.collarModelLeading",
+    "AdalyFormal.Round15.Seed.collarTestLeadingConstant",
+    "AdalyFormal.Round15.Seed.collarTestLeadingConstant_ne_zero",
+    "AdalyFormal.Round15.Seed.collarTestMatrix",
+    "AdalyFormal.Round15.Seed.dictionary_mode0_ne_zero",
+    "AdalyFormal.Round15.Seed.dominantDisc",
+    "AdalyFormal.Round15.Seed.dominantDisc_eq",
+    "AdalyFormal.Round15.Seed.dominantDisc_pos",
+    "AdalyFormal.Round15.Seed.dominantRho",
+    "AdalyFormal.Round15.Seed.dominantRho_add_inv",
+    "AdalyFormal.Round15.Seed.dominantRho_inv",
+    "AdalyFormal.Round15.Seed.dominantRho_lt_one",
+    "AdalyFormal.Round15.Seed.dominantRho_pos",
+    "AdalyFormal.Round15.Seed.dominantRho_quartic",
+    "AdalyFormal.Round15.Seed.dominantY",
+    "AdalyFormal.Round15.Seed.dominantY_gt_two",
+    "AdalyFormal.Round15.Seed.fixedLeadingConstant",
+    "AdalyFormal.Round15.Seed.fixedLeadingConstant_ne_zero",
+    "AdalyFormal.Round15.Seed.fixedMatrix",
+    "AdalyFormal.Round15.Seed.fixedSeed",
+    "AdalyFormal.Round15.Seed.fixedSeed_ne_zero",
+    "AdalyFormal.Round15.Seed.q10",
+    "AdalyFormal.Round15.Seed.q10_eq_transform",
+    "AdalyFormal.Round15.Seed.q18",
+    "AdalyFormal.Round15.Seed.radiusChargedObservable",
+    "AdalyFormal.Round15.Seed.radiusChargedTwoLayerObservable",
+    "AdalyFormal.Round15.Seed.radiusChargedVectorObservable",
+    "AdalyFormal.Round15.Seed.radiusDominantData_of_chargedLeadingMatrix",
+    "AdalyFormal.Round15.Seed.radiusDominantData_of_chargedVectorLeading",
+    "AdalyFormal.Round15.Seed.radiusLaurentData_of_chargedTwoLayer",
+    "AdalyFormal.Round15.Seed.tendsto_chargedArea_vector",
+    "q1B00_inv",
+    "q1_schurA",
+    "q1_schurB",
+    "q1_schurC"
+  ],
+  "physical_seed_proved": false,
+  "P3_proved": false,
+  "GoalNeg2_proved": false,
+  "files": [
+    {
+      "source": "AHP/round15/dictionary/r1/Collar.lean",
+      "source_meta": {
+        "bytes": 19304,
+        "sha256": "86612ee79e4b431df90da21404e224a6a4de1b907aa10ea18f826c64bb100936",
+        "mtime_utc": "2026-10-26T06:29:35.427217+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": false,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "B: retained builder compilation, not independently replayed",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 26,
+      "complete_axiom_records": 26,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/dictionary/r1/PhysicalGap.lean",
+      "source_meta": {
+        "bytes": 260616,
+        "sha256": "c42391409e108f879b0e8e2465d935326029101b3f48be6ff10954a406c45984",
+        "mtime_utc": "2026-10-26T07:24:52.671722+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": false,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "B: retained builder compilation, not independently replayed",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 377,
+      "complete_axiom_records": 377,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/seed/r1/Seed.lean",
+      "source_meta": {
+        "bytes": 263796,
+        "sha256": "8b6c9de16c904cafee734218c22113f00aae0f19f5ad0e07c00fa8d89b0a8774",
+        "mtime_utc": "2026-10-26T04:25:08.087309+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": false,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "B: retained builder compilation, not independently replayed",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 396,
+      "complete_axiom_records": 396,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/seed/r2/Leading.lean",
+      "source_meta": {
+        "bytes": 280496,
+        "sha256": "12074eaafe4107864fdc737bddb90001cc00d1ed554dba58fea07e460f9064d3",
+        "mtime_utc": "2026-10-26T11:53:17.750937+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": true,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": true,
+      "status": "B: retained builder compilation, not independently replayed",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 421,
+      "complete_axiom_records": 421,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/assembly/r1/AreaGoal.lean",
+      "source_meta": {
+        "bytes": 729727,
+        "sha256": "4cfcd3b1b146a16405678dc04a097e50fe4e024e887f1da2beb0e0bd7f4c3aa9",
+        "mtime_utc": "2026-10-26T04:46:16.985638+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": false,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "B: retained builder compilation, not independently replayed",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 22,
+      "complete_axiom_records": 22,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/assembly/r2/AreaGoal.lean",
+      "source_meta": {
+        "bytes": 735360,
+        "sha256": "a6d141eb46842741e72e9b8dd758fa1203c0dfa53c6b07a64ef6d86bf1ced5dc",
+        "mtime_utc": "2026-10-26T15:04:38.977360+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": false,
+      "restored_source_hash_exception": true,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "B: retained builder compilation, not independently replayed",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 30,
+      "complete_axiom_records": 30,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/dictionary/r2/KData.lean",
+      "source_meta": {
+        "bytes": 34582,
+        "sha256": "28a6ae8acaca02ce4e4a52816dd93f2d2dfd297d07db99558ba9b50992a2eaac",
+        "mtime_utc": "2026-10-27T00:50:46.502094+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": false,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "B: retained builder compilation, not independently replayed",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 30,
+      "complete_axiom_records": 30,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/dictionary/r2/DeepCollar.lean",
+      "source_meta": {
+        "bytes": 265694,
+        "sha256": "5e5aee89a39fc8561f59127bbab9ce4053e2ac794af52425081f77538f348d74",
+        "mtime_utc": "2026-10-26T13:32:33.607067+00:00"
+      },
+      "exit_text": "1",
+      "stale_exit_marker": true,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "C: not accepted from retained evidence",
+      "errors": [],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 318,
+      "complete_axiom_records": 318,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/dictionary/r2/Transport.lean",
+      "source_meta": {
+        "bytes": 4258,
+        "sha256": "94e75b89059edad8b6daa5be4b13f70e9e2c99c20b9a1c4d34834d5794fc2012",
+        "mtime_utc": "2026-10-26T19:38:58.301450+00:00"
+      },
+      "exit_text": "1",
+      "stale_exit_marker": false,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "C: not accepted from retained evidence",
+      "errors": [
+        {
+          "line": 11,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Transport.lean:55:2: error: No goals to be solved"
+        }
+      ],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 0,
+      "complete_axiom_records": 0,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/dictionary/r2/Support.lean",
+      "source_meta": {
+        "bytes": 88532,
+        "sha256": "06f9880ce04f292e717947ce8f419858c45f49b7a112e09484efb370a0570934",
+        "mtime_utc": "2026-10-27T03:02:18.226181+00:00"
+      },
+      "exit_text": "1",
+      "stale_exit_marker": true,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "C: not accepted from retained evidence",
+      "errors": [
+        {
+          "line": 32,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:835:43: error: unsolved goals"
+        },
+        {
+          "line": 170,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:906:35: error: Application type mismatch: The argument"
+        },
+        {
+          "line": 178,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:907:38: error: Application type mismatch: The argument"
+        },
+        {
+          "line": 189,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:916:18: error: Application type mismatch: The argument"
+        },
+        {
+          "line": 197,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:919:20: error: Application type mismatch: The argument"
+        },
+        {
+          "line": 205,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:919:96: error: unsolved goals"
+        }
+      ],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 14,
+      "complete_axiom_records": 14,
+      "nonstandard_axiom_records": []
+    },
+    {
+      "source": "AHP/round15/dictionary/r2/Stencil.lean",
+      "source_meta": {
+        "bytes": 123101,
+        "sha256": "6105aacc86620462e8a31fc6d4c9c893acdb23588a16b3f83f9ea7d0b1da1d3a",
+        "mtime_utc": "2026-10-27T03:02:47.806720+00:00"
+      },
+      "exit_text": "0",
+      "stale_exit_marker": true,
+      "restored_source_hash_exception": false,
+      "builder_manifest_attests_regenerated_source_and_log": false,
+      "status": "C: not accepted from retained evidence",
+      "errors": [
+        {
+          "line": 50,
+          "text": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Stencil.lean:993:81: error: unexpected token '/-!'; expected 'lemma'"
+        }
+      ],
+      "forbidden_code_tokens": [],
+      "axiom_record_starts": 26,
+      "complete_axiom_records": 26,
+      "nonstandard_axiom_records": []
+    }
+  ]
+}

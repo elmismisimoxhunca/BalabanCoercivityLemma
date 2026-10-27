@@ -1,0 +1,270 @@
+namespace AdalyFormal.Round13.Trial
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneR8
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 RMap curlValueCovariant)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round12.Noncancel.Plaquette
+open Classical
+
+theorem charged_add (z w : ℂ) : charged (z+w) = charged z + charged w := by
+  apply Subtype.ext
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [charged,add_comm]
+
+def chargedHom : ℂ →+ SuTwo where
+  toFun := charged
+  map_zero' := charged_zero
+  map_add' := charged_add
+
+def localAmplitude (v : Fin 3 → Fin 7) (μ : Fin 3) : ℂ :=
+  ∑ i : Fin 6, if v = trialCoord i ∧ μ = trialDir i then trialAmplitude i else 0
+
+theorem localField_amplitude (v : Fin 3 → Fin 7) (μ : Fin 3) :
+    localField v μ = charged (localAmplitude v μ) := by
+  unfold localField localAmplitude
+  change _ = chargedHom _
+  rw [map_sum]
+  apply Finset.sum_congr rfl
+  intro i _
+  split_ifs <;> simp [chargedHom,charged_zero]
+
+theorem trial_edge_values {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 19) :
+    let v := (trialPlaqPattern i).1
+    let μ := (trialPlaqPattern i).2.1.1
+    let ν := (trialPlaqPattern i).2.1.2
+    trialField hq R ((trialPlaq hq R i).1, μ) = charged (localAmplitude v μ) ∧
+    trialField hq R ((trialPlaq hq R i).1, ν) = charged (localAmplitude v ν) ∧
+    trialField hq R (periodicLatticeShift (trialPlaq hq R i).1 ν,μ) =
+      charged (localAmplitude (stepCoord v ν) μ) ∧
+    trialField hq R (periodicLatticeShift (trialPlaq hq R i).1 μ,ν) =
+      charged (localAmplitude (stepCoord v μ) ν) := by
+  dsimp only [trialPlaq]
+  rw [patchSite_shift hq R _ _ (by have := pattern_room i (trialPlaqPattern i).2.1.2; omega),
+    patchSite_shift hq R _ _ (by have := pattern_room i (trialPlaqPattern i).2.1.1; omega)]
+  simp only [trialField_patch,localField_amplitude,stepCoord,and_self]
+
+theorem trial_atom_values {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ) (i : Fin 19) :
+    let v := (trialPlaqPattern i).1
+    let μ := (trialPlaqPattern i).2.1.1
+    let ν := (trialPlaqPattern i).2.1.2
+    a1LM (rightStar hq R t) (trialPlaq hq R i) (WithLp.ofLp (trialField hq R)) =
+      chargedMat (-localAmplitude (stepCoord v ν) μ) ∧
+    a2LM (trialPlaq hq R i) (WithLp.ofLp (trialField hq R)) = chargedMat (-localAmplitude v ν) ∧
+    a3LM (trialPlaq hq R i) (WithLp.ofLp (trialField hq R)) = chargedMat (localAmplitude v μ) ∧
+    a4LM (rightStar hq R t) (trialPlaq hq R i) (WithLp.ofLp (trialField hq R)) =
+      chargedMat (localAmplitude (stepCoord v μ) ν) := by
+  have hb := trial_base_links hq R t i
+  have he := trial_edge_values hq R i
+  dsimp only [trialPlaq] at hb he
+  dsimp only at ⊢
+  constructor
+  · rw [a1LM_apply]
+    unfold AprimeZW
+    dsimp only [trialPlaq]
+    rw [hb.2, he.2.2.1, AdalyFormal.Balaban.CovariantOperators.RMap_one, LinearMap.id_apply, charged_neg]
+    rfl
+  constructor
+  · rw [a2LM_apply]
+    unfold AprimeWX
+    dsimp only [trialPlaq]
+    rw [he.2.1,charged_neg]
+    rfl
+  constructor
+  · rw [a3LM_apply]
+    unfold AprimeXY
+    dsimp only [trialPlaq]
+    rw [he.1]
+    rfl
+  · rw [a4LM_apply]
+    unfold AprimeYZ
+    dsimp only [trialPlaq]
+    rw [hb.1,he.2.2.2,AdalyFormal.Balaban.CovariantOperators.RMap_one]
+    rfl
+
+def localQuad (i : Fin 19) : ℝ :=
+  let v := (trialPlaqPattern i).1
+  let μ := (trialPlaqPattern i).2.1.1
+  let ν := (trialPlaqPattern i).2.1.2
+  quadForm (if isCurved i then 0 else 1) (if isCurved i then 1 else 0)
+    (-localAmplitude (stepCoord v ν) μ) (-localAmplitude v ν)
+    (localAmplitude v μ) (localAmplitude (stepCoord v μ) ν)
+
+theorem trial_contrib_quad {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 19) :
+    contrib (rightStar hq R (Real.pi/2)) (WithLp.ofLp (trialField hq R)) (trialPlaq hq R i) =
+      localQuad i := by
+  have h := trial_atom_values hq R (Real.pi/2) i
+  have hh := trial_hol_parts hq R i
+  exact frozen_four_form _ _ _ _ _ _ _ _ _ hh.1 hh.2 h.1 h.2.1 h.2.2.1 h.2.2.2
+
+def plaqNumerator : Fin 19 → ℝ := ![1,1,1,1,-8,1,1,1,1,-8,1,-16,-8,1,1,1,1,1,1]
+
+def edgePattern (i : Fin 19) : Fin 4 → ((Fin 3 → Fin 7) × Fin 3) :=
+  let v := (trialPlaqPattern i).1
+  let μ := (trialPlaqPattern i).2.1.1
+  let ν := (trialPlaqPattern i).2.1.2
+  ![(v,μ),(stepCoord v μ,ν),(stepCoord v ν,μ),(v,ν)]
+
+/-- Exact incidence table, checked by kernel reduction over finite index types. -/
+def edgeIndex : Fin 19 → Fin 4 → Option (Fin 6) :=
+  ![![none,some 5,none,none], ![none,none,some 2,none],
+    ![none,none,some 4,none], ![none,none,some 2,none],
+    ![some 2,none,some 0,none], ![some 2,none,none,none],
+    ![none,none,some 3,none], ![none,none,some 4,none],
+    ![some 4,none,none,none], ![some 4,none,some 0,none],
+    ![none,none,some 5,none], ![some 0,none,some 1,some 5],
+    ![some 0,none,some 3,none], ![some 5,none,none,none],
+    ![some 3,none,none,none], ![some 3,none,none,none],
+    ![none,none,some 1,none], ![some 1,none,none,none], ![some 1,none,none,none]]
+
+theorem edgeIndex_spec : ∀ (i : Fin 19) (k : Fin 4) (j : Fin 6),
+    ((edgePattern i k).1 = trialCoord j ∧ (edgePattern i k).2 = trialDir j) ↔
+      edgeIndex i k = some j := by decide
+
+theorem localAmplitude_edge (i : Fin 19) (k : Fin 4) :
+    localAmplitude (edgePattern i k).1 (edgePattern i k).2 =
+      (edgeIndex i k).elim 0 trialAmplitude := by
+  unfold localAmplitude
+  simp only [edgeIndex_spec]
+  cases h : edgeIndex i k <;> simp [h]
+
+theorem localQuad_value (i : Fin 19) : localQuad i = plaqNumerator i / 16 := by
+  change quadForm (if isCurved i then 0 else 1) (if isCurved i then 1 else 0)
+    (-localAmplitude (edgePattern i 2).1 (edgePattern i 2).2)
+    (-localAmplitude (edgePattern i 3).1 (edgePattern i 3).2)
+    (localAmplitude (edgePattern i 0).1 (edgePattern i 0).2)
+    (localAmplitude (edgePattern i 1).1 (edgePattern i 1).2) = _
+  rw [localAmplitude_edge,localAmplitude_edge,localAmplitude_edge,localAmplitude_edge]
+  fin_cases i
+  · change quadForm 1 0 (-(0)) (-(0)) (0) (-Complex.I/4) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(Complex.I/4)) (-(0)) (0) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(Complex.I/4)) (-(0)) (0) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(Complex.I/4)) (-(0)) (0) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 0 1 (-(1)) (-(0)) (Complex.I/4) (0) = (-8 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(0)) (-(0)) (Complex.I/4) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(-Complex.I/4)) (-(0)) (0) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(Complex.I/4)) (-(0)) (0) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(0)) (-(0)) (Complex.I/4) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 0 1 (-(1)) (-(0)) (Complex.I/4) (0) = (-8 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(-Complex.I/4)) (-(0)) (0) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 0 1 (-(-Complex.I/4)) (-(-Complex.I/4)) (1) (0) = (-16 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 0 1 (-(-Complex.I/4)) (-(0)) (1) (0) = (-8 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(0)) (-(0)) (-Complex.I/4) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(0)) (-(0)) (-Complex.I/4) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(0)) (-(0)) (-Complex.I/4) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(-Complex.I/4)) (-(0)) (0) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(0)) (-(0)) (-Complex.I/4) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+  · change quadForm 1 0 (-(0)) (-(0)) (-Complex.I/4) (0) = (1 : ℝ)/16
+    norm_num [quadForm,Complex.normSq_apply,Complex.mul_re,Complex.mul_im,Complex.div_re,Complex.div_im]
+
+/-- Exact actual frozen all-plaquette value for the periodic six-bond trial. -/
+theorem trial_delta_value {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    ⟪trialField hq R, AdalyFormal.StatementLaneR6.deltaKLocCLM
+      (rightStar hq R (Real.pi/2)) Set.univ (trialField hq R)⟫ = (-25/16 : ℝ) := by
+  rw [trial_delta_sum]
+  simp only [trial_contrib_quad,localQuad_value]
+  norm_num [plaqNumerator,Fin.sum_univ_succ]
+
+/-- The four curved plaquettes have exact total -5/2. -/
+theorem trial_curved_energy {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    (∑ i : Fin 19, if isCurved i then
+      contrib (rightStar hq R (Real.pi/2)) (WithLp.ofLp (trialField hq R)) (trialPlaq hq R i)
+      else 0) = (-5/2 : ℝ) := by
+  simp only [trial_contrib_quad,localQuad_value]
+  norm_num [Fin.sum_univ_succ,isCurved,plaqNumerator,Fin.ext_iff]
+
+/-- The remaining fifteen plaquettes have exact total 15/16. -/
+theorem trial_flat_energy {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    (∑ i : Fin 19, if isCurved i then 0 else
+      contrib (rightStar hq R (Real.pi/2)) (WithLp.ofLp (trialField hq R)) (trialPlaq hq R i)) =
+        (15/16 : ℝ) := by
+  simp only [trial_contrib_quad,localQuad_value]
+  norm_num [Fin.sum_univ_succ,isCurved,plaqNumerator,Fin.ext_iff]
+
+/-- The exact energy is -1/4 on the ORIGINAL vacuum carrier, at every admissible q,R. -/
+theorem trial_carrier_energy {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    ⟪trialVector hq R, vacA q R (rightStar hq R) 1 (Real.pi/2) (trialVector hq R)⟫ = (-1/4 : ℝ) := by
+  rw [vacA_rightStar, BaseDataS.inner_Ginv]
+  have hd : ⟪trialVector hq R,
+      (dataS selAll selAll (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+        (rightStar hq R (Real.pi/2)) 1 (dilLam q R))).Dpi (trialVector hq R)⟫ = (-25/16 : ℝ) := by
+    have e := E0_Dpi_inner selAll (geomOf 2 1 (dilTower q R))
+      (rightStar hq R (Real.pi/2)) 1 (trialVector hq R)
+    refine e.trans ?_
+    change ⟪Wop (geomOf 2 1 (dilTower q R)) (rightStar hq R (Real.pi/2)) 1 (trialField hq R),
+      DeltaS selAll (geomOf 2 1 (dilTower q R)) (rightStar hq R (Real.pi/2))
+        (Wop (geomOf 2 1 (dilTower q R)) (rightStar hq R (Real.pi/2)) 1 (trialField hq R))⟫ = _
+    rw [trial_W_eq hq hR hR18]
+    exact trial_delta_value hq R
+  have ht : (dataS selAll selAll (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+      (rightStar hq R (Real.pi/2)) 1 (dilLam q R))).T (trialVector hq R) = 0 :=
+    trial_T_zero hq hR hR18 _
+  have hm : ⟪trialVector hq R,
+      (dataS selAll selAll (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+        (rightStar hq R (Real.pi/2)) 1 (dilLam q R))).Mass (trialVector hq R)⟫ = (21/16 : ℝ) := by
+    change ⟪trialVector hq R, pE (geomOf 2 1 (dilTower q R))
+      (MassFull (geomOf 2 1 (dilTower q R)) 1 (bondSectorOf (geomOf 2 1 (dilTower q R))
+        (rightStar hq R (Real.pi/2))) (iE (geomOf 2 1 (dilTower q R)) (trialVector hq R)))⟫ = _
+    rw [pE_inner_right]
+    exact trial_mass_eq hq hR hR18 _
+  rw [hd,ht,hm]
+  norm_num
+
+/-- P1, with its exact all-instance quantifiers; no physical estimate is a premise. -/
+theorem rightStar_negative_halfpi :
+    ∀ {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R),
+      ∃ w : TwistSpace q R,
+        ⟪w, vacA q R (rightStar hq R) 1 (Real.pi/2) w⟫ < 0 := by
+  intro q R hq hR hR18
+  exact ⟨trialVector hq R, by rw [trial_carrier_energy hq hR hR18]; norm_num⟩
+
+theorem cofinal_rightStar_negative_halfpi :
+    ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+      R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      ∃ w : TwistSpace (2^j) R,
+        ⟪w, vacA (2^j) R (rightStar (by positivity) R) 1 (Real.pi/2) w⟫ < 0 := by
+  intro j₀
+  refine ⟨j₀,le_rfl,?_⟩
+  intro R₀
+  refine ⟨2*(R₀+18),by omega,dvd_mul_right _ _,by omega,?_⟩
+  exact rightStar_negative_halfpi (by positivity) (dvd_mul_right _ _) (by omega)
+
+end AdalyFormal.Round13.Trial
+#print axioms AdalyFormal.Round13.Trial.trial_edge_values
+#print axioms AdalyFormal.Round13.Trial.trial_atom_values
+#print axioms AdalyFormal.Round13.Trial.localQuad_value
+#print axioms AdalyFormal.Round13.Trial.trial_contrib_quad
+#print axioms AdalyFormal.Round13.Trial.trial_delta_value
+#print axioms AdalyFormal.Round13.Trial.trial_carrier_energy
+#print axioms AdalyFormal.Round13.Trial.rightStar_negative_halfpi
+#print axioms AdalyFormal.Round13.Trial.cofinal_rightStar_negative_halfpi

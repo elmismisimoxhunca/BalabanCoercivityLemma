@@ -1,0 +1,3 @@
+'coverage_row_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'coverage_row_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'coverage_row_ell2' depends on axioms: [propext, Classical.choice, Quot.sound]

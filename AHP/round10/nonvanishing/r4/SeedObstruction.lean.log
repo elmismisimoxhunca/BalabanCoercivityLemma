@@ -1,0 +1,79 @@
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.eval_ne_zero_eventually' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwo_eq_eval₂' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.specialize_ne_zero_eventually' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.grid_ne_zero_eventually' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.dyadic_argument_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.radius_argument_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_eventually' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.geometric_grid_ne_zero_of_seed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalTwoHom_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.evalThree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.no_common_root_of_bezout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.coupling_ne_zero_of_bezout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.MovingRootCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.moving_root_cofinal_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.quotient_cofinal_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sampleCharacteristic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sampleNumerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_at_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_at_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.sample_no_nonzero_bezout' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_is_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_numerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_seed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_zero_large_radius' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.PolynomialGrid.switchingRoot_not_cofinal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,286 @@
+AdalyFormal.Round3.S3Rest.PrintedMassSubtraction (P : IngrBParams) (B : UnitB P) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedBondEnergy (P : IngrBParams) (Bt : Bond P.Lu → ↥SuTwo) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedDtilde (P : IngrBParams) (u : UnitReading) (B : UnitB P) : UnitB P
+AdalyFormal.Round3.S3Rest.PrintedUnitC (P : IngrBParams) (u : UnitReading) :
+  (Bond P.Lu → ↥SuTwo) →ₗ[ℝ] Bond P.Lu → ↥SuTwo
+AdalyFormal.Round3.S3Rest.PrintedH1For (P : IngrBParams) (r : Reading) : F P →L[ℝ] E P
+AdalyFormal.Round3.S3Rest.PrintedNonlinearTerm (P : IngrBParams) (r : Reading) (u : UnitReading) (B : UnitB P) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedGenForm (P : IngrBParams) (r : Reading) (u : UnitReading) (B : UnitB P) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedInstIneq (P : IngrBParams) (r : Reading) (u : UnitReading) (gamma : ℝ) : Prop
+AdalyFormal.Round3.S3Rest.RestComparison (P : IngrBParams) (r : Reading) (u : UnitReading) : Prop
+AdalyFormal.Round3.S3Rest.NoGammaMassRepair (P : IngrBParams) (r : Reading) (u : UnitReading) : Prop
+AdalyFormal.Round3.S3Rest.GoalPos1 : Prop
+AdalyFormal.Round3.S3Rest.GoalNeg1 : Prop
+AdalyFormal.Round3.S3Rest.GoalPos2 : Prop
+AdalyFormal.Round3.S3Rest.GoalNeg2 : Prop
+'AdalyFormal.Round3.S3Rest.PrintedTracePair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedMassSubtraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedBondEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitRawQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedConstraintMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedCorridorLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedDtilde' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedH1For' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedNonlinearTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedGenForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedInstIneq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.CorridorInversesExist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.NoGammaMassRepair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.gammaScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.ScaleWitness_not_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg1_implies_not_GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg2_implies_not_GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:624:30: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:625:4: warning: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:631:15: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:637:8: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:637:8: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:676:32: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:676:63: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:677:4: warning: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:677:35: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:687:28: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:687:59: warning: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:688:36: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:761:45: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:770:59: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:800:45: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:811:23: warning: This simp argument is unused:
+  starRingEnd_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [map_smul, s̵t̵a̵r̵R̵i̵n̵g̵E̵n̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵star_trivial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:811:42: warning: This simp argument is unused:
+  star_trivial
+
+Hint: Omit it from the simp argument list.
+  simp only [map_smul, starRingEnd_apply,̵ ̵s̵t̵a̵r̵_̵t̵r̵i̵v̵i̵a̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:833:45: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:861:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:905:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:912:6: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:912:6: warning: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:923:29: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:926:15: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:929:29: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:945:56: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:963:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+'AdalyFormal.Round2.S3Pin.ring_inverse_eq_of_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.inverse_smul'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.mesh_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.mesh_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.pow_ell_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.spacing_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDs_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedLap_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQpa_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDelp_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedR_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedGp_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedW_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedCjBil_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedC_plain_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedC_plain_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedHC_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedFirstTerm_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.InversesExist_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQ_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQs_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedT_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDpi_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.metric_mass_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedMass_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedGinv_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedN0_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedH_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedJ_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.e_inner_smul_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.e_inner_smul_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil_diag_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedN_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.physical_schur_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedB_eq_tau_adjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.firstTerm_eq_printed' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round5/s3-raw/s3raw-r1/Attempt.verify.lean:1185:13: warning: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+'AdalyFormal.Round3.S3Rest.PrintedTracePair_eq_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitPair_eq_inner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.massSubtraction_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.bondEnergy_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitQ_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitRemainder_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.H0inv_eq_ring_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedConstraintMatrix_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedCorridorLift_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedDtilde_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.genC_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedH1_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.spacing_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.top_diag_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedH1_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.inverses_plain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedH1For_on_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.finePair_J_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.nonlinear_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.firstTerm_eq_all_readings' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.genForm_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.restComparison_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.goalPos2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.Fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.E' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.F' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.Sites' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.UnitB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.mesh' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.spacing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.finePair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.levelMetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.levelPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedLap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQpa' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDelp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedGp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedW' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDelta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedDpi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedT' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedQs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedGinv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedN0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedJ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.Reading' does not depend on any axioms
+'AdalyFormal.Round2.S3Pin.PrintedCjBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.CInputScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.COutputScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedCBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedHFor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedN' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedFirstTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleConfiguration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.InversesExist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitPair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.UnitReading' does not depend on any axioms
+'AdalyFormal.Round3.S3Rest.unitConstraintScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedH1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.gammaScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.FrozenMassSubtraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.FrozenNonlinearTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.RestComparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.massRescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.ScaleWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.linear_isUnit_smul_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.linear_inverse_smul_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.raw_ell_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitQ_raw_eq_smul_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitRemainder_raw_eq_smul_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedConstraintMatrix_raw_eq_smul_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedConstraintMatrix_raw_isUnit_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedConstraintMatrix_inverses_singular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedCorridorLift_raw_eq_smul_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedDtilde_raw_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitC_raw_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedNonlinearTerm_raw_eq_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedGenForm_raw_eq_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedInstIneq_raw_iff_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round3.S3Rest.restComparison_raw_iff_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.restComparison_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalPos1_iff_GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.goalPos1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]

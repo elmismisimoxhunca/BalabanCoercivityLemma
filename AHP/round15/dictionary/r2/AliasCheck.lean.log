@@ -1,0 +1,15 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/AliasCheck.lean:1:0: error: unknown module prefix 'AHP'
+
+No directory 'AHP' or file 'AHP.olean' in the search path entries:
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/Cli/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/batteries/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/Qq/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/aesop/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/proofwidgets/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/importGraph/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/LeanSearchClient/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/plausible/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/packages/mathlib/.lake/build/lib/lean
+/home/sebastian/BalabanCoercivityLemma/lean/.lake/build/lib/lean
+/home/sebastian/.elan/toolchains/leanprover--lean4---v4.31.0/lib/lean
+/home/sebastian/.elan/toolchains/leanprover--lean4---v4.31.0/lib/lean

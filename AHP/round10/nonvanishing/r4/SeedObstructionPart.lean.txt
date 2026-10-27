@@ -1,0 +1,82 @@
+
+namespace AdalyFormal.Round10.Nonvanishing.PolynomialGrid
+
+open Polynomial
+
+/-! Exact counterexample to transporting a nonzero numerator sample without
+    controlling the moving crossing branch. This is an abstract example, not
+    a counterexample to any of the actual round-9 coupling premises. -/
+
+noncomputable def sampleCharacteristic : (ℝ[X][X])[X] :=
+  Polynomial.X * (Polynomial.X - 1)
+
+noncomputable def sampleNumerator : (ℝ[X][X])[X] := Polynomial.X
+
+theorem sample_at_one (x y : ℝ) :
+    evalThree sampleCharacteristic x y 1 = 0 ∧
+    evalThree sampleNumerator x y 1 = 1 := by
+  simp [evalThree, sampleCharacteristic, sampleNumerator]
+
+theorem sample_at_zero (x y : ℝ) :
+    evalThree sampleCharacteristic x y 0 = 0 ∧
+    evalThree sampleNumerator x y 0 = 0 := by
+  simp [evalThree, sampleCharacteristic, sampleNumerator]
+
+/-- There is a nonzero sample at one root, but no nonzero Bezout certificate
+    for exclusion of all common roots. -/
+theorem sample_no_nonzero_bezout (U V : (ℝ[X][X])[X]) (P : ℝ[X][X])
+    (hbez : U * sampleCharacteristic + V * sampleNumerator = Polynomial.C P)
+    (x y : ℝ) : evalTwo P x y = 0 := by
+  by_contra hP
+  exact (no_common_root_of_bezout sampleCharacteristic sampleNumerator U V P
+    hbez x y 0 hP (sample_at_zero x y).1) (sample_at_zero x y).2
+
+noncomputable def switchingRoot (q R : ℕ) : ℝ :=
+  if q = 2 ∧ R = 18 then 1 else 0
+
+/-- Every sample is an exact root of the SAME polynomial, even though the
+    selected root can change with the discrete volume parameters. -/
+theorem switchingRoot_is_root (q R : ℕ) (x y : ℝ) :
+    evalThree sampleCharacteristic x y (switchingRoot q R) = 0 := by
+  unfold switchingRoot
+  split
+  · exact (sample_at_one x y).1
+  · exact (sample_at_zero x y).1
+
+theorem switchingRoot_numerator (q R : ℕ) (x y : ℝ) :
+    evalThree sampleNumerator x y (switchingRoot q R) = switchingRoot q R := by
+  simp [evalThree, sampleNumerator]
+
+/-- The exact rational sample is nonzero, on a dyadic and even admissible grid point. -/
+theorem switchingRoot_seed : switchingRoot 2 18 = 1 := by
+  norm_num [switchingRoot]
+
+/-- Nevertheless the numerator vanishes at every larger radius, at every scale. -/
+theorem switchingRoot_zero_large_radius (q R : ℕ) (hR : 19 ≤ R) :
+    switchingRoot q R = 0 := by
+  have hne : R ≠ 18 := by omega
+  simp [switchingRoot, hne]
+
+/-- An exact finite sample plus an algebraic crossing equation does NOT
+    give the required nested cofinal nonvanishing. -/
+theorem switchingRoot_not_cofinal : ¬ (∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧
+    ∀ R₀ : ℕ, ∃ R : ℕ, R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      switchingRoot (2 ^ j) R ≠ 0) := by
+  intro h
+  obtain ⟨j, _, hR⟩ := h 0
+  obtain ⟨R, hR19, _, _, hne⟩ := hR 19
+  exact hne (switchingRoot_zero_large_radius (2 ^ j) R hR19)
+
+#print axioms sampleCharacteristic
+#print axioms sampleNumerator
+#print axioms sample_at_one
+#print axioms sample_at_zero
+#print axioms sample_no_nonzero_bezout
+#print axioms switchingRoot
+#print axioms switchingRoot_is_root
+#print axioms switchingRoot_numerator
+#print axioms switchingRoot_seed
+#print axioms switchingRoot_zero_large_radius
+#print axioms switchingRoot_not_cofinal
+
+end AdalyFormal.Round10.Nonvanishing.PolynomialGrid

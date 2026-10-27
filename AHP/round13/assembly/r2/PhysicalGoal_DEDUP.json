@@ -1,0 +1,1334 @@
+[
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLu",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilTower",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilLam",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilPattern",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dilU",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": false
+  },
+  {
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.maskedU",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": false
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.dilMask",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": false
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkU",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.bulkP",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_comm",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_conj",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_u\u03b8",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.rot_bulkU",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_dilMask",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dataFam",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dilV",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.flatData",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.IsSourceDerivative",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.half_rotation_matrix",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.im_phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.N",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.Q_H",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.Ginv_H",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.source_of_certificate",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.source_of_weak_certificate",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.coupling_of_certificate",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.two_site_residual_iff",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.alternating_pair_constraint",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.KKT.recurrence_fine_residuals",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_U1",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_U1",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.flatH_U1",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource_U1",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.neutralCoord",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.neutralSource_component",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_sum",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.vacJet",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.C2_level_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_top_sum",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_U1",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.flat_source_of_certificate",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.vacCoupling_of_certificate",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.interiorProfile",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.bulkU_phase",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.profileSourceStencil",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.bulkSource_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.canonicalSourceStencil",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.canonical_isSourceDerivative",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_eq_stencil",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_nonneg",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.all_profiles_zero_iff",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_off",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_interior",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.liftJet_Q",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.half_twice",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.FreeSource.half_average",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathU",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathP",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.pathA",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.uthPath",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.Qualitative.vacA",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psdEdge",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R2.KernelLine",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnM",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.AnFam",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.responseHull",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.ProfileSpace",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.responseGradient",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.profileCoupling_gradient",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.double_inner_smul",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.profileCoupling_smul_input",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.responseGradient_smul",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.crossingKernel",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.NoResponseCancellation",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.responseGradient_ne_zero_iff",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Assembly.R3.CofinalAnyPathCurlLine",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_unit_size",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_fine_size",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.abs_inner_le_opNorm",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.pos_of_psd_unit",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.unit_of_pd",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.psd_of_pd",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.eventually_pd",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.analyticAt_exp_I",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.anM_uMat",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round3.Guarded.RefuteR2.zero_coord_le_pdist",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_fine_bound",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round4.Guarded.RefuteR1.dil_shift_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.rightSite",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round5.Guarded.IVTR2.rightSite_bd",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Qcomposite_one'",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.bgTower_zero'",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_G_k",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.QfullOf_apply",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.siteMask_eq_self_of_supp'",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.lapDir_eq_mask_lap'",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.final_step'",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dsize0",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dsizeT",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.x0_lt",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xT_lt",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.mem_Om0",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.mem_Om1",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.not_mem_Om2",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_coord_ne",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_self_coord",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift0_val_lt",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift0_val_last",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.OmGe1_mem",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.A_zero_off",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_val",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_coord",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_self",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_sitex",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_sitex0",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.shift_sitex",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.sitex_of_shift0",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_shift0",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.trans_step",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_shiftT",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_left",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_right",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_shiftT",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.update_shift_succ",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_update",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_update0",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_const",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.coarseShift_sitex",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.row_step",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.chain_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.Iv_zero",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.xi_mem_NQp",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.A_eq_grad",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_kernel",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.flat_ginv_form_in",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.inner_Ginv_dataS",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.flat_delta_le_univ",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  },
+  {
+    "name": "AdalyFormal.Round9.Guarded.QualitativeR2.Ginv_loc_le_all_flat",
+    "kept": "AHP/round13/assembly/r1/RepairedJoin.lean",
+    "skipped": "AHP/round13/shared/assembly/R1_P1Spine.lean",
+    "identical": true
+  }
+]

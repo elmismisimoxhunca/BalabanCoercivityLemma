@@ -1,0 +1,7317 @@
+{
+  "q": 1,
+  "R": 22,
+  "character_count": 16,
+  "distinct_XZ_count": 9,
+  "source_repair_count": 0,
+  "source_repair_characters": [],
+  "formula": {
+    "zeta": "exp(2*pi*i/(4q))",
+    "X": "2+zeta^iy+zeta^-iy = (2*cos(pi*iy/(4q)))^2",
+    "Z": "2+zeta^iz+zeta^-iz = (2*cos(pi*iz/(4q)))^2",
+    "detA_inverse": "(25-X-Z)^2-4*X*Z",
+    "charpoly": "((L-(X+Z)*t^2)^2-4*X*Z*t^4)^2, L=(t^2-7*t+1)^2",
+    "trace_form": "each t^2-(7+s1*x+s2*z)*t+1, s1,s2 in {-1,1}, occurs squared; x^2=X,z^2=Z",
+    "area_rate": "rho=(s-sqrt(s^2-4))/2, s=7-abs(x)-abs(z); ratio per R->R+2 is rho^(8q). At (0,0), the y=3 charged-area channel is suppressed and s=7 is used, matching retained data."
+  },
+  "records": [
+    {
+      "character": [
+        0,
+        0
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c0_0.json",
+      "source_sha256": "c80feb5a6456f5a7b752dc19a6b54192e32f3b3c706cc940c18098245c6a8e34",
+      "X": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/225",
+        "terms": [
+          [
+            0,
+            "1/225"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/225",
+        "terms": [
+          [
+            0,
+            "1/225"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "225",
+        "terms": [
+          [
+            0,
+            "225"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "7552999d0b0bf67acd75af34edea8ec3778199f65fb7defb06ef411e97d19e23",
+      "factor_sha256": "7552999d0b0bf67acd75af34edea8ec3778199f65fb7defb06ef411e97d19e23",
+      "x_numeric": "2.0",
+      "z_numeric": "2.0",
+      "four_traces_numeric": [
+        "3.0",
+        "7.0",
+        "7.0",
+        "11.0"
+      ],
+      "area_trace_numeric": "7.0",
+      "area_rho_numeric": "0.145898033750315455386239496903085646839072460582711413593654131884218611543292650878378387",
+      "area_ratio_per_two_radius_numeric": "0.000000205303102314657419821197426791030846488505544593046123526786497419423680743182249411580697",
+      "uniform_y3_channel_suppressed": true
+    },
+    {
+      "character": [
+        0,
+        1
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c0_1.json",
+      "source_sha256": "a7cf5aa0d33fa644ac4d7150b7bb5efe2eaf6409784fec7d7732e76e2720a2ad",
+      "X": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "factor_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "x_numeric": "2.0",
+      "z_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "6.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "7.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "10.4142135623730950488016887242096980785696718753769480731766797379907324784621070388503875"
+      ],
+      "area_trace_numeric": "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.304784992215916869462828363512136170992582033909635801395040320142162139012515604375186947",
+      "area_ratio_per_two_radius_numeric": "0.0000744643883080822244318374558037545652002018590470055355395567998012681847714610724956645613",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        0,
+        2
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c0_2.json",
+      "source_sha256": "0e92ac3f8d72d8807a8c63d8e03503d827f3d462d90018ae048423c666de8584",
+      "X": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "64701695f632f4e9f14441347c7b39efdc398ed27689230a73c8ad4b788f0253",
+      "factor_sha256": "64701695f632f4e9f14441347c7b39efdc398ed27689230a73c8ad4b788f0253",
+      "x_numeric": "2.0",
+      "z_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "four_traces_numeric": [
+        "5.0",
+        "5.0",
+        "9.0",
+        "9.0"
+      ],
+      "area_trace_numeric": "5.0",
+      "area_rho_numeric": "0.20871215252207999670597640313599575550777171161601404869637893804656578722611455669781922",
+      "area_ratio_per_two_radius_numeric": "0.0000036006582003656999120570227625485045824885314212440455403121195348386727086713338434498819",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        0,
+        3
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c0_3.json",
+      "source_sha256": "25eb65b5d36737aab88f806ecb08c265c45aa6bbef71068b33fa61c8a83cd61f",
+      "X": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "factor_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "x_numeric": "2.0",
+      "z_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "6.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "7.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "10.4142135623730950488016887242096980785696718753769480731766797379907324784621070388503875"
+      ],
+      "area_trace_numeric": "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.304784992215916869462828363512136170992582033909635801395040320142162139012515604375186947",
+      "area_ratio_per_two_radius_numeric": "0.0000744643883080822244318374558037545652002018590470055355395567998012681847714610724956645613",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        1,
+        0
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c1_0.json",
+      "source_sha256": "77828872217217c02106182c107f2ef66fa00b309a0db29f5a365379f68d6e9f",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "factor_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "x_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "2.0",
+      "four_traces_numeric": [
+        "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "6.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "7.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "10.4142135623730950488016887242096980785696718753769480731766797379907324784621070388503875"
+      ],
+      "area_trace_numeric": "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.304784992215916869462828363512136170992582033909635801395040320142162139012515604375186947",
+      "area_ratio_per_two_radius_numeric": "0.0000744643883080822244318374558037545652002018590470055355395567998012681847714610724956645613",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        1,
+        1
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c1_1.json",
+      "source_sha256": "412fca159e9cf7f0ba865ec8d7b1d6acb53ca3fe3959990a19c07377a44256c8",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "factor_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "x_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+        "7.0",
+        "7.0",
+        "9.82842712474619009760337744841939615713934375075389614635335947598146495692421407770077507"
+      ],
+      "area_trace_numeric": "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+      "area_rho_numeric": "0.255347948251112061812953012921213688699060504831456913471110387290515936980515590619177615",
+      "area_ratio_per_two_radius_numeric": "0.0000180741957199554544831557045087616446202607306974714315767105509133868622073546521159904615",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        1,
+        2
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c1_2.json",
+      "source_sha256": "36416c3b6bdbd6a376c2bed4c9a42955de41762e2e8afe487971b7d1266ab94f",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "factor_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "x_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "four_traces_numeric": [
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753"
+      ],
+      "area_trace_numeric": "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.18516383643993492072915914270859715087126634358358496688501928816972962921633185036807016",
+      "area_ratio_per_two_radius_numeric": "0.00000138181328381865838115424080839384041349752031748140999279488423686454076237091779535079893",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        1,
+        3
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c1_3.json",
+      "source_sha256": "0d6468c3d56a2f209377f1efa9897249caafbe4360d9a1ebc38996161fafcb5b",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "factor_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "x_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+        "7.0",
+        "7.0",
+        "9.82842712474619009760337744841939615713934375075389614635335947598146495692421407770077507"
+      ],
+      "area_trace_numeric": "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+      "area_rho_numeric": "0.255347948251112061812953012921213688699060504831456913471110387290515936980515590619177615",
+      "area_ratio_per_two_radius_numeric": "0.0000180741957199554544831557045087616446202607306974714315767105509133868622073546521159904615",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        2,
+        0
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c2_0.json",
+      "source_sha256": "61aac36eb5342ccfb0db57eaa2a08815340f619ae9c4181f56304d013ae54921",
+      "X": {
+        "expression": "0",
+        "terms": []
+      },
+      "Z": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/441",
+        "terms": [
+          [
+            0,
+            "1/441"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "64701695f632f4e9f14441347c7b39efdc398ed27689230a73c8ad4b788f0253",
+      "factor_sha256": "64701695f632f4e9f14441347c7b39efdc398ed27689230a73c8ad4b788f0253",
+      "x_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "z_numeric": "2.0",
+      "four_traces_numeric": [
+        "5.0",
+        "5.0",
+        "9.0",
+        "9.0"
+      ],
+      "area_trace_numeric": "5.0",
+      "area_rho_numeric": "0.20871215252207999670597640313599575550777171161601404869637893804656578722611455669781922",
+      "area_ratio_per_two_radius_numeric": "0.0000036006582003656999120570227625485045824885314212440455403121195348386727086713338434498819",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        2,
+        1
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c2_1.json",
+      "source_sha256": "16b68f48cbca90bc6e14a5744338d749cfdcb9e1dba33cef5ec149e7f88879e1",
+      "X": {
+        "expression": "0",
+        "terms": []
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "factor_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "x_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "z_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753"
+      ],
+      "area_trace_numeric": "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.18516383643993492072915914270859715087126634358358496688501928816972962921633185036807016",
+      "area_ratio_per_two_radius_numeric": "0.00000138181328381865838115424080839384041349752031748140999279488423686454076237091779535079893",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        2,
+        2
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c2_2.json",
+      "source_sha256": "5a3664dfafcdf13cef11d95554c8d8fc930cd40bdc95da63deabba27fb8c3040",
+      "X": {
+        "expression": "0",
+        "terms": []
+      },
+      "Z": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA": {
+        "expression": "1/625",
+        "terms": [
+          [
+            0,
+            "1/625"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/625",
+        "terms": [
+          [
+            0,
+            "1/625"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "625",
+        "terms": [
+          [
+            0,
+            "625"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "a47c321ab46ec45b7f6519bb774a8527a57f31c6edfd8fd764675646b0b1c982",
+      "factor_sha256": "a47c321ab46ec45b7f6519bb774a8527a57f31c6edfd8fd764675646b0b1c982",
+      "x_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "z_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "four_traces_numeric": [
+        "7.0",
+        "7.0",
+        "7.0",
+        "7.0"
+      ],
+      "area_trace_numeric": "7.0",
+      "area_rho_numeric": "0.145898033750315455386239496903085646839072460582711413593654131884218611543292650878378387",
+      "area_ratio_per_two_radius_numeric": "0.000000205303102314657419821197426791030846488505544593046123526786497419423680743182249411580697",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        2,
+        3
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c2_3.json",
+      "source_sha256": "fbbc1b5d26899e0b6859d63c745e36ed796e07d44f00e90ef13e156f72da685b",
+      "X": {
+        "expression": "0",
+        "terms": []
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "factor_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "x_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "z_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753"
+      ],
+      "area_trace_numeric": "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.18516383643993492072915914270859715087126634358358496688501928816972962921633185036807016",
+      "area_ratio_per_two_radius_numeric": "0.00000138181328381865838115424080839384041349752031748140999279488423686454076237091779535079893",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        3,
+        0
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c3_0.json",
+      "source_sha256": "c28c4332d63a23306999babf89088b0f542142e1f2256ceebf858ba9bb1fc309",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/329",
+        "terms": [
+          [
+            0,
+            "1/329"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "factor_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "x_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "2.0",
+      "four_traces_numeric": [
+        "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "6.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "7.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "10.4142135623730950488016887242096980785696718753769480731766797379907324784621070388503875"
+      ],
+      "area_trace_numeric": "3.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.304784992215916869462828363512136170992582033909635801395040320142162139012515604375186947",
+      "area_ratio_per_two_radius_numeric": "0.0000744643883080822244318374558037545652002018590470055355395567998012681847714610724956645613",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        3,
+        1
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c3_1.json",
+      "source_sha256": "2647910c27d79320e109af556590c3615504b48eca1c82fe22df5d0156b7c346",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "factor_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "x_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+        "7.0",
+        "7.0",
+        "9.82842712474619009760337744841939615713934375075389614635335947598146495692421407770077507"
+      ],
+      "area_trace_numeric": "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+      "area_rho_numeric": "0.255347948251112061812953012921213688699060504831456913471110387290515936980515590619177615",
+      "area_ratio_per_two_radius_numeric": "0.0000180741957199554544831557045087616446202607306974714315767105509133868622073546521159904615",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        3,
+        2
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c3_2.json",
+      "source_sha256": "77faaa44c3e619ee4e5053b0f160dd7b639a241a525d4bc09c9fae5c572e58c7",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/529",
+        "terms": [
+          [
+            0,
+            "1/529"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "factor_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "x_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "-1.58253991084107742976453153128850260130304639212387586232825572133368616042103110614430091e-111",
+      "four_traces_numeric": [
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+        "8.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753"
+      ],
+      "area_trace_numeric": "5.58578643762690495119831127579030192143032812462305192682332026200926752153789296114961247",
+      "area_rho_numeric": "0.18516383643993492072915914270859715087126634358358496688501928816972962921633185036807016",
+      "area_ratio_per_two_radius_numeric": "0.00000138181328381865838115424080839384041349752031748140999279488423686454076237091779535079893",
+      "uniform_y3_channel_suppressed": false
+    },
+    {
+      "character": [
+        3,
+        3
+      ],
+      "source": "AHP/round15/shared/numerics/characters/q1_R22/c3_3.json",
+      "source_sha256": "d9a9f70269bb4950df54c5a8fa3c6bd9321532c87ef1494dd1025d59d670f61b",
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "detA": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "detC": {
+        "expression": "1/425",
+        "terms": [
+          [
+            0,
+            "1/425"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "detA_times_predicted_inverse_minus_one": {
+        "expression": "0",
+        "terms": []
+      },
+      "detA_minus_detC": {
+        "expression": "0",
+        "terms": []
+      },
+      "reduced_A_minus_C": [
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ],
+        [
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          },
+          {
+            "expression": "0",
+            "terms": []
+          }
+        ]
+      ],
+      "source_repair": null,
+      "charpoly_minus_factor": [],
+      "charpoly_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "factor_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "x_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "z_numeric": "-1.41421356237309504880168872420969807856967187537694807317667973799073247846210703885038753",
+      "four_traces_numeric": [
+        "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+        "7.0",
+        "7.0",
+        "9.82842712474619009760337744841939615713934375075389614635335947598146495692421407770077507"
+      ],
+      "area_trace_numeric": "4.17157287525380990239662255158060384286065624924610385364664052401853504307578592229922493",
+      "area_rho_numeric": "0.255347948251112061812953012921213688699060504831456913471110387290515936980515590619177615",
+      "area_ratio_per_two_radius_numeric": "0.0000180741957199554544831557045087616446202607306974714315767105509133868622073546521159904615",
+      "uniform_y3_channel_suppressed": false
+    }
+  ],
+  "distinct_factors": [
+    {
+      "X": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "225",
+        "terms": [
+          [
+            0,
+            "225"
+          ]
+        ]
+      },
+      "factor_sha256": "7552999d0b0bf67acd75af34edea8ec3778199f65fb7defb06ef411e97d19e23",
+      "characters": [
+        [
+          0,
+          0
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1348",
+          "terms": [
+            [
+              0,
+              "1348"
+            ]
+          ]
+        },
+        {
+          "expression": "-18256",
+          "terms": [
+            [
+              0,
+              "-18256"
+            ]
+          ]
+        },
+        {
+          "expression": "152874",
+          "terms": [
+            [
+              0,
+              "152874"
+            ]
+          ]
+        },
+        {
+          "expression": "-819336",
+          "terms": [
+            [
+              0,
+              "-819336"
+            ]
+          ]
+        },
+        {
+          "expression": "2816336",
+          "terms": [
+            [
+              0,
+              "2816336"
+            ]
+          ]
+        },
+        {
+          "expression": "-6079752",
+          "terms": [
+            [
+              0,
+              "-6079752"
+            ]
+          ]
+        },
+        {
+          "expression": "7944307",
+          "terms": [
+            [
+              0,
+              "7944307"
+            ]
+          ]
+        },
+        {
+          "expression": "-6079752",
+          "terms": [
+            [
+              0,
+              "-6079752"
+            ]
+          ]
+        },
+        {
+          "expression": "2816336",
+          "terms": [
+            [
+              0,
+              "2816336"
+            ]
+          ]
+        },
+        {
+          "expression": "-819336",
+          "terms": [
+            [
+              0,
+              "-819336"
+            ]
+          ]
+        },
+        {
+          "expression": "152874",
+          "terms": [
+            [
+              0,
+              "152874"
+            ]
+          ]
+        },
+        {
+          "expression": "-18256",
+          "terms": [
+            [
+              0,
+              "-18256"
+            ]
+          ]
+        },
+        {
+          "expression": "1348",
+          "terms": [
+            [
+              0,
+              "1348"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "factor_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "characters": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1356",
+          "terms": [
+            [
+              0,
+              "1356"
+            ]
+          ]
+        },
+        {
+          "expression": "-18592",
+          "terms": [
+            [
+              0,
+              "-18592"
+            ]
+          ]
+        },
+        {
+          "expression": "158698",
+          "terms": [
+            [
+              0,
+              "158698"
+            ]
+          ]
+        },
+        {
+          "expression": "-872984",
+          "terms": [
+            [
+              0,
+              "-872984"
+            ]
+          ]
+        },
+        {
+          "expression": "3097008",
+          "terms": [
+            [
+              0,
+              "3097008"
+            ]
+          ]
+        },
+        {
+          "expression": "-6901720",
+          "terms": [
+            [
+              0,
+              "-6901720"
+            ]
+          ]
+        },
+        {
+          "expression": "9180819",
+          "terms": [
+            [
+              0,
+              "9180819"
+            ]
+          ]
+        },
+        {
+          "expression": "-6901720",
+          "terms": [
+            [
+              0,
+              "-6901720"
+            ]
+          ]
+        },
+        {
+          "expression": "3097008",
+          "terms": [
+            [
+              0,
+              "3097008"
+            ]
+          ]
+        },
+        {
+          "expression": "-872984",
+          "terms": [
+            [
+              0,
+              "-872984"
+            ]
+          ]
+        },
+        {
+          "expression": "158698",
+          "terms": [
+            [
+              0,
+              "158698"
+            ]
+          ]
+        },
+        {
+          "expression": "-18592",
+          "terms": [
+            [
+              0,
+              "-18592"
+            ]
+          ]
+        },
+        {
+          "expression": "1356",
+          "terms": [
+            [
+              0,
+              "1356"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "0",
+        "terms": []
+      },
+      "predicted_detA_inverse": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "factor_sha256": "64701695f632f4e9f14441347c7b39efdc398ed27689230a73c8ad4b788f0253",
+      "characters": [
+        [
+          0,
+          2
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1364",
+          "terms": [
+            [
+              0,
+              "1364"
+            ]
+          ]
+        },
+        {
+          "expression": "-18928",
+          "terms": [
+            [
+              0,
+              "-18928"
+            ]
+          ]
+        },
+        {
+          "expression": "164570",
+          "terms": [
+            [
+              0,
+              "164570"
+            ]
+          ]
+        },
+        {
+          "expression": "-927976",
+          "terms": [
+            [
+              0,
+              "-927976"
+            ]
+          ]
+        },
+        {
+          "expression": "3391920",
+          "terms": [
+            [
+              0,
+              "3391920"
+            ]
+          ]
+        },
+        {
+          "expression": "-7792680",
+          "terms": [
+            [
+              0,
+              "-7792680"
+            ]
+          ]
+        },
+        {
+          "expression": "10558051",
+          "terms": [
+            [
+              0,
+              "10558051"
+            ]
+          ]
+        },
+        {
+          "expression": "-7792680",
+          "terms": [
+            [
+              0,
+              "-7792680"
+            ]
+          ]
+        },
+        {
+          "expression": "3391920",
+          "terms": [
+            [
+              0,
+              "3391920"
+            ]
+          ]
+        },
+        {
+          "expression": "-927976",
+          "terms": [
+            [
+              0,
+              "-927976"
+            ]
+          ]
+        },
+        {
+          "expression": "164570",
+          "terms": [
+            [
+              0,
+              "164570"
+            ]
+          ]
+        },
+        {
+          "expression": "-18928",
+          "terms": [
+            [
+              0,
+              "-18928"
+            ]
+          ]
+        },
+        {
+          "expression": "1364",
+          "terms": [
+            [
+              0,
+              "1364"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "329",
+        "terms": [
+          [
+            0,
+            "329"
+          ]
+        ]
+      },
+      "factor_sha256": "601618474e618fbf4a56618f28e786f9a58302a0664410b0f8af550abb99e20a",
+      "characters": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1356",
+          "terms": [
+            [
+              0,
+              "1356"
+            ]
+          ]
+        },
+        {
+          "expression": "-18592",
+          "terms": [
+            [
+              0,
+              "-18592"
+            ]
+          ]
+        },
+        {
+          "expression": "158698",
+          "terms": [
+            [
+              0,
+              "158698"
+            ]
+          ]
+        },
+        {
+          "expression": "-872984",
+          "terms": [
+            [
+              0,
+              "-872984"
+            ]
+          ]
+        },
+        {
+          "expression": "3097008",
+          "terms": [
+            [
+              0,
+              "3097008"
+            ]
+          ]
+        },
+        {
+          "expression": "-6901720",
+          "terms": [
+            [
+              0,
+              "-6901720"
+            ]
+          ]
+        },
+        {
+          "expression": "9180819",
+          "terms": [
+            [
+              0,
+              "9180819"
+            ]
+          ]
+        },
+        {
+          "expression": "-6901720",
+          "terms": [
+            [
+              0,
+              "-6901720"
+            ]
+          ]
+        },
+        {
+          "expression": "3097008",
+          "terms": [
+            [
+              0,
+              "3097008"
+            ]
+          ]
+        },
+        {
+          "expression": "-872984",
+          "terms": [
+            [
+              0,
+              "-872984"
+            ]
+          ]
+        },
+        {
+          "expression": "158698",
+          "terms": [
+            [
+              0,
+              "158698"
+            ]
+          ]
+        },
+        {
+          "expression": "-18592",
+          "terms": [
+            [
+              0,
+              "-18592"
+            ]
+          ]
+        },
+        {
+          "expression": "1356",
+          "terms": [
+            [
+              0,
+              "1356"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "425",
+        "terms": [
+          [
+            0,
+            "425"
+          ]
+        ]
+      },
+      "factor_sha256": "62cfa9d0166cf93823fc596b1c03f5bd17bdcb4a2cd055fcfb9d002bc6e288a0",
+      "characters": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1364",
+          "terms": [
+            [
+              0,
+              "1364"
+            ]
+          ]
+        },
+        {
+          "expression": "-18928",
+          "terms": [
+            [
+              0,
+              "-18928"
+            ]
+          ]
+        },
+        {
+          "expression": "164538",
+          "terms": [
+            [
+              0,
+              "164538"
+            ]
+          ]
+        },
+        {
+          "expression": "-927080",
+          "terms": [
+            [
+              0,
+              "-927080"
+            ]
+          ]
+        },
+        {
+          "expression": "3382640",
+          "terms": [
+            [
+              0,
+              "3382640"
+            ]
+          ]
+        },
+        {
+          "expression": "-7749672",
+          "terms": [
+            [
+              0,
+              "-7749672"
+            ]
+          ]
+        },
+        {
+          "expression": "10475011",
+          "terms": [
+            [
+              0,
+              "10475011"
+            ]
+          ]
+        },
+        {
+          "expression": "-7749672",
+          "terms": [
+            [
+              0,
+              "-7749672"
+            ]
+          ]
+        },
+        {
+          "expression": "3382640",
+          "terms": [
+            [
+              0,
+              "3382640"
+            ]
+          ]
+        },
+        {
+          "expression": "-927080",
+          "terms": [
+            [
+              0,
+              "-927080"
+            ]
+          ]
+        },
+        {
+          "expression": "164538",
+          "terms": [
+            [
+              0,
+              "164538"
+            ]
+          ]
+        },
+        {
+          "expression": "-18928",
+          "terms": [
+            [
+              0,
+              "-18928"
+            ]
+          ]
+        },
+        {
+          "expression": "1364",
+          "terms": [
+            [
+              0,
+              "1364"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "Z": {
+        "expression": "0",
+        "terms": []
+      },
+      "predicted_detA_inverse": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "factor_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "characters": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1372",
+          "terms": [
+            [
+              0,
+              "1372"
+            ]
+          ]
+        },
+        {
+          "expression": "-19264",
+          "terms": [
+            [
+              0,
+              "-19264"
+            ]
+          ]
+        },
+        {
+          "expression": "170426",
+          "terms": [
+            [
+              0,
+              "170426"
+            ]
+          ]
+        },
+        {
+          "expression": "-982520",
+          "terms": [
+            [
+              0,
+              "-982520"
+            ]
+          ]
+        },
+        {
+          "expression": "3682448",
+          "terms": [
+            [
+              0,
+              "3682448"
+            ]
+          ]
+        },
+        {
+          "expression": "-8665720",
+          "terms": [
+            [
+              0,
+              "-8665720"
+            ]
+          ]
+        },
+        {
+          "expression": "11906467",
+          "terms": [
+            [
+              0,
+              "11906467"
+            ]
+          ]
+        },
+        {
+          "expression": "-8665720",
+          "terms": [
+            [
+              0,
+              "-8665720"
+            ]
+          ]
+        },
+        {
+          "expression": "3682448",
+          "terms": [
+            [
+              0,
+              "3682448"
+            ]
+          ]
+        },
+        {
+          "expression": "-982520",
+          "terms": [
+            [
+              0,
+              "-982520"
+            ]
+          ]
+        },
+        {
+          "expression": "170426",
+          "terms": [
+            [
+              0,
+              "170426"
+            ]
+          ]
+        },
+        {
+          "expression": "-19264",
+          "terms": [
+            [
+              0,
+              "-19264"
+            ]
+          ]
+        },
+        {
+          "expression": "1372",
+          "terms": [
+            [
+              0,
+              "1372"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "0",
+        "terms": []
+      },
+      "Z": {
+        "expression": "4",
+        "terms": [
+          [
+            0,
+            "4"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "441",
+        "terms": [
+          [
+            0,
+            "441"
+          ]
+        ]
+      },
+      "factor_sha256": "64701695f632f4e9f14441347c7b39efdc398ed27689230a73c8ad4b788f0253",
+      "characters": [
+        [
+          2,
+          0
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1364",
+          "terms": [
+            [
+              0,
+              "1364"
+            ]
+          ]
+        },
+        {
+          "expression": "-18928",
+          "terms": [
+            [
+              0,
+              "-18928"
+            ]
+          ]
+        },
+        {
+          "expression": "164570",
+          "terms": [
+            [
+              0,
+              "164570"
+            ]
+          ]
+        },
+        {
+          "expression": "-927976",
+          "terms": [
+            [
+              0,
+              "-927976"
+            ]
+          ]
+        },
+        {
+          "expression": "3391920",
+          "terms": [
+            [
+              0,
+              "3391920"
+            ]
+          ]
+        },
+        {
+          "expression": "-7792680",
+          "terms": [
+            [
+              0,
+              "-7792680"
+            ]
+          ]
+        },
+        {
+          "expression": "10558051",
+          "terms": [
+            [
+              0,
+              "10558051"
+            ]
+          ]
+        },
+        {
+          "expression": "-7792680",
+          "terms": [
+            [
+              0,
+              "-7792680"
+            ]
+          ]
+        },
+        {
+          "expression": "3391920",
+          "terms": [
+            [
+              0,
+              "3391920"
+            ]
+          ]
+        },
+        {
+          "expression": "-927976",
+          "terms": [
+            [
+              0,
+              "-927976"
+            ]
+          ]
+        },
+        {
+          "expression": "164570",
+          "terms": [
+            [
+              0,
+              "164570"
+            ]
+          ]
+        },
+        {
+          "expression": "-18928",
+          "terms": [
+            [
+              0,
+              "-18928"
+            ]
+          ]
+        },
+        {
+          "expression": "1364",
+          "terms": [
+            [
+              0,
+              "1364"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "0",
+        "terms": []
+      },
+      "Z": {
+        "expression": "2",
+        "terms": [
+          [
+            0,
+            "2"
+          ]
+        ]
+      },
+      "predicted_detA_inverse": {
+        "expression": "529",
+        "terms": [
+          [
+            0,
+            "529"
+          ]
+        ]
+      },
+      "factor_sha256": "54ac7b31165f820eb82d64c8de5a45e818fbf31e22c233a32d938901d34da456",
+      "characters": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1372",
+          "terms": [
+            [
+              0,
+              "1372"
+            ]
+          ]
+        },
+        {
+          "expression": "-19264",
+          "terms": [
+            [
+              0,
+              "-19264"
+            ]
+          ]
+        },
+        {
+          "expression": "170426",
+          "terms": [
+            [
+              0,
+              "170426"
+            ]
+          ]
+        },
+        {
+          "expression": "-982520",
+          "terms": [
+            [
+              0,
+              "-982520"
+            ]
+          ]
+        },
+        {
+          "expression": "3682448",
+          "terms": [
+            [
+              0,
+              "3682448"
+            ]
+          ]
+        },
+        {
+          "expression": "-8665720",
+          "terms": [
+            [
+              0,
+              "-8665720"
+            ]
+          ]
+        },
+        {
+          "expression": "11906467",
+          "terms": [
+            [
+              0,
+              "11906467"
+            ]
+          ]
+        },
+        {
+          "expression": "-8665720",
+          "terms": [
+            [
+              0,
+              "-8665720"
+            ]
+          ]
+        },
+        {
+          "expression": "3682448",
+          "terms": [
+            [
+              0,
+              "3682448"
+            ]
+          ]
+        },
+        {
+          "expression": "-982520",
+          "terms": [
+            [
+              0,
+              "-982520"
+            ]
+          ]
+        },
+        {
+          "expression": "170426",
+          "terms": [
+            [
+              0,
+              "170426"
+            ]
+          ]
+        },
+        {
+          "expression": "-19264",
+          "terms": [
+            [
+              0,
+              "-19264"
+            ]
+          ]
+        },
+        {
+          "expression": "1372",
+          "terms": [
+            [
+              0,
+              "1372"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "X": {
+        "expression": "0",
+        "terms": []
+      },
+      "Z": {
+        "expression": "0",
+        "terms": []
+      },
+      "predicted_detA_inverse": {
+        "expression": "625",
+        "terms": [
+          [
+            0,
+            "625"
+          ]
+        ]
+      },
+      "factor_sha256": "a47c321ab46ec45b7f6519bb774a8527a57f31c6edfd8fd764675646b0b1c982",
+      "characters": [
+        [
+          2,
+          2
+        ]
+      ],
+      "factor_highest_first": [
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1380",
+          "terms": [
+            [
+              0,
+              "1380"
+            ]
+          ]
+        },
+        {
+          "expression": "-19600",
+          "terms": [
+            [
+              0,
+              "-19600"
+            ]
+          ]
+        },
+        {
+          "expression": "176330",
+          "terms": [
+            [
+              0,
+              "176330"
+            ]
+          ]
+        },
+        {
+          "expression": "-1038408",
+          "terms": [
+            [
+              0,
+              "-1038408"
+            ]
+          ]
+        },
+        {
+          "expression": "3987088",
+          "terms": [
+            [
+              0,
+              "3987088"
+            ]
+          ]
+        },
+        {
+          "expression": "-9605960",
+          "terms": [
+            [
+              0,
+              "-9605960"
+            ]
+          ]
+        },
+        {
+          "expression": "13389075",
+          "terms": [
+            [
+              0,
+              "13389075"
+            ]
+          ]
+        },
+        {
+          "expression": "-9605960",
+          "terms": [
+            [
+              0,
+              "-9605960"
+            ]
+          ]
+        },
+        {
+          "expression": "3987088",
+          "terms": [
+            [
+              0,
+              "3987088"
+            ]
+          ]
+        },
+        {
+          "expression": "-1038408",
+          "terms": [
+            [
+              0,
+              "-1038408"
+            ]
+          ]
+        },
+        {
+          "expression": "176330",
+          "terms": [
+            [
+              0,
+              "176330"
+            ]
+          ]
+        },
+        {
+          "expression": "-19600",
+          "terms": [
+            [
+              0,
+              "-19600"
+            ]
+          ]
+        },
+        {
+          "expression": "1380",
+          "terms": [
+            [
+              0,
+              "1380"
+            ]
+          ]
+        },
+        {
+          "expression": "-56",
+          "terms": [
+            [
+              0,
+              "-56"
+            ]
+          ]
+        },
+        {
+          "expression": "1",
+          "terms": [
+            [
+              0,
+              "1"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "seconds": 1.4446299076080322,
+  "peak_rss_KiB": 34076,
+  "qualification": "Exact arithmetic on the retained numerically transcribed frozen-family matrices. All 12-block dictionaries and interface rows remain those of R1. No interval solve, physical Lean identification, amplitude closed form, area seed, spectral-gap proof, or GoalNeg2 claim."
+}

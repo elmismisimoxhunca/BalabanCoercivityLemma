@@ -1,0 +1,157 @@
+'AdalyFormal.Round10.Dictionary.comm_of_quad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.deriv_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.real_sector_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.opposite_charge_cross_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.kernel_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.involution_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.involution_kernel_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Ginv_all_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.localized_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.all_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.correction_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.H_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.C2_equivariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.localCorrection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.correction_deriv_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.no_canonical_radius_dilation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.phaseCfg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.diagonalGauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.uθ_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.phaseCfg_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.phase_all_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.phase_localized_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.phase_correction_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.phase_deriv_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.half_rotation_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.half_RMap_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.half_carrier_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.carrier_neutral_charged_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.phase_kernel_neutral_charged_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.siteTranslation' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.bondTranslation' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.translation_shift' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.bondPullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.sitePullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.plaqTranslation' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.cfgPullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.bondPullback_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.sitePullback_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.plaqTranslation_apply' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.grad_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.div_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.lap_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.siteMask_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.curl_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.holonomy_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.bilPlaq_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.raw_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.normalized_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.curl_form_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.deltaK_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Translation.deltaK_all_comm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.siteTranslation_apply' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.bondTranslation_apply' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.translation_shift' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.translation_tower' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.translation_bondsOm0' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.translation_Zb' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.bondPullback_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslationIsometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_zero' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.translation_parity' depends on axioms: [propext]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_parity' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_dilPattern' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twistU_twoSite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twist_holonomy_twoSite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_inner' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.carrierTranslation_commute' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_period' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round6.Guarded.ClosedFormR1.twoSite_exact_symmetry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Actual.bulkD_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Actual.corrDeriv_U1_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Actual.corrDeriv_no_charge_cross' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Actual.bulkB_U1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Actual.vacuum_kernel_charge_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Actual.twist_deltaK_twoSite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_concentrates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.opposite_character_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.no_flip_eigenvector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.charged_span_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_eq_charged_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.boundary_observable_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_finrank_le_two_of_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.charged_of_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_eq_charged_span_of_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.kernelBoundaryEquiv' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Kernel.kernel_finrank_eq_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.oneColor_not_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.kernelLine_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.crossing_coordinate_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.chargedCoordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.vacA_rot_of_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.uθ_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.chargedCoordinate_quarter_twice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Kernel.Actual.kernelLine_of_boundary_positive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

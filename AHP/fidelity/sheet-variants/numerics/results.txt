@@ -1,0 +1,36 @@
+
+== Q3/Q4 reading B (Om0Unit vs Om0Print) ==
+[PASS] sol-x400-distance: pdist(x400,0)=4 (Sol's decide proof uses the block, not this single distance)
+[PASS] sol-x400-in-unit-not-print: in Om0Unit=True, in Om0Print=False
+[PASS] sol-unit-is-full-torus: |Om0Unit|=512 of 512; complement empty ⇒ Collar0 is vacuous
+[PASS] sol-print-proper: |Om0Print|=80
+[PASS] sol-collar-vacuous-true: Collar0 M=2 R=1 holds because the complement is empty
+[PASS] proper-B-not-full: |Om0Print|=7 |Om0Unit|=80 x_mid in unit/print=True/False x_far in unit=False
+[PASS] proper-B-fine-collar: min dist(complement, Om1)=3, Collar0 radius R*M=1 (RB2.lean:45)
+[PASS] inregime-side8-readingB-fills: ell=2,M=2,k=1,R≥1,side=8: Om0Unit is the whole torus (collar vacuous). No proper in-regime reading-B domain exists at side ≤8.
+
+== Q2(b) strict vs non-strict collar ==
+[PASS] separator-shape: nesting=True above=True divides=True closed=True clause6=True |Om1|=504 |Om2|=64
+[PASS] separator-collar-gap: strict=False nonstrict=True witness (j,x,y,dist,radius)=(1, (4, 4, 0), (3, 3, 0), 2, 2)
+[PASS] clause6-print-collar-strict: |Om0Print|=80 min dist(complement, Om1)=3 (radius R*M=2, so the strict collar is dist>2)
+[PASS] no-inregime-gap-on-side8: bigSide(M=2,ell=2,j=2)=8 equals the largest allowed side, so a proper nonempty level-2 block does not fit. The separator above uses M=1.
+
+== Q6(a) one global gauge vs per-cube gauges ==
+[PASS] holonomy-is-minus-I: holonomy=((-1, 0), (0, -1))
+[PASS] per-arc-exists: arcs=[(0, 1, True, ((1, 0), (0, 1)), ((1, 0), (0, 1))), (1, 2, True, ((1, 0), (0, 1)), ((1, 0), (0, 1))), (2, 3, True, ((1, 0), (0, 1)), ((1, 0), (0, 1))), (3, 0, True, ((1, 0), (0, 1)), ((1, 0), (0, 1)))]
+[PASS] global-propagation-inconsistent: g0=((1, 0), (0, 1)) g3*U3=((-1, 0), (0, -1))
+[PASS] gauged-holonomy-stays-minus-I: conjugate=((-1, 0), (0, -1))
+
+== Q12 trace-normalised vs unnormalised Hilbert-Schmidt ==
+[PASS] factor-two-on-family: for every sample, frobSq = 2 * ‖X‖², including 0
+[PASS] pauli-frobSq-2: hsInner(Ei,Ei)=1 and frobSq(Ei)=2, so the squared norms differ by 2
+[PASS] gamma-rescales-by-half: printed left=48 HS left with γ/2=48 sum frob=16
+
+== Q4 same R, unit collar vs fine collar ==
+[PASS] embedding-scales-pdist: checked 4096 pairs, mismatches=0, ell^k=2, fine side=8
+
+== Q13 binder-order shape (not the coercivity predicate) ==
+[PASS] shapes-differ: frozen-shape holds and total-shape fails for P=(R>=m): a single R1 cannot serve every larger m
+
+== summary ==
+all_checks True n 6

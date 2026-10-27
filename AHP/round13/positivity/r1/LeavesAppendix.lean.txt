@@ -1,0 +1,136 @@
+
+namespace AdalyFormal.Round13.Positivity.Leaves
+open Classical
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.CovariantHjMinimizer
+  (periodicLatticeShiftBack)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.Mass
+
+/-- Four normal neighbors and four tangents, in the actual fine periodic lattice. -/
+def leaf {q : ℕ} (hq : 0 < q) (R : ℕ) : Fin 8 → Bond (scaleUp 2 1 (dilLu q R)) :=
+  ![(periodicLatticeShift (rightSite hq R) 1,0),
+    (periodicLatticeShiftBack (rightSite hq R) 1,0),
+    (periodicLatticeShift (rightSite hq R) 2,0),
+    (periodicLatticeShiftBack (rightSite hq R) 2,0),
+    (rightSite hq R,1),
+    (periodicLatticeShiftBack (rightSite hq R) 1,1),
+    (rightSite hq R,2),
+    (periodicLatticeShiftBack (rightSite hq R) 2,2)]
+
+def code {L : PeriodicLatticeExtent} (e : Bond L) : ℕ × ℕ × ℕ :=
+  (e.2.val,(e.1 1).val,(e.1 2).val)
+
+private theorem transverse_sizes {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    (scaleUp 2 1 (dilLu q R) 1 + 1 = 8*q) ∧
+    (scaleUp 2 1 (dilLu q R) 2 + 1 = 8*q) := by
+  constructor <;> simp [dil_fine_size hq]
+
+private theorem right_coord {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    ((rightSite hq R) 1).val = 0 ∧ ((rightSite hq R) 2).val = 0 := by
+  simp [rightSite]
+
+/-- No numerical lattice assumption: all eight exact codes at every positive q. -/
+theorem leaf_code {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 8) :
+    code (leaf hq R i) =
+      ![(0,1,0),(0,8*q-1,0),(0,0,1),(0,0,8*q-1),
+        (1,0,0),(1,8*q-1,0),(2,0,0),(2,0,8*q-1)] i := by
+  have hs := transverse_sizes hq R
+  have hz := right_coord hq R
+  fin_cases i <;>
+    simp [leaf,code,periodicLatticeShift,periodicLatticeShiftBack,
+      Fin.val_add,Fin.val_sub,hz.1,hz.2,hs.1,hs.2,
+      Nat.mod_eq_of_lt (show 1 < 8*q by omega),
+      Nat.mod_eq_of_lt (show 8*q-1 < 8*q by omega)]
+
+/-- Eight distinct physical bonds, not an indexed multiset recycling leaf mass. -/
+theorem leaf_injective {q : ℕ} (hq : 0 < q) (R : ℕ) : Function.Injective (leaf hq R) := by
+  intro i j h
+  have hc := congrArg code h
+  rw [leaf_code hq R i,leaf_code hq R j] at hc
+  clear h
+  fin_cases i <;> fin_cases j <;> try rfl
+  all_goals norm_num at hc
+  all_goals omega
+
+/-- Every leaf starts at the rightmost interior coordinate. -/
+theorem leaf_zero_coord {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 8) :
+    (((leaf hq R i).1) 0).val = 12*(R*q)+12*q-1 := by
+  fin_cases i <;> simp [leaf,periodicLatticeShift,periodicLatticeShiftBack,rightSite]
+
+/-- The second endpoint is at most one step further in the normal direction. -/
+theorem leaf_end_zero_coord {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 8) :
+    ((periodicLatticeShift (leaf hq R i).1 (leaf hq R i).2) 0).val =
+      if i.val < 4 then 12*(R*q)+12*q else 12*(R*q)+12*q-1 := by
+  rw [dil_shift_zero hq R, leaf_zero_coord]
+  have hf : (12*(R*q)+12*q-1+1) % (12*(R*q)+16*q) = 12*(R*q)+12*q := by
+    rw [Nat.sub_add_cancel (by omega), Nat.mod_eq_of_lt (by omega)]
+  fin_cases i <;> simp [leaf,hf]
+
+/-- Both endpoints avoid Omega_1, uniformly at every radius at least one. -/
+theorem leaf_collar {q R : ℕ} (hq : 0 < q) (hR : 1 ≤ R) (i : Fin 8) :
+    (leaf hq R i).1 ∉ (dilTower q R).Om 1 ∧
+    periodicLatticeShift (leaf hq R i).1 (leaf hq R i).2 ∉ (dilTower q R).Om 1 := by
+  have hprod : 1 ≤ R*q := by nlinarith
+  constructor
+  · change ¬ (2*(R*q)+4*q ≤ _ ∧ _ < 10*(R*q)+12*q)
+    rw [leaf_zero_coord]
+    omega
+  · change ¬ (2*(R*q)+4*q ≤ _ ∧ _ < 10*(R*q)+12*q)
+    rw [leaf_end_zero_coord]
+    split_ifs <;> omega
+
+/-- Every leaf is a touching carrier bond; its initial site is in Omega_0. -/
+theorem leaf_touching {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 8) :
+    leaf hq R i ∈ bondsOm0 (geomOf 2 1 (dilTower q R)) := by
+  apply Or.inl
+  change 4*q ≤ _ ∧ _ < 12*(R*q)+12*q
+  rw [leaf_zero_coord]
+  omega
+
+/-- All eight actual rows have the genuine level-zero mass weight one. -/
+theorem leaf_level_zero {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR1 : 1 ≤ R)
+    (i : Fin 8) : leaf hq R i ∈ bondsLam (geomOf 2 1 (dilTower q R)) 0 :=
+  collar_levelZero (dil_admissible hq hR) (by norm_num) _
+    (leaf_touching hq R i) (leaf_collar hq hR1 i).1 (leaf_collar hq hR1 i).2
+
+/-- The eight-row set, with no multiplicities. -/
+def leafSet {q : ℕ} (hq : 0 < q) (R : ℕ) : Finset (Bond (scaleUp 2 1 (dilLu q R))) :=
+  Finset.univ.image (leaf hq R)
+
+theorem leafSet_card {q : ℕ} (hq : 0 < q) (R : ℕ) : (leafSet hq R).card = 8 := by
+  rw [leafSet,Finset.card_image_of_injective _ (leaf_injective hq R)]
+  simp
+
+open scoped RealInnerProductSpace in
+/-- Unconditional physical eight-leaf mass extraction for this exact right star's
+geometry, with an arbitrary background and an arbitrary full fine input. -/
+theorem eight_leaf_mass {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR1 : 1 ≤ R)
+    (U : Cfg (scaleUp 2 1 (dilLu q R)))
+    (A : AdalyFormal.Balaban.CovariantOperators.BondFnL2 (scaleUp 2 1 (dilLu q R))) :
+    (∑ i : Fin 8, ‖A (leaf hq R i)‖^2) ≤
+      ⟪A,MassFull (geomOf 2 1 (dilTower q R)) 1
+        (bondSectorOf (geomOf 2 1 (dilTower q R)) U) A⟫ := by
+  have hh := leaf_mass_le (geomOf 2 1 (dilTower q R)) U 1 (by norm_num)
+    (leafSet hq R) (by
+      intro e he
+      obtain ⟨i,_,rfl⟩ := Finset.mem_image.mp he
+      exact leaf_level_zero hq hR hR1 i) A
+  simpa only [one_mul,leafSet,
+    Finset.sum_image (fun i _ j _ h => leaf_injective hq R h)] using hh
+
+set_option pp.fullNames true
+#print axioms leaf_code
+#print axioms leaf_injective
+#print axioms leaf_zero_coord
+#print axioms leaf_end_zero_coord
+#print axioms leaf_collar
+#print axioms leaf_touching
+#print axioms leaf_level_zero
+#print axioms leafSet_card
+#print axioms eight_leaf_mass
+end AdalyFormal.Round13.Positivity.Leaves

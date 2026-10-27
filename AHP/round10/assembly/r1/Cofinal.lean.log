@@ -1,0 +1,8 @@
+'AdalyFormal.Round10.Assembly.eventually_ne_zero_of_normalized_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.cofinal_of_eventual_subsequence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Assembly.even_radius_progression' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round10.Assembly.nested_cofinal_of_eventual' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,20 @@
+{
+  "exitCode": 0,
+  "pinByteIdenticalPrefix": true,
+  "soleImport": [
+    "ZT5A"
+  ],
+  "requestedAxiomRecords": 144,
+  "seenAxiomRecords": 144,
+  "missingAxiomRecords": [],
+  "disallowedAxioms": {},
+  "forbiddenTokensRaw": [],
+  "errorLines": [],
+  "warningCount": 29,
+  "mainDeclaration": "AdalyFormal.Round3.S3Rest.RefuteR1.negative_goals_impossible",
+  "mainAxioms": "propext,\n Classical.choice,\n Quot.sound",
+  "sourceSha256": "1ea8051e8ccf17a60d23443cf1d5bfe35aeab8266c63906656302fed7895d894",
+  "logSha256": "948d6d6ab341090b406d27a5ec8aefbdec0aa2bce8e1cb9e671d0938dec14395",
+  "pinSha256": "799b0124e2075c575d18c83c68af06e8501f6ee50f9d88b57647d8c2deb9ab3b",
+  "passed": true
+}

@@ -1,0 +1,77 @@
+{
+  "sourceCopyByteIdentical": true,
+  "pinnedBlockByteIdentical": true,
+  "definitionCount": 10,
+  "definitionsWhitespaceNormalized": {
+    "plaqCorner": true,
+    "TouchBond": true,
+    "CoversPlaqFour": true,
+    "CurlReadsTouch": true,
+    "PerCubeRegularTouch": true,
+    "ClassCoupledFour": true,
+    "selCorner": true,
+    "P428TouchFour": true,
+    "GoalPos1": true,
+    "GoalNeg1": true
+  },
+  "round2CoverageHelperBlockByteIdentical": true,
+  "mainDeclarationExactHeader": true,
+  "namespace": [
+    "Round3.S1Proper"
+  ],
+  "variableCommands": [
+    "variable {L : PeriodicLatticeExtent}"
+  ],
+  "imports": [
+    "D1Lit",
+    "D2Lit",
+    "GdPlaq"
+  ],
+  "importsResolveToFrozenSources": true,
+  "forbiddenTokensEvenInComments": [],
+  "localDeclarations": [
+    "plaqCorner",
+    "TouchBond",
+    "CoversPlaqFour",
+    "CurlReadsTouch",
+    "PerCubeRegularTouch",
+    "ClassCoupledFour",
+    "selCorner",
+    "P428TouchFour",
+    "GoalPos1",
+    "GoalNeg1",
+    "edge_not_touch_of_not_corner",
+    "deltaKLocCLM_eq_univ_of_zero_off",
+    "deltaKLocCLM_corner_eq",
+    "corner_Dpi_eq_all",
+    "corner_Ginv_eq_all",
+    "four_touch_cubeBond_of_transverse",
+    "slabNv_transverse",
+    "slabNv_coversFour",
+    "perCubeRegularTouch_of_one_on_touch",
+    "Uth_one_on_touch",
+    "Uth_perCubeRegularTouch",
+    "exists_nonunit_corner_Ginv",
+    "goalNeg1_proved"
+  ],
+  "allLocalDeclarationsHavePrintCommands": true,
+  "printCommandCount": 44,
+  "dependencyRecordCount": 44,
+  "allPrintCommandsHaveDependencyRecords": true,
+  "nonstandardDependencyRecords": [],
+  "mainDependencyRecords": [
+    [
+      "Round3.S1Proper.goalNeg1_proved",
+      "propext, Classical.choice, Quot.sound"
+    ]
+  ],
+  "compilerErrorsOrWarnings": [],
+  "exitCode": 0,
+  "sha256": {
+    "AHP/round3/s1-proper/r1-refute/Attempt.lean": "a114b3d28b83d02b8d38df0f26cfac3d1485bb4cb72bdcd0150bd392e79a0280",
+    "AHP/round3/s1-proper/r1-refute/Attempt.verify.lean": "a114b3d28b83d02b8d38df0f26cfac3d1485bb4cb72bdcd0150bd392e79a0280",
+    "AHP/round3/s1-proper/pin/Statement.lean": "dff1d868790779a2def248238b348234402a065760bdb0d0c9b675136fe7cf9f",
+    "AHP/round3/s1-proper/r1-refute/Attempt.verify.lean.log": "fb72117ac68c0ad97b024c2bcc461adea36b2e07cd1faf9e8b3e090137849b40"
+  },
+  "pass": true
+}

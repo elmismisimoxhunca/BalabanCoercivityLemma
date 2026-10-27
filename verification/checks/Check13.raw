@@ -1,0 +1,2 @@
+'Round2.S1.goalPos1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.goalPos2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]

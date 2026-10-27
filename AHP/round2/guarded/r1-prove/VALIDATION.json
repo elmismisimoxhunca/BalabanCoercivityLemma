@@ -1,0 +1,20 @@
+{
+  "file": "AHP/round2/guarded/r1-prove/Attempt.lean",
+  "sha256": "14c828bc6495118756f962e1f19821e6269ee434bddd4bb12bf67a90bbe9983d",
+  "pin_sha256": "cb10c63af2e2a51f4f4a636f36933c071d2cbdccd15aacb6837d6cd15cdd5656",
+  "pin_exact_byte_prefix": true,
+  "imports": [
+    "DrEquiv"
+  ],
+  "exitCode": 0,
+  "errors_or_warnings": [],
+  "forbidden_token_hits": [],
+  "print_commands": 56,
+  "printed_records": 56,
+  "all_printed_axioms_allowed": true,
+  "local_named_declarations": 49,
+  "local_declarations_missing_print": [],
+  "mainDeclaration": "AdalyFormal.Round2.Guarded.R1Prove.goalPos2_iff_boundary_kernel",
+  "main_line": 441,
+  "closedGoal": "none"
+}

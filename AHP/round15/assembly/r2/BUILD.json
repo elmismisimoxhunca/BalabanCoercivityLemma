@@ -1,0 +1,10 @@
+{
+  "base": "AHP/round15/assembly/r1/AreaGoal.lean",
+  "output": "AHP/round15/assembly/r2/AreaGoal.lean",
+  "published": "AHP/round15/shared/assembly/R2_AreaGoal.lean",
+  "lines": 15591,
+  "sha256": "a6d141eb46842741e72e9b8dd758fa1203c0dfa53c6b07a64ef6d86bf1ced5dc",
+  "byteIdenticalPublication": true,
+  "mainDeclaration": "AdalyFormal.Round15.Assembly.goalNeg2_of_cofinalRadiusChargedLeading",
+  "boundary": "Conditional assembly only; no charged-leading physical dictionary or seed is supplied."
+}

@@ -1,0 +1,62 @@
+{
+  "status": "passed-numerical-probe-audit; no formal closure",
+  "requested_grid_samples": 32,
+  "requested_character_instances": 2560,
+  "additional_negative_first_crossing": {
+    "q": 2,
+    "R": 18,
+    "epsilon": "1e-100",
+    "character": [
+      7,
+      7
+    ],
+    "precisions": [
+      400,
+      500
+    ],
+    "pairing": "-1.8124680628969906868876120872334200363047884047408e-170",
+    "stable_relative_digits": 235.57762203688506,
+    "left_half_mass": "0.4999999886363515616055044",
+    "root": "0.5639715179855609421797153343617272738834211390394005301348665427494923421794945647733715719679789955",
+    "residual_over_abs_pairing": "3.639932284924985244855759e-330",
+    "alternative_carrier_test": "9.062340314486463824490475e-171",
+    "alternative_corrected_test": "2.71870209434563706933666e-170",
+    "alternative_schur_gap": "9.371320639102807259836868e-171",
+    "vacuum_leading_coefficient": "-0.0000000000000000000000000000000000000000000000000000000000000000000001812468104089491368240373400258297964063644960230835623316266720406565711703637523729716160661295730960398490011182591590181965093257663774643219960233295547736422400502663257221078832317033457174330985860884543180202815981788071953501324481260919640405566410993688482400090000870939950992236502568513758267290264365880649909414469266"
+  },
+  "additional_tiny_full_character_instances": 128,
+  "python_files_parsed": 17,
+  "lean_files_authored": 0,
+  "completed_driver_exits": [
+    "check",
+    "rank_check",
+    "path_identity",
+    "finish_primary",
+    "finish_screen_q1",
+    "final_screens",
+    "initial_nonzero_inertia",
+    "finish_actual_low",
+    "finish_actual_high",
+    "leading_source",
+    "leading_vacuum",
+    "tiny_actual_p400",
+    "ultratiny_first_q2_R18_e1e-100_p500",
+    "tiny_full_screen",
+    "tiny_initial",
+    "actual_sector_audit_tiny",
+    "summary"
+  ],
+  "retained_timed_out_drivers_without_exit": [
+    "batch_q2_R30_p180_a",
+    "finish_screen_q2"
+  ],
+  "deliberately_unclaimed": [
+    "interval-certified signs",
+    "formal Fourier/operator dictionary",
+    "full-character arbitrary-precision eigensolves",
+    "parametric q,R sign theorem",
+    "GoalNeg2",
+    "any all-inverses-exist printed-form failure"
+  ],
+  "peak_RSS_KiB": 1319508
+}

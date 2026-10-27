@@ -1,0 +1,66 @@
+{
+  "note": "Kimi attack evidence. Not a proof. Set/box level only.",
+  "odd_and_degenerate_geometry_scans": [
+    {
+      "n": 1,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0
+    },
+    {
+      "n": 3,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0
+    },
+    {
+      "n": 5,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0
+    },
+    {
+      "n": 7,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0
+    }
+  ],
+  "corner_saturation": [
+    {
+      "label": "exhaustive side 2",
+      "n": 2,
+      "proper_nonempty_subsets_tested": 254,
+      "subsets_where_every_corner_plaq_coverable": 0,
+      "uncoverable_corner_plaquettes_total": 5736,
+      "fail_examples": []
+    },
+    {
+      "label": "structured+random side 3",
+      "n": 3,
+      "proper_nonempty_subsets_tested": 462,
+      "subsets_where_every_corner_plaq_coverable": 0,
+      "uncoverable_corner_plaquettes_total": 21137,
+      "fail_examples": []
+    }
+  ],
+  "product_box_antecedent_equivalence": [
+    {
+      "n": 2,
+      "boxes": 16,
+      "fourTouch_neq_plaqIn": 0
+    },
+    {
+      "n": 3,
+      "boxes": 81,
+      "fourTouch_neq_plaqIn": 0
+    },
+    {
+      "n": 4,
+      "boxes": 256,
+      "fourTouch_neq_plaqIn": 0
+    },
+    {
+      "n": 5,
+      "boxes": 625,
+      "fourTouch_neq_plaqIn": 0
+    }
+  ],
+  "seconds_total": 1.829
+}

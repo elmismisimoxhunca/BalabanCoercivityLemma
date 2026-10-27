@@ -1,0 +1,98 @@
+AdalyFormal.StatementLaneR8.RImage_support {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} {ell k : ℕ}
+  (S : AdalyFormal.StatementLane.Tower L) (U : AdalyFormal.IngredientFamilyR2.Cfg L)
+  {v : AdalyFormal.IngredientFamilyR2.SiteL2 L}
+  (hv : v ∈ AdalyFormal.IngredientFamilyR2.RImage (AdalyFormal.IngredientFamilyR2.geomOf ell k S) U)
+  (x : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L)
+  (hx : ∀ y ∈ AdalyFormal.StatementLaneR8.Ball x 1, y ∉ S.Om 1) : v.ofLp x = 0
+AdalyFormal.StatementLaneR8.Qlev_congr {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} {ell M R k : ℕ}
+  {S : AdalyFormal.StatementLane.Tower L} (hS : AdalyFormal.StatementLane.Admissible ell M R k S) (hell : 2 ≤ ell)
+  (hroom : 17 * ell ≤ R * M) {U U' : AdalyFormal.IngredientFamilyR2.Cfg L}
+  (hUU :
+    ∀ (e : AdalyFormal.Balaban.AdmissibleSubspace.Bond L),
+      AdalyFormal.IngredientFamilyR2.BothIn (S.Om 0) e → U e = U' e)
+  {j : ℕ} (hjk : j ≤ k) {y : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L}
+  (hy : y ∈ (AdalyFormal.IngredientFamilyR2.geomOf ell k S).Lam j) :
+  AdalyFormal.IngredientFamilyR2.Qlev (AdalyFormal.IngredientFamilyR2.geomOf ell k S) U j y =
+    AdalyFormal.IngredientFamilyR2.Qlev (AdalyFormal.IngredientFamilyR2.geomOf ell k S) U' j y
+AdalyFormal.LemIFlat.Qlev_flat {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (hell : 0 < G.ell) (i : ℕ)
+  (z : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L) (f : AdalyFormal.IngredientFamilyR2.SiteL2 L) :
+  (AdalyFormal.IngredientFamilyR2.Qlev G AdalyFormal.IngredientFamilyR2.flatCfg i z) f =
+    (1 / ↑G.ell ^ 3) ^ i • ∑ x ∈ AdalyFormal.Balaban.AdmissibleSubspace.blockOf z (G.ell ^ i), f.ofLp x
+AdalyFormal.FlatExt.Qcomposite_flat {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} (ell : ℕ)
+  (hell : 0 < ell) (j : ℕ)
+  (lam : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L → ↥AdalyFormal.Balaban.CovariantOperators.SuTwo)
+  (y : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L) :
+  AdalyFormal.Balaban.QjComposite.Qcomposite (fun x => AdalyFormal.Balaban.CovariantHjMinimizer.trivialU L) ell j lam
+      y =
+    (1 / ↑ell ^ 3) ^ j • ∑ x ∈ AdalyFormal.Balaban.AdmissibleSubspace.blockOf y (ell ^ j), lam x
+AdalyFormal.IngredientFamilyR2.Qlev_apply {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) (j : ℕ)
+  (y : AdalyFormal.Target.ClayStatement.PeriodicLatticeSite L) (f : AdalyFormal.IngredientFamilyR2.SiteL2 L) :
+  (AdalyFormal.IngredientFamilyR2.Qlev G U j y) f =
+    AdalyFormal.Balaban.QjComposite.Qcomposite (AdalyFormal.IngredientFamilyR2.bgTower G U) G.ell j f.ofLp y
+AdalyFormal.IngredientFamilyR2.NQp {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) :
+  Submodule ℝ (AdalyFormal.IngredientFamilyR2.SiteL2 L)
+AdalyFormal.IngredientFamilyR2.Rproj {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) :
+  AdalyFormal.IngredientFamilyR2.SiteL2 L →L[ℝ] AdalyFormal.IngredientFamilyR2.SiteL2 L
+AdalyFormal.IngredientFamilyR2.Tfull_adj_comp {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) :
+  ContinuousLinearMap.adjoint (AdalyFormal.IngredientFamilyR2.Tfull G U) ∘SL AdalyFormal.IngredientFamilyR2.Tfull G U =
+    AdalyFormal.IngredientFamilyR2.gradL2 U ∘SL
+      AdalyFormal.IngredientFamilyR2.Rproj G U ∘SL AdalyFormal.IngredientFamilyR2.gradAdj U
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:11:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:12:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round12.Noncancel.RightFamily.vacA_rightStar`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:13:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round12.Noncancel.RightFamily.rightStar_off_exterior`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:14:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round13.Positivity.Physical.rightStar_local_hol`
+AdalyFormal.StatementLaneR8.sector_congr {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} {ell M R k : ℕ}
+  {S : AdalyFormal.StatementLane.Tower L} (hS : AdalyFormal.StatementLane.Admissible ell M R k S) (hell : 2 ≤ ell)
+  (hroom : 17 * ell ≤ R * M) {U U' : AdalyFormal.IngredientFamilyR2.Cfg L}
+  (hUU :
+    ∀ (e : AdalyFormal.Balaban.AdmissibleSubspace.Bond L),
+      AdalyFormal.IngredientFamilyR2.BothIn (S.Om 0) e → U e = U' e) :
+  AdalyFormal.IngredientFamilyR2.bondSectorOf (AdalyFormal.IngredientFamilyR2.geomOf ell k S) U =
+    AdalyFormal.IngredientFamilyR2.bondSectorOf (AdalyFormal.IngredientFamilyR2.geomOf ell k S) U'
+AdalyFormal.StatementLaneR8.Delta_inner_congr_both {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L)
+  {X X' Y Y' : AdalyFormal.Balaban.CovariantOperators.BondFnL2 L}
+  (hX :
+    ∀ (e : AdalyFormal.Balaban.AdmissibleSubspace.Bond L),
+      AdalyFormal.IngredientFamilyR2.BothIn G.Om0 e → X.ofLp e = X'.ofLp e)
+  (hY :
+    ∀ (e : AdalyFormal.Balaban.AdmissibleSubspace.Bond L),
+      AdalyFormal.IngredientFamilyR2.BothIn G.Om0 e → Y.ofLp e = Y'.ofLp e) :
+  inner ℝ X ((AdalyFormal.IngredientFamilyR2.Delta G U) Y) = inner ℝ X' ((AdalyFormal.IngredientFamilyR2.Delta G U) Y')
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:17:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.D1Literal.Delta_outside_zero`
+Fin.val_sub {n : ℕ} (a b : Fin n) : ↑(a - b) = (n - ↑b + ↑a) % n
+Fin.sub_val_of_le {n : ℕ} {a b : Fin n} : b ≤ a → ↑(a - b) = ↑a - ↑b
+Fin.val_add {n : ℕ} (a b : Fin n) : ↑(a + b) = (↑a + ↑b) % n
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:21:7: error(lean.unknownIdentifier): Unknown constant `Fin.add_val`
+Nat.add_sub_cancel (n m : ℕ) : n + m - m = n
+Nat.add_sub_cancel_left (n m : ℕ) : n + m - n = m
+Nat.sub_add_cancel {n m : ℕ} (h : m ≤ n) : n - m + m = n
+Nat.add_sub_assoc {m k : ℕ} (h : k ≤ m) (n : ℕ) : n + m - k = n + (m - k)
+Nat.mod_eq_of_lt {a b : ℕ} (h : a < b) : a % b = a
+min_def.{u_1} {α : Type u_1} [LinearOrder α] (a b : α) : min a b = if a ≤ b then a else b
+Nat.min_def {n m : ℕ} : min n m = if n ≤ m then n else m
+min_eq_left.{u_1} {α : Type u_1} [LinearOrder α] {a b : α} (h : a ≤ b) : min a b = a
+min_eq_right.{u_1} {α : Type u_1} [LinearOrder α] {a b : α} (h : b ≤ a) : min a b = b
+min_le_iff.{u} {α : Type u} [LinearOrder α] {a b c : α} : min b c ≤ a ↔ b ≤ a ∨ c ≤ a
+Nat.min_eq_left {a b : ℕ} (h : a ≤ b) : min a b = a
+Nat.min_eq_right {a b : ℕ} (h : b ≤ a) : min a b = b
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:34:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round10.Nonvanishing.DilatedFlux.G`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:35:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round10.Nonvanishing.DilatedFlux.L`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:36:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round4.Guarded.RefuteR1.dil_admissible`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:37:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round4.Guarded.RefuteR1.dil_torus`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:38:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round4.Guarded.RefuteR1.zero_coord_le_pdist`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:39:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.StatementLaneR8.iv_block`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:40:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.StatementLaneR8.pcd_clamp`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:41:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.StatementLaneR8.pcd_near`
+AdalyFormal.NonVac.iv_block {s a b x y : ℕ} (hs : 0 < s) (ha : s ∣ a) (hb : s ∣ b) (hxy : y / s = x / s)
+  (hx : a ≤ x ∧ x < b) : a ≤ y ∧ y < b
+AdalyFormal.NonVac.pcd_clamp {N a lo hi D : ℕ} (hlh : lo < hi) (ha : lo - D ≤ a ∧ a < hi + D) (_haN : a < N)
+  (_hhiN : hi + D ≤ N) : AdalyFormal.StatementLane.pcd N a (if a < lo then lo else if a < hi then a else hi - 1) ≤ D
+AdalyFormal.NonVac.pcd_near {N a b D lo hi : ℕ} (ha : a < N) (hb : lo ≤ b ∧ b < hi) (hD : D ≤ lo) (hN : hi + D ≤ N)
+  (h : AdalyFormal.StatementLane.pcd N a b ≤ D) : lo - D ≤ a ∧ a < hi + D
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Check.lean:45:7: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.Round3.Guarded.RefuteR2.zero_coord_le_pdist`

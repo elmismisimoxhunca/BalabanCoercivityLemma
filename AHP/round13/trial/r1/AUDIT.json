@@ -1,0 +1,403 @@
+{
+  "status": "PASS",
+  "scope": "P1 only; not P2, P3, KernelLine, or GoalNeg2",
+  "byte_identical": true,
+  "files": [
+    {
+      "source": "AHP/round13/trial/r1/Trial.lean",
+      "source_sha256": "65dea42e0daff27c8bc07bd850e1f2bdf8029e1fc452b0600590989df0039c9b",
+      "log_sha256": "a2ba8fc471b7dbebfba3348b590f8e8714fb61143f34b5b6cc959e2d66dfdd9f",
+      "exit": 0,
+      "lines": 2298,
+      "printed_records": 195,
+      "new_declarations": 91,
+      "required_theorems": {
+        "patchSite_injective": {
+          "line": 1278,
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        "trialBond_injective": {
+          "line": 1328,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialField_norm": {
+          "line": 1375,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialField_mem": {
+          "line": 1509,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_higher_rows_zero": {
+          "line": 1543,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_mass_eq": {
+          "line": 1559,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_T_zero": {
+          "line": 1574,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_W_eq": {
+          "line": 1584,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialPlaq_injective": {
+          "line": 1662,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_plaq_zero_off": {
+          "line": 1707,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_delta_sum": {
+          "line": 1747,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_holonomy": {
+          "line": 1883,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_hol_parts": {
+          "line": 1917,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_atom_values": {
+          "line": 1995,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "edgeIndex_spec": {
+          "line": 2068,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "localQuad_value": {
+          "line": 2079,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_delta_value": {
+          "line": 2127,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_curved_energy": {
+          "line": 2135,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_flat_energy": {
+          "line": 2143,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_carrier_energy": {
+          "line": 2151,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "rightStar_negative_halfpi": {
+          "line": 2180,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "cofinal_rightStar_negative_halfpi": {
+          "line": 2187,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      }
+    },
+    {
+      "source": "AHP/round13/shared/trial/R1_Trial.lean",
+      "source_sha256": "65dea42e0daff27c8bc07bd850e1f2bdf8029e1fc452b0600590989df0039c9b",
+      "log_sha256": "755bde8a0fd57de60627a796567d1120754f4b959767c8af431470732b56908d",
+      "exit": 0,
+      "lines": 2298,
+      "printed_records": 195,
+      "new_declarations": 91,
+      "required_theorems": {
+        "patchSite_injective": {
+          "line": 1278,
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        "trialBond_injective": {
+          "line": 1328,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialField_norm": {
+          "line": 1375,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialField_mem": {
+          "line": 1509,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_higher_rows_zero": {
+          "line": 1543,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_mass_eq": {
+          "line": 1559,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_T_zero": {
+          "line": 1574,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_W_eq": {
+          "line": 1584,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialPlaq_injective": {
+          "line": 1662,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_plaq_zero_off": {
+          "line": 1707,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_delta_sum": {
+          "line": 1747,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_holonomy": {
+          "line": 1883,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_hol_parts": {
+          "line": 1917,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_atom_values": {
+          "line": 1995,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "edgeIndex_spec": {
+          "line": 2068,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "localQuad_value": {
+          "line": 2079,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_delta_value": {
+          "line": 2127,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_curved_energy": {
+          "line": 2135,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_flat_energy": {
+          "line": 2143,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_carrier_energy": {
+          "line": 2151,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "rightStar_negative_halfpi": {
+          "line": 2180,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "cofinal_rightStar_negative_halfpi": {
+          "line": 2187,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      }
+    }
+  ],
+  "copies": [
+    {
+      "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_Boundary.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_Mass.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_StarLocal.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/kernel/R2_FirstCrossing.lean",
+      "verified_verbatim": true
+    }
+  ],
+  "numerics_used_as_proof": false,
+  "qualification": "Two separate builder executions, not independent mathematical review."
+}

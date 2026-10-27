@@ -1,0 +1,25 @@
+{
+  "mode": "high-precision selected block",
+  "q": 2,
+  "R": 32,
+  "character": [
+    0,
+    0
+  ],
+  "charge": 0,
+  "dps": 80,
+  "root": "0.563971517985560942179715334361727273883421139039400530134866542749493564745",
+  "root_solved": false,
+  "schur_low": [
+    "1.0",
+    "1.0",
+    "1.08957766165812391484848164611027534644342306049468958960754475121398947226",
+    "1.08959853857568686669362090507187440727551377160018417748876067985293963262"
+  ],
+  "kernel_form_slope": "-4.36376963389216073472798726835563995430875788722074761983834448382612631085e-287",
+  "augmented_residual": "0.5",
+  "pencil_error": "0.0",
+  "qualification": "Non-interval numerical evidence in the R6 cell transcription. No Lean Fourier identification, full-kernel proof, or cofinal result.",
+  "seconds": 43.40788435935974,
+  "peak_rss_KiB": 385308
+}

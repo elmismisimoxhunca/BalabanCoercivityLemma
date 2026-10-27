@@ -1,0 +1,29 @@
+{
+  "source": "AHP/round5/s3-raw/s3raw-r1/Attempt.lean",
+  "hashesSha256": {
+    "AHP/round5/s3-raw/s3raw-r1/Attempt.lean": "33ce45abad8892fc2c522708add52f2121b07f647b8e4953b00b7a74fe3ad9e1",
+    "AHP/round3/s3-rest/pin/Statement.lean": "799b0124e2075c575d18c83c68af06e8501f6ee50f9d88b57647d8c2deb9ab3b",
+    "AHP/round3/s3-rest/r1-prove/Attempt.lean": "9aa7238ddbff572aea7b0f0394eb22325280451f46087ec6e99da0f3518ae6a2",
+    "AHP/round5/s3-raw/s3raw-r1/Attempt.lean.log": "2fd4c78194bdcf1875a0c5f22ca814c0c4158d94a31b937437ce4d82004e8b16",
+    "AHP/round5/s3-raw/s3raw-r1/Attempt.lean.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "pinByteIdenticalPrefix": true,
+  "entireNormalizedAttemptByteIdenticalPrefix": true,
+  "imports": [
+    "ZT5A"
+  ],
+  "forbiddenRawHits": [],
+  "declarationCount": 161,
+  "explicitPrintCount": 161,
+  "declarationsWithoutPrint": [],
+  "printsWithoutLogRecord": [],
+  "dependencyRecordCount": 161,
+  "nonstandardDependencyRecords": [],
+  "errors": [],
+  "warningCount": 28,
+  "exitCode": 0,
+  "exactMainHeader": true,
+  "mainDeclaration": "AdalyFormal.Round3.S3Rest.goalPos1_proved",
+  "mainAxiomLine": "'AdalyFormal.Round3.S3Rest.goalPos1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "passes": true
+}

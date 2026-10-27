@@ -1,0 +1,130 @@
+PiLp.continuous_ofLp : ∀ (p : ENNReal) {ι : Type u_1} (β : ι → Type u_2) [inst : (i : ι) → TopologicalSpace (β i)],
+  Continuous WithLp.ofLp
+PiLp.continuous_toLp : ∀ (p : ENNReal) {ι : Type u_1} (β : ι → Type u_2) [inst : (i : ι) → TopologicalSpace (β i)],
+  Continuous (WithLp.toLp p)
+PiLp.homeomorph : (p : ENNReal) →
+  {ι : Type u_1} → (β : ι → Type u_2) → [inst : (i : ι) → TopologicalSpace (β i)] → PiLp p β ≃ₜ ((i : ι) → β i)
+@tendsto_pi_nhds : ∀ {Y : Type u_1} {ι : Type u_2} {A : ι → Type u_3} [T : (i : ι) → TopologicalSpace (A i)]
+  {f : Y → (i : ι) → A i} {g : (i : ι) → A i} {u : Filter Y},
+  Tendsto f u (𝓝 g) ↔ ∀ (x : ι), Tendsto (fun i => f i x) u (𝓝 (g x))
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe3.lean:8:8: error(lean.unknownIdentifier): Unknown identifier `Basis.sum_repr`
+Module.finBasis : (R : Type u_1) →
+  (M : Type u_2) →
+    [inst : Semiring R] →
+      [inst_1 : AddCommMonoid M] →
+        [inst_2 : Module R M] →
+          [Module.Free R M] →
+            [StrongRankCondition R] → [Module.Finite R M] → Module.Basis (Fin (Module.finrank R M)) R M
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe3.lean:10:8: error(lean.unknownIdentifier): Unknown identifier `Basis.coord`
+@LinearMap.continuous_of_finiteDimensional : ∀ {𝕜 : Type u_1} [hnorm : NontriviallyNormedField 𝕜] {E : Type u_2}
+  [inst : AddCommGroup E] [inst_1 : Module 𝕜 E] [inst_2 : TopologicalSpace E] [IsTopologicalAddGroup E]
+  [ContinuousSMul 𝕜 E] {F' : Type u_3} [inst_5 : AddCommGroup F'] [inst_6 : Module 𝕜 F'] [inst_7 : TopologicalSpace F']
+  [IsTopologicalAddGroup F'] [ContinuousSMul 𝕜 F'] [CompleteSpace 𝕜] [T2Space E] [FiniteDimensional 𝕜 E]
+  (f : E →ₗ[𝕜] F'), Continuous ⇑f
+ContinuousLinearMap.smulRightL : (𝕜 : Type u_1) →
+  (E : Type u_2) →
+    (Fₗ : Type u_3) →
+      [inst : SeminormedAddCommGroup E] →
+        [inst_1 : SeminormedAddCommGroup Fₗ] →
+          [inst_2 : NontriviallyNormedField 𝕜] →
+            [inst_3 : NormedSpace 𝕜 E] → [inst_4 : NormedSpace 𝕜 Fₗ] → StrongDual 𝕜 E →L[𝕜] Fₗ →L[𝕜] E →L[𝕜] Fₗ
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe3.lean:13:8: warning: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+@tendsto_finset_sum : ∀ {ι : Type u_1} {α : Type u_2} {M : Type u_3} [inst : TopologicalSpace M]
+  [inst_1 : AddCommMonoid M] [ContinuousAdd M] {f : ι → α → M} {x : Filter α} {a : ι → M} (s : Finset ι),
+  (∀ i ∈ s, Tendsto (f i) x (𝓝 (a i))) → Tendsto (fun b => ∑ c ∈ s, f c b) x (𝓝 (∑ c ∈ s, a c))
+@Submodule.eq_starProjection_of_mem_of_inner_eq_zero : ∀ {𝕜 : Type u_1} {E : Type u_2} [inst : RCLike 𝕜]
+  [inst_1 : NormedAddCommGroup E] [inst_2 : InnerProductSpace 𝕜 E] {K : Submodule 𝕜 E}
+  [inst_3 : K.HasOrthogonalProjection] {u v : E}, v ∈ K → (∀ w ∈ K, inner 𝕜 (u - v) w = 0) → K.starProjection u = v
+@IsUnit.mul_left_inj : ∀ {M : Type u_1} [inst : Monoid M] {a b c : M}, IsUnit a → (b * a = c * a ↔ b = c)
+@Units.isOpen : ∀ {R : Type u_1} [inst : NormedRing R] [HasSummableGeomSeries R], IsOpen {x | IsUnit x}
+@IsOpen.mem_nhds : ∀ {X : Type u_1} [inst : TopologicalSpace X] {x : X} {s : Set X}, IsOpen s → x ∈ s → s ∈ 𝓝 x
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe3.lean:18:8: error(lean.unknownIdentifier): Unknown identifier `isOpen_setOf_isUnit`
+@Ring.inverse_unit : ∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] (u : M₀ˣ), Ring.inverse ↑u = ↑u⁻¹
+@Ring.mul_inverse_cancel : ∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] (x : M₀), IsUnit x → x * Ring.inverse x = 1
+@AdalyFormal.M1Site.Rproj_eq_strat : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) (a : ℝ),
+  (∀ (j : ℕ), 0 < AdalyFormal.M1Site.wq G a j) →
+    IsUnit (AdalyFormal.M1Site.LP G U a) →
+      ∀ (Gi : AdalyFormal.M1Site.YP G →L[ℝ] AdalyFormal.M1Site.YP G),
+        (∀ (u : AdalyFormal.M1Site.YP G),
+            (ContinuousLinearMap.adjoint (AdalyFormal.M1Site.Xop G U a) ∘SL AdalyFormal.M1Site.Xop G U a) (Gi u) = u) →
+          ∀ (v : AdalyFormal.IngredientFamilyR2.SiteL2 L),
+            (AdalyFormal.IngredientFamilyR2.Rproj G U) v =
+              v - (AdalyFormal.M1Site.Xop G U a) (Gi ((ContinuousLinearMap.adjoint (AdalyFormal.M1Site.Xop G U a)) v))
+@AdalyFormal.M1Site.LP_symm : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) (a : ℝ),
+  (∀ (j : ℕ), 0 ≤ AdalyFormal.M1Site.wq G a j) →
+    ∀ (f g : AdalyFormal.IngredientFamilyR2.SiteL2 L),
+      ⟪(AdalyFormal.M1Site.LP G U a) f, g⟫ = ⟪f, (AdalyFormal.M1Site.LP G U a) g⟫
+@AdalyFormal.M1Site.QpP : {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} →
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) →
+    AdalyFormal.IngredientFamilyR2.Cfg L → ℝ → AdalyFormal.IngredientFamilyR2.SiteL2 L →L[ℝ] AdalyFormal.M1Site.YP G
+@AdalyFormal.M1Site.inner_LP : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) (a : ℝ),
+  (∀ (j : ℕ), 0 ≤ AdalyFormal.M1Site.wq G a j) →
+    ∀ (g f : AdalyFormal.IngredientFamilyR2.SiteL2 L),
+      ⟪g, (AdalyFormal.M1Site.LP G U a) f⟫ =
+        ⟪(AdalyFormal.M1Site.Dm G U) g, (AdalyFormal.M1Site.Dm G U) f⟫ +
+          ⟪(AdalyFormal.M1Site.QpP G U a) g, (AdalyFormal.M1Site.QpP G U a) f⟫
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r2/scratch/Probe3.lean:25:8: error(lean.unknownIdentifier): Unknown identifier `AdalyFormal.M1Site.LP_isUnit_of_coercive`
+@AdalyFormal.IngredientFamilyR2.Gp_spec : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  (G : AdalyFormal.IngredientFamilyR2.TowerGeom L) (U : AdalyFormal.IngredientFamilyR2.Cfg L) (a : ℝ),
+  IsUnit (AdalyFormal.IngredientFamilyR2.DelpA G U a + (1 - AdalyFormal.IngredientFamilyR2.siteMask G.Om0)) →
+    ∀ (f : AdalyFormal.IngredientFamilyR2.SiteL2 L),
+      (AdalyFormal.IngredientFamilyR2.siteMask G.Om0) ((AdalyFormal.IngredientFamilyR2.Gp G U a) f) =
+          (AdalyFormal.IngredientFamilyR2.Gp G U a) f ∧
+        (AdalyFormal.IngredientFamilyR2.DelpA G U a) ((AdalyFormal.IngredientFamilyR2.Gp G U a) f) =
+          (AdalyFormal.IngredientFamilyR2.siteMask G.Om0) f
+AdalyFormal.Balaban.ConstantA.aSeqAux_pos : ∀ (a d : ℝ),
+  0 < a → 0 < d → d < a → ∀ (n : ℕ), 0 < AdalyFormal.Balaban.ConstantA.aSeqAux a d n
+AdalyFormal.Balaban.ConstantA.aSeq : ℝ → ℝ → ℕ → ℝ
+AdalyFormal.Balaban.SuTwoInner.hsInner_RMap : ∀ (U : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ))
+  (X Y : ↥AdalyFormal.Balaban.CovariantOperators.SuTwo),
+  AdalyFormal.Balaban.SuTwoInner.hsInner ((AdalyFormal.Balaban.CovariantOperators.RMap U) X)
+      ((AdalyFormal.Balaban.CovariantOperators.RMap U) Y) =
+    AdalyFormal.Balaban.SuTwoInner.hsInner X Y
+@AdalyFormal.Balaban.SuTwoInner.hsInner_self_eq_zero : ∀ {X : ↥AdalyFormal.Balaban.CovariantOperators.SuTwo},
+  AdalyFormal.Balaban.SuTwoInner.hsInner X X = 0 → X = 0
+AdalyFormal.Balaban.CovariantOperators.RMap_coe_apply : ∀ (U : ↥(Matrix.specialUnitaryGroup (Fin 2) ℂ))
+  (X : ↥AdalyFormal.Balaban.CovariantOperators.SuTwo),
+  ↑((AdalyFormal.Balaban.CovariantOperators.RMap U) X) = ↑U * ↑X * (↑U).conjTranspose
+@AdalyFormal.D1Literal.ContFam : {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} →
+  (ℝ → AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration (↥AdalyFormal.D1Literal.SU2m) L) → Prop
+@AdalyFormal.D1Literal.cont_deltaKLocCLM : ∀ {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent}
+  {U : ℝ → AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration (↥AdalyFormal.D1Literal.SU2m) L},
+  AdalyFormal.D1Literal.ContFam U →
+    ∀ (P : Set (AdalyFormal.Target.ClayStatement.PeriodicLatticePlaquette L)),
+      Continuous fun θ => AdalyFormal.StatementLaneR6.deltaKLocCLM (U θ) P
+@AdalyFormal.D1Literal.continuous_of_inner : ∀ {E : Type u_1} [inst : NormedAddCommGroup E]
+  [inst_1 : InnerProductSpace ℝ E] [FiniteDimensional ℝ E] {X : Type u_2} [inst_3 : TopologicalSpace X] {g : X → E},
+  (∀ (w : E), Continuous fun t => ⟪w, g t⟫) → Continuous g
+@ContinuousLinearMap.adjoint : {𝕜 : Type u_1} →
+  {E : Type u_2} →
+    {F : Type u_3} →
+      [inst : RCLike 𝕜] →
+        [inst_1 : NormedAddCommGroup E] →
+          [inst_2 : NormedAddCommGroup F] →
+            [inst_3 : InnerProductSpace 𝕜 E] →
+              [inst_4 : InnerProductSpace 𝕜 F] → [CompleteSpace E] → [CompleteSpace F] → (E →L[𝕜] F) ≃ₗᵢ⋆[𝕜] F →L[𝕜] E
+AdalyFormal.StatementLane2.Ug_zero : AdalyFormal.StatementLane2.Ug 0 = 1
+@AdalyFormal.IngredientFamilyR2.flatCfg : {L : AdalyFormal.Target.ClayStatement.PeriodicLatticeExtent} →
+  AdalyFormal.Target.ClayStatement.PeriodicLinkConfiguration AdalyFormal.Balaban.SuTwoLogExp.SU2 L
+@NormedSpace.exp_analytic : ∀ {𝕂 : Type u_1} {𝔸 : Type u_2} [inst : NontriviallyNormedField 𝕂] [inst_1 : CharZero 𝕂]
+  [ContinuousSMul ℚ 𝕂] [inst_3 : NormedRing 𝔸] [inst_4 : NormedAlgebra 𝕂 𝔸] [CompleteSpace 𝔸] (x : 𝔸),
+  AnalyticAt 𝕂 NormedSpace.exp x
+@AnalyticAt.contDiffAt : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {E : Type u_2}
+  [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] {F : Type u_3} [inst_3 : NormedAddCommGroup F]
+  [inst_4 : NormedSpace 𝕜 F] {f : E → F} {x : E} {n : WithTop ℕ∞} [CompleteSpace F],
+  AnalyticAt 𝕜 f x → ContDiffAt 𝕜 n f x
+@contDiffAt_pi : ∀ {𝕜 : Type u_2} [inst : NontriviallyNormedField 𝕜] {E : Type u_1} [inst_1 : NormedAddCommGroup E]
+  [inst_2 : NormedSpace 𝕜 E] {x : E} {n : WithTop ℕ∞} {ι : Type u_3} [inst_3 : Fintype ι] {F' : ι → Type u_4}
+  [inst_4 : (i : ι) → NormedAddCommGroup (F' i)] [inst_5 : (i : ι) → NormedSpace 𝕜 (F' i)] {Φ : E → (i : ι) → F' i},
+  ContDiffAt 𝕜 n Φ x ↔ ∀ (i : ι), ContDiffAt 𝕜 n (fun x => Φ x i) x
+@ContDiffAt.fderiv : ∀ {𝕜 : Type u_1} {E : Type u_2} {F : Type u_3} {G : Type u_4} [inst : NontriviallyNormedField 𝕜]
+  [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E] [inst_3 : NormedAddCommGroup F] [inst_4 : NormedSpace 𝕜 F]
+  [inst_5 : NormedAddCommGroup G] [inst_6 : NormedSpace 𝕜 G] {x₀ : E} {m n : WithTop ℕ∞} {f : E → F → G} {g : E → F},
+  ContDiffAt 𝕜 n (Function.uncurry f) (x₀, g x₀) →
+    ContDiffAt 𝕜 m g x₀ → m + 1 ≤ n → ContDiffAt 𝕜 m (fun x => fderiv 𝕜 (f x) (g x)) x₀
+@HasFDerivAt.hasDerivAt : ∀ {𝕜 : Type u_1} [inst : NontriviallyNormedField 𝕜] {F : Type u_2} [inst_1 : AddCommGroup F]
+  [inst_2 : Module 𝕜 F] [inst_3 : TopologicalSpace F] {f : 𝕜 → F} {x : 𝕜} [inst_4 : ContinuousSMul 𝕜 F]
+  {f' : 𝕜 →L[𝕜] F}, HasFDerivAt f f' x → HasDerivAt f (f' 1) x

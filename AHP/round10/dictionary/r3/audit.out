@@ -1,0 +1,132 @@
+{
+  "pass": true,
+  "goalNeg2Proved": false,
+  "round9CofinalPremiseProved": false,
+  "crossingTopJetNonzeroProved": false,
+  "fullKernelConcentrationProved": false,
+  "newDeclarations": {
+    "SourceEnergy": 15,
+    "FreeSource": 30,
+    "JetDetection": 7
+  },
+  "compilations": [
+    {
+      "path": "AHP/round10/dictionary/r3/Scalar.lean",
+      "lines": 187,
+      "sha256": "a929ad2ae3818190756bfa1f6d9b7cb499c21dca894405106d46275dc8838b0b",
+      "exit": "0",
+      "fresh": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": [],
+      "forbiddenSourceTokens": [],
+      "records": 15,
+      "newDeclarations": 15,
+      "missingPrints": [],
+      "nonstandard": {},
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/dictionary/r3/Actual.lean",
+      "lines": 1590,
+      "sha256": "6fb957329d43fc60ed65c6af8e36051b3c975c07ca223df21dd11aef2a9cccf1",
+      "exit": "0",
+      "fresh": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": [],
+      "forbiddenSourceTokens": [],
+      "records": 133,
+      "newDeclarations": 45,
+      "missingPrints": [],
+      "nonstandard": {},
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/dictionary/r3/JetDetection.lean",
+      "lines": 2491,
+      "sha256": "9666e5c617ae2aadd466fbdaff9e9b58c2811e0c59777c98fd4af94a821321ba",
+      "exit": "0",
+      "fresh": true,
+      "imports": [
+        "DrEquiv",
+        "ZXR2Flat6"
+      ],
+      "diagnostics": [],
+      "forbiddenSourceTokens": [],
+      "records": 220,
+      "newDeclarations": 52,
+      "missingPrints": [],
+      "nonstandard": {},
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+      "lines": 1590,
+      "sha256": "6fb957329d43fc60ed65c6af8e36051b3c975c07ca223df21dd11aef2a9cccf1",
+      "exit": "0",
+      "fresh": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": [],
+      "forbiddenSourceTokens": [],
+      "records": 133,
+      "newDeclarations": 45,
+      "missingPrints": [],
+      "nonstandard": {},
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/shared/dictionary/R3_JetDetection.lean",
+      "lines": 2491,
+      "sha256": "9666e5c617ae2aadd466fbdaff9e9b58c2811e0c59777c98fd4af94a821321ba",
+      "exit": "0",
+      "fresh": true,
+      "imports": [
+        "DrEquiv",
+        "ZXR2Flat6"
+      ],
+      "diagnostics": [],
+      "forbiddenSourceTokens": [],
+      "records": 220,
+      "newDeclarations": 52,
+      "missingPrints": [],
+      "nonstandard": {},
+      "pass": true
+    }
+  ],
+  "publicationByteEqual": {
+    "R3_FreeSource.lean": true,
+    "R3_JetDetection.lean": true
+  },
+  "verbatimCopyChecks": [
+    {
+      "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+      "pass": true
+    },
+    {
+      "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+      "pass": true
+    },
+    {
+      "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+      "pass": true
+    },
+    {
+      "source": "AHP/round10/dictionary/r2/PhaseSource.lean",
+      "pass": true
+    },
+    {
+      "source": "AHP/round10/dictionary/r2/Source.lean",
+      "pass": true
+    },
+    {
+      "source": "AHP/round10/shared/nonvanishing/R3_DilatedFlux.lean",
+      "pass": true
+    }
+  ],
+  "mainDeclaration": "AdalyFormal.Round10.Dictionary.JetDetection.curlDetected_of_topJet"
+}

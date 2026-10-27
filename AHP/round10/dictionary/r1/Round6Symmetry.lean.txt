@@ -1,0 +1,258 @@
+namespace AdalyFormal.Round6.Guarded.ClosedFormR1
+
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round2.Guarded.Pin
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.D1Literal (PSD)
+
+/-- Translation of the physical fine torus, not a smaller substitute torus. -/
+def siteTranslation {L : PeriodicLatticeExtent} (a : PeriodicLatticeSite L) :
+    PeriodicLatticeSite L ≃ PeriodicLatticeSite L := Equiv.addRight a
+
+def bondTranslation {L : PeriodicLatticeExtent} (a : PeriodicLatticeSite L) :
+    Bond L ≃ Bond L := Equiv.prodCongr (siteTranslation a) (Equiv.refl _)
+
+theorem siteTranslation_apply {L : PeriodicLatticeExtent}
+    (a x : PeriodicLatticeSite L) : siteTranslation a x = x + a := rfl
+
+theorem bondTranslation_apply {L : PeriodicLatticeExtent}
+    (a : PeriodicLatticeSite L) (e : Bond L) :
+    bondTranslation a e = (e.1 + a, e.2) := rfl
+
+/-- The site permutation commutes with every fine forward shift. -/
+theorem translation_shift {L : PeriodicLatticeExtent}
+    (a x : PeriodicLatticeSite L) (μ : Fin 3) :
+    periodicLatticeShift (x + a) μ = periodicLatticeShift x μ + a := by
+  funext ν
+  by_cases h : ν = μ
+  · subst ν
+    simp [periodicLatticeShift, add_assoc, add_comm]
+  · simp [periodicLatticeShift, h]
+
+/-- Every level of this tower is invariant under longitudinally zero shifts. -/
+theorem translation_tower {q R : ℕ}
+    (a x : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0) (j : ℕ) :
+    x + a ∈ (dilTower q R).Om j ↔ x ∈ (dilTower q R).Om j := by
+  by_cases h0 : j = 0
+  · simp [dilTower, h0, ha]
+  · by_cases h1 : j = 1 <;> simp [dilTower, h0, h1, ha]
+
+theorem translation_bondsOm0 {q R : ℕ}
+    (a : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0)
+    (e : Bond (scaleUp 2 1 (dilLu q R))) :
+    bondTranslation a e ∈ bondsOm0 (geomOf 2 1 (dilTower q R)) ↔
+      e ∈ bondsOm0 (geomOf 2 1 (dilTower q R)) := by
+  change ((e.1 + a) ∈ (dilTower q R).Om 0 ∨
+      periodicLatticeShift (e.1 + a) e.2 ∈ (dilTower q R).Om 0) ↔ _
+  rw [translation_shift, translation_tower a _ ha, translation_tower a _ ha]
+  rfl
+
+theorem translation_Zb {q R : ℕ}
+    (a : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0)
+    (e : Bond (scaleUp 2 1 (dilLu q R))) :
+    bondTranslation a e ∈ AdalyFormal.D1Literal.Zb ((dilTower q R).Om 0) ↔
+      e ∈ AdalyFormal.D1Literal.Zb ((dilTower q R).Om 0) := by
+  change ((e.1 + a) ∉ (dilTower q R).Om 0 ∧
+      periodicLatticeShift (e.1 + a) e.2 ∉ (dilTower q R).Om 0) ↔ _
+  rw [translation_shift, translation_tower a _ ha, translation_tower a _ ha]
+  rfl
+
+/-- Pullback by translation on the full physical bond Hilbert space. -/
+noncomputable def bondPullback {L : PeriodicLatticeExtent} (a : PeriodicLatticeSite L) :
+    BondFnL2 L ≃ₗᵢ[ℝ] BondFnL2 L :=
+  LinearIsometryEquiv.piLpCongrLeft 2 ℝ SuTwo (bondTranslation a).symm
+
+theorem bondPullback_apply {L : PeriodicLatticeExtent} (a : PeriodicLatticeSite L)
+    (v : BondFnL2 L) (e : Bond L) : bondPullback a v e = v (bondTranslation a e) := rfl
+
+/-- The support restriction is the pin's touching-bond support. -/
+theorem bondPullback_mem {q R : ℕ}
+    (a : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0)
+    (v : ↥(bondSupp (geomOf 2 1 (dilTower q R)))) :
+    bondPullback a v ∈ bondSupp (geomOf 2 1 (dilTower q R)) := by
+  intro e he
+  rw [bondPullback_apply]
+  exact v.property _ (fun h => he ((translation_bondsOm0 a ha e).mp h))
+
+noncomputable def carrierTranslationIsometry {q R : ℕ}
+    (a : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0) :
+    ↥(bondSupp (geomOf 2 1 (dilTower q R))) →ₗᵢ[ℝ]
+      ↥(bondSupp (geomOf 2 1 (dilTower q R))) where
+  toFun v := ⟨bondPullback a v, bondPullback_mem a ha v⟩
+  map_add' v w := by apply Subtype.ext; exact (bondPullback a).map_add _ _
+  map_smul' c v := by apply Subtype.ext; exact (bondPullback a).map_smul c v
+  norm_map' v := (bondPullback a).norm_map v
+
+/-- A genuine orthogonal automorphism of the complete carrier, with no sector
+compression and no assertion of operator equivariance built into its type. -/
+noncomputable def carrierTranslation {q R : ℕ}
+    (a : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0) :
+    ↥(bondSupp (geomOf 2 1 (dilTower q R))) ≃ₗᵢ[ℝ]
+      ↥(bondSupp (geomOf 2 1 (dilTower q R))) :=
+  LinearIsometryEquiv.ofSurjective (carrierTranslationIsometry a ha)
+    ((LinearMap.injective_iff_surjective
+      (f := (carrierTranslationIsometry a ha).toLinearMap)).mp
+      (carrierTranslationIsometry a ha).injective)
+
+theorem carrierTranslation_apply {q R : ℕ}
+    (a : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0)
+    (v : ↥(bondSupp (geomOf 2 1 (dilTower q R))))
+    (e : Bond (scaleUp 2 1 (dilLu q R))) :
+    (carrierTranslation a ha v : BondFnL2 _) e = (v : BondFnL2 _) (bondTranslation a e) := rfl
+
+/-- The two fine-site generator; the stride is NOT 2q. -/
+def twoSite (q R : ℕ) (μ : Fin 3) : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R)) :=
+  fun ν => if ν = μ then 2 else 0
+
+theorem twoSite_zero (q R : ℕ) (μ : Fin 3) (hμ : μ ≠ 0) :
+    twoSite q R μ 0 = 0 := by simp [twoSite, Ne.symm hμ]
+
+theorem translation_parity {n : ℕ} (hn : 2 ∣ n + 1) (x a : Fin (n + 1))
+    (ha : a.val % 2 = 0) : (x + a).val % 2 = x.val % 2 := by
+  rw [Fin.val_add, Nat.mod_mod_of_dvd _ hn, Nat.add_mod, ha]
+  simp
+
+theorem twoSite_parity {q : ℕ} (hq : 0 < q) (R : ℕ) (μ ν : Fin 3) (hν : ν ≠ 0) :
+    (twoSite q R μ ν).val % 2 = 0 := by
+  have hn : 2 ∣ scaleUp 2 1 (dilLu q R) ν + 1 := by
+    rw [dil_fine_size hq, if_neg hν]
+    exact ⟨4*q, by omega⟩
+  unfold twoSite
+  split_ifs
+  · change (2 % (scaleUp 2 1 (dilLu q R) ν + 1)) % 2 = 0
+    rw [Nat.mod_mod_of_dvd _ hn]
+  · rfl
+
+theorem twoSite_dilPattern {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (μ : Fin 3) (hμ : μ ≠ 0) (e : Bond (scaleUp 2 1 (dilLu q R))) :
+    dilPattern q R (bondTranslation (twoSite q R μ) e) ↔ dilPattern q R e := by
+  have hn (ν : Fin 3) (hν : ν ≠ 0) : 2 ∣ scaleUp 2 1 (dilLu q R) ν + 1 := by
+    rw [dil_fine_size hq, if_neg hν]
+    exact ⟨4*q, by omega⟩
+  have hp (ν : Fin 3) (hν : ν ≠ 0) :=
+    translation_parity (hn ν hν) (e.1 ν) (twoSite q R μ ν) (twoSite_parity hq R μ ν hν)
+  simp only [dilPattern, bondTranslation_apply, Pi.add_apply,
+    twoSite_zero q R μ hμ, add_zero, hp 1 (by decide), hp 2 (by decide)]
+
+/-- Exact invariance of the curved exterior-twist background, all parameters. -/
+theorem twistU_twoSite {q : ℕ} (hq : 0 < q) (R : ℕ) (ε t : ℝ)
+    (μ : Fin 3) (hμ : μ ≠ 0) (e : Bond (scaleUp 2 1 (dilLu q R))) :
+    twistU q R ε t (bondTranslation (twoSite q R μ) e) = twistU q R ε t e := by
+  classical
+  simp only [twistU, dilU, AdalyFormal.D1Literal.Uth,
+    translation_Zb _ (twoSite_zero q R μ hμ), twoSite_dilPattern hq R μ hμ]
+
+/-- The actual four-link plaquette word is invariant too. This is not yet an
+identity for the dressed Hessian or the nonlinear constrained second jet. -/
+theorem twist_holonomy_twoSite {q : ℕ} (hq : 0 < q) (R : ℕ) (ε t : ℝ)
+    (μ : Fin 3) (hμ : μ ≠ 0) (p : PeriodicLatticePlaquette (scaleUp 2 1 (dilLu q R))) :
+    periodicPlaquetteHolonomy (twistU q R ε t) (p.1 + twoSite q R μ, p.2) =
+      periodicPlaquetteHolonomy (twistU q R ε t) p := by
+  unfold periodicPlaquetteHolonomy
+  simp only [translation_shift]
+  have he (x : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ν : Fin 3) :
+      twistU q R ε t (x + twoSite q R μ, ν) = twistU q R ε t (x, ν) :=
+    twistU_twoSite hq R ε t μ hμ (x, ν)
+  simp only [he]
+
+#print axioms siteTranslation
+#print axioms bondTranslation
+#print axioms siteTranslation_apply
+#print axioms bondTranslation_apply
+#print axioms translation_shift
+#print axioms translation_tower
+#print axioms translation_bondsOm0
+#print axioms translation_Zb
+#print axioms bondPullback
+#print axioms bondPullback_apply
+#print axioms bondPullback_mem
+#print axioms carrierTranslationIsometry
+#print axioms carrierTranslation
+#print axioms carrierTranslation_apply
+#print axioms twoSite
+#print axioms twoSite_zero
+#print axioms translation_parity
+#print axioms twoSite_parity
+#print axioms twoSite_dilPattern
+#print axioms twistU_twoSite
+#print axioms twist_holonomy_twoSite
+
+/-- Orthogonality uses the actual carrier inner product. -/
+theorem carrierTranslation_inner {q R : ℕ}
+    (a : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0)
+    (v w : ↥(bondSupp (geomOf 2 1 (dilTower q R)))) :
+    ⟪carrierTranslation a ha v, carrierTranslation a ha w⟫ = ⟪v, w⟫ :=
+  (carrierTranslation a ha).inner_map_map v w
+
+/-- The full carrier translations compose without a discarded complement. -/
+theorem carrierTranslation_add {q R : ℕ}
+    (a b : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0) (hb : b 0 = 0)
+    (v : ↥(bondSupp (geomOf 2 1 (dilTower q R)))) :
+    carrierTranslation (a + b) (by simp [ha, hb]) v =
+      carrierTranslation a ha (carrierTranslation b hb v) := by
+  apply Subtype.ext
+  apply PiLp.ext
+  intro e
+  simp only [carrierTranslation_apply, bondTranslation_apply, add_assoc]
+
+/-- In particular, the two transverse generators commute on bondSupp. -/
+theorem carrierTranslation_commute {q R : ℕ}
+    (a b : PeriodicLatticeSite (scaleUp 2 1 (dilLu q R))) (ha : a 0 = 0) (hb : b 0 = 0)
+    (v : ↥(bondSupp (geomOf 2 1 (dilTower q R)))) :
+    carrierTranslation a ha (carrierTranslation b hb v) =
+      carrierTranslation b hb (carrierTranslation a ha v) := by
+  rw [← carrierTranslation_add, ← carrierTranslation_add]
+  simp only [add_comm a b]
+
+#print axioms carrierTranslation_inner
+#print axioms carrierTranslation_add
+#print axioms carrierTranslation_commute
+
+open scoped Fin.NatCast in
+/-- The physical two-site generator has the expected 4q-period. -/
+theorem twoSite_period {q : ℕ} (hq : 0 < q) (R : ℕ) (μ : Fin 3) (hμ : μ ≠ 0) :
+    (4*q) • twoSite q R μ = 0 := by
+  funext ν
+  simp only [Pi.smul_apply, Pi.zero_apply, twoSite]
+  by_cases hν : ν = μ
+  · subst ν
+    rw [if_pos rfl]
+    have htwo : (2 : Fin (scaleUp 2 1 (dilLu q R) μ + 1)) = (2 : ℕ) • 1 := by
+      rw [nsmul_one]; rfl
+    rw [htwo, ← mul_smul, nsmul_one, Fin.natCast_eq_zero,
+      dil_fine_size hq, if_neg hμ]
+    have he : 4*q*2 = 8*q := by omega
+    rw [he]
+  · rw [if_neg hν, smul_zero]
+
+/-- The part of the requested exact symmetry dictionary proved in this file:
+an orthogonal physical-carrier action, the actual link invariance, and the
+actual plaquette-word invariance. NO commutation with twistA or twistD is
+asserted, and this theorem does not block-diagonalise those operators. -/
+theorem twoSite_exact_symmetry {q : ℕ} (hq : 0 < q) (R : ℕ) (ε t : ℝ)
+    (μ : Fin 3) (hμ : μ ≠ 0) :
+    ∃ T : ↥(bondSupp (geomOf 2 1 (dilTower q R))) ≃ₗᵢ[ℝ]
+        ↥(bondSupp (geomOf 2 1 (dilTower q R))),
+      (∀ v : ↥(bondSupp (geomOf 2 1 (dilTower q R))),
+        ∀ e : Bond (scaleUp 2 1 (dilLu q R)),
+        (T v : BondFnL2 _) e = (v : BondFnL2 _) (bondTranslation (twoSite q R μ) e)) ∧
+      (∀ e : Bond (scaleUp 2 1 (dilLu q R)),
+        twistU q R ε t (bondTranslation (twoSite q R μ) e) = twistU q R ε t e) ∧
+      (∀ p : PeriodicLatticePlaquette (scaleUp 2 1 (dilLu q R)),
+        periodicPlaquetteHolonomy (twistU q R ε t) (p.1 + twoSite q R μ, p.2) =
+          periodicPlaquetteHolonomy (twistU q R ε t) p) := by
+  exact ⟨carrierTranslation (twoSite q R μ) (twoSite_zero q R μ hμ),
+    carrierTranslation_apply _ _, twistU_twoSite hq R ε t μ hμ,
+    twist_holonomy_twoSite hq R ε t μ hμ⟩
+
+#print axioms twoSite_period
+#print axioms twoSite_exact_symmetry
+end AdalyFormal.Round6.Guarded.ClosedFormR1

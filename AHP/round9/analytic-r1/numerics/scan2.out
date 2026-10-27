@@ -1,0 +1,79 @@
+assembled 1 6 1 n 964 aug 1356 nnz 43886 seconds 0.5005886554718018
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+KSCAN kscan_R6_p50_-pio8_-pio16.json k -0.3926990817 -0.1963495408 root 0.5639799025717522 split 4.81143e-27 slope -2.8648905 c1 -2.09523159656e-13 K -0.0156612847749 sec 6
+assembled 1 6 1 n 964 aug 1356 nnz 43886 seconds 0.3773066997528076
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+KSCAN kscan_R6_p50_-pio16_-pio8.json k -0.1963495408 -0.3926990817 root 0.5639799025717522 split 4.81143e-27 slope -2.8648905 c1 -2.88447222295e-13 K -0.0215606432164 sec 5
+assembled 1 6 1 n 964 aug 1356 nnz 43718 seconds 0.3370347023010254
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+KSCAN kscan_R6_p50_-pio8_-pio8.json k -0.3926990817 -0.3926990817 root 0.5639715179849665 split 4.80213e-29 slope -3.1265294 c1 -8.81283463739e-14 K -0.019163934194 sec 5
+rc=0

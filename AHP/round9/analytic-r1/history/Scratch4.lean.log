@@ -1,0 +1,88 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:143:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.AnalyticR1.inverse_symm`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:173:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.AnalyticR1.schurS_left`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:178:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.AnalyticR1.schurS_right`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:274:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.AnalyticR1.schurC_continuous`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:287:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.AnalyticR1.quad_le_norm`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:310:75: error: unsolved goals
+E : Type u_1
+inst✝² : NormedAddCommGroup E
+inst✝¹ : InnerProductSpace ℝ E
+inst✝ : FiniteDimensional ℝ E
+P X' : E →L[ℝ] E
+Xv : ℝ → E →L[ℝ] E
+t₀ : ℝ
+hder : HasDerivAt Xv X' t₀
+hXP : Xv t₀ * P = 0
+hPX : P * Xv t₀ = 0
+hC0 : IsUnit (schurC P (Xv t₀))
+hslope : Tendsto (fun t => (t - t₀)⁻¹ • (Xv t - Xv t₀)) (𝓝[≠] t₀) (𝓝 X')
+hcont : Tendsto Xv (𝓝[≠] t₀) (𝓝 (Xv t₀))
+hh : Tendsto (fun t => Xv t - Xv t₀) (𝓝[≠] t₀) (𝓝 0)
+hCi : Tendsto (fun a => Ring.inverse ((schurC P ∘ Xv) a)) (𝓝[≠] t₀) (𝓝 (Ring.inverse (schurC P (Xv t₀))))
+t : ℝ
+e1 : P * Xv t * P = P * (Xv t - Xv t₀) * P
+e2 : P * Xv t * (1 - P) = P * (Xv t - Xv t₀) * (1 - P)
+e3 : (1 - P) * Xv t * P = (1 - P) * (Xv t - Xv t₀) * P
+⊢ (t - t₀)⁻¹ • (P * (Xv t - Xv t₀) * P) -
+      (t - t₀)⁻¹ • (P * (Xv t - Xv t₀) * (1 - P) * Ring.inverse (schurC P (Xv t)) * ((1 - P) * (Xv t - Xv t₀) * P)) =
+    P * ((t - t₀)⁻¹ • Xv t - (t - t₀)⁻¹ • Xv t₀) * P -
+      P * ((t - t₀)⁻¹ • Xv t - (t - t₀)⁻¹ • Xv t₀) * (1 - P) * Ring.inverse (schurC P (Xv t)) *
+        ((1 - P) * (Xv t - Xv t₀) * P)
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:321:15: warning: This simp argument is unused:
+  mul_smul_comm
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵u̵l̵_̵s̵m̵u̵l̵_̵c̵o̵m̵m̵,̵ ̵s̵m̵u̵l̵_̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵[̲s̲m̲u̲l̲_̲m̲u̲l̲_̲a̲s̲s̲o̲c̲,̲ smul_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:321:30: warning: This simp argument is unused:
+  smul_mul_assoc
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_smul_comm, s̵m̵u̵l̵_̵m̵u̵l̵_̵a̵s̵s̵o̵c̵,̵ ̵smul_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:331:0: warning: automatically included section variable(s) unused in theorem `AdalyFormal.Round9.Guarded.AnalyticR1.schur_difference_identity`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:470:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/home/sebastian/BalabanCoercivityLemma/AHP/round9/analytic-r1/Scratch4.lean:597:30: error: Type mismatch: After simplification, term
+  hp
+ has type
+  ‖p.1⁻¹ • (schurS P (X p.1 p.2) - schurS P (X p.1 p.2 - D p.1)) - P * D₁ * P‖ < η₀
+but is expected to have type
+  ‖p.1⁻¹ • (schurS P (X p.1 p.2) - schurS P (X p.1 p.2 - D p.1)) - P * D₁ * P‖ < ν / 2

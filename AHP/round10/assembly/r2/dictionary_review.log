@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "path": "AHP/round10/shared/dictionary/R2_SourceDictionary.lean",
+  "sha256": "c52d96a2771eeb36394eb65fd39859c792834615ff9224faa9139ce39c90ee93",
+  "exit": "0",
+  "axiom_records": 88,
+  "only_standard_axioms": true,
+  "timestamps_current": true,
+  "no_diagnostics": true,
+  "read_parts_verbatim": {
+    "PhaseSource.lean": true,
+    "KKT.lean": true,
+    "SourceAppendix.lean": true
+  },
+  "actual_source_derivative_stencil_proved": true,
+  "physical_one_dimensional_source_certificate_proved": false,
+  "cofinal_coupling_proved": false
+}

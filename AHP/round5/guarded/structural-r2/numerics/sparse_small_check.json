@@ -1,0 +1,31 @@
+{
+  "B_apply_error": 4.1744385725905886e-14,
+  "W_apply_error": 5.773159728050814e-15,
+  "B_inverse_error": 3.3306690738754696e-16,
+  "qtop_error": 2.712673835558732e-15,
+  "shift_error": 1.3902256792019248e-16,
+  "pure_observation_rows": 288,
+  "pure_row_error": 1.992784975481558e-16,
+  "complex_sector_checks": [
+    {
+      "sector": [
+        0,
+        1
+      ],
+      "lowest_six_error": 5.040412531798211e-14,
+      "local_augmented_min_abs_LU_pivot": 0.7865431887122384,
+      "local_inverse_relative_residual": 5.107458961211421e-15
+    },
+    {
+      "sector": [
+        1,
+        2
+      ],
+      "lowest_six_error": 2.3037127760971998e-14,
+      "local_augmented_min_abs_LU_pivot": 0.7266665464185933,
+      "local_inverse_relative_residual": 5.0323553343397554e-15
+    }
+  ],
+  "peak_rss_kib": 405148,
+  "address_space_limit_bytes": 1992294400
+}

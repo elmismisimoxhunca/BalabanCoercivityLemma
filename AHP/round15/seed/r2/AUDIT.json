@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "local": "AHP/round15/seed/r2/Leading.lean",
+  "shared": "AHP/round15/shared/seed/R2_Leading.lean",
+  "source_sha256": "12074eaafe4107864fdc737bddb90001cc00d1ed554dba58fea07e460f9064d3",
+  "log_sha256": "6674a504daa5f26f16a358f13707a760e3d4d2c69b9a33028a3d19b0992026d3",
+  "lines": 6311,
+  "local_exit": 0,
+  "shared_exit": 0,
+  "byte_identical_source": true,
+  "byte_identical_log": true,
+  "imports": [
+    "DrEquiv",
+    "ZXR2Flat6"
+  ],
+  "axiom_record_count": 419,
+  "unique_axiom_record_names": 417,
+  "new_axiom_record_count": 25,
+  "all_axioms_permitted": true,
+  "mainDeclaration": "AdalyFormal.Round15.Seed.cofinalUnitDominantAreaSeed_of_chargedVector",
+  "axiomLine": "'AdalyFormal.Round15.Seed.cofinalUnitDominantAreaSeed_of_chargedVector' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "conditional_only": true,
+  "physical_certificate_inhabited": false,
+  "closedGoal": "none"
+}

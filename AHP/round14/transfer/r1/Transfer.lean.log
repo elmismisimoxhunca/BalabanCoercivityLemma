@@ -1,0 +1,23 @@
+'AdalyFormal.Round14.Transfer.mode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.orientedArea' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.mode_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.mode_orientedArea' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.mode_orientedArea_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.laurent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.eval_ne_zero_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.laurentPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.laurentPolynomial_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.laurent_mul_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.laurent_eventually_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.laurent_cofinal_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.laurent_eventually_ne_zero_of_lead' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round14.Transfer.RadiusLaurentData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.radius_cofinal_nonzero_of_laurent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round14.Transfer.DyadicLaurentData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round14.Transfer.dyadic_cofinal_nonzero_of_laurent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,5 @@
+REPAIRED /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/characters/q4_R18/c0_1.json -> /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/R2_repaired/q4_R18/c0_1.json
+REPAIRED /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/characters/q4_R18/c0_15.json -> /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/R2_repaired/q4_R18/c0_15.json
+REPAIRED /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/characters/q4_R18/c1_0.json -> /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/R2_repaired/q4_R18/c1_0.json
+REPAIRED /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/characters/q4_R18/c15_0.json -> /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/R2_repaired/q4_R18/c15_0.json
+OUTPUT /home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/R2_repaired/q4_R18/INDEX.json peak_rss_KiB 40460

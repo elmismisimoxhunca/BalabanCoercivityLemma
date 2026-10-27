@@ -1,0 +1,108 @@
+assembled 2 20 1 n 5956 aug 8308 nnz 255522 seconds 1.9158220291137695
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 2 20 0 n 5956 aug 8308 nnz 255184 seconds 1.9208183288574219
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q2_R20_e1e-3_p150_s0_0.json pairing 2.508787572772962136929237176174367269268291462716547872063897191890137180442892639844968991893464522730208909628505660016246724662230079772410832e-75 root 0.5865589686386088394685259869561093568048097745319913875720063087561381104365172970167693108893440631432620483375750651576321260613784418275824721 seconds 76.67154288291931
+assembled 2 20 1 n 5956 aug 8308 nnz 255508 seconds 1.8828046321868896
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 2 20 0 n 5956 aug 8308 nnz 255156 seconds 1.8451006412506104
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q2_R20_e1e-4_p150_s0_0.json pairing 2.508748389137255842672256915713767774901589434760395118822394854594651917803188081830394833337066861977813258822797460895385864411834953718737823e-77 root 0.5865589686386088394685259869561093568048097745319913875720063087561381105674831116228139169099419600694974242320446456274432462779878373660851262 seconds 77.96865367889404
+assembled 2 20 1 n 5956 aug 8308 nnz 255496 seconds 1.7866666316986084
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 2 20 0 n 5956 aug 8308 nnz 255184 seconds 1.7938072681427002
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q2_R20_e1e-5_p150_s0_0.json pairing 2.508747997302400147970874869779271283272209658599539184445886340564462273153386939160199378640732277207654678114795082312449151629034794280423616e-79 root 0.5865589686386088394685259869561093568048097745319913875720063087561381105687927669831813598301750389551147260238378542928031506913567043267802005 seconds 75.96432089805603
+assembled 2 20 1 n 5956 aug 8308 nnz 255508 seconds 1.7998318672180176
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 2 20 0 n 5956 aug 8308 nnz 255162 seconds 1.9021797180175781
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q2_R20_e1e-6_p150_s0_0.json pairing 2.508747993384051741160210184285370504123456464350909715932164562827236764637665828630827506554871706298830938376981872127499725464541964175937231e-81 root 0.5865589686386088394685259869561093568048097745319913875720063087561381105688058635365064656064915004946724014338662434009736845938936642803862661 seconds 76.09238934516907

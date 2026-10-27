@@ -1,0 +1,20 @@
+[
+  {
+    "path": "AHP/round10/shared/dictionary/R3_JetDetection.lean",
+    "start": "import DrEquiv",
+    "end": null,
+    "sha256": "9666e5c617ae2aadd466fbdaff9e9b58c2811e0c59777c98fd4af94a821321ba"
+  },
+  {
+    "path": "AHP/round13/detection/r1/FlatUnit.lean",
+    "start": "namespace AdalyFormal.Round3.Guarded.RefuteR2",
+    "end": "namespace AdalyFormal.Round9.Guarded.AnalyticR2\nopen scoped RealInnerProductSpace Topology\nopen AdalyFormal.Target.ClayStatement\nopen AdalyFormal.StatementLane\nopen AdalyFormal.StatementLaneG\nopen AdalyFormal.IngredientFamilyR2\nopen AdalyFormal.Round2.Guarded.Pin\nopen AdalyFormal.Round4.Guarded.RefuteR1\nopen AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)\nopen AdalyFormal.Balaban.QjComposite (stepAverage)\nopen AdalyFormal.Balaban.CovariantHjMinimizer (trivialU)\nnoncomputable abbrev flatData",
+    "sha256": "f8c98224b241a6e54909fad35dcdb44d50e7bee3dbce3ba818449937da107e4a"
+  },
+  {
+    "path": "AHP/round13/detection/r1/FlatUnit.lean",
+    "start": "namespace AdalyFormal.Round13.Detection\n",
+    "end": null,
+    "sha256": "cbead377cea1fcbd0f783316df96c9ce09206c1d467bf6ff7e2eb7fe27a111d2"
+  }
+]

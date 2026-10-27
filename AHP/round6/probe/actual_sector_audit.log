@@ -1,0 +1,64 @@
+assembled 2 18 1 n 5380 aug 7508 nnz 231068 seconds 1.5606868267059326
+assembled 2 18 1 n 5380 aug 7508 nnz 248984 seconds 2.051445960998535
+assembled 2 18 1 n 5380 aug 7508 nnz 247778 seconds 2.1082985401153564
+ACTUAL 18 1e-3 [{'character': [0, 0], 'schur_min_at_first_root': 0.051960946573084914}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 18 1 n 5380 aug 7508 nnz 231082 seconds 1.7970185279846191
+assembled 2 18 1 n 5380 aug 7508 nnz 248990 seconds 2.040335178375244
+assembled 2 18 1 n 5380 aug 7508 nnz 247760 seconds 2.1785614490509033
+ACTUAL 18 1e-4 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308491}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 18 1 n 5380 aug 7508 nnz 231084 seconds 1.8548755645751953
+assembled 2 18 1 n 5380 aug 7508 nnz 248982 seconds 2.2014245986938477
+assembled 2 18 1 n 5380 aug 7508 nnz 247778 seconds 2.1557719707489014
+ACTUAL 18 1e-5 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308597}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 18 1 n 5380 aug 7508 nnz 231072 seconds 1.759521245956421
+assembled 2 18 1 n 5380 aug 7508 nnz 248988 seconds 2.3023509979248047
+assembled 2 18 1 n 5380 aug 7508 nnz 247758 seconds 2.152301073074341
+ACTUAL 18 1e-6 [{'character': [0, 0], 'schur_min_at_first_root': 0.051960946573085004}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 20 1 n 5956 aug 8308 nnz 255500 seconds 1.9074018001556396
+assembled 2 20 1 n 5956 aug 8308 nnz 275304 seconds 2.3780622482299805
+assembled 2 20 1 n 5956 aug 8308 nnz 273970 seconds 2.4811413288116455
+ACTUAL 20 1e-3 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308415}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 20 1 n 5956 aug 8308 nnz 255514 seconds 1.963392972946167
+assembled 2 20 1 n 5956 aug 8308 nnz 275310 seconds 2.265052080154419
+assembled 2 20 1 n 5956 aug 8308 nnz 273952 seconds 2.464275598526001
+ACTUAL 20 1e-4 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308552}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416693}]
+assembled 2 20 1 n 5956 aug 8308 nnz 255516 seconds 1.9365012645721436
+assembled 2 20 1 n 5956 aug 8308 nnz 275302 seconds 2.417710304260254
+assembled 2 20 1 n 5956 aug 8308 nnz 273970 seconds 2.4999685287475586
+ACTUAL 20 1e-5 [{'character': [0, 0], 'schur_min_at_first_root': 0.0519609465730859}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 20 1 n 5956 aug 8308 nnz 255504 seconds 1.9479866027832031
+assembled 2 20 1 n 5956 aug 8308 nnz 275308 seconds 2.307832956314087
+assembled 2 20 1 n 5956 aug 8308 nnz 273950 seconds 2.4544034004211426
+ACTUAL 20 1e-6 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308491}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 24 1 n 7108 aug 9908 nnz 304364 seconds 2.3755273818969727
+assembled 2 24 1 n 7108 aug 9908 nnz 327944 seconds 2.8095104694366455
+assembled 2 24 1 n 7108 aug 9908 nnz 326354 seconds 2.890981435775757
+ACTUAL 24 1e-3 [{'character': [0, 0], 'schur_min_at_first_root': 0.051960946573085136}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 24 1 n 7108 aug 9908 nnz 304378 seconds 2.4113521575927734
+assembled 2 24 1 n 7108 aug 9908 nnz 327950 seconds 2.8816637992858887
+assembled 2 24 1 n 7108 aug 9908 nnz 326336 seconds 2.796398162841797
+ACTUAL 24 1e-4 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308501}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 24 1 n 7108 aug 9908 nnz 304380 seconds 2.4697866439819336
+assembled 2 24 1 n 7108 aug 9908 nnz 327942 seconds 3.0393238067626953
+assembled 2 24 1 n 7108 aug 9908 nnz 326354 seconds 2.805121421813965
+ACTUAL 24 1e-5 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308516}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416646}]
+assembled 2 24 1 n 7108 aug 9908 nnz 304368 seconds 2.32501482963562
+assembled 2 24 1 n 7108 aug 9908 nnz 327948 seconds 2.951482057571411
+assembled 2 24 1 n 7108 aug 9908 nnz 326334 seconds 2.780484914779663
+ACTUAL 24 1e-6 [{'character': [0, 0], 'schur_min_at_first_root': 0.051960946573084844}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 30 1 n 8836 aug 12308 nnz 377660 seconds 3.0417637825012207
+assembled 2 30 1 n 8836 aug 12308 nnz 406904 seconds 3.498547315597534
+assembled 2 30 1 n 8836 aug 12308 nnz 404930 seconds 3.610701322555542
+ACTUAL 30 1e-3 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308585}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 30 1 n 8836 aug 12308 nnz 377674 seconds 2.8170456886291504
+assembled 2 30 1 n 8836 aug 12308 nnz 406910 seconds 3.6831490993499756
+assembled 2 30 1 n 8836 aug 12308 nnz 404912 seconds 3.474644899368286
+ACTUAL 30 1e-4 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308593}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]
+assembled 2 30 1 n 8836 aug 12308 nnz 377676 seconds 2.8456361293792725
+assembled 2 30 1 n 8836 aug 12308 nnz 406902 seconds 3.7490668296813965
+assembled 2 30 1 n 8836 aug 12308 nnz 404930 seconds 3.4616637229919434
+ACTUAL 30 1e-5 [{'character': [0, 0], 'schur_min_at_first_root': 0.05196094657308668}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416614}]
+assembled 2 30 1 n 8836 aug 12308 nnz 377664 seconds 2.847205877304077
+assembled 2 30 1 n 8836 aug 12308 nnz 406908 seconds 3.7095885276794434
+assembled 2 30 1 n 8836 aug 12308 nnz 404910 seconds 3.4622085094451904
+ACTUAL 30 1e-6 [{'character': [0, 0], 'schur_min_at_first_root': 0.0519609465730858}, {'character': [0, 7], 'schur_min_at_first_root': 0.05674569118416454}, {'character': [7, 0], 'schur_min_at_first_root': 0.05674569118416698}]

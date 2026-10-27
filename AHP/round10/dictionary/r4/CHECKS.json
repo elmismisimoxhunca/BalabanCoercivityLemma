@@ -1,0 +1,2283 @@
+{
+  "pass": true,
+  "goalNeg2Proved": false,
+  "round9CofinalPremiseProved": false,
+  "actualCrossingJetDetected": false,
+  "actualCouplingPremiseRefuted": false,
+  "fullKernelConcentrationProved": false,
+  "fullSpatialCovarianceProved": false,
+  "newDeclarations": {
+    "Color": 22,
+    "ColorResponse": 28,
+    "ColorObstruction": 11
+  },
+  "compilations": [
+    {
+      "path": "AHP/round10/dictionary/r4/Color.lean",
+      "lines": 299,
+      "sha256": "a8ac7ec7f04812c8c4f5bc5b5224e8088387e1dfd14743bed5deccfe8b425404",
+      "logSha256": "969a1c73d67ed96607930b63db4b7d9cb3b17b0b6091c56a7e3261166418fd79",
+      "exitCode": 0,
+      "fresh": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": [],
+      "prohibited": [],
+      "recordCount": 22,
+      "newDeclarationCount": 22,
+      "missingPrints": [],
+      "nonstandard": {},
+      "rawAxiomRecords": {
+        "AdalyFormal.Round10.Dictionary.Color.quad_even": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_parallelogram": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_add_of_invariant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero_of_anti_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_mixed_scaling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.constGauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.const_trivial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flipE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_gauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.half_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.two_fixed_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE_flip_on_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_neutral_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_charged_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_single_color_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/dictionary/r4/Actual.lean",
+      "lines": 2185,
+      "sha256": "73a98acef49c0db5eee733b1bbf15ab48dc99f8794e969e51ce3bbc67c311f02",
+      "logSha256": "c430d22878b312469343640e3ebbc5f9c34a88953e233876a40cf3fa86796501",
+      "exitCode": 0,
+      "fresh": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": [],
+      "prohibited": [],
+      "recordCount": 194,
+      "newDeclarationCount": 61,
+      "missingPrints": [],
+      "nonstandard": {},
+      "rawAxiomRecords": {
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilLu": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilTower": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilLam": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilPattern": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round5.Guarded.IVTR2.maskedU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.Qualitative.dilMask": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.bulkU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.bulkP": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_comm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_conj": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_u\u03b8": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rot_bulkU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_dilMask": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.dataFam": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.dilV": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.flatData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.IsSourceDerivative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.half_rotation_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.oriented": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.circulation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.im_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.N": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.Q_H": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.Ginv_H": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.source_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.source_of_weak_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.coupling_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.two_site_residual_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.alternating_pair_constraint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.recurrence_fine_residuals": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.interiorProfile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkU_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.profileSourceStencil": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkSource_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.canonicalSourceStencil": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.canonical_isSourceDerivative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_eq_stencil": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.C2_level_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_top_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.flat_source_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.flatH_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralSource": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralCoord": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralSource_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_neutral_top_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.half_twice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.half_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.flatQ_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseField": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseField_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseField_Q": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.Q_level_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_level_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.all_profiles_zero_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_off": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_interior": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.liftJet_Q": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.fixed_of_slope_limit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.sourceLinear_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_even": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_parallelogram": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_add_of_invariant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero_of_anti_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_mixed_scaling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.constGauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.const_trivial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flipE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_gauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.half_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.two_fixed_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE_flip_on_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_neutral_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_charged_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_single_color_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.halfE_twice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.color_decomposition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralPart_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.chargedPart_neg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.color_orthogonal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralPart_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutral_coordinate_flip": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutral_coordinate_rot": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet_chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.vacJet_chargedPart_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.vacJet_constant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.flatH_constant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_rot": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_flip": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.vacJet_neutralPart_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_neutralPart_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.curlDetected_chargedPart_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.profileCoupling_chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_flip_eigen_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.profileCoupling_zero_of_flip_eigen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_mixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.half_pauliE1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.flip_pauliE1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_charged": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_flip": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_jet_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_all_profiles_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.exists_charged_invisible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/shared/dictionary/R4_ColorSelection.lean",
+      "lines": 299,
+      "sha256": "a8ac7ec7f04812c8c4f5bc5b5224e8088387e1dfd14743bed5deccfe8b425404",
+      "logSha256": "969a1c73d67ed96607930b63db4b7d9cb3b17b0b6091c56a7e3261166418fd79",
+      "exitCode": 0,
+      "fresh": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": [],
+      "prohibited": [],
+      "recordCount": 22,
+      "newDeclarationCount": 22,
+      "missingPrints": [],
+      "nonstandard": {},
+      "rawAxiomRecords": {
+        "AdalyFormal.Round10.Dictionary.Color.quad_even": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_parallelogram": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_add_of_invariant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero_of_anti_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_mixed_scaling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.constGauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.const_trivial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flipE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_gauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.half_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.two_fixed_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE_flip_on_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_neutral_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_charged_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_single_color_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "path": "AHP/round10/shared/dictionary/R4_ColorResponse.lean",
+      "lines": 2185,
+      "sha256": "73a98acef49c0db5eee733b1bbf15ab48dc99f8794e969e51ce3bbc67c311f02",
+      "logSha256": "c430d22878b312469343640e3ebbc5f9c34a88953e233876a40cf3fa86796501",
+      "exitCode": 0,
+      "fresh": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "diagnostics": [],
+      "prohibited": [],
+      "recordCount": 194,
+      "newDeclarationCount": 61,
+      "missingPrints": [],
+      "nonstandard": {},
+      "rawAxiomRecords": {
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilLu": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilTower": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilLam": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilPattern": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round4.Guarded.RefuteR1.dilU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round5.Guarded.IVTR2.maskedU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.Qualitative.dilMask": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_coe_uMat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.bulkU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.bulkP": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rotGauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_comm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.u\u03b8_conj": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.Ug_eq_u\u03b8": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rot_maskedU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rot_trivial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2.rot_bulkU": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.QualitativeR2Joint.bulkU_dilMask": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR1.TwistSpace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.dataFam": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.dilV": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.flatData": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.vacCoupling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round9.Guarded.AnalyticR2.IsSourceDerivative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.half_rotation_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.tendsto_div_of_hasDerivAt_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.oriented": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.scalarDiv": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.linearSourceScalar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.FnuMuLoc_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.DstarDir_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.JfieldLoc_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.JSU2Loc_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.circulation_smul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.oriented_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceScalar_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceLinear": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.sourceField_hasDerivAt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase_inv": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.circulation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.holonomy_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.im_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_trace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_neg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.hermDiag_sub": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.PhaseSource.conj_phase_hermDiag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.N": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.Q_H": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.Ginv_H": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.source_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.source_of_weak_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.coupling_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.two_site_residual_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.alternating_pair_constraint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.KKT.recurrence_fine_residuals": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.interiorProfile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkU_phase": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.profileSourceStencil": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkSource_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkSource_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.canonicalSourceStencil": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.canonical_isSourceDerivative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_eq_stencil": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.C2_level_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_top_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.flat_source_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_of_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.bulkSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.sourceDerivative_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.flatH_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralSource": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralCoord": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.half_fixed_offdiag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutral_of_half_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.neutralSource_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Source.vacCoupling_neutral_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_backward_diff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.sum_dirs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_diag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.div_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.oriented_curl_point": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.source_sbp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.source_reciprocity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.source_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_eq_zero_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.curlEnergy_pos_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.neutralCoordinate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.SourceEnergy.inner_sourceLinear": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileNeutralSource_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_neutral_top_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.half_twice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.half_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.flatQ_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseField": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseField_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseField_Q": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.Q_level_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_level_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.circulation_congr_boundary": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.circulation_interiorProfile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_curl": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_energy": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.CurlDetected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.adaptive_pos_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.exists_profile_iff_curlDetected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.all_profiles_zero_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_off": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.responseProfile_interior": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.liftJet_Q": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.fixed_of_slope_limit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.phase_axis_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.sourceLinear_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileSource_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.FreeSource.profileCoupling_U1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_even": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_parallelogram": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_add_of_invariant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_zero_of_anti_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.quad_mixed_scaling": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.constGauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.const_trivial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flipE": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_gauge": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.half_axis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flip_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.two_fixed_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.halfE_flip_on_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_neutral_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_charged_neutral": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.Color.flatJet_single_color_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.halfE_twice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.color_decomposition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralPart_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.chargedPart_neg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.color_orthogonal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralPart_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutral_coordinate_flip": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutral_coordinate_rot": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.neutralJet_chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.vacJet_chargedPart_component": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.vacJet_constant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.flatH_constant": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_quad": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_rot": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_flip": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.vacJet_neutralPart_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_neutralPart_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.curlDetected_chargedPart_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.profileCoupling_chargedPart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_flip_eigen_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.profileCoupling_zero_of_flip_eigen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorResponse.responseProfile_mixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.half_pauliE1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.flip_pauliE1": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_charged": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_flip": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_jet_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_all_profiles_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AdalyFormal.Round10.Dictionary.ColorObstruction.exists_charged_invisible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "verbatimCopies": [
+    {
+      "source": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+      "start": 412,
+      "endExclusive": 419,
+      "pass": true
+    },
+    {
+      "source": "AHP/round9/qualitative-r2/Appendix.lean",
+      "start": 1676,
+      "endExclusive": 1692,
+      "pass": true
+    },
+    {
+      "source": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+      "start": 841,
+      "endExclusive": 869,
+      "pass": true
+    },
+    {
+      "source": "AHP/round5/guarded/ivt-r2/Attempt.lean",
+      "start": 997,
+      "endExclusive": 1006,
+      "pass": true
+    }
+  ],
+  "unchangedR3Prefix": {
+    "source": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+    "sha256": "6fb957329d43fc60ed65c6af8e36051b3c975c07ca223df21dd11aef2a9cccf1",
+    "pass": true
+  },
+  "publicationByteEqual": {
+    "R4_ColorSelection.lean": true,
+    "R4_ColorResponse.lean": true
+  },
+  "mainDeclaration": "AdalyFormal.Round10.Dictionary.ColorResponse.vacJet_chargedPart_component",
+  "obstructionDeclaration": "AdalyFormal.Round10.Dictionary.ColorObstruction.exists_charged_invisible"
+}

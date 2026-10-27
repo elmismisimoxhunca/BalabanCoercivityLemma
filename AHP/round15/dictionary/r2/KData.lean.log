@@ -1,0 +1,101 @@
+'AdalyFormal.Round15.Dictionary.collarA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.collarB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.collarC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominantTransferInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.transfer_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.observation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_mode0_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_mode1_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.collar_dictionary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.rho' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.mode0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.mode1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominantTransfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.rho_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.rho_quad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.rho_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.phase_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_mode0_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_mode1_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_mode0_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_mode1_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.dominant_eigenpairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:448:47: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [q1B00, q1B00Inv, Matrix.mul_apply, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Fin.sum_univ_succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:452:47: warning: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  simp [q1B00, q1B00Inv, Matrix.mul_apply, M̵a̵t̵r̵i̵x̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵Fin.sum_univ_succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:449:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:453:74: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:461:24: warning: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [q1A11, q1B10, q1B00Inv, q1A01, collarA, Matrix.sub_apply, M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Fin.sum_univ_succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:461:42: warning: This simp argument is unused:
+  Fin.sum_univ_succ
+
+Hint: Omit it from the simp argument list.
+  simp [q1A11, q1B10, q1B00Inv, q1A01, collarA, Matrix.sub_apply, M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵]̵M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲p̲p̲l̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:462:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:470:24: warning: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [q1B11, q1B10, q1B00Inv, q1B01, q1C10, q1A01, collarB, Matrix.sub_apply, M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Fin.sum_univ_succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:470:42: warning: This simp argument is unused:
+  Fin.sum_univ_succ
+
+Hint: Omit it from the simp argument list.
+  simp [q1B11, q1B10, q1B00Inv, q1B01, q1C10, q1A01, collarB, Matrix.sub_apply, M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵]̵M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲p̲p̲l̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:471:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:479:24: warning: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [q1C11, q1C10, q1B00Inv, q1B01, collarC, Matrix.sub_apply, M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Fin.sum_univ_succ]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:479:42: warning: This simp argument is unused:
+  Fin.sum_univ_succ
+
+Hint: Omit it from the simp argument list.
+  simp [q1C11, q1C10, q1B00Inv, q1B01, collarC, Matrix.sub_apply, M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵s̵u̵c̵c̵]̵M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲p̲p̲l̲y̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/KData.lean:480:72: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'q1B00_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'q1_schurA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'q1_schurB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'q1_schurC' depends on axioms: [propext, Classical.choice, Quot.sound]

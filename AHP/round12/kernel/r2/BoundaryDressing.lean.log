@@ -1,0 +1,6 @@
+'AdalyFormal.Round12.Kernel.Boundary.NQp_vanish' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Boundary.gaugePotential_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Boundary.Wop_apply_off' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Boundary.off_one_of_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Boundary.Wop_apply_close' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Kernel.Boundary.Wop_apply_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]

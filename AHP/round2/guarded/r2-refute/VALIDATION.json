@@ -1,0 +1,323 @@
+{
+  "closedGoal": "none",
+  "exitCode": 0,
+  "pin_exact_prefix": true,
+  "imports": [
+    "DrEquiv"
+  ],
+  "forbidden_tokens": [],
+  "source_sha256": "9dc2dadd4dce68def40ed485c8a23c3d7cfc2d8f03776990b6e47dafa3a6d166",
+  "local_declarations": {
+    "AdalyFormal.Round2.Guarded.Pin.PlaqSel": 31,
+    "AdalyFormal.Round2.Guarded.Pin.selIn": 33,
+    "AdalyFormal.Round2.Guarded.Pin.selAll": 35,
+    "AdalyFormal.Round2.Guarded.Pin.DeltaS": 40,
+    "AdalyFormal.Round2.Guarded.Pin.DpiFullS": 43,
+    "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm": 46,
+    "AdalyFormal.Round2.Guarded.Pin.JfS": 55,
+    "AdalyFormal.Round2.Guarded.Pin.dataS": 58,
+    "AdalyFormal.Round2.Guarded.Pin.dataS_laws": 62,
+    "AdalyFormal.Round2.Guarded.Pin.G1invS": 69,
+    "AdalyFormal.Round2.Guarded.Pin.H1inS": 72,
+    "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS": 80,
+    "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS": 83,
+    "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS": 86,
+    "AdalyFormal.Round2.Guarded.Pin.InstIneqS": 90,
+    "AdalyFormal.Round2.Guarded.Pin.InstIneqSG": 100,
+    "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG": 104,
+    "AdalyFormal.Round2.Guarded.Pin.P428Target8SG": 113,
+    "AdalyFormal.Round2.Guarded.Pin.GuardResidualT": 121,
+    "AdalyFormal.Round2.Guarded.Pin.GShape": 133,
+    "AdalyFormal.Round2.Guarded.Pin.CPen": 145,
+    "AdalyFormal.Round2.Guarded.Pin.GuardPencilT": 151,
+    "AdalyFormal.Round2.Guarded.Pin.GoalPos1": 154,
+    "AdalyFormal.Round2.Guarded.Pin.GoalNeg1": 155,
+    "AdalyFormal.Round2.Guarded.Pin.GoalPos2": 157,
+    "AdalyFormal.Round2.Guarded.Pin.GoalNeg2": 158,
+    "AdalyFormal.Round2.Guarded.Pin.assembly_pin": 161,
+    "AdalyFormal.Round2.Guarded.Pin.corrected_pin": 164,
+    "AdalyFormal.Round2.Guarded.Pin.form_pin": 167,
+    "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin": 170,
+    "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin": 172,
+    "AdalyFormal.Round2.Guarded.Pin.residual_pin": 175,
+    "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1": 178,
+    "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2": 181,
+    "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure": 189,
+    "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1": 206,
+    "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2": 218,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidateLu": 265,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidateLf": 267,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidateTower": 270,
+    "AdalyFormal.Round2.Guarded.RefuteR2.insideSite": 275,
+    "AdalyFormal.Round2.Guarded.RefuteR2.middleSite": 277,
+    "AdalyFormal.Round2.Guarded.RefuteR2.outsideSite": 279,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_torus": 281,
+    "AdalyFormal.Round2.Guarded.RefuteR2.original_torus_rejected": 285,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_admissible": 290,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_no_described_cube": 302,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_no_class_cube": 319,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_covered": 324,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_class": 329,
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_excluded": 335,
+    "AdalyFormal.Round2.Guarded.RefuteR2.goalNeg1_implies_cofinalPencilFailure": 341,
+    "AdalyFormal.Round2.Guarded.RefuteR2.goalNeg2_iff_cofinalPencilFailure": 358
+  },
+  "local_declaration_count": 53,
+  "axiom_record_count": 54,
+  "axioms": {
+    "AdalyFormal.Round2.Guarded.Pin.GoalPos1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GoalNeg1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GoalPos2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GoalNeg2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.dataS_laws": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.assembly_pin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.corrected_pin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.form_pin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.residual_pin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidateLu": [],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidateLf": [
+      "propext"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidateTower": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.insideSite": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.middleSite": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.outsideSite": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_torus": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.original_torus_rejected": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_no_described_cube": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_no_class_cube": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_not_class": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.candidate_excluded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.goalNeg1_implies_cofinalPencilFailure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.RefuteR2.goalNeg2_iff_cofinalPencilFailure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.PlaqSel": [],
+    "AdalyFormal.Round2.Guarded.Pin.selIn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.selAll": [],
+    "AdalyFormal.Round2.Guarded.Pin.DeltaS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.DpiFullS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.JfS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.dataS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.G1invS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.H1inS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.InstIneqS": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.InstIneqSG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.P428Target8SG": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GuardResidualT": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GShape": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.CPen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.Round2.Guarded.Pin.GuardPencilT": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.D1Residual.P428Target8SG_iff_pencilT": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "numeric_exit": 0,
+  "numeric_peak_rss_kib": 1433672,
+  "numeric_warning": "numerics only: torus condition repaired, NO admissibility/coverage/class/cofinal certificate"
+}

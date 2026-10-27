@@ -1,0 +1,6 @@
+identity_checks 36
+formula_min_cf10 unit_side=30 fine_side=120 exceeds_side_cap=True
+failEllCS_two_smallest unit_side=120 fine_side=480 exceeds_side_cap=True
+ConstFamWitnessTwo_R_ge_c unit_side=264 fine_side=1056 exceeds_side_cap=True
+operator_modelled no
+reason witness fine side exceeds 8; genForm and Ginv were not evaluated

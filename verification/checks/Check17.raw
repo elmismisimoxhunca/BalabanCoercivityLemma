@@ -1,0 +1,2 @@
+'AdalyFormal.AHP.Round7.S2Odd.goal1_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.AHP.Round7.S2Odd.goal2_proved' depends on axioms: [propext, Classical.choice, Quot.sound]

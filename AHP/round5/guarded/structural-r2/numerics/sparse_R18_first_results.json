@@ -1,0 +1,141 @@
+{
+  "status": "floating-point diagnostic, not an exact unit or unboundedness proof",
+  "R": 18,
+  "m": 1,
+  "ell": 2,
+  "M": 2,
+  "k": 1,
+  "a": 1,
+  "cap": 1,
+  "alpha": 0.020833333333333332,
+  "epsilon": 0.00013020833333333333,
+  "room": true,
+  "geometry": {
+    "fine_lift_sides": [
+      232,
+      8,
+      8
+    ],
+    "Om0": [
+      4,
+      228
+    ],
+    "Om1": [
+      40,
+      192
+    ],
+    "Lambda": [
+      58,
+      60
+    ],
+    "torus_arithmetic": true,
+    "base_law": true,
+    "block0": true,
+    "block1": true,
+    "collar": true,
+    "site_cover": true,
+    "plaq_cover": true,
+    "lambda_block_arithmetic": true,
+    "lambda_subset": true,
+    "lambda_collar": true,
+    "class_cubes": 63,
+    "positive_competitor_not_certified": true
+  },
+  "sector": [
+    0,
+    0
+  ],
+  "physical_fine_sides": [
+    232,
+    8,
+    8
+  ],
+  "cell_sides": [
+    232,
+    2,
+    2
+  ],
+  "carrier_dimension": 8076,
+  "augmented_dimension": 11268,
+  "augmented_nnz": 401954,
+  "boundary_dimension": 72,
+  "pure_observation_rows": 528,
+  "pure_site_longitudinal_range": [
+    30,
+    198
+  ],
+  "local_min": 0.12354666199658391,
+  "local_eigen_residual": 2.3846275291230867e-10,
+  "carrier_crossing": 0.5865589686386086,
+  "crossing_residual": 3.938863908017102e-15,
+  "crossing_J_norm_lower_bound": 4.421273143457985e-12,
+  "rows": [
+    {
+      "offset": 0.01,
+      "theta": 0.5765589686386086,
+      "observed_transfer_lower_bound": 2.322241495226157e-10,
+      "offset_times_bound": 2.322241495226157e-12,
+      "carrier_Schur_min": 0.022990571707308123,
+      "schur_vs_direct_relative_error": 1.6165485025995886e-14,
+      "direct_solve_residual": 5.743038345608063e-14
+    },
+    {
+      "offset": 0.001,
+      "theta": 0.5855589686386086,
+      "observed_transfer_lower_bound": 2.3823661214020625e-09,
+      "offset_times_bound": 2.3823661214020627e-12,
+      "carrier_Schur_min": 0.002297871597128396,
+      "schur_vs_direct_relative_error": 1.2394479305632188e-13,
+      "direct_solve_residual": 5.161548959326734e-13
+    },
+    {
+      "offset": 0.0001,
+      "theta": 0.5864589686386086,
+      "observed_transfer_lower_bound": 2.3884155756058985e-08,
+      "offset_times_bound": 2.3884155756058988e-12,
+      "carrier_Schur_min": 0.00022977439889426598,
+      "schur_vs_direct_relative_error": 6.484191155267701e-13,
+      "direct_solve_residual": 4.1933817426035265e-12
+    },
+    {
+      "offset": 1e-05,
+      "theta": 0.5865489686386086,
+      "observed_transfer_lower_bound": 2.389020884453198e-07,
+      "offset_times_bound": 2.389020884453198e-12,
+      "carrier_Schur_min": 2.2977311383710548e-05,
+      "schur_vs_direct_relative_error": 1.3253432772226933e-11,
+      "direct_solve_residual": 4.4644416470027673e-11
+    },
+    {
+      "offset": 1e-06,
+      "theta": 0.5865579686386085,
+      "observed_transfer_lower_bound": 2.3890814185096405e-06,
+      "offset_times_bound": 2.3890814185096406e-12,
+      "carrier_Schur_min": 2.297729846831442e-06,
+      "schur_vs_direct_relative_error": 1.4984271533548545e-10,
+      "direct_solve_residual": 4.860846810948652e-10
+    },
+    {
+      "offset": 1e-07,
+      "theta": 0.5865588686386086,
+      "observed_transfer_lower_bound": 2.3890874719612684e-05,
+      "offset_times_bound": 2.3890874719612684e-12,
+      "carrier_Schur_min": 2.2977297167645174e-07,
+      "schur_vs_direct_relative_error": 1.1611729498234318e-09,
+      "direct_solve_residual": 3.7140358956054103e-09
+    }
+  ],
+  "sectors": [
+    {
+      "sector": [
+        0,
+        0
+      ],
+      "carrier_dimension": 8076,
+      "local_min": 0.12354666199658391,
+      "local_eigen_residual": 2.3846275291230867e-10,
+      "carrier_Schur_min": 2.2977297167645174e-07
+    }
+  ],
+  "peak_rss_kib": 256136
+}

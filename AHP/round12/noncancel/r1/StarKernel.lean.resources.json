@@ -1,0 +1,7 @@
+{
+  "exit": 0,
+  "max_child_rss_KiB": 7038784,
+  "seconds": 5.235013561003143,
+  "scope_memory_limit_bytes": 8589934592,
+  "rss_below_8_GiB": true
+}

@@ -1,0 +1,134 @@
+
+/-! Exact frozen per-plaquette formula. These hypotheses specify transported
+bond values and holonomy entries, not a replacement operator. -/
+namespace AdalyFormal.Round12.Noncancel.Plaquette
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Balaban.CovariantOperators
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Round12.Noncancel.Star
+
+/-- Matrix of a charged Lie-algebra element, with its actual upper-right coordinate. -/
+def chargedMat (z : ℂ) : Matrix (Fin 2) (Fin 2) ℂ := !![0, z; -star z, 0]
+def realHol (c : ℝ) : Matrix (Fin 2) (Fin 2) ℂ := (c : ℂ) • 1
+def imagHol (s : ℝ) : Matrix (Fin 2) (Fin 2) ℂ := !![(s : ℂ), 0; 0, -(s : ℂ)]
+
+theorem chargedMat_add (y z : ℂ) : chargedMat (y+z) = chargedMat y + chargedMat z := by
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [chargedMat, add_comm]
+
+theorem chargedMat_zero : chargedMat 0 = 0 := by
+  ext i j
+  fin_cases i <;> fin_cases j <;> simp [chargedMat]
+
+theorem charged_inner (X : SuTwo) (z : ℂ)
+    (hX : (X : Matrix (Fin 2) (Fin 2) ℂ) = chargedMat z) :
+    ⟪X, X⟫ = Complex.normSq z := by
+  change hsInner X X = _
+  rw [hsInner_entries, hX]
+  simp [chargedMat, Complex.normSq_apply, Complex.mul_re]
+  ring
+
+theorem first_atom (c : ℝ) (z : ℂ) :
+    (Matrix.trace (smulILM (chargedMat z) * smulILM (chargedMat z) *
+      (realHol c - 1))).re = 2*(c-1)*Complex.normSq z := by
+  simp [chargedMat, realHol, smulILM_apply, Matrix.mul_apply, Matrix.trace,
+    Matrix.diag, Fin.sum_univ_two, Complex.normSq_apply]
+  ring
+
+theorem comm_atom (s : ℝ) (y z : ℂ) :
+    (Matrix.trace (smulILM (smulILM (chargedMat y)) * smulILM (chargedMat z) *
+      imagHol s)).re -
+    (Matrix.trace (smulILM (smulILM (chargedMat z)) * smulILM (chargedMat y) *
+      imagHol s)).re = 4*s*(star y*z).im := by
+  simp [chargedMat, imagHol, smulILM_apply, Matrix.mul_apply, Matrix.trace,
+    Matrix.diag, Fin.sum_univ_two]
+  ring
+
+variable {L : PeriodicLatticeExtent}
+
+theorem curl_atoms (U : PeriodicLinkConfiguration (Matrix.specialUnitaryGroup (Fin 2) ℂ) L)
+    (p : PeriodicLatticePlaquette L) (A : Bond L → SuTwo) :
+    curlMatLM U p A = a1LM U p A + a2LM p A + a3LM p A + a4LM U p A := by
+  rw [curlMatLM_apply, a1LM_apply, a2LM_apply, a3LM_apply, a4LM_apply,
+    ← sum_Aprime_eq_curl]
+  change (AprimeXY A p : Matrix (Fin 2) (Fin 2) ℂ) +
+    (AprimeYZ U A p : Matrix (Fin 2) (Fin 2) ℂ) +
+    (AprimeZW U A p : Matrix (Fin 2) (Fin 2) ℂ) +
+    (AprimeWX A p : Matrix (Fin 2) (Fin 2) ℂ) = _
+  abel
+
+/-- Source normalization is exactly one half of the raw frozen diagonal bilPlaq. -/
+theorem frozen_three_form
+    (U : PeriodicLinkConfiguration (Matrix.specialUnitaryGroup (Fin 2) ℂ) L)
+    (p : PeriodicLatticePlaquette L) (A : Bond L → SuTwo)
+    (c s : ℝ) (x y z : ℂ)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p A = chargedMat x) (h2 : a2LM p A = 0)
+    (h3 : a3LM p A = chargedMat y) (h4 : a4LM U p A = chargedMat z) :
+    ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ +
+      (1/2 : ℝ) * bilPlaq U p A A = tripleForm c s x y z := by
+  have hc : curlMatLM U p A = chargedMat (x+y+z) := by
+    rw [curl_atoms, h1, h2, h3, h4, add_zero, chargedMat_add, chargedMat_add]
+  have hn : ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ =
+      Complex.normSq (x+y+z) := charged_inner _ _ hc
+  rw [hn, bilPlaq_atoms]
+  simp only [b1LM, b2LM, b3LM, b4LM, LinearMap.comp_apply,
+    hr, hi, hc, h1, h2, h3, h4, map_zero, mul_zero, zero_mul, Matrix.trace_zero,
+    Complex.zero_re, sub_zero, add_zero]
+  rw [first_atom, comm_atom, comm_atom, comm_atom]
+  unfold tripleForm
+  ring
+
+/-- Right-boundary version, with the exterior (fourth) atom zero. -/
+theorem frozen_three_form_right
+    (U : PeriodicLinkConfiguration (Matrix.specialUnitaryGroup (Fin 2) ℂ) L)
+    (p : PeriodicLatticePlaquette L) (A : Bond L → SuTwo)
+    (c s : ℝ) (x y z : ℂ)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p A = chargedMat x) (h2 : a2LM p A = chargedMat y)
+    (h3 : a3LM p A = chargedMat z) (h4 : a4LM U p A = 0) :
+    ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ +
+      (1/2 : ℝ) * bilPlaq U p A A = tripleForm c s x y z := by
+  have hc : curlMatLM U p A = chargedMat (x+y+z) := by
+    rw [curl_atoms, h1, h2, h3, h4, add_zero, chargedMat_add, chargedMat_add]
+  have hn : ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ =
+      Complex.normSq (x+y+z) := charged_inner _ _ hc
+  rw [hn, bilPlaq_atoms]
+  simp only [b1LM, b2LM, b3LM, b4LM, LinearMap.comp_apply,
+    hr, hi, hc, h1, h2, h3, h4, map_zero, mul_zero, zero_mul, Matrix.trace_zero,
+    Complex.zero_re, sub_zero, add_zero]
+  rw [first_atom, comm_atom, comm_atom, comm_atom]
+  unfold tripleForm
+  ring
+
+/-- Left boundary: the first normal atom and the exterior second atom vanish. -/
+theorem frozen_two_form
+    (U : PeriodicLinkConfiguration (Matrix.specialUnitaryGroup (Fin 2) ℂ) L)
+    (p : PeriodicLatticePlaquette L) (A : Bond L → SuTwo)
+    (c s : ℝ) (y z : ℂ)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p A = 0) (h2 : a2LM p A = 0)
+    (h3 : a3LM p A = chargedMat y) (h4 : a4LM U p A = chargedMat z) :
+    ⟪curlValueCovariant U A p, curlValueCovariant U A p⟫ +
+      (1/2 : ℝ) * bilPlaq U p A A = pairForm c s y z := by
+  rw [← tripleForm_zero_left]
+  exact frozen_three_form U p A c s 0 y z hr hi
+    (h1.trans chargedMat_zero.symm) h2 h3 h4
+
+#print axioms chargedMat
+#print axioms realHol
+#print axioms imagHol
+#print axioms chargedMat_add
+#print axioms chargedMat_zero
+#print axioms charged_inner
+#print axioms first_atom
+#print axioms comm_atom
+#print axioms curl_atoms
+#print axioms frozen_three_form
+#print axioms frozen_three_form_right
+#print axioms frozen_two_form
+end AdalyFormal.Round12.Noncancel.Plaquette

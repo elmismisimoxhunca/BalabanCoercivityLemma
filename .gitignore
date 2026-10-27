@@ -1,0 +1,28 @@
+reproduce.log
+check.raw
+check.axioms.txt
+check.diff
+lean/.lake/
+.sysroot/
+Check.raw
+CheckR7.raw
+Check.axioms.txt
+CheckR7.axioms.txt
+Check.diff
+CheckR7.diff
+Check[0-9]*.raw
+Check[0-9]*.axioms.txt
+forbidden_tokens.txt
+forbidden_tokens.diff
+
+# Local runtime state and credentials are never release material.
+.env
+.env.*
+*.env
+.bb/
+__pycache__/
+*.py[cod]
+.lean.lock.*
+
+# Deliberately retained release evidence (root generated files remain ignored).
+!/verification/checks/Check*.raw

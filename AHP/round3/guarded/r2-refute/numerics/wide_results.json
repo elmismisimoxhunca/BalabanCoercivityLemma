@@ -1,0 +1,603 @@
+{
+  "status": "exploratory only; no exact in-class witness",
+  "geometry_only": [
+    {
+      "fine_lift_sides": [
+        40,
+        8,
+        8
+      ],
+      "Om0": [
+        4,
+        36
+      ],
+      "Om1": [
+        8,
+        32
+      ],
+      "Lambda": [
+        10,
+        12
+      ],
+      "torus_arithmetic": true,
+      "base_law": true,
+      "block0": true,
+      "block1": true,
+      "collar": true,
+      "site_cover": true,
+      "plaq_cover": true,
+      "lambda_block_arithmetic": true,
+      "lambda_subset": true,
+      "lambda_collar": true,
+      "class_cubes": 4,
+      "positive_competitor_not_certified": true
+    },
+    {
+      "fine_lift_sides": [
+        64,
+        8,
+        8
+      ],
+      "Om0": [
+        4,
+        60
+      ],
+      "Om1": [
+        12,
+        52
+      ],
+      "Lambda": [
+        16,
+        18
+      ],
+      "torus_arithmetic": true,
+      "base_law": true,
+      "block0": true,
+      "block1": true,
+      "collar": true,
+      "site_cover": true,
+      "plaq_cover": true,
+      "lambda_block_arithmetic": true,
+      "lambda_subset": true,
+      "lambda_collar": true,
+      "class_cubes": 8,
+      "positive_competitor_not_certified": true
+    },
+    {
+      "fine_lift_sides": [
+        88,
+        8,
+        8
+      ],
+      "Om0": [
+        4,
+        84
+      ],
+      "Om1": [
+        16,
+        72
+      ],
+      "Lambda": [
+        22,
+        24
+      ],
+      "torus_arithmetic": true,
+      "base_law": true,
+      "block0": true,
+      "block1": true,
+      "collar": true,
+      "site_cover": true,
+      "plaq_cover": true,
+      "lambda_block_arithmetic": true,
+      "lambda_subset": true,
+      "lambda_collar": true,
+      "class_cubes": 15,
+      "positive_competitor_not_certified": true
+    },
+    {
+      "fine_lift_sides": [
+        232,
+        8,
+        8
+      ],
+      "Om0": [
+        4,
+        228
+      ],
+      "Om1": [
+        40,
+        192
+      ],
+      "Lambda": [
+        58,
+        60
+      ],
+      "torus_arithmetic": true,
+      "base_law": true,
+      "block0": true,
+      "block1": true,
+      "collar": true,
+      "site_cover": true,
+      "plaq_cover": true,
+      "lambda_block_arithmetic": true,
+      "lambda_subset": true,
+      "lambda_collar": true,
+      "class_cubes": 63,
+      "positive_competitor_not_certified": true
+    }
+  ],
+  "results": [
+    {
+      "R": 2,
+      "eps": 0.08,
+      "geometry": {
+        "fine_lift_sides": [
+          40,
+          8,
+          8
+        ],
+        "Om0": [
+          4,
+          36
+        ],
+        "Om1": [
+          8,
+          32
+        ],
+        "Lambda": [
+          10,
+          12
+        ],
+        "torus_arithmetic": true,
+        "base_law": true,
+        "block0": true,
+        "block1": true,
+        "collar": true,
+        "site_cover": true,
+        "plaq_cover": true,
+        "lambda_block_arithmetic": true,
+        "lambda_subset": true,
+        "lambda_collar": true,
+        "class_cubes": 4,
+        "positive_competitor_not_certified": true
+      },
+      "checks": {
+        "local_min": 0.12190224630272406,
+        "N_min": 0.056746823191485614,
+        "q_rank": 399,
+        "q_rows": 399,
+        "J_norm": 0.5343897879990708,
+        "HtJ_top_norm": 0.10179047362537037,
+        "R_rank": 252,
+        "raw_at_zero": 0.0,
+        "shift_transcription_error": 1.1726690144696417e-16
+      },
+      "carrier_dimension": 1164,
+      "boundary_dimension": 72,
+      "carrier_endpoints": [
+        0.9999999999999918,
+        -7.988896906253298
+      ],
+      "carrier_root": 0.5864521388182432,
+      "near_zero_boundary_modes": 1,
+      "boundary_lowest": [
+        7.93212410044396e-15,
+        7.354587131033202e-07,
+        7.47932257282664e-06,
+        7.479322716604302e-06,
+        0.9999999999999981,
+        0.9999999999999987,
+        1.0867374661629274,
+        1.0867374663776432,
+        1.0867375616532218,
+        1.0867375616532229
+      ],
+      "kernel_residual_norm": 7.080136057447786e-15,
+      "raw_path_field_norms": [
+        0.05429450722756614
+      ],
+      "projected_D": [
+        {
+          "h": 0.01,
+          "matrix": [
+            [
+              1.0237303330416598e-07
+            ]
+          ],
+          "eigenvalues": [
+            1.0237303330416598e-07
+          ]
+        },
+        {
+          "h": 0.003,
+          "matrix": [
+            [
+              1.0237237724805377e-07
+            ]
+          ],
+          "eigenvalues": [
+            1.0237237724805377e-07
+          ]
+        },
+        {
+          "h": 0.001,
+          "matrix": [
+            [
+              1.0237231969164816e-07
+            ]
+          ],
+          "eigenvalues": [
+            1.0237231969164816e-07
+          ]
+        }
+      ],
+      "warning": "Projected D is a finite-difference diagnostic at a numerical carrier root, NOT corrected singularity or a guarded witness.",
+      "seconds": 3.4390547275543213,
+      "peak_rss_kib": 219788
+    },
+    {
+      "R": 4,
+      "eps": 0.08,
+      "geometry": {
+        "fine_lift_sides": [
+          64,
+          8,
+          8
+        ],
+        "Om0": [
+          4,
+          60
+        ],
+        "Om1": [
+          12,
+          52
+        ],
+        "Lambda": [
+          16,
+          18
+        ],
+        "torus_arithmetic": true,
+        "base_law": true,
+        "block0": true,
+        "block1": true,
+        "collar": true,
+        "site_cover": true,
+        "plaq_cover": true,
+        "lambda_block_arithmetic": true,
+        "lambda_subset": true,
+        "lambda_collar": true,
+        "class_cubes": 8,
+        "positive_competitor_not_certified": true
+      },
+      "checks": {
+        "local_min": 0.12190684159978517,
+        "N_min": 0.05604396840418801,
+        "q_rank": 759,
+        "q_rows": 759,
+        "J_norm": 0.5343897879990708,
+        "HtJ_top_norm": 0.1017904736253698,
+        "R_rank": 420,
+        "raw_at_zero": 0.0
+      },
+      "carrier_dimension": 2028,
+      "boundary_dimension": 72,
+      "carrier_endpoints": [
+        0.9999999999999978,
+        -7.988896899044015
+      ],
+      "carrier_root": 0.5865589202175632,
+      "near_zero_boundary_modes": 4,
+      "boundary_lowest": [
+        -8.31954599514847e-16,
+        3.334150996640132e-10,
+        3.390680266943467e-09,
+        3.3906812780964515e-09,
+        0.9999999999999991,
+        1.0,
+        1.0867218046133174,
+        1.0867218046133187,
+        1.0867218046133371,
+        1.0867218046133387
+      ],
+      "kernel_residual_norm": 3.3097525845125142e-09,
+      "raw_path_field_norms": [
+        0.0011566893401514713,
+        0.0011557713658341478,
+        0.0006838474951528121,
+        0.0006838474951528133
+      ],
+      "projected_D": [
+        {
+          "h": 0.01,
+          "matrix": [
+            [
+              4.646312197469474e-11,
+              -1.3357141261213424e-12,
+              -5.47999095005935e-18,
+              2.879550584742201e-18
+            ],
+            [
+              -1.3357141261213424e-12,
+              2.79658493865571e-11,
+              -1.6947687839639755e-18,
+              -3.853217580516731e-18
+            ],
+            [
+              -5.47999095005935e-18,
+              -1.6947687839639755e-18,
+              -9.732593925567184e-22,
+              -4.883686841715281e-22
+            ],
+            [
+              2.879550584742201e-18,
+              -3.853217580516731e-18,
+              -4.883686841715281e-22,
+              -2.1679203137838595e-21
+            ]
+          ],
+          "eigenvalues": [
+            -2.342791723846776e-21,
+            -7.9984466366207005e-22,
+            2.7869893365994133e-11,
+            4.655907799525915e-11
+          ]
+        },
+        {
+          "h": 0.003,
+          "matrix": [
+            [
+              4.646282415845766e-11,
+              -1.3357059305376743e-12,
+              -5.4609492442804435e-18,
+              2.833257424991845e-18
+            ],
+            [
+              -1.3357059305376743e-12,
+              2.79656260952062e-11,
+              -1.6710967779943516e-18,
+              -3.863251635968375e-18
+            ],
+            [
+              -5.4609492442804435e-18,
+              -1.6710967779943516e-18,
+              2.5152128959167823e-20,
+              -8.326501345072791e-21
+            ],
+            [
+              2.833257424991845e-18,
+              -3.863251635968375e-18,
+              -8.326501345072791e-21,
+              5.839803108987538e-21
+            ]
+          ],
+          "eigenvalues": [
+            2.7449509095351298e-21,
+            2.8245534761357475e-20,
+            2.786967086348421e-11,
+            4.65587793901811e-11
+          ]
+        },
+        {
+          "h": 0.001,
+          "matrix": [
+            [
+              4.646279921027691e-11,
+              -1.3357050988248714e-12,
+              -4.994452236611665e-18,
+              3.2050808812116732e-18
+            ],
+            [
+              -1.3357050988248714e-12,
+              2.796560841475611e-11,
+              -1.6219239472689314e-18,
+              -3.760755640222696e-18
+            ],
+            [
+              -4.994452236611665e-18,
+              -1.6219239472689314e-18,
+              -3.905782940810591e-20,
+              -2.2255095252143524e-19
+            ],
+            [
+              3.2050808812116732e-18,
+              -3.760755640222696e-18,
+              -2.2255095252143524e-19,
+              2.2033023332147486e-19
+            ]
+          ],
+          "eigenvalues": [
+            -1.6694826801785686e-19,
+            3.482193204338657e-19,
+            2.7869653264604085e-11,
+            4.6558754360430307e-11
+          ]
+        }
+      ],
+      "warning": "Projected D is a finite-difference diagnostic at a numerical carrier root, NOT corrected singularity or a guarded witness.",
+      "seconds": 13.008816003799438,
+      "peak_rss_kib": 463368
+    },
+    {
+      "R": 6,
+      "eps": 0.08,
+      "geometry": {
+        "fine_lift_sides": [
+          88,
+          8,
+          8
+        ],
+        "Om0": [
+          4,
+          84
+        ],
+        "Om1": [
+          16,
+          72
+        ],
+        "Lambda": [
+          22,
+          24
+        ],
+        "torus_arithmetic": true,
+        "base_law": true,
+        "block0": true,
+        "block1": true,
+        "collar": true,
+        "site_cover": true,
+        "plaq_cover": true,
+        "lambda_block_arithmetic": true,
+        "lambda_subset": true,
+        "lambda_collar": true,
+        "class_cubes": 15,
+        "positive_competitor_not_certified": true
+      },
+      "checks": {
+        "local_min": 0.12190686089912488,
+        "N_min": 0.055820108874774864,
+        "q_rank": 1119,
+        "q_rows": 1119,
+        "J_norm": 0.5343897879990708,
+        "HtJ_top_norm": 0.10179047362537012,
+        "R_rank": 588,
+        "raw_at_zero": 0.0
+      },
+      "carrier_dimension": 2892,
+      "boundary_dimension": 72,
+      "carrier_endpoints": [
+        0.9999999999999983,
+        -7.988896899044017
+      ],
+      "carrier_root": 0.5865589686166691,
+      "near_zero_boundary_modes": 4,
+      "boundary_lowest": [
+        2.0134878722408705e-17,
+        1.5190182440767454e-13,
+        1.5339377215318439e-12,
+        1.5363041056437933e-12,
+        0.9999999999999982,
+        1.0,
+        1.0867217968192544,
+        1.086721796819256,
+        1.0867217968192584,
+        1.0867217968192586
+      ],
+      "kernel_residual_norm": 1.4994713993670074e-12,
+      "raw_path_field_norms": [
+        2.4621577051495577e-05,
+        2.4602035736569336e-05,
+        1.4556547286459494e-05,
+        1.45565472864595e-05
+      ],
+      "projected_D": [
+        {
+          "h": 0.01,
+          "matrix": [
+            [
+              2.1056586994726048e-14,
+              5.772540702910784e-16,
+              -2.8379034407054333e-25,
+              -3.927107358371241e-25
+            ],
+            [
+              5.772540702910784e-16,
+              1.2667505034574586e-14,
+              4.16944148415061e-25,
+              -6.010094578607323e-25
+            ],
+            [
+              -2.8379034407054333e-25,
+              4.16944148415061e-25,
+              9.120228705463489e-25,
+              -3.8432583000701912e-25
+            ],
+            [
+              -3.927107358371241e-25,
+              -6.010094578607323e-25,
+              -3.8432583000701912e-25,
+              -4.616626266404333e-26
+            ]
+          ],
+          "eigenvalues": [
+            -1.812686900197414e-25,
+            1.0471252978491028e-24,
+            1.2627970401815527e-14,
+            2.109612162748511e-14
+          ]
+        },
+        {
+          "h": 0.003,
+          "matrix": [
+            [
+              2.1056451998229486e-14,
+              5.772504473836801e-16,
+              6.4200119485091274e-24,
+              -1.0965973587278105e-23
+            ],
+            [
+              5.772504473836801e-16,
+              1.2667403952041993e-14,
+              1.029635058560306e-24,
+              1.2195817204848525e-23
+            ],
+            [
+              6.4200119485091274e-24,
+              1.029635058560306e-24,
+              1.572477991769809e-24,
+              2.209493192490216e-24
+            ],
+            [
+              -1.0965973587278105e-23,
+              1.2195817204848525e-23,
+              2.209493192490216e-24,
+              5.446843323905353e-24
+            ]
+          ],
+          "eigenvalues": [
+            5.712024076110066e-25,
+            6.448118887994958e-24,
+            1.2627869654881373e-14,
+            2.1095986295390105e-14
+          ]
+        },
+        {
+          "h": 0.001,
+          "matrix": [
+            [
+              2.1056439926834222e-14,
+              5.772501044436003e-16,
+              9.922762074766765e-23,
+              -7.44215827161008e-23
+            ],
+            [
+              5.772501044436003e-16,
+              1.2667395079183792e-14,
+              -1.124008815791566e-22,
+              -2.501248229937446e-22
+            ],
+            [
+              9.922762074766765e-23,
+              -1.124008815791566e-22,
+              -4.4402632509167777e-23,
+              9.262333335969223e-24
+            ],
+            [
+              -7.44215827161008e-23,
+              -2.501248229937446e-22,
+              9.262333335969223e-24,
+              6.325735631904263e-23
+            ]
+          ],
+          "eigenvalues": [
+            -4.519368944435862e-23,
+            6.40484066113742e-23,
+            1.2627860813845212e-14,
+            2.1095974192172814e-14
+          ]
+        }
+      ],
+      "warning": "Projected D is a finite-difference diagnostic at a numerical carrier root, NOT corrected singularity or a guarded witness.",
+      "seconds": 28.15456199645996,
+      "peak_rss_kib": 780976
+    }
+  ]
+}

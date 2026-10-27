@@ -1,0 +1,50 @@
+{
+  "checks": {
+    "all_336_operator_dictionaries": true,
+    "naive_laurent_failure_reproduced": true,
+    "five_rate_held_out_explanation": true,
+    "q1_q2_q4_rates_and_constants": true,
+    "characteristic_factor_zero": true,
+    "normalized_constants_stable": true
+  },
+  "pass": true,
+  "files": [
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/README.md",
+      "sha256": "98f5f05c75d870f42c00c9581a90dec398b05922233bcd790c6da851bab0822f"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/LEADING_SUMMARY.json",
+      "sha256": "76def802c2ca09788a33c4f13fef463f2c89755452a6a4a1be5f790e3141b173"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/LAURENT_REVIEW.json",
+      "sha256": "e531da71be6f00fb8075e1871dcd9ad50e1dbc47bff7a698d0f78e074d353913"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/CHARACTER_AUDIT.json",
+      "sha256": "1ac51a86f3bd18d0f796ed8dbba70d2c26003faed34f8a7af7bc47a3a435eb71"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/cyclotomic.py",
+      "sha256": "c6fedcd7bc4c0c1155dc61ed83d5868066f8b83a6cac34ca633f8117af0b5817"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/exact_collar.py",
+      "sha256": "4e33c0f237e80a1df8567c6c9340f87d25312c782ac9b5df6644e81535d33af4"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/characteristic.py",
+      "sha256": "34ac3981f5ac6d3772125933fae00fffdbe1059a6b1def02c5cb3a4f2cc9c926"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/dominant_sweep.py",
+      "sha256": "5fb6c251287ae44984bdad722ac5bec69f475f84e0bbcf5fbca404c7231f0729"
+    },
+    {
+      "path": "/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/numerics/leading_summary.py",
+      "sha256": "695452b7f3b8a2481e9988cdd3588d178d77c1bb9c0c6bfc9b683489d61739c7"
+    }
+  ],
+  "qualification": "Numerical evidence only; no Lean or interval certificate is claimed."
+}

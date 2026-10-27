@@ -1,0 +1,39 @@
+{
+  "finalSourceSha256": "735d91253d71b315409743238b4cc5366c208476b092ce5784b37c73e4eaa5eb",
+  "finalSourceAssembly": [
+    "AHP/round5/guarded/ivt-r2/Attempt.lean",
+    "AHP/round6/limits-r1/Appendix.lean"
+  ],
+  "priorSuccessfulCommand": "AHP/round3/lean1.sh AHP/round6/limits-r1/Attempt.lean",
+  "priorSuccessfulExit": 0,
+  "priorExitPreservedAs": "PriorSuccessfulRun.exit",
+  "priorSourceIdentity": "The successful third call used exactly the above concatenation. Appendix.lean has not changed since that call.",
+  "priorCompleteLogPreserved": false,
+  "finalSourceRestoredAfterTimeout": true,
+  "freshFinalCompilation": false,
+  "timedOutCommand": "AHP/round3/lean1.sh AHP/round6/limits-r1/Attempt.lean",
+  "timedOutSeconds": 180,
+  "timedOutSourcePreservedAs": "BoundaryDraft.lean",
+  "timedOutLogPreservedAs": "BoundaryDraft.interrupted.log",
+  "timedOutRunFreshExitObserved": false,
+  "timedOutRunSurvivingProcessObserved": false,
+  "timedOutRunRelaunched": false,
+  "snapshotBeforeRestoration": {
+    "Attempt.lean": {
+      "sha256": "d546d2cb84df4ff63d48fdcea1119b7656e62197a994e1c5813d2ceee183073f",
+      "mtimeNs": 1792665269471109977,
+      "bytes": 128557
+    },
+    "Attempt.lean.log": {
+      "sha256": "07cdbfb0af7bb86d4acde81bb5870d9c817bd6a8e978259548e9d394382c2725",
+      "mtimeNs": 1792665414759101054,
+      "bytes": 16384
+    },
+    "Attempt.lean.exit": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "mtimeNs": 1792665090662566584,
+      "bytes": 2
+    }
+  },
+  "closedGoal": "none"
+}

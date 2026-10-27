@@ -1,0 +1,80 @@
+[
+  {
+    "source": "AHP/round12/shared/noncancel/R2_FullPlaquette.lean",
+    "firstLine": 1,
+    "lastLine": 453,
+    "sha256": "55f109b21206ea74258b339f964ea02d3ecc108b8722349e82ed9a48a1a5d19c",
+    "target": "MassAbsorption.lean"
+  },
+  {
+    "source": "AHP/round12/shared/noncancel/R2_Mass.lean",
+    "firstLine": 8,
+    "lastLine": 91,
+    "sha256": "6d1f76a9adc5918a46510a31a2f29e553974088f86ed9262cddb2fabf1ace155",
+    "target": "MassAbsorption.lean"
+  },
+  {
+    "source": "AHP/round12/shared/noncancel/R2_Boundary.lean",
+    "firstLine": 8,
+    "lastLine": 135,
+    "sha256": "423ea73c80c83fb0bcd40cba34716dc897ceef7d0ab04d49f83e1d7580b00ded",
+    "target": "MassAbsorption.lean"
+  },
+  {
+    "target": "EightLeaves.lean",
+    "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "firstLine": 1,
+    "lastLine": 693,
+    "sha256": "53dd048a1fd668e42110ce58fd83f7a05bdbebf8c57d87ffc45dcc7d6b37de17"
+  },
+  {
+    "target": "EightLeaves.lean",
+    "source": "AHP/round12/shared/noncancel/R2_Mass.lean",
+    "firstLine": 8,
+    "lastLine": 91,
+    "sha256": "6d1f76a9adc5918a46510a31a2f29e553974088f86ed9262cddb2fabf1ace155"
+  },
+  {
+    "target": "LocalPositive.lean",
+    "source": "AHP/round13/shared/detection/R1_FlatUnit.lean",
+    "firstLine": 1,
+    "lastLine": 1096,
+    "sha256": "5452efecdb5eb9c9c588ad2bf82c78cfea85650196857a5007f3d7f355294d8c"
+  },
+  {
+    "target": "LocalPositive.lean",
+    "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "firstLine": 8,
+    "lastLine": 222,
+    "sha256": "a82595258ab1c32190ff48ac6a84b721b35225c90ca5fccdfcd26ede4c848696"
+  },
+  {
+    "target": "LocalPositive.lean",
+    "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "firstLine": 433,
+    "lastLine": 444,
+    "sha256": "f77f0197e9ac5059d917957da78f60ad77fe1bb7fe0a58ec8288dfe8dde58694"
+  },
+  {
+    "target": "LocalPositive.lean",
+    "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "firstLine": 530,
+    "lastLine": 543,
+    "sha256": "7078999515129fb65366af765c2c9a31a6f6d6dae41594df27d89339862917f7"
+  },
+  {
+    "target": "LocalPositive.lean",
+    "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "firstLine": 545,
+    "lastLine": 588,
+    "sha256": "7b4a441d8a929453ef5ebf67044e4481bed30b196df756aea40d813ca722055e"
+  },
+  {
+    "target": "LocalPositive.lean",
+    "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "firstLine": 590,
+    "lastLine": 610,
+    "removedUnusedOpen": "open AdalyFormal.Round9.Guarded.Qualitative\n",
+    "sha256": "3af61924da66f4b3e5cb9bf133cb96cf0fef43ea443e130db778af8102c5b3c9"
+  }
+]

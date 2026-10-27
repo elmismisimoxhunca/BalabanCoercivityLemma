@@ -1,0 +1,69 @@
+'AdalyFormal.Round10.Dictionary.Color.quad_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_parallelogram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_add_of_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_zero_of_anti_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.quad_mixed_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.constGauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.const_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.halfE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flipE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_quad' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flip_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flip_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.half_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flip_neutral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.two_fixed_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.halfE_flip_on_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_neutral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_charged_neutral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Dictionary.Color.flatJet_single_color_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.ColorTrace.flatJet_zero_of_pointwise_color' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.ColorTrace.nonzero_trace_with_zero_jet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.Area.mixed_bilinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.Area.mixed_alternating' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.Area.bilinear_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.Area.bilinear_area' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.Area.quadratic_area' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.imagPart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.realPart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.half_negative_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.carrier_color_decompose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.areaCoefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_skew' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.areaCoefficient_diagonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.neutralJet_area' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.colorCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.colorCarrier_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.colorCarrier_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.colorCarrier_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.half_pauliE2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.flip_pauliE2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.quarter_pauliE2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.color_one_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.color_two_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.color_sum_charged' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.quarter_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.flatJet_color_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round13.Detection.ColorArea.flatJet_area' depends on axioms: [propext, Classical.choice, Quot.sound]

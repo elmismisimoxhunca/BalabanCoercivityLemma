@@ -1,0 +1,33 @@
+{
+  "closedGoal": "none",
+  "finalFile": "/home/sebastian/BalabanCoercivityLemma/AHP/round5/guarded/kernel-r1/Attempt.lean",
+  "compiledCopy": "/home/sebastian/BalabanCoercivityLemma/AHP/round5/guarded/kernel-r1/DecayModel.lean",
+  "compilerCommand": "AHP/round3/lean1.sh AHP/round5/guarded/kernel-r1/DecayModel.lean",
+  "compiledCopyExit": 0,
+  "finalExactCopy": true,
+  "finalSHA256": "d2155bede9ab6340e8fb5b3dd1bf73e6fd961ce20e700128cf4cb32baa6f3c67",
+  "pinSHA256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "pinIsExactPrefix": true,
+  "imports": [
+    "DrEquiv"
+  ],
+  "allLocalDeclarationsPrinted": true,
+  "localDeclarations": 56,
+  "dependencyRecords": 56,
+  "allDependenciesPermitted": true,
+  "mainDeclaration": "AdalyFormal.Round4.Guarded.DecayR2.Diagnostic.arbitrarily_small_separated_model",
+  "mainAxioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "diagnostics": [],
+  "forbiddenTokens": [],
+  "finalPathRecompiled": false,
+  "note": "Attempt.lean is copied from the successful DecayModel.lean, not compiled after the timeout. No final-path log or exit was fabricated.",
+  "kernelDraftSHA256": "4c22ccb592943efd0e4d9421d92afe7c60f91ea2586a736b0d5e19b8c2a95286",
+  "kernelDraftAccepted": false,
+  "kernelDraftStatus": "Last direct wrapper call timed out while waiting for lock; log empty; old exit 1 predates edited source. No live kernel-route wrapper remained. Not relaunched.",
+  "gapModelExit": 0,
+  "gapModelNote": "Successful repaired version restored byte-for-byte after a warning-only edit; not recompiled after the timeout. Secondary evidence only."
+}

@@ -1,0 +1,15 @@
+test_allowed_wrapped_record_is_complete (test_axiom_gate.AxiomGateTests.test_allowed_wrapped_record_is_complete) ... ok
+test_axiom_free_record_accepted (test_axiom_gate.AxiomGateTests.test_axiom_free_record_accepted) ... ok
+test_truncated_record_rejected (test_axiom_gate.AxiomGateTests.test_truncated_record_rejected) ... ok
+test_wrapped_sorry_rejected (test_axiom_gate.AxiomGateTests.test_wrapped_sorry_rejected) ... ok
+test_wrapped_unexpected_axiom_rejected (test_axiom_gate.AxiomGateTests.test_wrapped_unexpected_axiom_rejected) ... ok
+test_apostrophe_in_declaration_name (test_check_axioms.CompleteAxiomParserTests.test_apostrophe_in_declaration_name) ... ok
+test_empty_list (test_check_axioms.CompleteAxiomParserTests.test_empty_list) ... ok
+test_list_can_start_on_next_line (test_check_axioms.CompleteAxiomParserTests.test_list_can_start_on_next_line) ... ok
+test_reject_bad_messages (test_check_axioms.CompleteAxiomParserTests.test_reject_bad_messages) ... ok
+test_subsets_order_and_multiple_records (test_check_axioms.CompleteAxiomParserTests.test_subsets_order_and_multiple_records) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.139s
+
+OK

@@ -1,0 +1,40 @@
+{
+  "source": "AHP/round11/largea-r1/Attempt.lean",
+  "sha256": "38cf15a010c74df8143e7cebec40f0300e6b0747ac88e8969a21041ae7b874bf",
+  "pinBytes": 8342,
+  "pinVerbatimOccurrences": 1,
+  "pinOffset": 121,
+  "verificationCopyIdentical": true,
+  "explicitDeclarations": 69,
+  "printAxiomsCommands": 69,
+  "missingPrintAxioms": [],
+  "forbiddenTokens": [],
+  "imports": [
+    "DLR26",
+    "GdGen6",
+    "D2Lit",
+    "AdalyFormal.Balaban.CoercUMainRegular",
+    "RI6",
+    "GN1",
+    "GdR5b",
+    "D1Lit"
+  ],
+  "allImportsFrozenSource": true,
+  "compilations": {
+    "Attempt.lean": {
+      "exitCode": 0,
+      "axiomLines": 67,
+      "axiomFreeLines": 2,
+      "unexpectedAxioms": {},
+      "errors": false
+    },
+    "Attempt.verify.lean": {
+      "exitCode": 0,
+      "axiomLines": 67,
+      "axiomFreeLines": 2,
+      "unexpectedAxioms": {},
+      "errors": false
+    }
+  },
+  "closedGoal": "none"
+}

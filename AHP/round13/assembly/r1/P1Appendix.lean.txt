@@ -1,0 +1,82 @@
+
+namespace AdalyFormal.Round13.Assembly.R1
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round10.Assembly.R2 (KernelLine)
+open AdalyFormal.Round10.Dictionary.FreeSource (CurlDetected)
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round12.Kernel.Crossing
+
+/-- Exact P1, supplied by the compiled physical six-bond trial. -/
+theorem p1 : P1 := AdalyFormal.Round13.Trial.rightStar_negative_halfpi
+
+/-- Unconditional canonical crossing, strictly before half pi, and a nonzero
+actual kernel vector. This does NOT assert a charged line or jet detection. -/
+theorem rightStar_crossing_before_halfpi {q R : ℕ} (hq : 0 < q)
+    (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    0 < vacEdge q R (rightStar hq R) ∧
+    vacEdge q R (rightStar hq R) < Real.pi/2 ∧
+    AdalyFormal.D1Literal.PSD
+      (vacA q R (rightStar hq R) 1 (vacEdge q R (rightStar hq R))) ∧
+    ¬ IsUnit (vacA q R (rightStar hq R) 1 (vacEdge q R (rightStar hq R))) ∧
+    ∃ u : TwistSpace q R, u ≠ 0 ∧
+      vacA q R (rightStar hq R) 1 (vacEdge q R (rightStar hq R)) u = 0 := by
+  obtain ⟨w,hw⟩ := p1 hq hR hR18
+  have hs : ∀ t x y, ⟪vacA q R (rightStar hq R) 1 t x,y⟫ =
+      ⟪x,vacA q R (rightStar hq R) 1 t y⟫ := by
+    intro t x y
+    exact (AdalyFormal.D1Literal.dataS AdalyFormal.D1Literal.selAll
+      AdalyFormal.D1Literal.selAll
+        (pathP q R (rightStar hq R) (fun _ => 0) 0 1 t)).Ginv_symm
+      (AdalyFormal.D1Literal.dataS_laws _ _ _) x y
+  have heq : vacEdge q R (rightStar hq R) =
+      psdEdge (vacA q R (rightStar hq R) 1) 0 (Real.pi/2) :=
+    psdEdge_same_after_negative _ (by positivity) (by linarith [Real.pi_pos]) w hw
+  obtain ⟨h0,ht,hpsd,hn,_,_⟩ := psdEdge_singular_without_isolation
+    (vacA q R (rightStar hq R) 1) (rightStar_vacA_cont hq hR hR18) hs
+    (by positivity : (0:ℝ) < Real.pi/2)
+    (rightStar_vacA_pd_zero hq (by omega)) w hw
+  rw [← heq] at h0 ht hpsd hn
+  exact ⟨h0,ht,hpsd,hn,exists_kernel_of_nonunit _ hn⟩
+
+/-- P1 is no longer a hypothesis. P2 and P3 are still unproved physical inputs. -/
+theorem cofinalNoCancellation_of_P2_P3 (h2 : P2) (h3 : P3) :
+    AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation :=
+  cofinalNoCancellation_of_P1_P2_P3 p1 h2 h3
+
+/-- Joint nested cofinal P2/P3 remainder at one consistently RIGHT star. -/
+def CofinalP2P3 : Prop :=
+  ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+    R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+    (∀ t : ℝ, 0 < t → t < Real.pi/2 → ∀ x : TwistSpace (2^j) R,
+      x ≠ 0 → AdalyFormal.Round12.Kernel.Actual.chargedCoordinate (2^j) R
+        (rightSite (by positivity) R, (0 : Fin 3)) x = 0 →
+      0 < ⟪x, vacA (2^j) R (rightStar (by positivity) R) 1 t x⟫) ∧
+    (∀ u : TwistSpace (2^j) R,
+      KernelLine (2^j) R (rightStar (by positivity) R) u → CurlDetected (2^j) R u)
+
+/-- The all-instance P1 supplies the trial at whichever indices P2/P3 select. -/
+theorem cofinalPhysical_of_cofinalP2P3 (h : CofinalP2P3) : CofinalPhysicalInputs := by
+  intro j₀
+  obtain ⟨j,hj,hRs⟩ := h j₀
+  refine ⟨j,hj,?_⟩
+  intro R₀
+  obtain ⟨R,hR0,hR,hR18,hp,hd⟩ := hRs R₀
+  exact ⟨R,hR0,hR,hR18,p1 (by positivity) hR hR18,hp,hd⟩
+
+theorem cofinalNoCancellation_of_cofinalP2P3 (h : CofinalP2P3) :
+    AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation :=
+  cofinalNoCancellation_of_cofinalPhysical (cofinalPhysical_of_cofinalP2P3 h)
+
+#print axioms p1
+#print axioms rightStar_crossing_before_halfpi
+#print axioms cofinalNoCancellation_of_P2_P3
+#print axioms CofinalP2P3
+#print axioms cofinalPhysical_of_cofinalP2P3
+#print axioms cofinalNoCancellation_of_cofinalP2P3
+end AdalyFormal.Round13.Assembly.R1

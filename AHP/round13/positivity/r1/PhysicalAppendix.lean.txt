@@ -1,0 +1,172 @@
+
+namespace AdalyFormal.Round13.Positivity
+open Classical
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.StatementLaneR6
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 curlValueCovariant)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Round12.Noncancel.Star
+open AdalyFormal.Round12.Noncancel.FullPlaquette
+open AdalyFormal.Round12.Noncancel.Plaquette
+variable {L : PeriodicLatticeExtent}
+
+/-- Pointwise input locality, for the complete frozen charged+neutral summand. -/
+theorem plaqEnergy_congr_field (U : Cfg L) (A B : BondFnL2 L)
+    (p : PeriodicLatticePlaquette L)
+    (h : ∀ e ∈ periodicPlaquetteBoundaryEdges p, A e = B e) :
+    plaqEnergy U A p = plaqEnergy U B p := by
+  have h1 := h _ ((edge_mem p _).mpr (Or.inl rfl))
+  have h2 := h _ ((edge_mem p _).mpr (Or.inr (Or.inl rfl)))
+  have h3 := h _ ((edge_mem p _).mpr (Or.inr (Or.inr (Or.inl rfl))))
+  have h4 := h _ ((edge_mem p _).mpr (Or.inr (Or.inr (Or.inr rfl))))
+  have hc : curlValueCovariant U (WithLp.ofLp A) p =
+      curlValueCovariant U (WithLp.ofLp B) p := by
+    unfold curlValueCovariant
+    rw [h1,h2,h3,h4]
+  have ha1 : a1LM U p (WithLp.ofLp A) = a1LM U p (WithLp.ofLp B) := by
+    simp only [a1LM_apply, AprimeZW, h3]
+  have ha2 : a2LM p (WithLp.ofLp A) = a2LM p (WithLp.ofLp B) := by
+    simp only [a2LM_apply, AprimeWX, h4]
+  have ha3 : a3LM p (WithLp.ofLp A) = a3LM p (WithLp.ofLp B) := by
+    simp only [a3LM_apply, AprimeXY, h1]
+  have ha4 : a4LM U p (WithLp.ofLp A) = a4LM U p (WithLp.ofLp B) := by
+    simp only [a4LM_apply, AprimeYZ, h2]
+  unfold plaqEnergy
+  rw [hc, bilPlaq_atoms, bilPlaq_atoms]
+  simp only [b1LM,b2LM,b3LM,b4LM,LinearMap.comp_apply,
+    ha1,ha2,ha3,ha4,curlMatLM_apply,hc]
+
+/-- The complete boundary remainder is a sum in the RAW physical input,
+without a site-inverse-unit premise. -/
+theorem omittedEnergy_eq_raw (P : IngrBParams) {M R : ℕ}
+    (hS : Admissible P.ell M R P.k P.S) (h4 : 4 ≤ R*M)
+    (x : ↥(bondSupp P.G)) :
+    omittedEnergy P x = ∑ p, if p ∈ plaqIn P.G.Om0 then 0 else
+      plaqEnergy P.U (iE P.G x) p := by
+  unfold omittedEnergy
+  apply Finset.sum_congr rfl
+  intro p _
+  split_ifs with hp
+  · rfl
+  · apply plaqEnergy_congr_field
+    intro e he
+    exact AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted hS h4 P.U P.a _ hp he
+
+/-- Full localized positivity needs no numerical lower constant when a genuine
+localized unit is available. All colors are retained. -/
+theorem localized_positive_of_unit (P : IngrBParams) (ha : 0 ≤ P.a)
+    (hr : ∀ p ∈ plaqIn P.G.Om0, reHolonomy P.U p = 1)
+    (hi : ∀ p ∈ plaqIn P.G.Om0, imHolonomy P.U p = 0)
+    (hu : IsUnit (dataS selIn selIn P).Ginv)
+    (x : ↥(bondSupp P.G)) (hx : x ≠ 0) :
+    0 < ⟪x, (dataS selIn selIn P).Ginv x⟫ := by
+  have hp : PSD (dataS selIn selIn P).Ginv := by
+    intro y
+    rw [BaseDataS.inner_Ginv]
+    have hd := localized_Dpi_nonneg P y hr hi
+    have hm : 0 ≤ ⟪y, (dataS selIn selIn P).Mass y⟫ := by
+      change 0 ≤ ⟪y, pE P.G (MassFull P.G P.a P.sector (iE P.G y))⟫
+      rw [pE_inner_right, inner_MassFull]
+      exact Finset.sum_nonneg (fun p _ => by positivity)
+    have ht : 0 ≤ ‖(dataS selIn selIn P).T y‖^2 := sq_nonneg _
+    linarith
+  apply lt_of_le_of_ne (hp x)
+  intro hz
+  have hk := psd_kernel _ ((dataS selIn selIn P).Ginv_symm (dataS_laws selIn selIn P)) hp x hz.symm
+  exact hx ((injective_iff_map_eq_zero _).mp (ContinuousLinearMap.isUnit_iff_bijective.mp hu).1 x hk)
+
+/-- Direct sufficient interface for P2: only actual geometric leaf-loss data
+and the localized unit remain as premises. It is NOT an unconditional P2 theorem. -/
+theorem physical_positive_of_leaf_loss (P : IngrBParams) (ha : P.a = 1)
+    (x : ↥(bondSupp P.G)) (hx : x ≠ 0) (t : ℝ)
+    (ht0 : 0 ≤ t) (ht : t < Real.pi/2)
+    (leaves : Finset (Bond P.Lf)) (hl : ∀ e ∈ leaves, e ∈ bondsLam P.G 0)
+    (hr : ∀ p ∈ plaqIn P.G.Om0, reHolonomy P.U p = 1)
+    (hi : ∀ p ∈ plaqIn P.G.Om0, imHolonomy P.U p = 0)
+    (hu : IsUnit (dataS selIn selIn P).Ginv)
+    (ho : -(1-Real.cos t)*(∑ e ∈ leaves, ‖(iE P.G x) e‖^2) ≤ omittedEnergy P x) :
+    0 < ⟪x, (dataS selAll selAll P).Ginv x⟫ := by
+  have hc : 0 < Real.cos t := Real.cos_pos_of_mem_Ioo ⟨by linarith [Real.pi_pos],ht⟩
+  exact lt_of_lt_of_le (mul_pos hc (localized_positive_of_unit P (by rw [ha]; norm_num)
+    hr hi hu x hx)) (carrier_ge_scaled_local_leaves P ha x (Real.cos t)
+      (Real.cos_le_one t) leaves hl hr hi ho)
+
+/-- Atom-order faithful right-plaquette estimate when the FIRST charged atom
+vanishes. The central neutral h is not set to zero. -/
+theorem frozen_right_zero_first_lower (U : Cfg L) (A : BondFnL2 L)
+    (p : PeriodicLatticePlaquette L) (c s h k l : ℝ) (y z : ℂ)
+    (hc : 0 ≤ c) (hc1 : c ≤ 1) (hcs : c^2+s^2=1)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p (WithLp.ofLp A) = lieMat h 0)
+    (h2 : a2LM p (WithLp.ofLp A) = lieMat k y)
+    (h3 : a3LM p (WithLp.ofLp A) = lieMat l z)
+    (h4 : a4LM U p (WithLp.ofLp A) = 0) :
+    -(1-c)*(Complex.normSq y+k^2+(Complex.normSq z+l^2)) ≤ plaqEnergy U A p := by
+  unfold plaqEnergy
+  rw [frozen_full_three_right U p _ c s h k l 0 y z hr hi h1 h2 h3 h4,
+    tripleForm_zero_left]
+  exact full_pair_loss_bound c s h k l y z hc hc1 hcs
+
+/-- P1 of the right star has its central charged coordinate in the THIRD atom. -/
+theorem frozen_right_zero_third_lower (U : Cfg L) (A : BondFnL2 L)
+    (p : PeriodicLatticePlaquette L) (c s h k l : ℝ) (y z : ℂ)
+    (hc : 0 ≤ c) (hc1 : c ≤ 1) (hcs : c^2+s^2=1)
+    (hr : reHolonomy U p = realHol c) (hi : imHolonomy U p = imagHol s)
+    (h1 : a1LM U p (WithLp.ofLp A) = lieMat k y)
+    (h2 : a2LM p (WithLp.ofLp A) = lieMat l z)
+    (h3 : a3LM p (WithLp.ofLp A) = lieMat h 0)
+    (h4 : a4LM U p (WithLp.ofLp A) = 0) :
+    -(1-c)*(Complex.normSq y+k^2+(Complex.normSq z+l^2)) ≤ plaqEnergy U A p := by
+  unfold plaqEnergy
+  rw [frozen_full_three_right U p _ c s k l h y z 0 hr hi h1 h2 h3 h4,
+    tripleForm_zero_right]
+  convert full_pair_loss_bound c s h k l y z hc hc1 hcs using 1
+  ring
+
+/-- A complete finite injection lemma: every non-star omitted plaquette is kept
+as nonnegative, and no plaquette is counted twice. -/
+theorem omitted_loss_of_injective_arms {ι : Type*} [Fintype ι]
+    (P : IngrBParams) {M R : ℕ} (hS : Admissible P.ell M R P.k P.S) (h4 : 4 ≤ R*M)
+    (x : ↥(bondSupp P.G)) (c : ℝ)
+    (arm : ι → PeriodicLatticePlaquette P.Lf) (ha : Function.Injective arm)
+    (hout : ∀ i, arm i ∉ plaqIn P.G.Om0) (budget : ι → ℝ)
+    (hbad : ∀ i, -(1-c)*budget i ≤ plaqEnergy P.U (iE P.G x) (arm i))
+    (hgood : ∀ p, p ∉ plaqIn P.G.Om0 → (∀ i, p ≠ arm i) →
+      0 ≤ plaqEnergy P.U (iE P.G x) p) :
+    -(1-c)*(∑ i, budget i) ≤ omittedEnergy P x := by
+  rw [omittedEnergy_eq_raw P hS h4 x, Finset.mul_sum]
+  let f : PeriodicLatticePlaquette P.Lf → ℝ := fun p =>
+    if p ∈ plaqIn P.G.Om0 then 0 else plaqEnergy P.U (iE P.G x) p
+  have hb : (∑ i, -(1-c)*budget i) ≤ ∑ i, f (arm i) := by
+    apply Finset.sum_le_sum
+    intro i _
+    simpa only [f, if_neg (hout i)] using hbad i
+  apply hb.trans
+  rw [← Finset.sum_image (fun i _ j _ h => ha h)]
+  apply Finset.sum_le_sum_of_subset_of_nonneg (Finset.subset_univ _)
+  intro p _ hp
+  change 0 ≤ if p ∈ plaqIn P.G.Om0 then 0 else plaqEnergy P.U (iE P.G x) p
+  split_ifs with hin
+  · exact le_rfl
+  · apply hgood p hin
+    intro i heq
+    apply hp
+    simp only [Finset.mem_image, Finset.mem_univ, true_and]
+    exact ⟨i,heq.symm⟩
+
+set_option pp.fullNames true
+#print axioms plaqEnergy_congr_field
+#print axioms omittedEnergy_eq_raw
+#print axioms localized_positive_of_unit
+#print axioms physical_positive_of_leaf_loss
+#print axioms frozen_right_zero_first_lower
+#print axioms frozen_right_zero_third_lower
+#print axioms omitted_loss_of_injective_arms
+end AdalyFormal.Round13.Positivity

@@ -1,0 +1,23 @@
+AdalyFormal.Round2.S3Pin.PrintedFirstTerm (P : IngrBParams) (r : Reading) (B : UnitB P) : ℝ
+AdalyFormal.Round2.S3Pin.AdmissibleConfiguration (P : IngrBParams) : Prop
+AdalyFormal.Round2.S3Pin.AdmissibleB (P : IngrBParams) (B : UnitB P) : Prop
+AdalyFormal.Round2.S3Pin.InversesExist (P : IngrBParams) (r : Reading) : Prop
+AdalyFormal.Round2.S3Pin.GoalPos1 : Prop
+AdalyFormal.Round2.S3Pin.GoalNeg1 : Prop
+AdalyFormal.Round2.S3Pin.GoalPos2 : Prop
+AdalyFormal.Round2.S3Pin.GoalNeg2 : Prop
+'AdalyFormal.Round2.S3Pin.PrintedCjBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedCBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedKBil' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedG1inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.PrintedFirstTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleConfiguration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.AdmissibleB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.InversesExist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg1_implies_not_GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.GoalNeg2_implies_not_GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round2.S3Pin.RatioWitness_no_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]

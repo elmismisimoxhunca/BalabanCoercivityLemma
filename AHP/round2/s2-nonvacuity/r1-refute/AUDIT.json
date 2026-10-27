@@ -1,0 +1,42 @@
+{
+  "exitCode": 0,
+  "sourceSha256": "c4a1d4d0614dd1fcf700219fbd12fd03349a4b7f600dea0da15d678dfb553ccd",
+  "pinnedDefinitionsVerbatim": [
+    "TouchBond",
+    "CoversPlaqFour",
+    "plaqCorner",
+    "CoversPlaqCorner",
+    "CurlReadsTouch",
+    "PerCubeRegularTouch",
+    "ClassCoupledFour",
+    "ClassCoupledCorner",
+    "ProperFourAt",
+    "ProperCornerAt",
+    "GoalPos1",
+    "GoalNeg1",
+    "GoalPos2",
+    "GoalNeg2"
+  ],
+  "copiedGeometryDefinitionsVerbatim": [
+    "cornerA",
+    "cornerB",
+    "cornerC",
+    "cornerD"
+  ],
+  "copiedConnectivityTheoremsVerbatim": [
+    "shift_iter",
+    "forall_of_shift"
+  ],
+  "localDeclarations": 45,
+  "axiomRecords": 48,
+  "allLocalDeclarationsPrinted": true,
+  "axiomListsAllStandard": true,
+  "forbiddenSourceTokens": 0,
+  "mainType": "AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_proved : GoalNeg2",
+  "mainAxioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "numericsExitCode": 0
+}

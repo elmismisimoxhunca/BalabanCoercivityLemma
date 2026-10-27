@@ -1,0 +1,219 @@
+
+namespace AdalyFormal.Round13.Positivity
+open Classical
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.StatementLaneR6
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 curlValueCovariant)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+open AdalyFormal.Balaban.SuTwoInner (hsInner)
+open AdalyFormal.Round12.Noncancel.Star
+open AdalyFormal.Round12.Noncancel.FullPlaquette
+variable {L : PeriodicLatticeExtent}
+
+/-- The actual frozen summand, including its neutral part. -/
+def plaqEnergy (U : Cfg L) (A : BondFnL2 L) (p : PeriodicLatticePlaquette L) : ℝ :=
+  ⟪curlValueCovariant U (WithLp.ofLp A) p, curlValueCovariant U (WithLp.ofLp A) p⟫ +
+    (1/2 : ℝ) * bilPlaq U p (WithLp.ofLp A) (WithLp.ofLp A)
+
+/-- Exact selector version of frozen delta_form_sum. -/
+theorem delta_form_sum_set (U : Cfg L) (S : Set (PeriodicLatticePlaquette L))
+    (A : BondFnL2 L) :
+    ⟪A, deltaKLocCLM U S A⟫ = ∑ p, if p ∈ S then plaqEnergy U A p else 0 := by
+  classical
+  rw [inner_deltaKLocCLM]
+  have h1 : ⟪plaqMask S (AdalyFormal.Balaban.DeltaKFull.curlCovariantLM_L2 U A),
+      plaqMask S (AdalyFormal.Balaban.DeltaKFull.curlCovariantLM_L2 U A)⟫ =
+      ∑ p, if p ∈ S then
+        ⟪curlValueCovariant U (WithLp.ofLp A) p, curlValueCovariant U (WithLp.ofLp A) p⟫ else 0 := by
+    rw [PiLp.inner_apply]
+    apply Finset.sum_congr rfl
+    intro p _
+    simp only [plaqMask_apply]
+    split_ifs
+    · rfl
+    · simp
+  have h2 : deltaPrimeBilL2NormLoc U S A A =
+      (1/2 : ℝ) * ∑ p, if p ∈ S then bilPlaq U p (WithLp.ofLp A) (WithLp.ofLp A) else 0 := by
+    change deltaPrimeBilNormLoc U S (WithLp.ofLp A) (WithLp.ofLp A) = _
+    simp only [deltaPrimeBilNormLoc, LinearMap.smul_apply, LinearMap.add_apply,
+      LinearMap.flip_apply, smul_eq_mul, deltaPrimeBilRawLoc_apply]
+    ring
+  rw [h1, h2, Finset.mul_sum, ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro p _
+  by_cases hp : p ∈ S <;> simp [hp, plaqEnergy]
+
+/-- At any plaquette with identity holonomy the full summand is nonnegative. -/
+theorem plaqEnergy_nonneg (U : Cfg L) (A : BondFnL2 L) (p : PeriodicLatticePlaquette L)
+    (hr : reHolonomy U p = 1) (hi : imHolonomy U p = 0) :
+    0 ≤ plaqEnergy U A p := by
+  have hb : bilPlaq U p (WithLp.ofLp A) (WithLp.ofLp A) = 0 := by
+    rw [bilPlaq_atoms, hr, hi]
+    simp
+  simp only [plaqEnergy, hb, mul_zero, add_zero]
+  exact real_inner_self_nonneg
+
+open Classical in
+def omittedEnergy (P : IngrBParams) (x : ↥(bondSupp P.G)) : ℝ :=
+  ∑ p, if p ∈ plaqIn P.G.Om0 then 0 else
+    plaqEnergy P.U (Wop P.G P.U P.a (iE P.G x)) p
+
+/-- No locality premise: the exact complete all-minus-localized carrier sum. -/
+theorem carrier_form_split (P : IngrBParams) (x : ↥(bondSupp P.G)) :
+    ⟪x, (dataS selAll selAll P).Ginv x⟫ =
+      ⟪x, (dataS selIn selIn P).Ginv x⟫ + omittedEnergy P x := by
+  classical
+  have hd : ⟪x, (dataS selAll selAll P).Dpi x⟫ =
+      ⟪x, (dataS selIn selIn P).Dpi x⟫ + omittedEnergy P x := by
+    change ⟪x, ((pE P.G).comp ((DpiFullS selAll P.G P.U P.a).comp (iE P.G))) x⟫ =
+      ⟪x, ((pE P.G).comp ((DpiFullS selIn P.G P.U P.a).comp (iE P.G))) x⟫ + _
+    rw [E0_Dpi_inner, E0_Dpi_inner]
+    simp only [DeltaS, selAll, selIn, delta_form_sum_set, Set.mem_univ, if_true]
+    unfold omittedEnergy
+    rw [← Finset.sum_add_distrib]
+    apply Finset.sum_congr rfl
+    intro p _
+    by_cases hp : p ∈ plaqIn P.G.Om0 <;> simp [hp]
+  rw [BaseDataS.inner_Ginv, BaseDataS.inner_Ginv, hd]
+  have ht : (dataS selAll selAll P).T = (dataS selIn selIn P).T := rfl
+  have hm : (dataS selAll selAll P).Mass = (dataS selIn selIn P).Mass := rfl
+  rw [ht, hm]
+  ring
+
+/-- The localized delta term is nonnegative when its actual plaquettes are flat. -/
+theorem localized_Dpi_nonneg (P : IngrBParams) (x : ↥(bondSupp P.G))
+    (hr : ∀ p ∈ plaqIn P.G.Om0, reHolonomy P.U p = 1)
+    (hi : ∀ p ∈ plaqIn P.G.Om0, imHolonomy P.U p = 0) :
+    0 ≤ ⟪x, (dataS selIn selIn P).Dpi x⟫ := by
+  classical
+  change 0 ≤ ⟪x, ((pE P.G).comp ((DpiFullS selIn P.G P.U P.a).comp (iE P.G))) x⟫
+  rw [E0_Dpi_inner]
+  simp only [DeltaS, selIn, delta_form_sum_set]
+  apply Finset.sum_nonneg
+  intro p _
+  split_ifs with hp
+  · exact plaqEnergy_nonneg _ _ _ (hr p hp) (hi p hp)
+  · exact le_rfl
+
+/-- Mass-relative absorption. The loss is 1-c of the MASS, not a guessed
+ordinary-norm constant. This retains c of the whole positive localized form. -/
+theorem carrier_ge_scaled_local (P : IngrBParams) (x : ↥(bondSupp P.G))
+    (c leaves : ℝ) (hc : c ≤ 1)
+    (hd : 0 ≤ ⟪x, (dataS selIn selIn P).Dpi x⟫)
+    (hl : leaves ≤ ⟪x, (dataS selIn selIn P).Mass x⟫)
+    (ho : -(1-c)*leaves ≤ omittedEnergy P x) :
+    c * ⟪x, (dataS selIn selIn P).Ginv x⟫ ≤
+      ⟪x, (dataS selAll selAll P).Ginv x⟫ := by
+  have hm : leaves ≤ ⟪x, (dataS selIn selIn P).Ginv x⟫ := by
+    rw [BaseDataS.inner_Ginv]
+    have ht : 0 ≤ ‖(dataS selIn selIn P).T x‖^2 := sq_nonneg _
+    linarith
+  have habs := mul_le_mul_of_nonneg_left hm (sub_nonneg.mpr hc)
+  rw [carrier_form_split]
+  nlinarith
+
+/-- Actual distinct physical level-zero rows supply the mass budget. -/
+theorem carrier_ge_scaled_local_leaves (P : IngrBParams) (ha : P.a = 1)
+    (x : ↥(bondSupp P.G)) (c : ℝ) (hc : c ≤ 1)
+    (leaves : Finset (Bond P.Lf)) (hl : ∀ e ∈ leaves, e ∈ bondsLam P.G 0)
+    (hr : ∀ p ∈ plaqIn P.G.Om0, reHolonomy P.U p = 1)
+    (hi : ∀ p ∈ plaqIn P.G.Om0, imHolonomy P.U p = 0)
+    (ho : -(1-c)*(∑ e ∈ leaves, ‖(iE P.G x) e‖^2) ≤ omittedEnergy P x) :
+    c * ⟪x, (dataS selIn selIn P).Ginv x⟫ ≤
+      ⟪x, (dataS selAll selAll P).Ginv x⟫ := by
+  refine carrier_ge_scaled_local P x c _ hc (localized_Dpi_nonneg P x hr hi) ?_ ho
+  have hm := AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le P.G P.U P.a
+    (by rw [ha]; norm_num) leaves hl (iE P.G x)
+  change _ ≤ ⟪x, pE P.G (MassFull P.G P.a (bondSectorOf P.G P.U) (iE P.G x))⟫
+  rw [pE_inner_right]
+  rw [ha, one_mul] at hm
+  simpa only [ha] using hm
+
+/-- Positive localization now suffices; no independent strict remainder premise. -/
+theorem carrier_positive_of_absorption (P : IngrBParams) (x : ↥(bondSupp P.G))
+    (c leaves : ℝ) (hc0 : 0 < c) (hc1 : c ≤ 1)
+    (hd : 0 ≤ ⟪x, (dataS selIn selIn P).Dpi x⟫)
+    (hl : leaves ≤ ⟪x, (dataS selIn selIn P).Mass x⟫)
+    (ho : -(1-c)*leaves ≤ omittedEnergy P x)
+    (hp : 0 < ⟪x, (dataS selIn selIn P).Ginv x⟫) :
+    0 < ⟪x, (dataS selAll selAll P).Ginv x⟫ :=
+  lt_of_lt_of_le (mul_pos hc0 hp) (carrier_ge_scaled_local P x c leaves hc1 hd hl ho)
+
+/-- The exact scalar contribution of each arm is bounded by its two leaf masses;
+the central NEUTRAL value h is unrestricted. -/
+theorem full_pair_loss_bound (c s h k l : ℝ) (y z : ℂ)
+    (hc : 0 ≤ c) (hc1 : c ≤ 1) (hcs : c^2+s^2=1) :
+    -(1-c)*(Complex.normSq y+k^2+(Complex.normSq z+l^2)) ≤
+      pairForm c s y z + c*(h+k+l)^2 := by
+  have hp := full_pair_mass_lower c s h k l y z hc hc1 hcs
+  nlinarith
+
+/-- Summation creates no cardinality loss. Eight DISTINCT leaves can pay the
+four negative arms exactly once, irrespective of q and R. -/
+theorem full_star_loss_bound {ι : Type*} [Fintype ι]
+    (c s : ℝ) (hc : 0 ≤ c) (hc1 : c ≤ 1) (hcs : c^2+s^2=1)
+    (h k l : ι → ℝ) (y z : ι → ℂ) :
+    -(1-c)*(∑ i, (Complex.normSq (y i)+(k i)^2+(Complex.normSq (z i)+(l i)^2))) ≤
+      ∑ i, (pairForm c s (y i) (z i)+c*(h i+k i+l i)^2) := by
+  rw [Finset.mul_sum]
+  exact Finset.sum_le_sum (fun i _ => full_pair_loss_bound c s _ _ _ _ _ hc hc1 hcs)
+
+/-- Whole omitted-sum identification is still an explicit PHYSICAL hypothesis. -/
+theorem omitted_loss_of_arm_decomposition {ι : Type*} [Fintype ι]
+    (P : IngrBParams) (x : ↥(bondSupp P.G)) (c s rest leaves : ℝ)
+    (hc : 0 ≤ c) (hc1 : c ≤ 1) (hcs : c^2+s^2=1) (hr : 0 ≤ rest)
+    (h k l : ι → ℝ) (y z : ι → ℂ)
+    (hm : leaves = ∑ i, (Complex.normSq (y i)+(k i)^2+(Complex.normSq (z i)+(l i)^2)))
+    (he : omittedEnergy P x = rest +
+      ∑ i, (pairForm c s (y i) (z i)+c*(h i+k i+l i)^2)) :
+    -(1-c)*leaves ≤ omittedEnergy P x := by
+  rw [hm, he]
+  have hp := full_star_loss_bound c s hc hc1 hcs h k l y z
+  linarith
+
+/-- Scale-independent relative loss on ANY closed prefix below half pi. -/
+theorem cos_prefix_loss (T t : ℝ) (hT0 : 0 ≤ T) (hT : T < Real.pi/2)
+    (ht0 : 0 ≤ t) (ht : t ≤ T) :
+    0 < Real.cos T ∧ Real.cos T ≤ Real.cos t ∧
+      0 ≤ 1-Real.cos t ∧ 1-Real.cos t ≤ 1-Real.cos T ∧ 1-Real.cos T < 1 := by
+  have hpos : 0 < Real.cos T := Real.cos_pos_of_mem_Ioo
+    ⟨by linarith [Real.pi_pos], hT⟩
+  have hmono : Real.cos T ≤ Real.cos t :=
+    Real.cos_le_cos_of_nonneg_of_le_pi ht0 (by linarith [Real.pi_pos]) ht
+  exact ⟨hpos, hmono, sub_nonneg.mpr (Real.cos_le_one t), by linarith, by linarith⟩
+
+/-- The unmassaged zero-central charged arm can be negative. -/
+theorem zero_central_arm_negative : tripleForm 0 1 0 1 (-Complex.I) = -2 := by
+  norm_num [tripleForm, Complex.normSq_apply]
+
+/-- Sharpness: no coefficient strictly below one absorbs every half-pi arm
+using ONLY its own leaf masses. This does not refute physical P2. -/
+theorem halfpi_no_strict_mass_fraction (rho : ℝ) (hrho : rho < 1) :
+    ¬ (∀ y z : ℂ, -rho*(Complex.normSq y+Complex.normSq z) ≤ pairForm 0 1 y z) := by
+  intro h
+  have hh := h 1 (-Complex.I)
+  norm_num [pairForm, Complex.normSq_apply] at hh
+  linarith
+
+set_option pp.fullNames true
+#print axioms delta_form_sum_set
+#print axioms plaqEnergy_nonneg
+#print axioms carrier_form_split
+#print axioms localized_Dpi_nonneg
+#print axioms carrier_ge_scaled_local
+#print axioms carrier_ge_scaled_local_leaves
+#print axioms carrier_positive_of_absorption
+#print axioms full_pair_loss_bound
+#print axioms full_star_loss_bound
+#print axioms omitted_loss_of_arm_decomposition
+#print axioms cos_prefix_loss
+#print axioms zero_central_arm_negative
+#print axioms halfpi_no_strict_mass_fraction
+end AdalyFormal.Round13.Positivity

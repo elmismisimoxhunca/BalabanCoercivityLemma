@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "scope": "P1 only; R2 is a handoff built on accepted R1, not P2/P3/GoalNeg2",
+  "r1_prefix_verbatim": true,
+  "byte_identical_publication": true,
+  "p1_type_matches_requested_statement": true,
+  "inherited_certificates": [
+    {
+      "source": "AHP/round13/trial/r1/Trial.lean",
+      "source_sha256": "65dea42e0daff27c8bc07bd850e1f2bdf8029e1fc452b0600590989df0039c9b",
+      "log_sha256": "a2ba8fc471b7dbebfba3348b590f8e8714fb61143f34b5b6cc959e2d66dfdd9f",
+      "exit": 0,
+      "lines": 2298,
+      "axiom_records": 195,
+      "warnings": 4,
+      "standard_axioms_only": true,
+      "forbidden_tokens": []
+    },
+    {
+      "source": "AHP/round13/shared/trial/R1_Trial.lean",
+      "source_sha256": "65dea42e0daff27c8bc07bd850e1f2bdf8029e1fc452b0600590989df0039c9b",
+      "log_sha256": "755bde8a0fd57de60627a796567d1120754f4b959767c8af431470732b56908d",
+      "exit": 0,
+      "lines": 2298,
+      "axiom_records": 195,
+      "warnings": 4,
+      "standard_axioms_only": true,
+      "forbidden_tokens": []
+    },
+    {
+      "source": "AHP/round13/trial/r1/Trial.verify.lean",
+      "source_sha256": "65dea42e0daff27c8bc07bd850e1f2bdf8029e1fc452b0600590989df0039c9b",
+      "log_sha256": "66174f888fa524b06216877ff40e206d3c98c7d1ce7ed8e12a783861f948ed96",
+      "exit": 0,
+      "lines": 2298,
+      "axiom_records": 195,
+      "warnings": 4,
+      "standard_axioms_only": true,
+      "forbidden_tokens": []
+    }
+  ],
+  "inherited_interface_checks": [
+    {
+      "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_Boundary.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_Mass.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/noncancel/R2_StarLocal.lean",
+      "verified_verbatim": true
+    },
+    {
+      "source": "AHP/round12/shared/kernel/R2_FirstCrossing.lean",
+      "verified_verbatim": true
+    }
+  ],
+  "files": [
+    {
+      "source": "AHP/round13/trial/r2/Trial.lean",
+      "source_sha256": "01279668c4d8cc5c5c42e41963a9857fb2f8e69f1b195c88872e197211c86db8",
+      "log_sha256": "ece6b6b28dda16533ec57b2b124bfa73b454f5884393cbc984eda47e0ea45648",
+      "exit": 0,
+      "lines": 2387,
+      "axiom_records": 201,
+      "warnings": 6,
+      "standard_axioms_only": true,
+      "forbidden_tokens": [],
+      "new_declarations": {
+        "trialVector_norm_sq": {
+          "line": 2315,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialVector_ne_zero": {
+          "line": 2319,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_rayleigh": {
+          "line": 2327,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "rightStar_negative_halfpi": {
+          "line": 2335,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "rightStar_physical_halfpi": {
+          "line": 2343,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "cofinal_rightStar_paths_halfpi": {
+          "line": 2357,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      }
+    },
+    {
+      "source": "AHP/round13/shared/trial/R2_Trial.lean",
+      "source_sha256": "01279668c4d8cc5c5c42e41963a9857fb2f8e69f1b195c88872e197211c86db8",
+      "log_sha256": "8ce76a29434cc41189ba35d7c8f50010d0bfe2157b52a3c3585fb16ec77092df",
+      "exit": 0,
+      "lines": 2387,
+      "axiom_records": 201,
+      "warnings": 6,
+      "standard_axioms_only": true,
+      "forbidden_tokens": [],
+      "new_declarations": {
+        "trialVector_norm_sq": {
+          "line": 2315,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trialVector_ne_zero": {
+          "line": 2319,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "trial_rayleigh": {
+          "line": 2327,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "rightStar_negative_halfpi": {
+          "line": 2335,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "rightStar_physical_halfpi": {
+          "line": 2343,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        "cofinal_rightStar_paths_halfpi": {
+          "line": 2357,
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      }
+    }
+  ],
+  "numerical_proof_dependency": false,
+  "review_boundary": "R1 was independently accepted; R2 appendix has two builder executions, not independent review.",
+  "initial_attempt": "Exit 1 from a missing namespace opening; corrected before both accepted final compiles."
+}

@@ -1,0 +1,105 @@
+assembled 8 2 1 n 3076 aug 4420 nnz 160850 seconds 2.476472854614258
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+ACTUAL actual_q8_R2_p80_s29_29.json root 0.5578780650469842 split 5.22347e-79 slope -2.8695386 c1 -1.1425913319e-37 K -7.03207554567e-9 lefthalf 1.7842096e-7 pos 3.29096e-39 neg -1.1755e-37 sec 35
+assembled 1 16 1 n 2404 aug 3356 nnz 116062 seconds 1.304438591003418
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+KSCAN kscan_R16_p80_-pix3o32.json k -0.2945243113 -0.2945243113 root 0.5578780650469842 split 1.15698e-66 slope -2.8695386 c1 -3.2019538147e-31 K -0.0197064168878 sec 28
+assembled 4 2 1 n 1540 aug 2212 nnz 80962 seconds 1.1788132190704346
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+ACTUAL actual_q4_R2_p60_s15_15.json root 0.5593474882146241 split 4.55545e-38 slope -2.6287021 c1 -2.58314735163e-16 K -0.0179649513089 lefthalf 0.5 pos 9.62206e-18 neg -2.67937e-16 sec 33
+assembled 8 2 1 n 3076 aug 4420 nnz 161042 seconds 4.458446502685547
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+ACTUAL actual_q8_R2_p80_s28_28.json root 0.5639715179855609 split 5.95769e-79 slope -3.1265294 c1 -2.24145763057e-32 K -0.038327868389 lefthalf 1.0 pos 4.94465e-34 neg -2.2909e-32 sec 49
+BATCH_DONE

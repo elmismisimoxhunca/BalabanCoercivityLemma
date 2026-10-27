@@ -1,0 +1,8 @@
+'AdalyFormal.Round12.Noncancel.Boundary.potential_zero_off_om1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_collar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Wop_eq_on_omitted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.gradAdj_sing_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Tfull_sing_zero_near' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Boundary.Wop_sing_near' depends on axioms: [propext, Classical.choice, Quot.sound]

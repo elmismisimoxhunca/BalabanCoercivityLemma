@@ -1,0 +1,139 @@
+
+namespace AdalyFormal.Round4.Guarded.RefuteR2
+
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLane2
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round2.Guarded.Pin
+open AdalyFormal.Round2.Guarded.R2Prove
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.StatementLaneR6
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Balaban.DeltaPrimeOperator
+
+/-- Flat holonomy, not identity of the four individual links, suffices. -/
+theorem bilPlaq_zero_of_holonomy {L : PeriodicLatticeExtent} (U : LinkCfg L)
+    (p : PeriodicLatticePlaquette L) (hhol : periodicPlaquetteHolonomy U p = 1)
+    (X Y : Bond L → SuTwo) : bilPlaq U p X Y = 0 := by
+  have hh : holonomyElem U p = holonomyElem (trivialU (L := L)) p :=
+    hhol.trans (holonomyElem_trivialU p).symm
+  have hr : reHolonomy U p = 1 := by
+    unfold reHolonomy holonomyElemInv
+    rw [hh]
+    exact reHolonomy_trivialU p
+  have hi : imHolonomy U p = 0 := by
+    unfold imHolonomy holonomyElemInv
+    rw [hh]
+    exact imHolonomy_trivialU p
+  rw [bilPlaq_apply, firstBilPlaq_apply, secondBilPlaq_apply]
+  simp [pairBil_apply, hr, hi]
+
+open Classical in
+theorem raw_selector_eq_of_shell_holonomy {L : PeriodicLatticeExtent} (U : LinkCfg L)
+    (P : Set (PeriodicLatticePlaquette L))
+    (hhol : ∀ p, p ∉ P → periodicPlaquetteHolonomy U p = 1) (X Y : Bond L → SuTwo) :
+    deltaPrimeBilRawLoc U Set.univ X Y = deltaPrimeBilRawLoc U P X Y := by
+  rw [deltaPrimeBilRawLoc_apply, deltaPrimeBilRawLoc_apply]
+  apply Finset.sum_congr rfl
+  intro p _
+  simp only [Set.mem_univ, if_true]
+  by_cases hp : p ∈ P
+  · rw [if_pos hp]
+  · rw [if_neg hp]
+    exact bilPlaq_zero_of_holonomy U p (hhol p hp) X Y
+
+theorem deltaPrime_selector_eq_of_shell_holonomy {L : PeriodicLatticeExtent} (U : LinkCfg L)
+    (P : Set (PeriodicLatticePlaquette L))
+    (hhol : ∀ p, p ∉ P → periodicPlaquetteHolonomy U p = 1) (X Y : BondFnL2 L) :
+    deltaPrimeBilL2NormLoc U Set.univ X Y = deltaPrimeBilL2NormLoc U P X Y := by
+  unfold deltaPrimeBilL2NormLoc
+  simp only [LinearMap.comp_apply, LinearMap.compl₂_apply, LinearEquiv.coe_coe]
+  unfold deltaPrimeBilNormLoc
+  simp only [LinearMap.smul_apply, LinearMap.add_apply, LinearMap.flip_apply]
+  rw [raw_selector_eq_of_shell_holonomy U P hhol, raw_selector_eq_of_shell_holonomy U P hhol]
+
+theorem deltaK_mono_of_shell_holonomy {L : PeriodicLatticeExtent} (U : LinkCfg L)
+    (P : Set (PeriodicLatticePlaquette L))
+    (hhol : ∀ p, p ∉ P → periodicPlaquetteHolonomy U p = 1) (X : BondFnL2 L) :
+    ⟪X, deltaKLocCLM U P X⟫ ≤ ⟪X, deltaKLocCLM U Set.univ X⟫ := by
+  rw [inner_deltaKLocCLM, inner_deltaKLocCLM,
+    deltaPrime_selector_eq_of_shell_holonomy U P hhol]
+  exact add_le_add_right (AdalyFormal.D1Guarded.plaqMask_inner_mono (Set.subset_univ P) _) _
+
+theorem Ginv_mono_of_shell_holonomy (P : IngrBParams)
+    (hhol : ∀ p, p ∉ plaqIn P.G.Om0 → periodicPlaquetteHolonomy P.U p = 1)
+    (x : ↥(bondSupp P.G)) :
+    ⟪x, (dataS selIn selIn P).Ginv x⟫ ≤ ⟪x, (dataS selAll selAll P).Ginv x⟫ := by
+  apply AdalyFormal.D1Guarded.ginv_form_le (dataS selIn selIn P) (dataS selAll selAll P)
+    rfl rfl x
+  change ⟪x, ((pE P.G).comp ((AdalyFormal.D1Literal.DpiFullS selIn P.G P.U P.a).comp (iE P.G))) x⟫ ≤
+    ⟪x, ((pE P.G).comp ((AdalyFormal.D1Literal.DpiFullS selAll P.G P.U P.a).comp (iE P.G))) x⟫
+  rw [AdalyFormal.D1Literal.E0_Dpi_inner, AdalyFormal.D1Literal.E0_Dpi_inner]
+  exact deltaK_mono_of_shell_holonomy P.U (plaqIn P.G.Om0) hhol _
+
+/-- Strict positivity is used only on the genuine localized corrected carrier.
+No all-plaquette gap is assumed, nor inferred merely from the carrier guard. -/
+theorem corrected_isUnit_of_selector_mono (P : IngrBParams)
+    (hmono : ∀ x : ↥(bondSupp P.G),
+      ⟪x, (dataS selIn selIn P).Ginv x⟫ ≤ ⟪x, (dataS selAll selAll P).Ginv x⟫)
+    (hpos : ∀ x : ↥(bondSupp P.G), x ≠ 0 → 0 < ⟪x, localCorrected P x⟫) :
+    IsUnit ((dataS selAll selAll P).Ginv -
+      (dataS selIn selIn P).Delta2 (dataS_laws selIn selIn P)) := by
+  apply ContinuousLinearMap.isUnit_iff_bijective.mpr
+  have hinj : Function.Injective ((dataS selAll selAll P).Ginv -
+      (dataS selIn selIn P).Delta2 (dataS_laws selIn selIn P)) := by
+    rw [injective_iff_map_eq_zero]
+    intro x hx
+    by_contra hne
+    have h1 := hpos x hne
+    have h2 := hmono x
+    have h0 := congrArg (fun y => inner ℝ x y) hx
+    simp only [localCorrected, ContinuousLinearMap.sub_apply, inner_sub_right,
+      inner_zero_right] at h1 h0
+    linarith
+  exact ⟨hinj, (LinearMap.injective_iff_surjective (f :=
+    (((dataS selAll selAll P).Ginv -
+      (dataS selIn selIn P).Delta2 (dataS_laws selIn selIn P)) :
+      ↥(bondSupp P.G) →ₗ[ℝ] ↥(bondSupp P.G)))).mp hinj⟩
+
+/-- Necessary exterior curvature for any corrected singularity, when the
+localized corrected form is positive. The carrier guard is not needed. -/
+theorem failure_forces_omitted_curvature (P : IngrBParams)
+    (hpos : ∀ x : ↥(bondSupp P.G), x ≠ 0 → 0 < ⟪x, localCorrected P x⟫)
+    (hn : ¬ IsUnit ((dataS selAll selAll P).Ginv -
+      (dataS selIn selIn P).Delta2 (dataS_laws selIn selIn P))) :
+    ∃ p, p ∉ plaqIn P.G.Om0 ∧ periodicPlaquetteHolonomy P.U p ≠ 1 := by
+  classical
+  by_contra h
+  push_neg at h
+  exact hn (corrected_isUnit_of_selector_mono P (Ginv_mono_of_shell_holonomy P h) hpos)
+
+/-- The pass-1 flat-exterior subfamily cannot realize a nonzero corrected kernel
+where the actual localized corrected form is positive. This retains the precise
+positivity premise, rather than promoting the mined localized unit to a gap. -/
+theorem dil_corrected_isUnit_of_localized_positive {q R : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (ε a : ℝ)
+    (hpos : ∀ x : ↥(bondSupp (geomOf 2 1 (dilTower q R))), x ≠ 0 →
+      let P := gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+        (dilU q R ε (fun _ => 1)) a (dilLam q R)
+      0 < ⟪x, localCorrected P x⟫) :
+    CPen 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+      (dilU q R ε (fun _ => 1)) a (dilLam q R) := by
+  exact corrected_isUnit_of_selector_mono _ (dil_Ginv_mono hq hR ε a) hpos
+
+#print axioms bilPlaq_zero_of_holonomy
+#print axioms raw_selector_eq_of_shell_holonomy
+#print axioms deltaPrime_selector_eq_of_shell_holonomy
+#print axioms deltaK_mono_of_shell_holonomy
+#print axioms Ginv_mono_of_shell_holonomy
+#print axioms corrected_isUnit_of_selector_mono
+#print axioms failure_forces_omitted_curvature
+#print axioms dil_corrected_isUnit_of_localized_positive
+
+end AdalyFormal.Round4.Guarded.RefuteR2

@@ -1,0 +1,158 @@
+[
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "fragment": "selector namespace",
+    "line": 6,
+    "sha256": "24833bdd80bb52071d519f301a5cb9894cdb015738e9f7f27e221fdff88f28d1"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "dilLu",
+    "line": 80,
+    "sha256": "618a1481fb5c05166a65cb54024be19d2155bc0d6d6c2f456ddbbd9441e0a4e2"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "dilTower",
+    "line": 83,
+    "sha256": "9a672750aa64f2c6ecdbc0dd23fe1dc25567c7afd47eb900096f15207d6ef3b7"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "dilLam",
+    "line": 88,
+    "sha256": "1e6b94c7573bca3d85715e4b536136c712d44d432117e7701542d358484c369e"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "dilPattern",
+    "line": 100,
+    "sha256": "e32cb4777298be8e563269a811a1362e05301df203443d56399dea25a76f1031"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "dilU",
+    "line": 103,
+    "sha256": "39728bd9df1798ccb1c908a9628f0b23891cec08a1c56c5a2445ac1150d86250"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "maskedU",
+    "line": 145,
+    "sha256": "65206566147236a136bf89b427d33249d1db48460bfe06bc42bc5a4213ea19d1"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "dilMask",
+    "line": 186,
+    "sha256": "32c9aeaa0292aa4077264ec5cb422d0a4604063823266bc414b6dd676ce6395d"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "Ug_coe_uMat",
+    "line": 212,
+    "sha256": "239b33404cce5c905eb3e5555cd841a088596f7d18872f44a1857f7c7926ef5d"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "bulkU",
+    "line": 224,
+    "sha256": "84231c0a46b91e93f8083993cac7578fd6f975582053e4d80c8df868ebd9dec6"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "bulkP",
+    "line": 228,
+    "sha256": "d2a3b87c870d4cfe76f01f0fe5211306d6511ed07d432979992746e6a3051ddf"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "rotGauge",
+    "line": 849,
+    "sha256": "0ce7133518f5dd5e59de6dc540d36b2423417ab984aee3e77a9f5f01ec37b603"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "u\u03b8_comm",
+    "line": 519,
+    "sha256": "6a73a9538ae03fde2e331c17bbd0f0f0b41b33dec0c93bf4ec4ce76e5ce34a12"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "u\u03b8_conj",
+    "line": 862,
+    "sha256": "6ab5c487e316f4eed0c514351217e3ffc98e317b0d70f63c2460f107f30a28d7"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "Ug_eq_u\u03b8",
+    "line": 867,
+    "sha256": "876bf5049cf8eecf06a82dd745280d70a196ca6a22781bf2e4a2eeabfbab7495"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "rot_maskedU",
+    "line": 870,
+    "sha256": "c0ea6d04801d80e73235cd3e87c740ddf348e9a16f017f65d012cf1e1a2807b0"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "rot_trivial",
+    "line": 890,
+    "sha256": "970bd96cb19e514203a822d0bcc1a02610ef2bb627c51596da180984bf93b3fa"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "rot_bulkU",
+    "line": 903,
+    "sha256": "9e34c0230d9c23d20b7acfb01c4390fd1e4d40ee8b1ec1af35b76c2dda1f6bdc"
+  },
+  {
+    "source": "AHP/round9/qualitative-r2/Attempt.lean",
+    "name": "bulkU_dilMask",
+    "line": 11943,
+    "sha256": "a7981afa98aa0e64718278d05146fa41aefc812c89faa20708b0415b063652fa"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "TwistSpace",
+    "line": 991,
+    "sha256": "a0e83048d31099673d1818b3ccccdc891fd7c8886a7ab660fc3b7108770614b6"
+  },
+  {
+    "source": "AHP/round9/analytic-r2/Attempt.lean",
+    "name": "dataFam",
+    "line": 5468,
+    "sha256": "d0aaa6854c848edc810be177bc0224587fff749f8646355510367f10ce4265f7"
+  },
+  {
+    "source": "AHP/round9/analytic-r2/Attempt.lean",
+    "name": "dilV",
+    "line": 6735,
+    "sha256": "54164ee65ac4e7f24465407d8d8c5b44c73291eaa6a0953fd4407ff64d7fd800"
+  },
+  {
+    "source": "AHP/round9/analytic-r2/Attempt.lean",
+    "name": "flatData",
+    "line": 7344,
+    "sha256": "4aa5ae4a1fa245886fbd71eb1470bc151583f3fd7375810305a080a34ad7845b"
+  },
+  {
+    "source": "AHP/round9/analytic-r2/Attempt.lean",
+    "name": "vacCoupling",
+    "line": 7348,
+    "sha256": "a394317be4bda42e21103680ac661e3342b4b0c5d7651df6348262f136452687"
+  },
+  {
+    "source": "AHP/round9/analytic-r2/Attempt.lean",
+    "name": "IsSourceDerivative",
+    "line": 7353,
+    "sha256": "e54213bbe4808fd349084d8b3ec5d2b916f7766d381f70476408b1225686468f"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R1_Dictionary.lean",
+    "name": "half_rotation_matrix",
+    "line": 573,
+    "sha256": "db2b5e8d3f2beadca8aefc20718609beed66a60b2dc41771eb368985982455d5"
+  }
+]

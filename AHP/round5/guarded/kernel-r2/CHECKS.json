@@ -1,0 +1,51 @@
+{
+  "closedGoal": "none",
+  "finalPathFreshlyCompiled": true,
+  "pinSHA256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "pinExactPrefix": true,
+  "inheritedDraftExactCopy": true,
+  "round4RefuteExactPrefix": true,
+  "inheritedModelsRecompiledAsPartOfInherited": true,
+  "mainDeclaration": "AdalyFormal.Round5.Guarded.KernelR2.actual_schur_separation",
+  "mainAxioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "mainScope": "Conditional actual-carrier Schur separation; lattice realization NOT proved.",
+  "newLocalDeclarations": 22,
+  "runs": [
+    {
+      "file": "AHP/round5/guarded/kernel-r2/Inherited.lean",
+      "command": "AHP/round3/lean1.sh AHP/round5/guarded/kernel-r2/Inherited.lean",
+      "exitCode": 0,
+      "sha256": "4c22ccb592943efd0e4d9421d92afe7c60f91ea2586a736b0d5e19b8c2a95286",
+      "sourceLogExitOrder": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "localDeclarations": 157,
+      "dependencyRecords": 176,
+      "allLocalDeclarationsPrinted": true,
+      "allDependenciesPermitted": true,
+      "diagnostics": [],
+      "forbiddenTokens": []
+    },
+    {
+      "file": "AHP/round5/guarded/kernel-r2/Attempt.lean",
+      "command": "AHP/round3/lean1.sh AHP/round5/guarded/kernel-r2/Attempt.lean",
+      "exitCode": 0,
+      "sha256": "600d01a0b80ae6e6eeb7d4a9d991c7cd24a637f614c8f7ea7e9259d9c8a165f7",
+      "sourceLogExitOrder": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "localDeclarations": 179,
+      "dependencyRecords": 198,
+      "allLocalDeclarationsPrinted": true,
+      "allDependenciesPermitted": true,
+      "diagnostics": [],
+      "forbiddenTokens": []
+    }
+  ]
+}

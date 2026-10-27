@@ -1,0 +1,5 @@
+'AdalyFormal.Fidelity.SheetVariants.global_imp_perCube' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.globalClass_imp_frozenClass' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.global_flat' depends on axioms: [propext, Classical.choice, Quot.sound]

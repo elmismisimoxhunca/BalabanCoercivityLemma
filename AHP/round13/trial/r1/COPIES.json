@@ -1,0 +1,47 @@
+[
+  {
+    "source": "AHP/round12/shared/noncancel/R2_RightFamily.lean",
+    "source_sha256": "53dd048a1fd668e42110ce58fd83f7a05bdbebf8c57d87ffc45dcc7d6b37de17",
+    "source_first_line": 1,
+    "source_last_line": 693,
+    "fragment_sha256": "53dd048a1fd668e42110ce58fd83f7a05bdbebf8c57d87ffc45dcc7d6b37de17",
+    "fragment_bytes": 30535,
+    "destination_first_line": 1
+  },
+  {
+    "source": "AHP/round12/shared/noncancel/R2_Boundary.lean",
+    "source_sha256": "3c790eae0be27c2ff45ca498ff6ec33a8475e0b83433f986ef3ad20a1632a910",
+    "source_first_line": 2,
+    "source_last_line": 135,
+    "fragment_sha256": "37b102bec5bfab76ddbcdbcdf0def6ad5a682c7f45864a947f8dc6c16351f3de",
+    "fragment_bytes": 5779,
+    "destination_first_line": 695
+  },
+  {
+    "source": "AHP/round12/shared/noncancel/R2_Mass.lean",
+    "source_sha256": "4c29e43be2de023705639c6ed7ebd47e6e01719a1cfdece7dab6a08ba6178cf8",
+    "source_first_line": 2,
+    "source_last_line": 91,
+    "fragment_sha256": "e22789f8e423c9e886ceddf4ed68cad4e074e4afa53492379c5d199400bc16e5",
+    "fragment_bytes": 4126,
+    "destination_first_line": 830
+  },
+  {
+    "source": "AHP/round12/shared/noncancel/R2_StarLocal.lean",
+    "source_sha256": "31b27325a8795d0d0af68398818c38c8d0e028097e65e873f8862792376344ad",
+    "source_first_line": 2,
+    "source_last_line": 306,
+    "fragment_sha256": "c3afc03978ab3f48617c698b58508b07e7ec3c757b0f1bd67388cd4e5ce9cb3a",
+    "fragment_bytes": 13490,
+    "destination_first_line": 921
+  },
+  {
+    "source": "AHP/round12/shared/kernel/R2_FirstCrossing.lean",
+    "source_sha256": "11eb1086b9c6b0f1434e3729abcdae395807e746e135ef1d2fda40e712d928a6",
+    "source_first_line": 975,
+    "source_last_line": 992,
+    "fragment_sha256": "602019e2fd65868ee176c032ef77799edec6c864c76fa4fb1639082980259117",
+    "fragment_bytes": 739,
+    "destination_first_line": 1227
+  }
+]

@@ -1,0 +1,282 @@
+namespace AdalyFormal.Round13.Detection.ColorArea
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 RMap RMap_coe_apply)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.GaugeCov
+open AdalyFormal.D1Literal (uθ uMat)
+open AdalyFormal.Round10.Dictionary.Color
+open AdalyFormal.Round10.Dictionary.ColorObstruction
+open AdalyFormal.Round10.Dictionary.Source (neutralCoord)
+open AdalyFormal.Round9.Guarded.QualitativeR2 (flipElt)
+variable {L : PeriodicLatticeExtent}
+attribute [local instance] Classical.propDecidable
+
+/-- The full scalar bond array is masked to the actual touching-bond carrier.
+Atoms at bonds outside that carrier are identically zero, not omitted silently. -/
+def colorCarrier (G : TowerGeom L) (X : SuTwo) : (Bond L → ℝ) →ₗ[ℝ] ↥(bondSupp G) where
+  toFun f := ⟨WithLp.toLp 2 (fun e => if e ∈ bondsOm0 G then f e • X else 0), by
+    intro e he
+    simp [he]⟩
+  map_add' f g := by
+    apply Subtype.ext
+    apply PiLp.ext
+    intro e
+    by_cases he : e ∈ bondsOm0 G <;> simp [he, add_smul]
+  map_smul' r f := by
+    apply Subtype.ext
+    apply PiLp.ext
+    intro e
+    by_cases he : e ∈ bondsOm0 G <;> simp [he, smul_smul]
+
+@[simp] theorem colorCarrier_apply (G : TowerGeom L) (X : SuTwo)
+    (f : Bond L → ℝ) (e : Bond L) :
+    ((colorCarrier G X f : ↥(bondSupp G)) : BondFnL2 L) e =
+      if e ∈ bondsOm0 G then f e • X else 0 := rfl
+
+theorem colorCarrier_gauge (G : TowerGeom L) (X : SuTwo) (f : Bond L → ℝ)
+    (g : Matrix.specialUnitaryGroup (Fin 2) ℂ) :
+    adEL (constGauge g) G (colorCarrier G X f) = colorCarrier G (RMap g X) f := by
+  apply Subtype.ext
+  apply PiLp.ext
+  intro e
+  change RMap g (if e ∈ bondsOm0 G then f e • X else 0) = _
+  by_cases he : e ∈ bondsOm0 G <;> simp [he, map_smul]
+
+theorem colorCarrier_neg (G : TowerGeom L) (X : SuTwo) (f : Bond L → ℝ) :
+    colorCarrier G (-X) f = -colorCarrier G X f := by
+  apply Subtype.ext
+  apply PiLp.ext
+  intro e
+  by_cases he : e ∈ bondsOm0 G <;> simp [he]
+
+theorem half_pauliE2 : RMap (uθ (Real.pi / 2)) pauliE2 = -pauliE2 := by
+  apply Subtype.ext
+  rw [RMap_coe_apply, AdalyFormal.Round10.Dictionary.half_rotation_matrix]
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [pauliE2, AdalyFormal.Balaban.CovariantOperators.witnessM,
+      Matrix.mul_apply, Fin.sum_univ_two, Matrix.conjTranspose_apply]
+
+theorem flip_pauliE2 : RMap flipElt pauliE2 = pauliE2 := by
+  apply Subtype.ext
+  rw [flip_matrix]
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [pauliE2, AdalyFormal.Balaban.CovariantOperators.witnessM]
+
+/-- The quarter rotation is used exactly, not through a numerical phase. -/
+theorem quarter_pauliE1 : RMap (uθ (Real.pi / 4)) pauliE1 = -pauliE2 := by
+  apply Subtype.ext
+  rw [RMap_coe_apply]
+  change uMat (Real.pi / 4) * (pauliE1 : Matrix (Fin 2) (Fin 2) ℂ) *
+    (uMat (Real.pi / 4))ᴴ = _
+  have hp : Complex.exp ((Real.pi : ℂ) / 4 * Complex.I) *
+      Complex.exp ((Real.pi : ℂ) / 4 * Complex.I) = Complex.I := by
+    rw [← Complex.exp_add]
+    convert Complex.exp_pi_div_two_mul_I using 1
+    congr 1
+    ring
+  have hm : Complex.exp (-((Real.pi : ℂ) / 4 * Complex.I)) *
+      Complex.exp (-((Real.pi : ℂ) / 4 * Complex.I)) = -Complex.I := by
+    rw [← Complex.exp_add]
+    convert Complex.exp_neg_pi_div_two_mul_I using 1
+    congr 1
+    ring
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [uMat, pauliE1, pauliE1Val, pauliE2, AdalyFormal.Balaban.CovariantOperators.witnessM,
+      Matrix.mul_apply, Fin.sum_univ_two, Matrix.conjTranspose_apply, Complex.ofReal_div,
+      ← Complex.exp_conj, map_neg, map_mul, map_ofNat]
+  · calc
+      _ = Complex.I * (Complex.exp ((Real.pi : ℂ) / 4 * Complex.I) *
+          Complex.exp ((Real.pi : ℂ) / 4 * Complex.I)) := by ring
+      _ = _ := by rw [hp]; simp
+  · calc
+      _ = Complex.I * (Complex.exp (-((Real.pi : ℂ) / 4 * Complex.I)) *
+          Complex.exp (-((Real.pi : ℂ) / 4 * Complex.I))) := by ring
+      _ = _ := by rw [hm]; simp
+
+
+theorem quarter_pauliE2 : RMap (uθ (Real.pi / 4)) pauliE2 = pauliE1 := by
+  apply Subtype.ext
+  rw [RMap_coe_apply]
+  change uMat (Real.pi / 4) * (pauliE2 : Matrix (Fin 2) (Fin 2) ℂ) *
+    (uMat (Real.pi / 4))ᴴ = _
+  have hp : Complex.exp ((Real.pi : ℂ) / 4 * Complex.I) *
+      Complex.exp ((Real.pi : ℂ) / 4 * Complex.I) = Complex.I := by
+    rw [← Complex.exp_add]
+    convert Complex.exp_pi_div_two_mul_I using 1
+    congr 1
+    ring
+  have hm : Complex.exp (-((Real.pi : ℂ) / 4 * Complex.I)) *
+      Complex.exp (-((Real.pi : ℂ) / 4 * Complex.I)) = -Complex.I := by
+    rw [← Complex.exp_add]
+    convert Complex.exp_neg_pi_div_two_mul_I using 1
+    congr 1
+    ring
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [uMat, pauliE1, pauliE1Val, pauliE2, AdalyFormal.Balaban.CovariantOperators.witnessM,
+      Matrix.mul_apply, Fin.sum_univ_two, Matrix.conjTranspose_apply, Complex.ofReal_div,
+      ← Complex.exp_conj, map_neg, map_mul, map_ofNat, hp, hm]
+
+theorem color_one_zero (G : TowerGeom L) (a : ℝ) (f : Bond L → ℝ) :
+    flatJet G a (colorCarrier G pauliE1 f) = 0 := by
+  apply flatJet_single_color_zero
+  · change adEL (constGauge _) G _ = _
+    rw [colorCarrier_gauge, half_pauliE1, colorCarrier_neg]
+  · right
+    change adEL (constGauge flipElt) G _ = _
+    rw [colorCarrier_gauge, flip_pauliE1, colorCarrier_neg]
+
+theorem color_two_zero (G : TowerGeom L) (a : ℝ) (g : Bond L → ℝ) :
+    flatJet G a (colorCarrier G pauliE2 g) = 0 := by
+  apply flatJet_single_color_zero
+  · change adEL (constGauge _) G _ = _
+    rw [colorCarrier_gauge, half_pauliE2, colorCarrier_neg]
+  · left
+    change adEL (constGauge flipElt) G _ = _
+    rw [colorCarrier_gauge, flip_pauliE2]
+
+theorem color_sum_charged (G : TowerGeom L) (f g : Bond L → ℝ) :
+    halfE G (colorCarrier G pauliE1 f + colorCarrier G pauliE2 g) =
+      -(colorCarrier G pauliE1 f + colorCarrier G pauliE2 g) := by
+  change adEL (constGauge _) G _ = _
+  rw [map_add, colorCarrier_gauge, colorCarrier_gauge, half_pauliE1, half_pauliE2,
+    colorCarrier_neg, colorCarrier_neg, neg_add]
+
+theorem quarter_axis : RMap (uθ (Real.pi / 4)) pauliE3 = pauliE3 := by
+  apply Subtype.ext
+  rw [RMap_coe_apply]
+  change uMat (Real.pi / 4) * (pauliE3 : Matrix (Fin 2) (Fin 2) ℂ) *
+    (uMat (Real.pi / 4))ᴴ = _
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [uMat, pauliE3, AdalyFormal.Balaban.CovariantOperators.suTwoWitness,
+      AdalyFormal.Balaban.CovariantOperators.suTwoWitnessVal,
+      Matrix.mul_apply, Fin.sum_univ_two, Matrix.conjTranspose_apply, Complex.ofReal_div,
+      ← Complex.exp_conj, Complex.exp_neg, map_ofNat]
+  all_goals field_simp
+
+theorem flatJet_color_quarter (G : TowerGeom L) (a : ℝ) (f g : Bond L → ℝ) :
+    flatJet G a (colorCarrier G pauliE1 g - colorCarrier G pauliE2 f) =
+      flatJet G a (colorCarrier G pauliE1 f + colorCarrier G pauliE2 g) := by
+  have h := flatJet_gauge G a (uθ (Real.pi / 4))
+    (colorCarrier G pauliE1 f + colorCarrier G pauliE2 g)
+  rw [map_add, colorCarrier_gauge, colorCarrier_gauge, quarter_pauliE1, quarter_pauliE2,
+    colorCarrier_neg, add_comm, ← sub_eq_add_neg] at h
+  rw [h]
+  apply PiLp.ext
+  intro p
+  change RMap (uθ (Real.pi / 4))
+    (flatJet G a (colorCarrier G pauliE1 f + colorCarrier G pauliE2 g) p) = _
+  rw [flatJet_charged_neutral G a _ (color_sum_charged G f g) p, map_smul, quarter_axis]
+
+/-- Exact finite area formula for the ENTIRE genuine dressed jet.
+The coefficient fields are actual two-bond experiments, not free parameters. -/
+theorem flatJet_area (G : TowerGeom L) (a : ℝ) (f g : Bond L → ℝ) :
+    flatJet G a (colorCarrier G pauliE1 f + colorCarrier G pauliE2 g) =
+      (1 / 2 : ℝ) • ∑ e : Bond L, ∑ d : Bond L,
+        (f e * g d - g e * f d) •
+          flatJet G a (colorCarrier G pauliE1 (Pi.single e 1) +
+            colorCarrier G pauliE2 (Pi.single d 1)) := by
+  classical
+  exact Area.quadratic_area (flatJet G a) (flatJet_quad G a)
+    (colorCarrier G pauliE1) (colorCarrier G pauliE2)
+    (color_one_zero G a) (color_two_zero G a) (flatJet_color_quarter G a) f g
+
+/-- Physical scalar color coordinates; Pauli E1 is the imaginary charged entry. -/
+def imagPart (G : TowerGeom L) (u : ↥(bondSupp G)) (e : Bond L) : ℝ :=
+  (((u : BondFnL2 L) e : SuTwo) : Matrix (Fin 2) (Fin 2) ℂ) 0 1 |>.im
+
+def realPart (G : TowerGeom L) (u : ↥(bondSupp G)) (e : Bond L) : ℝ :=
+  (((u : BondFnL2 L) e : SuTwo) : Matrix (Fin 2) (Fin 2) ℂ) 0 1 |>.re
+
+theorem half_negative_diag (X : SuTwo) (hX : RMap (uθ (Real.pi / 2)) X = -X) :
+    (X : Matrix (Fin 2) (Fin 2) ℂ) 0 0 = 0 := by
+  have he := congrArg (fun Y : SuTwo => (Y : Matrix (Fin 2) (Fin 2) ℂ) 0 0) hX
+  rw [RMap_coe_apply, AdalyFormal.Round10.Dictionary.half_rotation_matrix] at he
+  simp [Matrix.mul_apply, Matrix.vecMul, dotProduct, Fin.sum_univ_two,
+    Matrix.conjTranspose_apply, mul_assoc, mul_comm] at he
+  rw [← mul_assoc, Complex.I_mul_I, neg_one_mul] at he
+  linear_combination (-1 / 2 : ℂ) * he
+
+/-- Every charged physical carrier vector is exactly the two scalar colors used above. -/
+theorem carrier_color_decompose (G : TowerGeom L) (u : ↥(bondSupp G))
+    (hu : halfE G u = -u) :
+    u = colorCarrier G pauliE1 (imagPart G u) + colorCarrier G pauliE2 (realPart G u) := by
+  apply Subtype.ext
+  apply PiLp.ext
+  intro e
+  change (u : BondFnL2 L) e =
+    (if e ∈ bondsOm0 G then imagPart G u e • pauliE1 else 0) +
+    (if e ∈ bondsOm0 G then realPart G u e • pauliE2 else 0)
+  by_cases he : e ∈ bondsOm0 G
+  · simp only [if_pos he]
+    have hh : RMap (uθ (Real.pi / 2)) ((u : BondFnL2 L) e) = -((u : BondFnL2 L) e) :=
+      congrArg (fun w : ↥(bondSupp G) => (w : BondFnL2 L) e) hu
+    have hd := suTwo_decompose ((u : BondFnL2 L) e)
+    rw [half_negative_diag _ hh] at hd
+    simpa only [Complex.zero_im, zero_smul, add_zero, imagPart, realPart] using hd
+  · simp only [if_neg he, zero_add]
+    exact u.property e he
+
+/-- Canonical skew coefficients of the actual complete jet, at a genuine BIdx row. -/
+def areaCoefficient (G : TowerGeom L) (a : ℝ) (p : BIdx G) (e d : Bond L) : ℝ :=
+  neutralCoord (flatJet G a
+    (colorCarrier G pauliE1 (Pi.single e 1) + colorCarrier G pauliE2 (Pi.single d 1)) p)
+
+theorem areaCoefficient_skew (G : TowerGeom L) (a : ℝ) (p : BIdx G) (e d : Bond L) :
+    areaCoefficient G a p d e = -areaCoefficient G a p e d := by
+  classical
+  obtain ⟨B, hB, hskew⟩ := Area.mixed_alternating (flatJet G a) (flatJet_quad G a)
+    (colorCarrier G pauliE1) (colorCarrier G pauliE2)
+    (color_one_zero G a) (color_two_zero G a) (flatJet_color_quarter G a)
+  unfold areaCoefficient
+  rw [hB, hB, hskew (Pi.single e 1) (Pi.single d 1)]
+  simp [neutralCoord]
+
+theorem areaCoefficient_diagonal (G : TowerGeom L) (a : ℝ) (p : BIdx G) (e : Bond L) :
+    areaCoefficient G a p e e = 0 := by
+  have h := areaCoefficient_skew G a p e e
+  linarith
+
+/-- Exact actual-row formula for an arbitrary charged carrier, with W and C2 retained. -/
+theorem neutralJet_area (G : TowerGeom L) (a : ℝ) (u : ↥(bondSupp G))
+    (hu : halfE G u = -u) (p : BIdx G) :
+    neutralCoord (flatJet G a u p) = (1 / 2 : ℝ) * ∑ e : Bond L, ∑ d : Bond L,
+      (imagPart G u e * realPart G u d - realPart G u e * imagPart G u d) *
+        areaCoefficient G a p e d := by
+  classical
+  have h := flatJet_area G a (imagPart G u) (realPart G u)
+  rw [← carrier_color_decompose G u hu] at h
+  have hp := congrArg (fun z : FSp G => neutralCoord (z p)) h
+  simpa only [PiLp.smul_apply, WithLp.ofLp_sum, Finset.sum_apply, neutralCoord, inner_smul_right,
+    inner_sum, smul_eq_mul, areaCoefficient] using hp
+
+#print axioms imagPart
+#print axioms realPart
+#print axioms half_negative_diag
+#print axioms carrier_color_decompose
+#print axioms areaCoefficient
+#print axioms areaCoefficient_skew
+#print axioms areaCoefficient_diagonal
+#print axioms neutralJet_area
+#print axioms colorCarrier
+#print axioms colorCarrier_apply
+#print axioms colorCarrier_gauge
+#print axioms colorCarrier_neg
+#print axioms half_pauliE2
+#print axioms flip_pauliE2
+#print axioms quarter_pauliE1
+#print axioms quarter_pauliE2
+#print axioms color_one_zero
+#print axioms color_two_zero
+#print axioms color_sum_charged
+#print axioms quarter_axis
+#print axioms flatJet_color_quarter
+#print axioms flatJet_area
+end AdalyFormal.Round13.Detection.ColorArea

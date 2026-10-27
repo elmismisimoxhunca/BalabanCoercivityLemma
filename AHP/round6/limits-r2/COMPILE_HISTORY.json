@@ -1,0 +1,61 @@
+[
+  {
+    "file": "AHP/round6/limits-r2/BoundaryCheck.lean",
+    "command": "AHP/round3/lean1.sh AHP/round6/limits-r2/BoundaryCheck.lean",
+    "exitCode": 1,
+    "bashTimedOut": false,
+    "sourceSha256": "a426b95cdff6757a7c8b2b57b43e44bf8f1effd048ac3f8dab7d27cdc13bdb26",
+    "logSha256": "0afa5fbf7266a145973b069b5f4d80a8665373a25a40eda40cbff4800791c54e",
+    "sourceMtimeNs": 1792666019639480566,
+    "logMtimeNs": 1792667209284351637,
+    "exitMtimeNs": 1792667209864357251,
+    "diagnostics": [
+      "/home/sebastian/BalabanCoercivityLemma/AHP/round6/limits-r2/BoundaryCheck.lean:2638:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class",
+      "/home/sebastian/BalabanCoercivityLemma/AHP/round6/limits-r2/BoundaryCheck.lean:2636:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (16000000) has been reached"
+    ],
+    "finalEvidenceRetained": false
+  },
+  {
+    "file": "AHP/round6/limits-r2/BoundaryCheck2.lean",
+    "command": "AHP/round3/lean1.sh AHP/round6/limits-r2/BoundaryCheck2.lean",
+    "exitCode": 0,
+    "bashTimedOut": false,
+    "sourceSha256": "7d5455ccd1ff774f225d8580ce6e1c81accb5580e141f82568e87772280d3547",
+    "logSha256": "a3346e6ab46290747c03f934081e724c4c53a5059a618df18c09575ce1d0f55c",
+    "sourceMtimeNs": 1792667276577002949,
+    "logMtimeNs": 1792667456670801770,
+    "exitMtimeNs": 1792667456972858501,
+    "diagnostics": [],
+    "finalEvidenceRetained": false
+  },
+  {
+    "file": "AHP/round6/limits-r2/SubspaceCheck.lean",
+    "command": "AHP/round3/lean1.sh AHP/round6/limits-r2/SubspaceCheck.lean",
+    "exitCode": 0,
+    "bashTimedOut": false,
+    "sourceSha256": "d2a29e4d4ae8a1d0f90bff10df816e346dcdcd6ffbd36126b42a7515ca9a9a9f",
+    "logSha256": "16b3aca51a1933be66484dcfa7fe440b36edab423964b8e58dc7f9fd4e7b6087",
+    "sourceMtimeNs": 1792667621722142731,
+    "logMtimeNs": 1792667748585818512,
+    "exitMtimeNs": 1792667748862195186,
+    "diagnostics": [
+      "/home/sebastian/BalabanCoercivityLemma/AHP/round6/limits-r2/SubspaceCheck.lean:2795:14: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead"
+    ],
+    "finalEvidenceRetained": false
+  },
+  {
+    "file": "AHP/round6/limits-r2/Attempt.lean",
+    "command": "AHP/round3/lean1.sh AHP/round6/limits-r2/Attempt.lean",
+    "exitCode": 0,
+    "bashTimedOut": false,
+    "sourceSha256": "43c3bd051cf4ec664e8ba2d21d0bc0b7740f35ddf30a941e0fcc73eba258f34a",
+    "logSha256": "691b54df662f5624443e5ff07e0a59a83bae4abda49277a37de5774e3d728a3f",
+    "sourceMtimeNs": 1792667836417640362,
+    "logMtimeNs": 1792667931512707555,
+    "exitMtimeNs": 1792667931797744363,
+    "diagnostics": [
+      "/home/sebastian/BalabanCoercivityLemma/AHP/round6/limits-r2/Attempt.lean:2828:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead."
+    ],
+    "finalEvidenceRetained": true
+  }
+]

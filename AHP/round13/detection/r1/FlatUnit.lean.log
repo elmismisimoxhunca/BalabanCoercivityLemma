@@ -1,0 +1,4 @@
+'AdalyFormal.Round13.Detection.flat_N_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round13.Detection.cofinal_flat_N_units' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dil_flat_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round9.Guarded.AnalyticR2.dil_Qs_inj' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,32 @@
+Round2.S1.P428TouchConsistent : Prop
+Round2.S1.TouchCoverageCollapse : Prop
+Round2.S1.P428Target8Extreme : Prop
+Round2.S1.P428Target8Shell : Prop
+Round2.S1.GoalPos1 : Prop
+Round2.S1.GoalNeg1 : Prop
+Round2.S1.GoalPos2 : Prop
+Round2.S1.GoalNeg2 : Prop
+Round2.S1.GoalPos3 : Prop
+Round2.S1.GoalNeg3 : Prop
+'Round2.S1.TouchBond' depends on axioms: [propext, Quot.sound]
+'Round2.S1.plaqCorner' depends on axioms: [propext, Quot.sound]
+'Round2.S1.CoversPlaqCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CurlReadsTouch' depends on axioms: [propext, Quot.sound]
+'Round2.S1.PerCubeRegularTouch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ClassCoupledCorner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.selCorner' depends on axioms: [propext, Quot.sound]
+'Round2.S1.P428TouchConsistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ExtremeBase' does not depend on any axioms
+'Round2.S1.P428Target8Extreme' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.TouchCoverageCollapse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ReadBond' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.CurlReadsRead' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.PerCubeRegularShell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.ClassCoupledShell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.P428Target8Shell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalPos3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Round2.S1.GoalNeg3' depends on axioms: [propext, Classical.choice, Quot.sound]

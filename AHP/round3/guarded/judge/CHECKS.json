@@ -1,0 +1,5302 @@
+{
+  "checksPass": true,
+  "round2PinExactBytePrefix": true,
+  "round2PinSHA256": "cb10c63af2e2a51f4f4a636f36933c071d2cbdccd15aacb6837d6cd15cdd5656",
+  "round3PinSHA256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+  "negativeGoalsLiteralNegations": true,
+  "verbatimPinCopies": [
+    {
+      "name": "PlaqSel",
+      "pinLine": 31,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 29,
+      "exact": true
+    },
+    {
+      "name": "selIn",
+      "pinLine": 33,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 32,
+      "exact": true
+    },
+    {
+      "name": "selAll",
+      "pinLine": 35,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 34,
+      "exact": true
+    },
+    {
+      "name": "DeltaS",
+      "pinLine": 40,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 39,
+      "exact": true
+    },
+    {
+      "name": "DpiFullS",
+      "pinLine": 43,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 43,
+      "exact": true
+    },
+    {
+      "name": "DpiFullS_symm",
+      "pinLine": 46,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 46,
+      "exact": true
+    },
+    {
+      "name": "JfS",
+      "pinLine": 55,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 56,
+      "exact": true
+    },
+    {
+      "name": "dataS",
+      "pinLine": 58,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 60,
+      "exact": true
+    },
+    {
+      "name": "dataS_laws",
+      "pinLine": 62,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 64,
+      "exact": true
+    },
+    {
+      "name": "G1invS",
+      "pinLine": 69,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 71,
+      "exact": true
+    },
+    {
+      "name": "H1inS",
+      "pinLine": 72,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 77,
+      "exact": true
+    },
+    {
+      "name": "NmatS",
+      "pinLine": 80,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 85,
+      "exact": true
+    },
+    {
+      "name": "firstTermS",
+      "pinLine": 83,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 88,
+      "exact": true
+    },
+    {
+      "name": "genFormS",
+      "pinLine": 86,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 92,
+      "exact": true
+    },
+    {
+      "name": "InstIneqS",
+      "pinLine": 90,
+      "source": "lean/src/D1Lit.lean",
+      "sourceLine": 96,
+      "exact": true
+    },
+    {
+      "name": "InstIneqSG",
+      "pinLine": 100,
+      "source": "lean/src/D2Cons.lean",
+      "sourceLine": 56,
+      "exact": true
+    },
+    {
+      "name": "CoercG8AtSG",
+      "pinLine": 104,
+      "source": "lean/src/D2Cons.lean",
+      "sourceLine": 60,
+      "exact": true
+    },
+    {
+      "name": "P428Target8SG",
+      "pinLine": 113,
+      "source": "lean/src/D2Cons.lean",
+      "sourceLine": 70,
+      "exact": true
+    },
+    {
+      "name": "GuardResidualT",
+      "pinLine": 121,
+      "source": "lean/src/GdR5a.lean",
+      "sourceLine": 54,
+      "exact": true
+    },
+    {
+      "name": "GShape",
+      "pinLine": 133,
+      "source": "lean/src/DrEquiv.lean",
+      "sourceLine": 33,
+      "exact": true
+    },
+    {
+      "name": "CPen",
+      "pinLine": 145,
+      "source": "lean/src/DrEquiv.lean",
+      "sourceLine": 51,
+      "exact": true
+    },
+    {
+      "name": "GuardPencilT",
+      "pinLine": 151,
+      "source": "lean/src/DrEquiv.lean",
+      "sourceLine": 99,
+      "exact": true
+    },
+    {
+      "name": "response",
+      "pinLine": 273,
+      "source": "AHP/round2/guarded/r2-prove/Attempt.lean",
+      "sourceLine": 281,
+      "exact": true
+    },
+    {
+      "name": "boundaryShift",
+      "pinLine": 290,
+      "source": "AHP/round2/guarded/r2-prove/Attempt.lean",
+      "sourceLine": 409,
+      "exact": true
+    },
+    {
+      "name": "localCorrected",
+      "pinLine": 293,
+      "source": "AHP/round2/guarded/r2-prove/Attempt.lean",
+      "sourceLine": 413,
+      "exact": true
+    },
+    {
+      "name": "CBoundaryResponse",
+      "pinLine": 299,
+      "source": "AHP/round2/guarded/r2-prove/Attempt.lean",
+      "sourceLine": 534,
+      "exact": true
+    },
+    {
+      "name": "CNoBoundaryReturn",
+      "pinLine": 306,
+      "source": "AHP/round2/guarded/r2-prove/Attempt.lean",
+      "sourceLine": 558,
+      "exact": true
+    }
+  ],
+  "files": [
+    {
+      "name": "pin",
+      "original": "AHP/round3/guarded/pin/Statement.lean",
+      "checkedCopy": "AHP/round3/guarded/judge/pin.lean",
+      "sha256": "0a06554ee453ebf71782165723546c7fbb8f69b143a004f7d7c4c39deb53dad7",
+      "exactCopy": true,
+      "completePinBytePrefix": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "exitCode": 0,
+      "freshTimestampOrder": true,
+      "diagnostics": [],
+      "localDeclarationCount": 42,
+      "allLocalDeclarationsPrinted": true,
+      "recordCount": 42,
+      "distinctRecordCount": 42,
+      "axiomsStandard": true,
+      "recordsMatchBuilderLog": true,
+      "reusedRound2DeclarationsVerbatim": [
+        "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+        "AdalyFormal.Round2.Guarded.Pin.selIn",
+        "AdalyFormal.Round2.Guarded.Pin.selAll",
+        "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+        "AdalyFormal.Round2.Guarded.Pin.JfS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+        "AdalyFormal.Round2.Guarded.Pin.G1invS",
+        "AdalyFormal.Round2.Guarded.Pin.H1inS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+        "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+        "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+        "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+        "AdalyFormal.Round2.Guarded.Pin.GShape",
+        "AdalyFormal.Round2.Guarded.Pin.CPen",
+        "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+        "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+        "AdalyFormal.Round2.Guarded.Pin.form_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+        "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+        "AdalyFormal.Round2.Guarded.R2Prove.response",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+        "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+        "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn"
+      ],
+      "records": [
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.form_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "r1-prove",
+      "original": "AHP/round3/guarded/r1-prove/Attempt.lean",
+      "checkedCopy": "AHP/round3/guarded/judge/r1-prove.lean",
+      "sha256": "13fbbd1fbf0745cca23449239d9112c2acc689fdcc61ae3fd642f72e29e3205f",
+      "exactCopy": true,
+      "completePinBytePrefix": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "exitCode": 0,
+      "freshTimestampOrder": true,
+      "diagnostics": [],
+      "localDeclarationCount": 75,
+      "allLocalDeclarationsPrinted": true,
+      "recordCount": 89,
+      "distinctRecordCount": 89,
+      "axiomsStandard": true,
+      "recordsMatchBuilderLog": true,
+      "reusedRound2DeclarationsVerbatim": [
+        "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+        "AdalyFormal.Round2.Guarded.Pin.selIn",
+        "AdalyFormal.Round2.Guarded.Pin.selAll",
+        "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+        "AdalyFormal.Round2.Guarded.Pin.JfS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+        "AdalyFormal.Round2.Guarded.Pin.G1invS",
+        "AdalyFormal.Round2.Guarded.Pin.H1inS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+        "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+        "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+        "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+        "AdalyFormal.Round2.Guarded.Pin.GShape",
+        "AdalyFormal.Round2.Guarded.Pin.CPen",
+        "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+        "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+        "AdalyFormal.Round2.Guarded.Pin.form_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+        "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+        "AdalyFormal.Round2.Guarded.R2Prove.response",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+        "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+        "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_of_kernel_zero",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_add_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.inverse_sub_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_sub_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected_eq",
+        "AdalyFormal.Round2.Guarded.R2Prove.carrier_eq_local_add_shift",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_eq_local_add_shift",
+        "AdalyFormal.Round2.Guarded.R2Prove.carrier_isUnit_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos1_iff_boundary_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response"
+      ],
+      "records": [
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.form_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_of_kernel_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_add_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.inverse_sub_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_sub_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.carrier_eq_local_add_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_eq_local_add_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.carrier_isUnit_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos1_iff_boundary_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.offSelectorShell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.V0_le_offSelectorShell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.response_isUnit_of_relative_small",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.response_failure_has_relative_mode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.pencil_isUnit_of_return_offSelectorShell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.CReturnOffSelectorShell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.goalPos2_of_return_offSelectorShell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.Wop_eq_on_selector_shell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.boundaryShift_kills_offSelectorShell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.boundaryShift_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.boundaryShift_range_le_selector_shell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.relativeReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.kernel_iff_relative_neg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.unit_of_relative_norm_lt_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.failure_has_relative_mode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.response_sub_norm_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.relativeReturn_norm_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.pencil_isUnit_of_relative_boundary_smallness",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.guarded_failure_has_relative_boundary_mode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.CRelativeBoundarySmall",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R1Prove.goalPos2_of_relative_boundary_smallness",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.edge_ends_not_om1_of_notIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.Gp_Rproj_lam0",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.Gp_Rproj_out",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.Wop_zero_on_notIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.deltaK_set_congr",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.dataS_Ginv_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.WellDefAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.gradL2_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.Ginv_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.G1inv_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.isG1inv_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Literal.G1invS_spec",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Residual.GShape_imp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Residual.P428Target8SG_iff_pencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "mainDeclaration": "AdalyFormal.Round3.Guarded.R1Prove.goalPos2_of_return_offSelectorShell",
+      "mainLine": 835,
+      "mainTypeSource": "theorem goalPos2_of_return_offSelectorShell (h : GShape CReturnOffSelectorShell) : GoalPos2",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verdict": "does-not-close"
+    },
+    {
+      "name": "r1-refute",
+      "original": "AHP/round3/guarded/r1-refute/Attempt.lean",
+      "checkedCopy": "AHP/round3/guarded/judge/r1-refute.lean",
+      "sha256": "64120c8ccc10e6f9906f3ebf85564744e372ebc18ea68881cec54402e2dc00e4",
+      "exactCopy": true,
+      "completePinBytePrefix": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "exitCode": 0,
+      "freshTimestampOrder": true,
+      "diagnostics": [],
+      "localDeclarationCount": 52,
+      "allLocalDeclarationsPrinted": true,
+      "recordCount": 57,
+      "distinctRecordCount": 57,
+      "axiomsStandard": true,
+      "recordsMatchBuilderLog": true,
+      "reusedRound2DeclarationsVerbatim": [
+        "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+        "AdalyFormal.Round2.Guarded.Pin.selIn",
+        "AdalyFormal.Round2.Guarded.Pin.selAll",
+        "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+        "AdalyFormal.Round2.Guarded.Pin.JfS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+        "AdalyFormal.Round2.Guarded.Pin.G1invS",
+        "AdalyFormal.Round2.Guarded.Pin.H1inS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+        "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+        "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+        "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+        "AdalyFormal.Round2.Guarded.Pin.GShape",
+        "AdalyFormal.Round2.Guarded.Pin.CPen",
+        "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+        "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+        "AdalyFormal.Round2.Guarded.Pin.form_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+        "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+        "AdalyFormal.Round2.Guarded.R2Prove.response",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+        "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+        "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn"
+      ],
+      "records": [
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.form_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.pdist_update_zero_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.lambda_empty_of_escape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.lambda_empty_of_thin_top",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.probeLu",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.probeTower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.probe_torus",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.probe_lambda_empty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.probe_energy_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.probe_not_negative_witness",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR1.probe_instIneq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.InstIneqS_of_no_testfield",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLane.LambdaOK",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLaneG.LambdaOK2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLane2.OnLambdaT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.RegularUPerturbation.bondEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "mainDeclaration": "AdalyFormal.Round3.Guarded.RefuteR1.probe_not_negative_witness",
+      "mainLine": 472,
+      "mainTypeSource": "theorem probe_not_negative_witness {R : ℕ} (hR : 1 ≤ R) :\n    ¬ ∃ (Lam : Set (PeriodicLatticeSite (probeLu R)))\n      (_ : LambdaOK2 2 2 R 1 (probeTower R) Lam)\n      (Bt : Bond (probeLu R) → SuTwo),\n      OnLambdaTildeIn Lam 2 Bt ∧ OnLambdaT Lam Bt ∧ 0 < bondEnergy Bt",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verdict": "does-not-close"
+    },
+    {
+      "name": "r2-prove",
+      "original": "AHP/round3/guarded/r2-prove/Attempt.lean",
+      "checkedCopy": "AHP/round3/guarded/judge/r2-prove.lean",
+      "sha256": "6599414900d3995ec0eb6194cc1fa96488fac4e355bd9634b88d5a0e2ed3779e",
+      "exactCopy": true,
+      "completePinBytePrefix": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "exitCode": 0,
+      "freshTimestampOrder": true,
+      "diagnostics": [],
+      "localDeclarationCount": 79,
+      "allLocalDeclarationsPrinted": true,
+      "recordCount": 121,
+      "distinctRecordCount": 96,
+      "axiomsStandard": true,
+      "recordsMatchBuilderLog": true,
+      "reusedRound2DeclarationsVerbatim": [
+        "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+        "AdalyFormal.Round2.Guarded.Pin.selIn",
+        "AdalyFormal.Round2.Guarded.Pin.selAll",
+        "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+        "AdalyFormal.Round2.Guarded.Pin.JfS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+        "AdalyFormal.Round2.Guarded.Pin.G1invS",
+        "AdalyFormal.Round2.Guarded.Pin.H1inS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+        "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+        "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+        "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+        "AdalyFormal.Round2.Guarded.Pin.GShape",
+        "AdalyFormal.Round2.Guarded.Pin.CPen",
+        "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+        "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+        "AdalyFormal.Round2.Guarded.Pin.form_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+        "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+        "AdalyFormal.Round2.Guarded.R2Prove.response",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+        "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+        "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_of_kernel_zero",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_add_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.inverse_sub_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_sub_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_corrected_of_no_return",
+        "AdalyFormal.Round2.Guarded.R2Prove.exists_response_kernel",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_apply_ne_zero",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected_eq",
+        "AdalyFormal.Round2.Guarded.R2Prove.carrier_eq_local_add_shift",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_eq_local_add_shift",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_kills_V",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_range_le_orthogonal",
+        "AdalyFormal.Round2.Guarded.R2Prove.carrier_isUnit_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_of_no_boundary_return",
+        "AdalyFormal.Round2.Guarded.R2Prove.guarded_failure_forces_boundary_return",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos1_iff_boundary_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_of_no_boundary_return"
+      ],
+      "records": [
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.form_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_of_kernel_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_add_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.inverse_sub_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_sub_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_corrected_of_no_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.exists_response_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_apply_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.carrier_eq_local_add_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_eq_local_add_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_kills_V",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_range_le_orthogonal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.carrier_isUnit_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_of_no_boundary_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.guarded_failure_forces_boundary_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_of_no_boundary_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos1_iff_boundary_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.Ginv_eq_on_V",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Literal.G1invS_spec",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.G1inv_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.isG1inv_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.Ginv_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Residual.GShape_imp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Residual.P428Target8SG_iff_pencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.WellDefAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.V0",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.jetInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.jet_translation_of_jetInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.correction_kills_jetInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.pencil_isUnit_of_inverse_boundary_jetInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.guarded_failure_forces_jet_ball_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.CInverseBoundaryJetInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.goalPos2_of_inverse_boundary_jetInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.correction_kills_of_jet_translation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.interiorInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.jet_translation_of_interiorInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.correction_kills_interiorInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.correction_range_le_interiorInputZero_orthogonal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.pencil_isUnit_of_inverse_boundary_jet_invisible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.pencil_isUnit_of_inverse_boundary_input_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.guarded_failure_forces_interior_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.CInverseBoundaryInputZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R2Prove.goalPos2_of_inverse_boundary_input_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLaneR8.C2fullOf_congr_in",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.Delta2_spec",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.Wop",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.iE",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLaneR8.C2CompL_congr_in",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLaneR8.suCoordInv_apply_congr",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.C2rawB_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.C2CompL_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "mainDeclaration": "AdalyFormal.Round3.Guarded.R2Prove.goalPos2_of_inverse_boundary_jetInputZero",
+      "mainLine": 976,
+      "mainTypeSource": "theorem goalPos2_of_inverse_boundary_jetInputZero\n    (h : GShape CInverseBoundaryJetInputZero) : GoalPos2",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verdict": "does-not-close"
+    },
+    {
+      "name": "r2-refute",
+      "original": "AHP/round3/guarded/r2-refute/Attempt.lean",
+      "checkedCopy": "AHP/round3/guarded/judge/r2-refute.lean",
+      "sha256": "139becc32cb7b989461b3ac9358d3c496d8843425966c6f559a263edb3e1e819",
+      "exactCopy": true,
+      "completePinBytePrefix": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "exitCode": 0,
+      "freshTimestampOrder": true,
+      "diagnostics": [],
+      "localDeclarationCount": 56,
+      "allLocalDeclarationsPrinted": true,
+      "recordCount": 66,
+      "distinctRecordCount": 66,
+      "axiomsStandard": true,
+      "recordsMatchBuilderLog": true,
+      "reusedRound2DeclarationsVerbatim": [
+        "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+        "AdalyFormal.Round2.Guarded.Pin.selIn",
+        "AdalyFormal.Round2.Guarded.Pin.selAll",
+        "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+        "AdalyFormal.Round2.Guarded.Pin.JfS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+        "AdalyFormal.Round2.Guarded.Pin.G1invS",
+        "AdalyFormal.Round2.Guarded.Pin.H1inS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+        "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+        "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+        "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+        "AdalyFormal.Round2.Guarded.Pin.GShape",
+        "AdalyFormal.Round2.Guarded.Pin.CPen",
+        "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+        "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+        "AdalyFormal.Round2.Guarded.Pin.form_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+        "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+        "AdalyFormal.Round2.Guarded.R2Prove.response",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+        "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+        "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn"
+      ],
+      "records": [
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.form_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideLu",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideTower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideLam",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_torus",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_fine_size",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_fine_bound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.zero_coord_le_pdist",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_admissible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideEmb",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_lambda",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideSeed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideBt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_competitor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_probe_geometry_and_competitor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.iv_block",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.pcd_clamp",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.pcd_near",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.pcd_self'",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond_coord_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond_not_mem_staircase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond_not_dropped",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.CovariantOperators.suTwoWitness",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.CovariantOperators.suTwoWitness_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "mainDeclaration": "AdalyFormal.Round3.Guarded.RefuteR2.wide_probe_geometry_and_competitor",
+      "mainLine": 584,
+      "mainTypeSource": "theorem wide_probe_geometry_and_competitor {R : ℕ} (hR : 2 ∣ R) :\n    TorusOK 2 2 (wideLu R) ∧ Admissible 2 2 R 1 (wideTower R) ∧\n    LambdaOK2 2 2 R 1 (wideTower R) (wideLam R) ∧\n    OnLambdaTildeIn (wideLam R) 2 (wideBt R) ∧\n    OnLambdaT (wideLam R) (wideBt R) ∧ 0 < bondEnergy (wideBt R)",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verdict": "does-not-close"
+    },
+    {
+      "name": "r3-prove",
+      "original": "AHP/round3/guarded/r3-prove/Attempt.lean",
+      "checkedCopy": "AHP/round3/guarded/judge/r3-prove.lean",
+      "sha256": "0784988b5252fe245c8b1773218d21b2a96b324ed4d8234ac878eca10357ae3f",
+      "exactCopy": true,
+      "completePinBytePrefix": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "exitCode": 0,
+      "freshTimestampOrder": true,
+      "diagnostics": [],
+      "localDeclarationCount": 79,
+      "allLocalDeclarationsPrinted": true,
+      "recordCount": 114,
+      "distinctRecordCount": 89,
+      "axiomsStandard": true,
+      "recordsMatchBuilderLog": true,
+      "reusedRound2DeclarationsVerbatim": [
+        "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+        "AdalyFormal.Round2.Guarded.Pin.selIn",
+        "AdalyFormal.Round2.Guarded.Pin.selAll",
+        "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+        "AdalyFormal.Round2.Guarded.Pin.JfS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+        "AdalyFormal.Round2.Guarded.Pin.G1invS",
+        "AdalyFormal.Round2.Guarded.Pin.H1inS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+        "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+        "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+        "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+        "AdalyFormal.Round2.Guarded.Pin.GShape",
+        "AdalyFormal.Round2.Guarded.Pin.CPen",
+        "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+        "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+        "AdalyFormal.Round2.Guarded.Pin.form_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+        "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+        "AdalyFormal.Round2.Guarded.R2Prove.response",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+        "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+        "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_of_kernel_zero",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_add_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.inverse_sub_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_sub_apply",
+        "AdalyFormal.Round2.Guarded.R2Prove.unit_corrected_of_no_return",
+        "AdalyFormal.Round2.Guarded.R2Prove.exists_response_kernel",
+        "AdalyFormal.Round2.Guarded.R2Prove.response_apply_ne_zero",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected_eq",
+        "AdalyFormal.Round2.Guarded.R2Prove.carrier_eq_local_add_shift",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_eq_local_add_shift",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_kills_V",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_range_le_orthogonal",
+        "AdalyFormal.Round2.Guarded.R2Prove.carrier_isUnit_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_iff_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_of_no_boundary_return",
+        "AdalyFormal.Round2.Guarded.R2Prove.guarded_failure_forces_boundary_return",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos1_iff_boundary_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response",
+        "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_of_no_boundary_return"
+      ],
+      "records": [
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.form_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_of_kernel_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_add_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.inverse_sub_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_sub_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.unit_corrected_of_no_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.exists_response_kernel",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response_apply_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.carrier_eq_local_add_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_eq_local_add_shift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_kills_V",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift_range_le_orthogonal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.carrier_isUnit_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_iff_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.pencil_isUnit_of_no_boundary_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.guarded_failure_forces_boundary_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_of_no_boundary_return",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos1_iff_boundary_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.Ginv_eq_on_V",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Literal.G1invS_spec",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.G1inv_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.isG1inv_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.Ginv_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Residual.GShape_imp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Residual.P428Target8SG_iff_pencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.WellDefAt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Guarded.V0",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.range_pairing_zero_iff_diagonal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.mixed_boundary_zero_iff_diagonal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.CDiagonalMixedBoundarySourceZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.goalPos2_of_diagonal_mixed_boundary_source_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.inverse_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.shift_zero_iff_range_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.mixedJetSource",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.correction_pairing",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.boundaryShift_symmetric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.localCorrected_symmetric",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.resolvent_pairing_eq_mixed_jet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.no_return_iff_mixed_boundary_source_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.return_norm_sq_eq_mixed_jet",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.pencil_isUnit_of_mixed_boundary_source_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.guarded_failure_forces_positive_mixed_source",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.CMixedBoundarySourceZero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.R3Prove.goalPos2_of_mixed_boundary_source_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.IngredientFamilyR2.BaseDataS.Delta2_spec",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "mainDeclaration": "AdalyFormal.Round3.Guarded.R3Prove.goalPos2_of_diagonal_mixed_boundary_source_zero",
+      "mainLine": 981,
+      "mainTypeSource": "theorem goalPos2_of_diagonal_mixed_boundary_source_zero\n    (h : GShape CDiagonalMixedBoundarySourceZero) : GoalPos2",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verdict": "does-not-close"
+    },
+    {
+      "name": "r3-refute",
+      "original": "AHP/round3/guarded/r3-refute/Attempt.lean",
+      "checkedCopy": "AHP/round3/guarded/judge/r3-refute.lean",
+      "sha256": "5ce077b140883f7295fb2ba389c6e62d766d84c88afe9cb50899b40957a6f562",
+      "exactCopy": true,
+      "completePinBytePrefix": true,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "exitCode": 0,
+      "freshTimestampOrder": true,
+      "diagnostics": [],
+      "localDeclarationCount": 69,
+      "allLocalDeclarationsPrinted": true,
+      "recordCount": 89,
+      "distinctRecordCount": 89,
+      "axiomsStandard": true,
+      "recordsMatchBuilderLog": true,
+      "reusedRound2DeclarationsVerbatim": [
+        "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+        "AdalyFormal.Round2.Guarded.Pin.selIn",
+        "AdalyFormal.Round2.Guarded.Pin.selAll",
+        "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+        "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+        "AdalyFormal.Round2.Guarded.Pin.JfS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS",
+        "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+        "AdalyFormal.Round2.Guarded.Pin.G1invS",
+        "AdalyFormal.Round2.Guarded.Pin.H1inS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+        "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+        "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+        "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+        "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+        "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+        "AdalyFormal.Round2.Guarded.Pin.GShape",
+        "AdalyFormal.Round2.Guarded.Pin.CPen",
+        "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+        "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+        "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+        "AdalyFormal.Round2.Guarded.Pin.form_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+        "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+        "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+        "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+        "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+        "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+        "AdalyFormal.Round2.Guarded.R2Prove.response",
+        "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+        "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+        "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+        "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn"
+      ],
+      "records": [
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalPos2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GoalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CofinalPencilFailure",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS_symm",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS_laws",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.assembly_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.corrected_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.form_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos1_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.residual_pin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.goalNeg1_iff_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg1",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.cofinalPencilFailure_implies_goalNeg2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.response",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.boundaryShift",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.localCorrected",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CBoundaryResponse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.R2Prove.CNoBoundaryReturn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.PlaqSel",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selIn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.selAll",
+          "axioms": []
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DeltaS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.DpiFullS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.JfS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.dataS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.G1invS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.H1inS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.NmatS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.firstTermS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GenS.genFormS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqS",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.InstIneqSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CoercG8AtSG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.P428Target8SG",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardResidualT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GShape",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.CPen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round2.Guarded.Pin.GuardPencilT",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideLu",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideTower",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideLam",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_torus",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_fine_size",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_fine_bound",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.zero_coord_le_pdist",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_admissible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideEmb",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_lambda",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideSeed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wideBt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_competitor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR2.wide_probe_geometry_and_competitor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.iv_block",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.pcd_clamp",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.pcd_near",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.pcd_self'",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond_coord_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond_not_mem_staircase",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.FullReparamC.freeBond_not_dropped",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.CovariantOperators.suTwoWitness",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Balaban.CovariantOperators.suTwoWitness_ne_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_box",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_region_cube",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_cube_neighborhood",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_zero_cube",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_cube_neighborhood_all",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_shift_zero",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_coverage",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.clamp1D",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.coord_box_in",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.coord_box_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.NonVac.isClassCube_of",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.widePattern",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wideU",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_regular",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wideDefectSite",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wideU_nonflat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.Round3.Guarded.RefuteR3.wide_in_class_nonflat_competitor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLaneG.perCubeRegular2_congr",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLane2.ufield_perCubeRegular2",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLane2.Ug_ne_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLane2.Ug",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.StatementLane2.Ufield",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "AdalyFormal.D1Literal.Zb",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "mainDeclaration": "AdalyFormal.Round3.Guarded.RefuteR3.wide_in_class_nonflat_competitor",
+      "mainLine": 924,
+      "mainTypeSource": "theorem wide_in_class_nonflat_competitor {R : ℕ} (hR : 2 ∣ R) (hR2 : 2 ≤ R)\n    {a₀ : ℝ} (ha₀ : 0 < a₀) (V : LinkCfg (scaleUp 2 1 (wideLu R))) :\n    ∃ α ε : ℝ, 0 < α ∧ (12 : ℝ) * 2 * α ≤ a₀ ∧ 0 < ε ∧ ε < 1 ∧\n      TorusOK 2 2 (wideLu R) ∧ Admissible 2 2 R 1 (wideTower R) ∧\n      LambdaOK2 2 2 R 1 (wideTower R) (wideLam R) ∧\n      ClassCoupled 2 2 12 1 (wideTower R) α ((2 : ℝ) ^ 1)⁻¹ (wideU R ε V) ∧\n      OnLambdaTildeIn (wideLam R) 2 (wideBt R) ∧ OnLambdaT (wideLam R) (wideBt R) ∧\n      0 < bondEnergy (wideBt R) ∧\n      ∃ e : Bond (scaleUp 2 1 (wideLu R)), e.1 ∈ (wideTower R).Om 0 ∧ wideU R ε V e ≠ 1",
+      "mainAxioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "verdict": "does-not-close"
+    }
+  ],
+  "totalDependencyRecordsIncludingRepetitions": 578,
+  "allAxiomsStandard": true,
+  "closedGoals": [],
+  "status": "open",
+  "limitations": "Artifact audit and independent Lean replay of partial results only. No numerical replay, source-image rereading, full build, or positive/negative headline proof."
+}

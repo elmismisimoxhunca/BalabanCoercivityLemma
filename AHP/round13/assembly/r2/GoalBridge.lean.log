@@ -1,0 +1,3 @@
+'AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

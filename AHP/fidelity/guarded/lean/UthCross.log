@@ -1,0 +1,3 @@
+'AdalyFormal.FidelityGuarded.Ginv_lit_psd_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.FidelityGuarded.Uth_hits_nonunit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.FidelityGuarded.Uth_singular_is_not_a_split' depends on axioms: [propext, Classical.choice, Quot.sound]

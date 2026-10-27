@@ -1,0 +1,26 @@
+[
+  {
+    "source": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+    "start": 412,
+    "endExclusive": 419,
+    "sha256": "cd5e64bcc7e04a20719a5a829afaaf762f0b44d5c9c300a591d53b23a65634b6"
+  },
+  {
+    "source": "AHP/round9/qualitative-r2/Appendix.lean",
+    "start": 1676,
+    "endExclusive": 1692,
+    "sha256": "8db72033e7564f55d005b44537284c4f3165257431ed023423b0087fc6564b71"
+  },
+  {
+    "source": "AHP/round10/shared/dictionary/R3_FreeSource.lean",
+    "start": 841,
+    "endExclusive": 869,
+    "sha256": "d1e9cb141652703efd3816cf54933a333edf49ddf59ad9275a4abd88eca03fcf"
+  },
+  {
+    "source": "AHP/round5/guarded/ivt-r2/Attempt.lean",
+    "start": 997,
+    "endExclusive": 1006,
+    "sha256": "c32f228f7f4e4504ab60a166eab29df53dce949560d2ba4f6ccddf95bfe5c546"
+  }
+]

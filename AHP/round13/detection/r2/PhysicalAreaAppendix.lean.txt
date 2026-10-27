@@ -1,0 +1,118 @@
+namespace AdalyFormal.Round13.Detection.PhysicalArea
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 RMap RMap_mul_apply)
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+open AdalyFormal.GaugeCov
+open AdalyFormal.D1Literal (uθ)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round9.Guarded.AnalyticR1 (TwistSpace)
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round10.Dictionary.Color
+open AdalyFormal.Round10.Dictionary.Source (neutralCoord)
+open AdalyFormal.Round10.Dictionary.FreeSource (CurlDetected)
+open AdalyFormal.Round10.Dictionary.JetDetection (physicalJetAggregate topJetDetected_iff)
+open AdalyFormal.Round10.Nonvanishing.DilatedFlux
+open AdalyFormal.Round10.Assembly.R2 (KernelLine)
+open AdalyFormal.Round13.Detection.ColorArea
+
+/-- Actual transverse sum of the genuine two-bond coefficients. -/
+def aggregateCoefficient {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R)
+    (e d : Bond (L q R)) : ℝ :=
+  ∑ c : Fin (4*q) × Fin (4*q), areaCoefficient (G q R) 1 (topIdx hq hj c) e d
+
+/-- One finite, physically normalized alternating-area sum, without eigenvector normalization. -/
+def areaSum {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R)
+    (u : TwistSpace q R) : ℝ :=
+  ∑ e : Bond (L q R), ∑ d : Bond (L q R),
+    (imagPart (G q R) u e * realPart (G q R) u d -
+      realPart (G q R) u e * imagPart (G q R) u d) * aggregateCoefficient hq hj e d
+
+theorem aggregateCoefficient_skew {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R)
+    (e d : Bond (L q R)) : aggregateCoefficient hq hj d e = -aggregateCoefficient hq hj e d := by
+  unfold aggregateCoefficient
+  calc
+    _ = ∑ c : Fin (4*q) × Fin (4*q), -areaCoefficient (G q R) 1 (topIdx hq hj c) e d :=
+      Finset.sum_congr rfl (fun c _ => areaCoefficient_skew (G q R) 1 (topIdx hq hj c) e d)
+    _ = _ := by rw [Finset.sum_neg_distrib]
+
+theorem aggregateCoefficient_diagonal {q R j : ℕ} (hq : 0 < q)
+    (hj : j < blockCount q R) (e : Bond (L q R)) : aggregateCoefficient hq hj e e = 0 := by
+  simp [aggregateCoefficient, areaCoefficient_diagonal]
+
+/-- Exact equality for the original physical aggregate; this does NOT assert it is nonzero. -/
+theorem physicalJetAggregate_area {q R j : ℕ} (hq : 0 < q)
+    (hj : j < blockCount q R) (u : TwistSpace q R)
+    (hu : halfE (G q R) u = -u) :
+    physicalJetAggregate hq hj u = (1 / 2 : ℝ) * areaSum hq hj u := by
+  classical
+  change (∑ c : Fin (4*q) × Fin (4*q),
+    neutralCoord (flatJet (G q R) 1 u (topIdx hq hj c))) = _
+  simp_rw [neutralJet_area (G q R) 1 u hu]
+  rw [← Finset.mul_sum]
+  congr 1
+  unfold areaSum aggregateCoefficient
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro e _
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro d _
+  rw [Finset.mul_sum]
+
+/-- Chargedness in the ORIGINAL KernelLine supplies the color hypothesis, not detection. -/
+theorem kernelLine_half {q R : ℕ}
+    (V : ℝ → LinkCfg (L q R)) (u : TwistSpace q R) (hline : KernelLine q R V u) :
+    halfE (G q R) u = -u := by
+  have he : halfE (G q R) u =
+      adEL (rotGauge (Real.pi / 4)) (G q R)
+        (adEL (rotGauge (Real.pi / 4)) (G q R) u) := by
+    apply Subtype.ext
+    apply PiLp.ext
+    intro e
+    change RMap (uθ (Real.pi / 2)) ((u : BondFnL2 (L q R)) e) =
+      RMap (uθ (Real.pi / 4)) (RMap (uθ (Real.pi / 4)) ((u : BondFnL2 (L q R)) e))
+    rw [RMap_mul_apply, AdalyFormal.Round12.Kernel.Actual.uθ_add,
+      show Real.pi / 4 + Real.pi / 4 = Real.pi / 2 by ring]
+  exact he.trans hline.2.2.1
+
+/-- The actual crossing generator satisfies this exact alternating-area dictionary. -/
+theorem crossing_physicalJetAggregate_area {q R j : ℕ} (hq : 0 < q)
+    (hj : j < blockCount q R) (V : ℝ → LinkCfg (L q R))
+    (u : TwistSpace q R) (hline : KernelLine q R V u) :
+    physicalJetAggregate hq hj u = (1 / 2 : ℝ) * areaSum hq hj u :=
+  physicalJetAggregate_area hq hj u (kernelLine_half V u hline)
+
+/-- No actual nonvanishing is inferred from the kernel line in this equivalence. -/
+theorem crossing_topJet_iff_area {q R : ℕ} (hq : 0 < q)
+    (V : ℝ → LinkCfg (L q R)) (u : TwistSpace q R) (hline : KernelLine q R V u) :
+    TopJetDetected hq R u ↔ ∃ j : ℕ, ∃ hj : j < blockCount q R, areaSum hq hj u ≠ 0 := by
+  rw [topJetDetected_iff hq R u]
+  apply exists_congr
+  intro j
+  apply exists_congr
+  intro hj
+  rw [crossing_physicalJetAggregate_area hq hj V u hline]
+  simp
+
+/-- Conditional handoff using the flat N unit proved in R1. The area seed is STILL required. -/
+theorem crossing_curlDetected_of_area {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R)
+    (hR18 : 18 ≤ R) (V : ℝ → LinkCfg (L q R))
+    (u : TwistSpace q R) (hline : KernelLine q R V u)
+    (harea : ∃ j : ℕ, ∃ hj : j < blockCount q R, areaSum hq hj u ≠ 0) :
+    CurlDetected q R u :=
+  AdalyFormal.Round13.Detection.curlDetected_of_topJet hq hR hR18 u
+    ((crossing_topJet_iff_area hq V u hline).mpr harea)
+
+#print axioms aggregateCoefficient
+#print axioms areaSum
+#print axioms aggregateCoefficient_skew
+#print axioms aggregateCoefficient_diagonal
+#print axioms physicalJetAggregate_area
+#print axioms kernelLine_half
+#print axioms crossing_physicalJetAggregate_area
+#print axioms crossing_topJet_iff_area
+#print axioms crossing_curlDetected_of_area
+end AdalyFormal.Round13.Detection.PhysicalArea

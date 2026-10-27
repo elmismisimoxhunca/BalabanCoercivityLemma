@@ -1,0 +1,44 @@
+[
+  {
+    "source": "AHP/round13/detection/r2/Area.lean",
+    "start": 16,
+    "end": 3462,
+    "sha256": "151216ba2674094def289c080121ce0866fb8e7ab7d982774e6d39f881de87bb"
+  },
+  {
+    "source": "AHP/round13/detection/r1/ColorTrace.lean",
+    "start": 0,
+    "end": 15677,
+    "sha256": "ff03b264d900317c1290512ead499c4f21e31f3a988de5908861af358d221cc2"
+  },
+  {
+    "source": "AHP/round13/detection/r1/JetBridge.lean",
+    "start": 0,
+    "end": 157099,
+    "sha256": "627d2c956a6909df679f43a76d05f9cb2ab3e7a2558c2332220b9aa84bb8eca8"
+  },
+  {
+    "source": "AHP/round13/detection/r1/ColorTrace.lean",
+    "start": 800,
+    "end": 1759,
+    "sha256": "ccb9b21418c13b3b5c6e67c14918b5866f199e0b1a9e517df29ac0ed816fae70"
+  },
+  {
+    "source": "AHP/round13/detection/r1/ColorTrace.lean",
+    "start": 3192,
+    "end": 13423,
+    "sha256": "fa64836abb3d9ee5bc25955544b7dc77bda9e77434349a72be0cab3dce60863b"
+  },
+  {
+    "source": "AHP/round12/kernel/r2/ActualResponse.lean",
+    "start": 73254,
+    "end": 77160,
+    "sha256": "b8a3873e65e3eb62afca4d931ed4473bbf7909de529d60a8adaa4de452f1d63b"
+  },
+  {
+    "source": "AHP/round12/shared/kernel/R1_ActualKernel.lean",
+    "start": 76040,
+    "end": 76490,
+    "sha256": "d6dce1f895bc30af4a6293a5dd3367e0dfdab2f513d47f000f4a81361ae2018d"
+  }
+]

@@ -1,0 +1,30 @@
+raw Jacobian 0.16
+local eigen min 0.1121300452620243
+{
+  "flat_Q_error": 6.938893903907228e-17,
+  "raw_theta_const_error": 0.0,
+  "J_theta_const_error": 0.0,
+  "W_outside_E_error": 0.0,
+  "source_checks": {
+    "local_min": 0.1121300452620243,
+    "N_min": 0.011893787714567365,
+    "q_rank": 624,
+    "q_rows": 624,
+    "J_norm": 1.0297912326726908,
+    "HtJ_top_norm": 0.31742603018921234,
+    "R_rank": 84,
+    "raw_at_zero": 0.0
+  },
+  "fine_sides": [
+    8,
+    4,
+    4
+  ],
+  "unit_sides": [
+    4,
+    2,
+    2
+  ],
+  "TorusOK_strict_ell_below_each_unit_side": false,
+  "note": "numerical checks only; TorusOK fails and no cofinal class is supplied"
+}

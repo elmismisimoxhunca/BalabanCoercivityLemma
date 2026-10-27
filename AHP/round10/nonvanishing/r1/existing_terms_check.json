@@ -1,0 +1,36 @@
+{
+  "status": "evidence-only",
+  "source": "AHP/round9/analytic-r1/numerics/out/terms_left_R8_p50.json",
+  "rows": [
+    {
+      "k": "-0.392699081698724154807830422909937860524646175",
+      "root": "0.563971517985560843325684912239588741472253171",
+      "number_of_terms": 36,
+      "max_abs_jet_ratio_including_root": "1",
+      "max_abs_jet_ratio_excluding_root": "0.039400511028021034911795634635314838100808173653119202397053190661",
+      "all_jets_bounded_by_first": true,
+      "first_jet_nonzero_floating_point": true,
+      "pairing_to_first_term": "0.97878031476195760359775999827620343836933605340371600505998607071"
+    },
+    {
+      "k": "-0.267000000000000015099033134902128949761390686",
+      "root": "0.557495691512454914044445880353574072812550756",
+      "number_of_terms": 36,
+      "max_abs_jet_ratio_including_root": "1",
+      "max_abs_jet_ratio_excluding_root": "0.054979348591419127770346407114060832245657096320502591731505266732",
+      "all_jets_bounded_by_first": true,
+      "first_jet_nonzero_floating_point": true,
+      "pairing_to_first_term": "0.97058448949942440986122489230582327668511086747249083889055754070"
+    },
+    {
+      "k": "-0.0981747704246810387019576057274844651311615437",
+      "root": "0.56891389322614946221244397147492466887386209",
+      "number_of_terms": 36,
+      "max_abs_jet_ratio_including_root": "1",
+      "max_abs_jet_ratio_excluding_root": "0.079084149028341892015973449465190465399322891728965519126695821326",
+      "all_jets_bounded_by_first": true,
+      "first_jet_nonzero_floating_point": true,
+      "pairing_to_first_term": "0.95800756699185704383346481320054949658535758986171161057921402838"
+    }
+  ]
+}

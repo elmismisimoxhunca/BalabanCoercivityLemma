@@ -1,0 +1,5 @@
+actual headline k>=2, fine side<=8: fits = []
+attack candidate (ell,M,k,fine)=(2,2,2,8) has unit side=2, violating ell<unit
+R=3, M=2: true=0, false=4096, mismatches=0
+R=1, M=1: true=3648, false=448, mismatches=0
+all decision checks passed

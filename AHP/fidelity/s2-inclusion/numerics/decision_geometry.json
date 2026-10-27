@@ -1,0 +1,149 @@
+{
+  "note": "Numerical evidence only. Zero touch-without-cube counts support the product-box step used by CoversPlaqFour.toFrozen. They are not a Lean check and not a proof. Domain counts are set-level; they do not inhabit IsClassCube, Admissible, or PerCubeRegularTouch.",
+  "geometry_scans": [
+    {
+      "n": 2,
+      "plaquettes": 24,
+      "boxes": 24,
+      "touch_cover_instances": 192,
+      "cube_cover_instances": 192,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0,
+      "seconds": 0.001
+    },
+    {
+      "n": 4,
+      "plaquettes": 192,
+      "boxes": 320,
+      "touch_cover_instances": 14976,
+      "cube_cover_instances": 14976,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0,
+      "seconds": 0.011
+    },
+    {
+      "n": 6,
+      "plaquettes": 648,
+      "boxes": 1512,
+      "touch_cover_instances": 224208,
+      "cube_cover_instances": 224208,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0,
+      "seconds": 0.082
+    },
+    {
+      "n": 8,
+      "plaquettes": 1536,
+      "boxes": 4608,
+      "touch_cover_instances": 1603584,
+      "cube_cover_instances": 1603584,
+      "touch_without_cube": 0,
+      "cube_without_touch": 0,
+      "seconds": 0.49
+    }
+  ],
+  "product_block": {
+    "label": "product siteBox origin side 4 on side-8 torus",
+    "n": 8,
+    "sites": 64,
+    "plaqCorner": 300,
+    "fourTouch": 108,
+    "plaqIn": 108,
+    "fourTouch_not_plaqIn": 0,
+    "plaqIn_not_fourTouch": 0,
+    "corner_not_fourTouch": 192,
+    "focus": {
+      "corners_ABCD": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          0
+        ]
+      ],
+      "in_product_block_side4": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "fourTouch": false,
+      "plaqIn": false,
+      "plaqCorner": true,
+      "bond_BD_both_out": true
+    }
+  },
+  "exit_plaq_subset_boxes": {
+    "subset_boxes": 100,
+    "subset_boxes_touch_covering_focus": 0
+  },
+  "l_shape": {
+    "label": "L of two side-2 blocks on side-8 torus",
+    "n": 8,
+    "sites": 16,
+    "plaqCorner": 106,
+    "fourTouch": 14,
+    "plaqIn": 12,
+    "fourTouch_not_plaqIn": 2,
+    "plaqIn_not_fourTouch": 0,
+    "corner_not_fourTouch": 92,
+    "focus": {
+      "corners_ABCD": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          0
+        ]
+      ],
+      "in_L": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "fourTouch": true,
+      "plaqIn": false,
+      "plaqCorner": true,
+      "subset_boxes": 18,
+      "subset_boxes_touch_covering_focus": 0
+    }
+  },
+  "bond_counts_product_side4": {
+    "n": 8,
+    "s": 4,
+    "sites_in_box": 64,
+    "cubeBonds": 144,
+    "touchBonds": 240,
+    "extra_touch_bonds": 96
+  },
+  "seconds_total": 0.734
+}

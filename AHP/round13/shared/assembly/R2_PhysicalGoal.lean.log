@@ -1,0 +1,72 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:7959:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:8317:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:8317:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:8321:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:8321:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:8328:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:8328:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:9352:39: warning: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵,̵ ̵Bool.false_eq_true, ↓reduceIte, uhalf_coe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:9483:36: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:9564:30: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round13/shared/assembly/R2_PhysicalGoal.lean:9564:43: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation : AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation →
+  AdalyFormal.Round2.Guarded.Pin.GoalNeg2
+'AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P2_P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P2_P3 : AdalyFormal.Round13.Assembly.R1.P2 →
+  AdalyFormal.Round13.Assembly.R1.P3 → AdalyFormal.Round2.Guarded.Pin.GoalNeg2
+'AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP2P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP2P3 : AdalyFormal.Round13.Assembly.R1.CofinalP2P3 →
+  AdalyFormal.Round2.Guarded.Pin.GoalNeg2

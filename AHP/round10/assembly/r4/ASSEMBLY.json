@@ -1,0 +1,8 @@
+{
+  "r9_sha256": "b6dc8553ad1b8a7fdc5ff731b5c7df0fde0009979bdc90dbaba23b10efc5d052",
+  "r9_bytes": 628675,
+  "r9_prefix_exact": true,
+  "historical_compiled": false,
+  "compact_prefix": "AHP/round10/shared/assembly/R3_EnergyGlue.lean",
+  "compact_prefix_exact": true
+}

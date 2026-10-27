@@ -1,0 +1,6 @@
+'AdalyFormal.Round12.Noncancel.Mass.rowZero' depends on axioms: [propext, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.Qfull_rowZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.collar_levelZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.leaf_mass_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.carrier_leaf_mass_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round12.Noncancel.Mass.mass_split' depends on axioms: [propext, Classical.choice, Quot.sound]

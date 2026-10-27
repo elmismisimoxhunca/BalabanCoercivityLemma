@@ -1,0 +1,170 @@
+
+namespace AdalyFormal.Round12.Kernel.Actual
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round2.Guarded.Pin
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round9.Guarded.AnalyticR1
+open AdalyFormal.Round10.Assembly.R2
+open AdalyFormal.GaugeCov
+open AdalyFormal.Balaban.CovariantOperators (BondFnL2 RMap RMap_coe_apply RMap_mul_apply)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+
+/-- The physical charged entry at one actual touching-bond coordinate. -/
+def chargedCoordinate (q R : ℕ) (b : Bond (scaleUp 2 1 (dilLu q R))) :
+    TwistSpace q R →ₗ[ℝ] ℂ where
+  toFun u := ((u : BondFnL2 (scaleUp 2 1 (dilLu q R))) b : Matrix (Fin 2) (Fin 2) ℂ) 0 1
+  map_add' u v := rfl
+  map_smul' c u := by
+    change ((c : ℂ) * _) = _
+    rfl
+
+theorem vacA_rot_of_fixed (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R))) (α t : ℝ)
+    (hV : periodicGaugeTransform (rotGauge α) (V t) = V t)
+    (u : TwistSpace q R) :
+    vacA q R V 1 t (adEL (rotGauge α) (geomOf 2 1 (dilTower q R)) u) =
+      adEL (rotGauge α) (geomOf 2 1 (dilTower q R)) (vacA q R V 1 t u) := by
+  have h := AdalyFormal.Round10.Dictionary.Ginv_all_gauge
+    (ell := 2) (k := 1) (Lu := dilLu q R) (by norm_num) (dilTower q R)
+    (pathU q R V (fun _ => 0) 0 t) 1 (dilLam q R) (rotGauge α) u
+  have hp : periodicGaugeTransform (rotGauge α) (pathU q R V (fun _ => 0) 0 t) =
+      pathU q R V (fun _ => 0) 0 t := by
+    unfold pathU
+    rw [rot_maskedU, hV]
+  rw [hp] at h
+  exact h
+
+theorem uθ_add (s t : ℝ) : AdalyFormal.D1Literal.uθ s * AdalyFormal.D1Literal.uθ t =
+    AdalyFormal.D1Literal.uθ (s + t) := by
+  apply Subtype.ext
+  show AdalyFormal.D1Literal.uMat s * AdalyFormal.D1Literal.uMat t =
+    AdalyFormal.D1Literal.uMat (s + t)
+  ext i j
+  fin_cases i <;> fin_cases j <;>
+    simp [AdalyFormal.D1Literal.uMat, Matrix.mul_apply, Fin.sum_univ_two,
+      Complex.ofReal_add, mul_add, Complex.exp_add, neg_add_rev, mul_comm]
+
+/-- The only coordinate identity needed to exclude neutral kernel vectors. -/
+theorem chargedCoordinate_quarter_twice (q R : ℕ)
+    (b : Bond (scaleUp 2 1 (dilLu q R))) (u : TwistSpace q R) :
+    chargedCoordinate q R b
+      (adEL (rotGauge (Real.pi / 4)) (geomOf 2 1 (dilTower q R))
+        (adEL (rotGauge (Real.pi / 4)) (geomOf 2 1 (dilTower q R)) u)) =
+      -chargedCoordinate q R b u := by
+  change (RMap (AdalyFormal.D1Literal.uθ (Real.pi / 4))
+    (RMap (AdalyFormal.D1Literal.uθ (Real.pi / 4))
+      ((u : BondFnL2 (scaleUp 2 1 (dilLu q R))) b)) :
+        Matrix (Fin 2) (Fin 2) ℂ) 0 1 = _
+  rw [RMap_mul_apply, uθ_add,
+    show Real.pi / 4 + Real.pi / 4 = Real.pi / 2 by ring,
+    RMap_coe_apply, AdalyFormal.Round10.Dictionary.half_rotation_matrix]
+  simp [chargedCoordinate, Matrix.mul_apply, Matrix.vecMul, dotProduct,
+    Fin.sum_univ_two, Matrix.conjTranspose_apply]
+  ring_nf
+  simp [Complex.I_sq]
+
+/-- Exact application to the original KernelLine, without asserting positivity
+for any physical path. Chargedness is derived, not assumed. -/
+theorem kernelLine_of_boundary_positive (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (b : Bond (scaleUp 2 1 (dilLu q R)))
+    (hV : periodicGaugeTransform (rotGauge (Real.pi / 4)) (V (vacEdge q R V)) =
+      V (vacEdge q R V))
+    (hpos : ∀ x : TwistSpace q R, x ≠ 0 → chargedCoordinate q R b x = 0 →
+      0 < ⟪x, vacA q R V 1 (vacEdge q R V) x⟫)
+    (u : TwistSpace q R) (hu : u ≠ 0)
+    (hAu : vacA q R V 1 (vacEdge q R V) u = 0) :
+    KernelLine q R V u := by
+  let J := adEL (rotGauge (Real.pi / 4)) (geomOf 2 1 (dilTower q R))
+  have hcomm := vacA_rot_of_fixed q R V (Real.pi / 4) (vacEdge q R V) hV
+  have hJJ : J (J u) = -u := charged_of_boundary
+    (vacA q R V 1 (vacEdge q R V)) J.toLinearMap (chargedCoordinate q R b)
+    hcomm hpos (chargedCoordinate_quarter_twice q R b) u hAu
+  refine ⟨hu, hAu, hJJ, fun x hx => ?_⟩
+  have hk := kernel_eq_charged_span_of_boundary
+    (vacA q R V 1 (vacEdge q R V))
+    (adEL (rotGauge (Real.pi / 4)) (geomOf 2 1 (dilTower q R)))
+    (chargedCoordinate q R b)
+    (vacA_rot_of_fixed q R V (Real.pi / 4) (vacEdge q R V) hV)
+    hpos u hu hAu hJJ
+  rw [← hk]
+  exact hx
+
+/-- The original line predicate really gives real nullity two, once the
+actual carrier preserves the quarter turn. -/
+theorem kernelLine_finrank (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (hV : periodicGaugeTransform (rotGauge (Real.pi / 4)) (V (vacEdge q R V)) =
+      V (vacEdge q R V)) (u : TwistSpace q R) (hline : KernelLine q R V u) :
+    Module.finrank ℝ (vacA q R V 1 (vacEdge q R V)).ker = 2 := by
+  let A := vacA q R V 1 (vacEdge q R V)
+  let J := adEL (rotGauge (Real.pi / 4)) (geomOf 2 1 (dilTower q R))
+  have hk : A.ker = Submodule.span ℝ ({u, J u} : Set (TwistSpace q R)) := by
+    apply le_antisymm
+    · exact fun x hx => hline.2.2.2 x hx
+    · apply Submodule.span_le.mpr
+      intro x hx
+      rcases Set.mem_insert_iff.mp hx with h | h
+      · subst x; exact hline.2.1
+      · have hx' : x = J u := Set.mem_singleton_iff.mp h
+        subst x
+        change A (J u) = 0
+        rw [vacA_rot_of_fixed q R V (Real.pi / 4) (vacEdge q R V) hV u,
+          hline.2.1, map_zero]
+  change Module.finrank ℝ A.ker = 2
+  rw [hk]
+  exact charged_span_finrank J u hline.1 hline.2.2.1
+
+/-- The constructed one-color field cannot be inserted merely because it is
+charged: every nonzero kernel vector must have a nonzero central charged entry. -/
+theorem crossing_coordinate_ne_zero (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (b : Bond (scaleUp 2 1 (dilLu q R)))
+    (hpos : ∀ x : TwistSpace q R, x ≠ 0 → chargedCoordinate q R b x = 0 →
+      0 < ⟪x, vacA q R V 1 (vacEdge q R V) x⟫)
+    (u : TwistSpace q R) (hu : u ≠ 0)
+    (hAu : vacA q R V 1 (vacEdge q R V) u = 0) :
+    chargedCoordinate q R b u ≠ 0 := by
+  intro hz
+  have hh := hpos u hu hz
+  simp only [hAu, inner_zero_right, lt_self_iff_false] at hh
+
+/-- Excludes the specific historical charged-invisible witness, conditionally
+on physical boundary-zero positivity. This is not exclusion of all zero-jet fields. -/
+theorem oneColor_not_crossing {q : ℕ} (hq : 0 < q) (R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (b : Bond (scaleUp 2 1 (dilLu q R)))
+    (hb : b ≠ (AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite hq R, 0))
+    (hpos : ∀ x : TwistSpace q R, x ≠ 0 → chargedCoordinate q R b x = 0 →
+      0 < ⟪x, vacA q R V 1 (vacEdge q R V) x⟫) :
+    vacA q R V 1 (vacEdge q R V)
+      (AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor hq R) ≠ 0 := by
+  intro ha
+  apply crossing_coordinate_ne_zero q R V b hpos _
+    (AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero hq R) ha
+  change ((AdalyFormal.D1Literal.sing _ AdalyFormal.Balaban.SuTwoInner.pauliE1 b :
+    Matrix (Fin 2) (Fin 2) ℂ) 0 1) = 0
+  rw [AdalyFormal.D1Literal.sing_apply_ne _ _ hb]
+  rfl
+
+#print axioms oneColor_not_crossing
+#print axioms AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite
+#print axioms AdalyFormal.Round10.Dictionary.ColorObstruction.interiorSite_mem
+#print axioms AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor
+#print axioms AdalyFormal.Round10.Dictionary.ColorObstruction.oneColor_ne_zero
+#print axioms kernelLine_finrank
+#print axioms crossing_coordinate_ne_zero
+#print axioms chargedCoordinate
+#print axioms vacA_rot_of_fixed
+#print axioms uθ_add
+#print axioms chargedCoordinate_quarter_twice
+#print axioms kernelLine_of_boundary_positive
+end AdalyFormal.Round12.Kernel.Actual

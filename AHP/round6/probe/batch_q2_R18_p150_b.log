@@ -1,0 +1,54 @@
+assembled 2 18 1 n 5380 aug 7508 nnz 231076 seconds 2.0941426753997803
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 2 18 0 n 5380 aug 7508 nnz 230724 seconds 1.8116340637207031
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q2_R18_e1e-4_p150_s0_0.json pairing 1.221972956498352015568541780311028387248012162382147611802570914767594937549812041075578217887913017534742022294785526738993888987750263609167706e-70 root 0.586558968638608839468525986956109356804809774531991387572006160587276242968413416584959436142302023087647328305187799528871430071699904760182694 seconds 73.31043648719788
+assembled 2 18 1 n 5380 aug 7508 nnz 231064 seconds 1.646071434020996
+boundary column 1 / 24
+boundary column 2 / 24
+boundary column 3 / 24
+boundary column 4 / 24
+boundary column 5 / 24
+boundary column 6 / 24
+boundary column 7 / 24
+boundary column 8 / 24
+boundary column 9 / 24
+boundary column 10 / 24
+boundary column 11 / 24
+boundary column 12 / 24
+boundary column 13 / 24
+boundary column 14 / 24
+boundary column 15 / 24
+boundary column 16 / 24
+boundary column 17 / 24
+boundary column 18 / 24
+boundary column 19 / 24
+boundary column 20 / 24
+boundary column 21 / 24
+boundary column 22 / 24
+boundary column 23 / 24
+boundary column 24 / 24
+assembled 2 18 0 n 5380 aug 7508 nnz 230752 seconds 1.7302608489990234
+RESULT /home/sebastian/BalabanCoercivityLemma/AHP/round6/probe/q2_R18_e1e-5_p150_s0_0.json pairing 1.221972765641588879979672008028551774310325545194006946380584340062348859589667428649281789534497366428833682564667437768453266062014040693999625e-72 root 0.5865589686386088394685259869561093568048097745319913875720061605872826220992964959943288162274361275852182278251127899091684394719087400793291896 seconds 71.2291510105133

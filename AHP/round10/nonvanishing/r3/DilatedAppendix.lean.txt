@@ -1,0 +1,215 @@
+
+namespace AdalyFormal.Round10.Nonvanishing.DilatedFlux
+
+open Finset
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond mem_CoarseLattice)
+open AdalyFormal.Balaban.LatticeOperators (curlValue)
+open AdalyFormal.Balaban.CoarseCurl (coarseShift)
+open AdalyFormal.Round10.Nonvanishing.Flux
+open AdalyFormal.Round10.Nonvanishing.TorusFlux
+open AdalyFormal.Round10.Nonvanishing.Coordinate (mkS mkS_val0)
+open AdalyFormal.Round10.Nonvanishing.PhysicalBlocking
+
+abbrev L (q R : ℕ) := scaleUp 2 1 (dilLu q R)
+abbrev G (q R : ℕ) := geomOf 2 1 (dilTower q R)
+def blockCount (q R : ℕ) : ℕ := 4*q*(R+1)
+def blockBase (q R j : ℕ) : ℕ := 2*(R*q)+4*q+2*j
+
+theorem side_one {q : ℕ} (hq : 0 < q) (R : ℕ) : (4*q)*2 = L q R 1+1 := by
+  rw [dil_fine_size hq,if_neg (show (1 : Fin 3) ≠ 0 by decide)]
+  omega
+
+theorem side_two {q : ℕ} (hq : 0 < q) (R : ℕ) : (4*q)*2 = L q R 2+1 := by
+  rw [dil_fine_size hq,if_neg (show (2 : Fin 3) ≠ 0 by decide)]
+  omega
+
+theorem blockBase_even (q R j : ℕ) : blockBase q R j % 2 = 0 := by
+  simp [blockBase,Nat.add_mod,Nat.mul_mod]
+
+theorem blockBase_bounds {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R) :
+    2*(R*q)+4*q ≤ blockBase q R j ∧
+    blockBase q R j+2 ≤ 10*(R*q)+12*q ∧
+    blockBase q R j+2 ≤ L q R 0+1 := by
+  have hc : blockCount q R = 4*(R*q)+4*q := by unfold blockCount; ring
+  rw [hc] at hj
+  rw [dil_fine_size hq]
+  norm_num
+  unfold blockBase
+  omega
+
+theorem two_dvd_sides {q : ℕ} (hq : 0 < q) (R : ℕ) : ∀ μ, 2 ∣ L q R μ+1 := by
+  intro μ
+  rw [dil_fine_size hq]
+  split <;> omega
+
+/-- Actual top-level row at every physical even transverse site. -/
+def topIdx {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R)
+    (c : Fin (4*q) × Fin (4*q)) : BIdx (G q R) :=
+  let r := row (side_one hq R) (side_two hq R) (blockBase q R j)
+    (blockBase_bounds hq hj).2.2 (blockBase_even q R j) c
+  ⟨⟨1,by change 1 < 1+1; decide⟩,⟨(r.1.1,1),by
+    refine ⟨Or.inl ?_,?_⟩
+    · change (∀ μ : Fin 3, 2^1 ∣ (r.1.1 μ).val) ∧ r.1.1 ∈ (dilTower q R).Om 1 ∧
+        r.1.1 ∉ (dilTower q R).Om 2
+      refine ⟨?_,?_,?_⟩
+      · have he := mem_CoarseLattice.mp r.1.2
+        intro μ
+        simpa using Nat.dvd_of_mod_eq_zero (he μ)
+      · have hbounds := blockBase_bounds hq hj
+        change 2*(R*q)+4*q ≤ (r.1.1 0).val ∧ (r.1.1 0).val < 10*(R*q)+12*q
+        change 2*(R*q)+4*q ≤ blockBase q R j % (L q R 0+1) ∧
+          blockBase q R j % (L q R 0+1) < 10*(R*q)+12*q
+        rw [Nat.mod_eq_of_lt (by omega)]
+        omega
+      · simp [dilTower]
+    · intro hh
+      rcases hh with hh | hh
+      · exact not_OmGe_of_lt (G := G q R) (j := 2) (by change 1 < 2; decide) _ hh
+      · exact not_OmGe_of_lt (G := G q R) (j := 2) (by change 1 < 2; decide) _ hh⟩⟩
+
+@[simp] theorem topIdx_level {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R)
+    (c : Fin (4*q) × Fin (4*q)) : ((topIdx hq hj c).1 : ℕ) = 1 := rfl
+
+@[simp] theorem topIdx_bond {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R)
+    (c : Fin (4*q) × Fin (4*q)) :
+    (topIdx hq hj c).2.1 =
+      ((row (side_one hq R) (side_two hq R) (blockBase q R j)
+        (blockBase_bounds hq hj).2.2 (blockBase_even q R j) c).1.1,1) := rfl
+
+/-- Omega_1 cannot reach the left collar through a positive-size block. -/
+theorem not_OmGe_one {q R : ℕ} {x : PeriodicLatticeSite (L q R)}
+    (hx : (x 0).val < 2*(R*q)+4*q) : ¬ OmGe (G q R) 1 x := by
+  rintro ⟨i,hi,hik,y,hy,hyx⟩
+  have he : i = 1 := by change i ≤ 1 at hik; omega
+  subst i
+  have hy0 : 2*(R*q)+4*q ≤ (y 0).val := hy.2.1.1
+  have := (hyx 0).1
+  omega
+
+/-- The direction-1 bonds at the first Omega_0 layer are genuine level-zero rows. -/
+def collarIdx {q R : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (t : Slice (L q R)) : BIdx (G q R) :=
+  ⟨⟨0,by change 0 < 1+1; decide⟩,⟨(site (L q R) (4*q) t,1),by
+    have hmul : 0 < R*q := Nat.mul_pos hR hq
+    have hside : L q R 0+1 = 12*(R*q)+16*q := by
+      simpa [L] using dil_fine_size hq R 0
+    have hx : (site (L q R) (4*q) t 0).val = 4*q := by
+      change (4*q) % (L q R 0+1) = 4*q
+      rw [Nat.mod_eq_of_lt (by omega)]
+    refine ⟨Or.inl ?_,?_⟩
+    · change (∀ μ, 2^0 ∣ (site (L q R) (4*q) t μ).val) ∧
+        site (L q R) (4*q) t ∈ (dilTower q R).Om 0 ∧
+        site (L q R) (4*q) t ∉ (dilTower q R).Om 1
+      refine ⟨by simp,?_,?_⟩
+      · change 4*q ≤ (site (L q R) (4*q) t 0).val ∧
+          (site (L q R) (4*q) t 0).val < 12*(R*q)+12*q
+        rw [hx]
+        omega
+      · change ¬ (2*(R*q)+4*q ≤ (site (L q R) (4*q) t 0).val ∧
+          (site (L q R) (4*q) t 0).val < 10*(R*q)+12*q)
+        rw [hx]
+        omega
+    · intro hh
+      rcases hh with hh | hh
+      · exact not_OmGe_one (by rw [hx]; omega) hh
+      · apply not_OmGe_one (x := coarseShift (site (L q R) (4*q) t) 1 1) _ hh
+        simpa [coarseShift,site_zero] using
+          (show (4*q) % (L q R 0+1) < 2*(R*q)+4*q by
+            change (site (L q R) (4*q) t 0).val < _
+            rw [hx]; omega)⟩⟩
+
+@[simp] theorem collarIdx_level {q R : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (t : Slice (L q R)) : ((collarIdx hq hR t).1 : ℕ) = 0 := rfl
+
+@[simp] theorem collarIdx_bond {q R : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (t : Slice (L q R)) : (collarIdx hq hR t).2.1 = (site (L q R) (4*q) t,1) := rfl
+
+/-- Every plaquette located between this collar and the selected top block lies inside Omega_0. -/
+theorem plaq01_in {q R j : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (hj : j < blockCount q R) {x : ℕ} (hxl : 4*q ≤ x) (hxp : x < blockBase q R j+1)
+    (t : Slice (L q R)) : plaq01 (L q R) x t ∈ plaqIn ((dilTower q R).Om 0) := by
+  have hbounds := blockBase_bounds hq hj
+  have hmul : 0 < R*q := Nat.mul_pos hR hq
+  have hside : L q R 0+1 = 12*(R*q)+16*q := by
+    simpa [L] using dil_fine_size hq R 0
+  have hx : x < L q R 0+1 := by omega
+  have hx1 : x+1 < L q R 0+1 := by omega
+  simp [plaqIn,periodicPlaquetteBoundaryEdges,plaq01,dilTower,
+    shift_site_zero,shift_site_one,site_zero,
+    Nat.mod_eq_of_lt hx,Nat.mod_eq_of_lt hx1]
+  omega
+
+/-- Physical sum of the actual quadratic top jet, retaining its 1/2 normalization. -/
+noncomputable def jetAggregate {q R j : ℕ} (hq : 0 < q) (hj : j < blockCount q R)
+    (φ : SuTwo →ₗ[ℝ] ℝ) (v : BondFnL2 (L q R)) : ℝ :=
+  ∑ c : Fin (4*q) × Fin (4*q), φ (C2fullOf (G q R) flatCfg v (topIdx hq hj c))
+
+/-- For the actual dilated geometry, a nonzero aggregated top jet detects localized curl.
+This theorem does NOT assert that a vacuum crossing vector has a nonzero aggregate. -/
+theorem localized_curl_of_jetAggregate {q R j : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (hj : j < blockCount q R) (φ : SuTwo →ₗ[ℝ] ℝ) (A v : BondFnL2 (L q R))
+    (hQ : QfullOf (G q R) flatCfg A = C2fullOf (G q R) flatCfg v)
+    (hne : jetAggregate hq hj φ v ≠ 0) :
+    ∃ p ∈ plaqIn ((dilTower q R).Om 0), curlValue (fun e => φ (A e)) p ≠ 0 := by
+  have hz := collar_flux_zero (G q R) flatCfg A v hQ φ (4*q) 1
+    (collarIdx hq hR) (collarIdx_level hq hR) (collarIdx_bond hq hR)
+  obtain ⟨x,hxl,hxp,t,ht⟩ := exists_curl_of_constrained_jet (G q R) rfl
+    (side_one hq R) (side_two hq R) (blockBase q R j) (blockBase_bounds hq hj).2.2
+    (blockBase_even q R j) (two_dvd_sides hq R) A φ (C2fullOf (G q R) flatCfg v)
+    (topIdx hq hj) (topIdx_level hq hj) (topIdx_bond hq hj) hQ (4*q)
+    (by unfold blockBase; omega) hz hne
+  exact ⟨plaq01 (L q R) x t,plaq01_in hq hR hj hxl hxp t,ht⟩
+
+open scoped RealInnerProductSpace
+open AdalyFormal.Balaban.SuTwoInner (pauliE3)
+
+noncomputable def neutralFunctional : SuTwo →ₗ[ℝ] ℝ where
+  toFun X := ⟪pauliE3,X⟫
+  map_add' _ _ := inner_add_right _ _ _
+  map_smul' _ _ := inner_smul_right _ _ _
+
+/-- A concrete remaining per-vector nondegeneracy target, not asserted here. -/
+def TopJetDetected {q : ℕ} (hq : 0 < q) (R : ℕ) (u : ↥(bondSupp (G q R))) : Prop :=
+  ∃ j : ℕ, ∃ hj : j < blockCount q R,
+    jetAggregate hq hj neutralFunctional
+      (Wop (G q R) flatCfg 1 (iE (G q R) u)) ≠ 0
+
+/-- The missing jet nondegeneracy suffices for the neutral localized curl criterion. -/
+theorem neutral_localized_curl_of_topJet {q R : ℕ} (hq : 0 < q) (hR : 1 ≤ R)
+    (A : BondFnL2 (L q R)) (u : ↥(bondSupp (G q R)))
+    (hQ : QfullOf (G q R) flatCfg A = C2fullOf (G q R) flatCfg
+      (Wop (G q R) flatCfg 1 (iE (G q R) u)))
+    (hjet : TopJetDetected hq R u) :
+    ∃ p ∈ plaqIn ((dilTower q R).Om 0), curlValue (fun e => ⟪pauliE3,A e⟫) p ≠ 0 := by
+  obtain ⟨j,hj,hne⟩ := hjet
+  exact localized_curl_of_jetAggregate hq hR hj neutralFunctional A
+    (Wop (G q R) flatCfg 1 (iE (G q R) u)) hQ hne
+
+#print axioms neutralFunctional
+#print axioms TopJetDetected
+#print axioms neutral_localized_curl_of_topJet
+#print axioms L
+#print axioms G
+#print axioms blockCount
+#print axioms blockBase
+#print axioms side_one
+#print axioms side_two
+#print axioms blockBase_even
+#print axioms blockBase_bounds
+#print axioms two_dvd_sides
+#print axioms topIdx
+#print axioms topIdx_level
+#print axioms topIdx_bond
+#print axioms not_OmGe_one
+#print axioms collarIdx
+#print axioms collarIdx_level
+#print axioms collarIdx_bond
+#print axioms plaq01_in
+#print axioms jetAggregate
+#print axioms localized_curl_of_jetAggregate
+end AdalyFormal.Round10.Nonvanishing.DilatedFlux

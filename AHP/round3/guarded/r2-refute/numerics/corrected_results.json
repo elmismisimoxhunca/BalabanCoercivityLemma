@@ -1,0 +1,147 @@
+{
+  "status": "not a certified counterexample",
+  "results": [
+    {
+      "R": 2,
+      "eps": 0.08,
+      "geometry": {
+        "fine_lift_sides": [
+          40,
+          8,
+          8
+        ],
+        "Om0": [
+          4,
+          36
+        ],
+        "Om1": [
+          8,
+          32
+        ],
+        "Lambda": [
+          10,
+          12
+        ],
+        "torus_arithmetic": true,
+        "base_law": true,
+        "block0": true,
+        "block1": true,
+        "collar": true,
+        "site_cover": true,
+        "plaq_cover": true,
+        "lambda_block_arithmetic": true,
+        "lambda_subset": true,
+        "lambda_collar": true,
+        "class_cubes": 4,
+        "positive_competitor_not_certified": true
+      },
+      "checks": {
+        "local_min": 0.12190224630272406,
+        "N_min": 0.056746823191485614,
+        "q_rank": 399,
+        "q_rows": 399,
+        "J_norm": 0.5343897879990708,
+        "HtJ_top_norm": 0.10179047362537037,
+        "R_rank": 252,
+        "raw_at_zero": 0.0,
+        "hessian_refinement_norm": 2.426840331931922e-07,
+        "directional_D": -0.00022932944281531617,
+        "directional_raw": -0.0002293295034243051,
+        "directional_difference": 6.060898893769755e-11,
+        "local_corrected_gap": 0.12189187590743528
+      },
+      "carrier_dimension": 1164,
+      "boundary_dimension": 72,
+      "carrier_root": 0.5864521388182432,
+      "corrected_root": 0.5864520817096952,
+      "root_difference": -5.710854800167198e-08,
+      "coarse_step_corrected_root": 0.5864520817084422,
+      "corrected_root_refinement_change": 1.2529977055919517e-12,
+      "full_quotient_carrier_lowest_six_at_corrected": [
+        1.249053817294941e-07,
+        8.248836889769763e-07,
+        7.243768445595476e-06,
+        7.243768581629179e-06,
+        0.12190735791687972,
+        0.12243513371001631
+      ],
+      "full_quotient_corrected_lowest_at_corrected": 4.917504242903335e-15,
+      "full_quotient_kernel_residual": 1.2005597678842233e-14,
+      "correction_norm": 0.03329297672383133,
+      "seconds": 17.359551191329956,
+      "peak_rss_kib": 212868,
+      "warning": "Finite-difference floating-point quotient separation ONLY; not exact singularity, full-lift guard, class regularity, or cofinal family."
+    },
+    {
+      "R": 2,
+      "eps": 0.04,
+      "geometry": {
+        "fine_lift_sides": [
+          40,
+          8,
+          8
+        ],
+        "Om0": [
+          4,
+          36
+        ],
+        "Om1": [
+          8,
+          32
+        ],
+        "Lambda": [
+          10,
+          12
+        ],
+        "torus_arithmetic": true,
+        "base_law": true,
+        "block0": true,
+        "block1": true,
+        "collar": true,
+        "site_cover": true,
+        "plaq_cover": true,
+        "lambda_block_arithmetic": true,
+        "lambda_subset": true,
+        "lambda_collar": true,
+        "class_cubes": 4,
+        "positive_competitor_not_certified": true
+      },
+      "checks": {
+        "local_min": 0.12311877287647421,
+        "N_min": 0.05675402909117364,
+        "q_rank": 399,
+        "q_rows": 399,
+        "J_norm": 0.2673728848316404,
+        "HtJ_top_norm": 0.050926271648865165,
+        "R_rank": 252,
+        "raw_at_zero": 0.0,
+        "hessian_refinement_norm": 1.2115870002937717e-07,
+        "directional_D": -0.00011337007306746406,
+        "directional_raw": -0.00011337010348400809,
+        "directional_difference": 3.0416544025764665e-11,
+        "local_corrected_gap": 0.12311692466418343
+      },
+      "carrier_dimension": 1164,
+      "boundary_dimension": 72,
+      "carrier_root": 0.5864545876123239,
+      "corrected_root": 0.5864545737216755,
+      "root_difference": -1.389064840928711e-08,
+      "coarse_step_corrected_root": 0.5864545737213623,
+      "corrected_root_refinement_change": 3.1319391524675666e-13,
+      "full_quotient_carrier_lowest_six_at_corrected": [
+        3.038226074390228e-08,
+        2.066910303560488e-07,
+        1.7930583716237232e-06,
+        1.7930589517368614e-06,
+        0.12311987382219136,
+        0.12323482582153727
+      ],
+      "full_quotient_corrected_lowest_at_corrected": -1.1253977720325187e-14,
+      "full_quotient_kernel_residual": 1.3419127948150066e-14,
+      "correction_norm": 0.016485303861580758,
+      "seconds": 17.871076583862305,
+      "peak_rss_kib": 212868,
+      "warning": "Finite-difference floating-point quotient separation ONLY; not exact singularity, full-lift guard, class regularity, or cofinal family."
+    }
+  ]
+}

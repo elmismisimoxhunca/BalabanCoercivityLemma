@@ -1,0 +1,40 @@
+{
+  "q": 1,
+  "R": 24,
+  "epsilon": "1e-3",
+  "dps": 70,
+  "sector": [
+    0,
+    0
+  ],
+  "raw_hessian_check": 0,
+  "HtJ_residual": "1.768687614864596664315462639183866109176920426964095491950992689e-71",
+  "source_multiplier_max": "0.00091168849023645583129326688872567553339071365035186478290197673366",
+  "raw_D_rowsum_bound": "0.00091191628889170793739812014434172509215089001486443207379044461522",
+  "B_inertia": {
+    "positive": 4256,
+    "negative": 700,
+    "min_abs_pivot": "0.11163340054023838469452580872021480230885286044041276649228201999",
+    "two_by_two_pivots": 700,
+    "max_front": 49,
+    "seconds": 9.802314519882202
+  },
+  "B_minus_D_inertia": {
+    "positive": 4256,
+    "negative": 700,
+    "min_abs_pivot": "0.11163342230560109940785469456691685891377289215185174738313918577",
+    "two_by_two_pivots": 700,
+    "max_front": 49,
+    "seconds": 10.642403602600098
+  },
+  "required_augmented_inertia": {
+    "positive": 4256,
+    "negative": 700
+  },
+  "B_min_double": 0.12354650092262234,
+  "B_eigen_residual_double": 1.2339329049381997e-10,
+  "B_minus_D_min_double": 0.12354649968414094,
+  "B_minus_D_eigen_residual_double": 1.2246387531488088e-10,
+  "seconds": 30.865358114242554,
+  "peak_rss_KiB": 570680
+}

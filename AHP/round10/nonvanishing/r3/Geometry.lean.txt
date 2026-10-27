@@ -1,0 +1,25 @@
+namespace AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+def dilLu (q R : ℕ) : PeriodicLatticeExtent :=
+  fun μ => if μ = 0 then 6 * (R * q) + 8 * q - 1 else 4 * q - 1
+
+def dilTower (q R : ℕ) : Tower (scaleUp 2 1 (dilLu q R)) where
+  Om j := if j = 0 then {x | 4 * q ≤ (x 0).val ∧ (x 0).val < 12 * (R * q) + 12 * q}
+    else if j = 1 then {x | 2 * (R * q) + 4 * q ≤ (x 0).val ∧ (x 0).val < 10 * (R * q) + 12 * q}
+    else ∅
+
+theorem dil_unit_size {q : ℕ} (hq : 0 < q) (R : ℕ) (μ : Fin 3) :
+    dilLu q R μ + 1 = if μ = 0 then 6 * (R * q) + 8 * q else 4 * q := by
+  by_cases h : μ = 0 <;> simp [dilLu, h] <;> omega
+
+theorem dil_fine_size {q : ℕ} (hq : 0 < q) (R : ℕ) (μ : Fin 3) :
+    scaleUp 2 1 (dilLu q R) μ + 1 = if μ = 0 then 12 * (R * q) + 16 * q else 8 * q := by
+  simp only [scaleUp, dil_unit_size hq]
+  by_cases h : μ = 0 <;> simp [h] <;> omega
+
+#print axioms dilLu
+#print axioms dilTower
+#print axioms dil_unit_size
+#print axioms dil_fine_size
+end AdalyFormal.Round4.Guarded.RefuteR1

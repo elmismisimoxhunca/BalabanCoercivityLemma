@@ -1,0 +1,27 @@
+../AHP/fidelity/sheet-variants/lean/CollarNonStrict.lean:75:25: warning: This simp argument is unused:
+  hj.1
+
+Hint: Omit it from the simp argument list.
+  simp [collarSep, hj.1̵,̵ ̵h̵j̵.̵2.1, hj.2.2, h0] at hx
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../AHP/fidelity/sheet-variants/lean/CollarNonStrict.lean:75:31: warning: This simp argument is unused:
+  hj.2.1
+
+Hint: Omit it from the simp argument list.
+  simp [collarSep, hj.1, hj.2.1̵,̵ ̵h̵j̵.̵2.̵2̵, h0] at hx
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+../AHP/fidelity/sheet-variants/lean/CollarNonStrict.lean:118:53: warning: This simp argument is unused:
+  Set.mem_setOf_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [collarSep, reduceIte, Set.mem_univ, S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵,̵ ̵Nat.div_one, Nat.mul_one, true_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'AdalyFormal.Fidelity.SheetVariants.admissible_imp_nonstrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.admissibleNonStrict_k1_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.pdist_L8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.collar_separator' depends on axioms: [propext, Classical.choice, Quot.sound]

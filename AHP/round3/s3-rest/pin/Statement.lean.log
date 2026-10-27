@@ -1,0 +1,38 @@
+AdalyFormal.Round3.S3Rest.PrintedMassSubtraction (P : IngrBParams) (B : UnitB P) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedBondEnergy (P : IngrBParams) (Bt : Bond P.Lu → ↥SuTwo) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedDtilde (P : IngrBParams) (u : UnitReading) (B : UnitB P) : UnitB P
+AdalyFormal.Round3.S3Rest.PrintedUnitC (P : IngrBParams) (u : UnitReading) :
+  (Bond P.Lu → ↥SuTwo) →ₗ[ℝ] Bond P.Lu → ↥SuTwo
+AdalyFormal.Round3.S3Rest.PrintedH1For (P : IngrBParams) (r : Reading) : F P →L[ℝ] E P
+AdalyFormal.Round3.S3Rest.PrintedNonlinearTerm (P : IngrBParams) (r : Reading) (u : UnitReading) (B : UnitB P) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedGenForm (P : IngrBParams) (r : Reading) (u : UnitReading) (B : UnitB P) : ℝ
+AdalyFormal.Round3.S3Rest.PrintedInstIneq (P : IngrBParams) (r : Reading) (u : UnitReading) (gamma : ℝ) : Prop
+AdalyFormal.Round3.S3Rest.RestComparison (P : IngrBParams) (r : Reading) (u : UnitReading) : Prop
+AdalyFormal.Round3.S3Rest.NoGammaMassRepair (P : IngrBParams) (r : Reading) (u : UnitReading) : Prop
+AdalyFormal.Round3.S3Rest.GoalPos1 : Prop
+AdalyFormal.Round3.S3Rest.GoalNeg1 : Prop
+AdalyFormal.Round3.S3Rest.GoalPos2 : Prop
+AdalyFormal.Round3.S3Rest.GoalNeg2 : Prop
+'AdalyFormal.Round3.S3Rest.PrintedTracePair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedMassSubtraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedBondEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitRawQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitRemainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedConstraintMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedCorridorLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedDtilde' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedUnitC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedH1For' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedNonlinearTerm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedGenForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.PrintedInstIneq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.CorridorInversesExist' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.NoGammaMassRepair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.gammaScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.ScaleWitness_not_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg1_implies_not_GoalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round3.S3Rest.GoalNeg2_implies_not_GoalPos2' depends on axioms: [propext, Classical.choice, Quot.sound]

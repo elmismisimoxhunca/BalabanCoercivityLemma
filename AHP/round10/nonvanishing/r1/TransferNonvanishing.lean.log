@@ -1,0 +1,11 @@
+'AdalyFormal.Round10.Nonvanishing.invariant_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.transfer_eq_zero_of_zero_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.transfer_cofinal_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.transfer_quotient_cofinal_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round10.Nonvanishing.transfer_progression_cofinal_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

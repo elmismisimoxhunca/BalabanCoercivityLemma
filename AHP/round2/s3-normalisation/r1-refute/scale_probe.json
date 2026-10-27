@@ -1,0 +1,1630 @@
+{
+  "status": "no candidate; abstract scale diagnostic only",
+  "exact_coefficient_checks": 100,
+  "matrix_cases": 45,
+  "max_correct_ratio_error": 7.216449660063518e-15,
+  "max_wrong_control_spread": 5.4732812629687544e-05,
+  "rss_kib": 36516,
+  "runs": [
+    {
+      "ell": 2,
+      "k": 2,
+      "seed": 0,
+      "min_body_eigenvalue": 4.292866110598165,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000063241372597,
+            0.9999975239038578,
+            0.9999974945969154
+          ],
+          "spread": 8.829540344201803e-06,
+          "K_scaling_relative_error": 8.756810746696034e-06
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 2,
+      "seed": 1,
+      "min_body_eigenvalue": 5.21586074153447,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999764708809357,
+            0.9999993071233748,
+            1.0000023160062967
+          ],
+          "spread": 2.584512536107919e-05,
+          "K_scaling_relative_error": 2.3615493016415633e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 2,
+      "seed": 2,
+      "min_body_eigenvalue": 4.754785393322183,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999916291747986,
+            0.9999927354421552,
+            0.9999914666153029
+          ],
+          "spread": 1.2688268522520474e-06,
+          "K_scaling_relative_error": 5.845591591453957e-06
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 2,
+      "seed": 3,
+      "min_body_eigenvalue": 4.854749321767547,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999916906370497,
+            1.000007557057205,
+            1.0000050104548204
+          ],
+          "spread": 1.586642015516393e-05,
+          "K_scaling_relative_error": 8.610819485302854e-06
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 2,
+      "seed": 4,
+      "min_body_eigenvalue": 6.43321565339497,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000010302749773,
+            1.000000495234118,
+            1.0000002301889748
+          ],
+          "spread": 8.000860025614287e-07,
+          "K_scaling_relative_error": 3.072477123554409e-06
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 3,
+      "seed": 0,
+      "min_body_eigenvalue": 5.344114293596789,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.000002368374892,
+            0.9999892663050869,
+            0.9999906246053779
+          ],
+          "spread": 1.3102069805093208e-05,
+          "K_scaling_relative_error": 1.162285570947759e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 3,
+      "seed": 1,
+      "min_body_eigenvalue": 4.5271313658491374,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999794395416536,
+            0.9999913041697741,
+            0.99998954707751
+          ],
+          "spread": 1.1864628120528131e-05,
+          "K_scaling_relative_error": 1.432190907494151e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 3,
+      "seed": 2,
+      "min_body_eigenvalue": 5.403077364669247,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999981487049269,
+            0.9999905980075496,
+            0.9999809145537261
+          ],
+          "spread": 1.7234151200806735e-05,
+          "K_scaling_relative_error": 1.4401605687593308e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 3,
+      "seed": 3,
+      "min_body_eigenvalue": 4.67634868220513,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999760175457403,
+            0.9999875451177254,
+            0.9999996501577381
+          ],
+          "spread": 2.363261199778144e-05,
+          "K_scaling_relative_error": 1.7400232719455e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 3,
+      "seed": 4,
+      "min_body_eigenvalue": 5.389399552420466,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000180972543171,
+            1.0000348435401147,
+            1.0000209410054306
+          ],
+          "spread": 1.674628579761972e-05,
+          "K_scaling_relative_error": 2.316284749818779e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 4,
+      "seed": 0,
+      "min_body_eigenvalue": 6.424048534837284,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000213205654065,
+            1.0000226634918377,
+            1.0000244062143149
+          ],
+          "spread": 3.0856489083852523e-06,
+          "K_scaling_relative_error": 2.3416191080842508e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 4,
+      "seed": 1,
+      "min_body_eigenvalue": 5.083612935611504,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000026374408526,
+            0.9999990406603569,
+            0.9999992741226851
+          ],
+          "spread": 3.596780495662699e-06,
+          "K_scaling_relative_error": 7.224087915995534e-06
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 4,
+      "seed": 2,
+      "min_body_eigenvalue": 5.5443796172595885,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.000016747333377,
+            0.9999990422753149,
+            0.9999967796805005
+          ],
+          "spread": 1.996765287648472e-05,
+          "K_scaling_relative_error": 1.22440954921348e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 4,
+      "seed": 3,
+      "min_body_eigenvalue": 5.397946500579312,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000068882729634,
+            0.9999913921041518,
+            0.9999919066776325
+          ],
+          "spread": 1.5496168811579558e-05,
+          "K_scaling_relative_error": 1.1789510460145738e-05
+        }
+      }
+    },
+    {
+      "ell": 2,
+      "k": 4,
+      "seed": 4,
+      "min_body_eigenvalue": 5.417324592396538,
+      "H_relative_error": 0.0,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "spread": 0.0,
+          "K_scaling_relative_error": 0.0
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000010317686414,
+            0.9999834643130575,
+            0.9999846003859768
+          ],
+          "spread": 1.756745558390005e-05,
+          "K_scaling_relative_error": 1.2222749144963719e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 2,
+      "seed": 0,
+      "min_body_eigenvalue": 5.161945277116398,
+      "H_relative_error": 1.3208985606760912e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999996,
+            0.9999999999999994,
+            0.9999999999999998
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.4238743551329025e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999996,
+            0.9999999999999994,
+            0.9999999999999998
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.4238743551329025e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999850102779668,
+            0.9999954557648268,
+            1.0000256409501915
+          ],
+          "spread": 4.063067222470629e-05,
+          "K_scaling_relative_error": 2.2553124734006292e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 2,
+      "seed": 1,
+      "min_body_eigenvalue": 5.9104655289034564,
+      "H_relative_error": 4.000610219124127e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999994,
+            0.9999999999999998,
+            0.9999999999999996
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.440749876758167e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999994,
+            0.9999999999999998,
+            0.9999999999999996
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.440749876758167e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000049563794096,
+            1.0000089722241663,
+            1.000009736831444
+          ],
+          "spread": 4.7804520344474355e-06,
+          "K_scaling_relative_error": 4.210747212698257e-06
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 2,
+      "seed": 2,
+      "min_body_eigenvalue": 4.829504489168788,
+      "H_relative_error": 1.1990579830028767e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999997,
+            1.0,
+            0.9999999999999998
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 9.76620003421528e-17
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999997,
+            1.0,
+            0.9999999999999998
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 9.76620003421528e-17
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000002760558708,
+            1.0000007804145712,
+            1.000000741395885
+          ],
+          "spread": 5.043587003594752e-07,
+          "K_scaling_relative_error": 1.3879621473262914e-06
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 2,
+      "seed": 3,
+      "min_body_eigenvalue": 4.934802342010287,
+      "H_relative_error": 4.0464519059600626e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999999,
+            0.999999999999999,
+            0.9999999999999993
+          ],
+          "spread": 8.881784197001252e-16,
+          "K_scaling_relative_error": 1.190529302946974e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999999,
+            0.999999999999999,
+            0.9999999999999993
+          ],
+          "spread": 8.881784197001252e-16,
+          "K_scaling_relative_error": 1.190529302946974e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000057895325791,
+            1.0000425298812698,
+            1.000048213140321
+          ],
+          "spread": 4.2423607741870484e-05,
+          "K_scaling_relative_error": 1.3682519193449962e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 2,
+      "seed": 4,
+      "min_body_eigenvalue": 4.216243230707,
+      "H_relative_error": 4.813564267575936e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.999999999999999,
+            0.9999999999999996,
+            0.9999999999999997
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 9.420664690710387e-17
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.999999999999999,
+            0.9999999999999996,
+            0.9999999999999997
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 9.420664690710387e-17
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999937098931336,
+            0.9999879059195864,
+            0.999991593573152
+          ],
+          "spread": 5.803973547213737e-06,
+          "K_scaling_relative_error": 1.4643933153094123e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 3,
+      "seed": 0,
+      "min_body_eigenvalue": 4.249714044119336,
+      "H_relative_error": 2.277163390220765e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000002,
+            0.9999999999999999,
+            0.9999999999999999
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.0222092622691116e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000002,
+            0.9999999999999999,
+            0.9999999999999999
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.0222092622691116e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999802601488795,
+            0.9999883095506947,
+            0.9999865364541531
+          ],
+          "spread": 8.049401815202195e-06,
+          "K_scaling_relative_error": 2.1149119141444618e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 3,
+      "seed": 1,
+      "min_body_eigenvalue": 5.139976729320969,
+      "H_relative_error": 6.199041326073876e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999993,
+            0.999999999999999,
+            0.9999999999999991
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.1997977926480046e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999993,
+            0.999999999999999,
+            0.9999999999999991
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 1.1997977926480046e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999789507246204,
+            1.000024517107384,
+            1.0000223125866579
+          ],
+          "spread": 4.556638276365099e-05,
+          "K_scaling_relative_error": 2.2309644629980335e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 3,
+      "seed": 2,
+      "min_body_eigenvalue": 4.629808625648407,
+      "H_relative_error": 2.7993032661181722e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999994,
+            0.9999999999999996,
+            0.9999999999999993
+          ],
+          "spread": 2.220446049250313e-16,
+          "K_scaling_relative_error": 1.3342940077815043e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999994,
+            0.9999999999999996,
+            0.9999999999999993
+          ],
+          "spread": 2.220446049250313e-16,
+          "K_scaling_relative_error": 1.3342940077815043e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999995240221903,
+            1.0000082709798657,
+            1.0000048399840902
+          ],
+          "spread": 8.746957675387357e-06,
+          "K_scaling_relative_error": 1.5612291264841048e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 3,
+      "seed": 3,
+      "min_body_eigenvalue": 5.029809017831319,
+      "H_relative_error": 1.2635890383433689e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999998,
+            0.9999999999999994,
+            1.0000000000000002
+          ],
+          "spread": 7.771561172376096e-16,
+          "K_scaling_relative_error": 1.5741075807535429e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999998,
+            0.9999999999999994,
+            1.0000000000000002
+          ],
+          "spread": 7.771561172376096e-16,
+          "K_scaling_relative_error": 1.5741075807535429e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000142499421107,
+            1.0000147786467397,
+            1.0000202398258098
+          ],
+          "spread": 5.989883699042409e-06,
+          "K_scaling_relative_error": 1.0286430344149821e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 3,
+      "seed": 4,
+      "min_body_eigenvalue": 4.321526826172692,
+      "H_relative_error": 7.723676126091916e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000002,
+            0.9999999999999979,
+            0.9999999999999982
+          ],
+          "spread": 2.3314683517128287e-15,
+          "K_scaling_relative_error": 1.0209789814156924e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000002,
+            0.9999999999999979,
+            0.9999999999999982
+          ],
+          "spread": 2.3314683517128287e-15,
+          "K_scaling_relative_error": 1.0209789814156924e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999943032341205,
+            0.9999950884118595,
+            0.9999875133368351
+          ],
+          "spread": 7.575075024357503e-06,
+          "K_scaling_relative_error": 1.2462418491140157e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 4,
+      "seed": 0,
+      "min_body_eigenvalue": 4.9707665653448725,
+      "H_relative_error": 4.784673530751215e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999939,
+            0.999999999999994,
+            0.9999999999999928
+          ],
+          "spread": 1.2212453270876722e-15,
+          "K_scaling_relative_error": 1.2651375804556792e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999939,
+            0.999999999999994,
+            0.9999999999999928
+          ],
+          "spread": 1.2212453270876722e-15,
+          "K_scaling_relative_error": 1.2651375804556792e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999951005321016,
+            0.9999948080180947,
+            0.9999907259897854
+          ],
+          "spread": 4.3745423161656305e-06,
+          "K_scaling_relative_error": 3.028004594501834e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 4,
+      "seed": 1,
+      "min_body_eigenvalue": 5.199137071235413,
+      "H_relative_error": 2.0908725742102606e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999998,
+            0.9999999999999993,
+            0.9999999999999996
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.8084356705360412e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999998,
+            0.9999999999999993,
+            0.9999999999999996
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.8084356705360412e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000132829280635,
+            1.000001055300525,
+            0.9999871598779027
+          ],
+          "spread": 2.6123050160808958e-05,
+          "K_scaling_relative_error": 1.6841526317806446e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 4,
+      "seed": 2,
+      "min_body_eigenvalue": 4.860990971135498,
+      "H_relative_error": 5.429452002086249e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999996,
+            0.9999999999999977,
+            0.999999999999998
+          ],
+          "spread": 1.887379141862766e-15,
+          "K_scaling_relative_error": 1.372652358221927e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999996,
+            0.9999999999999977,
+            0.999999999999998
+          ],
+          "spread": 1.887379141862766e-15,
+          "K_scaling_relative_error": 1.372652358221927e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999843041650481,
+            0.9999937536913477,
+            0.9999830574929118
+          ],
+          "spread": 1.0696198435855564e-05,
+          "K_scaling_relative_error": 2.502637538293433e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 4,
+      "seed": 3,
+      "min_body_eigenvalue": 5.062950178658768,
+      "H_relative_error": 6.75213739221995e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999996,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 1.0973373492734223e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999996,
+            1.0000000000000002,
+            1.0000000000000002
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 1.0973373492734223e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000265092485652,
+            1.0000237397395153,
+            1.000014923418471
+          ],
+          "spread": 1.1585830094196226e-05,
+          "K_scaling_relative_error": 2.1108618647173777e-05
+        }
+      }
+    },
+    {
+      "ell": 3,
+      "k": 4,
+      "seed": 4,
+      "min_body_eigenvalue": 4.7728153939369,
+      "H_relative_error": 2.1765367930761697e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.999999999999999,
+            0.9999999999999988,
+            1.0000000000000004
+          ],
+          "spread": 1.6653345369377348e-15,
+          "K_scaling_relative_error": 1.0601431643645946e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.999999999999999,
+            0.9999999999999988,
+            1.0000000000000004
+          ],
+          "spread": 1.6653345369377348e-15,
+          "K_scaling_relative_error": 1.0601431643645946e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999775468068854,
+            1.0000322796195151,
+            1.0000314588176533
+          ],
+          "spread": 5.4732812629687544e-05,
+          "K_scaling_relative_error": 2.2136993719594424e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 2,
+      "seed": 0,
+      "min_body_eigenvalue": 4.64995815956299,
+      "H_relative_error": 4.735484496660523e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            0.9999999999999993,
+            0.9999999999999993
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 1.2069539083340552e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            0.9999999999999993,
+            0.9999999999999993
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 1.2069539083340552e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999872221175294,
+            1.0000225760533945,
+            1.000009852172935
+          ],
+          "spread": 3.5353935865067854e-05,
+          "K_scaling_relative_error": 1.7386853768322217e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 2,
+      "seed": 1,
+      "min_body_eigenvalue": 4.719629467392408,
+      "H_relative_error": 3.2336234580657525e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999982,
+            0.9999999999999981,
+            0.9999999999999984
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 9.493934319939285e-17
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999982,
+            0.9999999999999981,
+            0.9999999999999984
+          ],
+          "spread": 3.3306690738754696e-16,
+          "K_scaling_relative_error": 9.493934319939285e-17
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000217282792025,
+            1.000019497020206,
+            0.9999998529505215
+          ],
+          "spread": 2.187532868103137e-05,
+          "K_scaling_relative_error": 1.2871180368514137e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 2,
+      "seed": 2,
+      "min_body_eigenvalue": 4.4568874838545645,
+      "H_relative_error": 7.101599056304649e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000018,
+            1.0000000000000018,
+            1.0000000000000022
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.3649490885973095e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000018,
+            1.0000000000000018,
+            1.0000000000000022
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.3649490885973095e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999992278941496,
+            1.0000005422082257,
+            0.9999992745410152
+          ],
+          "spread": 1.3143140760174532e-06,
+          "K_scaling_relative_error": 9.577552392787372e-06
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 2,
+      "seed": 3,
+      "min_body_eigenvalue": 4.8399325572380665,
+      "H_relative_error": 8.072438496210216e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000004,
+            0.9999999999999996,
+            1.0000000000000004
+          ],
+          "spread": 8.881784197001252e-16,
+          "K_scaling_relative_error": 1.0308763295360866e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000004,
+            0.9999999999999996,
+            1.0000000000000004
+          ],
+          "spread": 8.881784197001252e-16,
+          "K_scaling_relative_error": 1.0308763295360866e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.000001118353991,
+            0.9999798340894566,
+            0.999988674602001
+          ],
+          "spread": 2.1284264534404684e-05,
+          "K_scaling_relative_error": 1.3823718809288133e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 2,
+      "seed": 4,
+      "min_body_eigenvalue": 4.799775122854968,
+      "H_relative_error": 5.738449102426797e-16,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999998,
+            0.9999999999999993,
+            0.9999999999999994
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.374565753653132e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999998,
+            0.9999999999999993,
+            0.9999999999999994
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.374565753653132e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000005954140143,
+            0.999993081404566,
+            0.999990217609909
+          ],
+          "spread": 1.0377804105288213e-05,
+          "K_scaling_relative_error": 1.4632396727028326e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 3,
+      "seed": 0,
+      "min_body_eigenvalue": 5.3688765445751025,
+      "H_relative_error": 1.0238649585821603e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999987,
+            0.9999999999999976,
+            0.9999999999999976
+          ],
+          "spread": 1.1102230246251565e-15,
+          "K_scaling_relative_error": 9.764176181423194e-17
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999987,
+            0.9999999999999976,
+            0.9999999999999976
+          ],
+          "spread": 1.1102230246251565e-15,
+          "K_scaling_relative_error": 9.764176181423194e-17
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999997793118304,
+            0.9999504830951088,
+            0.9999564150551782
+          ],
+          "spread": 4.929621672156159e-05,
+          "K_scaling_relative_error": 2.3387713407800328e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 3,
+      "seed": 1,
+      "min_body_eigenvalue": 4.210106157097082,
+      "H_relative_error": 2.445308815572881e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000038,
+            1.0000000000000013,
+            1.0000000000000029
+          ],
+          "spread": 2.4424906541753444e-15,
+          "K_scaling_relative_error": 1.3301310200329023e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000038,
+            1.0000000000000013,
+            1.0000000000000029
+          ],
+          "spread": 2.4424906541753444e-15,
+          "K_scaling_relative_error": 1.3301310200329023e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000005668075769,
+            0.9999856736377687,
+            0.9999971811735529
+          ],
+          "spread": 1.4893169808183337e-05,
+          "K_scaling_relative_error": 2.3296427914180542e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 3,
+      "seed": 2,
+      "min_body_eigenvalue": 4.59381248711353,
+      "H_relative_error": 1.1322328055932936e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000004,
+            1.0000000000000007,
+            1.0000000000000009
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.1895107930780154e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000004,
+            1.0000000000000007,
+            1.0000000000000009
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.1895107930780154e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000023155604576,
+            0.9999575816441976,
+            0.9999600398103738
+          ],
+          "spread": 4.4733916260031314e-05,
+          "K_scaling_relative_error": 5.248982046935234e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 3,
+      "seed": 3,
+      "min_body_eigenvalue": 4.537696402309725,
+      "H_relative_error": 1.5987649475549734e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999993,
+            0.9999999999999996,
+            0.9999999999999998
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.0754018771993866e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999993,
+            0.9999999999999996,
+            0.9999999999999998
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.0754018771993866e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999979389059422,
+            0.9999965360329793,
+            0.9999951345862957
+          ],
+          "spread": 2.804319646498854e-06,
+          "K_scaling_relative_error": 3.371784438311066e-06
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 3,
+      "seed": 4,
+      "min_body_eigenvalue": 4.886598670523627,
+      "H_relative_error": 1.0724587003844777e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0,
+            1.0000000000000004,
+            1.0000000000000004
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.052434665457517e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0,
+            1.0000000000000004,
+            1.0000000000000004
+          ],
+          "spread": 4.440892098500626e-16,
+          "K_scaling_relative_error": 1.052434665457517e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999874434679831,
+            0.9999994502836398,
+            0.9999952632299548
+          ],
+          "spread": 1.2006815656717684e-05,
+          "K_scaling_relative_error": 3.407916302407132e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 4,
+      "seed": 0,
+      "min_body_eigenvalue": 5.116448196618816,
+      "H_relative_error": 3.808219956882378e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000004,
+            0.9999999999999997,
+            1.0
+          ],
+          "spread": 7.771561172376096e-16,
+          "K_scaling_relative_error": 1.2379637872671726e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000004,
+            0.9999999999999997,
+            1.0
+          ],
+          "spread": 7.771561172376096e-16,
+          "K_scaling_relative_error": 1.2379637872671726e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999885739842103,
+            0.9999835968607445,
+            0.9999840674219667
+          ],
+          "spread": 4.9771234658102514e-06,
+          "K_scaling_relative_error": 1.5688733167815233e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 4,
+      "seed": 1,
+      "min_body_eigenvalue": 4.519953373253429,
+      "H_relative_error": 2.322134653851394e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            0.9999999999999997,
+            0.999999999999999,
+            0.9999999999999991
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 1.185502478945735e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            0.9999999999999997,
+            0.999999999999999,
+            0.9999999999999991
+          ],
+          "spread": 6.661338147750939e-16,
+          "K_scaling_relative_error": 1.185502478945735e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999977894631075,
+            1.0000096088504786,
+            1.0000067301307267
+          ],
+          "spread": 1.1819387371159173e-05,
+          "K_scaling_relative_error": 2.1822689597608667e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 4,
+      "seed": 2,
+      "min_body_eigenvalue": 4.505479777040904,
+      "H_relative_error": 1.6670111800193754e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000004,
+            1.000000000000004,
+            1.000000000000003
+          ],
+          "spread": 3.552713678800501e-15,
+          "K_scaling_relative_error": 1.1121689375336287e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000004,
+            1.000000000000004,
+            1.000000000000003
+          ],
+          "spread": 3.552713678800501e-15,
+          "K_scaling_relative_error": 1.1121689375336287e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            0.9999914712141574,
+            1.0000001192088237,
+            1.0000010155755896
+          ],
+          "spread": 9.544361432189952e-06,
+          "K_scaling_relative_error": 1.721103731049425e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 4,
+      "seed": 3,
+      "min_body_eigenvalue": 4.1985062954708425,
+      "H_relative_error": 1.9130951126121215e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.0000000000000002,
+            0.9999999999999994,
+            1.0
+          ],
+          "spread": 7.771561172376096e-16,
+          "K_scaling_relative_error": 8.444853486879791e-17
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.0000000000000002,
+            0.9999999999999994,
+            1.0
+          ],
+          "spread": 7.771561172376096e-16,
+          "K_scaling_relative_error": 8.444853486879791e-17
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000021870669813,
+            0.9999912295450809,
+            0.9999835875274022
+          ],
+          "spread": 1.8599539579056135e-05,
+          "K_scaling_relative_error": 1.2247016285603428e-05
+        }
+      }
+    },
+    {
+      "ell": 5,
+      "k": 4,
+      "seed": 4,
+      "min_body_eigenvalue": 4.411014159775547,
+      "H_relative_error": 2.090580020180883e-15,
+      "readings": {
+        "plainH": {
+          "ratios": [
+            1.000000000000001,
+            1.0000000000000002,
+            1.0000000000000004
+          ],
+          "spread": 8.881784197001252e-16,
+          "K_scaling_relative_error": 1.3133518736251173e-16
+        },
+        "dimensionlessH": {
+          "ratios": [
+            1.000000000000001,
+            1.0000000000000002,
+            1.0000000000000004
+          ],
+          "spread": 8.881784197001252e-16,
+          "K_scaling_relative_error": 1.3133518736251173e-16
+        },
+        "wrong_old_plainH_control": {
+          "ratios": [
+            1.0000003814182734,
+            0.9999883005626321,
+            1.0000025476271102
+          ],
+          "spread": 1.4247064478056792e-05,
+          "K_scaling_relative_error": 2.7690708541469326e-05
+        }
+      }
+    }
+  ]
+}

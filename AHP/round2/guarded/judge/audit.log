@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-21",
+  "checksPass": true,
+  "axiomRecordsIncludingRepeatedPinRecords": 226,
+  "files": [
+    {
+      "source": "AHP/round2/guarded/pin/Statement.lean",
+      "compiledCopy": "AHP/round2/guarded/judge/pin/Statement.lean",
+      "sha256": "cb10c63af2e2a51f4f4a636f36933c071d2cbdccd15aacb6837d6cd15cdd5656",
+      "sourceEqualsCompiledCopy": true,
+      "pinPrefixMatchesAfterRemovingOnlyExtraImport": true,
+      "extraFrozenImportAtLine2": false,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "recompiledExit": 0,
+      "diagnostics": [],
+      "axiomRecords": 17,
+      "allAxiomsStandard": true,
+      "allRequestedPrintsPresent": true,
+      "mainDeclaration": "AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1",
+      "mainAxiomLineNormalized": "'AdalyFormal.Round2.Guarded.Pin.goalPos2_iff_goalPos1' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "source": "AHP/round2/guarded/r1-prove/Attempt.lean",
+      "compiledCopy": "AHP/round2/guarded/judge/r1-prove/Attempt.lean",
+      "sha256": "14c828bc6495118756f962e1f19821e6269ee434bddd4bb12bf67a90bbe9983d",
+      "sourceEqualsCompiledCopy": true,
+      "pinPrefixMatchesAfterRemovingOnlyExtraImport": true,
+      "extraFrozenImportAtLine2": false,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "recompiledExit": 0,
+      "diagnostics": [],
+      "axiomRecords": 56,
+      "allAxiomsStandard": true,
+      "allRequestedPrintsPresent": true,
+      "mainDeclaration": "AdalyFormal.Round2.Guarded.R1Prove.goalPos2_iff_boundary_kernel",
+      "mainAxiomLineNormalized": "'AdalyFormal.Round2.Guarded.R1Prove.goalPos2_iff_boundary_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "source": "AHP/round2/guarded/r1-refute/Attempt.lean",
+      "compiledCopy": "AHP/round2/guarded/judge/r1-refute/Attempt.lean",
+      "sha256": "6372b6a7f2c7947ee08af9f08212a6b029bb9d5514bb1b5df476fc429e78b971",
+      "sourceEqualsCompiledCopy": true,
+      "pinPrefixMatchesAfterRemovingOnlyExtraImport": true,
+      "extraFrozenImportAtLine2": true,
+      "imports": [
+        "DrEquiv",
+        "GdR6b"
+      ],
+      "forbiddenTokens": [],
+      "recompiledExit": 0,
+      "diagnostics": [],
+      "axiomRecords": 28,
+      "allAxiomsStandard": true,
+      "allRequestedPrintsPresent": true,
+      "mainDeclaration": "AdalyFormal.Round2.Guarded.RefuteR1.pencil_failure_iff_second_jet",
+      "mainAxiomLineNormalized": "'AdalyFormal.Round2.Guarded.RefuteR1.pencil_failure_iff_second_jet' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "source": "AHP/round2/guarded/r2-prove/Attempt.lean",
+      "compiledCopy": "AHP/round2/guarded/judge/r2-prove/Attempt.lean",
+      "sha256": "183d253712e04e4ccbfd13a0a367e4d6ba368bfd840230e7a4f595a0b2c4f949",
+      "sourceEqualsCompiledCopy": true,
+      "pinPrefixMatchesAfterRemovingOnlyExtraImport": true,
+      "extraFrozenImportAtLine2": false,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "recompiledExit": 0,
+      "diagnostics": [],
+      "axiomRecords": 71,
+      "allAxiomsStandard": true,
+      "allRequestedPrintsPresent": true,
+      "mainDeclaration": "AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response",
+      "mainAxiomLineNormalized": "'AdalyFormal.Round2.Guarded.R2Prove.goalPos2_iff_boundary_response' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "source": "AHP/round2/guarded/r2-refute/Attempt.lean",
+      "compiledCopy": "AHP/round2/guarded/judge/r2-refute/Attempt.lean",
+      "sha256": "9dc2dadd4dce68def40ed485c8a23c3d7cfc2d8f03776990b6e47dafa3a6d166",
+      "sourceEqualsCompiledCopy": true,
+      "pinPrefixMatchesAfterRemovingOnlyExtraImport": true,
+      "extraFrozenImportAtLine2": false,
+      "imports": [
+        "DrEquiv"
+      ],
+      "forbiddenTokens": [],
+      "recompiledExit": 0,
+      "diagnostics": [],
+      "axiomRecords": 54,
+      "allAxiomsStandard": true,
+      "allRequestedPrintsPresent": true,
+      "mainDeclaration": "AdalyFormal.Round2.Guarded.RefuteR2.goalNeg2_iff_cofinalPencilFailure",
+      "mainAxiomLineNormalized": "'AdalyFormal.Round2.Guarded.RefuteR2.goalNeg2_iff_cofinalPencilFailure' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    }
+  ],
+  "limitation": "Compilation verifies the recorded reductions and exclusions, not either side of an open equivalence. No numerical replay or whole-project rebuild."
+}

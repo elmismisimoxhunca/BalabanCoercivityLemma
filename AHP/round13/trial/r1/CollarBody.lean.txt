@@ -1,0 +1,200 @@
+namespace AdalyFormal.Round13.Trial
+open scoped RealInnerProductSpace Matrix
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneR8
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.SuTwoInner
+open AdalyFormal.Balaban.CovariantHjMinimizer
+  (periodicLatticeShiftBack periodicLatticeShift_shiftBack periodicLatticeShiftBack_shift)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round12.Noncancel.Boundary
+open AdalyFormal.Round12.Noncancel.Mass
+open Classical
+
+theorem trial_sites {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    (fun i : Fin 6 => (trialBond hq R i).1) =
+      ![rightSite hq R, periodicLatticeShift (rightSite hq R) 1,
+        periodicLatticeShiftBack (rightSite hq R) 1,
+        periodicLatticeShift (rightSite hq R) 2,
+        periodicLatticeShiftBack (rightSite hq R) 2, rightSite hq R] := by
+  have hp1 := patchSite_shift hq R centerCoord 1 (by decide)
+  have hp2 := patchSite_shift hq R centerCoord 2 (by decide)
+  have hm1 := patchSite_shift hq R (trialCoord 2) 1 (by decide)
+  have hm2 := patchSite_shift hq R (trialCoord 4) 2 (by decide)
+  rw [patchSite_center] at hp1 hp2
+  have hu1 : Function.update centerCoord 1 (centerCoord 1+1) = trialCoord 1 := by decide
+  have hu2 : Function.update centerCoord 2 (centerCoord 2+1) = trialCoord 3 := by decide
+  have hd1 : Function.update (trialCoord 2) 1 (trialCoord 2 1+1) = centerCoord := by decide
+  have hd2 : Function.update (trialCoord 4) 2 (trialCoord 4 2+1) = centerCoord := by decide
+  rw [hu1] at hp1
+  rw [hu2] at hp2
+  rw [hd1, patchSite_center] at hm1
+  rw [hd2, patchSite_center] at hm2
+  have hm1' := congrArg (fun z => periodicLatticeShiftBack z 1) hm1
+  have hm2' := congrArg (fun z => periodicLatticeShiftBack z 2) hm2
+  rw [periodicLatticeShiftBack_shift] at hm1' hm2'
+  funext i
+  fin_cases i
+  · exact patchSite_center hq R
+  · exact hp1.symm
+  · exact hm1'
+  · exact hp2.symm
+  · exact hm2'
+  · exact patchSite_center hq R
+
+theorem trial_start_near {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 6) :
+    pdist (rightSite hq R) (trialBond hq R i).1 ≤ 1 := by
+  have h := congrFun (trial_sites hq R) i
+  rw [h]
+  fin_cases i
+  · change pdist (rightSite hq R) (rightSite hq R) ≤ 1
+    rw [AdalyFormal.StatementLaneR8.pdist_self]
+    omega
+  · exact pdist_shift_le _ _
+  · exact pdist_shiftBack_le _ _
+  · exact pdist_shift_le _ _
+  · exact pdist_shiftBack_le _ _
+  · change pdist (rightSite hq R) (rightSite hq R) ≤ 1
+    rw [AdalyFormal.StatementLaneR8.pdist_self]
+    omega
+
+theorem trial_start_zero {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 6) :
+    ((trialBond hq R i).1 0).val = 12*(R*q)+12*q-1 := by
+  have hv : trialCoord i 0 = (3 : Fin 7) := by fin_cases i <;> rfl
+  have hc : Fin.castLE (seven_le_side hq R 0) (3 : Fin 7) = (3 : Fin (Fine q R 0+1)) := by
+    apply Fin.ext
+    change 3 = 3 % (Fine q R 0+1)
+    rw [Nat.mod_eq_of_lt (by have := seven_le_side hq R 0; omega)]
+  simp [trialBond, patchSite, hv, hc, rightSite]
+
+theorem trial_touch {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 6) :
+    trialBond hq R i ∈ bondsOm0 (geomOf 2 1 (dilTower q R)) := by
+  apply Or.inl
+  change 4*q ≤ _ ∧ _ < 12*(R*q)+12*q
+  rw [trial_start_zero]
+  omega
+
+theorem trial_collar {q R : ℕ} (hq : 0 < q) (hR18 : 18 ≤ R) (i : Fin 6) :
+    (trialBond hq R i).1 ∉ (dilTower q R).Om 1 ∧
+      periodicLatticeShift (trialBond hq R i).1 (trialBond hq R i).2 ∉
+        (dilTower q R).Om 1 := by
+  have hr : 18*q ≤ R*q := Nat.mul_le_mul_right q hR18
+  constructor
+  · change ¬ (2*(R*q)+4*q ≤ _ ∧ _ < 10*(R*q)+12*q)
+    rw [trial_start_zero]
+    omega
+  · change ¬ (2*(R*q)+4*q ≤ _ ∧ _ < 10*(R*q)+12*q)
+    rw [dil_shift_zero hq, trial_start_zero]
+    split_ifs
+    · rw [Nat.mod_eq_of_lt (by omega)]
+      omega
+    · omega
+
+theorem trial_levelZero {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) (i : Fin 6) :
+    trialBond hq R i ∈ bondsLam (geomOf 2 1 (dilTower q R)) 0 :=
+  collar_levelZero (dil_admissible hq hR) (by norm_num) _ (trial_touch hq R i)
+    (trial_collar hq hR18 i).1 (trial_collar hq hR18 i).2
+
+theorem trialField_mem {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    trialField hq R ∈ bondSupp (geomOf 2 1 (dilTower q R)) := by
+  intro e he
+  by_contra hn
+  obtain ⟨i,rfl⟩ := trialField_support hq R e hn
+  exact he (trial_touch hq R i)
+
+def trialVector {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    ↥(bondSupp (geomOf 2 1 (dilTower q R))) := ⟨trialField hq R,trialField_mem hq R⟩
+
+theorem trial_near_exterior {q : ℕ} (hq : 0 < q) (R : ℕ) (i : Fin 6) :
+    pdist (periodicLatticeShift (rightSite hq R) 0) (trialBond hq R i).1 ≤ 2 ∧
+    pdist (periodicLatticeShift (rightSite hq R) 0)
+      (periodicLatticeShift (trialBond hq R i).1 (trialBond hq R i).2) ≤ 3 := by
+  have h1 : pdist (periodicLatticeShift (rightSite hq R) 0) (rightSite hq R) ≤ 1 := by
+    rw [AdalyFormal.StatementLaneR8.pdist_comm]
+    exact pdist_shift_le _ _
+  have h2 := trial_start_near hq R i
+  have ht := pdist_triangle (periodicLatticeShift (rightSite hq R) 0)
+    (rightSite hq R) (trialBond hq R i).1
+  have h3 := pdist_shift_le (trialBond hq R i).1 (trialBond hq R i).2
+  have ht' := pdist_triangle (periodicLatticeShift (rightSite hq R) 0)
+    (trialBond hq R i).1 (periodicLatticeShift (trialBond hq R i).1 (trialBond hq R i).2)
+  omega
+
+theorem trialField_hsupp {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    ∀ e : Bond (Fine q R), trialField hq R e ≠ 0 →
+      ∃ w : PeriodicLatticeSite (Fine q R), w ∉ (dilTower q R).Om 0 ∧ pdist e.1 w ≤ 2 := by
+  intro e he
+  obtain ⟨i,rfl⟩ := trialField_support hq R e he
+  exact ⟨periodicLatticeShift (rightSite hq R) 0, (rightSite_bd hq R).hx', by
+    rw [AdalyFormal.StatementLaneR8.pdist_comm]; exact (trial_near_exterior hq R i).1⟩
+
+/-- All positive-level physical blocking rows vanish, for arbitrary background U. -/
+theorem trial_higher_rows_zero {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (U : Cfg (Fine q R)) {j : ℕ} (hj : 1 ≤ j) (hjk : j ≤ 1)
+    {b : Bond (Fine q R)} (hb : b ∈ bondsLam (geomOf 2 1 (dilTower q R)) j) :
+    QlinB (geomOf 2 1 (dilTower q R)) U j (trialField hq R) b = 0 := by
+  exact QlinB_supp_zero (dil_admissible hq hR) (by norm_num) (by nlinarith)
+    U (trialField hq R) (trialField_hsupp hq R) hj hjk hb
+
+theorem trial_mass_upper {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (U : Cfg (Fine q R)) :
+    ⟪trialField hq R, MassFull (geomOf 2 1 (dilTower q R)) 1
+      (bondSectorOf (geomOf 2 1 (dilTower q R)) U) (trialField hq R)⟫ ≤ (21/16 : ℝ) := by
+  have h := Mass_supp_le (dil_admissible hq hR) (by norm_num) (by nlinarith)
+    U 1 (by norm_num) (trialField hq R) (trialField_hsupp hq R)
+  simpa only [trialField_norm, one_mul] using h
+
+/-- Exact physical mass, not a lower estimate: the frozen higher rows contribute zero. -/
+theorem trial_mass_eq {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (U : Cfg (Fine q R)) :
+    ⟪trialField hq R, MassFull (geomOf 2 1 (dilTower q R)) 1
+      (bondSectorOf (geomOf 2 1 (dilTower q R)) U) (trialField hq R)⟫ = (21/16 : ℝ) := by
+  apply le_antisymm (trial_mass_upper hq hR hR18 U)
+  have h := leaf_mass_le (geomOf 2 1 (dilTower q R)) U 1 (by norm_num)
+    (Finset.univ.image (trialBond hq R)) (by
+      intro e he
+      obtain ⟨i,_,rfl⟩ := Finset.mem_image.mp he
+      exact trial_levelZero hq hR hR18 i) (trialField hq R)
+  rw [Finset.sum_image (fun i _ j _ h => trialBond_injective hq R h)] at h
+  simp only [one_mul, trialField_at, charged_norm] at h
+  norm_num [Fin.sum_univ_succ, trialAmplitude, Complex.normSq_apply] at h ⊢
+  exact h
+
+theorem trial_T_zero {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (U : Cfg (Fine q R)) : Tfull (geomOf 2 1 (dilTower q R)) U (trialField hq R) = 0 := by
+  unfold trialField
+  rw [map_sum]
+  apply Finset.sum_eq_zero
+  intro i _
+  exact Tfull_sing_zero_near (dil_admissible hq hR) (d := 3) (by nlinarith)
+    U _ _ _ (rightSite_bd hq R).hx'
+    (by have := (trial_near_exterior hq R i).1; omega) (trial_near_exterior hq R i).2
+
+theorem trial_W_eq {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (U : Cfg (Fine q R)) (a : ℝ) :
+    Wop (geomOf 2 1 (dilTower q R)) U a (trialField hq R) = trialField hq R := by
+  unfold trialField
+  rw [map_sum]
+  apply Finset.sum_congr rfl
+  intro i _
+  exact Wop_sing_near (dil_admissible hq hR) (d := 3) (by nlinarith)
+    U a _ _ _ (rightSite_bd hq R).hx'
+    (by have := (trial_near_exterior hq R i).1; omega) (trial_near_exterior hq R i).2
+
+end AdalyFormal.Round13.Trial
+#print axioms AdalyFormal.Round13.Trial.trial_sites
+#print axioms AdalyFormal.Round13.Trial.trialBond_injective
+#print axioms AdalyFormal.Round13.Trial.trialField_norm
+#print axioms AdalyFormal.Round13.Trial.trialField_mem
+#print axioms AdalyFormal.Round13.Trial.trial_higher_rows_zero
+#print axioms AdalyFormal.Round13.Trial.trial_mass_upper
+#print axioms AdalyFormal.Round13.Trial.trial_mass_eq
+#print axioms AdalyFormal.Round13.Trial.trial_T_zero
+#print axioms AdalyFormal.Round13.Trial.trial_W_eq

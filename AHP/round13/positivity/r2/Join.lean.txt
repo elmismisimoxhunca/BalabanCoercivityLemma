@@ -1,0 +1,138 @@
+namespace AdalyFormal.Round13.Positivity.Physical
+open Classical
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLaneG
+open AdalyFormal.StatementLaneR6
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.D1Literal
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.DeltaPrime
+open AdalyFormal.Round12.Noncancel.Path
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round12.Noncancel.RightFamily
+open AdalyFormal.Round13.Positivity.Leaves
+open AdalyFormal.Round13.Positivity.Local
+open AdalyFormal.Round9.Guarded.AnalyticR1
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round12.Kernel.Actual (chargedCoordinate)
+
+/-- Every localized right-star plaquette really is flat. -/
+theorem rightStar_local_hol {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ)
+    (p : PeriodicLatticePlaquette (scaleUp 2 1 (dilLu q R)))
+    (hp : p ∈ plaqIn ((dilTower q R).Om 0)) :
+    reHolonomy (rightStar hq R t) p = 1 ∧ imHolonomy (rightStar hq R t) p = 0 := by
+  have hU : ∀ e ∈ periodicPlaquetteBoundaryEdges p, rightStar hq R t e = 1 := by
+    intro e he
+    exact starPath_interior _ _ (rightSite_bd hq R).hx' (rightSite_bd hq R).trans t e (hp e he).1
+  apply hol_flat_components
+  unfold holonomyElem periodicPlaquetteHolonomy
+  dsimp only
+  rw [hU _ ((edge_mem p _).mpr (Or.inl rfl)),
+    hU _ ((edge_mem p _).mpr (Or.inr (Or.inl rfl))),
+    hU _ ((edge_mem p _).mpr (Or.inr (Or.inr (Or.inl rfl)))),
+    hU _ ((edge_mem p _).mpr (Or.inr (Or.inr (Or.inr rfl))))]
+  simp
+
+/-- UNCONDITIONAL physical comparison on the central-charged-zero subspace.
+The multiplicative constant cos(t) is independent of scale and radius. -/
+theorem rightStar_carrier_lower {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (t : ℝ) (ht : 0 ≤ Real.cos t) (u : TwistSpace q R)
+    (hu : chargedCoordinate q R (rightSite hq R,(0 : Fin 3)) u = 0) :
+    Real.cos t * ⟪u, (dataS selIn selIn
+      (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+        (rightStar hq R t) 1 (dilLam q R))).Ginv u⟫ ≤
+      ⟪u, vacA q R (rightStar hq R) 1 t u⟫ := by
+  rw [vacA_rightStar]
+  let P := gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+    (rightStar hq R t) 1 (dilLam q R)
+  apply carrier_ge_scaled_local P u (Real.cos t)
+    (∑ i : Fin 8, ‖(iE P.G u) (leaf hq R i)‖^2) (Real.cos_le_one t)
+  · apply localized_Dpi_nonneg
+    · intro p hp; exact (rightStar_local_hol hq R t p hp).1
+    · intro p hp; exact (rightStar_local_hol hq R t p hp).2
+  · change _ ≤ ⟪u,pE P.G (MassFull P.G P.a (bondSectorOf P.G P.U) (iE P.G u))⟫
+    rw [pE_inner_right]
+    exact eight_leaf_mass hq hR (by omega) P.U (iE P.G u)
+  · exact rightStar_omitted_loss hq hR hR18 t ht u hu
+
+/-- Strict positivity includes t=0 and every strict half-pi prefix. -/
+theorem rightStar_zero_coordinate_positive {q R : ℕ}
+    (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (t : ℝ) (ht0 : 0 ≤ t) (ht : t < Real.pi/2)
+    (u : TwistSpace q R) (hu : u ≠ 0)
+    (hz : chargedCoordinate q R (rightSite hq R,(0 : Fin 3)) u = 0) :
+    0 < ⟪u, vacA q R (rightStar hq R) 1 t u⟫ := by
+  have hc : 0 < Real.cos t := Real.cos_pos_of_mem_Ioo ⟨by linarith [Real.pi_pos],ht⟩
+  exact lt_of_lt_of_le (mul_pos hc (rightStar_local_positive hq hR hR18 t u hu))
+    (rightStar_carrier_lower hq hR hR18 t hc.le u hz)
+
+/-- A single scale/radius-independent positive factor works on every closed
+prefix [0,T] below half pi, relative to the genuine FLAT localized form. -/
+theorem rightStar_prefix_lower {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+    (T t : ℝ) (hT0 : 0 ≤ T) (hT : T < Real.pi/2) (ht0 : 0 ≤ t) (ht : t ≤ T)
+    (u : TwistSpace q R)
+    (hu : chargedCoordinate q R (rightSite hq R,(0 : Fin 3)) u = 0) :
+    0 < Real.cos T ∧
+    Real.cos T * ⟪u, (dataS selIn selIn
+      (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+        (fun _ => 1) 1 (dilLam q R))).Ginv u⟫ ≤
+      ⟪u, vacA q R (rightStar hq R) 1 t u⟫ := by
+  have hc := cos_prefix_loss T t hT0 hT ht0 ht
+  have hflat : dataS selIn selIn
+      (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+        (rightStar hq R t) 1 (dilLam q R)) =
+      dataS selIn selIn
+      (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+        (fun _ => 1) 1 (dilLam q R)) := rightStar_local_data_flat hq hR hR18 1 t
+  have hb := rightStar_carrier_lower hq hR hR18 t (hc.1.le.trans hc.2.1) u hu
+  rw [hflat] at hb
+  refine ⟨hc.1, (mul_le_mul_of_nonneg_right hc.2.1 ?_).trans hb⟩
+  by_cases hz : u = 0
+  · simp [hz]
+  · have hp : 0 < ⟪u,(dataS selIn selIn
+        (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+          (rightStar hq R t) 1 (dilLam q R))).Ginv u⟫ :=
+        rightStar_local_positive hq hR hR18 t u hz
+    rw [hflat] at hp
+    exact hp.le
+
+set_option linter.unusedVariables false in
+/-- P2 VERBATIM, no extra analytic, geometric, inverse or spectral hypothesis. -/
+theorem rightStar_P2 :
+    ∀ {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R)
+      (t : ℝ), 0 < t → t < Real.pi/2 →
+      ∀ x : TwistSpace q R, x ≠ 0 →
+        AdalyFormal.Round12.Kernel.Actual.chargedCoordinate q R
+          (rightSite hq R, (0 : Fin 3)) x = 0 →
+        0 < ⟪x, vacA q R (rightStar hq R) 1 t x⟫ := by
+  intro q R hq hR hR18 t ht0 ht x hx hz
+  exact rightStar_zero_coordinate_positive hq hR hR18 t ht0.le ht x hx hz
+
+/-- Nested cofinal scales/radii, with the interval and ALL full carrier fields
+quantified after the SAME chosen radius. -/
+theorem cofinal_rightStar_P2 :
+    ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+      R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      ∀ (t : ℝ), 0 < t → t < Real.pi/2 →
+        ∀ x : TwistSpace (2^j) R, x ≠ 0 →
+          chargedCoordinate (2^j) R (rightSite (by positivity) R, (0 : Fin 3)) x = 0 →
+          0 < ⟪x, vacA (2^j) R (rightStar (by positivity) R) 1 t x⟫ := by
+  intro j₀
+  refine ⟨j₀,le_rfl,?_⟩
+  intro R₀
+  refine ⟨2*(R₀+18),by omega,⟨R₀+18,rfl⟩,by omega,?_⟩
+  exact rightStar_P2 (by positivity) ⟨R₀+18,rfl⟩ (by omega)
+
+end AdalyFormal.Round13.Positivity.Physical
+#print axioms AdalyFormal.Round13.Positivity.Physical.rightStar_local_hol
+#print axioms AdalyFormal.Round13.Positivity.Physical.rightStar_carrier_lower
+#print axioms AdalyFormal.Round13.Positivity.Physical.rightStar_zero_coordinate_positive
+#print axioms AdalyFormal.Round13.Positivity.Physical.rightStar_prefix_lower
+#print axioms AdalyFormal.Round13.Positivity.Physical.rightStar_P2
+#print axioms AdalyFormal.Round13.Positivity.Physical.cofinal_rightStar_P2
+#check @AdalyFormal.Round13.Positivity.Physical.rightStar_P2
+#check @AdalyFormal.Round13.Positivity.Physical.cofinal_rightStar_P2

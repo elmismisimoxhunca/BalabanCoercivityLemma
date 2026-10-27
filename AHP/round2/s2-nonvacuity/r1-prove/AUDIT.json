@@ -1,0 +1,229 @@
+{
+  "source": "/home/sebastian/BalabanCoercivityLemma/AHP/round2/s2-nonvacuity/r1-prove/Attempt.lean",
+  "sha256": "2e2d384afeab5a5fa1a0249c7e3960eef91078888b071463bf0228538cc07f8a",
+  "pin_sha256": "826f93c754d1c78a13e8ee7a832fc3041b36cd9cbe4628cde3a7475d752909f9",
+  "pin_declarations_verbatim": {
+    "TouchBond": true,
+    "CoversPlaqFour": true,
+    "plaqCorner": true,
+    "CoversPlaqCorner": true,
+    "CurlReadsTouch": true,
+    "PerCubeRegularTouch": true,
+    "ClassCoupledFour": true,
+    "ClassCoupledCorner": true,
+    "ProperFourAt": true,
+    "ProperCornerAt": true,
+    "GoalPos1": true,
+    "GoalNeg1": true,
+    "GoalPos2": true,
+    "GoalNeg2": true
+  },
+  "imports": [
+    "ZT5A",
+    "D1Final",
+    "ZR8Class"
+  ],
+  "forbidden_tokens": [],
+  "exit_code": 0,
+  "main_declaration": "AdalyFormal.AHP.Round2.S2Nonvacuity.goalPos1_proved",
+  "main_type": "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos1",
+  "axiom_record_count": 40,
+  "axioms": {
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.four_touch_cubeBond_of_transverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.slabNv_transverse": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.slabNv_coversFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.perCubeRegularTouch_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.properFourAt_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.goalPos1_proved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.StatementLaneR8.shift_ne": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.StatementLaneR8.shift_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.om0_mem": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.slab3": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.D1Literal.SlabNv": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.nvLu": [],
+    "AdalyFormal.NonVac.LamN": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.BseedNv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.slabGeo_inst": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.nv_widths": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.scaleUp_nv": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.slab3_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.slab3_coversp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.D1Literal.SlabNv_bdpt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.torusOK_nv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.lambdaOK2_nv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.NonVac.BseedNv_props": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.D1Literal.frobNorm_zero'": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.TouchBond": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.plaqCorner": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.CoversPlaqCorner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.CurlReadsTouch": [
+      "propext",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.PerCubeRegularTouch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledFour": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ClassCoupledCorner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ProperFourAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.ProperCornerAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalPos2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.GoalNeg2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg1_implies_not_goalPos1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AdalyFormal.AHP.Round2.S2Nonvacuity.goalNeg2_implies_not_goalPos2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "all_local_theorems_printed": [
+    "four_touch_cubeBond_of_transverse",
+    "slabNv_transverse",
+    "slabNv_coversFour",
+    "perCubeRegularTouch_one",
+    "properFourAt_two",
+    "goalPos1_proved",
+    "goalNeg1_implies_not_goalPos1",
+    "goalNeg2_implies_not_goalPos2"
+  ]
+}

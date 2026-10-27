@@ -1,0 +1,90 @@
+
+namespace AdalyFormal.Round12.Kernel.Crossing
+open scoped RealInnerProductSpace Topology
+open Set
+open AdalyFormal.D1Literal
+open AdalyFormal.Round9.Guarded.QualitativeR2
+variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℝ E]
+
+/-- A negative direction at T cuts off the initial PSD interval, so increasing
+the endpoint beyond T cannot change its supremum. No continuity is needed here. -/
+theorem psdEdge_same_after_negative (A : ℝ → E →L[ℝ] E)
+    {a T b : ℝ} (haT : a ≤ T) (hTb : T ≤ b) (w : E) (hw : ⟪w,A T w⟫ < 0) :
+    psdEdge A a b = psdEdge A a T := by
+  unfold psdEdge
+  congr 1
+  ext t
+  constructor
+  · rintro ⟨ht,hall⟩
+    have htT : t < T := by
+      by_contra h
+      have hp := hall T ⟨haT, le_of_not_gt h⟩ w
+      linarith
+    exact ⟨⟨ht.1,htT.le⟩,hall⟩
+  · rintro ⟨ht,hall⟩
+    exact ⟨⟨ht.1,ht.2.trans hTb⟩,hall⟩
+
+/-- A non-unit finite-dimensional endomorphism has a nonzero kernel witness. -/
+theorem exists_kernel_of_nonunit [FiniteDimensional ℝ E]
+    (A : E →L[ℝ] E) (h : ¬ IsUnit A) : ∃ u, u ≠ 0 ∧ A u = 0 := by
+  by_contra hn
+  push_neg at hn
+  have hi : Function.Injective A := (injective_iff_map_eq_zero A).mpr (by
+    intro u hu
+    by_contra hne
+    exact hn u hne hu)
+  exact h (ContinuousLinearMap.isUnit_iff_bijective.mpr
+    ⟨hi,(LinearMap.injective_iff_surjective (f := A.toLinearMap)).mp hi⟩)
+
+#print axioms psdEdge_same_after_negative
+#print axioms exists_kernel_of_nonunit
+end AdalyFormal.Round12.Kernel.Crossing
+
+namespace AdalyFormal.Round12.Kernel.CrossingActual
+open scoped RealInnerProductSpace Topology
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round9.Guarded.AnalyticR1
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2
+open AdalyFormal.Round10.Assembly.R2
+open AdalyFormal.Round12.Kernel.Actual
+open AdalyFormal.Round12.Kernel.Crossing
+open AdalyFormal.GaugeCov
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+
+/-- Exact canonical crossing and COMPLETE real nullity two from a physical
+negative half-pi trial and a trace-zero positivity estimate throughout the interval.
+These two physical inputs are explicit, not established by this theorem. -/
+theorem kernelLine_exists_before_halfpi (q R : ℕ)
+    (V : ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)))
+    (b : Bond (scaleUp 2 1 (dilLu q R)))
+    (hc : Continuous (vacA q R V 1))
+    (hpd : ∀ x, x ≠ 0 → 0 < ⟪x,vacA q R V 1 0 x⟫)
+    (hw : ∃ w, ⟪w,vacA q R V 1 (Real.pi/2) w⟫ < 0)
+    (hV : ∀ t, periodicGaugeTransform (rotGauge (Real.pi/4)) (V t) = V t)
+    (hp : ∀ t, 0 < t → t < Real.pi/2 → ∀ x : TwistSpace q R,
+      x ≠ 0 → chargedCoordinate q R b x = 0 → 0 < ⟪x,vacA q R V 1 t x⟫) :
+    0 < vacEdge q R V ∧ vacEdge q R V < Real.pi/2 ∧
+      ∃ u : TwistSpace q R, KernelLine q R V u ∧
+        Module.finrank ℝ (vacA q R V 1 (vacEdge q R V)).ker = 2 := by
+  obtain ⟨w,hw⟩ := hw
+  have hs : ∀ t x y, ⟪vacA q R V 1 t x,y⟫ = ⟪x,vacA q R V 1 t y⟫ := by
+    intro t x y
+    exact (AdalyFormal.D1Literal.dataS AdalyFormal.D1Literal.selAll
+      AdalyFormal.D1Literal.selAll (pathP q R V (fun _ => 0) 0 1 t)).Ginv_symm
+      (AdalyFormal.D1Literal.dataS_laws _ _ _) x y
+  have heq : vacEdge q R V = psdEdge (vacA q R V 1) 0 (Real.pi/2) :=
+    psdEdge_same_after_negative _ (by positivity) (by linarith [Real.pi_pos]) w hw
+  obtain ⟨h0,ht,_,hn,_,_⟩ := psdEdge_singular_without_isolation
+    (vacA q R V 1) hc hs (by positivity : (0:ℝ) < Real.pi/2) hpd w hw
+  rw [← heq] at h0 ht hn
+  obtain ⟨u,hu,hAu⟩ := exists_kernel_of_nonunit _ hn
+  have hl := kernelLine_of_boundary_positive q R V b (hV _) (hp _ h0 ht) u hu hAu
+  exact ⟨h0,ht,u,hl,kernelLine_finrank q R V (hV _) u hl⟩
+
+#print axioms kernelLine_exists_before_halfpi
+end AdalyFormal.Round12.Kernel.CrossingActual

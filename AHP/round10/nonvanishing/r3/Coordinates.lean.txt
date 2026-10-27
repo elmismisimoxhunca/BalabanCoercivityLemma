@@ -1,0 +1,115 @@
+
+namespace AdalyFormal.Round10.Nonvanishing.Coordinate
+open Finset
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond blockOf mem_blockOf CoarseLattice mem_CoarseLattice)
+variable {L : PeriodicLatticeExtent}
+section Cube
+variable {E : Type*} [AddCommGroup E]
+def cube (g : ℕ → ℕ → ℕ → E) (n a b c : ℕ) : E :=
+  ∑ i ∈ range n, ∑ j ∈ range n, ∑ k ∈ range n, g (a + i) (b + j) (c + k)
+end Cube
+
+def mkS (L : PeriodicLatticeExtent) (a b c : ℕ) : PeriodicLatticeSite L :=
+  fun μ => ⟨(![a, b, c] μ) % (L μ + 1), Nat.mod_lt _ (Nat.succ_pos _)⟩
+
+theorem mkS_val (a b c : ℕ) (μ : Fin 3) : ((mkS L a b c) μ).val = (![a, b, c] μ) % (L μ + 1) := rfl
+
+theorem mkS_val0 (a b c : ℕ) : ((mkS L a b c) 0).val = a % (L 0 + 1) := rfl
+
+theorem mkS_val1 (a b c : ℕ) : ((mkS L a b c) 1).val = b % (L 1 + 1) := rfl
+
+theorem mkS_val2 (a b c : ℕ) : ((mkS L a b c) 2).val = c % (L 2 + 1) := rfl
+
+theorem mkS_eta (x : PeriodicLatticeSite L) : mkS L (x 0).val (x 1).val (x 2).val = x := by
+  funext μ
+  apply Fin.ext
+  rw [mkS_val]
+  fin_cases μ
+  · simp [Nat.mod_eq_of_lt (x 0).isLt]
+  · simp [Nat.mod_eq_of_lt (x 1).isLt]
+  · simp [Nat.mod_eq_of_lt (x 2).isLt]
+
+theorem shift_val_self (x : PeriodicLatticeSite L) (μ : Fin 3) :
+    ((periodicLatticeShift x μ) μ).val = ((x μ).val + 1) % (L μ + 1) := by
+  simp [periodicLatticeShift, Fin.val_add]
+
+theorem shift_val_ne (x : PeriodicLatticeSite L) (μ ν : Fin 3) (h : ν ≠ μ) :
+    ((periodicLatticeShift x μ) ν) = x ν := by
+  simp [periodicLatticeShift, Function.update_of_ne h]
+
+theorem shift_mkS1 (a b c : ℕ) : periodicLatticeShift (mkS L a b c) 1 = mkS L a (b + 1) c := by
+  funext ν
+  apply Fin.ext
+  by_cases h : ν = 1
+  · subst h
+    rw [shift_val_self, mkS_val1, mkS_val1, Nat.add_mod, Nat.mod_mod, ← Nat.add_mod]
+  · rw [shift_val_ne _ _ _ h, mkS_val, mkS_val]
+    fin_cases ν <;> simp_all
+
+theorem mkS_mem_block (Y : PeriodicLatticeSite L) (n : ℕ) (hfit : ∀ μ, (Y μ).val + n ≤ L μ + 1)
+    (i j k : ℕ) (hi : i < n) (hj : j < n) (hk : k < n) :
+    mkS L ((Y 0).val + i) ((Y 1).val + j) ((Y 2).val + k) ∈ blockOf Y n := by
+  rw [mem_blockOf]
+  intro μ
+  have h0 := hfit 0; have h1 := hfit 1; have h2 := hfit 2
+  fin_cases μ
+  · simp only [Fin.zero_eta, mkS_val0]
+    rw [Nat.mod_eq_of_lt (by omega)]; omega
+  · simp only [Fin.mk_one, mkS_val1]
+    rw [Nat.mod_eq_of_lt (by omega)]; omega
+  · simp only [Fin.reduceFinMk, mkS_val2]
+    rw [Nat.mod_eq_of_lt (by omega)]; omega
+
+theorem sum_block_eq_cube {E : Type*} [AddCommGroup E] [Module ℝ E] (Y : PeriodicLatticeSite L) (n : ℕ)
+    (hfit : ∀ μ, (Y μ).val + n ≤ L μ + 1) (F : PeriodicLatticeSite L → E) :
+    ∑ x ∈ blockOf Y n, F x = cube (fun a b c => F (mkS L a b c)) n (Y 0).val (Y 1).val (Y 2).val := by
+  classical
+  unfold cube
+  have e : ∑ i ∈ range n, ∑ j ∈ range n, ∑ k ∈ range n, F (mkS L ((Y 0).val + i) ((Y 1).val + j) ((Y 2).val + k))
+      = ∑ p ∈ range n ×ˢ (range n ×ˢ range n), F (mkS L ((Y 0).val + p.1) ((Y 1).val + p.2.1) ((Y 2).val + p.2.2)) := by
+    simp only [Finset.sum_product]
+  rw [e]
+  symm
+  refine Finset.sum_nbij' (fun p => mkS L ((Y 0).val + p.1) ((Y 1).val + p.2.1) ((Y 2).val + p.2.2))
+    (fun x => ((x 0).val - (Y 0).val, (x 1).val - (Y 1).val, (x 2).val - (Y 2).val)) ?_ ?_ ?_ ?_ ?_
+  · intro p hp
+    simp only [Finset.mem_product, Finset.mem_range] at hp
+    exact mkS_mem_block Y n hfit _ _ _ hp.1 hp.2.1 hp.2.2
+  · intro x hx
+    rw [mem_blockOf] at hx
+    simp only [Finset.mem_product, Finset.mem_range]
+    refine ⟨?_, ?_, ?_⟩
+    · have := hx 0; omega
+    · have := hx 1; omega
+    · have := hx 2; omega
+  · intro p hp
+    simp only [Finset.mem_product, Finset.mem_range] at hp
+    have h0 := hfit 0; have h1 := hfit 1; have h2 := hfit 2
+    simp only [mkS_val0, mkS_val1, mkS_val2]
+    rw [Nat.mod_eq_of_lt (by omega), Nat.mod_eq_of_lt (by omega), Nat.mod_eq_of_lt (by omega)]
+    simp
+  · intro x hx
+    rw [mem_blockOf] at hx
+    have a0 := hx 0; have a1 := hx 1; have a2 := hx 2
+    have e0 : (Y 0).val + ((x 0).val - (Y 0).val) = (x 0).val := by omega
+    have e1 : (Y 1).val + ((x 1).val - (Y 1).val) = (x 1).val := by omega
+    have e2 : (Y 2).val + ((x 2).val - (Y 2).val) = (x 2).val := by omega
+    simp only [e0, e1, e2]
+    exact mkS_eta x
+  · intro p hp
+    rfl
+
+#print axioms cube
+#print axioms mkS
+#print axioms mkS_val
+#print axioms mkS_val0
+#print axioms mkS_val1
+#print axioms mkS_val2
+#print axioms mkS_eta
+#print axioms shift_val_self
+#print axioms shift_val_ne
+#print axioms shift_mkS1
+#print axioms mkS_mem_block
+#print axioms sum_block_eq_cube
+end AdalyFormal.Round10.Nonvanishing.Coordinate

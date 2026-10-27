@@ -1,0 +1,17 @@
+{
+  "closedGoal": "none",
+  "pin_copy_exact": true,
+  "compile_exit": 0,
+  "lean_sha256": "6372b6a7f2c7947ee08af9f08212a6b029bb9d5514bb1b5df476fc429e78b971",
+  "imports": [
+    "DrEquiv",
+    "GdR6b"
+  ],
+  "forbidden_tokens": [],
+  "axiom_record_count": 28,
+  "local_theorem_count": 17,
+  "all_local_theorems_printed": true,
+  "mainDeclaration": "AdalyFormal.Round2.Guarded.RefuteR1.pencil_failure_iff_second_jet",
+  "axiomLine": "'AdalyFormal.Round2.Guarded.RefuteR1.pencil_failure_iff_second_jet' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "note": "All goals are preserved; the main declaration is only a pointwise equivalence, not a negative goal."
+}

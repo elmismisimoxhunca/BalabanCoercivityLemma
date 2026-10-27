@@ -1,0 +1,167 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:7959:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:8317:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:8317:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:8321:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:8321:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:8328:26: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:8328:39: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:9406:39: warning: This simp argument is unused:
+  hc
+
+Hint: Omit it from the simp argument list.
+  simp only [h̵c̵,̵ ̵Bool.false_eq_true, ↓reduceIte, uhalf_coe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:9537:36: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:9618:30: warning: Variable name `hR` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/shared/assembly/R1_AreaGoal.lean:9618:43: warning: Variable name `hR18` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AdalyFormal.Round10.Assembly.R4.goalNeg2_of_cofinalAnyPathNoResponseCancellation : AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation →
+  AdalyFormal.Round2.Guarded.Pin.GoalNeg2
+'AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P2_P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P2_P3 : AdalyFormal.Round13.Assembly.R1.P2 →
+  AdalyFormal.Round13.Assembly.R1.P3 → AdalyFormal.Round2.Guarded.Pin.GoalNeg2
+'AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP2P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP2P3 : AdalyFormal.Round13.Assembly.R1.CofinalP2P3 →
+  AdalyFormal.Round2.Guarded.Pin.GoalNeg2
+'AdalyFormal.Round13.Assembly.R2.CofinalP3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.CofinalP3 : Prop
+'AdalyFormal.Round13.Assembly.R2.cofinalNoCancellation_of_P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.cofinalNoCancellation_of_P3 : AdalyFormal.Round13.Assembly.R1.P3 →
+  AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation
+'AdalyFormal.Round13.Assembly.R2.cofinalNoCancellation_of_cofinalP3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AdalyFormal.Round13.Assembly.R2.cofinalNoCancellation_of_cofinalP3 : AdalyFormal.Round13.Assembly.R2.CofinalP3 →
+  AdalyFormal.Round10.Assembly.R4.CofinalAnyPathNoResponseCancellation
+'AdalyFormal.Round13.Assembly.R2.cofinalP2P3_of_cofinalP3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.cofinalP2P3_of_cofinalP3 : AdalyFormal.Round13.Assembly.R2.CofinalP3 →
+  AdalyFormal.Round13.Assembly.R1.CofinalP2P3
+'AdalyFormal.Round13.Assembly.R2.cofinal_rightStar_kernelLine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AdalyFormal.Round13.Assembly.R2.cofinal_rightStar_kernelLine : ∀ (j₀ : ℕ),
+  ∃ j,
+    j₀ ≤ j ∧
+      ∀ (R₀ : ℕ),
+        ∃ R,
+          R₀ ≤ R ∧
+            2 ∣ R ∧
+              18 ≤ R ∧
+                0 <
+                    AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge (2 ^ j) R
+                      (AdalyFormal.Round12.Noncancel.RightFamily.rightStar ⋯ R) ∧
+                  AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge (2 ^ j) R
+                        (AdalyFormal.Round12.Noncancel.RightFamily.rightStar ⋯ R) <
+                      Real.pi / 2 ∧
+                    ∃ u,
+                      AdalyFormal.Round10.Assembly.R2.KernelLine (2 ^ j) R
+                          (AdalyFormal.Round12.Noncancel.RightFamily.rightStar ⋯ R) u ∧
+                        Module.finrank ℝ
+                            ↥(↑(AdalyFormal.Round9.Guarded.Qualitative.vacA (2 ^ j) R
+                                    (AdalyFormal.Round12.Noncancel.RightFamily.rightStar ⋯ R) 1
+                                    (AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge (2 ^ j) R
+                                      (AdalyFormal.Round12.Noncancel.RightFamily.rightStar ⋯ R)))).ker =
+                          2
+'AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.goalNeg2_of_P3 : AdalyFormal.Round13.Assembly.R1.P3 →
+  AdalyFormal.Round2.Guarded.Pin.GoalNeg2
+'AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP3' depends on axioms: [propext, Classical.choice, Quot.sound]
+AdalyFormal.Round13.Assembly.R2.goalNeg2_of_cofinalP3 : AdalyFormal.Round13.Assembly.R2.CofinalP3 →
+  AdalyFormal.Round2.Guarded.Pin.GoalNeg2
+'AdalyFormal.Round13.Assembly.R2.p2' depends on axioms: [propext, Classical.choice, Quot.sound]
+@AdalyFormal.Round13.Assembly.R2.p2 : AdalyFormal.Round13.Assembly.R1.P2
+'AdalyFormal.Round13.Assembly.R2.rightStar_kernelLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+@AdalyFormal.Round13.Assembly.R2.rightStar_kernelLine : ∀ {q R : ℕ} (hq : 0 < q),
+  2 ∣ R →
+    18 ≤ R →
+      0 <
+          AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge q R
+            (AdalyFormal.Round12.Noncancel.RightFamily.rightStar hq R) ∧
+        AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge q R
+              (AdalyFormal.Round12.Noncancel.RightFamily.rightStar hq R) <
+            Real.pi / 2 ∧
+          ∃ u,
+            AdalyFormal.Round10.Assembly.R2.KernelLine q R (AdalyFormal.Round12.Noncancel.RightFamily.rightStar hq R)
+                u ∧
+              Module.finrank ℝ
+                  ↥(↑(AdalyFormal.Round9.Guarded.Qualitative.vacA q R
+                          (AdalyFormal.Round12.Noncancel.RightFamily.rightStar hq R) 1
+                          (AdalyFormal.Round9.Guarded.QualitativeR2.vacEdge q R
+                            (AdalyFormal.Round12.Noncancel.RightFamily.rightStar hq R)))).ker =
+                2
+'AdalyFormal.Round15.Assembly.goalNeg2_of_areaSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Assembly.goalNeg2_of_unitAreaSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Assembly.goalNeg2_of_cofinalAreaSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Assembly.goalNeg2_of_laurentAreaSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Assembly.goalNeg2_of_dominantAreaSeed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Assembly.goalNeg2_of_unitDominantAreaSeed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Assembly.goalNeg2_of_chargedLeading' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Assembly.CofinalChargedLeadingCertificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Assembly.cofinalUnitDominantAreaSeed_of_cofinalChargedLeading' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Assembly.goalNeg2_of_cofinalChargedLeading' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+goalNeg2_of_areaSeed : Round14.Transfer.Physical.AreaSeedRightStar → GoalNeg2
+goalNeg2_of_unitAreaSeed : Round14.Transfer.Physical.UnitAreaSeedRightStar → GoalNeg2
+goalNeg2_of_cofinalAreaSeed : Round14.Transfer.Physical.CofinalAreaSeedRightStar → GoalNeg2
+goalNeg2_of_laurentAreaSeed : Round14.Transfer.Physical.CofinalLaurentAreaSeed → GoalNeg2
+goalNeg2_of_dominantAreaSeed : Round14.Transfer.Physical.CofinalDominantAreaSeed → GoalNeg2
+goalNeg2_of_unitDominantAreaSeed : Round14.Transfer.Physical.CofinalUnitDominantAreaSeed → GoalNeg2
+goalNeg2_of_chargedLeading : Seed.DyadicChargedLeadingCertificate → GoalNeg2
+CofinalChargedLeadingCertificate : Prop
+cofinalUnitDominantAreaSeed_of_cofinalChargedLeading : CofinalChargedLeadingCertificate →
+  Round14.Transfer.Physical.CofinalUnitDominantAreaSeed
+goalNeg2_of_cofinalChargedLeading : CofinalChargedLeadingCertificate → GoalNeg2

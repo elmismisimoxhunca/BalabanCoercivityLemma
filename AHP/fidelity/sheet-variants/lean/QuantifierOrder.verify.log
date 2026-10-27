@@ -1,0 +1,2 @@
+'AdalyFormal.Fidelity.SheetVariants.total_imp_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Fidelity.SheetVariants.threshold_order_toy' depends on axioms: [propext, Quot.sound]

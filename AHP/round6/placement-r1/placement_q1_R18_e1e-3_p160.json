@@ -1,0 +1,35 @@
+{
+  "q": 1,
+  "R": 18,
+  "epsilon": "1e-3",
+  "dps": 160,
+  "defect_x": 6,
+  "physical_fine_sides": [
+    232,
+    8,
+    8
+  ],
+  "Omega0": [
+    4,
+    228
+  ],
+  "Omega1": [
+    40,
+    192
+  ],
+  "source_support_longitudinal": [
+    5,
+    6,
+    7
+  ],
+  "source_nonzero_count": 12,
+  "source_outside_level0": [],
+  "exact_KKT_candidate_residual": "0.0",
+  "maximum_computed_positive_level_HtJ": "0.0",
+  "KKT_solve_relative_residual": "0.0",
+  "arbitrary_test_correction_computed": "0.0",
+  "arbitrary_test_correction_exact_candidate": "0.0",
+  "interpretation": "Exact KKT candidate has zero positive-level multiplier. The arbitrary raw-jet input is not asserted to be W*v. Zero pairing is not a positive sign. No crossing or full-carrier unit certified.",
+  "peak_rss_KiB": 169716,
+  "seconds": 1.6760404109954834
+}

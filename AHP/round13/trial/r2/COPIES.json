@@ -1,0 +1,8 @@
+{
+  "source": "AHP/round13/trial/r1/Trial.lean",
+  "source_sha256": "65dea42e0daff27c8bc07bd850e1f2bdf8029e1fc452b0600590989df0039c9b",
+  "prefix_bytes": 105778,
+  "prefix_lines": 2298,
+  "appendix_sha256": "c0c9f3c0df0f47ffab1f93b4945e09871e141a7a4a5ca4f9023f6db1441299b7",
+  "inherited_interface_manifest": "AHP/round13/trial/r1/COPIES.json"
+}

@@ -1,0 +1,369 @@
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:700:13: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:74: warning: aesop: failed to prove the goal after exhaustive search.
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:771:36: warning: This simp argument is unused:
+  q1_shiftBack_right
+
+Hint: Omit it from the simp argument list.
+  simp_all [q1Plaquettes, q1Plaq, q̵1̵_̵s̵h̵i̵f̵t̵B̵a̵c̵k̵_̵r̵i̵g̵h̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:6: warning: This simp argument is unused:
+  periodicLatticeShift_shiftBack
+
+Hint: Omit it from the simp argument list.
+  simp_all [q1Plaquettes, q1Plaq, q1_shiftBack_right, p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵_̵s̵h̵i̵f̵t̵B̵a̵c̵k̵,̵ ̵periodicLatticeShiftBack_shift]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:772:38: warning: This simp argument is unused:
+  periodicLatticeShiftBack_shift
+
+Hint: Omit it from the simp argument list.
+  simp_all [q1Plaquettes, q1Plaq, q1_shiftBack_right, p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵_̵s̵h̵i̵f̵t̵B̵a̵c̵k̵,̵ ̵p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵B̵a̵c̵k̵_̵s̵h̵i̵f̵t̵]̵p̲e̲r̲i̲o̲d̲i̲c̲L̲a̲t̲t̲i̲c̲e̲S̲h̲i̲f̲t̲_̲s̲h̲i̲f̲t̲B̲a̲c̲k̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:835:43: error: unsolved goals
+case «0»
+A : BondFnL2 (L 1 20)
+X : ↥SuTwo
+x : PeriodicLatticeSite (L 1 20)
+⊢ inner ℝ X (A.ofLp (x, 0)) + inner ℝ X (A.ofLp (periodicLatticeShift x 0, 1)) -
+          inner ℝ X (A.ofLp (periodicLatticeShift x 1, 0)) -
+        inner ℝ X (A.ofLp (x, 1)) +
+      (-inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 0)) +
+              -inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 1) 0, 1)) +
+            inner ℝ X (A.ofLp (x, 0)) +
+          inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 1)) +
+        (inner ℝ X (A.ofLp (x, 0)) + inner ℝ X (A.ofLp (periodicLatticeShift x 0, 2)) -
+              inner ℝ X (A.ofLp (periodicLatticeShift x 2, 0)) -
+            inner ℝ X (A.ofLp (x, 2)) +
+          (-inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 0)) +
+                -inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 2) 0, 2)) +
+              inner ℝ X (A.ofLp (x, 0)) +
+            inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 2))))) =
+    0
+
+case «1»
+A : BondFnL2 (L 1 20)
+X : ↥SuTwo
+x : PeriodicLatticeSite (L 1 20)
+⊢ -inner ℝ X (A.ofLp (x, 0)) + -inner ℝ X (A.ofLp (periodicLatticeShift x 0, 1)) +
+          inner ℝ X (A.ofLp (periodicLatticeShift x 1, 0)) +
+        inner ℝ X (A.ofLp (x, 1)) +
+      (inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 0)) + inner ℝ X (A.ofLp (x, 1)) -
+            inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 0) 1, 0)) -
+          inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 1)) +
+        (inner ℝ X (A.ofLp (x, 1)) + inner ℝ X (A.ofLp (periodicLatticeShift x 1, 2)) -
+              inner ℝ X (A.ofLp (periodicLatticeShift x 2, 1)) -
+            inner ℝ X (A.ofLp (x, 2)) +
+          (-inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 1)) +
+                -inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 2) 1, 2)) +
+              inner ℝ X (A.ofLp (x, 1)) +
+            inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 2))))) =
+    0
+
+case «2»
+A : BondFnL2 (L 1 20)
+X : ↥SuTwo
+x : PeriodicLatticeSite (L 1 20)
+⊢ -inner ℝ X (A.ofLp (x, 0)) + -inner ℝ X (A.ofLp (periodicLatticeShift x 0, 2)) +
+          inner ℝ X (A.ofLp (periodicLatticeShift x 2, 0)) +
+        inner ℝ X (A.ofLp (x, 2)) +
+      (inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 0)) + inner ℝ X (A.ofLp (x, 2)) -
+            inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 0) 2, 0)) -
+          inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 2)) +
+        (-inner ℝ X (A.ofLp (x, 1)) + -inner ℝ X (A.ofLp (periodicLatticeShift x 1, 2)) +
+              inner ℝ X (A.ofLp (periodicLatticeShift x 2, 1)) +
+            inner ℝ X (A.ofLp (x, 2)) +
+          (inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 1)) + inner ℝ X (A.ofLp (x, 2)) -
+              inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 1) 2, 1)) -
+            inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 2))))) =
+    0
+case «0»
+A : BondFnL2 (L 1 20)
+X : ↥SuTwo
+x : PeriodicLatticeSite (L 1 20)
+⊢ inner ℝ X (A.ofLp (x, 0)) + inner ℝ X (A.ofLp (periodicLatticeShift x 0, 1)) -
+          inner ℝ X (A.ofLp (periodicLatticeShift x 1, 0)) -
+        inner ℝ X (A.ofLp (x, 1)) +
+      (-inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 0)) +
+              -inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 1) 0, 1)) +
+            inner ℝ X (A.ofLp (x, 0)) +
+          inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 1)) +
+        (inner ℝ X (A.ofLp (x, 0)) + inner ℝ X (A.ofLp (periodicLatticeShift x 0, 2)) -
+              inner ℝ X (A.ofLp (periodicLatticeShift x 2, 0)) -
+            inner ℝ X (A.ofLp (x, 2)) +
+          (-inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 0)) +
+                -inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 2) 0, 2)) +
+              inner ℝ X (A.ofLp (x, 0)) +
+            inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 2))))) =
+    0
+case «1»
+A : BondFnL2 (L 1 20)
+X : ↥SuTwo
+x : PeriodicLatticeSite (L 1 20)
+⊢ -inner ℝ X (A.ofLp (x, 0)) + -inner ℝ X (A.ofLp (periodicLatticeShift x 0, 1)) +
+          inner ℝ X (A.ofLp (periodicLatticeShift x 1, 0)) +
+        inner ℝ X (A.ofLp (x, 1)) +
+      (inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 0)) + inner ℝ X (A.ofLp (x, 1)) -
+            inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 0) 1, 0)) -
+          inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 1)) +
+        (inner ℝ X (A.ofLp (x, 1)) + inner ℝ X (A.ofLp (periodicLatticeShift x 1, 2)) -
+              inner ℝ X (A.ofLp (periodicLatticeShift x 2, 1)) -
+            inner ℝ X (A.ofLp (x, 2)) +
+          (-inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 1)) +
+                -inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 2) 1, 2)) +
+              inner ℝ X (A.ofLp (x, 1)) +
+            inner ℝ X (A.ofLp (periodicLatticeShiftBack x 2, 2))))) =
+    0
+case «2»
+A : BondFnL2 (L 1 20)
+X : ↥SuTwo
+x : PeriodicLatticeSite (L 1 20)
+⊢ -inner ℝ X (A.ofLp (x, 0)) + -inner ℝ X (A.ofLp (periodicLatticeShift x 0, 2)) +
+          inner ℝ X (A.ofLp (periodicLatticeShift x 2, 0)) +
+        inner ℝ X (A.ofLp (x, 2)) +
+      (inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 0)) + inner ℝ X (A.ofLp (x, 2)) -
+            inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 0) 2, 0)) -
+          inner ℝ X (A.ofLp (periodicLatticeShiftBack x 0, 2)) +
+        (-inner ℝ X (A.ofLp (x, 1)) + -inner ℝ X (A.ofLp (periodicLatticeShift x 1, 2)) +
+              inner ℝ X (A.ofLp (periodicLatticeShift x 2, 1)) +
+            inner ℝ X (A.ofLp (x, 2)) +
+          (inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 1)) + inner ℝ X (A.ofLp (x, 2)) -
+              inner ℝ X (A.ofLp (periodicLatticeShift (periodicLatticeShiftBack x 1) 2, 1)) -
+            inner ℝ X (A.ofLp (periodicLatticeShiftBack x 1, 2))))) =
+    0
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:842:18: warning: This simp argument is unused:
+  q1Plaq_shift_ne
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaq,̵ ̵q̵1̵P̵l̵a̵q̵_̵s̵h̵i̵f̵t̵_̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:853:80: warning: This simp argument is unused:
+  inner_smul_right
+
+Hint: Omit it from the simp argument list.
+  simp [sing_apply_self, sing_apply_ne, inner_add_right, inner_sub_right, i̵n̵n̵e̵r̵_̵s̵m̵u̵l̵_̵r̵i̵g̵h̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵q1_shift_ne,
+  ̲  ̲ ̲ ̲ ̲ ̲q1_shiftBack_ne, q1_shiftBack_ne_rev,
+  ̵  ̵ ̵ ̵ ̵ ̵periodicLatticeShift_shiftBack,
+  ̲  ̲ ̲ ̲ ̲ ̲periodicLatticeShiftBack_shift, flatCfg, RMap_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:855:38: warning: This simp argument is unused:
+  periodicLatticeShiftBack_shift
+
+Hint: Omit it from the simp argument list.
+  simp [sing_apply_self, sing_apply_ne, inner_add_right, inner_sub_right, inner_smul_right,
+        q1_shift_ne, q1_shiftBack_ne, q1_shiftBack_ne_rev, periodicLatticeShift_shiftBack, p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵B̵a̵c̵k̵_̵s̵h̵i̵f̵t̵,̵ ̵flatCfg,
+  ̲  ̲ ̲ ̲ ̲ ̲RMap_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:906:35: error: Application type mismatch: The argument
+  q1Site x yz.1 yz.2 d
+has type
+  Fin (scaleUp 2 1 (dilLu 1 20) d + 1)
+but is expected to have type
+  Bond (L 1 20)
+in the application
+  A.ofLp (q1Site x yz.1 yz.2 d)
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:907:38: error: Application type mismatch: The argument
+  q1Site x yz.1 yz.2 d
+has type
+  Fin (scaleUp 2 1 (dilLu 1 20) d + 1)
+but is expected to have type
+  Bond (L 1 20)
+in the application
+  A.ofLp (q1Site x yz.1 yz.2 d)
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:901:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Balaban.SuTwoInner.instInnerProductSpaceSuTwo', which is 'noncomputable'
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:909:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'q1Layer12', which is 'noncomputable'
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:912:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'q1Layer12', which is 'noncomputable'
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:916:18: error: Application type mismatch: The argument
+  q1Site ⟨220, ?m.12⟩ 0 0 0
+has type
+  Fin (scaleUp 2 1 (dilLu 1 20) 0 + 1)
+but is expected to have type
+  Bond ?m.8
+in the application
+  sing (q1Site ⟨220, ?m.12⟩ 0 0 0)
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:919:20: error: Application type mismatch: The argument
+  q1Site ⟨220, ?m.38⟩ 0 0 0
+has type
+  Fin (scaleUp 2 1 (dilLu 1 20) 0 + 1)
+but is expected to have type
+  Bond ?m.34
+in the application
+  sing (q1Site ⟨220, ?m.38⟩ 0 0 0)
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:919:96: error: unsolved goals
+A : BondFnL2 (L 1 20)
+X : ↥SuTwo
+⊢ ∑
+        x ∈
+          if (sorry ()).2 = 0 then
+            {((sorry ()).1, ⟨(0, 1), q1Plaquettes._proof_1⟩),
+              (periodicLatticeShiftBack (sorry ()).1 1, ⟨(0, 1), q1Plaquettes._proof_1⟩),
+              ((sorry ()).1, ⟨(0, 2), q1Plaquettes._proof_2⟩),
+              (periodicLatticeShiftBack (sorry ()).1 2, ⟨(0, 2), q1Plaquettes._proof_2⟩)}
+          else
+            if (sorry ()).2 = 1 then
+              {((sorry ()).1, ⟨(0, 1), q1Plaquettes._proof_1⟩),
+                (periodicLatticeShiftBack (sorry ()).1 0, ⟨(0, 1), q1Plaquettes._proof_1⟩),
+                ((sorry ()).1, ⟨(1, 2), q1Plaquettes._proof_3⟩),
+                (periodicLatticeShiftBack (sorry ()).1 2, ⟨(1, 2), q1Plaquettes._proof_3⟩)}
+            else
+              {((sorry ()).1, ⟨(0, 2), q1Plaquettes._proof_2⟩),
+                (periodicLatticeShiftBack (sorry ()).1 0, ⟨(0, 2), q1Plaquettes._proof_2⟩),
+                ((sorry ()).1, ⟨(1, 2), q1Plaquettes._proof_3⟩),
+                (periodicLatticeShiftBack (sorry ()).1 1, ⟨(1, 2), q1Plaquettes._proof_3⟩)},
+        inner ℝ (curlValueCovariant flatCfg (sing (sorry ()) X).ofLp x) (curlValueCovariant flatCfg A.ofLp x) +
+      inner ℝ (sing (sorry ()) X) A =
+    0
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:921:30: warning: This simp argument is unused:
+  inner_add_right
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_a̵d̵d̵_̵r̵i̵g̵h̵t̵,̵ ̵i̵n̵n̵e̵r̵_̵sub_right, inner_smul_right,
+  ̵  ̵ ̵ ̵periodicLatticeShift_shiftBack,
+  ̲  ̲ ̲ ̲periodicLatticeShiftBack_shift, flatCfg, RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne, q1_shiftBack_ne,
+  ̲  ̲ ̲ ̲sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:921:47: warning: This simp argument is unused:
+  inner_sub_right
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_su̵b̵_̵r̵i̵g̵h̵t̵,̵ ̵i̵n̵n̵e̵r̵_̵s̵mul_right,
+  ̵  ̵ ̵ ̵periodicLatticeShift_shiftBack,
+  ̲  ̲ ̲ ̲periodicLatticeShiftBack_shift, flatCfg, RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne, q1_shiftBack_ne,
+  ̲  ̲ ̲ ̲sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:921:64: warning: This simp argument is unused:
+  inner_smul_right
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, i̵n̵n̵e̵r̵_̵s̵m̵u̵l̵_̵r̵i̵g̵h̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵periodicLatticeShift_shiftBack,
+  ̲  ̲ ̲ ̲periodicLatticeShiftBack_shift, flatCfg, RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne, q1_shiftBack_ne,
+  ̲  ̲ ̲ ̲sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:922:4: warning: This simp argument is unused:
+  periodicLatticeShift_shiftBack
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_̵s̵h̵i̵f̵t̵Back,̵ ̵p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵f̵t̵B̵a̵c̵k̵_shift, flatCfg, RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne, q1_shiftBack_ne,
+  ̲  ̲ ̲ ̲sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:922:36: warning: This simp argument is unused:
+  periodicLatticeShiftBack_shift
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_shiftBack, p̵e̵r̵i̵o̵d̵i̵c̵L̵a̵t̵t̵i̵c̵e̵S̵h̵i̵ft̵B̵a̵c̵k̵_̵s̵h̵i̵f̵t̵,̵ ̵f̵latCfg, RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne, q1_shiftBack_ne,
+  ̲  ̲ ̲ ̲sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:922:68: warning: This simp argument is unused:
+  flatCfg
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift, f̵l̵a̵t̵C̵f̵g̵,̵ ̵RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne,
+  ̲  ̲ ̲ ̲q1_shiftBack_ne, sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:922:77: warning: This simp argument is unused:
+  RMap_one
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift, flatCfg, R̵M̵a̵p̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵q1_shift_ne,
+  ̲  ̲ ̲ ̲q1_shiftBack_ne, sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:923:4: warning: This simp argument is unused:
+  q1_shift_ne
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift, flatCfg, RMap_one,
+      q1_shift_̵n̵e̵,̵ ̵q̵1̵_̵s̵h̵i̵f̵t̵Back_ne, sing_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:923:17: warning: This simp argument is unused:
+  q1_shiftBack_ne
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift, flatCfg, RMap_one, ̲q̲1̲_̲s̲h̲i̲f̲t̲_̲n̲e̲,̲
+      q̵1̵_̵sh̵if̵t̵_̵ne̵,̵ ̵q̵1̵_̵s̵h̵i̵f̵t̵B̵a̵c̵k̵_̵n̵e̵,̵ ̵s̵i̵n̵g_apply_self, sing_apply_ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:923:34: warning: This simp argument is unused:
+  sing_apply_self
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift, flatCfg, RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne,
+  ̲  ̲ ̲ ̲q1_shiftBack_ne, sing_apply_s̵e̵l̵f̵,̵ ̵s̵i̵ng̵_̵a̵p̵p̵l̵y̵_̵n̵e]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:923:51: warning: This simp argument is unused:
+  sing_apply_ne
+
+Hint: Omit it from the simp argument list.
+  simp [q1Plaquettes, q1Plaq, inner_add_right, inner_sub_right, inner_smul_right,
+      periodicLatticeShift_shiftBack, periodicLatticeShiftBack_shift, flatCfg, RMap_one,
+  ̵  ̵ ̵ ̵q1_shift_ne,
+  ̲  ̲ ̲ ̲q1_shiftBack_ne, sing_apply_self,̵ ̵s̵i̵n̵g̵_̵a̵p̵p̵l̵y̵_̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:1538:13: warning: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+/home/sebastian/BalabanCoercivityLemma/AHP/round15/dictionary/r2/Support.lean:1720:4: warning: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+'AdalyFormal.Round15.Dictionary.Physical.q1_kernel_deep_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Ginv_row_rightStar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_TsT_row_rightStar_E' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Mass_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Qfull_sing_level1_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Dpi_row_rightStar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_rightStar_Wop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Dpi_row_flat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_deltaK_row_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Wop_sing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Rproj_gradAdj_sing_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_Rproj_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_RImage_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdalyFormal.Round15.Dictionary.Physical.q1_lap_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

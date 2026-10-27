@@ -1,0 +1,104 @@
+namespace AdalyFormal.Round12.Noncancel.RightFamily
+open scoped RealInnerProductSpace
+open AdalyFormal.Target.ClayStatement
+open AdalyFormal.StatementLane
+open AdalyFormal.StatementLane2
+open AdalyFormal.StatementLaneG
+open AdalyFormal.IngredientFamilyR2
+open AdalyFormal.Balaban.CovariantOperators (SuTwo BondFnL2 suTwoWitness suTwoWitness_ne_zero)
+open AdalyFormal.Balaban.CoercUMainDesigned (LinkCfg)
+open AdalyFormal.Balaban.AdmissibleSubspace (Bond)
+open AdalyFormal.Round4.Guarded.RefuteR1
+open AdalyFormal.Round5.Guarded.IVTR2
+open AdalyFormal.Round9.Guarded.Qualitative
+open AdalyFormal.Round9.Guarded.QualitativeR2 (AnFam)
+open AdalyFormal.Round12.Noncancel.Path
+
+/-- One consistently chosen family: the right exterior star, never reflected from a left computation. -/
+def rightStar {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    ℝ → LinkCfg (scaleUp 2 1 (dilLu q R)) :=
+  starPath (periodicLatticeShift (rightSite hq R) 0)
+
+theorem rightStar_zero {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    rightStar hq R 0 = fun _ => 1 := starPath_zero _
+
+theorem rightStar_cont {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    AdalyFormal.D1Literal.ContFam (rightStar hq R) := starPath_cont _
+
+theorem rightStar_an {q : ℕ} (hq : 0 < q) (R : ℕ) :
+    AnFam (rightStar hq R) := starPath_an _
+
+theorem rightStar_off_exterior {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ)
+    (e : Bond (scaleUp 2 1 (dilLu q R)))
+    (he : e ∉ AdalyFormal.D1Literal.Zb ((dilTower q R).Om 0)) :
+    rightStar hq R t e = 1 :=
+  starPath_off_exterior _ _ (rightSite_bd hq R).hx' (rightSite_bd hq R).trans t e he
+
+/-- The exterior masking in the ORIGINAL pathU is exactly transparent to this star. -/
+theorem pathU_rightStar {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ)
+    (f : Bond (scaleUp 2 1 (dilLu q R)) → ℝ) :
+    pathU q R (rightStar hq R) f 0 t = rightStar hq R t := by
+  classical
+  funext e
+  by_cases he : e ∈ AdalyFormal.D1Literal.Zb ((dilTower q R).Om 0)
+  · simp [pathU,maskedU,he]
+  · rw [rightStar_off_exterior hq R t e he]
+    simp [pathU,maskedU,he,Ug_zero]
+
+theorem dilU_rightStar {q : ℕ} (hq : 0 < q) (R : ℕ) (t : ℝ) :
+    dilU q R 0 (rightStar hq R t) = rightStar hq R t := by
+  classical
+  funext e
+  by_cases he : e ∈ AdalyFormal.D1Literal.Zb ((dilTower q R).Om 0)
+  · simp [dilU,he]
+  · rw [rightStar_off_exterior hq R t e he]
+    simp [dilU,he,Ug_zero]
+
+/-- Exact equality with the original vacuum carrier, not just a same-shaped matrix. -/
+theorem vacA_rightStar {q : ℕ} (hq : 0 < q) (R : ℕ) (a t : ℝ) :
+    vacA q R (rightStar hq R) a t =
+      (AdalyFormal.D1Literal.dataS AdalyFormal.D1Literal.selAll AdalyFormal.D1Literal.selAll
+        (gparams 2 1 (dilLu q R) (by norm_num) (dilTower q R)
+          (rightStar hq R t) a (dilLam q R))).Ginv := by
+  unfold vacA pathA pathP
+  rw [pathU_rightStar]
+  rfl
+
+/-- Actual negative pi endpoint for EVERY positive scale and even radius >=18. -/
+theorem rightStar_negative {q R : ℕ} (hq : 0 < q) (hR : 2 ∣ R) (hR18 : 18 ≤ R) :
+    ∃ w, ⟪w, vacA q R (rightStar hq R) 1 Real.pi w⟫ < 0 := by
+  rw [vacA_rightStar]
+  exact star_negative_endpoint (by norm_num) (dilTower q R) (dilLam q R) 1
+    (dil_admissible hq hR) (by norm_num) (by nlinarith)
+    (rightSite_bd hq R) (by norm_num) (by norm_num) suTwoWitness suTwoWitness_ne_zero
+
+/-- The nested dyadic/even quantifiers and ALL path-validity clauses are now
+proved for this right-star family. Response noncancellation is deliberately absent. -/
+theorem cofinal_rightStar_paths :
+    ∀ j₀ : ℕ, ∃ j : ℕ, j₀ ≤ j ∧ ∀ R₀ : ℕ, ∃ R : ℕ,
+      R₀ ≤ R ∧ 2 ∣ R ∧ 18 ≤ R ∧
+      ∃ V : ℝ → LinkCfg (scaleUp 2 1 (dilLu (2^j) R)),
+        AdalyFormal.D1Literal.ContFam V ∧ AnFam V ∧ V 0 = (fun _ => 1) ∧
+        (∃ w, ⟪w, vacA (2^j) R V 1 Real.pi w⟫ < 0) := by
+  intro j₀
+  refine ⟨j₀,le_rfl,?_⟩
+  intro R₀
+  let R := 2*(R₀+18)
+  have hR : 2 ∣ R := dvd_mul_right _ _
+  have hR18 : 18 ≤ R := by dsimp [R]; omega
+  have hq : 0 < 2^j₀ := by positivity
+  exact ⟨R,by dsimp [R]; omega,hR,hR18,rightStar hq R,
+    rightStar_cont hq R,rightStar_an hq R,rightStar_zero hq R,
+    rightStar_negative hq hR hR18⟩
+
+#print axioms rightStar
+#print axioms rightStar_zero
+#print axioms rightStar_cont
+#print axioms rightStar_an
+#print axioms rightStar_off_exterior
+#print axioms pathU_rightStar
+#print axioms dilU_rightStar
+#print axioms vacA_rightStar
+#print axioms rightStar_negative
+#print axioms cofinal_rightStar_paths
+end AdalyFormal.Round12.Noncancel.RightFamily
