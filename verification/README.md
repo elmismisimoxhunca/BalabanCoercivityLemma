@@ -1,21 +1,45 @@
-# Release verification evidence
+# Verification
 
-The cache-assisted reproduction finished on **2026-10-27 at 05:49:36 UTC**, exit 0, ending `ALL CHECKS PASSED`.
+The recorded reproduction passed with **2,782 registered modules and 573 complete axiom records**. The allowed dependencies are `propext`, `Classical.choice`, and `Quot.sound`.
 
-| Evidence | Meaning |
+## Reproduce
+
+From the repository root:
+
+```sh
+./REPRODUCE.sh
+```
+
+The script builds the registered modules, checks every complete `#print axioms` record, compares the results with `expected/`, and checks the forbidden-token inventory. Success ends with `ALL CHECKS PASSED`.
+
+With an existing compatible mathlib build:
+
+```sh
+PACKAGES_FROM=/path/to/compatible/.lake/packages ./REPRODUCE.sh
+```
+
+The script’s header documents concurrency and memory controls. Its validator tests run separately:
+
+```sh
+python3 -m unittest discover -s tools/tests -v
+```
+
+## Evidence
+
+| File | Content |
 |---|---|
-| [`summary.json`](summary.json) | Machine-readable verification scope and counts. |
-| [`reproduction-summary.txt`](reproduction-summary.txt) | Build exit, all numbered Check exits, complete-record counts, exact expected-output comparisons, and the legacy-token inventory result. |
-| [`checks/`](checks/) | The actual complete raw output of Check1–Check19 and CheckR7 from this run. |
-| [`axioms-main.txt`](axioms-main.txt), [`axioms-r7.txt`](axioms-r7.txt) | Canonical complete records validated from those raw outputs. |
-| [`complete-axiom-normalization.json`](complete-axiom-normalization.json) | The five historical first-line expectations expanded from their retained complete records, without changing the allowed axiom set. |
-| [`validator-regression-before.txt`](validator-regression-before.txt) | Four focused failures against the old shell gate: continuation-line axioms, truncation, and incomplete accepted output. |
-| [`validator-tests.txt`](validator-tests.txt) | All ten tests passing after the complete-record validator was installed. These are validator tests, not substitute Lean proofs. |
-| [`blueprint-recheck.json`](blueprint-recheck.json) | Static source/log/citation check of the round-15 blueprint; not a Lean or TeX build. |
-| [`FILES.sha256`](FILES.sha256) | Hashes of the published files, excluding this hash list itself. |
+| [`summary.json`](summary.json) | Verification scope and counts. |
+| [`reproduction-summary.txt`](reproduction-summary.txt) | Build/check exits and expected-output comparisons. |
+| [`checks/`](checks/) | Complete raw axiom output from Check1–Check19 and CheckR7. |
+| [`axioms-main.txt`](axioms-main.txt), [`axioms-r7.txt`](axioms-r7.txt) | Normalized complete axiom records. |
+| [`validator-tests.txt`](validator-tests.txt) | Validator test results. |
+| [`blueprint-recheck.json`](blueprint-recheck.json) | Source/log/citation checks for the supplemental blueprint, not a Lean compilation. |
+| [`FILES.sha256`](FILES.sha256) | File hashes, excluding the hash list itself. |
 
-The core contains 2,782 registered modules and 573 checked records (572 main plus R7). Its 2,807 tracked `lean/` files were compared byte-for-byte with the accepted integration snapshot. The public release did not modify mathematical sources or imports.
+## Scope of the check
 
-**Limits:** the run reused project and mathlib caches copied with copy-on-write isolation. It is not a fresh cold build or an end-to-end network-install test. It does not build every research attempt under `AHP/`, independently validate the numerical computations, or settle source-fidelity interpretation. The five explicitly allowlisted legacy placeholder modules remain present; the checked theorem dependencies do not use `sorryAx`.
+The recorded run used existing project and mathlib caches. It is not an independent cold rebuild; the complete network-install path remains untested.
 
-In the run summary and test diagnostics, the private checkout prefix is replaced by `$CHECKOUT`. Raw axiom outputs and the mathematical source/log evidence are otherwise preserved. The original private backup retains the unredacted diagnostics.
+Five legacy modules contain `sorry` declarations, listed in [`expected/forbidden_tokens.expected.txt`](../expected/forbidden_tokens.expected.txt). They occur in the import chain of a historical result, but the checked theorem dependencies do **not** use `sorryAx`. The distinction is between importing a file that contains an unused placeholder and depending on that placeholder in a proof.
+
+The root build does not certify every exploratory file under `AHP/`, numerical calculations, or fidelity to the intended reading of the source. The development and its reviews were AI-assisted; those reviews are not human expert endorsement.
