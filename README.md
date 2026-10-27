@@ -1,48 +1,40 @@
-# Balaban’s Multiscale Coercivity Theorem in Lean 4
+# Multiscale coercivity for SU(2) lattice gauge theory
 
-A formalisation of Balaban’s multiscale coercivity theorem and its supporting constructions for **three-dimensional SU(2) lattice gauge theory**.
+A Lean 4 formalisation of Balaban’s multiscale coercivity estimate in three dimensions, together with local gauge constructions, multilevel averaging, and comparisons of boundary and regularity assumptions.
 
-The theorem is a key estimate in Balaban’s renormalization-group programme. It gives a positive lower bound for a propagator-based quadratic form, uniformly over the number of renormalization levels and the background configurations in the specified regularity class. The development includes the local gauge charts, a covariant right inverse for multilevel averaging, and the estimates needed to assemble the bound.
+**Reference:** Tadeusz Balaban, *Propagators for lattice gauge theories in a background field*, Communications in Mathematical Physics **99** (1985), 389–434. The coercivity estimate appears on p. 428.
 
-**Source:** Tadeusz Balaban, *Propagators for lattice gauge theories in a background field*, Communications in Mathematical Physics **99** (1985), 389–434, especially p. 428.
+## Coercivity estimate
 
-## Main result
-
-The strongest theorem is [`AdalyFormal.Total.p428Target8Total`](lean/src/TT_F.lean). In schematic notation, its lower bound is
+For an admissible background configuration \(U\) and field \(\widetilde B\), the estimate has the schematic form
 
 \[
-\gamma_0 E(\widetilde B) \leq \mathcal Q_U(C_U\widetilde B),
+\gamma_0 E(\widetilde B)\leq\mathcal Q_U(C_U\widetilde B),
 \]
 
-where \(E\) is the bond energy and \(C_U\) and \(\mathcal Q_U\) are the propagator-based map and quadratic form. Their exact definitions and the admissible-field conditions are given by [`InstIneq`](lean/src/ZT5A.lean).
+where \(E\) is the bond energy, \(C_U\) is a propagator-based map, and \(\mathcal Q_U\) is a quadratic form.
 
-For each \(\ell\geq2\) and \(a>0\), the theorem chooses thresholds \(m_1,R_1\) and positive constants \(a_0,\gamma_0\). These work for every cube factor \(c\geq10\), \(m\geq m_1\), \(R\geq R_1\), and depth \(k\geq1\), subject to the geometric and regularity hypotheses and
+For each block factor \(\ell\geq2\) and \(a>0\), there are thresholds \(m_1,R_1\) and constants \(a_0,\gamma_0>0\) such that the required inverses exist and the estimate holds for every \(c\geq10\), \(m\geq m_1\), \(R\geq R_1\), and depth \(k\geq1\), subject to the geometric and regularity assumptions and
 
 \[
 0<\alpha_0,\qquad c\ell^m\alpha_0\leq a_0.
 \]
 
-Thus the constants are chosen **before** the cube factor, scales, depth, torus, and background configuration. Both **existence of the required inverses and coercivity are proved**, rather than assumed.
+The constants are independent of the subsequently chosen cube factor, scales, depth, torus, and background configuration. The supporting results include local gauge charts and a covariant right inverse for multilevel averaging, with weighted norm and gradient bounds.
 
-The supporting constructions include:
+## Assumptions and scope
 
-- [Local gauge charts](lean/src/TT_Z.lean).
-- [A covariant multilevel right inverse](lean/src/RI5.lean), with weighted norm and covariant-gradient bounds.
-- [Nontrivial admissible examples](lean/src/NVC7.lean): depth-two towers with nonzero curvature, a background that is not pure gauge, and a nonzero admissible field.
+The setting consists of compatible periodic lattices, aligned blocks, admissible towers and collars, and local per-cube gauge regularity. Site coverage and common-plaquette coverage are explicit assumptions; these are additional conditions not printed in the cited lemma. The operators use interior-plaquette localization.
 
-See [Results and scope](RESULTS.md) for the theorem map and the statement-fidelity results.
+Depth-two examples satisfy these assumptions with nonzero curvature, a background that is not pure gauge, and a nonzero admissible field. Separate comparisons examine coverage, touching conventions, normalization, and all-plaquette formulations.
 
-## Scope and relation to the source
+The conclusions concern these specified conventions. They do not assert equivalence with every interpretation of the original text, continuum Yang–Mills existence, or a mass gap.
 
-The formalisation uses compatible periodic, aligned lattices, explicit tower and collar conditions, and local per-cube gauge regularity. Its class includes **site and common-plaquette coverage**, an explicit additional hypothesis not printed in the cited lemma, and its operators use interior-plaquette localization.
+[Mathematical results](RESULTS.md) · [References](references/README.md)
 
-These choices are examined in separate theorems. In particular, the encoded coverage-free statement is refuted even when inverse existence is granted. Alternative touching conventions, normalizations, and guarded all-plaquette formulations are also studied. The [statement sheet](notes/statement_sheet.pdf) provides a clause-by-clause source comparison; [Results and scope](RESULTS.md) gives the current mathematical status.
+## Verification
 
-This is a formal reconstruction of Balaban’s coercivity theorem under stated conventions—not a claim of literal equivalence under every reading of the source, or a proof of continuum Yang–Mills existence or the mass gap.
-
-## Check the proofs
-
-Requires `git`, Python 3, and [elan](https://github.com/leanprover/elan). Lean **v4.31.0** and mathlib are pinned. Allow roughly 25 GB of disk space, at least 16 GB of RAM, and several hours for a cold build.
+Requires `git`, Python 3, and [elan](https://github.com/leanprover/elan). Lean v4.31.0 and the mathlib revision are pinned. A cold build requires roughly 25 GB of disk space, at least 16 GB of RAM, and several hours.
 
 ```sh
 git clone https://github.com/elmismisimoxhunca/BalabanCoercivityLemma
@@ -50,20 +42,9 @@ cd BalabanCoercivityLemma
 ./REPRODUCE.sh
 ```
 
-A successful run ends with `ALL CHECKS PASSED`. The script builds the registered Lean modules, checks complete axiom-dependency records, and compares them with the expected results. The checked theorems use only `propext`, `Classical.choice`, and `Quot.sound`.
+The command checks compilation and axiom dependencies. Success ends with `ALL CHECKS PASSED`. The checked theorem dependencies are contained in `{propext, Classical.choice, Quot.sound}`.
 
-Five legacy modules contain unused `sorry` declarations; the checked theorem dependencies do not use them. See [Verification](verification/README.md) for the exact evidence, build options, and limitations.
-
-## Navigate the repository
-
-| Path | Content |
-|---|---|
-| [`lean/src/`](lean/src/) | Formal definitions and proofs. Start with `TT_F.lean`, `ZT5A.lean`, and `RI6.lean`. |
-| [`lean/MODULES.tsv`](lean/MODULES.tsv) | Module index and source hashes. |
-| [`lean/src/AHP/`](lean/src/AHP/) | Statement-fidelity results included in the main build. |
-| [`verification/`](verification/README.md) | Build evidence and complete axiom records. |
-| [`AHP/`](AHP/README.md) | Supplemental proofs, numerical experiments, and blueprints; not all included in the main build. |
-| [`references/`](references/README.md) | Bibliography and source-page references. |
+[Verification details](verification/README.md) · [Formal definitions and proofs](lean/src/)
 
 ## License
 
